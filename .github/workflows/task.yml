@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Never Be Late
+
+on:
+  schedule:
+  - cron: "0 * * * *"
+  push:
+    branches:
+    - main
+
+jobs:
+  executeMe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: linhbn123/rebase-pull-requests@v1.0.1
+      # Git Clone the repro to the container
+      - uses: actions/checkout@v2
+
+      - name: Cleaning files - README.md
+        run: rm -r ./user-agents.json
+      
+      # Now execute the deno script
+      - name: Use Deno Version
+        uses: denolib/setup-deno@v2
+      - name: Executing "Update project readme"
+        run: deno run -A --unstable --no-check ./get.ts
+        
+      
+      # Push the new repro
+      - uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          BRANCH_NAME: 'main' 

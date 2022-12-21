@@ -1,0 +1,1 @@
+((mediafire\.com|mfi\.re)/(\?|view/|download/|listen/|file/|watch/|download\.php\?|imageview\.php\?quickkey=)|download\d+\.mediafire\.com/[^/]+/|upload\.mediafire\.com/|cdn\.mediafire\.com/\?)(?!sharekey)\K[a-z0-9]+

@@ -1,0 +1,11 @@
+  - name: trojan-grpc
+    server: server
+    port: 443
+    type: trojan
+    password: "example"
+    network: grpc
+    sni: example.com
+    # skip-cert-verify: true
+    udp: true
+    grpc-opts:
+      grpc-service-name: "example"

@@ -1,0 +1,1 @@
+# Content script vs Background script

@@ -1,0 +1,12 @@
+proxies:
+- name: "insert name proxy"
+  type: ss
+  server: insert host or ip
+  port: insert port
+  cipher: insert cipher
+  password: insert password
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: bug.com

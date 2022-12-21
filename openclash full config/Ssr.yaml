@@ -1,0 +1,12 @@
+proxies:
+- name: "nama akun"
+  type: ssr
+  server: insert host
+  port: 443
+  cipher: aes-256-cfb
+  password: insert pass
+  obfs: plain
+  protocol: origin
+  obfs-param: insert param
+  protocol-param: insert protocol
+  udp: true

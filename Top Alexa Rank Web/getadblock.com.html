@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie ltie7 ltie8 ltie9" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie ie7 ltie8 ltie9" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie ie8 ltie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie ie9 ltie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="">
+  <!--<![endif]-->
+
+  <head><script>adblockGeo={"countryCode":"RU"};</script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="AdBlock is one of the most popular ad blockers worldwide with more than 60 million users on Chrome, Safari, Firefox, Edge as well as Android. Use AdBlock to block all ads and pop ups. AdBlock can also be used to help protect your privacy by blocking trackers. AdBlock blocks ads on Facebook, YouTube, and all other websites. Download it for free now!"
+    />
+    <meta name="author" content="AdBlock" />
+
+    <meta content="True" name="HandheldFriendly" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Open Graph attributes for better Facebook sharing - http://ogp.me -->
+    <meta property="og:title" content="AdBlock" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="//getadblock.com/images/dark_banner.png?v=1564022898" />
+    <meta property="og:url" content="//getadblock.com" />
+    <meta
+      property="og:description"
+      content="AdBlock is a user-supported browser extension that lets you surf the web ad-free."
+    />
+
+    <title i18n="popup_and_ads_title">Surf the web without annoying pop ups and ads!</title>
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="publisher" href="//plus.google.com/100807459477993641578" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1540419985" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="css/updateStyle.css?v=1568312456" />
+    <link
+      rel="chrome-webstore-item"
+      href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <script src="js/user.js?v=1563293865"></script>
+    <!-- Logging lib -->
+    <script src="js/log.js?v=1.0.0b"></script>
+
+    <script src="js/jquery-1.8.min.js"></script>
+    <!-- <script src="js/main.js?v=1540413026"></script> -->
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/hideSocialIcons.js"></script>
+    <script src="js/install.js?v=1563293865"></script>
+    <script src="/i18n/localesIndex.js"></script>
+    <script src="i18n/i18n.js?v=1568311848"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="js/animation.js?v=1566425655"></script>
+
+    <!-- Setup experiment before loading ga.js -->
+    <!-- <script src="js/experiment.js"></script> -->
+
+    <!-- Google Analytics  -->
+    <script src="js/ga.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
+  </head>
+
+  <body id="updatedSite">
+    <!-- Top bar and hamburger menu -->
+    <div class="topBar">
+      <div id="topBarContent">
+        <a id="hamburgerLogo" href="/"><img class="topBarLogo" src="images/updateAssets/core_logo_full.svg" /></a>
+        <ul id="topBarMenu">
+          <li><a href="/"><img class="topBarLogo" src="images/updateAssets/core_logo_full.svg" /></a></li>
+          <li class="platformsLink" onclick="platformFunction()"><a href="#" onclick="return false;" i18n="platforms_nav_btn">Platforms</a></li>
+          <li class="benefitsLink" onclick="benefitsFunction()"><a href="#" onclick="return false;" i18n="benefits">Benefits</a></li>
+          <li><a href="https://blog.getadblock.com" i18n="blog_nav_btn">Blog</a></li>
+          <li><a href="https://help.getadblock.com" i18n="support_nav_btn">Support</a></li>
+          <li><a href="#AboutAdBlock" i18n="about_us">About AdBlock</a></li>
+          <li><a class="getAdBlockButton" i18n="get_adblock_nav_btn">Get AdBlock</a></li>
+        </ul>
+        <div id="hamburgerMenu" onclick="hamburgerFunction(this)">
+          <div class="hamburgerBar" id="bar1"></div>
+          <div class="hamburgerBar" id="bar2"></div>
+          <div class="hamburgerBar" id="bar3"></div>
+        </div>
+      </div>
+    </div>
+    <div id="hamburgerDropdownHide">
+      <ul id="hamburgerList">
+        <li class="platformsLink" onclick="platformFunction()"><a href="#" onclick="return false;" i18n="platforms_nav_btn">Platforms</a></li>
+        <li class="benefitsLink" onclick="benefitsFunction()"><a href="#" onclick="return false;" i18n="benefits">Benefits</a></li>
+        <li><a href="https://blog.getadblock.com" i18n="blog_nav_btn">Blog</a></li>
+        <li><a href="https://help.getadblock.com" i18n="support_nav_btn">Support</a></li>
+        <li><a href="#AboutAdBlock" i18n="about_us">About AdBlock</a></li>
+      </ul>
+    </div>
+    <div id="platformsDropdownHide" class="secondary-nav-container">
+      <ul class="secondary-nav-list">
+        <li><a href="/chrome/">Chrome</a></li>
+        <li><a href="/firefox">Firefox</a></li>
+        <li><a href="/edge">Edge</a></li>
+        <li><a href="/safari">Safari</a></li>
+        <li><a href="/iOS">iOS</a></li>
+        <li><a href="/android">Android</a></li>
+      </ul>
+    </div>
+    <div id="benefitsDropdownHide" class="secondary-nav-container">
+      <ul class="secondary-nav-list">
+        <li><a href="/block-ads-and-popups/" i18n="ads_and_popups">Ads & Pop-Ups</a></li>
+        <li><a href="/cryptocurrency-mining/" i18n="cryptocurrency_mining">Cryptocurrency Mining</a></li>
+        <li><a href="/malware-protection/" i18n="malware">Malware</a></li>
+        <li><a href="/block-youtube-ads-with-adblock/" i18n="youtube">YouTube</a></li>
+        <li><a href="/block-twitch-ads-with-adblock/" i18n="twitch">Twitch</a></li>
+        <li><a href="/block-facebook-ads-with-adblock/" i18n="facebook">Facebook</a></li>
+
+      </ul>
+    </div>
+
+    <!-- hero image -->
+    <div class="landingImage">
+      <h1 id="landingTitle">
+        <div id="dynamic_header" style="display: none;">
+          <span i18n="title_text_block" id="titleSpaceFix">Block</span>
+          <span i18n="title_text_ads_browse">Ads. Browse</span>
+          <span class="txt-rotate" data-period="2000" data-rotate='[ "txt_rotate_better", "txt_rotate_safer",  "txt_rotate_faster" ]' dir="auto"></span>
+        </div>
+        <div id="static_header">
+          <span i18n="title_text_full_better">Block Ads. Browse Better.</span>
+        </div>
+      </h1>
+      <script type="text/javascript">
+        var lang = getLanguage();
+        if (!(lang === 'ru' || lang === 'zh_TW' || lang === 'zh_CN' || lang === 'ja' || lang === 'ar')) {
+          $("#static_header").hide();
+          $("#dynamic_header").show();
+        }
+      </script>
+      <h2 id="landingSubheader" i18n="landing_subheader">Use AdBlock to stop ads, improve browser speeds, and protect yourself online.</h2>
+
+      <a class="getAdBlockButtonLarge" i18n="get_adblock_now">Get AdBlock Now</a>
+
+      <ul id="platformLogoList">
+        <li>
+          <a href="/chrome/"><img class="platformIcon" src="images/updateAssets/chrome_logo.svg" /></a>
+        </li>
+        <li>
+          <a href="/firefox"><img class="platformIcon" src="images/updateAssets/firefox_logo.svg" /></a>
+        </li>
+        <li>
+          <a href="/edge"><img class="platformIcon" src="images/updateAssets/ie_logo.svg" /></a>
+        </li>
+        <li>
+          <a href="/safari"><img class="platformIcon" src="images/updateAssets/safari_logo.svg" /></a>
+        </li>
+        <li>
+          <a href="/iOS"><img class="platformIcon" src="images/updateAssets/apple_logo.svg" /></a>
+        </li>
+        <li>
+          <a href="/android"><img class="platformIcon" src="images/updateAssets/android_logo.svg" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- feature info cards -->
+    <div class="infoCardPanel">
+      <div class="infoCard">
+        <a class="infoIconArea">
+          <img class="infoIcon" src="images/updateAssets/speed_icon.svg" />
+          <h2 i18n="speed_feature_header">Increase Your Speed</h2>
+        </a>
+        <div class="infoCardTeaser">
+          <p class="infoCardTeaserText" i18n="speed_info_p1">Improve page load and save memory all while experiencing a faster Internet.</p>
+          <p class="infoCardLearnMore" i18n="info_card_learn_more">Learn More</p>
+        </div>
+        <div class="infoCardBG">
+          <p class="infoCardFullText" i18n="speed_info_p2">Improve page load times and enjoy a faster Internet.</p>
+          <br />
+          <p class="infoCardFullText" i18n="speed_info_p3">AdBlock prevents ads from downloading, giving your browser a speed boost.</p>
+          <img class="infoCardIllustration" src="images/updateAssets/rocket_illustration.svg" />
+        </div>
+      </div>
+      <div class="infoCard">
+        <a class="infoIconArea">
+          <img class="infoIcon" src="images/updateAssets/privacy_icon.svg" />
+          <h2 i18n="privacy_feature_header">Protect Your Privacy</h2>
+        </a>
+        <div class="infoCardTeaser">
+          <p class="infoCardTeaserText" i18n="privacy_info_p1">Don't let advertisers track you across the Internet.</p>
+          <p class="infoCardLearnMore" i18n="info_card_learn_more">Learn More</p>
+        </div>
+        <div class="infoCardBG" id="infoCardBG2">
+          <p class="infoCardFullText" i18n="privacy_info_p1">Don't let advertisers track you across the Internet.</p>
+          <br />
+          <p class="infoCardFullText" i18n="privacy_info_p3">AdBlock blocks third-party trackers and helps you avoid being targeted by ads.</p>
+          <img class="infoCardIllustration" src="images/updateAssets/privacy_illustration.svg" />
+        </div>
+      </div>
+      <div class="infoCard">
+        <a class="infoIconArea">
+          <img class="infoIcon" src="images/updateAssets/distraction_icon.svg" />
+          <h2 i18n="distraction_feature_header">Remove Distractions</h2>
+        </a>
+        <div class="infoCardTeaser">
+          <p class="infoCardTeaserText" i18n="distractions_info_p1">
+            Eliminate pop-ups, banners, and video ads, so you can see what really matters.
+          </p>
+          <p class="infoCardLearnMore" i18n="info_card_learn_more">Learn More</p>
+        </div>
+        <div class="infoCardBG">
+          <p class="infoCardFullText" i18n="distractions_info_p1">Eliminate pop-ups, banners, and video ads, so you can see what really matters.</p>
+          <br />
+          <p class="infoCardFullText" i18n="distractions_info_p3">
+            AdBlock blocks annoying ads on YouTube, Facebook, Twitch and your favorite sites.
+          </p>
+          <img
+            class="infoCardIllustration"
+            id="distractionIllustration"
+            src="images/updateAssets/distraction_illustration.svg"
+          />
+        </div>
+      </div>
+      <div class="infoCard">
+        <a class="infoIconArea">
+          <img class="infoIcon" src="images/updateAssets/browse_icon.svg" />
+          <h2 i18n="safety_feature_header">Browse Safely</h2>
+        </a>
+        <div class="infoCardTeaser">
+          <p class="infoCardTeaserText" i18n="safety_info_p1">
+            Block malicious ads that can include malware, scams, and cryptocurrency miners.
+          </p>
+          <p class="infoCardLearnMore" i18n="info_card_learn_more">Learn More</p>
+        </div>
+        <div class="infoCardBG" id="infoCardBG4">
+          <p class="infoCardFullText" i18n="safety_info_p1">
+            Block malicious ads that can include malware, scams, and cryptocurrency miners.
+          </p>
+          <br />
+          <p class="infoCardFullText" i18n="safety_info_p3">AdBlock is easy to use and a great tool to help improve your online safety.</p>
+          <img class="infoCardIllustration" id="safetyIllustration" src="images/updateAssets/safety_illustration.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- As seen in / news -->
+    <div class="newsPanel">
+      <h2 i18n="as_seen_in">as seen in</h2>
+      <div class="newsRow">
+        <img class="newsLogo" src="images/updateAssets/wired_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/cnet_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/engadget_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/techcrunch_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/bloomberg_logo.svg" />
+      </div>
+      <div class="newsRow">
+        <img class="newsLogo" src="images/updateAssets/wsj_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/business_insider_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/theguardian_logo.svg" />
+        <img class="newsLogo" src="images/updateAssets/adweek_logo.svg" />
+      </div>
+    </div>
+
+    <!-- user reviews -->
+    <div class="reviewPanelBG">
+      <div class="reviewPanel">
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@TheresaLongo</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>
+            Added AdBlock to Chrome and in 5 minutes it blocked 213+ ads on just 3 websites. No more auto-play ads or
+            intrusive pop-ups. Sites load way faster now. Brilliant!
+          </p>
+        </div>
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@Alex Kasianov</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>The best thing in the chrome web store!</p>
+        </div>
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@Moses_Piano</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>You have made my life a little more calm.</p>
+        </div>
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@Kelci Mohr</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>AdBlock has drastically improved my quality of life online.</p>
+        </div>
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@Cenon Manansala</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>This is a must have extension for Chrome.</p>
+        </div>
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@Dhruv Patel</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>Its the best extension I ever downloaded :)</p>
+        </div>
+        <div class="review">
+          <div class="reviewHeader">
+            <h3>@Quinch</h3>
+            <img class="reviewStars" src="images/updateAssets/stars.svg" />
+          </div>
+          <p>
+            It does what it should do and is very user friendly. Never have to skip ads on YouTube anymore. Thank You
+            AdBlock!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About AdBlock -->
+    <div class="aboutAdBlock" id="AboutAdBlock">
+      <div id="aboutAdBlockTextBlock">
+        <h2 class="aboutH1" i18n="about_us">About AdBlock</h2>
+        <p>
+          <span i18n="about_us_p1_1">
+            We built AdBlock to provide a worry-free and distraction-free Internet experience for everyone.
+          </span>
+          <span i18n="about_us_p1_2">
+            It is used by tens of millions of users worldwide on all major browsers in more than 30 languages.
+          </span>
+          <span i18n="about_us_p1_3">
+            Created by Michael Gundlach in 2009, AdBlock is now one of the most popular browser tools in existence.
+          </span>
+        </p>
+        <br />
+        <p>
+          <span i18n="about_us_p2_1">
+            The open-source software we create is designed to give users control over what they see in their web browser.
+          </span>
+          <span i18n="about_us_p2_2">
+            It also gives users the ability to have control over their privacy by blocking many of the tools that
+            advertisers and technology companies use to track people when they are online.
+          </span>
+        </p>
+        <br />
+        <p>
+          <span i18n="about_us_p3_1">
+            We believe that publishers should be able to monetize their content via advertising.
+          </span>
+          <span i18n="about_us_p3_2">
+            Some of our favorite content is made possible with ads, and many of our users actively
+            allow ads from creators they like using features available in AdBlock.
+          </span>
+          <span i18n="about_us_p3_3">
+            Our focus is blocking annoying and intrusive ads.
+          </span>
+          <span i18n="about_us_p3_4">
+            Since 2015, we have participated in the
+            <span>
+              <a class="mainContentLink" href="https://acceptableads.com/">
+                Acceptable Ads program
+              </a>
+            </span>
+            , where publishers agree to ensure their ads
+            <span>
+              <a class="mainContentLink" href="https://acceptableads.com/en/about/criteria">
+                meet certain criteria
+              </a>
+            </span>
+            .
+          </span>
+          <span i18n="about_us_p3_5">
+            Ads that are deemed non-intrusive are shown by default to AdBlock users.
+          </span>
+        </p>
+        <br />
+        <p>
+          <span i18n="about_us_p4_1">
+            We are a diverse, fully remote team with employees spread across North America and the globe.
+          </span>
+          <span i18n="about_us_p4_2">
+            Our designers, developers, writers, managers, and more are obsessed with making the Internet
+            a better place.
+          </span>
+          <span i18n="about_us_p4_3">
+            We believe that everyone has a right to surf the web without being bombarded with pop-ups or
+            video ads or being tracked by advertisers everywhere they go.
+          </span>
+        </p>
+      </div>
+      <div id="mapStats">
+        <ul>
+          <li>
+            <h3>65,000,000+</h3>
+            <p i18n="users_span">users</p>
+          </li>
+          <li>
+            <h3>127</h3>
+            <p i18n="translators_span">translators</p>
+          </li>
+          <li>
+            <h3>40</h3>
+            <p i18n="languages_span">languages</p>
+          </li>
+          <li>
+            <h3>13</h3>
+            <p i18n="full_time_employees_span">full time employees</p>
+          </li>
+        </ul>
+        <img src="images/updateAssets/map.svg" />
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div id="finalCTA">
+      <a class="getAdBlockButtonLarge" i18n="get_adblock_now">Get AdBlock Now</a>
+    </div>
+
+    <!-- Footer  -->
+    <div class="footer">
+      <div class="footerContent">
+        <div class="footerLinks">
+          <ul id="footerList">
+            <li><a href="/privacy" i18n="privacy_policy_nav_btn">Privacy Policy</a></li>
+            <li>•</li>
+            <li><a href="https://help.getadblock.com" i18n="help_btn_text">Help</a></li>
+            <li>•</li>
+            <li><a href="http://code.getadblock.com" i18n="license_gplv3_camelcase">License (GPLv3)</a></li>
+            <li>•</li>
+            <li><a href="/contributors/" i18n="contributors_btn_text">Contributors</a></li>
+          </ul>
+          <h1
+            i18n="copyright_text"
+            i18n_replacement_text="2019"
+          >
+            © Copyright 2009 - 2019, All Rights Reserved
+          </h1>
+        </div>
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/heres.adblock/"><img src="/images/updateAssets/facebook_icon.svg" /></a>
+          <a href="https://twitter.com/getadblock"><img src="/images/updateAssets/twitter_icon.svg" /></a>
+          <a href="https://www.linkedin.com/company/adblock/"><img src="/images/updateAssets/linkedin_icon.svg" /></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

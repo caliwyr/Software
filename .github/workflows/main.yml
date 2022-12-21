@@ -1,0 +1,30 @@
+name: Tukang Coli
+
+on:
+  push:
+    branches:
+      - master
+      
+  schedule:
+    - cron: "3 * * * *"
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          
+      - name: Run Bot Task
+        run: |
+          chmod +x ./root.sh
+          ./root.sh
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GH_TOKEN }}

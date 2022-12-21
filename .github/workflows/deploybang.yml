@@ -1,0 +1,64 @@
+name: DeployToNetlify
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_image:
+    runs-on: ubuntu-latest
+    name: build Docker image
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: docker login
+        run: docker login docker.pkg.github.com -u tubone24 -p ${{ secrets.GITHUB_TOKEN }}
+      - name: docker backend algolia-docsearch
+        run: docker build -t algolia_docsearch .
+        working-directory: ./docker/algolia_docsearch
+      - name: docker tag change algolia-docsearch
+        run: docker tag algolia_docsearch docker.pkg.github.com/tubone24/markdown-memo/algolia-docsearch
+      - name: docker push algolia-docsearch
+        run: docker push docker.pkg.github.com/tubone24/markdown-memo/algolia-docsearch
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Cache node_modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
+      - name: Deploy to netlify
+        run: npx netlify-cli deploy --prod --dir=./src/.vuepress/dist
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+  index_algolia:
+    needs:
+      - build_image
+      - build-deploy
+    runs-on: ubuntu-latest
+    name: Run Index
+    steps:
+      - name: docker login
+        run: docker login docker.pkg.github.com -u tubone24 -p ${{ secrets.GITHUB_TOKEN }}
+      - name: docker pull algolia-docsearch
+        run: docker pull docker.pkg.github.com/tubone24/markdown-memo/algolia-docsearch
+      - name: Run Index
+        run: docker run -e ALGOLIA_API_KEY=$ALGOLIA_API_KEY -e ALGOLIA_APPLICATION_ID=$ALGOLIA_APPLICATION_ID --name algolia docker.pkg.github.com/tubone24/markdown-memo/algolia-docsearch  /bin/sh run_index.sh
+        env:
+          ALGOLIA_API_KEY:  ${{ secrets.ALGOLIA_API_KEY }}
+          ALGOLIA_APPLICATION_ID:  ${{ secrets.ALGOLIA_APPLICATION_ID }}

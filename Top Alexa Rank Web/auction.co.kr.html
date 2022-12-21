@@ -1,0 +1,1077 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko-KR" class="no-js" xmlns:IE>
+<head>
+  <title>옥션 - 모바일 쇼핑은 옥션</title>
+  <meta http-equiv="Content-type" content="text/html; charset=KSC_5601" />
+	<meta http-equiv="Cache-control" content="No-cache" />
+	<meta http-equiv="Pragma" content="No-cache" />
+	<meta name="Description" content="쇼핑이 생각날 땐, 어서옥션! ALL-KILL 특가! 첫구매 50%할인! 인터넷 쇼핑몰, 오픈마켓, 의류, 유아용품, 전자제품, 티켓, 도서음반 등 판매." />
+	<meta name="Keywords" content="" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<link rel="SHORTCUT ICON" href="http://pics.iacstatic.co.kr/common/static/favicon_2011.ico"/>
+    <link rel="stylesheet" type="text/css" href="http://script.auction.co.kr/pc/style/css/hp.css" />
+    <link rel="stylesheet" type="text/css" href="http://script.auction.co.kr/pc/style/css/common.css"/>
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="http://mobile.auction.co.kr" />
+	<link rel="canonical" href="http://www.auction.co.kr"/>
+    <script type="text/javascript" src="http://script.auction.co.kr/common/header_stop.js"></script>
+	<script type="text/javascript" src="http://script.auction.co.kr/common/library/ua-parser.min.js"></script>
+	<script type="text/javascript" src="http://script.auction.co.kr/common/useragent_control.js"></script>
+
+	<script type="text/javascript">
+		window.baikal = {
+			site: 'iac-pc',
+			page: 'HOME',
+			dataLayer: {}
+		};
+		try { (function (w, d, a, m) { a = d.createElement('script'), m = d.getElementsByTagName('script')[0]; a.async = 1; a.src = 'https://scripts.baikalize.com/etm/etm.js?id=' + baikal.site; m.parentNode.insertBefore(a, m); })(window, document); } catch (e) { }
+
+		rpmAjaxCall = function (eventId) {
+			var pdsUrl = "http://pds.auction.co.kr/scriptBrokerMsgJsonp";
+			var params = { id: eventId };
+			if (eventId == "l" && !!window.performance) {
+
+				var t = window.performance.timing;
+
+				if (!!t) {
+
+					var paramO = {
+						id: eventId,
+						NaviStTick: t.navigationStart,
+						LookupStTick: t.domainLookupStart,
+						RequestStTick: t.requestStart,
+						ResponseEdTick: t.responseEnd,
+						DomLoadedStTick: t.domContentLoadedEventStart,
+						LoadStTick: t.loadEventStart
+					}
+
+					if (paramO != null)
+						params = paramO;
+				}
+
+			}
+
+			$.ajax({
+				url: pdsUrl,
+				data: params,
+				type: "GET",
+				contentType: "application/javascript; charset=utf-8",
+				scriptCharset: "utf-8",
+				dataType: "jsonp",
+				crossdomain: true,
+				error: function (request, error) {
+					//alert("Error: " + error);
+				}
+			});
+		}
+
+		var requestParams = (function () {
+			var requestParams = [];
+			var url = unescape(location.href);
+			var hash = unescape(location.hash);
+
+			if (hash) {
+				url = url.toString().replace(hash, '');
+			}
+
+			if (url.indexOf('?') > 0) {
+				var params = (url.substring(url.indexOf('?') + 1, url.length)).split('&');
+				for (var i = 0; i < params.length; i++) {
+					var tempArr = params[i].split('=');
+					requestParams.push({ param: tempArr[0].toUpperCase(), value: tempArr[1] });
+				}
+			}
+			return requestParams;
+		})();
+
+		var getParam = function (params, param) {
+			for (var i = 0; i < params.length; i++) {
+				if (params[i]['param'] === param.toString().toUpperCase()) {
+					return params[i]['value'].toString();
+				}
+			}
+			return null;
+		}
+
+		var isPCVersionView = getParam(requestParams, 'ispcversion');
+		if (isPCVersionView == "1" || location.search.toLowerCase().indexOf("mobile") > 0) {
+			// 기존 쿠키를 사용하는 곳이 있을수도 있어서 남김
+			document.cookie = "mpcview=1; domain=.auction.co.kr; path=/";
+			document.cookie = "mpvview=1; domain=.auction.co.kr; path=/";
+		}
+
+		var uaControl = new UAControl();
+		uaControl.setMobileVersionUrl(uaControl.consts.mobileHomeMainUrl);
+	</script>
+	<script type="application/ld+json">
+		{
+			  "@context": "https://schema.org",
+			  "@type": "WebSite",
+			  "url": "http://www.auction.co.kr",
+			  "potentialAction": {
+					"@type": "SearchAction",
+					"target": "http://browse.auction.co.kr/search?keyword={keyword}",
+					"query-input": "required name=keyword"
+				}
+			}	
+	</script>
+</head>
+<body id="ibody">
+    <script type="text/javascript" src="http://script.auction.co.kr/style/js/common.js"></script>
+	<div id="accessibility">
+		<ul>
+			<li><a href="#body">본문 바로가기</a></li>
+			<li><a href="#txtKeyword">검색 바로가기</a></li>
+			<li><a href="#core_gnb">메뉴 바로가기</a></li>
+		</ul>
+	</div>
+	<hr />
+  <img src="http://pds.auction.co.kr/scriptBrokerMsg?id=b" width="0" height="0" border="0" style="display: none;" alt=""/>
+	
+    <div id="dLayerBackground" style="width:100%;height:100%;position:fixed;z-Index:500000;filter:alpha(opacity='50');opacity:0.5;background-color:black;display:none;"></div>
+	<div id="wrap">
+		<div id="header_wrap">
+			<div id="core_lnb">
+				<div class="lnb_container">
+					<h1 class="logo">
+						<a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH00&cc=AH00&next=http%3a%2f%2fwww.auction.co.kr">
+							<img alt="옥션" src="http://image.iacstatic.co.kr/homepage_cache/hp_home_logo/2019/05/hp_home_logo_201905030116348268.png" />
+						</a>
+					</h1>
+					<div class="layout_left">
+						
+					</div>
+					<div class="layout_right">
+						<div class="usermsg"></div>
+						<div class="usermenu">
+							<ul>
+								<li id="headerloginveiw"></li>
+								<li id="headermemberenter" style="display:none;"></li>
+								<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH31&cc=AH31&next=https://cart.auction.co.kr/ko/cart" class="basket">장바구니</a></li>
+								<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0D78&cc=0D78&next=http://escrow.auction.co.kr/Close/OrderProcessList.aspx?frm=hometab&loginType=50">주문배송</a></li>
+								<li class="has_sub">
+									<a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH11&cc=AH11&next=http://member.auction.co.kr/Myauction/?frm=hometab" class="dropdown my-auction">마이옥션</a>
+									<ul>
+										<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0C83&cc=0C83&next=http://member.auction.co.kr/Myauction/?frm=hometab">마이옥션 홈</a></li>
+										<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH12&cc=AH12&next=http://escrow.auction.co.kr/Close/OrderProcessList.aspx?frm=hometab&loginType=50">주문내역</a></li>
+										<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH13&cc=AH13&next=http://favorite.auction.co.kr/BuyerTools/Favorites/FavoriteItemHome.aspx">관심상품</a></li>
+										<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH14&cc=AH14&next=http://reward.auction.co.kr/MyCoupon/BuyerCouponList.aspx?Use_Yn=N&frm=hometab">쿠폰관리</a></li>
+										<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH15&cc=AH15&next=http://reward.auction.co.kr/MyPoint/SmilePointList.aspx?frm=hometab">Smile Point</a></li>
+										<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0C85&cc=0C85&next=http://escrow.auction.co.kr/SmilePG/MySmileCash.aspx?frm=hometab">Smile Cash</a></li>
+										<li id="headermemberinfo">
+											<a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0C86&cc=0C86&next=https://memberssl.auction.co.kr/membership/MyInfo/MyInfo.aspx" target="_top">회원정보</a>
+										</li>
+									</ul>
+								</li>
+								<li>								
+									<a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH32&cc=AH32&next=http://member.auction.co.kr/help/home.aspx" target="_top">고객센터</a>
+								</li>
+								<li>									
+									<a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0CA0&cc=0CA0&next=http://sell3.auction.co.kr/SellBasic/SellBasicBridge.aspx" target="_blank">판매하기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="core_header">
+				<div class="header_container">
+					<div class="core_search">
+						<form accept-charset="utf-8" name="search_top" method="get" onsubmit="document.getElementById('homesearchlog').src='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH81&cc=AH81&next=justlog';return TopSearchBox.OnSubmit(this);"  class="search-wrap">
+							<input type="hidden" name="keyword" />
+							<input type="hidden" name="itemno" />
+							<input type="hidden" name="nickname" />
+							<input type="hidden" name="frm" />
+							<input type="hidden" name="dom" value="auction" />
+							<input type="hidden" name="isSuggestion" value="No" />
+							<input type="hidden" name="retry" />
+							<div class="search_inner">
+								<input type="text" class="search_input_keyword" id="txtKeyword"  onmousedown="return TopSearchBox.SetSearchBoxAdClear(1, this, event);" onkeydown="return TopSearchBox.SetSearchBoxAdClear(1, this, event);" onclick="return TopSearchBox.SetSearchBoxAdClear(1, this, event);" onfocus="return TopSearchBox.SetSearchBoxAdClear(0, this, event);" title="검색어 입력"/>
+								<input type="submit" value="검색" class="search_btn_ok" />
+							</div>
+							<div class="search-word" id="suggestionLayer_ass" style ="z-index:10000; display:none;">
+								<iframe id="suggestIframe_ass" width="371" frameborder="0" scrolling="no" allowtransparency="yes" real-src="http://suggest.auction.co.kr/suggest/Suggest201209.html" frameborder="0" title="추천 검색어">
+								</iframe>
+							</div>
+						</form>
+					</div>
+
+
+					<div class="promo module_slot">
+						<div class="js-display-ad" id="divMarketBanner" data-display-ad="9000000028"></div>
+					</div>
+				</div>
+			</div>
+			<h2 class="hide">메뉴</h2>
+			<div id="core_gnb" style="z-index: 11;">
+				<div class="gnb_container">
+					<div class="layout_left">
+						<div class="corenavi navi_allmenu">
+							<a href="javascript:;" class="navi_opener"><span>전체 카테고리</span></a>
+							<div class="navi_dropdown" style="display: block;"> 
+								<div class="allmenu" id="allmenu">
+								</div>
+							</div>
+						</div> 
+						<ul class="corenavi primary">  
+							<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0EF9&cc=0EF9&next=http://promotion.auction.co.kr/promotion/MD/eventview.aspx?txtMD=01982C89B6" class="primary_1">쿠폰포인트</a></li>  
+							<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0EFA&cc=0EFA&next=http://corners.auction.co.kr/corner/categorybest.aspx" class="primary_2">옥션베스트</a></li>  
+							<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=1CCE&cc=1CCE&next=http://shop.auction.co.kr/SmartDelivery/default.aspx" class="primary_3">스마일배송</a></li>   
+							<li><a href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=1CCE&cc=1CCE&next=http://corners.auction.co.kr/corner/smileclub.aspx" class="primary_4">스마일클럽</a></li>   
+						</ul>  
+					</div>
+
+
+					<div class="layout_right">
+						<div class="corenavi navi_member">
+							<a href="javascript:;" class="navi_opener">
+								<span>멤버십 서비스</span>
+							</a>
+							<div class="navi_dropdown type_normal" style="display: none;"></div>
+						</div>
+						<div class="corenavi navi_latest">
+							<a href="javascript:;" class="navi_opener">
+								<span>최근 본 상품/코너</span>
+							</a>
+							<div class="navi_dropdown" style="display: none;">
+								<div class="column1">
+									<div class="column_latest_key">
+										<div class="column_tit">최근 검색어</div>
+									</div>
+									<div class="column_hot_key">
+										<div class="column_tit">인기 검색어</div>
+									</div>
+								</div>
+								<div class="column2">
+									<div class="column_hot_corner">
+										<div class="column_tit">인기코너</div>
+									</div>
+								</div>
+								<div class="column3">
+									<div class="column_latest_item module_slot">
+										<div class="column_tit">최근 본 상품</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="height:0px;width:0px;position:absolute;left:-1000000px;"><img id="iLogImg" src="http://pics.iacstatic.co.kr/common/blank.gif" height="0px" width="0px" alt="" /></div>
+		<div style="height:0px;width:0px;position:absolute;left:-1000000px;"><img id="iImpressionLogImg" src="http://pics.iacstatic.co.kr/common/blank.gif" height="0px" width="0px" alt="" /></div>
+		<div style="height:0px;width:0px;position:absolute;left:-1000000px;" id="divSORecent"> </div>
+
+		<div id="body" role="main">
+			<!--좌측날개 광고배너 -->
+			<div class="hp_side_banner">
+				<div id="flashad_view_left" class="flashad_view_left"></div>
+                <div class="side_banner1 js-display-ad" id="divBrandAd32" data-display-ad="9000000032"></div>
+                <div class="side_banner2 js-display-ad" id="divBrandAd38" data-display-ad="9000000038"></div>
+                <div class="side_banner3 js-display-ad" id="divBrandAd36" data-display-ad="9000000036"></div>
+			</div>
+			<!--좌측날개 광고배너 -->
+			<div class="module-row modrow-top">
+				<!-- 해택배너 -->
+				<div class="top_mini_banner">
+					<a href="javascript:;"><img src="http://pics.iacstatic.co.kr/common/blank.gif" width="155" height="81" alt="5월의 쿠폰 최대 7장 - 할인쿠폰 15%" /></a>
+					<a href="javascript:;" class="prev">이전</a>
+					<a href="javascript:;" class="next">다음</a>
+				</div>
+				<!-- 해택배너 -->
+				<!-- Wide 배너 -->
+				<div class="top_main_banner" id="divWideBanner">
+					<div class="main_box" id="divWideImage">
+						<a href="javascript:;"><img src="http://pics.iacstatic.co.kr/common/blank.gif" width="825" height="387" alt="배너의 내용을 넣어 주세요" /></a>
+					</div>
+					<ul id="ulWideTabs">
+					</ul>
+					<a href="javascript:;" class="prev">이전</a>
+					<a href="javascript:;" class="next">다음</a>
+				</div>
+				<!-- Wide 배너 -->
+			</div>
+            
+			<!-- 빅스마일데이 Banner -->
+
+
+
+
+			<div class="hp_allkill">
+				<div class="allkill_title">
+					<a onclick="pvprofiler.sendEvt('click','100000501','Link');" data-montelena-acode="100000501" href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AJ22&cc=AJ22&next=http://corners.auction.co.kr/AllKill/AllDay.aspx" class="tit">ALL KILL ALL DAY</a>
+					<a onclick="pvprofiler.sendEvt('click','100000503','Link');" data-montelena-acode="100000503" href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AJ22&cc=AJ22&next=http://corners.auction.co.kr/AllKill/AllDay.aspx" class="bt_more">더보기</a>
+				</div>
+				<div class="item_list_type1">
+					<span class="pnum"></span>
+					<div id="touchSlider_allkill" class="touchSlider-box">
+						<div id="allKillItemList" class="touchSlider">
+							<div class="item_list_wrap">
+								<ul class="item_list"></ul>
+							</div>
+						</div>
+					</div>
+					<a href="javascript:;" class="prev" >이전</a>
+					<a href="javascript:;" class="next" >다음</a>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="hotspot">
+
+				<div class="hotspot_tit">
+					<h3>주요 서비스</h3>
+					<a href="http://corners.auction.co.kr/Corner/AllService.aspx" onclick="javascript:pvprofiler.sendEvt('click','100000244','utility', {'ASN': 1, 'serviceName':'전체보기'});" data-montelena-acode="100000244" class="bt_more">전체보기</a>
+				</div>
+				<ul class="hotspot_bnr_lst">
+
+
+
+				</ul>
+
+
+
+				<div class="hotspot_brand">
+					<ul class="hotspot_brand_lst">
+						
+					</ul>
+					<a class="prev" href="javascript:;" >이전</a>
+					<a class="next" href="javascript:;" >다음</a>
+					
+				</div>
+
+			</div>
+
+
+			<div class="js-display-ad" style="margin-top:28px;" data-display-ad="106" onclick="pvprofiler.sendEvt('click','100002148','marea_banner');" data-montelena-acode="100002148"></div>
+
+
+			<!-- 옥션 Best -->
+			<div id="hp_best" class="hp_best hp_galley_st">
+				<div class="best_title">
+					<a class="tit" onclick="pvprofiler.sendEvt('click','100002149','best_title');" href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AJ46&cc=AJ46&next=http://corners.auction.co.kr/corner/categorybest.aspx" data-montelena-acode="100002149">옥션 베스트</a>
+					<a class="bt_more" onclick="pvprofiler.sendEvt('click','100002149','best_more');" href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0C60&cc=0C60&next=http://corners.auction.co.kr/corner/categorybest.aspx" data-montelena-acode="100002149">더보기</a>
+				</div>
+				<span class="pnum pnum1"><em>1</em> / 2 </span>
+				<span class="pnum pnum2"></span>
+				<div id="" class="hp_best_tab">
+					<div id="touchSlider_best_tab" class="touchSlider-box-tab inner">
+						<ul class="swiper-wrapper touchSlider-tab nav_list">
+							<li class="swiper-slide nav_item on" id="bestGroup_0"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 1});AuctionBestBiz.displaySlot(0);" data-montelena-acode="100002150" data-montelena-asn="1"><span class="item_000">전체</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_13"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 2});AuctionBestBiz.displaySlot(13);" data-montelena-acode="100002150" data-montelena-asn="2"><span class="item_014">브랜드패션</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_1"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 3});AuctionBestBiz.displaySlot(1);" data-montelena-acode="100002150" data-montelena-asn="3"><span class="item_001">패션의류</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_2"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 4});AuctionBestBiz.displaySlot(2);" data-montelena-acode="100002150" data-montelena-asn="4"><span class="item_002">신발/잡화</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_3"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 5});AuctionBestBiz.displaySlot(3);" data-montelena-acode="100002150" data-montelena-asn="5"><span class="item_003">화장품</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_4"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 6});AuctionBestBiz.displaySlot(4);" data-montelena-acode="100002150" data-montelena-asn="6"><span class="item_004">식품</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_5"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 7});AuctionBestBiz.displaySlot(5);" data-montelena-acode="100002150" data-montelena-asn="7"><span class="item_005">출산/유아동</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_6"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 8});AuctionBestBiz.displaySlot(6);" data-montelena-acode="100002150" data-montelena-asn="8"><span class="item_006">가구/침구</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_7"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 9});AuctionBestBiz.displaySlot(7);" data-montelena-acode="100002150" data-montelena-asn="9"><span class="item_007">생활/주방</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_8"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 10});AuctionBestBiz.displaySlot(8);" data-montelena-acode="100002150" data-montelena-asn="10"><span class="item_008">도서/취미</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_9"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 11});AuctionBestBiz.displaySlot(9);" data-montelena-acode="100002150" data-montelena-asn="11"><span class="item_009">가전/디지털</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_10"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 12});AuctionBestBiz.displaySlot(10);" data-montelena-acode="100002150" data-montelena-asn="12"><span class="item_010">컴퓨터</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_11"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 13});AuctionBestBiz.displaySlot(11);" data-montelena-acode="100002150" data-montelena-asn="13"><span class="item_011">스포츠/자동차</span></a></li>
+							<li class="swiper-slide nav_item" id="bestGroup_12"><a href="javascript:SetChannelCode('0C5E');" onclick="javascript:pvprofiler.sendEvt('click','100002150','utility', {'ASN': 14});AuctionBestBiz.displaySlot(12);" data-montelena-acode="100002150" data-montelena-asn="14"><span class="item_012">상품권/여행</span></a></li>
+					    </ul>
+                        <a class="btn prev bestbt" href="javascript:;">이전</a>
+                        <a class="btn next bestbt" href="javascript:;">다음</a>
+ 					</div>
+				</div>
+				<div  id="touchSlider_best"  class="touchSlider-box">
+					<div class="touchSlider" id="bestItemList"></div>
+				</div>
+				<div class="ban-control">
+					<a class="prev bestbt2" id="btnBestPrev" href="javascript:;" onclick="javascript:AuctionBestBiz.prevItems();">이전</a>
+					<a class="next bestbt2" id="btnBestNext" href="javascript:;" onclick="javascript:AuctionBestBiz.nextItems();">다음</a>
+				</div>
+			</div>
+			<!-- 옥션 Best -->
+
+			<!-- 추천 기획전 -->
+			<div class="hp_thema">
+				<div class="event_tit">추천 기획전</div>
+				<!-- //딜카드 -->
+				<div class="item_list_type1">
+				    <span class="pnum" style="display:none;"></span>
+				    <a class="prev themabt" href="javascript:;">이전</a>
+					<a class="next themabt" href="javascript:;">다음</a>
+					<div id="touchSlider_thema_1" class="touchSlider-box">
+                        <div class="touchSlider" style="width: 980px; overflow: visible;" id="themeList">
+                            <ul>
+						    </ul>
+                            <ul>
+						    </ul>
+                        </div>
+
+						
+                        
+					</div>
+				</div>
+				<!-- //딜카드 -->
+			</div>
+			<!-- 추천 기획전 -->
+
+			<!-- //관심상품추천 -->
+			<!--<div class="hp_mystyle" style="display:none">
+				<div class="mystyle_title">관심상품추천</div>
+
+				
+				<div id="dRVIPersonalRecommend" class="hp_showcase type_04"></div>
+			</div>-->
+			<!-- //관심상품추천 -->
+
+			<!-- 광고 -->
+			<div class="hp_bot_ad">
+				<div class="ad_banner js-display-ad" id="divBrandAd37" data-display-ad="9000000037" onclick="javascript:pvprofiler.sendEvt('click','100002153','link', {});"  data-montelena-acode="100002153"></div>
+				<div class="chance_ad">
+                    <div class="tit_area">
+						<h3 class="sub_title">찬스 쇼핑</h3>
+						<div class="ad_i ad_mark_wrap">
+							<img src="http://pics.auction.co.kr/renewal/lp/icon_ad2.gif" alt="광고" title="광고" class="ad_btn" />
+							<div class="ad_layer" style="display: none;">													
+								<div class="cont"><strong>찬스쇼핑이란?</strong>찬스쇼핑 광고를 구매한 상품입니다.</div>
+								<span class="icon_arrow">화살표</span>
+								<a onclick="this.parentNode.style.display = 'none'; return false;"><span class="ad_layer_close">닫기</span></a>
+							</div>
+						</div>
+					</div>
+					<div id="TAC_AD_ZONE28"></div>
+				</div>
+				<div class="chance_item">
+                    <div class="tit_area">
+						<h3 class="sub_title">찬스 아이템</h3>
+						<div class="ad_i ad_mark_wrap">
+							<img src="http://pics.auction.co.kr/renewal/lp/icon_ad2.gif" alt="광고" title="광고" class="ad_btn">
+							<div class="ad_layer" style="display: none;">													
+								<div class="cont"><strong>찬스 아이템이란?</strong>찬스 아이템 광고를 구매한 상품입니다.</div>
+								<span class="icon_arrow">화살표</span>
+								<a onclick="this.parentNode.style.display = 'none'; return false;"><span class="ad_layer_close">닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 광고 -->
+			<div class="hp_bot_partner">
+				<div class="hp_bot_partner_title">옥션 파트너스 <span>믿을 수 있는 옥션 파트너의 상품, 옥션에서 간편하게 쇼핑하세요</span></div>
+				<div class="partner_con">
+				</div>
+			</div>
+			<!--미니맵, 서비스 알림-->
+			<div class="hp_bot_corner">
+				<div class="hp_bot_corner_title">옥션 서비스 전체 보기</div>
+				<div class="module-wrap-wide">
+				<div class="module-row modrow-links">
+					<dl class="module mod-pop-corners" id="dlMinimap1">
+						<dt class="mod-title">인기코너</dt>	
+						</dl>
+						<dl class="module mod-fashion-beauty" id="dlMinimap2">
+							<dt class="mod-title type1">패션 뷰티코너</dt>
+						</dl>
+						<dl class="module mod-food-children" id="dlMinimap3">
+							<dt class="mod-title type2">식품 유아동코너</dt>
+						</dl>
+						<dl class="module mod-theme" id="dlMinimap4">
+							<dt class="mod-title type3">테마코너</dt>	
+						</dl>
+						<dl class="module mod-comm-contents" id="dlMinimap5">
+							<dt class="mod-title type4">커뮤니티/컨텐츠</dt>
+						</dl>
+						<dl class="module mod-member" id="dlMinimap6">
+							<dt class="mod-title type5">멤버십서비스</dt>
+						</dl>
+					</div>
+					<div class="mod-links">
+						<dl class="link-list">
+							<dt class="link-label">중소셀러코너</dt>
+							<dd class="link"><a href="http://corners.auction.co.kr/corner/SohoZone.aspx?frm=hpvtc" onclick="javascript:pvprofiler.sendEvt('click','100002157','link', {});" data-montelena-acode="100002157">중소셀러 전용관 (중소셀러 신상품 코너)</a></dd>
+						</dl>
+						<dl class="link-list">
+							<dt class="link-label">옥션만의 혜택</dt>
+							<dd class="link"><a onclick="javascript:pvprofiler.sendEvt('click','100002157','',{});" href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AK26&amp;cc=AK26&amp;next2=10&amp;next=?txtMD=07401FFC7C" data-montelena-acode="100002157">카드사 로고</a></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="module-wrap">
+					<span class="link_new-service">옥션의 신규서비스</span>
+					<a href="javascript:;" id="noticeBanner"><img class="lazy" src="http://pics.iacstatic.co.kr/common/blank.gif" width="185" height="186" alt="광고배너" /></a>
+					<a class="prev" href="javascript:;" onclick="javascript:noticeBannerBiz.prevBanner();">이전</a>
+					<a class="next" href="javascript:;" onclick="javascript:noticeBannerBiz.nextBanner();">다음</a>
+					<dl class="module mod-announcements">
+						<dt>공지사항<a title="공지사항" onclick="javascript:pvprofiler.sendEvt('click','100002158','link',{});"  href="http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AJ26&amp;cc=AJ26&amp;next=http://member.auction.co.kr/help/Notice.aspx" class="mod-more" data-montelena-acode="100002158">더보기</a></dt>
+						<dd><a onclick='log(this);pvprofiler.sendEvt('click','100002158','link', {'ASN': 1});' data-montelena-acode='100002158' data-montelena-asn='1' href='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AJ26&cc=AJ26&next=http://member.auction.co.kr/help/Notice.aspx?seqno=13740'>[점검] 옥션 사이트 이용 일시 중단</a></dd><dd><a onclick='log(this);pvprofiler.sendEvt('click','100002158','link', {'ASN': 2});' data-montelena-acode='100002158' data-montelena-asn='2' href='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AJ26&cc=AJ26&next=http://member.auction.co.kr/help/Notice.aspx?seqno=13733'>[안내] 개인정보처리방침 변경 안내</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div><!--<div id="Div1" role="main">-->
+
+		<div class="footer" role="contentinfo">
+			<div class="footer-block footer-block-cs">
+				<div class="footer-container">
+					<h2>고객센터 및 분쟁처리</h2>
+					<div class="footer-section footer-section-first">
+						<div class="footer-section-inner">
+							<h3>고객센터</h3>
+							<address>
+								<ul>
+									<li>Tel : <strong>1588-0184</strong> (평일 09:00~18:00)</li>
+									<li>스마일클럽 &amp; VVIP : <strong>1522-8900</strong> (365일 09:00~18:00)</li>
+									<li>경기도 부천시 원미구 부일로 223 (상동) 투나빌딩 6층</li>
+									<li>Fax : 02-589-8829<span class="bar"></span>Mail : <a href="https://memberssl.auction.co.kr/help/Mail.aspx?topCode=M&cCode=M0711">information@corp.auction.co.kr</a></li>
+								</ul>
+							</address>
+						</div>
+					</div>
+					<div class="footer-section ebay_info">
+						<div class="footer-section-inner">
+							<h3>(주)이베이코리아</h3>
+						<ul>
+								<li>서울시 강남구 테헤란로 <span class="alpha-num">152</span> (역삼동 강남파이낸스센터)</li>
+								<li>대표이사 : 변광윤</li>
+								<li>사업자등록번호 : <span class="alpha-num">220-81-83676</span></li>
+								<li>통신판매업신고 : 강남 <span class="alpha-num">10630</span>호 
+									<a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208183676" class="footer-button" target="_blank" >								
+										<img class="lazy" src="http://pics.iacstatic.co.kr/common/blank.gif" data-original="http://pics.iacstatic.co.kr/common/footer/button_check_biz_info.png" alt="사업자정보 확인" />
+									</a>
+								</li>
+						</ul>
+						</div>
+					</div>
+					<div class="footer-section">
+						<div class="footer-section-inner">
+							<h3><a href="http://member.auction.co.kr/help/InLineHelp.aspx?newhelpcode=1&amp;code=I02042" onclick="newHelpPop('I02042'); return false;">전자금융 분쟁처리</a></h3>
+							<ul>
+								<li class="inline alpha-num">Tel : 1588-0184</li>
+								<li class="inline alpha-num">Fax : 02-589-8833</li>
+								<li class="alpha-num">Mail : <a href="mailto:mediation@corp.auction.co.kr">mediation@corp.auction.co.kr</a></li>
+								<li class="footer-links">
+									<a class="footer-link" href="#" onclick="openLayer('layer-complainprocess__wrap');return false">분쟁처리절차&gt;</a>
+									<!-- .layer-contentspromotion__wrap -->
+									<div id="layer-complainprocess__wrap" class="layer-footerdimmed__wrap" style="display:none">
+										<div class="layer-footerdimmed layer-complainprocess">
+											<div class="layer-footerdimmed__inner">
+												<h4 class="layer-footerdimmed__title">고객 불만/불편사항 처리절차 안내</h4>
+												<div class="layer-footerdimmed__content">
+													<p class="layer-complainprocess__description"><strong>옥션은 거래 과정에서 발생하는 판매자와의 분쟁</strong> 또는 <strong>옥션이 제공하는 서비스에 대한 불만을 신속, 공정하게 해결</strong>하기 위해 고객님의 목소리에 귀를 기울이고 분쟁해결을 위해 최선을 다하겠습니다.</p>
+													<p class="layer-complainprocess__diagram sprite-footer">
+														<span class="forA11y">처리절차 - 고객문의 접수, 문의내용 분석, 문의해결, 처리결과 안내, 서비스 개선 </span>
+													</p>
+													<strong class="layer-complainprocess__list-title">처리절차 및 결과 안내, 서비스 개선</strong>
+													<ol class="layer-complainprocess__list">
+														<li>1. 고객 문의에 대한 ‘판/구매자’, ‘정책’, ‘시스템’ 내용을 분석합니다.</li>
+														<li>2. 문의 일로부터 3영업일 이내 처리결과를 고객에게 안내합니다.</li>
+														<li>3. 문의 분석 내용에 따라 추가 확인이 필요한 경우 10영업일 이내 처리결과 또는 향후 진행상황을 고객에게 안내합니다.</li>
+														<li>4. 문의 유형에 따라 처리 해결이 10영업일 이상 소요될 수 있습니다.</li>
+														<li>5. 사이트 개선, 정책 개선, 판매자 서비스 등을 개선합니다.</li>
+													</ol>
+													<strong class="layer-complainprocess__list-title">옥션 고객센터 이용 안내</strong>
+													<ol class="layer-complainprocess__list">
+														<li>1. 대표전화 : 1588-0184</li>
+														<li>2. 상담가능시간 : 평일 오전 9시 ~ 오후 6시 (공휴일 휴무)</li>
+														<li>3. 메일 문의 : 옥션 &gt; 고객센터 &gt; <a href="https://memberssl.auction.co.kr/help/mail.aspx?topCode=M&seller=AUCTION_HELP&seqno=" target="_blank" title="새창">1:1 문의하기</a></li>
+													</ol>
+												</div>
+												<button class="button-layerclose sprite-footer" onclick="closeLayer('layer-complainprocess__wrap')">닫기</button>
+											</div>
+										</div>
+										<div class="dimmed"></div>
+									</div>
+									<!-- // .layer-contentspromotion__wrap -->
+								</li>
+								<li class="footer-links"><a class="footer-link" href="http://www.auction.co.kr/IScenter/securitycenterguide_1_1.html" onclick="fn_WindowPopup('http://member.auction.co.kr/SecurityCenter/index.aspx',960,650);return false;">안전거래센터&gt;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-block">
+				<div class="footer-container">
+					<div class="footer-section footer-section-first">
+						<div class="footer-section-inner">
+							<h2>회사소개</h2>
+							<ul class="footer-link-list footer-2col-list">
+								<li><a href="https://recruit.ebaykorea.com/">채용정보</a></li>
+								<li class="col_line2"><a href="http://adcenter.auction.co.kr/BrandAd/" target="_blank">브랜드 광고센터</a></li>
+								<li><a href="http://member.auction.co.kr/membership/signup/provision1.aspx">이용약관</a></li>
+								<li class="col_line2"><a href="http://adcenter.auction.co.kr/" target="_blank">판매자 광고센터</a></li>
+								<li><a href="http://member.auction.co.kr/Membership/signup/Finance.aspx">전자금융거래약관</a></li>
+								<li class="col_line2"><a href="http://www.ebayedu.com/" target="_blank">판매자 교육센터</a></li>
+								<li><a href="http://member.auction.co.kr/Membership/Signup/Privacy.aspx"><strong>개인정보 처리방침</strong></a></li>
+								<li class="col_line2"><a href="http://www.esmplus.com/Home/Home/#HTDM355" target="_blank">스토어관리</a> / <a href="http://developer.auction.co.kr" target="_blank">Open API</a></li>
+								<li><a href="http://member.auction.co.kr/ISCenter/securitycenterguide_1_1.aspx">보안센터</a></li>
+								<li class="col_line2"><a href="https://memberssl.auction.co.kr/vero/WhatisVero.aspx" target="_blank" >VeRO Program</a></li>
+						</ul>
+						</div>
+					</div>
+					<div class="footer-section safety">
+						<div class="footer-section-inner">
+							<h2>소비자 보호</h2>
+							<ul class="footer-link-list muted">
+								<li><a href="http://securitycenter.auction.co.kr/apps/sub/?code=B0104" onclick="fn_WindowPopup('http://through.auction.co.kr/common/SafeRedirect.aspx?cc=0E0D&next=http://securitycenter.auction.co.kr/apps/sub/?code=B0104',960,650);return false;">저작권침해신고</a></li>
+								<li><a href="http://promotion.auction.co.kr/promotion/MD/eventview.aspx?txtMD=05020800E3" target="_blank">윤리경영</a></li>
+								<li><a href="http://www.auction.co.kr/OpenMarketAgreement.html" target="_blank">소비자보호를 위한 오픈마켓 자율준수규약</a></li>
+								<li><a href="http://www.safetykorea.kr" target="_blank"><span class="alpha-num">safety korea</span> <small>(제품안전인증검색 불법제품 신고센터)</small></a></li>
+								<li><a href="http://cyberbureau.police.go.kr/index.do" target="_blank">경찰청 사이버안전국</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-section">
+						<div class="footer-section-inner">
+							<h2>인증현황</h2>
+							<ul class="footer-2col-list footer-auth-list muted">
+								<li>
+									<a href="http://script.auction.co.kr/public_html/popup/pop_kisa.html" target="_blank">
+										<img class="footer-auth-logo lazy" src="http://pics.iacstatic.co.kr/common/blank.gif" data-original="http://pics.iacstatic.co.kr/common/footer/logo_pims.gif" alt=""/>
+										<span class="footer-auth-name">
+											개인정보보호<br/>
+											관리체계 인증
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://script.auction.co.kr/public_html/popup/pop_eprivacy.html" target="_blank">
+										<img class="footer-auth-logo lazy" src="http://pics.iacstatic.co.kr/common/blank.gif" data-original="http://pics.iacstatic.co.kr/common/footer/logo_eprivacy.gif" alt="">
+										<span class="footer-auth-name">
+											개인정보보호<br>
+											우수사이트
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://kolsa.or.kr/" target="_blank">
+										<img class="footer-auth-logo lazy" src="http://pics.iacstatic.co.kr/common/blank.gif" data-original="http://pics.iacstatic.co.kr/common/footer/logo_kolsa.gif" alt="">
+										<span class="footer-auth-name">
+											온라인쇼핑<br>
+											협회회원
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.safetykorea.kr/" target="_blank">
+										<img class="footer-auth-logo lazy" src="http://pics.iacstatic.co.kr/common/blank.gif" data-original="http://pics.iacstatic.co.kr/common/footer/logo_safetykorea.gif" alt="">
+										<span class="footer-auth-name">
+											제품안전<br>
+											협력매장
+										</span>
+									</a>
+								</li>
+                                <li>
+									<a href="javascript:;" id="hrefSafeGoods">
+										<img class="footer-auth-logo lazy" src="http://pics.auction.co.kr/common/footer/logo_system.gif" data-original="http://pics.auction.co.kr/common/footer/logo_system.gif" alt="위해상품차단시스템" />
+										<span class="footer-auth-name system">
+											위해상품차단시스템<br>
+											운영매장
+										</span>
+									</a>
+								</li>
+						    </ul>
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="footer-block footer-block-copyright">
+				<div class="footer-container">
+					<p>㈜ 이베이코리아 사이트의 상품/판매자/쇼핑 정보, 콘텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등에 의하여 엄격히 금지됩니다. <a href="#" class="link--emphasis" onclick="openLayer('layer-contentspromotion__wrap');return false">콘텐츠산업 진흥법에 따른 표시</a></p>
+					<!-- .layer-contentspromotion__wrap -->
+					<div id="layer-contentspromotion__wrap" class="layer-footerdimmed__wrap" style="display:none">
+						<div class="layer-footerdimmed layer-contentspromotion">
+							<div class="layer-footerdimmed__inner">
+								<h4 class="layer-footerdimmed__title">콘텐츠산업 진흥법에 따른 표시</h4>
+								<div class="layer-footerdimmed__content">
+									<strong class="layer-contentspromotion__content-title"><span class="layer-contentspromotion__icon sprite-footer"></span>콘텐츠산업 진흥법에 따른 표시</strong>
+									<ol class="layer-contentspromotion__list">
+										<li>1. 콘텐츠의 명칭 : 상품/판매자/쇼핑정보</li>
+										<li>2. 제작연월일 : 개별콘텐츠의 개시일 또는 갱신일</li>
+										<li>3. 제작자 : (주)이베이코리아 및 개별판매자</li>
+									</ol>
+									<p class="layer-contentspromotion__discription">(주)이베이코리아 사이트 상의 콘텐츠는 <strong>‘콘텐츠산업 진흥법’</strong>에 따라<br>개시일 또는 갱신일로부터 5년간 보호됩니다.</p>
+									<p class="layer-footerdimmed__bts">
+										<button class="layer-footerdimmed__button-close" onclick="closeLayer('layer-contentspromotion__wrap')">닫기</button>
+									</p>
+								</div>
+								<button class="button-layerclose sprite-footer" onclick="closeLayer('layer-contentspromotion__wrap')">닫기</button>
+							</div>
+						</div>
+						<div class="dimmed"></div>
+					</div>
+					<!-- // .layer-contentspromotion__wrap -->
+					<p><em>옥션은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 옥션은 상품 &middot; 거래정보 및 거래에 대하여 책임을 지지 않습니다.</em></p>
+					<p class="footer-copyright">Copyright &copy; <strong>eBay Korea Co., Ltd.</strong> All rights reserved.</p>
+				</div>
+				</div>
+			</div>
+		<!-- /#footer -->
+  </div><!-- <div id="wrap"> -->
+	<div id="hidvFooterNotice"></div>
+  <img id="homesearchlog" width="0" height="0" alt="" src="http://pics.iacstatic.co.kr/common/blank.gif" />
+	<!-- 사이트 체크를 위한 검증어 -->
+	<div style="display: none">IAC Core</div>
+     
+	<div class="pdp_popup_wrap" id="pdpPopup" style="position: absolute; top: 421px; left: 48px; z-index: 1000002; display: none;">
+		<iframe id="pdpPopupIframe" width="974" height="850" title="" frameborder="0" scrolling="no" src=""></iframe>
+		<div class="pdp_popup_close">
+			<a href="javascript:;" onclick="fullscreenClose('pdpPopup'); return false;">닫기</a>
+		</div>
+	</div>
+	<div class="bnr_toast" id="hdivSlideBannerContainer">
+	</div>
+	<div id="coreSitemap" class="core_sitemap" style="z-index: 1000002; display: none;"></div>
+	<div id="hdivDummy" style="width:0px; height:0px; position:absolute; left:-100000px;"></div>
+	<script type="text/javascript" src="http://script.auction.co.kr/common/jquery.js"></script>
+    <script type="text/javascript" src="http://script.auction.co.kr/pc/style/js/common.js"  charset="euc-kr"></script>
+
+    <script type="text/javascript">
+        document.domain = "auction.co.kr";
+        var isAppleDevice = false;
+        if (navigator.userAgent.toLowerCase().indexOf('iphone') > 0 || navigator.userAgent.toLowerCase().indexOf('ipad') > 0) {
+  	        isAppleDevice = true;
+        }
+
+        AUCTION.UI.COMMON.renderOldIeUpdateNotiLayer({   
+  	        targetElement: $('body'), // append할 대상 엘리먼트   
+  	        cookieName: 'auction_old_browser_user_key', // 사용할 쿠키 명   
+  	        hideTerm: 6, // 오늘 + hideTerm 일 이후 재노출   
+  	        maxIeVersion: 8, // IE 분기 버전, 해당 값 이하로 분기처리   
+  	        landingUrl: 'https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads' // update URL 
+        });
+
+    </script>
+	<script type="text/javascript" src="http://script.auction.co.kr/homepage/HomeJson.js"></script>
+	
+	<script type="text/javascript">
+		var strSearchDomain = "http://search.auction.co.kr";
+	</script>
+    <script type="text/javascript" src="http://script.auction.co.kr/ad/HomeMainAdData.js"></script>
+	<script type="text/javascript" src="http://script.auction.co.kr/homepage/Home.min.js"></script>
+    <script type="text/javascript" src="http://script.auction.co.kr/Common/library/swiper.min.js"></script>
+    <script type="text/javascript" src="http://script.auction.co.kr/pc/style/js/new_hp.js "></script>
+
+	<script type="text/javascript" src="http://script.auction.co.kr/ad/HomeMainAdCommon.js"></script>
+	<script type="text/javascript" src="http://script.auction.co.kr/common/pds_iac.js"></script>
+	<script type="text/javascript">
+		BaroAuction.Init();
+		var headerType = "D";
+		AuctionHeader.Init(headerType);
+
+		// 홈 띠배너 PLCC
+		var plccURL = "https://spweb.auction.co.kr/ko/plcc/intro/index?source=ebaykorea&medium=A_P_WEB_H&userType=";
+
+		if (AuctionHeader.loginCheck) {
+			var memInfo = Home.getCookieInfo();
+			$("div.usermsg").html("<strong><a href=\"http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0C80&cc=0C80&next=https://memberssl.auction.co.kr/membership/MyInfo/MyInfo.aspx\">" + memInfo.MembName + "</a></strong><em><a href='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=0C80&cc=0C80&next=http://member.auction.co.kr/Credit/MyCreditGrade.aspx'>(" + memInfo.Grade + ")</a>님</em>");
+
+			var strTag;
+			strTag = "<a href='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH42&cc=AH42&next=http://member.auction.co.kr/Authenticate/Logout.aspx'>로그아웃</a>";
+			$("#headerloginveiw").html(strTag);
+
+			var $memberinfoA = $('#headermemberinfo').find('a');
+			$memberinfoA.attr('href', $memberinfoA.attr('href').replace(/0C86/g, 'AH34'));
+
+			// 홈 띠배너 - PLCC URL에 userType 추가
+			plccURL += memInfo.UserType;
+		} else {
+			var strTag;
+
+			strTag = "<a href='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH41&cc=AH41&next=http://member.auction.co.kr/Authenticate/'>로그인</a>";
+			$("#headerloginveiw").html(strTag);
+
+			strTag = "<a onclick='log(this)' href='http://through.auction.co.kr/common/SafeRedirect.aspx?fcc=AH33&cc=AH33&next=https://memberssl.auction.co.kr/Membership/Signup/ChoiceMemberType.aspx?frm=hometab'>회원가입</a>";
+			$("#headermemberenter").html(strTag);
+			$("#headermemberenter").show();
+		}
+
+		$("#plccBanner").attr("href", plccURL);
+	</script>
+	<script type="text/javascript">
+		$.when(
+				$.getScript("http://script.auction.co.kr/common/HeaderJson.js"),
+				$.getScript("http://script.auction.co.kr/common/HeaderCategoryInfo.js"),
+				$.getScript("http://script.auction.co.kr/common/HeaderCategoryOtherInfo.js"),
+				$.Deferred(function (deferred) {
+    			$(deferred.resolve);
+				})
+		).done(function () {
+
+			Home.InitializeHeaderCategory();
+			minimapBiz.display(MiniTabs); // 미니맵
+			// 상단 띠배너
+			try {Home.DrawBandBanner();} catch (ex) { SetSlotErrorLog("Home.DrawBandBanner", ex); }
+		});
+
+
+		var URL_BAROAUCTION = "http://eventv2.auction.co.kr/Event3/Stable/BaroAuction/BaroAuction.html";
+		var BLANK_URL = "http://pics.iacstatic.co.kr/common/blank.gif";
+
+		$("a.lazy").lazyload();
+		$("img.lazy").lazyload();
+
+		var rviRelateItemSlotInited = false;
+
+		
+	</script>
+	<script type="text/javascript">
+		TopSearchBox.SetSearchBoxClear();
+		try { Suggest.gApplySuggest = true; if (Suggest.gApplySuggest == true) { Suggest.AddInputEventHandlerASS(); Suggest.gPositionElementID = "txtKeyword"; } } catch (ex) { }
+	</script>
+	<script type="text/javascript">
+		if (typeof HomeRVIBiz != "undefined") {
+			HomeRVIBiz.resetRecommendSlot();
+		}
+		// footer 팝업
+		function fn_WindowPopup(url, width, height) {
+			window.open(url, "", "title=no,menubar=no,location=no,toolbars=no,scroll=no,status=yes,width=" + width + ",height=" + height + ",resizable=no");
+		}
+		// 태블릿을 포함한 모바일 디바이스에서 접근 한 경우 모바일 버전으로 보기 노출(태블릿 앱 내부에서 로드된 경우도 포함)
+		if (uaControl.util.isShowMobileVersionView()) {
+			$('div.footer-block-copyright').after('<div class="footer-mobile-version"><a href="' + uaControl.consts.mobileHomeMainUrl + '" onclick="javascript:uaControl.goMobileVersionUrl(\'' + uaControl.consts.mobileHomeMainUrl + '\'); return false;"><span>모바일 버전으로 보기</span></a></div>');
+		}
+		function getParameterByName(name) {
+			name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	        results = regex.exec(location.search);
+			return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+		// footer 분쟁처리절차, 콘텐츠산업 진흥법에 따른 표시
+		function openLayer(param) {
+			$('#' + param).show();
+		}
+	</script>
+  <script type="text/javascript">
+  	$(document).ready(function () {
+  		TopSearchBox.SetSearchBoxClear();
+
+  		if (typeof Home != "undefined") {
+  			//Header 바록옥션
+				try {
+  				Home.DrawCorner('baroauction');
+				} catch (ex) { SetSlotErrorLog("Home.DrawCorner('baroauction')", ex); }
+  		}
+
+			flashSharedObject.printSharedObject();
+			$.when(
+					$.getScript("http://script.auction.co.kr/listing/PersonalRecommendService.js"),
+					$.getScript("http://script.auction.co.kr/sojourn/SojournService.js"),
+					$.getScript("http://script.auction.co.kr/PDS/PdsService.js"),
+					$.Deferred(function (deferred) {
+    				$(deferred.resolve);
+					})
+				).done(function () {
+
+					var smileClubLayer = {
+						display: function () {
+							$("#core_gnb div.layout_left ul li a.primary_4").after("<span class=\"bnr_smileclub_premium\">현명한 쇼핑 습관</span>");
+						}
+					}
+					if (AuctionHeader.loginCheck && PdsService.GetSmileClub != null)
+					{
+						var isNotMember = true;
+					  PdsService.GetSmileClub(function (data) {
+					    if (data != null && data.IsSuccess && data.Data != null)
+					    {
+					        var memberType = data.Data.smileclub.type;
+					        if (data.Data.smileclub.from.length != 8 || data.Data.smileclub.to.length != 8)
+					        {
+					        	smileClubLayer.display();
+					        	return;
+					        }
+					        var dtNow = new Date();
+					        var fromDate = new Date(parseInt(data.Data.smileclub.from.substring(0, 4)), parseInt(data.Data.smileclub.from.substring(4, 6)) - 1, parseInt(data.Data.smileclub.from.substring(6)));
+					        var toDate = new Date(parseInt(data.Data.smileclub.to.substring(0, 4)), parseInt(data.Data.smileclub.to.substring(4, 6)) - 1, parseInt(data.Data.smileclub.to.substring(6)));
+					        if (fromDate > dtNow || dtNow > toDate)
+					        {
+					        	smileClubLayer.display();
+					        	return;
+					        }
+					        	
+					        if (memberType == 1) {
+					        	isNotMember = false;
+					        	$("div.usermsg").prepend(" <span class=\"bnr_smileclub_use free_use\">스마일클럽 무료 이용중</span>");
+					        }
+					        else if (memberType == 2) {
+					        	isNotMember = false;
+					        	$("div.usermsg").prepend(" <span class=\"bnr_smileclub_use mem_use\">스마일클럽 회원입니다</span>");
+					        }
+					    }
+					    if (isNotMember)
+					    	smileClubLayer.display();
+					  });
+					 
+					}
+					else {	// 비로그인
+						smileClubLayer.display();
+					}
+					
+					    
+
+					try {
+						HomeSuggestSlot.displaySlot("dSuggestSlot"); // 마이스타일 하단 최근본상품
+					} catch (ex) { SetSlotErrorLog("HomeSuggestSlot.displaySlot", ex); }
+				});
+
+  	         $.when(
+                    $.getScript("http://script.auction.co.kr/common/footer_safeGoods.js"),
+					$.Deferred(function (deferred) {
+					    $(deferred.resolve);
+					})
+				).done(function () {
+
+				    document.getElementById("hrefSafeGoods").onclick = function () {
+				        SafeGoods.Show();
+				    }
+				});
+
+  	    if (typeof Home != "undefined") {
+  	        try {
+  	            Home.DrawCorner('affiliateshop'); // 옥션 파트너
+  	        } catch (ex) { SetSlotErrorLog("Home.DrawCorner('affiliateshop')", ex); }
+  	    }
+
+			
+
+
+  	    var frm = document.createElement("iframe");
+  	    frm.src = "http://member.auction.co.kr/Authenticate/FrameLogin.aspx";
+  	    frm.style.width = "20px";
+  	    frm.style.height = "2px";
+  	    document.body.appendChild(frm);
+
+  	});
+  	
+  	if (window !== 'undefined') {
+  		window.onchange = function () { };
+  	}
+
+  	$(window).load(function () {
+  		if (uaControl.util.isTablet()) {
+  			$("#ibody").addClass("tablet");
+  		}
+
+  		if (typeof (layerAd) == "function") layerAd();
+
+            //2016-08-09 by mns820 해피쪽지 스크립트 실행이 되지 않아 방식 변경
+  	        //$.cachedScript("http://script.auction.co.kr/common/happynote.js?v=130129_172333", false); 
+  	        $.cachedScript("http://script.auction.co.kr/common/happynote_function.js?v=130130_170944", true).done(function () {
+  	            if (myHappyNote.CheckLogin() == true) {
+  	                
+  	                var frm = document.createElement("iframe");
+  	                frm.id = "ifrmHappyNoteView";
+  	                frm.src = strMemberDomain + "/MyAuction/HappyNoteView.aspx?WeblogYN=N&type=memberinfo";
+  	                frm.style.width = "0px";
+  	                frm.style.height = "0px";
+  	                frm.frameborder = "0";
+  	                frm.scrolling = "no";
+  	                frm.allowtransparency = "yes";
+  	                document.body.appendChild(frm);
+  	            }
+  	            else {
+
+  	                var frm = document.createElement("iframe");
+  	                frm.id = "ifrmHappyNoteView";
+  	                frm.src = "";
+  	                frm.style.width = "0px";
+  	                frm.style.height = "0px";
+  	                frm.frameborder = "0";
+  	                frm.scrolling = "no";
+  	                frm.allowtransparency = "yes";
+  	                document.body.appendChild(frm);
+  	                ProxyTMClass.CallbackView("");
+  	            }
+  	        });
+  	        $.cachedScript("http://script.auction.co.kr/common/ie6upgrade.js", true).done(function ()
+			{ 
+				var version = ie6upgrade.getIEVersion();
+				if (version <= 0 || version >= 7 )
+					return;
+				var announcePopup;
+				announcePopup = window.open("http://www.auction.co.kr/popup/IEPopUp.html", "announce", "title=no,menubar=no,location=no,toolbars=no,scroll=no,status=yes,width=600,height=480,resizable=no");
+		    
+			
+			 });
+			$.cachedScript("http://script.auction.co.kr/common/help.js", false);
+  		    $.cachedScript("http://script.auction.co.kr/homepage/log.js", false).done(function (script, textStatus) { window.onerror = Logger.ErrorHandler;; });
+
+  		rpmAjaxCall("l");
+
+  	});
+
+	var img = document.createElement("img");
+	img.src = "https://www.facebook.com/tr?id=322230407984978&ev=PixelInitialized";
+  </script>
+
+    <script type='text/javascript' src='http://script.auction.co.kr/common/ats_iac.js'></script>
+    <script type='text/javascript' src='http://script.auction.co.kr/common/uuid.js'></script>
+    <script type='text/javascript' src='http://script.auction.co.kr/Ad/DACommon.js'></script>
+	<script type='text/javascript' charset='utf-8' src='http://script.auction.co.kr/mobile/style/js/common/util/viewability.js'></script>
+	<script type='text/javascript' charset='utf-8' src='http://script.auction.co.kr/mobile/style/js/common/util/load-display-ads.js?pagetype=1'></script>
+
+    <script type="text/javascript">
+        var MarketingData;
+        var DAWideData34, DAWideData35;
+        var DAWideData34LodingComplete = false, DAWideData35LodingComplete = false;   // WideData를 로드하면 1,, 그전까지는 로딩화면이 나오게 처리(0), 에러 발생시 -1
+
+	    var getDABanners = function (reqNo) {
+	        if (window.daAdController === undefined || daAdController === null) return;
+
+	        var request = {
+	            reqNo: reqNo,
+	            pageType: daAdController.PageType.MAIN,
+	            context: this,
+	            successCb: function (banners) {
+	                if (banners === undefined || banners === null || banners.length == 0) {
+	                    return;
+	                }
+
+	                if (reqNo == 9000000034) {
+	                    
+	                    // DAWide34 처리
+	                    DAWideData34 = banners;
+	                    DAWideData34LodingComplete = 1;
+	                    WideBannerBiz.refreshAdBannerImage(5);
+	                } else if (reqNo == 9000000035) {
+	                    
+	                    // DAWide35 처리
+	                    DAWideData35 = banners;
+	                    DAWideData35LodingComplete = 1;
+	                    WideBannerBiz.refreshAdBannerImage(6);
+	                }
+	            },
+	            errorCb: function (err) {
+	                if (reqNo == 9000000034) {
+	                    DAWideData34LodingComplete = -1;
+	                    WideBannerBiz.refreshAdBannerImage(5);
+	                } else if (reqNo == 9000000035) {
+	                    DAWideData35LodingComplete = -1;
+	                    WideBannerBiz.refreshAdBannerImage(6);
+	                }
+	            }
+	        };
+
+	        daAdController.getDABanners(request);
+	    };
+
+
+	    getDABanners(9000000034);
+	    getDABanners(9000000035);
+	            
+    </script>
+    
+	<div id="slotErrorLog" style="color:#FFFFFF;"></div>
+	<div id="hdivAffHeader">
+	<script type ="text/javascript" language ="javascript">
+		if (Affiliate.isAffiliate) {
+			Affiliate.PrintAffiliateHeader();
+			setWomForTypewritingUser();
+		}
+	</script>
+	</div>
+    <!--//happyfixed-->
+	<div id="min_fixed">
+        <script type="text/javascript" src="http://script.auction.co.kr/common/happynote.js?v=130129_172333"></script>
+	</div><!-- Happy Fixed-->
+</body>
+</html>

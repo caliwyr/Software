@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="SanMarinoRTV.sm" status="online",San Marino RTV (720p)
+https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch01/_definst_/smil:ch-01.smil/chunklist_b1692000_slita.m3u8

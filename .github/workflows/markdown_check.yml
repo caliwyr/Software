@@ -1,0 +1,21 @@
+# workflow to run the acme2certifier unittest suite
+
+name: Markdown Link check
+
+on:
+  push:
+  pull_request:
+    branches: [ devel ]
+  schedule:
+    - cron:  '0 2 * * 6'
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+    - name: Lint changelog file root
+      uses: avto-dev/markdown-lint@v1
+      with:
+        args: '*.md'

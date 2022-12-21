@@ -1,0 +1,1358 @@
+
+<!doctype html>
+<html  lang="en">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    
+    <title>DeepL Translator</title>
+
+    <meta name="description" content="Use the free DeepL Translator to translate your texts with the best machine translation available, powered by DeepL’s world-leading neural network technology. Currently supported languages are English, German, French, Spanish, Portuguese, Italian, Dutch, Polish, and Russian." />
+    <link rel="alternate" hreflang="en" href="https://www.deepl.com/en/translator" />
+    <link rel="alternate" hreflang="de" href="https://www.deepl.com/de/translator" />
+    <link rel="alternate" hreflang="fr" href="https://www.deepl.com/fr/translator" />
+    <link rel="alternate" hreflang="es" href="https://www.deepl.com/es/translator" />
+    <link rel="alternate" hreflang="pt-PT" href="https://www.deepl.com/pt-PT/translator" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.deepl.com/pt-BR/translator" />
+    <link rel="alternate" hreflang="it" href="https://www.deepl.com/it/translator" />
+    <link rel="alternate" hreflang="nl" href="https://www.deepl.com/nl/translator" />
+    <link rel="alternate" hreflang="pl" href="https://www.deepl.com/pl/translator" />
+    <link rel="alternate" hreflang="ru" href="https://www.deepl.com/ru/translator" />
+    <link rel="alternate" hreflang="x-default" href="https://www.deepl.com/translator" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no"/>
+    <link rel="icon" type="image/png" href="/img/favicon/favicon_16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/img/favicon/favicon_32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/img/favicon/favicon_96.png" sizes="96x96"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+    <meta name="msapplication-TileColor" content="#042b48"/>
+    <meta name="msapplication-TileImage" content="/img/favicon/tile_144.png"/>
+    <meta name="msapplication-square70x70logo" content="/img/favicon/tile_small.png"/>
+    <meta name="msapplication-square150x150logo" content="/img/favicon/tile_medium.png"/>
+    <meta name="msapplication-square310x310logo" content="/img/favicon/tile_large.png"/>
+    <meta name="google" content="notranslate"/>
+    <meta property="og:title" content="DeepL Translator" />
+    <meta property="og:description" content="Use the free DeepL Translator to translate your texts with the best machine translation available, powered by DeepL’s world-leading neural network technology. Currently supported languages are English, German, French, Spanish, Portuguese, Italian, Dutch, Polish, and Russian." />
+    <meta property="og:image" content="https://www.DeepL.com/img/favicon/deepl_logo_600_300.png" />
+    <meta property="og:url" content="https://www.DeepL.com/translator" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <script>
+        (function(){
+            var ep;
+            try{ window.localStorage && (ep = JSON.parse(window.localStorage.getItem('dl_ep')||"false")); }catch(e){console.error(e);}
+                            var sToken = (document.cookie.match(/(?:^| )dl_session=([^;]+)/)||[])[1];
+            
+            window.dl_pageState = {
+                v: '20180814',
+                il: 'en',
+                dataUseProhibited: !!(document.cookie||"").match(/(^| )data-use-prohibited=[^;]+/),
+				logoutTarget: '/translator'
+            };
+            if (sToken){
+                dl_pageState.loggedIn = true;
+                dl_pageState.sessionToken = sToken;
+                document.documentElement.classList.add('dl_user_logged_in');
+            } else if (ep){
+                dl_pageState.ep = ep
+                document.documentElement.classList.add('dl_ep');
+            }
+            if (ep||sToken){
+                dl_pageState.pro = true;
+                document.documentElement.classList.add('dl_pro');
+            }
+            if ((document.cookie||"-").match(/^-$|^il=[^;]*$/) && window.localStorage && !window.localStorage.length){
+                window._initialReferrer = ((document.referrer||"").match(/.*?\/\/([^:\/?]+)/) || [])[1] || "";
+                localStorage.setItem('initialReferrer', window._initialReferrer);
+            }
+
+            window.dl_documentReady || (window.dl_documentReady = function(f){ (window.dl_documentReady._callbacks || (window.dl_documentReady._callbacks=[])).push(f); });
+            window.dl_texts = {"pro-home\/subscribeNowButton":"Subscribe now without free trial","pro-home\/freeTrialButton":"Start your free trial","messages\/fieldError.passwordTooShort":"The password should be at least 8 characters long.","messages\/fieldError.login_emailRequired":"Email required.","messages\/fieldError.login_passwordRequired":"Password required."};
+        })();
+    </script>
+
+	<link rel="stylesheet" type="text/css" href="/css/deepl.css?v=3629882023" />
+	<link rel="stylesheet" type="text/css" href="/css/deepl-redesign.css?v=127436581" />
+	<link rel="stylesheet" type="text/css" href="/css/lmt.css?v=2743748999" />
+<script src='/js/translator_early.min.js?v=3029880701'></script>
+    <script>
+        if (window.dl_pageState && !dl_pageState.dataUseProhibited && !dl_pageState.loggedIn){
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-8191720-3', 'auto');
+            ga('set', 'anonymizeIp', true);
+            window.localStorage && localStorage.getItem('initialReferrer')!==null && ga('set', 'dimension1', localStorage.getItem('initialReferrer'));
+(window.location.pathname || '').match(/^\/Translator$/) && (function(){ga('set', {'campaignName': 'translationFooter', 'campaignSource': 'translationFooter', 'campaignMedium': 'translationFooter' });console.log('Campaign translation footer')})();            ga('send', 'pageview');
+        }
+    </script>
+</head>
+<body class="dl_body dl_body--translator dl_body--redesign ">
+<script>M.get('DeviceProps').initBody();</script>
+
+<!-- ============================== TopNav ============================== -->
+
+<header class='dl_header' dl-test="dl-header">
+    <nav class='dl_header_menu_v2 dl_top_element--wide'>
+        <a class='dl_header_menu_v2__logo' href='/home' tabindex="10">
+            <img src="/img/logo/DeepL_Logo_darkBlue_v2.svg" alt="DeepL logo">
+            <span>DeepL</span>
+        </a>
+        <span class="dl_header_menu_v2__separator"></span>
+        <div class="dl_header_menu_v2__items">
+            <div class="dl_header_menu_v2__links">
+                <a class="dl_header_menu_v2__links__item dl_header_menu_v2__links__item is-active" id="dl_menu_translator" href="/translator" tabindex="10">
+                    Translator                </a>
+                <a class="dl_header_menu_v2__links__item" id="dl_menu_linguee" href="https://www.linguee.com" tabindex="10">
+                    Linguee                </a>
+            </div>
+            <div class="dl_header_menu_v2__links--mobile dl_dropdown">
+                <div>
+                    <a class="dl_header_menu_v2__links__item dl_header_menu_v2__links__item is-active" href="/translator" tabindex="10">
+                        Translator                    </a>
+                </div>
+            </div>
+            <div class="dl_header_menu_v2__buttons">
+                                <div class="dl_header_menu_v2__login_button">
+                    <button dl-attr='onClick: dlHeaderMenu.doOpenLoginMenu' class="dl_header_menu_v2__buttons__item" tabindex="10"
+                        dl-test="menu-account-out-btn">
+                        Login                    </button>
+                </div>
+                <div class="dl_header_menu_v2__user_menu" dl-attr='onAnyclick{false}: $$.userMenuIsOpen, classIf{dl_header_menu_v2__user_menu--is_open}: $$.userMenuIsOpen'>
+                    <button class="dl_header_menu_v2__buttons__item" dl-attr="onClick{__TOGGLE}: $$.userMenuIsOpen" dl-test="menu-account-in-btn" tabindex="10">
+                        <span dl-attr="text: userMenu.userDisplayName"> </span><div><!-- opener --></div>
+                    </button>
+                    <div class="dl_header_menu_v2__user_menu__dropdown">
+                                                    <a href='/pro-account.html' tabindex="10" dl-test="menu-account-link" autofocus="autofocus">Account</a>
+                        
+                        
+                        <button onclick="M.requireAsync(['kDeepL'],function(kDeepL){kDeepL.logout();})" tabindex="10" dl-test="menu-account-logout">
+                            Log out                        </button>
+                    </div>
+                </div>
+                <div id="notifications-container"></div>
+                <div class='dl_header_menu_v2__buttons__menu'>
+                    <button class="dl_header_menu_v2__buttons__item" dl-attr='onClick: dlHeaderMenu.doOpenNavMenu' dl-test="menu-site-btn"
+                        title="Menu" tabindex="10"
+                    >
+                        Menu                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div dl-attr='content: dlHeaderMenu.content'></div>
+
+
+<!-- =============================== -->
+
+<template dl-template='dlMainPopup'>
+    <div class="dl_menu_overlay" dl-attr="onClick: $0.doCloseMenu, rootClass{dl--header_popup_open}: $0.isOpen"></div>
+    <div id="dl_menu" class="dl_menu" dl-test="menu-site">
+        <button class="dl_menu__close_button" title="Close" dl-attr="onClick: $0.doCloseMenu" tabindex="10"></button>
+        <div class="dl_menu__main_section" dl-attr='content: $0.mainSection'>
+            [content]
+        </div>
+        <div class="dl_menu__bottom_section" dl-attr='content: $0.footerSection'>
+            [footer]
+        </div>
+    </div>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dlMainPopup_NavMainSection'>
+    <nav>
+        <a class="dl_header_menu__nav_link dl_header_menu__nav_link--translator" href="/translator" autofocus="autofocus" tabindex="10">Translator</a>
+        <a class="dl_header_menu__nav_link dl_header_menu__nav_link--linguee" href="https://www.linguee.com/" tabindex="10">Linguee</a>
+        <hr>
+                    <a class="dl_header_menu__nav_link" tabindex="10" href="/pro.html">DeepL Pro</a>
+            <a class="dl_header_menu__nav_link" tabindex="10" href="/pro.html#pricing">Plans and pricing</a>
+                <a class="dl_header_menu__nav_link" tabindex="10" href="/pro-faq.html">Frequently asked questions</a>
+        <a class="dl_header_menu__nav_link" tabindex="10" href="/support">Support</a>
+        <a class="dl_header_menu__nav_link" tabindex="10" href="/blog.html">Blog</a>
+        <a class="dl_header_menu__nav_link dl_header_menu__nav_link--app" dl-attr="classIf{dl_header_menu__nav_link--hidden}: $0.isDownloadAppHidden" tabindex="10" href="/app">Windows / macOS apps</a>
+        <a class="dl_header_menu__nav_link" tabindex="10" href="/press.html">Press Information</a>
+        <a class="dl_header_menu__nav_link" tabindex="10" href="/jobs.html">DeepL is hiring</a>
+        <a class="dl_header_menu__nav_link" tabindex="10" href="/docs-api.html">API technical documentation</a>
+    </nav>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dlMainPopup_LoginMainSection'>
+    <div class="dl_menu__login" >
+        <div class="dl_menu__login__banner">DeepL Pro <br> Login</div>
+        <form class="dl_menu__login__form" method='POST' onsubmit="event.preventDefault(); return false;" novalidate='novalidate'>
+            <div class="dl_menu__login__form__email">
+                <input class="" name='username' type='email' dl-attr='value: $0.data_login'
+                    autocomplete="username email" placeholder="Email"
+                    tabindex="10" autofocus="autofocus" spellcheck="false"
+                    id='login_email' required dl-test="menu-login-username">
+            </div>
+            <div class="dl_menu__login__form__pass">
+                <input name='password' type='password' autocomplete="current-password" dl-attr='value: $0.data_password'
+                    placeholder="Password" tabindex="10"
+                    id='login_password' required dl-test="menu-login-password">
+                <button type="button" class="dl_menu__login__form__pass__forgot" dl-attr="onClick: $0.doOpenPasswordForgotten" tabindex="10" >Forgot your password?</button>
+            </div>
+            <button class="dl_menu__login__form__submit dl_button--2" dl-attr="onClick: $0.doLogin" tabindex="10"
+                dl-test="menu-login-submit">Log in</button>
+            <div class="dl_menu__login__form__rememberme">
+                <label for="login_rememberme">
+                    <input type="checkbox" name="login_rememberme" id="login_rememberme" dl-attr='value: $0.data_keepLogin' tabindex="10">
+                    <span class="dl_form__checkbox"></span>
+                    <span class="dl_menu__login__form__rememberme__title">
+                        Remember me                    </span>
+                </label>
+            </div>
+        </form>
+        <div class='dl_menu__error' dl-attr='html: $0.loginError'></div>
+    </div>
+</template>
+
+<!-- =============================== -->
+<template dl-template='dlMainPopup_ForgotPasswordSection'>
+    <div class="dl_menu__login__back" dl-attr="onClick: $0.doOpenLoginMenu">
+        <a href="#" class="dl_menu__login__back_link">
+            Back to login        </a>
+    </div>
+    <div class="dl_menu__login__banner">Password reset</div>
+    <form class="dl_menu__login__form dl_menu__forgot__form" method='POST' onsubmit="event.preventDefault(); return false;" novalidate='novalidate'>
+        <div class="dl_menu__login__form__email">
+            <!-- <label class="dl_menu__login__form__email" for="forgot_email">Email</label> -->
+            <input class="" name='username' type='email' dl-attr='value: $0.data_login'
+                autocomplete="username email" placeholder="Email" tabindex="0" autofocus="autofocus"
+                id='forgot_email' required dl-test="menu-login-username">
+        </div>
+        <button class="dl_menu__login__form__submit dl_button--2"
+            dl-attr="onClick: $0.doSendPasswordLink, removeIf: $0.removeInput">Reset password</button>
+    </form>
+    <div class='dl_menu__error' dl-attr='html: $0.errorMessage'></div>
+    <div class='dl_menu__message' dl-attr='html: $0.feedbackMessage'></div>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dlMainPopup_SignupFooterSection'>
+    <div class="dl_menu__bottom_section--signup">
+        <div class="dl_menu__login__signup_text">No account yet?</div>
+        <a class="dl_menu__login__signup_link dl_link dl_link--small dl_link--more" href="/pro.html">Sign up for DeepL Pro</a>
+    </div>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dlMainPopup_LogoutSection'>
+            <a class='dl_header_menu__nav_link' href='/pro-account.html' tabindex="0" dl-test="menu-account-link">Account</a>
+        <button class="dl_menu__signup" dl-attr='onClick: $0.doLogout'>Log out</button>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dlMainPopup_LoginSection'>
+    <button class="dl_menu__login_btn" dl-attr="onClick: $0.doOpenLoginMenu">Login</button>
+    <a href="/pro.html" class="dl_menu__signup">Sign up</a>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dl_headerMenu__appButton_windows'>
+    <a tabindex='10' dl-attr="onClick: $0.onDownload, attr{href}:$0.downloadURL" class='dl_headerMenu__appButton'><span>Download for Windows</span><span>it's free!</span></a>
+</template>
+
+<template dl-template='dl_headerMenu__appButton_mac'>
+    <a tabindex='10' dl-attr="onClick: $0.onDownload, attr{href}:$0.downloadURL" class='dl_headerMenu__appButton'><span>Download for Mac</span><span>it's free!</span></a>
+</template>
+
+<!-- =============================== -->
+
+
+<script>
+var dl_dropdown = {
+    toggle: function(toggler, e) {
+        if (!e) e = window.event;
+        e.preventDefault();
+        toggler.parentNode.classList.toggle('dl--is_open');
+    }
+}
+
+</script>
+
+
+<!-- ============================== Invisible page information for search engines =================================== -->
+
+<main class='dl_hidden'>
+    <h1>DeepL Translator</h1>
+    <p>Use the free DeepL Translator to translate your texts with the best machine translation available, powered by DeepL’s world-leading neural network technology. Currently supported languages are English, German, French, Spanish, Portuguese, Italian, Dutch, Polish, and Russian.</p>
+</main>
+
+<!-- ============================== Translator ============================== -->
+
+<div class='dl_translator_page_container'>
+
+    <script>
+        window.dl_texts || (window.dl_texts = new Object(null));
+    	Object.assign(window.dl_texts, {"translator\/detectLanguage":"<span class=\"translate_from\">Translate from <\/span><strong><span>a<\/span>ny language<\/strong>","translator\/translateFrom":"<span class=\"translate_from\">Translate from <\/span>","translator\/translationLanguageDetected":"(detected)","translator\/alternativeTranslations":"Alternatives:","translator\/notification_overload":"There seems to be a problem with the internet connection. The functionality of DeepL Translator may be limited.","translator\/notification_networkProblems":"There seems to be a problem with the internet connection. The functionality of DeepL Translator may be limited.","translator\/notification_onlyOneSentence":"Due to high traffic on the free DeepL translator, the service is limited at the moment. You can only translate one sentence at a time and advanced editing functions are not available.","translator\/notification_noAdvancedEditing":"Due to high traffic on the free DeepL translator, the service is limited at the moment and advanced editing functions are not available.","translator\/notification_user_blocked":"Due to too many requests coming from your IP address, access to the free DeepL Translator has been temporarily disabled. Please try again later, subscribe to DeepL Pro, or contact us at block@DeepL.com, stating your IP address.","translator\/messageBox_clickHint":"Click on a word to get alternative formulations.","translator\/messageBox_completionHint":"Choose a word and DeepL translator will finish the sentence for you.","translator\/proAccountError.accountProblem":"Your subscription details cannot be validated at the moment; check your subscription status and try again later.","translator\/proAccountError.quotaReached":"Your translation limit has been reached.","translator\/proAccountError.accountPageButton":"Check your subscription status","translator\/proAccountError.noSubscription":"<p>You are logged in as a DeepL Pro user, but we could not find an active subscription or team membership for your account.<\/p><p>You therefore cannot use DeepL Translator while logged in.<\/p>","translator\/proAccountError.logoutAndUseFreeButton":"Log out and use the free DeepL Translator","translator\/proAccountError.refreshPageButton":"Refresh page","translator\/proAccountError.noAccess":"Your current plan does not include the use of DeepL Translator via our website.","translator\/proAccountError.noAccess_logoutButton":"Please log out to use the free DeepL Translator.","translator\/copyText.tooltip":"Copy to clipboard","translator\/copyText.feedback":"Text has been copied","translator\/toolbar.waitForRequestsFeedback":"Please wait for all requests to finish","translator\/saveText.successFeedback":"Text file created","translator\/saveText.tooltip":"Save as text file","translator\/share.tooltip":"Share translation","translator\/shareMenu.headline":"Share","translator\/shareMenu.copyUrlButton":"Copy URL","translator\/shareMenu.textShortendHint":"Note: Your text is too long to share in full; only the first sentences will be shared.","translator\/shareMenu.urlToShare":"URL to share","translator\/share.mailBody":"Translated with www.DeepL.com\/Translator (free version)","translator\/share.mailSubject":"Translation via DeepL Translator","translator\/share.title":"Translated with www.DeepL.com\/Translator (free version)","translator\/share.editedTranslationHint":"The translation has been edited.","translator\/share.editedTranslation_revertButton":"Change back to the original version","translator\/share.editedTranslation_acceptButton":"Accept changes","messages\/appWorkflow.appDelayProLink":"Get faster translations with <a href=\"https:\/\/www.deepl.com\/pro.html?utm_source=win_app&utm_medium=banner&utm_campaign=perf_banner\">DeepL Pro &rarr;<\/a>","messages\/fieldError.requiredField":"This is required information.","messages\/appWorkflow.appDelayText":"There is currently a large amount of traffic on the free version of DeepL Translator. Your translation will be ready in ${seconds} seconds."});
+    </script>
+    <div id='dl_translator' class='lmt lmt--empty_source dl_top_element--wide lmt--web'>
+        <div class='lmt__sides_container'>
+
+            
+    <div class='lmt__textarea_separator lmt__textarea_separator--left'>
+        <div class='lmt__textarea_separator__vertical_line'></div>
+        <div class='lmt__textarea_separator__arrow'></div>
+        <div class='lmt__textarea_separator__border_inner'></div>
+        <div class='lmt__textarea_separator__border_outer'></div>
+        <div class='lmt__textarea_separator__busy'></div>
+    </div>
+
+
+            <div class='lmt__side_container lmt__side_container--source' dl-test="translator-source">
+                <div class='lmt__language_container'>
+                    <div class='lmt__language_select lmt__language_select--source' dl-test="translator-source-lang">
+                        <button class="lmt__language_select__active" dl-test="translator-source-lang-btn" tabindex="100">
+                            <span class="lmt__language_select__active__title"><span class="translate_from">Translate from </span><strong><span>a</span>ny language</strong></span>
+                            <div class='lmt__language_select__opener'></div>
+                        </button>
+                        <div class='lmt__language_select__menu' dl-test="translator-source-lang-list">
+                            <button dl-value='auto' tabindex="100">Any language (detect)</button>
+                            <button dl-value='EN' tabindex="100">English</button>
+                            <button dl-value='DE' tabindex="100">German</button>
+                            <button dl-value='FR' tabindex="100">French</button>
+                            <button dl-value='ES' tabindex="100">Spanish</button>
+                            <button dl-value='PT' tabindex="100">Portuguese</button>
+                            <button dl-value='IT' tabindex="100">Italian</button>
+                            <button dl-value='NL' tabindex="100">Dutch</button>
+                            <button dl-value='PL' tabindex="100">Polish</button>
+                            <button dl-value='RU' tabindex="100">Russian</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='lmt__textarea_container'>
+                    <div class='lmt__inner_textarea_container'>
+                        <textarea class='lmt__textarea lmt__source_textarea lmt__textarea_base_style' data-gramm_editor="false" autofocus tabindex='110' dl-test="translator-source-input"></textarea>
+                        
+                        <span class='dl_visible_desktop_only'><span class='lmt__textarea_placeholder_text'>Type, paste text, <br/>or drop document here.<span class="dl_addition" dl-text="translatorLanguageAddition"><br>(English, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Russian)</span></span></span>
+                        <span class='dl_visible_handheld_only'><span class='lmt__textarea_placeholder_text'>Type or paste text here.<span class="dl_addition" dl-text="translatorLanguageAddition"><br>(English, French, German, Spanish, Portuguese, Italian, Dutch, Polish, Russian)</span></span></span>
+                                <!-- ==== docTrans: UploadButton === -->
+    <div class='docTrans_translator_upload_button' dl-test="doctrans-upload"
+        dl-attr='class{docTrans_translator_upload_button--open_target_lang_menu}: docTrans.withOpenedTargetLangMenu, class{docTrans_translator_upload_button--keep_active}:docTrans.keepActive, class{docTrans_translator_upload_button--quota_reached}: docTrans.X_translationAllowed, _init:docTrans.doInitButton'>
+                    <form>
+                <div class='docTrans_translator_upload_button__inner'>
+                    <button type='button' class="docTrans_translator_upload_button__inner_button" dl-attr='onClick: docTrans.doSelectFile' dl-test="doctrans-upload-btn" tabindex="120">
+                        <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="15" height="18" rx="1" />
+                            <line x1="4.33398" y1="5.6665" x2="12.6673" y2="5.6665" />
+                            <line x1="4.33398" y1="9.1665" x2="12.6673" y2="9.1665" />
+                            <line x1="4.33398" y1="12.6665" x2="12.6673" y2="12.6665" />
+                        </svg>
+                        Translate document                    </button>
+                    <input type="file" name='file' dl-test="doctrans-upload-input"
+                        dl-attr='_init: docTrans.doRegisterFileInput, attr{accept}: docTrans.acceptedFileTypes, value: docTrans.selectedFileList'/>
+                </div>
+            </form>
+            </div>
+
+    <div dl-attr='content: docTrans.dropTargetOverlay'></div>
+
+    <div class='docTrans__help_popup' dl-test="doctrans-upload-help">
+        <div class="docTrans__help_popup__icons">
+            <img src='/img/icons/icon_docx_v2.svg' alt='Icon for docx file format' />
+            <span class="docTrans__help_popup__icons__sep">&amp;</span>
+            <img src='/img/icons/icon_pptx_v2.svg' alt='Icon for pptx file format' />
+        </div>
+        <div class="docTrans__help_popup__desc">
+            <p class='dl_visible_free_only'>Translate your Word (.docx) and PowerPoint (.pptx) files with DeepL Translator.</p>
+            <p class='dl_visible_pro_only'>Translate your Word (.docx), PowerPoint (.pptx) and .txt files with DeepL Translator.</p>
+        </div>
+    </div>
+                    </div>
+                    <button type='button' class='lmt__clear_text_button'><span>&times;</span></button>
+                </div>
+            </div>
+            <div class='lmt__side_container lmt__side_container--target' dl-test="translator-target">
+                                    <div class='lmt__language_container'>
+                        <div class='lmt__language_select lmt__language_select--target' dl-test="translator-target-lang" >
+                            <button class="lmt__language_select__active" dl-test="translator-target-lang-btn" tabindex="100">
+                                <span class="lmt__language_select__active__title">Translate into <strong>German</strong></span>
+                                <div class='lmt__language_select__opener'></div>
+                            </button>
+
+                            <div class='lmt__language_select__menu' dl-test="translator-target-lang-list">
+                                <button dl-value='EN' tabindex="100">English</button>
+                            <button dl-value='DE' tabindex="100">German</button>
+                            <button dl-value='FR' tabindex="100">French</button>
+                            <button dl-value='ES' tabindex="100">Spanish</button>
+                            <button dl-value='PT' tabindex="100">Portuguese</button>
+                            <button dl-value='IT' tabindex="100">Italian</button>
+                            <button dl-value='NL' tabindex="100">Dutch</button>
+                            <button dl-value='PL' tabindex="100">Polish</button>
+                            <button dl-value='RU' tabindex="100">Russian</button>                            </div>
+                        </div>
+
+                        
+                    </div>
+                                <div dl-attr='content: translator.targetAreaAdditions'></div>
+
+                <div class='lmt__textarea_container'>
+                    <div class='lmt__inner_textarea_container'>
+                        <textarea class='lmt__textarea lmt__target_textarea lmt__textarea_base_style dl_disabled' data-gramm_editor="false" disabled tabindex='110' dl-test="translator-target-input"></textarea>
+                    </div>
+                    <div class='lmt__translations_as_text' dl-test='translator-target-result-as-text-container'></div>
+                                    </div>
+            </div>
+                    </div>
+        <div dl-attr='content: usingProHint'></div>                <div id='lmt__dict' class='lmt__dict' dl-test="translator-dict"></div>
+        <div class='lmt__dict__word_not_in_dictionary_message'>No matches for this word in the Linguee dictionary.</div>
+                <div class='lmt__progress_popup' dl-test='translator-progress-popup'>
+            <div>
+                <div class='lmt__busy_indicator lmt__busy_indicator--active'></div>
+                <p dl-text-template="%%num%% of %%total%% characters translated">&nbsp;</p>
+                <div class='lmt__progress_popup__progress'><div></div></div>
+                <a class='lmt__progress_popup__stop_button' tabindex='0'>Stop translating remaining text</a>
+            </div>
+        </div>
+        <div class='lmt__ask_paste_popup'>
+            <div>
+                <p dl-text-template="You are trying to insert a large block of text (%%num%% characters). We encourage you to split your text into smaller parts to improve performance and avoid memory issues that may arise in your browser.">&nbsp;</p>
+                <a class='lmt__ask_paste_popup__cancel_button' tabindex='0'>Cancel</a>
+                <a class='lmt__ask_paste_popup__continue_button' tabindex='0'>Translate anyway</a>
+            </div>
+        </div>
+    </div>
+        <div dl-attr='content: docTrans.panelContent'></div>
+    <div class='docTrans_usage_info__outer' dl-attr='content: docTransUsage.content'></div>
+
+<!-- ================ -->
+
+<template dl-template='lmt_targetToolbar__container'>
+    <div class='lmt__target_toolbar' dl-attr='class{lmt__target_toolbar--visible}: $0.isVisible' dl-test='translator-target-toolbar'></div>
+</template>
+
+
+
+
+<template dl-template='lmt_targetToolbar__copyButton'>
+    <div class='lmt__target_toolbar__copy' dl-test='translator-target-toolbar-copy' title="Copy to clipboard">
+        <button dl-attr='onClick: $0.doCopy' tabindex="130">
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2949 15.7893H8.59364C7.36747 15.7893 6.37793 14.7947 6.37793 13.5623V3.22705C6.37793 1.9946 7.36747 1 8.59364 1H16.3164C17.5425 1 18.5321 1.9946 18.5321 3.22705V13.5839C18.5106 14.7947 17.521 15.7893 16.2949 15.7893Z" stroke-miterlimit="10"/>
+                <path d="M11.1966 20.9997H3.34478C2.05408 20.9997 1 19.9402 1 18.6429V7.35629C1 6.05898 2.05408 4.99951 3.34478 4.99951H11.1966C12.4873 4.99951 13.5414 6.05898 13.5414 7.35629V18.6645C13.5414 19.9402 12.4873 20.9997 11.1966 20.9997Z" fill="white" stroke-miterlimit="10"/>
+            </svg>
+        </button>
+    </div>
+</template>
+
+<template dl-template='lmt_targetToolbar__shareButton'>
+    <div class='lmt__target_toolbar__share' dl-attr='class{lmt__target_toolbar__share--open}: $0.menuIsOpen' dl-test='translator-target-toolbar-share' title="Share translation">
+        <button dl-attr='onClick: $0.doToggleMenu'  tabindex="130">
+        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.14738 14.7213C6.00913 14.7213 7.51839 13.2115 7.51839 11.3492C7.51839 9.48679 6.00913 7.97705 4.14738 7.97705C2.28562 7.97705 0.776367 9.48679 0.776367 11.3492C0.776367 13.2115 2.28562 14.7213 4.14738 14.7213Z" stroke-miterlimit="10"/>
+            <path d="M15.3066 7.74421C17.1683 7.74421 18.6776 6.23447 18.6776 4.3721C18.6776 2.50974 17.1683 1 15.3066 1C13.4448 1 11.9355 2.50974 11.9355 4.3721C11.9355 6.23447 13.4448 7.74421 15.3066 7.74421Z" stroke-miterlimit="10"/>
+            <path d="M15.0741 21.0001C16.9359 21.0001 18.4451 19.4903 18.4451 17.628C18.4451 15.7656 16.9359 14.2559 15.0741 14.2559C13.2124 14.2559 11.7031 15.7656 11.7031 17.628C11.7031 19.4903 13.2124 21.0001 15.0741 21.0001Z" stroke-miterlimit="10"/>
+            <path d="M7.16992 9.18611L12.1218 6.06982" stroke-miterlimit="10"/>
+            <path d="M12.1218 16.3956L7.16992 13.2793" stroke-miterlimit="10"/>
+        </svg>
+        </button>
+    </div>
+</template>
+
+<template dl-template='lmt_targetToolbar__saveButton'>
+    <div class='lmt__target_toolbar__save' dl-test='translator-target-toolbar-download' title="Save as text file">
+        <button dl-attr='onClick: $0.doSave'  tabindex="130">
+            <svg width="20" height="22" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.2666 0V15.472"  stroke-miterlimit="10"/>
+                <path d="M9.98861 10.8364L5.26579 15.5376L0.542969 10.8364" stroke-miterlimit="10"/>
+            </svg>
+        </button>
+    </div>
+</template>
+
+
+<template dl-template='lmt_app_delay'>
+    <div class='lmt__app_delay_no_pro_notification__outer_container'>
+        <div class='lmt__app_delay_no_pro_notification__inner_container' dl-test=''>
+            <div class="lmt__app_delay_no_pro_notification__wait_animation_container">
+                <div class="lmt__app_delay_no_pro_notification__ellipse_container"><img src="/img/apps/ellipse.png"></div>
+                <div class="lmt__app_delay_no_pro_notification__hourglass"><img src="/img/apps/hourglass.png"></div>
+            </div>
+            <div class="lmt__app_delay_no_pro_notification__progress_animation"><span></span><span></span><span></span><span></span></div>
+            <p class="lmt__app_delay_no_pro_notification__message" dl-attr="placeholderText:$0.placeholders">
+                There is currently a large amount of traffic on the free version of DeepL Translator. Your translation will be ready in ${seconds} seconds.</p>
+            <p class="lmt__app_delay_no_pro_notification__footer">Get faster translations with <a href="https://www.deepl.com/pro.html?utm_source=win_app&utm_medium=banner&utm_campaign=perf_banner">DeepL Pro &rarr;</a></p>
+        </div>
+    </div>
+</template>
+
+
+
+
+<!-- ============================== Pro Advertising ============================== -->
+
+<script>
+dl_documentReady(function() {
+    M.require('WebTranslator_proAd', function(WebTranslator_proAd) {
+        WebTranslator_proAd.init();
+    });
+});
+</script>
+
+<div class='lmt__source_textarea__length_marker_pro_advertisement lmt__source_textarea__proAd' style='display:none;' dl-test='translator-character-limit-proad'>
+    <hr class="dl_hr_with_arrow">
+    <p class='lmt__source_textarea__proAd__text1'>
+        Need to translate more? Try <strong>DeepL Pro!</strong>    </p>
+    <p class='lmt__source_textarea__proAd__text2'>Subscribe to DeepL Pro to translate more than 5000&nbsp;characters with the online translator.</p>
+    <a class='dl_link dl_link--more' href='/pro.html' target='_blank'>Learn more</a>
+</div>
+
+<div id='lmt_pro_ad_container' class='dl_ad_pro_container' dl-attr='content: ad.content' dl-test="translator-proad">
+</div>
+
+
+
+<!-- ====================================================== -->
+
+        <!-- ============================== Ads ============================== -->
+        <script>
+
+        </script>
+        <article id='lmt_quotes_article'>
+            <div class='dl_top_element dl_top_element--wide'>
+                <!-- <div class='lmt_quotes_header'>DeepL in the Press</div> -->
+                <div class='lmt_quotes'>
+                    <div class='lmt_quotes__prev_button'><svg version="1.0" class="lmt_quotes_nav_button_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="60px" viewBox="0 0 12 30" xml:space="preserve"><path d="M10 2 L2 14 L10 27"></path></svg></div>
+                    <div class='lmt_quotes__container'></div>
+                    <div class='lmt_quotes__next_button'><svg version="1.0" class="lmt_quotes_nav_button_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="60px" viewBox="0 0 12 30" xml:space="preserve"><path d="M2 2 L10 14 L2 27"></path></svg></div>
+                </div>
+                <div class='lmt_quotes_nav'></div>
+
+            </div>
+
+
+<div id='lmt_quotes_dataContainer' class='dl_hidden'>
+<div dl-quote-img='techcrunch.png' dl-quote-img2='techcrunch.png' dl-quote-additional-duration='30000' dl-quote-prio='0'>
+	<blockquote>Tech giants Google, Microsoft and Facebook are all applying the lessons of machine learning to translation, but a small company called DeepL has outdone them all and raised the bar for the field.<br>Its translation tool is just as quick as the outsized competition, but more accurate and nuanced than any we’ve tried.</blockquote>
+	<cite><a href='https://techcrunch.com/2017/08/29/deepl-schools-other-online-translators-with-clever-machine-learning/'>TechCrunch</a><br>USA</cite>
+</div>
+<div dl-quote-img='le_monde.png' dl-quote-img2='le_monde.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>DeepL has also outperformed other services, thanks to more "French-sounding" expressions.</blockquote>
+	<cite><a href='http://www.lemonde.fr/pixels/article/2017/08/29/quel-est-le-meilleur-service-de-traduction-en-ligne_5177956_4408996.html?xtmc=deepl&xtcr=1'>Le Monde</a><br>France</cite>
+</div>
+<div dl-quote-img='golem.png' dl-quote-img2='golem.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>Even though the translations from English by Google and Microsoft are quite good, DeepL still surpasses them. We have translated a report from a French daily newspaper - the DeepL result was perfect.</blockquote>
+	<cite><a href='https://www.golem.de/news/deepl-im-hands-on-neues-tool-uebersetzt-viel-besser-als-google-und-microsoft-1708-129715.html'>Golem.de</a><br>Germany</cite>
+</div>
+<div dl-quote-img='la_stampa.png' dl-quote-img2='la_stampa.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>A quick test carried out for the combination English-Italian and vice versa, even without any statistical pretensions, allowed us to confirm that the quality of the translation is really good. Especially from Italian into English.</blockquote>
+	<cite><a href='http://www.lastampa.it/2017/08/29/tecnologia/news/deepl-traduttore-dalla-germania-unalternativa-a-google-translate-uHXifbhlSKzsB5uN8LYknO/pagina.html'>La Stampa</a><br>Italy</cite>
+</div>
+<div dl-quote-img='abc.png' dl-quote-img2='abc.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>The system recognizes the language quickly and automatically, converting the words into the language you want and trying to add the particular linguistic nuances and expressions.</blockquote>
+	<cite><a href='http://www.abc.es/tecnologia/informatica/software/abci-cual-mejor-servicio-traduccion-online-deepl-quiere-desterrar-google-201708291325_noticia.html'>ABC</a><br>Spain</cite>
+</div>
+<div dl-quote-img='RTL_Z.png' dl-quote-img2='RTL_Z.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>Indeed, a few tests show that DeepL Translator offers better translations than Google Translate when it comes to Dutch to English and vice versa.</blockquote>
+	<cite><a href='https://www.rtlz.nl/tech/duits-bedrijf-belooft-betere-vertalingen-dan-google-translate'>RTL Z</a><br>Netherlands</cite>
+</div>
+<div dl-quote-img='repubblica.png' dl-quote-img2='repubblica.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>In the first test - from English into Italian - it proved to be very accurate, especially good at grasping the meaning of the sentence, rather than being derailed by a literal translation.</blockquote>
+	<cite><a href='http://www.repubblica.it/tecnologia/prodotti/2017/08/29/news/arriva_deepl_il_traduttore_automatico_che_sfida_google-174078830/'>la Repubblica</a><br>Italy</cite>
+</div>
+<div dl-quote-img='mobilegeeks.png' dl-quote-img2='mobilegeeks.png' dl-quote-additional-duration='4000' dl-quote-prio='0'>
+	<blockquote>Personally, I'm very impressed by what DeepL is able to do and yes, I think it's really great that this new stage in the evolution of machine translation was not achieved with software from Facebook, Microsoft, Apple or Google, but by a German company. We like to make ourselves a little bit small and pretend that there is no one in this country who can stand up to the big players. DeepL is a good example that it is possible.</blockquote>
+	<cite><a href='https://www.mobilegeeks.de/news/deepl-ein-besseres-uebersetzungs-tool-als-google-translate/'>Mobile Geeks</a><br>Germany</cite>
+</div>
+<div dl-quote-img='wired.png' dl-quote-img2='wired.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>DeepL from Germany could surpass Google Translate<br>
+WIRED's quick test shows that DeepL's results are indeed in no way inferior to those of the high-ranking competitors and, in many cases, even surpass them. The translated texts often read much more fluently; where Google Translate forms completely meaningless word chains, DeepL can at least guess a connection.
+</blockquote>
+	<cite><a href='https://www.wired.de/collection/tech/deepl-google-translate-linguee'>WIRED.de</a><br>Germany</cite>
+</div>
+<div dl-quote-img='wwwhatsnew.png' dl-quote-img2='wwwhatsnew.png' dl-quote-additional-duration='0' dl-quote-prio='0'>
+	<blockquote>DeepL, an online translator that outperforms Google, Microsoft and Facebook</blockquote>
+	<cite><a href='https://wwwhatsnew.com/2017/08/29/deepl-un-traductor-online-que-supera-al-de-google-microsoft-y-facebook/'>wwwhat's new</a><br>Latin America</cite>
+</div>
+</div>
+        </article>
+
+        <!-- ====================================================== -->
+
+</div>
+
+<!-- ============================== Footer ============================== -->
+
+    
+<footer class='dl_footer dl_top_element--wide' dl-test="dl-footer"><div dl-attr='content: footerIllustration'></div>    <div class="dl_footer__container">
+        <nav class='dl_footer__nav'>
+            <div class='dl_menu_items'>
+                <span class='dl_footer__langselect dl_menu_item'><select onchange="location.href=this.value;" title="Site language" dl-test="language-selector" tabindex="500">
+					<option value='/en/translator' selected>English</option>
+					<option value='/de/translator'>Deutsch</option>
+					<option value='/fr/translator'>Français</option>
+					<option value='/es/translator'>Español</option>
+					<option value='/pt-PT/translator'>Português</option>
+					<option value='/pt-BR/translator'>Português (Brasil)</option>
+					<option value='/it/translator'>Italiano</option>
+					<option value='/nl/translator'>Nederlands</option>
+					<option value='/pl/translator'>Polski</option>
+					<option value='/ru/translator'>Русский (Russian)</option>
+                </select></span>
+                <a class="dl_menu_item" tabindex="500" href='/press.html'>Press</a>
+                <a class="dl_menu_item" tabindex="500" href='/privacy.html'>Privacy</a>
+                <a class="dl_menu_item" tabindex="500" href='/pro-license.html'>Terms &amp; Conditions</a>
+                <a class="dl_menu_item" tabindex="500" href='/publisher.html'>Publisher</a>
+            </div>
+        </nav>
+        <div class='dl_footer__socials'>
+            <a class='dl_footer__social dl_footer__social--twitter' target="_blank"
+                tabindex="500" href='https://twitter.com/DeepLcom' title="Twitter" rel="noopener"></a>
+            <a class='dl_footer__social dl_footer__social--facebook' target="_blank"
+                tabindex="500" href='https://www.facebook.com/DeepLcom/' rel="noopener"></a>
+            <a class='dl_footer__social dl_footer__social--linkedin' target="_blank"
+                tabindex="500" href='https://www.linkedin.com/company/linkedin-com-company-deepl/' rel="noopener"></a>
+        </div>
+    </div>
+</footer>
+
+    <div id='lmt__dict_message__tooManyRequests_5seconds' style='display: none;'>Loading dictionary...</div>
+    <div id='lmt__dict_message__tooManyRequests_minute' style='display: none;'>The dictionary will be available again shortly.</div>
+    <div id='lmt__dict_message__tooManyRequests_hour' style='display: none; color: #c66;'>The dictionary is currently not available.</div>
+
+    <script>
+        window.LMT_WebTranslator_Instance = new (M.get('LMT_WebTranslator'))();
+        LMT_WebTranslator_Instance.initDom(document.querySelector("#dl_translator")); // early init
+    </script>
+
+    <template dl-template='lmt_usingProBanner'>
+        <div class="lmt__using_pro_notification_banner">
+            <div>
+                <h2>You are using <em>DeepL Pro</em>.</p>
+                <p>Your texts are never stored.</p>
+            </div>
+        </div>
+    </template>
+
+    
+<!-- ================================= -->
+
+<div id='dl_waiting' class='dl_waiting'>
+    <img class='dl_waiting_icon' src='/img/waiting.gif' alt='site busy indicator'>
+    <div class='dl_waiting_message'></div>
+</div>
+
+<!-- ================================= -->
+
+
+<!-- ================================= -->
+<div id='dl_cookie_footer' class="dl_cookie_footer" style='display:none;' dl-test="cookie-reminder">
+    <div class="dl_cookie_footer__inner">
+        <div>
+            <p>DeepL uses cookies. For further details, please read our <a href="/privacy.html">Privacy Policy</a>.</p>
+            <button class="dl_cookie_footer__close_btn dl_button--3" dl-test="cookie-reminder-close">
+                Close            </button>
+        </div>
+    </div>
+    <script>
+        dl_documentReady(function(){
+            var confirmed = U.persistentValue('cookieBanner.confirmed');
+            if (!confirmed()){
+                $('body').addClass('dl_body--with_cookie_footer');
+                var $node = $('#dl_cookie_footer');
+                setTimeout(function(){ $node.addClass('dl_cookie_footer--visible'); });
+                $node.css('display','block').find('.dl_cookie_footer__close_btn').click(function(){
+                    $node.removeClass('dl_cookie_footer--visible');
+                    $('body').removeClass('dl_body--with_cookie_footer');
+                    confirmed(true);
+                });
+            }
+        });
+    </script>
+</div>
+
+<!-- ================================= -->
+
+<template dl-template='dl_outdated_site_popup'>
+    <div class='dl_outdated_site_popup'>
+        <span>A new version of this page is available. Please reload.</span>
+        <button class='dl_button--2' dl-attr='onClick: $0.doReload'>Reload</button>
+    </div>
+</template>
+
+<!-- ================================= -->
+
+<template dl-template='dl_session_lost_popup'>
+    <div class='dl_session_lost_popup'>
+        <div>
+            <div dl-attr='content: $0.logoutReason'></div>
+            <button class='dl_button--2' dl-attr='onClick: $0.doReload'>Continue</button>
+        </div>
+    </div>
+</template>
+
+<!-- ================================= -->
+
+<template dl-template='dl_app_user_different_from_logged_in_user'>
+    <div class='dl_session_change_to_app_user_popup' dl-attr='removeIf: $0.isRemoved'>
+        <div>
+            <div dl-attr='content: $0.popupText'></div>
+            <button class='dl_button--2' dl-attr='onClick: $0.doReload'>Log out</button>
+            <button class='dl_button--2' dl-attr='onClick: $0.doCancel'>Cancel</button>
+        </div>
+    </div>
+</template>
+
+
+<!-- ================================= -->
+
+<template dl-template='dl_enterprise_info'>
+    <div class='dl_enterprise_info' dl-attr='class{dl_enterprise_info--confirmed}: $0.confirmed'>
+        <div dl-attr='class: $0.sizingClass'>
+            <div>
+                <div>
+                    <h2>DeepL Pro company account</h2>
+                    <p dl-attr='text: $0.name'></p>
+                </div>
+                <a dl-attr='attr{href}:$0.url' target='_blank'><img dl-attr='attr{src}: $0.logo, isVisible: $0.logo' alt="user company logo" /></a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- ================================= -->
+
+<template dl-template='dl_enterpise_login_popup'>
+    <div class='dl_enterpise_login_popup dl_popup dl_popup--small'>
+        <div class='dl_popup__background'></div>
+        <div class='dl_popup__content'><h2>Logging into DeepL Pro company account...</h2>
+            <p dl-attr='text: $0.name'></p>
+            <img dl-attr='attr{src}:$0.logo, isVisible: $0.logo' alt="user company logo" />
+        </div>
+    </div>
+</template>
+
+<!-- ================================= -->
+
+<template dl-template='dl_enterpise_logout_popup'>
+    <div class='dl_enterpise_logout_popup dl_popup dl_popup--small'>
+        <div class='dl_popup__background'></div>
+        <div class='dl_popup__content'><h2>Logging out of DeepL Pro company account...</h2>
+        </div>
+    </div>
+</template>
+
+<!-- =============================== -->
+
+<template dl-template='dl_iframe_popup'>
+    <div class="dl_popup" dl-attr='rootClass{dl--with_popup}: $$.isOpen, setValue{true}: $$.isOpen, removeIf: $$.isClosed'>
+        <div class="dl_popup_content">
+            <button class='dl_popup__close_button' dl-attr='onClick{false}: $$.isOpen, onClick{true}: $$.isClosed' class="dl_popup_close" tabindex='0'>&times;</button>
+            <div class="dl_popup_content__scroll_container">
+                <iframe dl-attr='attr{src}: $0.src'></iframe>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- =============================== -->
+<script src='/js/ext/all3.min.js?v=3505201803'></script><script src='/js/translator_late.min.js?v=3162189222'></script>
+    <script>
+
+        M.define('LMT_Ready', ['LMT_WebTranslator_MainFunctionality', 'LMT_WebTranslator_Dict', '$', 'dlPageState', 'dlClientState', 'dlPrivacy', 'DeviceProps', 'queryVars', 'H2'],
+                function(LMT_WebTranslator_MainFunctionality, LMT_WebTranslator_Dict, $, dlPageState, dlClientState, dlPrivacy, DeviceProps, queryVars, H2){
+            $("html").addClass("page_loaded");
+            LMT_WebTranslator_MainFunctionality.initTranslator(LMT_WebTranslator_Instance);
+            LMT_WebTranslator_MainFunctionality.initTargetEditToolbar(LMT_WebTranslator_Instance);
+
+            LMT_WebTranslator_Dict.initTranslator(LMT_WebTranslator_Instance);
+
+            if (!dlPageState.pro)
+                M.requireAsync('WebTranslator_quotes', function(WebTranslator_quotes){  WebTranslator_quotes.init();    });
+
+            // clickOnWordHint-Test
+            !DeviceProps.isMobileLayout && dlClientState.whenAvailable(function(){
+                var testGroup = U.persistentValue('clientVars.abTest_clickOnWordHint')();
+                if (testGroup === 'classicHintBox'){
+                    LMT_WebTranslator_Instance.__abTest_clickOnWordHint_trackingEnabled = dlPrivacy.isDataUseAllowed();
+                    LMT_WebTranslator_Instance.features.require(['ClickOnWordHint_classic']);
+                }
+                else if (testGroup === 'hintBoxBelowText'){
+                    LMT_WebTranslator_Instance.__abTest_clickOnWordHint_trackingEnabled = dlPrivacy.isDataUseAllowed();
+                    LMT_WebTranslator_Instance.features.require(['ClickOnWordHint']);
+                }
+                else {
+                    LMT_WebTranslator_Instance.__abTest_clickOnWordHint_trackingEnabled = false;
+                    LMT_WebTranslator_Instance.features.require(['ClickOnWordHint_classic']);
+                }
+            });
+
+            
+
+            // observeFullTextData
+            dlPrivacy.isDataUseAllowed() && !dlPageState.pro && dlClientState.whenAvailable(function(){
+                if (U.persistentValue('clientVars.observeFullTextData')() || queryVars['observeFullTextData'])
+                    LMT_WebTranslator_Instance.features.require(['observeFullTextData'], function(observeFullTextData){ observeFullTextData.enable();});
+            });
+
+            return true;
+        });
+    </script>
+
+    <script>
+M.requireAsync(['H2', 'dlPageState'], function(H2, dlPageState) {
+if (dlPageState.pro) {
+  document.querySelector('body').appendChild(H2.createNode({tag: 'script', attributes: {src: '/js/notifications.min.js'}}));
+  document.querySelector('body').appendChild(H2.createNode({tag: 'script', attributes: {src: 'https://js.stripe.com/v3/'}}));
+}});
+
+</script>
+<script>
+M.requireAsync(['H2', 'dlPageState'], function(H2, dlPageState) {
+if (dlPageState.pro) {
+  document.querySelector('head').appendChild(H2.createNode({tag: 'link', attributes: {rel: 'stylesheet', type: 'text/css', href: '/css/notifications.css'}}));
+}});
+
+</script>
+
+    	<link rel="stylesheet" type="text/css" href="/css/shariff.css?v=2104161833" />
+<script src='/js/ext/shariff.min.js?v=1808914887'></script><script src='/js/ext/FileSaver.js?v=66179455'></script>    <script>
+        M.register('Shariff', Shariff);
+        M.register('FileSaver_saveAs', saveAs);
+    </script>
+
+<template dl-template='docTrans__generic_confirmation_popup'>
+    <div class='is3_modal_dialog is3_modal_dialog--small' dl-attr='class{is3_modal_dialog--loading}: $0.status_loading, class{is3_modal_dialog--submitting}: $0.status_submitting, rootClass{is3--modal_dialog_opened}:$0.isOpen, removeIf:$0.isRemoved'>
+        <div class='is3_modal_dialog__background' dl-attr='clickTrigger: $0.doClose'></div>
+        <div class="is3_modal_dialog__window" dl-attr='dlFieldErrors: $0.status_fieldErrors, attr{style}: $0._windowCss'>
+            <button class="is3_modal_dialog__close_button" dl-attr='hidden: $0.noClose, clickTrigger: $0.doClose' tabindex='0'>&times;</button>
+            <form onsubmit='return false;' target='_self' method='post' action=".">
+                <div class='is3_modal_dialog__header'>
+                    <h3 dl-attr='content: $0.header'>HEADER</h3>
+                </div>
+                <div dl-attr='html: $0.content' class='is3_modal_dialog__content'>
+                    <div class='is3_element'><p dl-attr='html: $0.contentText'>CONTENT</p></div>
+                </div>
+                <div class='is3_element is3_element--error' dl-attr='html: $0.status_pageError_html'></div>
+                <div class='is3_modal_dialog__buttons'>
+                    <button type='button' class='is3_modal_dialog__cancel_button' dl-attr='hidden: $0.noClose, clickTrigger: $0.doClose, html: $0.cancelText' tabindex='0'  formnovalidate='1'>Cancel</button>
+                    <button type='submit' class='is3_modal_dialog__submit_button' dl-attr='clickTrigger: $0.doSubmit, html: $0.submitText' tabindex='0' formnovalidate='1'>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>
+
+<template dl-template='docTrans_quota_exceeded_popup'>
+<dl-node type='docTrans__generic_confirmation_popup' bind='isOpen, isRemoved, doClose, doSubmit' dl-attr='placeholderText: $0'>
+    <dl-bind name='header'>
+        Document translation limit reached
+    </dl-bind>
+    <dl-bind name='contentText'>
+        You cannot translate any more documents at the moment because you have reached your document translation limit for this month. (<em>${period}</em>).
+        Upgrade your plan to increase the number of documents you can translate.
+    </dl-bind>
+    <dl-bind name='submitText'>
+        Select an upgrade for your plan
+    </dl-bind>
+</dl-node>
+</template>
+
+<template dl-template='docTrans_quota_exceeded_popup--team_member'>
+<dl-node type='docTrans__generic_confirmation_popup' bind='isOpen, isRemoved, doClose, doSubmit: $0.doClose' dl-attr='placeholderText: $0'>
+    <dl-bind name='header'>
+        Document translation limit reached
+    </dl-bind>
+    <dl-bind name='contentText'>
+        You cannot translate any more documents at the moment because you have reached your document translation limit for this month. (<em>${period}</em>).
+        Contact your team account administrator to increase the number of document translations available. 
+        (Team: <em>${teamName}</em>)
+    </dl-bind>
+    <dl-bind name='cancelText'></dl-bind>
+    <dl-bind name='submitText'>Continue</dl-bind>
+</dl-node>
+</template>
+
+<template dl-template='docTrans_quota_exceeded_popup--enterprise_user'>
+<dl-node type='docTrans__generic_confirmation_popup' bind='isOpen, isRemoved, doClose, doSubmit: $0.doClose' dl-attr='placeholderText: $0'>
+    <dl-bind name='header'>
+        Document translation limit reached
+    </dl-bind>
+    <dl-bind name='contentText'>
+        You cannot translate any more documents at the moment because the document translation limit for this month has been reached. (<em>${period}</em>).
+    </dl-bind>
+    <dl-bind name='cancelText'></dl-bind>
+    <dl-bind name='submitText'>Continue</dl-bind>
+</dl-node>
+</template>
+
+<template dl-template='docTrans_container'>
+<div class='docTrans_container dl_top_element--wide'>
+    <div>
+        <div dl-attr='content: $0.documents'></div>
+    </div>
+</div>
+</template>
+
+
+<template dl-template='docTrans_document'>
+<div class='docTrans_document' dl-attr='attr{doc-trans-file-type}: $0.fileType'>
+    <div class='docTrans_document__source_block'>
+        <div>
+            <div class='docTrans_document__file_icon'></div>
+            <div class='docTrans_document__filename_label' dl-attr='text: $0.sourceName'></div>
+        </div>
+    </div>
+    <div class='docTrans_document__target_block' dl-attr='content: $0.target'>
+    </div>
+    
+    <div class='lmt__textarea_separator lmt__textarea_separator--left'>
+        <div class='lmt__textarea_separator__vertical_line'></div>
+        <div class='lmt__textarea_separator__arrow'></div>
+        <div class='lmt__textarea_separator__border_inner'></div>
+        <div class='lmt__textarea_separator__border_outer'></div>
+        <div class='lmt__textarea_separator__busy'></div>
+    </div>
+
+</div>
+</template>
+
+<template dl-template='docTrans_document__target--uploading'>
+<div>
+    <div class='docTrans__busy_indicator docTrans__busy_indicator--active'></div>
+    <div class='docTrans_document__status_label' dl-attr='content: $0.statusText' dl-test="doctrans-upload-status-msg"></div>
+    <div class='docTrans_document__upload_progress'><div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doCancel' dl-test="doctrans-upload-cancel">Cancel</button>
+</div>
+</template>
+
+
+<template dl-template='docTrans_document__target--working'>
+<div>
+    <div class='docTrans_document__status_label' dl-attr='content: $0.statusText' dl-test="doctrans-upload-status-msg"></div>
+    <div class='docTrans_document__progress_image'>
+        <img src="/img/icons/icon_feat_doc_v2.svg" alt="Uploading file icon">
+    </div>
+    <div class='docTrans_document__progress'><div dl-attr='attr{style}: $0.progressStyle'></div></div>
+    <div class='docTrans_document__remaining_time_label' dl-attr='content: $0.remainingTimeText'></div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doCancel' dl-test="doctrans-upload-cancel">Cancel</button>
+</div>
+</template>
+
+<template dl-template='docTrans_document__target--ready'>
+<div class="docTrans_document__target_ready">
+    <div class='docTrans_document__document_ready_label' dl-attr='content: $0.statusText' dl-test="doctrans-upload-result"></div>
+    <div class='docTrans_document__doc_notes' dl-attr='content: $0.docNotes'></div>
+    <div class='docTrans_document__file_icon'></div>
+    <div class='docTrans_document__filename_label' dl-attr='text: $0.targetName'></div>
+
+    <a class='docTrans_document__download_again_button' dl-attr='attr{href}: $0.downloadURL' dl-test="doctrans-upload-result-download">Download again</a>
+
+    <hr class="dl_hr_with_arrow">
+
+    <div class='docTrans_document__document_ready_additional_text'><a href='/pro-checkout.html'>Subscribe to DeepL Pro to make changes to your documents</a></div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doContinue' dl-test="doctrans-upload-cancel">Continue</button>
+</div>
+</template>
+
+
+<template dl-template='docTrans_document__target--ready_pro'>
+<div class="docTrans_document__target_ready">
+    <div class='docTrans_document__document_ready_label' dl-attr='content: $0.statusText'></div>
+    <div class='docTrans_document__doc_notes' dl-attr='content: $0.docNotes'></div>
+    <div class='docTrans_document__file_icon'></div>
+    <div class='docTrans_document__filename_label' dl-attr='text: $0.targetName'></div>
+
+    <div class='docTrans_document__download_button dl_invisible_by_default' dl-attr='isHidden: $0.alreadyDownloaded'>
+        <a dl-attr="attr{href}:$0.downloadURL, onClick{true}: $0.alreadyDownloaded">Download</a>
+    </div>
+    <div dl-attr='content: $0.additionalHints'></div>
+
+    <div class='docTrans_document__report_error_section dl_invisible_by_default' dl-attr='class{docTrans_document__report_error_section-open}:$0.feedback_open, isVisible: $0.alreadyDownloaded'>
+        <h2 dl-attr='onClick: $0.feedback_open'>Can't open the document?</h2>
+        <div  dl-attr='isHidden: $0.feedback_feedbackSent'>
+            <form>
+                <label>Please describe your issue with the document:</label>
+                <textarea dl-attr='$0.feedback_description'></textarea>
+                <a dl-attr='onClick: $0.doSendFeedback'>Send feedback</a>
+            </form>
+        </div>
+        <p class='dl_invisible_by_default' dl-attr='isVisible: $0.feedback_feedbackSent'>Thank you for your feedback.</p>
+    </div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doContinue, isHidden: $0.alreadyDownloaded'>Cancel</button>
+    <button class='docTrans_document__cancel_button dl_invisible_by_default' dl-attr='onClick: $0.doContinue, isVisible:$0.alreadyDownloaded'>Continue</button>
+
+</div>
+</template>
+
+<template dl-template='docTrans_document__target--error'>
+<div>
+    <div class='docTrans_document__status_label' dl-attr='content: $0.statusText' dl-test="doctrans-upload-status-msg"></div>
+    <div class='docTrans_document__error_description' dl-attr='content: $0.errorText'></div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doContinue'>Continue</button>
+</div>
+</template>
+
+<template dl-template='docTrans_document__target--quota_reached_team_member'>
+<div>
+    <div class='docTrans_document__quota_error_text' dl-attr='placeholderText: $0'>
+        Documents cannot be translated at the moment.
+        The document translation limit has been reached for this month (${period}).
+    </div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doCancel'>Continue</button>
+</div>
+</template>
+
+<template dl-template='docTrans_document__target--quota_reached'>
+<div>
+    <div class='docTrans_document__quota_error_text' dl-attr='placeholderText: $0'>
+        Documents cannot be translated at the moment.
+        Your document translation limit has been reached for this month (${period}).
+        <a href='/pro-account.html?page=category_plan'> Upgrade your plan to increase the number of documents you can translate. </a>
+    </div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doCancel'>Continue</button>
+</div>
+</template>
+
+
+
+<template dl-template='docTrans_document__doc_warning'>
+<div class='docTrans_document__doc_warning'><span>!</span><span dl-attr='text: $0.text'></span></div>
+</template>
+
+
+<template dl-template='docTrans_drop_target_overlay'>
+<div class='docTrans_drop_target_overlay' dl-attr='_init: $0.initDropTarget, class{docTrans_drop_target_overlay--active}: $0.hoverDropArea'>
+    <div class="docTrans_drop_target__desc">
+        <div class='dl_visible_pro_only'>Drop a .docx, .pptx, or .txt file here to translate it.</div>
+        <div class='dl_visible_free_only'>Drop a .docx or .pptx file here to translate it.</div>
+    </div>
+</div>
+</template>
+
+
+<template dl-template='docTrans_drop_target_overlay_failure'>
+<div class='docTrans_drop_target_overlay docTrans_drop_target_overlay_failure'>
+    <div class="docTrans_drop_target__desc">
+        <div class='dl_visible_pro_only'>Only single .docx, .pptx, or .txt files can be translated.</div>
+        <div class='dl_visible_free_only'>Only single .docx or .pptx files can be translated.</div>
+    </div>
+</div>
+</template>
+
+<template dl-template='docTrans_document__target_lang_select'>
+<div class='docTrans_document__target_lang_select'>
+    <div>
+        <h2 class='docTrans_document__target_lang_select__header'>Select target language</h2>
+        <ul>
+            <li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'EN'}: $0.targetLang">English</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'DE'}: $0.targetLang">German</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'FR'}: $0.targetLang">French</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'ES'}: $0.targetLang">Spanish</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'PT'}: $0.targetLang">Portuguese</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'IT'}: $0.targetLang">Italian</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'NL'}: $0.targetLang">Dutch</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'PL'}: $0.targetLang">Polish</button></li>
+<li><button class='docTrans_document__target_lang_select__entry' dl-test='doctrans-upload-lang-item' tabindex='0' dl-attr="onClick{'RU'}: $0.targetLang">Russian</button></li>
+        </ul>
+    </div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doCancel'>Cancel</button>
+</div>
+</template>
+
+<template dl-template='docTrans_document__choose_different_target_lang_target'>
+<div class='docTrans_document__choose_different_target_lang_target' dl-test="doctrans-upload-lang-reselect">
+    <div>
+        <h2 class="docTrans_document__choose_different_target_lang_target__header" dl-attr='content: $0.statusText' dl-test="doctrans-upload-lang-reselect-msg"></h2>
+        <div dl-attr='content: $0.languages' class="docTrans_document__choose_different_target_lang_target_inner"></div>
+    </div>
+    <button class='docTrans_document__cancel_button' dl-attr='onClick: $0.doCancel'>Cancel</button>
+</div>
+</template>
+
+<template dl-template='docTrans_document__choose_different_target_lang_target__entry'>
+<button class='docTrans_document__target_lang_select__entry' tabindex='0'
+    dl-attr='content: $0.langName, onClick: $0.doExecute' dl-test="doctrans-upload-lang-reselect-list"></button>
+</template>
+
+
+
+<template dl-template='docTrans_upload_button__target_lang_menu'>
+<div class='docTrans_upload_button__target_lang_menu' dl-test="doctrans-upload-lang-list">
+    <ul dl-attr='content: $0.entries'></ul>
+</div>
+</template>
+
+<template dl-template='docTrans_upload_button__target_lang_menu_entry'>
+<li dl-test="doctrans-upload-lang-item">
+    <button type="button" dl-attr='content: $0.langName, onClick: $0.selectLangTrigger' dl-test="doctrans-upload-lang-item-btn" tabindex='0'></button>
+</li>
+</template>
+
+<template dl-template='docTrans_document_ready__limit_near_hint'>
+<p>
+    You are approaching your character limit for this month.    <a href='/pro-account.html?page=category_usage' target='_blank' onclick="window.open('/pro-account.html?page=category_usage', '_blank'); return false">Monitor your usage here.</a>
+</p>
+</template>
+
+
+
+<template dl-template='docTrans_usage_info'>
+<div class='dl_top_element--wide'>
+    <div dl-attr='placeholderText: $0' class='docTrans_usage_info'>
+        <div>
+            <h2>Translated documents overview</h2>
+            <p>&#x25cf;&nbsp;&nbsp;Period: <span dl-attr='content: $0.period'></span></p>
+            <p dl-attr='class{docTrans_usage_info__entry--critical}: $0.userQuotaReached'>&#x25cf;&nbsp;&nbsp;Document translations: ${userDocuments}</p>
+            <p dl-attr='isVisible: $0.teamDocuments, class{docTrans_usage_info__entry--critical}: $0.teamQuotaReached'>&#x25cf;&nbsp;&nbsp;Document translations (team):  ${teamDocuments}</p>
+        </div>
+    </div>
+</div>
+</template>
+
+
+<script>
+M.register('docTrans_texts', {
+	'docTrans/notes.oleObjects': "This document contains elements which haven't been translated.",
+	'docTrans/notes.maxCharactersExceeded': "Document is too large for the free version of DeepL Translator. It has been translated only in part.",
+	'docTrans/notes.errorsEncountered': "We had some trouble processing the document, please check it carefully.",
+	'docTrans/notes.validationFailed': "We had some trouble processing the document, please check it carefully.",
+	'docTrans/error.languages_equal': "The detected language of the source document is the same as the target language.",
+	'docTrans/error.too_large_free': "The file you have uploaded is too large. Subscribe to DeepL Pro to translate larger files.",
+	'docTrans/error.too_large_pro': "The file you have uploaded is too large, only files up to ${size}MB are supported.",
+	'docTrans/error.format_not_supported': "File type is not supported.",
+	'docTrans/error.currently_unavailable': "Currently we can't translate documents. Please try again later.",
+	'docTrans/error.blocked': "You can't translate any more documents. Subscribe to DeepL Pro to translate more.",
+	'docTrans/error.too_large': "Your document is too large to be translated.",
+	'docTrans/error.upload_noConnection': "There seems to be an issue connecting to our servers. Please try again later.",
+	'docTrans/error.upload_fileNotAccepted': "The file you've uploaded seems to be corrupted. We haven't been able to translate it.",
+	'docTrans/document.status_waiting': "Waiting for a free slot on our server...",
+	'docTrans/document.status_error': "Your document could not be translated.",
+	'docTrans/document.status_translating': "Translating into <em>${translateIntoLang}<\/em>...",
+	'docTrans/document.status_ready': "Ready to download",
+	'docTrans/document.status_deleted': "Your document has been removed from our servers.",
+	'docTrans/document.status_uploading': "Uploading...",
+	'docTrans/documentReady.translationDownloaded': "${translation} downloaded",
+	'docTrans/documentReady.translationReady': "${translation} ready",
+	'docTrans/document.approxMinutesRemaining': "approx. ${minutes} minutes remaining",
+	'docTrans/document.almostFinished': "approx. 1 minute remaining",
+	'docTrans/document.fileSize_kb': "(File size: $0 kB)",
+	'docTrans/translator.uploadButton_2': "into ${translateIntoLang}",
+	'docTrans/translation.en': "English translation",
+	'docTrans/translation.de': "German translation",
+	'docTrans/translation.fr': "French translation",
+	'docTrans/translation.es': "Spanish translation",
+	'docTrans/translation.it': "Italian translation",
+	'docTrans/translation.nl': "Dutch translation",
+	'docTrans/translation.pl': "Polish translation",
+	'docTrans/translation.ru': "Russian translation",
+	'docTrans/translation.pt': "Portuguese translation",
+	'docTrans/translateIntoLang.en': "English",
+	'docTrans/translateIntoLang.de': "German",
+	'docTrans/translateIntoLang.fr': "French",
+	'docTrans/translateIntoLang.es': "Spanish",
+	'docTrans/translateIntoLang.it': "Italian",
+	'docTrans/translateIntoLang.nl': "Dutch",
+	'docTrans/translateIntoLang.pl': "Polish",
+	'docTrans/translateIntoLang.ru': "Russian",
+	'docTrans/translateIntoLang.pt': "Portuguese",
+	'translator/anyLanguage': "Any language (detect)",
+	'translator/selectEnglish': "English",
+	'translator/selectGerman': "German",
+	'translator/selectFrench': "French",
+	'translator/selectSpanish': "Spanish",
+	'translator/selectItalian': "Italian",
+	'translator/selectDutch': "Dutch",
+	'translator/selectPolish': "Polish",
+	'translator/selectRussian': "Russian",
+	'translator/selectPortuguese': "Portuguese",
+	'translator/selectLang.target.en': "English",
+	'translator/selectLang.target.de': "German",
+	'translator/selectLang.target.fr': "French",
+	'translator/selectLang.target.es': "Spanish",
+	'translator/selectLang.target.pt': "Portuguese",
+	'translator/selectLang.target.it': "Italian",
+	'translator/selectLang.target.nl': "Dutch",
+	'translator/selectLang.target.pl': "Polish",
+	'translator/selectLang.target.ru': "Russian",
+	'docTrans/document.chooseDifferentLangHint': "Your document appears to already be in <em>${detectedLangName}<\/em>. Please select a different target language:",
+	'docTrans/detectedLangName.en': "English",
+	'docTrans/detectedLangName.de': "German",
+	'docTrans/detectedLangName.fr': "French",
+	'docTrans/detectedLangName.es': "Spanish",
+	'docTrans/detectedLangName.it': "Italian",
+	'docTrans/detectedLangName.nl': "Dutch",
+	'docTrans/detectedLangName.pl': "Polish",
+	'docTrans/detectedLangName.ru': "Russian",
+	'docTrans/detectedLangName.pt': "Portuguese",
+});
+M.define('docTrans_config', ['queryVars'], function(queryVars){
+    return {
+        'fileSize_freeDOCX': 2,
+        'fileSize_freePPTX': 5,
+        'fileSize_proDOCX': 10,
+        'fileSize_proPPTX': 10,
+        'fileSize_proTXT': 1,
+                'backendUrl': queryVars['docTransBackend'] || '/PHP/backend/docTrans.php'
+    };
+});
+</script>
+	<link rel="stylesheet" type="text/css" href="/css/is3.css?v=83506573" />
+<script src='/js/docTrans.min.js?v=947702870'></script>
+
+<template dl-template='pro_beta'>
+    <div class="dl_ad_pro dl_top_element--wide">
+        <div class="dl_ad_pro__bg"></div>
+        <div class="dl_ad_pro__content">
+            <h2 class="dl_ad__title">DeepL Custom Styles (beta)</h2>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action dl_button dl_button--1" href="/custom-models">
+                    Go to Custom Styles                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template dl-template='pro_ad'>
+    <div class="dl_ad_pro dl_top_element--wide">
+        <div class="dl_ad_pro__bg"></div>
+        <div class="dl_ad_pro__content">
+            <h2 class="dl_ad__title">Unlock the full power of DeepL!</h2>
+            <ul class="dl_ad_pro__features_list">
+                <li class="dl_ad_pro__features_item">Keep your texts confidential</li>
+                <li class="dl_ad_pro__features_item">Edit translated documents</li>
+                <li class="dl_ad_pro__features_item">Integrate DeepL's translations into CAT tools</li>
+                <li class="dl_ad_pro__features_item">Access our API</li>
+            </ul>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action dl_button dl_button--1" href="/pro.html#pricing">
+                    Try free for 30 days                </a>
+                <span class="dl_ad__actions__separator">or</span>
+                <a class="dl_ad_pro__action dl_button dl_button--3" href="/pro.html">
+                    Learn more                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template dl-template='pro_ad_ch'>
+    <div class="dl_ad_pro dl_top_element--wide">
+        <div class="dl_ad_pro__bg dl_ad_pro__bg--ch"></div>
+        <div class="dl_ad_pro__content">
+            <h2 class="dl_ad__title">DeepL Pro &ndash; now available in Switzerland!</h2>
+            <ul class="dl_ad_pro__features_list">
+                <li class="dl_ad_pro__features_item">Keep your texts confidential</li>
+                <li class="dl_ad_pro__features_item">Edit translated documents</li>
+                <li class="dl_ad_pro__features_item">Integrate DeepL's translations into CAT tools</li>
+                <li class="dl_ad_pro__features_item">Access our API</li>
+            </ul>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action dl_button dl_button--1" href="/pro.html#pricing">
+                    Try free for 30 days                </a>
+                <span class="dl_ad__actions__separator">or</span>
+                <a class="dl_ad_pro__action dl_button dl_button--3" href="/pro.html">
+                    Learn more                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template dl-template='pro_illustration'>
+    <div class='lmt_pro_background_illustration'><div></div>
+</template>
+
+<template dl-template='app_popup_win'>
+<div id='dl_app_banner_popup' class="dl_app_popup" dl-attr='removeIf: $0.popupIsClosed' dl-test="translator-app-popup" >
+    <div class="dl_overlay_popup" dl-attr="rootClass{dl--header_popup_open}: $0.isVisible"></div>
+    <div class='dl_app_popup__content'>
+        <div class="dl_app_popup__bg"></div>
+        <div class="dl_app_popup__vid" dl-attr='content: $0.videoElement'>
+        </div>
+        <div class="dl_app_popup__inner">
+            <h2 class="dl_app_popup__header">New: DeepL for Windows</h2>
+            <p class="dl_app_popup__feat_desc">The fastest and easiest way to use DeepL.</p>
+            <p class="dl_app_popup__feat_desc">Translate in any application on your computer.</p>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action__download dl_button dl_button--1" dl-attr="onClick: $0.onDownload, attr{href}:$0.downloadURL" tabindex="0" autofocus>
+                    Download for free                </a>
+                <button class="dl_ad_pro__action__download dl_button dl_button--3" dl-attr="onClick: $0.doClose" tabindex="0">
+                    No, thanks                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+<template dl-template='app_popup_mac'>
+<div id='dl_app_banner_popup' class="dl_app_popup" dl-attr='removeIf: $0.popupIsClosed' dl-test="translator-app-popup" >
+    <div class="dl_overlay_popup" dl-attr="rootClass{dl--header_popup_open}: $0.isVisible"></div>
+    <div class='dl_app_popup__content'>
+        <div class="dl_app_popup__bg"></div>
+        <div class="dl_app_popup__vid" dl-attr='content: $0.videoElement'>
+        </div>
+        <div class="dl_app_popup__inner">
+            <h2 class="dl_app_popup__header">New: DeepL for Mac</h2>
+            <p class="dl_app_popup__feat_desc">The fastest and easiest way to use DeepL.</p>
+            <p class="dl_app_popup__feat_desc">Translate in any application on your computer.</p>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action__download dl_button dl_button--1" dl-attr="onClick: $0.onDownload, attr{href}:$0.downloadURL" tabindex="0" autofocus>
+                    Download for free                </a>
+                <button class="dl_ad_pro__action__download dl_button dl_button--3" dl-attr="onClick: $0.doClose" tabindex="0">
+                    No, thanks                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
+
+
+<template dl-template='app_banner_win'>
+    <div class='dl_ad_pro dl_pro_app_ad dl_top_element dl_top_element--wide'>
+        <div class="dl_ad_pro__bg dl_app_ad__bg"></div>
+        <div class="dl_app_ad__vid" dl-attr='content: $0.videoElement'>
+        </div>
+        <div class="dl_ad_pro__content dl_ad_pro__content--app">
+            <h2 class="dl_ad__title">New: DeepL for Windows</h2>
+            <p>The fastest and easiest way to use DeepL.</p>
+            <p>Translate in any application on your computer.</p>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action__download dl_button dl_button--1" dl-attr="onClick: $0.onDownload, attr{href}:$0.downloadURL">
+                    Download for free                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template dl-template='app_banner_mac'>
+    <div class='dl_ad_pro dl_pro_app_ad dl_top_element dl_top_element--wide'>
+        <div class="dl_ad_pro__bg dl_app_ad__bg"></div>
+        <div class="dl_app_ad__vid" dl-attr='content: $0.videoElement'>
+        </div>
+        <div class="dl_ad_pro__content dl_ad_pro__content--app">
+            <h2 class="dl_ad__title">New: DeepL for Mac</h2>
+            <p>The fastest and easiest way to use DeepL.</p>
+            <p>Translate in any application on your computer.</p>
+            <div class="dl_ad__actions">
+                <a class="dl_ad_pro__action__download dl_button dl_button--1" dl-attr="onClick: $0.onDownload, attr{href}:$0.downloadURL">
+                    Download for free                </a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template dl-template='banner_video'>
+    <video class="dl_app_ad__video" autoplay loop muted poster="" id="banner_video"
+        dl-attr="attr{src}: $0.videoSrc, attr{poster}: $0.posterSrc, _init: $0.doRegisterVideoElement, attr{onload}: $0.doInitVideoElement"></video>
+    <img src="" class="dl_app_ad__poster" dl-attr="attr{src}: $0.posterSrc, isVisible: $0.isPosterVisible">
+</template>
+
+
+<!-- ===================================================== -->
+</body>
+</html>

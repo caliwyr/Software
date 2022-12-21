@@ -1,0 +1,27 @@
+~~ DO NOT EDIT THE FIRST 2 LINES
+~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
+
+TVN | CHILE | https://yt3.ggpht.com/ytc/AKedOLRYcis81WAh0QolovYToT0vSzgN7sIzkaru5-pOog=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCaVaCaiG6qRzDiJDuEGKOhQ/live
+
+CHV Noticias| CHILE | https://yt3.ggpht.com/clEeO22ukG6jvOlhK3EDIszMjjcNfZ5xJY4fVEUrN3bki3RYs8RiATTjqPXGVTCP0XFN7W046A=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
+
+Meganoticias | CHILE | https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fyt3.ggpht.com%2Fa%2FAGF-l790QCWpgPDcehyjzfhDKe2MqcuwGJc6HbUR4Q%3Ds900-c-k-c0xffffffff-no-rj-mo&f=1&nofb=1 |
+https://www.youtube.com/channel/UCkccyEbqhhM3uKOI6Shm-4Q/live
+
+
+T13 EN | CHILE | https://yt3.ggpht.com/ytc/AKedOLR7bqk5Na_4EadU3tKgOi5b9jRifERvtJ6EiSY9vQ=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/watch?v=Ove87nZ_1D4/Live
+
+T13 EN | CHILE | https://yt3.ggpht.com/ytc/AKedOLR7bqk5Na_4EadU3tKgOi5b9jRifERvtJ6EiSY9vQ=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCsRnhjcUCR78Q3Ud6OXCTNg/Live
+
+
+24horas.cl  | CHILE | https://yt3.ggpht.com/ytc/AKedOLSUe9jIzIfdb0yoCPlzMWThMyTg7uBO2GS_H7mF6wo=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCTXNz3gjAypWp3EhlIATEJQ/Live
+
+
+TV SENADO CHILE | Política | https://yt3.ggpht.com/rzWmoueYLYs4hpK1mwVFnyafADTztytGuZFiPJEVd1lyCZKFyYebzLPV1P9BB4xB6rEIiEKSug=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/TVSENADOCHILE/live
+

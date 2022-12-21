@@ -1,0 +1,16 @@
+https://github.com/Moham3dRiahi/Th3inspector
+https://github.com/zahidin/web-information-gathering
+https://github.com/6e726d/WIG
+https://github.com/JaniniRami/FaceBook-Hunter
+https://github.com/Tuhinshubhra/RED_HAWK
+https://github.com/DoubleThreatSecurity/Scylla
+https://cdn-107.anonfiles.com/yfR332e2b3/548d0622-1613863675/ECSAv4%20Module%2002%20Advanced%20Googling.pdf
+https://github.com/s0md3v/Photon
+https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE
+https://github.com/2c0mrade9/Python-Information-Gathering-Tool
+https://github.com/santidediego/MaxRecon
+https://github.com/Moham3dRiahi/Th3inspector
+https://github.com/sundowndev/PhoneInfoga
+https://github.com/twelvesec/gasmask
+https://github.com/th3unkn0n/osi.ig
+https://github.com/ihebski/angryFuzzer

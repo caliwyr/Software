@@ -1,0 +1,133 @@
+~~ DO NOT EDIT THE FIRST 2 LINES
+~~ FORMAT: <channel name> | <group name> | <logo> | <tvg-id>
+
+
+
+TV Pública | ARGENTINA | https://yt3.ggpht.com/gCklb7Bo3XDM4aS_a1-Ta91LsGZtkGlb1IMQwLri3ureUeABTKqXYr-LZGET-Or4J_U4TI_uRq4=s48-c-k-c0x00ffffff-no-rj | 
+https://www.youtube.com/channel/UCs231K71Bnu5295_x0MB5Pg/live
+
+Televisión Pública 2 | ARGENTINA | https://yt3.ggpht.com/gCklb7Bo3XDM4aS_a1-Ta91LsGZtkGlb1IMQwLri3ureUeABTKqXYr-LZGET-Or4J_U4TI_uRq4=s48-c-k-c0x00ffffff-no-rj | 
+https://www.youtube.com/user/TVPublicaArgentina/live
+
+Canal 12 Televisión Pública Regional | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLQylk1Pg1iz872BeKPel5iEkdEGbXFV4-_c2x0n=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCaU_cKHQ4IFHvBzQ-tKS1-Q/live
+
+Crónica TV | ARGENTINA | https://yt3.ggpht.com/i213N_VQVyD9cIhh1zRP9OFW60ege6nchMkw4SzEiy6YznGacsKto8GKsFoye12LcV4pskI__w=s88-c-k-c0x00ffffff-no-rj | 
+https://www.youtube.com/c/cronicatv/live
+
+C5N | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLTqGg2bWg02R5un1pFAeuYDMGAVCmna52i__wapvw=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/user/c5n/live
+
+América TV | ARGENTINA | https://i.ytimg.com/vi/zcWXboTnous/hqdefault_live.jpg |
+https://www.youtube.com/c/americaenvivo/live
+
+LN+ | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLSYzA3huV-HI91MDWQCaz6y5IjfDpj8sQTqNHLSmg=s68-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live
+
+TELEFE CÓRDOBA | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLT_2vc9G9uQ63H-T7ju-WzsmqbBPyXTw4l-irVbaA=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC3OQ66wEJaOPHK25IBdWR_g/live
+
+TELEFE ROSARIO | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLRJLMbep2bJrLLuIAyi6-TXc3qnQCUXLbztYkoo=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCPr0HEFKN8wtDIfcPsVB10Q/live
+
+TELEFE SALTA | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLTQ0CHvwUkhFXB2UyejrJl0KVeBjhtrORfIweTQXg=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCy-r-BQ5BQRU6rzGS73-WBQ/live
+
+Informacion Periodística | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLQaYsAXWJNpiduF7CfZckAt76XcPWwTeM4qkKiI=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC1bBjOZieJWHbsFA0LwjjJA/Live
+
+Todo Noticias | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLRVONiJPqnYI_ETrMgVqqBLCerU8RXnRRp-xF79LA=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
+
+Canal Encuentro | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLSYU51c8SbrkWZeNBRMFeCnGv0YXPpXuEGBNq-X5g=s48-c-k-c0x00ffffff-no-rj | 
+https://www.youtube.com/user/encuentro/live
+
+TEC TV | ARGENTINA | https://yt3.ggpht.com/8H8tnhLLSm3kDuxUgOOqeiV3zsdo4UmaSQEsDDBTUbAI6GbJX_O54XXSQryos1vY9hcjqSfQNw=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/TEC_ciencia_ar/live
+
+Hipódromo de Palermo | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLRJ0_-IzGm_c5e-Kn5iNrIrba2th4gJsjIt-JHSXg=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCBQnpH3GKOKRGg4O8PpqQSw/live
+
+A24 | ARGENTINA | https://yt3.ggpht.com/Ehgzljg8T8lsiCG4M6CjOp-G1P7nizvlRKNaDd_rqEnAYn3nG5jbNHXQ7ljcjvDvXjojGC6Lyw=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCR9120YBAqMfntqgRTKmkjQ/live
+
+
+
+
+
+
+Canal 7 Mendoza AR | ARGENTINA | https://yt3.ggpht.com/kg5vrdz7shjKha3N3I7ed5MhzGv3_LwVfNj1vtZfW9OFSGDArcvMD0wmtYhq9yLkkVuRCcuK6g=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC64ZNqX0FQHabP8iIkmnR3A/live
+
+El Siete TV (AFILIADA AMERICA) | ARGENTINA | https://yt3.ggpht.com/kg5vrdz7shjKha3N3I7ed5MhzGv3_LwVfNj1vtZfW9OFSGDArcvMD0wmtYhq9yLkkVuRCcuK6g=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC64ZNqX0FQHabP8iIkmnR3A/live
+
+Canal 8 San Juan (AFILIADA AMERICA) | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLTCjq3swUGlbn-gss0oqSC6XZ1o__OLXOraCqJzJQ=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC5UKMEIoqvNDMSDz2_6Sn9g/live
+
+EL SEIS BARILOCHE | ARGENTINA | https://yt3.ggpht.com/88bIoKxC85lXsgiRMnqbkc8UB6ScJHjx0NvqFYxudJ_Cu3_ID2XDyl_426-kKZ1NfpsfpUIGPg=s88-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCMy706Rhe2swaTmljCgiYVg/live
+
+CANAL 26  | ARGENTINA | https://yt3.ggpht.com/SQC2152IyCYfOI2NqTpJFbFZXQCSyJkY4cWMfssJxB1TaH6mccq472cjU6BZTUloKgaOAV7yUQ=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/canal26/live
+
+KZO | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLTZ66m3iJOVc5mAtpdFP3OyZQNxevFmEaLt6cVwxQ=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/CanalKZO/live
+
+CANAL DE LA CIUDAD | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLTKUaxHAyqbEEphECYxByOgE3IrHURM18rg0Fxs7Q=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/canalciudadba/live
+
+DIARIO DEMOCRACIA | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLQqL9YaWAmxHUyE5OO8ByMR4QO4Vts86rTs21BP=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/user/diariodemocracia/live
+
+WBSC AMERICAS SOFTBALL | ARGENTINA | https://yt3.ggpht.com/vv_t-qa4gDb8Rn-vri7CilUzVXjg0dGbDSVYFrFoca0vQCUfwwiH1_TJn7sr1nCpD1SyfttovQ=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC_7PDO6CCrynKPkFoOyLHOQ/live
+
+SHOW DE LA FE ARGENTINA | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLThGfqhtYY9-oNcLBqlb3Viq-P0R1Mxj4v7yEpgsA=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/showdelafe/live
+
+CANAL DE LA CIUDAD | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLTKUaxHAyqbEEphECYxByOgE3IrHURM18rg0Fxs7Q=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/canalciudadba/live
+
+Pakapaka | ARGENTINA |  https://yt3.ggpht.com/ytc/AKedOLQbue1WVK5s0ne8sFBVwxf6u7-TbKAdPjK-YCHI8g=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/user/CanalPakapaka/LIVE
+
+SENADO ARGENTINA | ARGENTINA |  https://yt3.ggpht.com/ytc/AKedOLSnZ-EKL9UQCi8CSKVDUDbbcwC7BXuZJb_vF4_lbA=s176-c-k-c0x00ffffff-no-rj-mo |
+https://www.youtube.com/c/SenadoTVArgentina/LIVE
+
+Honorable Cámara de Diputados de la Nación | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLSg8Q8Gj-iQ6nauQFbE8B8ygtPavdGvpkmn14gA3g=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/live
+
+Cámara de Diputados de la Provincia de San Luis | ARGENTINA |  https://yt3.ggpht.com/ytc/AKedOLTojwq6lCK6vh3nOTJ6-DLKAKLyj0Pak0i4jpiK=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC1h8_HKc5wScqeRw1HV6a6w/live
+
+ARGENTINA LIVE SISE | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLRDFVq2CLFeGtnZhTNeRrfrnnY4Z_1AZlk2pwPn=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCftan3cVkKKfxXpRN9JUX7A/live
+
+ARGENTINA LIVE SISE 2| ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLRDFVq2CLFeGtnZhTNeRrfrnnY4Z_1AZlk2pwPn=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/SISEArgentina/live
+
+PRAIA ARGENTINA LIVE | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLQUkEUmZE-jNr1h_St0HJDSoAx7jjh3emFvCt3q=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCjeImUhRB1SLqN-svqDRJJw/live
+
+VORTERIX - RÁDIO | ARGENTINA | https://yt3.ggpht.com/ytc/AKedOLRvpVL-PUtjTS-n_7yznSTpvfhQ3FfYoS7ef5b7ww=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live
+
+Urbana Play 104.3 FM - RÁDIO | ARGENTINA | https://yt3.ggpht.com/apf1ugFYL859mHuDvR8oj5A7wPI3Q7wJEFq-4bXiotsQ3JPfPoYRJHxOJo7DgulUP20AZ7IY=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCC1kfsMJko54AqxtcFECt-A/live
+
+LA 100 - RÁDIO | ARGENTINA | https://yt3.ggpht.com/GijbirXXgwFRgUqwtlJ4bpm3hB_Xpe3xI23TnCOxiK9Xu2MVHhOAOFNm-RDDmLoQ2YqkCYHS1A=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UC2zO2jZCDplwm8SVsXUcxCQ/live
+
+Radio Santa Lucia San Juan - RÁDIO | ARGENTINA | https://yt3.ggpht.com/EFM248LEd3Yz4mnTrwRKbBRWP_qBAkuIv0SGSm9u63bIoGnO3OUtc8RPP4OPwDDw07DeGxhjxBo=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCDSr0_1523BrSqQSm7Y4kHA/live
+
+Radio Rivadavia AM630 - RÁDIO | ARGENTINA | https://yt3.ggpht.com/wRy3AgzuKPU64ppne21ccwQU_TDcFwke4m3NRFw-1zdPgUjCBjlUoNmQDXJ5QgakwQ0tDKmC=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/canalciudadba/live
+
+Radio 10 - AM 710 - RÁDIO | ARGENTINA | https://yt3.ggpht.com/CiIegvl8wx-2EvPA6yNEUs1cpwSJZlS5DuNAkh4v2Au4mFXiyp1GazA3osHLnz2jp53RXDvH4mc=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/c/Radio10am/live
+
+Canal 30 San Juan - RÁDIO | ARGENTINA | https://yt3.ggpht.com/6-ovkJ4kVGq-byBEgD8s-7bXIX-GlS7VS86wS72wVriBOI7w8T6GsIAahiDBrO88o5Ov-q7L=s48-c-k-c0x00ffffff-no-rj |
+https://www.youtube.com/channel/UCuJvDPQIaUhvdHiH275WjNA/live
+

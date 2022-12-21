@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="SportsMax.jm" status="timeout",SportsMax (720p)
+http://cdn.tvmatic.net/sport.m3u8

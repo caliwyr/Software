@@ -1,0 +1,432 @@
+####################################################################################################################################
+#EXTINF:0 tvg-logo="" group-title="SOUND!",[COLOR=greenyellow][B]/////////////////  CANAIS TV PORTUGAL 2  /////////////////[/B][/COLOR][COLOR=greenyellow][/COLOR]
+http://0.0.0.0:0000
+####################################################################################################################################
+ 
+ FONTE DE INFORMAÇÃO - LISTA 1: https://raw.githubusercontent.com/Ramys/Iptv-Brasil-2022/master/CanaisB5.m3u8 
+ 
+#EXTM3U
+            
+#EXTINF:-1,[COLOR=orange][B]LISTA 1 REVISTA: 17/11/2022[/B][/COLOR][COLOR=orange][/COLOR]
+
+#EXTM3U
+
+******************************************************************  GENERALISTAS & NOTÍCIAS PT  ******************
+
+EXEMPLO  [COLOR=white][B]ONFM PORTUGAL HD[/B][/COLOR][COLOR=white][/COLOR]
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP1[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0g7
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP2[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0g8
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP3[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gd
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP AÇORES[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ir
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP MADEIRA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0is
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP MEMÓRIA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gk
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RTP ÁFRICA HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hn
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SIC[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0g9
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SIC CARAS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jd
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SIC MULHER[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gt
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SIC NOTÍCIAS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ga
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SIC RADICAL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0it
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SIC K[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gs
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TVI[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gb
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TVI FICÇÃO[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0iu
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CNN PORTUGAL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02l
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CNN PORTUGAL HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02j
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CNN[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0il
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CMTV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gf
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CMTV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03x
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]PORTO CANAL HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0j2
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]PORTO CANAL HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a041
+
+
+
+******************************************************************  FILMES E SÉRIES DE TV PT  ******************
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX COMEDY HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a032
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AMC HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jf
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CINEMUNDO HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0je
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gm
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02y
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX CRIME[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h2
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX LIFE[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h1
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX MOVIES HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h0
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0go
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN MOVIES[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h6
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN WHITE[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h5
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN WHITE HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jx
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]HOLLYWOOD HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jg
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]HOLLYWOOD HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02v
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SYFY HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gp
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02z
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN MOVIES HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a034
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AXN WHITE HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a033
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX CRIME HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a031
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX LIFE HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a030
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOX MOVIES HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02x
+
+******************************************************************  MÚSICA  ******************
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TRACE URBAN HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a038
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TRACE URBAN[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ig
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TRACE TOCA HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03a
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]MCM TOP[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ih
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]MCM POP[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jp
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]MTV PORTUGAL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h7
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]MTV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a037
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AFRO MUSIC HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hh
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]ALMA LUSA HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a002
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]MEZZO[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ii
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CLUBBING TV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jr
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]MTV 00´S[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hf
+
+
+******************************************************************  CANAIS BR E ÁFRICA  ******************
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]RECORD NEWS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jq
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TV RECORD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ij
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TPA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jo
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]GLOBO HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ji
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]GLOBO HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03z
+
+******************************************************************  DESPORTO  ******************
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]EUROSPORT 1 HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gh
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]EUROSPORT 1 HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02o
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL 11[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ge
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL 11[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03w
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]A BOLA TV[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ho
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SPORTING TV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02n
+
+
+******************************************************************  CANAIS TV INFANTIS  ******************
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]PANDA BIGGS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gv
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL PANDA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ix
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DISNEY CHANNEL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gu
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DISNEY JUNIOR[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0iv
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CARTOON NETWORK[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h3
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CARTOON NETWORK[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02s
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]LOLLY KIDS HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a001
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]BABY TV[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jk
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]PANDA BIGGS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02u
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]PANDA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02t
+
+
+#######################################################################################################################
+#EXTINF:-1,[COLOR=yellow][B]///////// OUTROS CANAIS PT /////////[/B][/COLOR][COLOR=yellow][/COLOR]
+https://000000
+
+
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]24 KITCHEN[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ha
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]BLAZE[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h4
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]BLOOMBERG[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hp
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL Q[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gn
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CRIME+ INVESTIGATION[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0j3
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DISCOVERY CHANNEL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hg
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]EURONEWS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ik
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FTV[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hr
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FRANCE24[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gq
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FRANCE24[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0in
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]GAMETOON HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gi
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL HISTÓRIA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0he
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]LOCALVISÃO TV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gx
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]M6[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hl
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]NATIONAL GEOGRAPHIC[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hb
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]ODISSEIA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hd
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SKY NEWS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0im
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]SPORTING TV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gg
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TLC[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0h8
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TV GALICIA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0ju
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TV5 MONDE[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0hq
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TVE 24H[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0jm
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]TVE INTER. HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0iy
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CNN PORTUGAL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8000/play/a0gl
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]24KITCHEN HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a046
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]AMC HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a036
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]BBC WORLD NEWS[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03q
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]BLAZE HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03e
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CNBC[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03r
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL 180[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03t
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CANAL Q[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02m
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]CINEMUNDO HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02w
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DEUTCHE WELLE[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03s
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DISCOVERY HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03b
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DISNEY CHANNEL[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02q
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]DISNEY JUNIOR[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02r
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]E! HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03h
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FTV[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03l
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FOOD NETWORK[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03k
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]FUEL TV HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a02p
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]GINX[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03n
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]HISTÓRIA[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03f
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]NATGEO HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03c
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]NATGEO WILD HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03g
+#EXTINF:0 tvg-id="ext" group-title="Channels",[COLOR=white][B]ODISSEIA HD[/B][/COLOR][COLOR=white][/COLOR]
+http://45.92.69.72:8001/play/a03d
+      
+
+#######################################################################################################################
+#EXTINF:-1,[COLOR=yellow][B]/////////  CANAIS PT LISTA 2  /////////[/B][/COLOR][COLOR=yellow][/COLOR]
+https://000000
+
+
+#EXTINF:0 tvg-id="ABolaTV.pt" group-title="Channels",PT: A BOLA TV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1420
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: ALMA LUSA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/264642
+#EXTINF:0 tvg-id="AMC.pt" group-title="Channels",PT: AMC
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1473
+#EXTINF:0 tvg-id="axn.pt" group-title="Channels",PT: AXN
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1469
+#EXTINF:0 tvg-id="AXNBlack.pt" group-title="Channels",PT: AXN BLACK
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/278653
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: AXN MOVIES
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1471
+#EXTINF:0 tvg-id="AXNWhite.pt" group-title="Channels",PT: AXN WHITE
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1467
+#EXTINF:0 tvg-id="BabyTV.pt" group-title="Channels",PT: BABY TV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1441
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: BTV TV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1497
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: BIG BROTHER
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/296831
+#EXTINF:0 tvg-id="PandaBiggs.pt" group-title="Channels",PT: BIGGS
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1439
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: BLAZE
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/3996
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: BLOOMBERG
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/5933
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: BOOMERANG
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/24529
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: CANAL 11
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1480
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: CANAL 180
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/146057
+#EXTINF:0 tvg-id="hollywood.pt" group-title="Channels",PT: CANAL HOLLYWOOD
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1455
+#EXTINF:0 tvg-id="CANCAONOVA.pt" group-title="Channels",PT: CANÇÃO NOVA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/290766
+#EXTINF:0 tvg-id="cartoon.pt" group-title="Channels",PT: CARTOON NETWORK
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1440
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: CASA & COZINHA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/6097
+#EXTINF:0 tvg-id="CacaVision.pt" group-title="Channels",PT: CAÇAVISION
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/13956
+#EXTINF:0 tvg-id="CBSReality.pt" group-title="Channels",PT: CBS REALITY
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1528
+#EXTINF:0 tvg-id="Cinemundo.pt" group-title="Channels",PT: CINEMUNDO
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1477
+#EXTINF:0 tvg-id="CMTV.pt" group-title="Channels",PT: CMTV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1412
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: CRIME+ INVESTIGATION
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/5928
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: DISCOVERY WORLD
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/296226
+#EXTINF:0 tvg-id="disneychannel.pt" group-title="Channels",PT: DISNEY CHANNEL
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1434
+#EXTINF:0 tvg-id="DisneyJunior.pt" group-title="Channels",PT: DISNEY JUNIOR
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1435
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: EURONEWS
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/4007
+#EXTINF:0 tvg-id="Eurosport1.pt" group-title="Channels",PT: EUROSPORT 1
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1517
+#EXTINF:0 tvg-id="Eurosport2.pt" group-title="Channels",PT: EUROSPORT 2
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1518
+#EXTINF:0 tvg-id="FoodNetwork.pt" group-title="Channels",PT: FOOD NETWORK
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/2044
+#EXTINF:0 tvg-id="fox.pt" group-title="Channels",PT: FOX
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1461
+#EXTINF:0 tvg-id="FOXComedy.pt" group-title="Channels",PT: FOX COMEDY
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1465
+#EXTINF:0 tvg-id="foxcrime.pt" group-title="Channels",PT: FOX CRIME
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1463
+#EXTINF:0 tvg-id="foxlife.pt" group-title="Channels",PT: FOX LIFE
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1459
+#EXTINF:0 tvg-id="FoxMovies.pt" group-title="Channels",PT: FOX MOVIES
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1457
+#EXTINF:0 tvg-id="FuelTV.pt" group-title="Channels",PT: FUEL TV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1521
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: HBO PORTUGAL
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/201073
+#EXTINF:0 tvg-id="HistoryChannel.pt" group-title="Channels",PT: HISTORIA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1525
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: INVESTIGATION DISCOVERY
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/5914
+#EXTINF:0 tvg-id="Motorvision.pt" group-title="Channels",PT: MOTORVISION TV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/4012
+#EXTINF:0 tvg-id="mtvportugal.pt" group-title="Channels",PT: MTV PORTUGAL
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1534
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: NICK JUNIOR
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/9693
+#EXTINF:0 tvg-id="Nickelodeon.pt" group-title="Channels",PT: NICKELODEON
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1436
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: NOS STUDIOS
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1454
+#EXTINF:0 tvg-id="odisseia.pt" group-title="Channels",PT: ODISSEIA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1532
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: PANDA KIDS
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/290678
+#EXTINF:0 tvg-id="PortoCanal.pt" group-title="Channels",PT: PORTO CANAL
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1419
+#EXTINF:0 tvg-id="rtp1.pt" group-title="Channels",PT: RTP 1
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1404
+#EXTINF:0 tvg-id="rtp2.pt" group-title="Channels",PT: RTP 2
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1406
+#EXTINF:0 tvg-id="RTP3.pt" group-title="Channels",PT: RTP 3
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1418
+#EXTINF:0 tvg-id="RTPAcores.pt" group-title="Channels",PT: RTP AÇORES
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/2055
+#EXTINF:0 tvg-id="RTPMadeira.pt" group-title="Channels",PT: RTP MADEIRA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/278558
+#EXTINF:0 tvg-id="rtpmemoria.pt" group-title="Channels",PT: RTP MEMÓRIA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1425
+#EXTINF:0 tvg-id="RTPAfrica.pt" group-title="Channels",PT: RTP ÁFRICA
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1424
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: SAUDE+
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/81973
+#EXTINF:0 tvg-id="sicmulher.pt" group-title="Channels",PT: SIC MULHER
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1427
+#EXTINF:0 tvg-id="sicnoticias.pt" group-title="Channels",PT: SIC NOTÍCIAS
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1416
+#EXTINF:0 tvg-id="sicradical.pt" group-title="Channels",PT: SIC RADICAL
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1429
+#EXTINF:0 tvg-id="SportTVplus.pt" group-title="Channels",PT: SPORT TV +
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1481
+#EXTINF:0 tvg-id="SPORTINGTV.pt" group-title="Channels",PT: SPORTING TV
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1519
+#EXTINF:0 tvg-id="ext" group-title="Channels",PT: SYFY PORTUGAL
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1475
+#EXTINF:0 tvg-id="TLC.pt" group-title="Channels",PT: TLC
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1479
+#EXTINF:0 tvg-id="TVI.pt" group-title="Channels",PT: TVI
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1410
+#EXTINF:0 tvg-id="TVIFiccao.pt" group-title="Channels",PT: TVI FICÇÃO
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1421
+#EXTINF:0 tvg-id="TVIReal.pt" group-title="Channels",PT: TVI REALITY
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/1423

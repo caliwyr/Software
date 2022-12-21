@@ -1,0 +1,158 @@
+<div class='blog-posts hfeed'>
+<!--Can't find substitution for tag [defaultAdStart]-->
+
+          <div class="date-outer">
+        
+
+          <div class="date-posts">
+        
+<div class='post-outer simpleCart_shelfItem'>
+<div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='https://3.bp.blogspot.com/-H1-BRGWtSbk/WgRuFMHlktI/AAAAAAAAEY0/dUzneirrxUAjg0Y9j7FM1ZUrFMiWpcV-ACLcBGAs/s200/bri.png' itemprop='image_url'/>
+<meta content='5577866517834855838' itemprop='blogId'/>
+<meta content='8964644591088967518' itemprop='postId'/>
+<div class='post-header'>
+<div class='post-header-line-1'><span class='post-author vcard'>
+</span>
+<span class='post-comment-link'>
+</span>
+</div>
+</div>
+<div class='post-body entry-content' id='post-body-8964644591088967518' itemprop='description articleBody'>
+<div id="cart-details">
+<h3>
+Daftar Belanjaan</h3>
+<div class="simpleCart_items">
+<table><tbody>
+<tr class="headerRow"><th class="item-thumbimg"></th><th class="item-name">Item</th><th class="item-price">Price</th><th class="item-decrement"></th><th class="item-quantity">Qty</th><th class="item-increment"></th><th class="item-total">Total</th><th class="item-remove">Cancel</th></tr>
+</tbody></table>
+</div>
+<h4 class="button">
+Total Belanja Anda: <span class="simpleCart_total">Rp&nbsp;0.00</span></h4>
+</div>
+<br />
+<br />
+<span style="font-size: large;">Silahkan isi form di bawah ini. Kami akan mengirimkan detail informasi pembayaran ke alamat email</span> <span style="font-size: large;">anda.
+</span><iframe id="iframe_uexxnchh" name="iframe_uexxnchh" onload="if(typeof sent_uexxnchh!='undefined'){window.location='http://success.goomsite.net/';}"></iframe>
+<br />
+<form action="https://docs.google.com/forms/d/1-4lcPqtCKo014Um6VTNKVNZf5drjFQ99dBpJ8PVhi9w/formResponse" id="ss-form" method="POST" onsubmit="sent_uexxnchh=true" target="iframe_uexxnchh">
+<div class="styled-input">
+<div class="styled-input-in">
+<label>Name Lengkap <span style="color: red;">*</span></label>
+<input aria-label="Name" dir="auto" id="i.desc.1273213442" name="entry.1737440414" required="required" title="" type="text" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input">
+<div class="styled-input-in">
+<label>Email <span style="color: red;">*</span></label>
+<input aria-label="email" dir="auto" id="i.desc.1349265833" name="entry.25388406" required="required" title="Masukkan alamat email anda dengan benar" type="Email" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input">
+<div class="styled-input-in">
+<label>Alamat <span style="color: red;">*</span></label>
+<input aria-label="Alamat" dir="auto" id="i.desc.1332511248" name="entry.1063412485" required="required" title="Masukkan alamat anda dengan benar" type="Alamat" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input">
+<div class="styled-input-in">
+<label>Kode Pos <span style="color: red;">*</span></label>
+<input aria-label="Kode Pos" dir="auto" id="i.desc.1853541783" name="entry.22422082" required="required" title="Masukkan kode pos tempat tinggal anda" type="Kode Pos" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input">
+<div class="styled-input-in">
+<label>Telp/HandPhone <span style="color: red;">*</span></label>
+<input aria-label="No HandPhone" dir="auto" id="i.desc.1594148033" name="entry.1085393874" required="required" title="Masukkan nomor handphone anda dengan benar" type="No HandPhone" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input">
+<div class="styled-input-in">
+<label>ID BARANG <span style="color: red;">*</span></label>
+<input aria-label="ID BARANG" dir="auto" id="i.desc.6180708" name="entry.955621245" required="required" title="Masukkan ID BARANG dengan benar" type="ID BARANG" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input">
+<div class="styled-input-in">
+<label>Jumlah Dana <span style="color: red;">*</span></label>
+<input aria-label="Jumlah Dana" dir="auto" id="i.desc.887990004" name="entry.2891405" required="required" title="Masukkan jumlah dana yang telah ditransfer" type="Jumlah Dana" value="" />
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<div class="styled-input wide">
+<div class="styled-input-in">
+<label>Komentar</label>
+<textarea aria-label="Komentar" aria-required="true" cols="0" dir="auto" id="i.desc.186491945" name="entry.1213061265" required="required" rows="8"></textarea>
+<span class="span1"></span><span class="span2"></span>
+</div>
+</div>
+<input name="draftResponse" type="hidden" value="[,,&quot;5551902092149518152&quot;]" />
+<input name="pageHistory" type="hidden" value="0" />
+<input name="fbzx" type="hidden" value="5551902092149518152" />
+<button class="btn btn-default" name="submit" type="submit">Kirim</button>
+</form>
+<br />
+<br />
+<br />
+<table border="1">
+<tbody>
+<tr>
+<td><img border="0" data-original-height="78" data-original-width="250" height="61" src="https://3.bp.blogspot.com/-H1-BRGWtSbk/WgRuFMHlktI/AAAAAAAAEY0/dUzneirrxUAjg0Y9j7FM1ZUrFMiWpcV-ACLcBGAs/s200/bri.png" width="200" /><br />
+<div style="text-align: center;">
+BRI Cab Manado
+No. Rek. 123456789<br />
+a/n CV Toko Online Indonesia</div>
+</td>
+<td><img border="0" data-original-height="54" data-original-width="250" height="43" src="https://1.bp.blogspot.com/-dF0yVJQAaQI/WgRwuR-ZLpI/AAAAAAAAEZY/vJfXQ0zKUxAidw8NT-LfMx6cLCYt1VE3gCLcBGAs/s200/atm.png" width="200" /><br />
+<div style="text-align: center;">
+Virtual Account via ATM BCA, Prima, Bersama, &amp; ALTO</div>
+</td>
+</tr>
+<tr>
+<td><img border="0" data-original-height="82" data-original-width="250" height="65" src="https://2.bp.blogspot.com/-uTPsotRKK3I/WgRuMiulX6I/AAAAAAAAEY4/6zA_5HCRWbYr8Nz8lebDhMRLmhFmM3f7ACLcBGAs/s200/Logo%2BBank%2BBNI%2BPNG.png" width="200" /><br />
+<div style="text-align: center;">
+BNI Cab Manado
+No. Rek. 123456789<br />
+a/n CV Toko Online Indonesia</div>
+</td>
+<td><br />
+<img border="0" data-original-height="65" data-original-width="250" height="52" src="https://3.bp.blogspot.com/-idNa-NnQIco/WgRxLMDydXI/AAAAAAAAEZc/lkUxhWr0QZAYUQ3DznlgGk8vbWW4GVy1ACLcBGAs/s200/g.png" width="200" />
+<br />
+<div style="text-align: center;">
+Kami menerima Visa dan MasterCard</div>
+</td>
+</tr>
+<tr>
+<td><img border="0" data-original-height="82" data-original-width="250" height="65" src="https://4.bp.blogspot.com/-epaOMWxtAcA/WgRu2OEAQFI/AAAAAAAAEZM/0-P4_8HRkTk5b_2aar0dUlEI3sJ-hiL3ACLcBGAs/s200/Bank_Central_Asia.png" width="200" /><br />
+<div style="text-align: center;">
+BCA Cab Manado
+No. Rek. 123456789<br />
+a/n CV Toko Online Indonesia</div>
+</td>
+<td><img border="0" data-original-height="85" data-original-width="250" height="68" src="https://3.bp.blogspot.com/-r2-E-hXpxR0/WgRx5yMDIBI/AAAAAAAAEZo/hE9vFC9VZOcvJSujNSoiPQ9DQ2d0RDDfwCLcBGAs/s200/p.png" width="200" /><br /></td>
+</tr>
+<tr>
+<td><img border="0" data-original-height="73" data-original-width="250" height="58" src="https://2.bp.blogspot.com/-AnR9AXQ8AAU/WgRuch3fycI/AAAAAAAAEZA/a4MGimasn_UjEYHvtec7c26kwSlXUVVLwCLcBGAs/s200/m.png" width="200" /><br />
+<div style="text-align: center;">
+MANDIRI Cab Manado
+No. Rek. 123456789<br />
+a/n CV Toko Online Indonesia</div>
+</td>
+</tr>
+</tbody></table>
+<div style='clear: both;'></div>
+</div>
+</div>
+<div class='fb-comments' data-href='https://shop-goomsite.blogspot.com/p/bayar-sekarang.html' data-numposts='5' id='fb-comment'></div>
+</div>
+
+        </div></div>
+      
+<!--Can't find substitution for tag [adEnd]-->
+</div>

@@ -1,0 +1,38 @@
+# REFERENCE--MTHRFCKR
+
+---
+
+- [ACADEMIC](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/ACADEMIC.md)
+
+- [ACRONYMS-AND-ABBREVIATIONS](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/ACRONYMS-AND-ABBREVIATIONS.md)
+
+- [ADDERALL](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/ADDERALL.md)
+
+- [ANCESTRY-RESEARCH](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/ANCESTRY-RESEARCH.md)
+
+- [ANNOTATION-AND-HIGHLIGHTING](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/ANNOTATION-AND-HIGHLIGHTING.md)
+
+- [DOCARTICLES](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/DOCARTICLES.md)
+
+- [EBOOKS](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/EBOOKS.md)
+
+- [EDU](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/EDU.md)
+
+- [GLOSSARIES-AND-DICTIONARIES](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/GLOSSARIES-AND-DICTIONARIES.md)
+
+- [GRAMMER](GRAMMER.md)
+
+- [NEWSPAPER-SITES](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/NEWSPAPER-SITES.md)
+
+- [PAPERS-AND-JOURNALS](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/PAPERS-AND-JOURNALS.md)
+
+- [PDF-MANAGEMENT](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/PDF-MANAGEMENT.md)
+
+- [PUBLICATIONS](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/PUBLICATIONS.md)
+
+- [REFERENCE-MTHRFCKR](REFERENCE-MTHRFCKR.md)
+
+- [REFERENCE-TOOLS](home-mthrfckr/bookmrks-mthrfckr/raindrops/BOOKMRKS--MTHRFCKR/REFERENCE--MTHRFCKR/REFERENCE-TOOLS.md)
+
+
+---

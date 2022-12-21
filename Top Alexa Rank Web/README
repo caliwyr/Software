@@ -1,0 +1,42 @@
+What is this
+============
+
+Cralwer to save HTML of front pages of top 1k alexa domains
+HTML is saved to "data/html"
+Command to run: `ioweb crawl TopCrawler -t10`
+
+
+Installation
+============
+
+To create virtual environment and install all dependencies run::
+
+    make build
+
+You can change dependencies in requirements.txt
+
+
+Database
+========
+
+By default, the project is configured to use MongoDB, to change mongodb
+connection settings and database name change MONGODB_CONNECTION and 
+MONGODB_NAME in the "project/settings_local.py" which is imported by
+"project/settings.py". File "project/settings_local.py" must be excluded
+from repository with repository ignore file. DO NOT change "roject/settings.py"
+file.
+
+
+Scripts
+=======
+
+Command line custom scripts are stored in "script/" directory and run with `run`
+command which is provided by runscript package. So, if there is "script/foo.py"
+file the command `run foo` will run `main()` function from "script/foo.py"
+
+
+Support
+=======
+
+Telegram chat (English): https://t.me/grablab
+Telegram chat (Russian): https://t.me/grablab_ru

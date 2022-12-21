@@ -1,0 +1,26 @@
+https://github.com/attakercyebr/Facebook-Data-Leak
+https://weleakinfo.to/
+https://haveibeenpwned.com/
+https://haveibeenpwned.com/Passwords
+https://binlist.pro/
+https://haveibeenpwned.com/PwnedWebsites
+
+https://whatsmyname.app/
+WhatsMyName.app how to use
+This tool allows you to enumerate usernames across many websites
+How to use:
+1. Enter the username below, select any filters & click the search icon
+2. Results will present as icons on the left, & in a searchable table on the right
+
+Some db leak
+https://mega.nz/#F!kx5wSCjY!yjeNjMkutvJtnn9PVyiwog
+Eye leacher is a paste scraper which scrapes accounts and other valuable things. I've gotton over 200k accounts using this.
+https://anonfiles.com/DdQbK1Nbo8/EyeLeacher_zip
+https://asciinema.org/a/46601
+https://github.com/sqlmapproject/sqlmap
+https://ghostproject.fr/
+you can search emails; and returns passwords; i actually found 3 of my emails on this.
+https://leak-lookup.com/
+https://snusbase.com/
+https://beta.shodan.io/
+https://www.zoomeye.org/

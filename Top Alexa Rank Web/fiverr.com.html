@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Access to This Page Has Been Blocked</title>
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="googlebot" content="noindex">
+        <meta name="robots" content="noindex">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+window.onerror = function(message, file, line, column, error) {
+    var XHR = new XMLHttpRequest();
+    var body = {
+        message: message,
+        file: file,
+        line: line,
+        column: column,
+        stack: error.stack,
+        name: error.name,
+        url: document.location.href,
+        facility: 'block-page-web'
+    };
+    XHR.open('POST', 'https://relay.fiverr.com/v1/log/error');
+    XHR.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+    XHR.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    XHR.setRequestHeader('Accept', 'application/json');
+    XHR.setRequestHeader('Access-Control-Allow-Origin', window.location.origin);
+    XHR.withCredentials = true;
+    XHR.send(JSON.stringify(body));
+
+    return false;
+};
+        </script>
+    </head>
+    <body class="cf">
+        <header class="mp-box">
+            <div class="box-row">
+                <img class="fiverr-logo" src="images/fiverr-logo.svg">
+            </div>
+        </header>
+        <main class="mp-box">
+            <section class="box-row">
+                <header>
+                    <img src="images/fiverr-logo-green.svg">
+                    <h1>One Small Step</h1>
+                </header>
+                <article>
+                    <h2>Please check the box below to access the site</h2>
+                    <p>Don't worry - you're one click away from continuing your normal visit.</p>
+                    <div id="px-captcha"></div>
+                    <p class="padded">
+                        We're dedicated to keeping Fiverr safe from malicious visitors. Something in your behaviour has triggered our protection systems - We apologise for any inconvenience this process may have caused.
+                    </p>
+                    <ul class="quickfix padded">
+                        <li>
+                            Ad blocking or ad filtering software may interfere with our ability to identify you as human. Please exclude <kbd>fiverr.com</kbd>.
+                        </li>
+                        <li>
+                            Modifying your headers or user agent may trigger some of our detection tools. Make sure you don't have any browser extensions tampering with those.
+                        </li>
+                        <li>
+                            Make sure JavaScript is enabled in your browser.
+                        </li>
+                        <li>
+                            If you're still having trouble accessing the site, please contact <a href="mailto:support@fiverr.com" rel="noopener noreferrer">Customer Support</a>
+                        </li>
+                    </ul>
+                    <noscript><div style="position:fixed; top:0; left:0;" width="1" height="1"><img src="https://collector.fiverr.com/api/v1/collector/noScript.gif?appId=PXK3bezZfO"></div></noscript>
+                    <div style="position:fixed; top:0; left:0;" width="1" height="1"><img src="https://collector.fiverr.com/api/v1/collector/pxPixel.gif?appId=PXK3bezZfO"></div>
+                    <script src="https://polyfill.io/v3/polyfill.js?features=es5,es6&flags=gated&cors=1" crossorigin="anonymous"></script>
+                    <script src="js/main.js?v=3"></script>
+                    <script src="https://captcha.px-cdn.net/PXK3bezZfO/captcha.js?a=c&m=0&cors=1" crossorigin="anonymous"></script>
+                    <img src="https://relay.fiverr.com/v1/pixel/static_pages.block_page.beacon" style="visibility:hidden">
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

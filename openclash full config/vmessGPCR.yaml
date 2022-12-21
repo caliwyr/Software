@@ -1,0 +1,13 @@
+  - name: vmess-grpc
+    server: server
+    port: 443
+    type: vmess
+    uuid: uuid
+    alterId: 32
+    cipher: auto
+    network: grpc
+    tls: true
+    servername: example.com
+    # skip-cert-verify: true
+    grpc-opts:
+      grpc-service-name: "example"

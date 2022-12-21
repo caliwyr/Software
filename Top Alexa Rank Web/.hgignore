@@ -1,0 +1,16 @@
+syntax:glob
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.orig
+
+project/settings_local.py
+pip-log.txt
+
+syntax:regexp
+^\.env/
+^var/
+^dump/
+^src/
+^ioweb$

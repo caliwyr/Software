@@ -1,0 +1,164 @@
+Port scanning your local system
+The easiest way to give nmap a try, is by scanning your own system, also known as localhost or by the IP addresses 127.0.0.1 and 0.0.0.0:
+$ nmap 0.0.0.0
+Starting Nmap 7.70 ( https://nmap.org/ ) at 2019-08-18 16:16 CDT
+Nmap scan report for 0.0.0.0
+Host is up (0.00011s latency).
+All 1000 scanned ports on 0.0.0.0 are closed
+
+Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
+Scanning more than 1000 ports
+
+$ nmap 0.0.0.0 -p1-65535
+Starting Nmap 7.70 ( https://nmap.org/ ) at 2019-08-18 16:27 CDT
+Nmap scan report for 0.0.0.0
+Host is up (0.000092s latency).
+Not shown: 65525 closed ports
+PORT      STATE SERVICE
+3000/tcp  open  ppp
+6380/tcp  open  unknown
+17500/tcp open  db-lsp
+17600/tcp open  unknown
+17603/tcp open  unknown
+27017/tcp open  mongod
+34394/tcp open  unknown
+38811/tcp open  unknown
+57621/tcp open  unknown
+59126/tcp open  unknown
+Nmap done: 1 IP address (1 host up) scanned in 1.15 seconds
+
+If you wanna do a port scan on a remote desktop Just swap out the 0.0.0.0 in the previous example for the IP address or domain name of the server you would like to scan.
+Do you want to discovering hosts on your network??
+To scan your network, simply pass in the IP address range you’d like nmap to scan Example: $ nmap -sP 192.168.1.1/24
+Starting Nmap 7.70 ( https://nmap.org/ ) at 2019-08-18 16:40 CDT
+Nmap scan report for router.asus.com (192.168.1.1)
+Host is up (0.0022s latency).
+Nmap scan report for galagopro (192.168.1.14)
+Host is up (0.00015s latency).
+Nmap scan report for Roomba-3165050862320680 (192.168.1.74)
+Host is up (0.0011s latency).
+Nmap scan report for Dumbo (192.168.1.81)
+Host is up (0.038s latency).
+Nmap scan report for josh-iMac (192.168.1.138)
+Host is up (0.074s latency).
+Nmap scan report for Philips-hue (192.168.1.222)
+Host is up (0.0068s latency).
+Nmap scan report for amazon-aac753ead (192.168.1.243)
+Host is up (0.021s latency).
+Nmap done: 256 IP addresses (7 hosts up) scanned in 2.59 seconds
+
+nmap:
+.Is_nmap_Legal
+Yes. If used properly, Nmap helps protect your network from hackers, because it allows you to quickly spot any security vulnerabilities in your systems.
+
+Whether port scanning on external servers is legal is another issue. The legislation in this area is complex and varies by territory. Using Nmap to scan external ports can lead to you being banned by your ISP, so make sure you research the legal implications of using the program before you start using it more widely.
+How Does Nmap Work?
+Nmap builds on previous network auditing tools to provide quick, detailed scans of network traffic. It works by using IP packets to identify the hosts and IPs active on a network and then analyze these packets to provide information on each host and IP, as well as the operating systems they are running
+This is a little nmap tutorial
+nmap is a network scanning tool, where you can scan ip, port, ip ranges, and get information
+# nmap -sp [ip]/(port)
+nmap -sp <target IP range>
+namp -sL <IP address>
+OS Scanning
+OS scanning is one of the most powerful features of Nmap. When using this type of scan, Nmap sends TCP and UDP packets to a particular port, and then analyze its response. It compares this response to a database of 2600 operating systems, and return information on the OS (and version) of a host.
+
+To run an OS scan, use the following command:
+nmap -O <target IP>
+nmap --top-ports 20 192.168.1.106
+Disable DNS Name Resolution
+Finally, you can speed up your Nmap scans by using the -n parameter to disable reverse DNS resolution. This can be extremely useful if you want to scan a large network. For example, to turn off DNS resolution for the basic ping scan mentioned above, add -n:
+
+nmap -sp -n 192.100.1.1/24
+MISC:
+  -6: Enable IPv6 scanning
+  -A: Enable OS detection, version detection, script scanning, and traceroute
+  --datadir <dirname>: Specify custom Nmap data file location
+  --send-eth/--send-ip: Send using raw ethernet frames or IP packets
+  --privileged: Assume that the user is fully privileged
+  --unprivileged: Assume the user lacks raw socket privileges
+  -V: Print version number
+  -h: Print this help summary page.
+EXAMPLES:
+  nmap -v -A scanme.nmap.org
+  nmap -v -sn 192.168.0.0/16 10.0.0.0/8
+  nmap -v -iR 10000 -Pn -p 80
+:sudo nmap -sS (host)(-sS means stelth scan, or halfopen scan this means that it will only do a 2 connections insted of 3 (3 way handshake))
+:sudo nmap -sT (host)(-sT meaing do the full scan, the 3 way handshake SYN, SYNACK, ACK. For doing a full scan by esableshing a connection))
+
+SSL:
+SSL stands for Secure Sockets Layer and, in short, it's the standard technology for keeping an internet connection secure and safeguarding any sensitive data that is being sent between two systems, preventing criminals from reading and modifying any information transferred, including potential personal details. The two systems can be a server and a client (for example, a shopping website and browser) or server to server (for example, an application with personal identifiable information or with payroll information).
+Command:
+  sslscan [options] [host:port | host]
+
+Options:
+  --targets=<file>     A file containing a list of hosts to check.
+                       Hosts can  be supplied  with ports (host:port)
+  --sni-name=<name>    Hostname for SNI
+  --ipv4, -4           Only use IPv4
+  --ipv6, -6           Only use IPv6
+
+  --show-certificate   Show full certificate information
+  --show-client-cas    Show trusted CAs for TLS client auth
+  --no-check-certificate  Don't warn about weak certificate algorithm or keys
+  --ocsp               Request OCSP response from server
+  --pk=<file>          A file containing the private key or a PKCS#12 file
+                       containing a private key/certificate pair
+  --pkpass=<password>  The password for the private  key or PKCS#12 file
+  --certs=<file>       A file containing PEM/ASN1 formatted client certificates
+--ssl2               Only check if SSLv2 is enabled
+  --ssl3               Only check if SSLv3 is enabled
+  --tls10              Only check TLSv1.0 ciphers
+  --tls11              Only check TLSv1.1 ciphers
+  --tls12              Only check TLSv1.2 ciphers
+  --tls13              Only check TLSv1.3 ciphers
+  --tlsall             Only check TLS ciphers (all versions)
+  --show-ciphers       Show supported client ciphers
+  --show-cipher-ids    Show cipher ids
+  --show-times         Show handhake times in milliseconds
+--no-cipher-details  Disable EC curve names and EDH/RSA key lengths output
+  --no-ciphersuites    Do not check for supported ciphersuites
+  --no-compression     Do not check for TLS compression (CRIME)
+  --no-fallback        Do not check for TLS Fallback SCSV
+  --no-groups          Do not enumerate key exchange groups
+  --no-heartbleed      Do not check for OpenSSL Heartbleed (CVE-2014-0160)
+  --no-renegotiation   Do not check for TLS renegotiation
+  --show-sigs          Enumerate signature algorithms**
+ --starttls-ftp       STARTTLS setup for FTP
+  --starttls-imap      STARTTLS setup for IMAP
+  --starttls-irc       STARTTLS setup for IRC
+  --starttls-ldap      STARTTLS setup for LDAP
+  --starttls-mysql     STARTTLS setup for MYSQL
+  --starttls-pop3      STARTTLS setup for POP3
+  --starttls-psql      STARTTLS setup for PostgreSQL
+  --starttls-smtp      STARTTLS setup for SMTP
+  --starttls-xmpp      STARTTLS setup for XMPP
+  --xmpp-server        Use a server-to-server XMPP handshake
+  --rdp                Send RDP preamble before starting scan
+
+  --bugs               Enable SSL implementation bug work-arounds
+  --no-colour          Disable coloured output
+  --sleep=<msec>       Pause between connection request. Default is disabled
+  --timeout=<sec>      Set socket timeout. Default is 3s
+  --verbose            Display verbose output
+  --version            Display the program version
+  --xml=<file>         Output results to an XML file. Use - for STDOUT.
+  --help               Display the help text you are now reading
+Example:
+  sslscan 127.0.0.1
+  sslscan [::1]
+
+masscan:
+Scans the netrange of the ip and scans to see if ports are open
+How to use masscan
+usage:
+masscan -p80,8000-8100 10.0.0.0/8 --rate=10000
+ scan some web ports on 10.x.x.x at 10kpps
+masscan --nmap
+ list those options that are compatible with nmap
+masscan -p80 10.0.0.0/8 --banners -oB <filename>
+ save results of scan in binary format to <filename>
+masscan --open --banners --readscan <filename> -oX <savefile>
+ read binary scan results in <filename> and save them as xml in <savefile>
+Example:
+
+sudo masscan -p80,443 212.102.36.131/24 --rate 100

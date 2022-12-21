@@ -1,0 +1,2550 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<link href="/css/custom-style.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/all-custom-style.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/flag-dropdown.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/watch-section-custom.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/slick-theme.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/slick.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/header-right.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/article-css.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/country-icon.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/country-icon-style.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/dstv-thanks.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/sign-in-popup.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<script>
+    var m = document.createElement('meta');
+    m.name='theme-color';
+    m.content='#000000';
+   document.head.appendChild(m);
+   </script>
+<style type="text/css">
+        Page-Home,Page-Login,Page-Decoders,Page-Fix-Errors,Tag-Application,Tag-Routes,Page-Insure-Decoder,Page-Make-Payment,Page-Reconnect-Packages,Page-Set-Up-Debit-Order,Page-Update-Details,Page-Upgrade-Package,Page-View-Balance,Tag-Customer,Page-Holiday-Viewing,Tag-View-Balance,Tag-Fix-Errors,Tag-Holiday-Viewing,Tag-Make-Payment,Tag-Decoder,Tag-Hv-Decoder-Link-Packages,Tag-Hv-Decoder-Reconnect-Packages,Tag-Hv-Holiday-Home-Switching,Tag-Fix-Errors-Logged-In,Tag-Fix-Errors-Logged-Out,Page-Feedback,Tag-Feedback,Tag-Tracker,Tag-Error,Page-Error,Page-My-Account,Tag -Holiday-Home-Capture-Address,Tag-Link-Device,Tag-Triple-Cta,Tag-Splash-Screen,Tag-Chat-Bot,Tag-Transaction-History,Tag-Update-Details,Page-Change-Package,Tag-Change-Package,Page-Link-Showmax,Page-My-Statements,Page-Price-Increase,Page-Transaction-History,Tag-Link-Showmax,Tag-Price-Increase,Tag-My-Statements,Page-Manage,Tag-Change-Package-Searchbar,Tag-Set-Up-Debit-Order,Tag-Moments,Page-Moments,Page-Add-Device,Tag-Add-Device { visibility:hidden}
+    </style>
+<link href="/Css/Icomoon/icomoonstyle.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/ie7/ie7.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/Css/Icomoon/style.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/themify-icons.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/datepicker.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/toastr.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/css/botchat.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<link href="/less/main.min.css" rel="stylesheet" type="text/css" media="none" onload="if(media!='all')media='all'">
+<input id="protocol" style="display:none" value="https" />
+<input id="dstvCdn" style="display:none" value="https://cdn.dstv.com/libs/" />
+<input id="DocumentTypeAlias" style="display:none" value="WG2K_Starter_HomePage" />
+<script src="/scripts/jquery-1.11.2.min.js"></script>
+<script>
+    $(function() {
+            //var dstvCdn = $('#dstvCdn').val();
+            var protocol = $('#protocol').val();
+            var DocumentTypeAlias = $('#DocumentTypeAlias').val();
+                $("head").append($("<link rel='stylesheet' rel='preload' href='/Css/cdn/normalize.min.css' type='text/css' as='style'/>"));
+                $("head").append($("<link rel='stylesheet' rel='preload' href='/Css/cdn/nprogress.min.css' type='text/css' as='style'/>"));
+                //$("head").append($("<link rel='stylesheet' rel='preload' href='" + protocol + "://connect.dstv.com/4.1/config/styles' type='text/css' as='style'/>"));
+                $("head").append($("<link rel='stylesheet' rel='preload' href='" + protocol + "://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,300,400,500,700,900' type='text/css' as='style'/>"));
+                
+                // if(DocumentTypeAlias != "campaign" && DocumentTypeAlias != "campaignDraft") {
+                //     $("head").append($("<link rel='stylesheet' rel='preload' href='/less/main.min.css' type='text/css' as='style'/>"));
+                // }
+                // else
+                // {
+                //     $("head").append($("<link rel='stylesheet' rel='preload' href='css/spacing.css' type='text/css' as='style'/>"));
+                // }
+                
+    /* Code to hide body section scrollbar on popup button click*/
+        $(document).ready(function(){
+            $('.inline-block.p-1 a').click(function(){
+                    $('body').addClass("scrollhidden");
+                    $('#colorbox').addClass("fullwidthpopup");
+                
+            });
+            $('#cboxContent').click(function(){
+                $('#colorbox').removeClass("fullwidthpopup");
+                $('body').removeClass("scroll");
+            });
+        });
+        /* End Code to hide body section scrollbar on popup button click*/
+        
+        
+        $('#backBtn').click(function(){
+                window.history.back();
+                
+        });
+       
+        
+                
+    });
+    
+</script>
+<meta name="google-site-verification" content="C2sH7IfmaF5-eXRnp4hsuEGdK72IoD54nue9mXhwfIE" />
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KP6BHFQ');</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>DStv Africa | Nigeria - Experience the best entertainment Nigeria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="Explore &amp;amp; experience awesome local and international content, Get DStv, make Payments, Manage your account and Earn rewards for just being you!" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/img/favicons/DStv/mstile-144x144.png" />
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website" />
+<meta property="og:url" name="twitter:url" content="https://www.dstvafrica.comhttps://www.dstvafrica.com/en-ng/homepage-nigeria/" />
+<meta property="og:title" name="twitter:title" content="DStv Africa | Nigeria - Experience the best entertainment Nigeria" />
+<meta name="twitter:card" content="summary" />
+<meta property="og:image" name="twitter:image" content="https://self-service.dstv.com/images/logo.svg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:site" content="@DStv" />
+<meta property="og:site_name" content="DStvAfrica.com" />
+<meta property="og:description" name="twitter:description" content="Explore &amp;amp; experience awesome local and international content, Get DStv, make Payments, Manage your account and Earn rewards for just being you!" />
+<style type="riot"></style>
+<style>
+        .decoder-opc{
+            opacity: 0.3 !important;
+        }    
+        .package {
+            display:none !important;
+        }
+        .jcf-select-drop.jcf-select-large .jcf-list li {
+            width: 100% !important;
+        }
+        /*DO NOT REMOVE*/
+        .highlightBG {
+            background-color :#ffffff;
+        }
+        .second-slider .slick-prev.arrowColor:before, .second-slider .slick-next.arrowColor:before{
+            color:#858585;
+        }
+        .highlightTextColor {
+            color :#757575;
+        }
+        
+        /* END */
+        
+        /* BBN CSS Start */
+        
+        /* BBN CSS End */
+    </style>
+<style>
+#loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	right:0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99999999;
+	background: #fff url('/media/3863/eclipse-1s-150px.gif') 50% 50% no-repeat;
+}
+</style>
+<script>
+
+document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+
+$(function() {
+    var i = 0;
+    $("#navNewClick").click(function() {
+        
+        i = i+1;
+        
+        if(i == 1){
+            
+            $("#for-menu-on-mobile-search").addClass("search-opener search-new pull-right").removeClass("hidden");
+        }else if(i==2){
+            
+            $("#for-menu-on-mobile-search").addClass("hidden").removeClass("search-opener search-new pull-right");
+            i = 0;
+        }
+        
+    });
+    
+   
+});
+</script>
+</head>
+<body class="home-page">
+<div id="loader"></div>
+<div class="feedback-unit wa-link">
+<div class="smiley-icon">
+<a class="svg-holder-link" href="https://bit.ly/30sTki7" target="_blank">
+
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g id="WA_Logo_2_"><g>
+<path class="st0" d="M383.1,314.9c-1.6-2.6-5.8-4.2-12.1-7.4c-6.3-3.2-37.5-18.5-43.3-20.6c-5.8-2.1-10-3.2-14.2,3.2
+                                c-4.2,6.3-16.4,20.6-20,24.8c-3.7,4.2-7.4,4.8-13.7,1.6c-6.3-3.2-26.7-9.9-50.9-31.4c-18.8-16.8-31.5-37.5-35.2-43.9
+                                c-3.7-6.3-0.4-9.8,2.8-12.9c2.8-2.8,6.3-7.4,9.5-11.1c3.2-3.7,4.2-6.3,6.3-10.6c2.1-4.2,1.1-7.9-0.5-11.1
+                                c-1.6-3.2-14.2-34.3-19.5-47c-5.1-12.3-10.4-10.7-14.2-10.9c-3.7-0.2-7.9-0.2-12.1-0.2c-4.2,0-11.1,1.6-16.9,7.9
+                                c-5.8,6.3-22.2,21.7-22.2,52.8c0,31.2,22.7,61.3,25.9,65.5c3.2,4.2,44.6,68.2,108.2,95.6c15.1,6.5,26.9,10.4,36.1,13.3
+                                c15.2,4.8,29,4.1,39.9,2.5c12.2-1.8,37.5-15.3,42.7-30.1C384.7,330.2,384.7,317.5,383.1,314.9z" fill="#FFFFFF" />
+</g></g><g>
+<path class="st1" d="M3.4,500.7l30.4-119.9c-21.6-38.2-33-81.4-33-125.6C0.8,114.5,115.3,0,256,0s255.2,114.5,255.2,255.2
+                            S396.7,510.4,256,510.4c-43.8,0-86.7-11.2-124.7-32.5l-118,32.9l-3.6,1c0,0-1.1,0.3-1.7,0.3c-3.2,0-5.7-2.6-5.7-5.7
+                            c0-0.5,0.1-1,0.2-1.4L3.4,500.7z M137.8,429.7l8.3,5.1c33,20.3,71,31,109.9,31c116.1,0,210.6-94.5,210.6-210.6
+                            S372.1,44.6,256,44.6S45.4,139.1,45.4,255.2c0,39.1,10.8,77.3,31.3,110.4l5,8l-19.6,77.1L137.8,429.7z" fill="#FFFFFF" />
+</g>
+</g>
+</svg>
+</a>
+</div>
+</div>
+<div id="wrapper" data-is="tag-initialise">
+<style>
+.menu-elementsDiv
+{
+    
+    border-bottom: 0.1px solid gray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+    
+}
+
+.sub-elementsDiv{
+   text-align: left;
+   font-size: 20px;
+   font-weight:300;
+}
+
+.sub-elementsDiv a{
+    color:white!important;
+    text-align: left;
+    font-size: 20px;
+    font-weight:300;
+}
+
+.search-new{
+   
+    position: absolute;
+    z-index: 99;
+    margin-left: 50%;
+    z-index: 9999;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 100px;
+    
+}
+
+.textWhite{
+    color:white!important;
+}
+
+/*Login popup chnages*/
+.login-popup > li > a:hover, .login-popup .open > a:hover, .login-popup .open > a {
+    background-color: transparent !important;
+}
+.login-popup .open > .dropdown-menu {
+    margin: 0px !important;
+    overflow-y: auto !important;
+    height: auto !important;
+}
+.login-Popup-text {
+    color: white !important;
+    font-size: 13px;
+    font-weight: 600;
+}
+.login-anchor {
+    padding: 0px 0px !important;
+}
+/*end*/
+ 
+
+
+</style>
+<script type="text/javascript">
+    $(window).load(function(){
+        var culture = window.culture;
+        var value = culture.split("/");
+        $('.loader').hide();
+        $('#siteCulture').attr('href',window.culture);
+        $('#siteCulture').addClass(value[1]);
+
+    });
+
+</script>
+<header id="header">
+<div class="container-fluid p-5 p-md-2 pt-3 p-sm-2 pt-sm-2 pb-0 ">
+<div class="navDiv">
+<div class="row">
+<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-4">
+<div>
+<a id="siteCulture" href="/en-zm" class="DStv Africa | Nigeria"></a>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 newMenu">
+<nav>
+
+<div class="">
+<nav class="navbar navbar-inverse">
+<div class="class=" navbar-collapse js-navbar-collapse collapse in" aria-expanded="true">
+<ul class="nav navbar-nav" style="display: flex; float: left;">
+<li class="dropdown mega-dropdown">
+<a href="javascript:void(0);" class="main-menu-get">{langTranslateApp.menuGet}</a>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="javascript:void(0);" class="main-menu-pay">{ langTranslateApp.menuPay}</a>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="javascript:void(0);" class="main-menu-watch">{ langTranslateApp.menuWatch}</a>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="javascript:void(0);" class="main-menu-manage">{ langTranslateApp.menuManage}</a>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="javascript:void(0);" class="main-menu-earn ">{ langTranslateApp.menuRewards}</a>
+</li>
+<li class="dropdown mega-dropdown">
+<a href="javascript:void(0);" class="main-menu-help">{ langTranslateApp.menuHelp}</a>
+</li>
+</ul>
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn mega-close-button text-primary">{langTranslateApp.menuClose} <i class="icon-Close_M pl-1"></i></a>
+<div class="overlay-content">
+<ul class=" mega-dropdown-menu container">
+
+<li class="dropdownnew ml-180">
+<ul class="">
+<li><a href="{langTranslateApp.subMenuGetDstvHomeLink}">{ langTranslateApp.subMenuGetDstvHome}</a></li>
+<li><a href="{langTranslateApp.subMenuGetDstvBusinessLink}">{ langTranslateApp.subMenuGetDstvBusiness}</a></li>
+<li><a href="{langTranslateApp.subMenuGetComparePackagesLink}">{ langTranslateApp.subMenuGetComparePackages}</a></li>
+<li><a href="{langTranslateApp.subMenuGetFindInstallerLink}">{ langTranslateApp.subMenuGetFindInstaller}</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="myNavpay" class="overlay">
+<a href="javascript:void(0)" class="closebtn mega-close-button text-primary">{langTranslateApp.menuClose} <i class="icon-Close_M pl-1"></i></a>
+<div class="overlay-content">
+<ul class=" mega-dropdown-menu container">
+<li class="dropdownnew ml-250">
+<ul class="">
+<li><a href="/ways-to-pay">{ langTranslateApp.subMenuHowToPay}</a></li>
+<li><a href="javascript:void(0)" id="navViewBalance">{ langTranslateApp.subMenuViewBal}</a></li>
+<li><a href="/sign-in" id="navAccountMenu">{ langTranslateApp.subMenuPayNow}</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="myNavwatch" class="overlay">
+<a href="javascript:void(0)" class="closebtn mega-close-button text-primary">{langTranslateApp.menuClose} <i class="icon-Close_M pl-1"></i></a>
+<div class="overlay-content">
+<ul class=" mega-dropdown-menu container">
+<li class="dropdownnew ml-325">
+<ul class="">
+<li><a href="{langTranslateApp.subMenuWhatToWatchLink}">{ langTranslateApp.subMenuWhatToWatch}</a></li>
+<li><a href="https://guide.dstv.com/">{ langTranslateApp.subMenuTVGuide}</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="myNavman" class="overlay">
+<a href="javascript:void(0)" class="closebtn mega-close-button text-primary">{langTranslateApp.menuClose} <i class="icon-Close_M pl-1"></i></a>
+<div class="overlay-content">
+<ul class=" mega-dropdown-menu container">
+<li class="dropdownnew ml-415">
+<ul class="">
+<li><a href="javascript:void(0)" id="navMyAccountMenu">{ langTranslateApp.subMenuMyAcc}</a></li>
+
+<li><a href="javascript:void(0)" id="navChangePackage">{ langTranslateApp.subMenuMyPkg}</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="myNavearn" class="overlay">
+<a href="javascript:void(0)" class="closebtn mega-close-button text-primary">{langTranslateApp.menuClose} <i class="icon-Close_M pl-1"></i></a>
+<div class="overlay-content">
+<ul class=" mega-dropdown-menu container">
+<li class="dropdownnew ml-523">
+<ul class="">
+<li>
+<a href="{langTranslateApp.subMenuDStvThanksLink}">{ langTranslateApp.subMenuDStvThanks}</a>
+</li>
+
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="myNavhelp" class="overlay">
+<a href="javascript:void(0)" class="closebtn mega-close-button text-primary">{langTranslateApp.menuClose} <i class="icon-Close_M pl-1"></i></a>
+<div class="overlay-content">
+<ul class=" mega-dropdown-menu container">
+<li class="dropdownnew ml-605">
+<ul class="">
+<li><a href="{langTranslateApp.subMenuNeedHelpLink}">{ langTranslateApp.subMenuNeedHelp}</a></li>
+<li><a href="{langTranslateApp.subMenuContactUsLink}">{ langTranslateApp.subMenuContactUs}</a></li>
+<li><a href="{langTranslateApp.subMenuFixErrorCodesLink}">{ langTranslateApp.subMenuFixErrorCodes}</a></li>
+<li><a href="/faqs">{langTranslateApp.subMenuFAQs}</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</nav>
+</div>
+<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-8 headerrightsidemenu">
+<a href="#" id="navNewClick" class="nav-opener"><span></span><em>Menu</em></a>
+<a href="Javascript:void(0);" class="country dropdown" id="countryDropdown">
+<span class="img-globe "><img src="" id="countryIcon" /></span><span class="icon-ico-arrow-down"></span>
+</a>
+<a href="Javascript:void(0);" class="country dropdowns" id="countryDropdown-newhome">
+<span class="img-globe "><img src="" id="countryIcon-newhome" /></span><span class="icon-ico-arrow-down"></span>
+</a>
+<a href="Javascript:void(0);" class="country dropdown" id="countryDropdownGlobe" style="display:none;">
+<span class="img-globe icon icon-icon-globe" style="font-size: 35px;color: #fff;"></span><span class="icon-ico-arrow-down"></span>
+</a>
+<a class="back-to-home" href="https://www.dstvafrica.com/en-ng/#"><span>{langTranslateApp.dashBackToHome}</span> <i class="icon-Back_arrow"></i></a>
+<a id="loginLinkLabel" href="/sign-in" target="_blank" class="loginLabel"><span class="login-icon"><span class="login-text">{ langTranslateApp.loginLogIn2 }</span><span class="icon-ico-arrow-next"></span><span class="login-person-icon"></span></span></a>
+<a id="loginLinkLabel-NewHome" href="javascript:;" class="loginLabel"><span class="login-icon"><span class="login-text">{ langTranslateApp.loginLogIn2 }</span><span class="icon-ico-arrow-next"></span><span class="login-person-icon"></span></span></a>
+<ul class="nav pull-right login-popup" id="loginPopup" style="display:none">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle login-anchor" data-toggle="dropdown">
+<span class="login-icon"><span class="login-Popup-text" id="loginPopupText">Test USER</span><span class="login-person-icon"></span></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="/" id="dashBoardHomeNav"><i class="icon-cog"></i>{langTranslateApp.dashHome}</a></li>
+<li><a href="/dashboard" id="dashBoardNav"><i class="icon-cog"></i>{langTranslateApp.dashDashboard}</a></li>
+<li><a href="#my-account"><i class="icon-envelope"></i>{ langTranslateApp.loginAccount }</a></li>
+<li><a href="#my-package/change-package"><i class="icon-envelope"></i>{ langTranslateApp.loginPackage }</a></li>
+<li class="divider"></li>
+<li><a href="#" id="logoutLink"><i class="icon-off"></i> {langTranslateApp.dashLogout}</a></li>
+</ul>
+</li>
+</ul>
+<nav id="nav">
+<ul class="mega-menu mega-stacked">
+<li class="has-dropdown   lvl-1">
+<button class="mega-toggle">
+<span class="mega-icon"><i class="icon-Join icon"></i></span>
+<span class="menu-item-txt">GET</span>
+<span class="toggle-span"></span>
+</button>
+<ul class="">
+<li class="   lvl-2">
+<a href="/get-home/dstv-for-you/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">DStv for Home</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/en-ng/get-business/about/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">DStv for Business</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/browse-compare-packages/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">Compare Packages</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/find-installer-or-dealer/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">Find Installer or Dealer</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown   lvl-1">
+<button class="mega-toggle">
+<span class="mega-icon"><i class="icon-How_to_pay icon"></i></span>
+<span class="menu-item-txt">PAY</span>
+<span class="toggle-span"></span>
+</button>
+<ul class="">
+<li class="   lvl-2">
+<a href="/ways-to-pay/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">How to Pay</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/sign-in/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">View Balance</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/sign-in?returnUrl=/#my-account" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">Pay Now</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown   lvl-1">
+<button class="mega-toggle">
+<span class="mega-icon"><i class="icon-Watch icon"></i></span>
+<span class="menu-item-txt">WATCH</span>
+<span class="toggle-span"></span>
+</button>
+<ul class="">
+<li class="   lvl-2">
+<a href="/watch/watch-now/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">What to watch</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="https://guide.dstv.com/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">TV Guide</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown   lvl-1">
+<button class="mega-toggle">
+<span class="mega-icon"><i class="icon-Manage icon"></i></span>
+<span class="menu-item-txt">MANAGE</span>
+<span class="toggle-span"></span>
+</button>
+<ul class="">
+<li class="   lvl-2">
+<a href="/sign-in?returnUrl=/dashboard" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">My Account</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/sign-in?returnUrl=/dashboard" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">My Package</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown   lvl-1">
+<button class="mega-toggle">
+<span class="mega-icon"><i class="icon-Rewards icon"></i></span>
+<span class="menu-item-txt">REWARDS</span>
+<span class="toggle-span"></span>
+</button>
+<ul class="">
+<li class="   lvl-2">
+<a href="/en-ng/dstv-thanks/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">DStv Thanks</span>
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown   lvl-1">
+<button class="mega-toggle">
+<span class="mega-icon"><i class="icon-Help icon"></i></span>
+<span class="menu-item-txt">HELP</span>
+<span class="toggle-span"></span>
+</button>
+<ul class="">
+<li class="   lvl-2">
+<a href="/help/need-help/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">Need Help</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/help-contact-us/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">Contact Us</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/manage-error-codes/" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">Fix Error Codes</span>
+</a>
+</li>
+<li class="   lvl-2">
+<a href="/faqs" target="_self">
+<span></span>
+<span class="menu-item-txt meganavlink">FAQs</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class="banner-block" id="for-menu-on-mobile">
+<div class="search-block hidden">
+<tag-header view="homepage" mysearchid="searchtype" searchurlsrc="/umbraco/api/WebApiLuis/GetLuisResponse/?restrictpath=-1&amp;currentPage=1&amp;filtertype=&amp;search=" searchresultdisplay="Title" searchresulturl="Url" searchplaceholder="How can we help you?" displaysearchslide="true"></tag-header>
+</div>
+</div>
+<div class="social-links hidden">
+<div class="">
+<ul class="list-inline social-list text-left">
+<li><a class="text-center" href="https://twitter.com/DStvNg" target="_blank"><i class="icon icon-Twitter"></i></a></li>
+<li><a class="text-center" href="https://www.facebook.com/DStvNigeria" target="_blank"><i class="icon icon-Facebook"></i></a></li>
+<li><a class="text-center" href="https://www.youtube.com/user/MultichoiceAfrica" target="_blank"><i class="icon icon-YouTube"></i></a></li>
+</ul>
+</div>
+</div>
+
+</nav>
+<nav class="flags-icons-menu">
+<style>
+
+.closebtn {
+    color: #179edd !important;
+    right: 0px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    z-index: 9;
+    padding-top: 6px;
+}
+
+.closebtn:hover {
+    color: #179edd !important;
+}    
+
+.search-container img{
+    margin-top: -2px;
+    margin-right: 1px;
+}
+
+a.flag {
+    color: #fff;
+    float: left;
+    line-height: 1.1 !important;
+    padding: 1.1rem 0 1.1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+	padding-left:0px !important;
+	width:90% !important;
+	margin-bottom:15px !important;
+	padding-left: 45px !important;
+    text-align: left;
+}
+
+.max-height-400{
+    max-height:400px;
+    overflow:auto;
+}
+
+.scrollbar-css::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar-css::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.scrollbar-css::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.dropdown-content {
+   background: rgba(0,17,24,0.9);
+   overflow: hidden;
+}
+
+.country-row-mobile{
+    max-height:450px;
+    overflow:auto;
+}
+
+.search-container img {
+    margin-top: -4px;
+    margin-right: 1px;
+}
+
+.header-sec {
+  display: inline-flex;
+  width: 64%;
+  float: right;
+  clear: both;
+  padding-bottom: 4em;
+  padding-top: 2em;
+}
+
+input.search-filed {
+  border-radius: 28px;
+  padding: 9px 51px;
+  border: 2px solid #0095da;
+  background-color: transparent;
+  color: #fff;
+}
+
+.search-container img {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  margin-top: -3px;
+  margin-left: 1px;
+}
+
+.search-container button {
+  margin-left: -41px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: 6px;
+}
+
+
+</style>
+<div class=" dropdown-content f32" style="display:none">
+<div class="container">
+<div class="row">
+<div class=" header-sec ">
+<div class="search-container ">
+<input type="text" placeholder="{langTranslateApp.searchPlaceholder}" name="search" class="search-filed">
+<button type="submit"><script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"885fb59a88ab7466df0a45ca1a3528457b28c3d0-1575262718-86400"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img data-cfsrc="/media/3535/search-icon-blue.png" style="display:none;visibility:hidden;"><noscript><img src="/media/3535/search-icon-blue.png"></noscript></button>
+</div>
+<div class="lang-dropdown" id="langDropdown">
+<img data-cfsrc="/media/3536/langue_select-icon.png" style="display:none;visibility:hidden;"><noscript><img src="/media/3536/langue_select-icon.png"></noscript>
+<select id="langSelector" class="lang-dropdown-menu" placeholder="Choose a Language...">
+<option value="https://www.dstvafrica.com/en-ng">EN</option>
+</select>
+</div>
+<a href="javascript:void(0)" id="countryClose" class="closebtn mega-close-button text-primary"><i class="icon-Close_M pl-1"></i></a>
+</div>
+</div>
+<div class="row country-row max-height-400 scrollbar-css">
+<div class="column col-md-3">
+<a class="flags ao" href="/en-ao"><span class="cntry cntry-angola"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span><span class="country-name">Angola</span> </a>
+<a class="flags bj"><span class="cntry cntry-benin"><span class="path1"></span><span class="path2"></span><span class="path3"></span> </span> <span class="country-name">Benin</span></a>
+<a class="flags bw" href="/en-bw/home"><span class="cntry cntry-botswana"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span> </span><span class="country-name">Botswana</span></a>
+ <a class="flags bf"><span class="cntry cntry-burkina-faso"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Burkina Faso</span></a>
+<a class="flags bi"><span class="cntry cntry-burundi"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span></span><span class="country-name">Burundi</span></a>
+<a class="flags cm"><span class="cntry cntry-cameroon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Cameroon</span></a>
+<a class="flags cv"><span class="cntry cntry-cape-verde"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span> <span class="country-name">Cape Verde</span></a>
+<a class="flags cf"><span class="cntry cntry-central-african-republic"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span><span class="country-name">Central African Republic</span></a>
+<a class="flags td"><span class="cntry cntry-chad"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Chad</span></a>
+<a class="flags dj"><span class="cntry cntry-djibouti"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Djibouti</span></a>
+<a class="flags cd"><span class="cntry cntry-democratic-republic-of-congo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span> </span><span class="country-name">DRC</span></a>
+<a class="flags gq"><span class="cntry cntry-equatorial-guinea"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span><span class="country-name">Equatorial Guinea</span></a>
+</div>
+<div class="column col-md-3">
+<a class="flags er"><span class="cntry cntry-eritrea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Eritrea</span></a>
+<a class="flags et"><span class="cntry cntry-ethiopia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Ethiopia</span></a>
+<a class="flags ga"><span class="cntry cntry-gabon">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Gabon</span></a>
+<a class="flags gm"><span class="cntry cntry-gambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Gambia</span></a>
+<a class="flags gh" href="/en-gh"><span class="cntry cntry-ghana">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Ghana</span></a>
+<a class="flags gn"><span class="cntry cntry-guinea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Guinea</span></a>
+<a class="flags gw"><span class="cntry cntry-guinea-bissau">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Guinea-Bissau</span></a>
+<a class="flags ci"><span class="cntry cntry-ivory-coast">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">IvoryCoast</span></a>
+<a class="flags ke" href="/en-ke/home"><span class="cntry cntry-kenya">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
+</span><span class="country-name">Kenya</span></a>
+<a class="flags lr"><span class="cntry cntry-liberia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+</span><span class="country-name">Liberia</span></a>
+<a class="flags mg"><span class="cntry cntry-madagascar">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Madagascar</span></a>
+<a class="flags mw" href="/en-mw/home"><span class="cntry cntry-malawi">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Malawi</span></a>
+</div>
+<div class="column col-md-3">
+<a class="flags ml"><span class="cntry cntry-mali">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mali</span></a>
+<a class="flags mr"><span class="cntry cntry-mauritania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mauritania</span></a>
+<a class="flags mu" href="/en-mu/home"><span class="cntry cntry-mauritius">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Mauritius</span></a>
+<a class="flags mz" href="/en-mz/home"><span class="cntry cntry-mozambique">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+</span><span class="country-name">Mozambique</span></a>
+<a class="flags na" href="/en-na/home"><span class="cntry cntry-namibia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Namibia</span></a>
+<a class="flags ne"><span class="cntry cntry-niger">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Niger</span></a>
+<a class="flags ng" href="/en-ng"><span class="cntry cntry-nigeria">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Nigeria</span></a>
+<a class="flags cg"><span class="cntry cntry-republic-of-the-congo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Republic of the Congo</span> </a>
+<a class="flags rw"><span class="cntry cntry-rwanda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Rwanda</span></a>
+<a class="flags st"><span class="cntry cntry-sao-tome-and-principe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">São Tomé and Príncipe</span></a>
+<a class="flags sn"><span class="cntry cntry-senegal">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Senegal</span></a>
+<a class="flags sc"><span class="cntry cntry-flag">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Seychelles</span></a>
+</div>
+<div class="column col-md-3">
+<a class="flags sl"><span class="cntry cntry-sierra-leone">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Sierra Leone</span></a>
+<a class="flags so"><span class="cntry cntry-somalia">
+<span class="path1"></span><span class="path2"></span>
+</span><span class="country-name">Somalia</span></a>
+<a class="flags ss"><span class="cntry cntry-south-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">South Sudan</span></a>
+<a class="flags sd"><span class="cntry cntry-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Sudan</span></a>
+<a class="flags sz" href="/en-sz/home"><span class="cntry cntry-swaziland">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span>
+</span><span class="country-name">Eswatini</span></a>
+<a class="flags tz" href="/en-tz/home"><span class="cntry cntry-tanzania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Tanzania</span></a>
+ <a class="flags tg"><span class="cntry cntry-togo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Togo</span></a>
+<a class="flags ug" href="/en-ug"><span class="cntry cntry-uganda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
+</span><span class="country-name">Uganda</span></a>
+<a class="flags zm" href="/en-zm"><span class="cntry cntry-zambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Zambia</span></a>
+<a class="flags zw" href="/en-zw/home"><span class="cntry cntry-zimbabwe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+</span><span class="country-name">Zimbabwe</span></a>
+</div>
+<p class="result-no">No matches found</p>
+</div>
+<div class="row country-row-mobile">
+<div class="column col-xs-6">
+<a class="flags ao" href="/en-ao"><span class="cntry cntry-angola"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span><span class="country-name">Angola</span> </a>
+<a class="flags bj"><span class="cntry cntry-benin"><span class="path1"></span><span class="path2"></span><span class="path3"></span> </span> <span class="country-name">Benin</span></a>
+<a class="flags bw" href="/en-bw/home"><span class="cntry cntry-botswana"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span> </span><span class="country-name">Botswana</span></a>
+<a class="flags bf"><span class="cntry cntry-burkina-faso"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Burkina Faso</span></a>
+<a class="flags bi"><span class="cntry cntry-burundi"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span></span><span class="country-name">Burundi</span></a>
+<a class="flags cm"><span class="cntry cntry-cameroon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Cameroon</span></a>
+<a class="flags cv"><span class="cntry cntry-cape-verde"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span> <span class="country-name">Cape Verde</span></a>
+<a class="flags cf"><span class="cntry cntry-central-african-republic"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span><span class="country-name">Central African Republic</span></a>
+<a class="flags td"><span class="cntry cntry-chad"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Chad</span></a>
+<a class="flags dj"><span class="cntry cntry-djibouti"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Djibouti</span></a>
+<a class="flags cd"><span class="cntry cntry-democratic-republic-of-congo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span> </span><span class="country-name">DRC</span></a>
+<a class="flags gq"><span class="cntry cntry-equatorial-guinea"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span><span class="country-name">Equatorial Guinea</span></a>
+<a class="flags er"><span class="cntry cntry-eritrea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Eritrea</span></a>
+<a class="flags et"><span class="cntry cntry-ethiopia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Ethiopia</span></a>
+<a class="flags ga"><span class="cntry cntry-gabon">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Gabon</span></a>
+<a class="flags gm"><span class="cntry cntry-gambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Gambia</span></a>
+<a class="flags gh" href="/en-gh"><span class="cntry cntry-ghana">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Ghana</span></a>
+<a class="flags gn"><span class="cntry cntry-guinea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Guinea</span></a>
+<a class="flags gw"><span class="cntry cntry-guinea-bissau">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Guinea-Bissau</span></a>
+<a class="flags ci"><span class="cntry cntry-ivory-coast">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">IvoryCoast</span></a>
+<a class="flags ke" href="/en-ke/home"><span class="cntry cntry-kenya">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
+</span><span class="country-name">Kenya</span></a>
+<a class="flags lr"><span class="cntry cntry-liberia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+</span><span class="country-name">Liberia</span></a>
+<a class="flags mg"><span class="cntry cntry-madagascar">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Madagascar</span></a>
+<a class="flags mw" href="/en-mw/home"><span class="cntry cntry-malawi">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Malawi</span></a>
+</div>
+<div class="column  col-xs-6">
+<a class="flags ml"><span class="cntry cntry-mali">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mali</span></a>
+<a class="flags mr"><span class="cntry cntry-mauritania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mauritania</span></a>
+<a class="flags mu" href="/en-mu/home"><span class="cntry cntry-mauritius">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Mauritius</span></a>
+<a class="flags mz" href="/en-mz/home"><span class="cntry cntry-mozambique">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+</span><span class="country-name">Mozambique</span></a>
+<a class="flags na" href="/en-na/home"><span class="cntry cntry-namibia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Namibia</span></a>
+<a class="flags ne"><span class="cntry cntry-niger">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Niger</span></a>
+<a class="flags ng" href="/en-ng"><span class="cntry cntry-nigeria">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Nigeria</span></a>
+<a class="flags cg"><span class="cntry cntry-republic-of-the-congo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Republic of the Congo</span> </a>
+<a class="flags rw"><span class="cntry cntry-rwanda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Rwanda</span></a>
+<a class="flags st"><span class="cntry cntry-sao-tome-and-principe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">São Tomé and Príncipe</span></a>
+<a class="flags sn"><span class="cntry cntry-senegal">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Senegal</span></a>
+<a class="flags sc"><span class="cntry cntry-flag">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Seychelles</span></a>
+<a class="flags sl"><span class="cntry cntry-sierra-leone">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Sierra Leone</span></a>
+<a class="flags so"><span class="cntry cntry-somalia">
+<span class="path1"></span><span class="path2"></span>
+</span><span class="country-name">Somalia</span></a>
+<a class="flags ss"><span class="cntry cntry-south-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">South Sudan</span></a>
+<a class="flags sd"><span class="cntry cntry-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Sudan</span></a>
+<a class="flags sz" href="/en-sz/home"><span class="cntry cntry-swaziland">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span>
+</span><span class="country-name">Eswatini</span></a>
+<a class="flags tz" href="/en-tz/home"><span class="cntry cntry-tanzania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Tanzania</span></a>
+<a class="flags tg"><span class="cntry cntry-togo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Togo</span></a>
+<a class="flags ug" href="/en-ug"><span class="cntry cntry-uganda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
+</span><span class="country-name">Uganda</span></a>
+<a class="flags zm" href="/en-zm"><span class="cntry cntry-zambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Zambia</span></a>
+<a class="flags zw" href="/en-zw/home"><span class="cntry cntry-zimbabwe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+</span><span class="country-name">Zimbabwe</span></a>
+</div>
+</div>
+
+</div>
+</div>
+</nav>
+<nav style="display:none;" class="new_flags">
+<style>
+
+.closebtn {
+    color: #179edd !important;
+    right: 0px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    z-index: 9;
+    padding-top: 6px;
+}
+
+.closebtn:hover {
+    color: #179edd !important;
+}    
+
+.search-container img{
+    margin-top: -2px;
+    margin-right: 1px;
+}
+
+a.flag {
+    color: #fff;
+    float: left;
+    line-height: 1.1 !important;
+    padding: 1.1rem 0 1.1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+	padding-left:0px !important;
+	width:90% !important;
+	margin-bottom:15px !important;
+	padding-left: 45px !important;
+    text-align: left;
+}
+
+.max-height-400{
+    max-height:400px;
+    overflow:auto;
+}
+
+.scrollbar-css::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.scrollbar-css::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.scrollbar-css::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.dropdown-content {
+   background: rgba(0,17,24,0.9);
+   overflow: hidden;
+}
+
+.country-row-mobile{
+    max-height:450px;
+    overflow:auto;
+}
+
+.search-container img {
+    margin-top: -4px;
+    margin-right: 1px;
+}
+
+.header-sec {
+  display: inline-flex;
+  width: 64%;
+  float: right;
+  clear: both;
+  padding-bottom: 4em;
+  padding-top: 2em;
+}
+
+input.search-filed {
+  border-radius: 28px;
+  padding: 9px 51px;
+  border: 2px solid #0095da;
+  background-color: transparent;
+  color: #fff;
+}
+
+.search-container img {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  margin-top: -3px;
+  margin-left: 1px;
+}
+
+.NewDstvPage .search-container button {
+    margin-left: -40px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 4px;
+}
+
+
+</style>
+<div class=" dropdown-content f32" style="display:none">
+<div class="container">
+<div class="row">
+<div class=" header-sec ">
+<div class="search-container ">
+<input type="text" placeholder="{langTranslateApp.searchPlaceholder}" name="search" class="search-filed">
+<button type="submit"><img data-cfsrc="/media/3535/search-icon-blue.png" style="display:none;visibility:hidden;"><noscript><img src="/media/3535/search-icon-blue.png"></noscript></button>
+</div>
+ <div class="lang-dropdown" id="langDropdown">
+<img data-cfsrc="/media/3536/langue_select-icon.png" style="display:none;visibility:hidden;"><noscript><img src="/media/3536/langue_select-icon.png"></noscript>
+<select id="langSelector" class="lang-dropdown-menu" placeholder="Choose a Language...">
+<option value="https://www.dstvafrica.com/en-ng">EN</option>
+</select>
+</div>
+<a href="javascript:void(0)" id="newcountryClose" class="closebtn mega-close-button text-primary"><i class="icon-Close_M pl-1"></i></a>
+</div>
+</div>
+<div class="row country-row max-height-400 scrollbar-css">
+<div class="column col-md-3">
+<a class="flags ao"><span class="cntry cntry-angola"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span><span class="country-name">Angola</span> </a>
+<a class="flags bj"><span class="cntry cntry-benin"><span class="path1"></span><span class="path2"></span><span class="path3"></span> </span> <span class="country-name">Benin</span></a>
+<a class="flags bw"><span class="cntry cntry-botswana"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span> </span><span class="country-name">Botswana</span></a>
+<a class="flags bf"><span class="cntry cntry-burkina-faso"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Burkina Faso</span></a>
+<a class="flags bi"><span class="cntry cntry-burundi"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span></span><span class="country-name">Burundi</span></a>
+<a class="flags cm"><span class="cntry cntry-cameroon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Cameroon</span></a>
+<a class="flags cv"><span class="cntry cntry-cape-verde"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span> <span class="country-name">Cape Verde</span></a>
+<a class="flags cf"><span class="cntry cntry-central-african-republic"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span><span class="country-name">Central African Republic</span></a>
+<a class="flags td"><span class="cntry cntry-chad"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Chad</span></a>
+<a class="flags dj"><span class="cntry cntry-djibouti"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Djibouti</span></a>
+<a class="flags cd"><span class="cntry cntry-democratic-republic-of-congo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span> </span><span class="country-name">DRC</span></a>
+<a class="flags gq"><span class="cntry cntry-equatorial-guinea"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span><span class="country-name">Equatorial Guinea</span></a>
+</div>
+<div class="column col-md-3">
+<a class="flags er"><span class="cntry cntry-eritrea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Eritrea</span></a>
+<a class="flags et"><span class="cntry cntry-ethiopia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Ethiopia</span></a>
+<a class="flags ga"><span class="cntry cntry-gabon">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Gabon</span></a>
+<a class="flags gm"><span class="cntry cntry-gambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Gambia</span></a>
+<a class="flags gh"><span class="cntry cntry-ghana">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Ghana</span></a>
+<a class="flags gn"><span class="cntry cntry-guinea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Guinea</span></a>
+<a class="flags gw"><span class="cntry cntry-guinea-bissau">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Guinea-Bissau</span></a>
+<a class="flags ci"><span class="cntry cntry-ivory-coast">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">IvoryCoast</span></a>
+<a class="flags ke"><span class="cntry cntry-kenya">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
+</span><span class="country-name">Kenya</span></a>
+<a class="flags lr"><span class="cntry cntry-liberia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+</span><span class="country-name">Liberia</span></a>
+<a class="flags mg"><span class="cntry cntry-madagascar">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Madagascar</span></a>
+<a class="flags mw"><span class="cntry cntry-malawi">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Malawi</span></a>
+</div>
+<div class="column col-md-3">
+<a class="flags ml"><span class="cntry cntry-mali">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mali</span></a>
+<a class="flags mr"><span class="cntry cntry-mauritania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mauritania</span></a>
+<a class="flags mu"><span class="cntry cntry-mauritius">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Mauritius</span></a>
+<a class="flags mz"><span class="cntry cntry-mozambique">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+</span><span class="country-name">Mozambique</span></a>
+<a class="flags na"><span class="cntry cntry-namibia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Namibia</span></a>
+<a class="flags ne"><span class="cntry cntry-niger">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Niger</span></a>
+<a class="flags ng"><span class="cntry cntry-nigeria">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Nigeria</span></a>
+<a class="flags cg"><span class="cntry cntry-republic-of-the-congo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Republic of the Congo</span> </a>
+<a class="flags rw"><span class="cntry cntry-rwanda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Rwanda</span></a>
+<a class="flags st"><span class="cntry cntry-sao-tome-and-principe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">São Tomé and Príncipe</span></a>
+<a class="flags sn"><span class="cntry cntry-senegal">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Senegal</span></a>
+<a class="flags sc"><span class="cntry cntry-flag">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Seychelles</span></a>
+</div>
+<div class="column col-md-3">
+<a class="flags sl"><span class="cntry cntry-sierra-leone">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Sierra Leone</span></a>
+<a class="flags so"><span class="cntry cntry-somalia">
+<span class="path1"></span><span class="path2"></span>
+</span><span class="country-name">Somalia</span></a>
+<a class="flags ss"><span class="cntry cntry-south-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">South Sudan</span></a>
+<a class="flags sd"><span class="cntry cntry-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Sudan</span></a>
+<a class="flags sz"><span class="cntry cntry-swaziland">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span>
+</span><span class="country-name">Eswatini</span></a>
+<a class="flags tz"><span class="cntry cntry-tanzania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Tanzania</span></a>
+<a class="flags tg"><span class="cntry cntry-togo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Togo</span></a>
+<a class="flags ug"><span class="cntry cntry-uganda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
+</span><span class="country-name">Uganda</span></a>
+<a class="flags zm"><span class="cntry cntry-zambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Zambia</span></a>
+<a class="flags zw"><span class="cntry cntry-zimbabwe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+</span><span class="country-name">Zimbabwe</span></a>
+</div>
+<p class="result-no">No matches found</p>
+</div>
+<div class="row country-row-mobile">
+<div class="column col-xs-6">
+<a class="flags ao"><span class="cntry cntry-angola"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span><span class="country-name">Angola</span> </a>
+<a class="flags bj"><span class="cntry cntry-benin"><span class="path1"></span><span class="path2"></span><span class="path3"></span> </span> <span class="country-name">Benin</span></a>
+<a class="flags bw"><span class="cntry cntry-botswana"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span> </span><span class="country-name">Botswana</span></a>
+<a class="flags bf"><span class="cntry cntry-burkina-faso"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Burkina Faso</span></a>
+<a class="flags bi"><span class="cntry cntry-burundi"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span></span><span class="country-name">Burundi</span></a>
+<a class="flags cm"><span class="cntry cntry-cameroon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Cameroon</span></a>
+<a class="flags cv"><span class="cntry cntry-cape-verde"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span></span> <span class="country-name">Cape Verde</span></a>
+<a class="flags cf"><span class="cntry cntry-central-african-republic"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span><span class="country-name">Central African Republic</span></a>
+<a class="flags td"><span class="cntry cntry-chad"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span><span class="country-name">Chad</span></a>
+<a class="flags dj"><span class="cntry cntry-djibouti"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span><span class="country-name">Djibouti</span></a>
+<a class="flags cd"><span class="cntry cntry-democratic-republic-of-congo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span> </span><span class="country-name">DRC</span></a>
+<a class="flags gq"><span class="cntry cntry-equatorial-guinea"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span><span class="country-name">Equatorial Guinea</span></a>
+<a class="flags er"><span class="cntry cntry-eritrea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Eritrea</span></a>
+<a class="flags et"><span class="cntry cntry-ethiopia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Ethiopia</span></a>
+<a class="flags ga"><span class="cntry cntry-gabon">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Gabon</span></a>
+<a class="flags gm"><span class="cntry cntry-gambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Gambia</span></a>
+<a class="flags gh"><span class="cntry cntry-ghana">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Ghana</span></a>
+<a class="flags gn"><span class="cntry cntry-guinea">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Guinea</span></a>
+<a class="flags gw"><span class="cntry cntry-guinea-bissau">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Guinea-Bissau</span></a>
+<a class="flags ci"><span class="cntry cntry-ivory-coast">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">IvoryCoast</span></a>
+<a class="flags ke"><span class="cntry cntry-kenya">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span>
+</span><span class="country-name">Kenya</span></a>
+<a class="flags lr"><span class="cntry cntry-liberia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span>
+</span><span class="country-name">Liberia</span></a>
+<a class="flags mg"><span class="cntry cntry-madagascar">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Madagascar</span></a>
+<a class="flags mw"><span class="cntry cntry-malawi">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Malawi</span></a>
+</div>
+<div class="column  col-xs-6">
+<a class="flags ml"><span class="cntry cntry-mali">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mali</span></a>
+<a class="flags mr"><span class="cntry cntry-mauritania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Mauritania</span></a>
+<a class="flags mu"><span class="cntry cntry-mauritius">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Mauritius</span></a>
+<a class="flags mz"><span class="cntry cntry-mozambique">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span>
+</span><span class="country-name">Mozambique</span></a>
+<a class="flags na"><span class="cntry cntry-namibia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Namibia</span></a>
+<a class="flags ne"><span class="cntry cntry-niger">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Niger</span></a>
+<a class="flags ng"><span class="cntry cntry-nigeria">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Nigeria</span></a>
+<a class="flags cg"><span class="cntry cntry-republic-of-the-congo">
+ <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Republic of the Congo</span> </a>
+<a class="flags rw"><span class="cntry cntry-rwanda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Rwanda</span></a>
+<a class="flags st"><span class="cntry cntry-sao-tome-and-principe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">São Tomé and Príncipe</span></a>
+<a class="flags sn"><span class="cntry cntry-senegal">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Senegal</span></a>
+<a class="flags sc"><span class="cntry cntry-flag">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+</span><span class="country-name">Seychelles</span></a>
+<a class="flags sl"><span class="cntry cntry-sierra-leone">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span>
+</span><span class="country-name">Sierra Leone</span></a>
+<a class="flags so"><span class="cntry cntry-somalia">
+<span class="path1"></span><span class="path2"></span>
+</span><span class="country-name">Somalia</span></a>
+<a class="flags ss"><span class="cntry cntry-south-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">South Sudan</span></a>
+<a class="flags sd"><span class="cntry cntry-sudan">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Sudan</span></a>
+<a class="flags sz"><span class="cntry cntry-swaziland">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span>
+</span><span class="country-name">Eswatini</span></a>
+<a class="flags tz"><span class="cntry cntry-tanzania">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+</span><span class="country-name">Tanzania</span></a>
+<a class="flags tg"><span class="cntry cntry-togo">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+</span><span class="country-name">Togo</span></a>
+<a class="flags ug"><span class="cntry cntry-uganda">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
+</span><span class="country-name">Uganda</span></a>
+<a class="flags zm"><span class="cntry cntry-zambia">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+ </span><span class="country-name">Zambia</span></a>
+<a class="flags zw"><span class="cntry cntry-zimbabwe">
+<span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span>
+</span><span class="country-name">Zimbabwe</span></a>
+</div>
+</div>
+
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<nav class="leftmenu-newdstv" style="display:none;">
+
+</nav>
+<button style="display:none;" type="button" class="btn btn-info btn-lg country-model-btn" data-toggle="modal" data-target="#countryErrorMessageModal">Open Modal</button>
+
+<div id="countryErrorMessageModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-body">
+<p></p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">{ langTranslateApp.menuClose}</button>
+</div>
+</div>
+</div>
+</div>
+<div id="overlaycountry" class="country-overlay"><div class="loader"></div></div>
+<div id="WatchNav" class="menu-overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav('WatchNav')"><span class="closeMenuText">Close Menu</span> &times;</a>
+<div class="menu-overlay-content col-md-12">
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">TV Guide</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="">View the TV Guide</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Featured Content</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://zambezimagic.dstv.com/show/zed-top-ten_6/videos">Best of Local</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://www.supersport.com">Must Watch Sports</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://now.dstv.com/">International TV Shows</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="#">For the Kidz</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://boxoffice.dstv.com">Latest Movies</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Stay up to date</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/get-news/news">News</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="">Alerts</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/help/need-help">Help</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Earn Rewards</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/earn/dstv-thanks">Claim Now</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/earn/dstv-thanks">Offers</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/earn/dstv-thanks">Competitions</a></div>
+</div>
+</div>
+</div>
+<div id="GetNav" class="menu-overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav('GetNav')"><span class="closeMenuText">Close Menu</span> &times;</a>
+<div class="menu-overlay-content col-md-12">
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Home</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/get-home/dstv-for-you">For your Home</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Business</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/get-business/about">For your Business</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Packages</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/browse-compare-packages">Browse and Compare</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Installation</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://eazy.dstv.com/en/zm/installers/find" target="_blank">Find an Installer</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://eazy.dstv.com/en/zm/dealers" target="_blank">Find a Dealer</a></div>
+</div>
+</div>
+</div>
+<div id="PayNav" class="menu-overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav('PayNav')"><span class="closeMenuText">Close Menu</span> &times;</a>
+<div class="menu-overlay-content col-md-12">
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">Pay</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/ways-to-pay">How to Pay</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="https://eazy.dstv.com/en/zm/pay" target="_blank">Pay Online</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/my-account">View Balance</a></div>
+</div>
+</div>
+</div>
+<div id="ManageNav" class="menu-overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav('ManageNav')"><span class="closeMenuText">Close Menu</span> &times;</a>
+<div class="menu-overlay-content col-md-12">
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">My Account</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/my-account">View Balance</a></div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/pay">Pay Now</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv">My Package</div>
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/my-package/change-package">Change Package</a></div>
+</div>
+<div class="col-md-3">
+<div class="col-md-12 menu-elementsDiv sub-elementsDiv"><a href="/my-profile/update-details">Update Details</a></div>
+</div>
+<div class="col-md-3">
+</div>
+</div>
+</div>
+</header>
+<style>
+    .countrymessageModalDiplay {
+        display: block !important;
+        text-align: center;
+            background: rgba(0,0,0,.5);
+    }
+    .countrymessageModalDiplay .modal-dialog{top: 39%;}
+</style>
+<div class="main-container">
+<tag-application>
+<div class="banner-block" id="for-menu-on-desktop">
+<a href="#" class="search-opener hidden"><span class="icon-Search"></span></a>
+<div class="search-block">
+<tag-header view="homepage" mysearchid="searchtype" searchurlsrc="/umbraco/api/WebApiLuis/GetLuisResponse/?restrictpath=-1&amp;currentPage=1&amp;filtertype=&amp;search=" searchresultdisplay="Title" searchresulturl="Url" searchplaceholder="How can we help you?" displaysearchslide="true"></tag-header>
+</div>
+<div class="grid-section">
+<div>
+<div class="row clearfix">
+<div class="col-md-12 column">
+<div>
+<div class="banner-slider" id="home-banner-slider">
+<div class="slide ">
+<style>
+.news-landing .banner-card {
+/*    -webkit-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-moz-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+    position: absolute;
+    height: 516px;
+    width: 800px;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 247px;
+    margin-left: 336px;
+}
+.news-landing .banner-content .card {
+    height: 613px;
+    width: 400px;
+    margin-left: 4px;
+    margin-top: 190px;
+    z-index: 3;
+    color: #fff !important;
+}
+
+.news-landing .banner-content .card .card-body {
+    background: rgba(8,11,14,1);
+    /*background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+    height: 360px;
+    padding: 33px;
+}
+        
+        .news-landing .banner-content .card .card-header {
+            
+            background: rgb(80,80,80);
+            background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+        	height: 220px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 36px;
+        }
+        	
+        .news-landing .banner-content .card .card-footer.text-muted {
+            
+    background: rgb(80,80,80);
+background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+            height: 53px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        	color: #fff;
+            padding: 15px;
+        }
+        
+        /*.news-landing .banner-content .card .card-body {*/
+        /*    background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+        /*    height: 330px;*/
+        /*	padding: 33px;*/
+        /*}*/
+        .news-landing .col-sm-6.home-same-height.v-align-image {
+            margin-left: -121px;
+            margin-top: 236px;
+        }
+        
+        .news-landing img.inline-block.img-responsive {
+            border-radius: 10px;
+        }
+        
+        .news-landing button.btn.btn-primary {
+            color: #fff;
+            background-color: #0095da;
+            border-color: #fff;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .news-landing .img-responsive {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .news-landing .col-sm-6.home-same-height {
+            z-index: 3;
+        }
+        .news-landing button.slick-prev.slick-arrow,.news-landing button.slick-next.slick-arrow,
+        .news-landing .slick-dots,
+        .news-landing #header {
+            z-index: 1200 !important;
+        }
+    </style>
+<div class="bg-hold" style="background-image:url(/media/7997/to_load_dstv-yanga_confam_happier-holidays-naija-2019_1920x1080.jpg);"></div>
+<div class="banner-content   color-black">
+<div class="container ">
+<div class="col-sm-8 col-sm-offset-2">
+<div class="text">
+<p><img data-cfstyle="width: 469px;" data-cfsrc="/media/7996/header_dstv-yanga_confam_happier-holidays-naija-2019_1920x1080.png?width=469&amp;" alt="dstv-new-packages" data-udi="umb://media/5e39156666cd42e98b5fab5678b80042" style="display:none;visibility:hidden;" /><noscript><img style="width: 469px;" src="/media/7996/header_dstv-yanga_confam_happier-holidays-naija-2019_1920x1080.png?width=469&amp;" alt="dstv-new-packages" data-udi="umb://media/5e39156666cd42e98b5fab5678b80042" /></noscript></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+</div>
+<div style="margin-left:-10px; margin-right:-10px;">
+<div class="inline-block p-1">
+<a href="https://offers.dstvafrica.com/campaign/dstv-naija-packages-confam-yanga/" target="_blank" class="btn anim-btn btn-primary track_campaignslider"><span class="anim-span"></span>SEE MORE</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+<div class="play-logo">
+<a href="#" target="_self">
+</a>
+</div>
+</div>
+</div>
+<div class="slide ">
+<style>
+.news-landing .banner-card {
+/*    -webkit-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-moz-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+    position: absolute;
+    height: 516px;
+    width: 800px;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 247px;
+    margin-left: 336px;
+}
+.news-landing .banner-content .card {
+    height: 613px;
+    width: 400px;
+    margin-left: 4px;
+    margin-top: 190px;
+    z-index: 3;
+    color: #fff !important;
+}
+
+.news-landing .banner-content .card .card-body {
+    background: rgba(8,11,14,1);
+    /*background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+    height: 360px;
+    padding: 33px;
+}
+        
+        .news-landing .banner-content .card .card-header {
+            
+            background: rgb(80,80,80);
+            background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+        	height: 220px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 36px;
+        }
+        	
+        .news-landing .banner-content .card .card-footer.text-muted {
+            
+    background: rgb(80,80,80);
+background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+            height: 53px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        	color: #fff;
+            padding: 15px;
+        }
+        
+        /*.news-landing .banner-content .card .card-body {*/
+        /*    background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+        /*    height: 330px;*/
+        /*	padding: 33px;*/
+        /*}*/
+        .news-landing .col-sm-6.home-same-height.v-align-image {
+            margin-left: -121px;
+            margin-top: 236px;
+        }
+        
+        .news-landing img.inline-block.img-responsive {
+            border-radius: 10px;
+        }
+        
+        .news-landing button.btn.btn-primary {
+            color: #fff;
+            background-color: #0095da;
+            border-color: #fff;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .news-landing .img-responsive {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .news-landing .col-sm-6.home-same-height {
+            z-index: 3;
+        }
+        .news-landing button.slick-prev.slick-arrow,.news-landing button.slick-next.slick-arrow,
+        .news-landing .slick-dots,
+        .news-landing #header {
+            z-index: 1200 !important;
+        }
+    </style>
+<div class="bg-hold" style="background-image:url(/media/7736/dstv_nigeria_happier-2019_1920x1080.jpg);"></div>
+<div class="banner-content   color-black">
+<div class="container ">
+<div class="col-sm-8 col-sm-offset-2">
+<div class="text">
+<p><img data-cfstyle="width: 350px; display: block; margin-left: auto; margin-right: auto;" data-cfsrc="/media/7732/dstv-nigeria_festive_2019_desktop.png?width=350&amp;" alt="happier holidays" data-udi="umb://media/62a53bd15cff429bbdf13b047bee31c2" style="display:none;visibility:hidden;" /><noscript><img style="width: 350px; display: block; margin-left: auto; margin-right: auto;" src="/media/7732/dstv-nigeria_festive_2019_desktop.png?width=350&amp;" alt="happier holidays" data-udi="umb://media/62a53bd15cff429bbdf13b047bee31c2" /></noscript></p>
+<p style="font-size: 20px; color: white; text-align: center;"><em>Get your HD Decoder,<span style="width: 100% !important; display: block !important; clear: both !important;"></span>Dish Kit + 1 month Compact<span style="width: 100% !important; display: block !important; clear: both !important;"></span><strong><span style="color: #fcf500;">for N9, 900</span></strong></em></p>
+</div>
+<div style="margin-left:-10px; margin-right:-10px;">
+<div class="inline-block p-1">
+<a href="https://offers.dstvafrica.com/campaign/dstv-festive-nigeria/" target="_self" class="btn anim-btn btn-primary track_campaignslider"><span class="anim-span"></span>View More</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+<div class="play-logo">
+<a href="#" target="_self">
+</a>
+</div>
+</div>
+</div>
+<div class="slide ">
+<style>
+.news-landing .banner-card {
+/*    -webkit-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-moz-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+    position: absolute;
+    height: 516px;
+    width: 800px;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 247px;
+    margin-left: 336px;
+}
+.news-landing .banner-content .card {
+    height: 613px;
+    width: 400px;
+    margin-left: 4px;
+    margin-top: 190px;
+    z-index: 3;
+    color: #fff !important;
+}
+
+.news-landing .banner-content .card .card-body {
+    background: rgba(8,11,14,1);
+    /*background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+    height: 360px;
+    padding: 33px;
+}
+        
+        .news-landing .banner-content .card .card-header {
+            
+            background: rgb(80,80,80);
+            background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+        	height: 220px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 36px;
+        }
+        	
+        .news-landing .banner-content .card .card-footer.text-muted {
+            
+    background: rgb(80,80,80);
+background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+            height: 53px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        	color: #fff;
+            padding: 15px;
+        }
+        
+        /*.news-landing .banner-content .card .card-body {*/
+        /*    background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+        /*    height: 330px;*/
+        /*	padding: 33px;*/
+        /*}*/
+        .news-landing .col-sm-6.home-same-height.v-align-image {
+            margin-left: -121px;
+            margin-top: 236px;
+        }
+        
+        .news-landing img.inline-block.img-responsive {
+            border-radius: 10px;
+        }
+        
+        .news-landing button.btn.btn-primary {
+            color: #fff;
+            background-color: #0095da;
+            border-color: #fff;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .news-landing .img-responsive {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .news-landing .col-sm-6.home-same-height {
+            z-index: 3;
+        }
+        .news-landing button.slick-prev.slick-arrow,.news-landing button.slick-next.slick-arrow,
+        .news-landing .slick-dots,
+        .news-landing #header {
+            z-index: 1200 !important;
+        }
+    </style>
+<div class="bg-hold" style="background-image:url(/media/7959/hobbsandshaw_banner_1920x1980.jpg);"></div>
+<div class="banner-content   color-black">
+<div class="container ">
+<div class="col-sm-8 col-sm-offset-2">
+<div class="text">
+<h2 class="thinFont"><span><span style="color: #339966; font-size: 2em !important;"><span style="color: #ffffff; text-shadow: 2px 2px 8px #000;"><img data-cfstyle="width: 80px; display: block; margin-left: auto; margin-right: auto;" data-cfsrc="/media/7422/box-office-playicon.png?width=80&amp;mode=max" alt="" height="" data-udi="umb://media/3e8cb60cc98b4dc99e68206dd7386d5a" style="display:none;visibility:hidden;" /><noscript><img style="width: 80px; display: block; margin-left: auto; margin-right: auto;" src="/media/7422/box-office-playicon.png?width=80&amp;mode=max" alt="" height="" data-udi="umb://media/3e8cb60cc98b4dc99e68206dd7386d5a" /></noscript></span></span></span></h2>
+<h2 class="display-3 color-white thin mb-2" style="text-align: center;"><span style="color: #339966; font-size: 1.7em !important; line-height: 100%; text-align: center;"><span style="color: #ffffff; text-shadow: 2px 2px 8px #000;"> Fast &amp; Furious presents: <strong>Hobbs &amp; Shaw</strong></span></span></h2>
+<h4 class="thinFont" style="color: #008080; font-size: 1em !important; text-align: center;"><strong><span style="color: #fff; text-shadow: #000000 2px 2px 8px;"><span style="font-size: 1.2em;"><span style="color: #ffccc; text-shadow: 2px 2px 8px #000;"><span class="sublink">Be the first to watch it on BoxOffice!</span></span></span></span></strong></h4>
+<h2 class="thinFont"><span><span style="color: #339966; font-size: 2em !important;"><span style="color: #ffffff; text-shadow: 2px 2px 8px #000;"> </span></span></span></h2>
+</div>
+<div style="margin-left:-10px; margin-right:-10px;">
+<div class="inline-block p-1">
+<a href="https://api.whatsapp.com/send?phone=2349082368533&amp;text=Rent%20Now%20&amp;source=&amp;data=" target="_blank" class="btn anim-btn btn-primary track_campaignslider"><span class="anim-span"></span>Rent Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+<div class="play-logo">
+<a href="#" target="_self">
+</a>
+</div>
+</div>
+</div>
+<div class="slide ">
+<style>
+.news-landing .banner-card {
+/*    -webkit-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-moz-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+    position: absolute;
+    height: 516px;
+    width: 800px;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 247px;
+    margin-left: 336px;
+}
+.news-landing .banner-content .card {
+    height: 613px;
+    width: 400px;
+    margin-left: 4px;
+    margin-top: 190px;
+    z-index: 3;
+    color: #fff !important;
+}
+
+.news-landing .banner-content .card .card-body {
+    background: rgba(8,11,14,1);
+    /*background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+    height: 360px;
+    padding: 33px;
+}
+        
+        .news-landing .banner-content .card .card-header {
+            
+            background: rgb(80,80,80);
+            background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+        	height: 220px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 36px;
+        }
+        	
+        .news-landing .banner-content .card .card-footer.text-muted {
+            
+    background: rgb(80,80,80);
+background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+            height: 53px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        	color: #fff;
+            padding: 15px;
+        }
+        
+        /*.news-landing .banner-content .card .card-body {*/
+        /*    background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+        /*    height: 330px;*/
+        /*	padding: 33px;*/
+        /*}*/
+        .news-landing .col-sm-6.home-same-height.v-align-image {
+            margin-left: -121px;
+            margin-top: 236px;
+        }
+        
+        .news-landing img.inline-block.img-responsive {
+            border-radius: 10px;
+        }
+        
+        .news-landing button.btn.btn-primary {
+            color: #fff;
+            background-color: #0095da;
+            border-color: #fff;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .news-landing .img-responsive {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .news-landing .col-sm-6.home-same-height {
+            z-index: 3;
+        }
+        .news-landing button.slick-prev.slick-arrow,.news-landing button.slick-next.slick-arrow,
+        .news-landing .slick-dots,
+        .news-landing #header {
+            z-index: 1200 !important;
+        }
+    </style>
+<div class="bg-hold" style="background-image:url(/media/7795/dstv_nov_hl_1920x1080.jpg);"></div>
+<div class="banner-content left  color-black">
+<div class="container ">
+<div class="col-sm-7">
+<div class="text">
+<p><img data-cfstyle="width: 300px;" data-cfsrc="/media/7794/dstv_nov_monthly_highlights_header-1.png?width=467&amp;height=311" alt="" data-udi="umb://media/311d9d9181504f57ac5ce474431ed4f8" style="display:none;visibility:hidden;" /><noscript><img style="width: 300px;" src="/media/7794/dstv_nov_monthly_highlights_header-1.png?width=467&amp;height=311" alt="" data-udi="umb://media/311d9d9181504f57ac5ce474431ed4f8" /></noscript></p>
+<p style="color: #21c7f7;"><strong><em>Catch the epic new local production, every Sundays at 20:00 on channel 101/102.</em></strong></p>
+</div>
+<div style="margin-left:-10px; margin-right:-10px;">
+<div class="inline-block p-1">
+<a href="https://now.dstv.com/catchup/program/1050693" target="_blank" class="btn anim-btn btn-white btn-bordered track_campaignslider"><span class="anim-span"></span>Watch N ow</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+<div class="play-logo">
+<a href="#" target="_self">
+</a>
+</div>
+</div>
+</div>
+<div class="slide ">
+<style>
+.news-landing .banner-card {
+/*    -webkit-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-moz-box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*box-shadow: 0px 0px 34px 13px rgba(5,5,5,1);*/
+/*-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+/*box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,1);*/
+-webkit-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+-moz-box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+box-shadow: 1px 1px 4px 0.2px rgba(219,219,219,0.45);
+    position: absolute;
+    height: 516px;
+    width: 800px;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 247px;
+    margin-left: 336px;
+}
+.news-landing .banner-content .card {
+    height: 613px;
+    width: 400px;
+    margin-left: 4px;
+    margin-top: 190px;
+    z-index: 3;
+    color: #fff !important;
+}
+
+.news-landing .banner-content .card .card-body {
+    background: rgba(8,11,14,1);
+    /*background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+    height: 360px;
+    padding: 33px;
+}
+        
+        .news-landing .banner-content .card .card-header {
+            
+            background: rgb(80,80,80);
+            background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+        	height: 220px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 36px;
+        }
+        	
+        .news-landing .banner-content .card .card-footer.text-muted {
+            
+    background: rgb(80,80,80);
+background: -moz-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: -webkit-linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+background: linear-gradient(18deg, rgba(80,80,80,1) 0%, rgba(26,31,37,1) 46%, rgba(8,11,14,1) 81%);
+            /*background-image: linear-gradient(to right, #58666a, #5d6e6b, #69756a, #7b7a6a, #8f7e70);*/
+            height: 53px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        	color: #fff;
+            padding: 15px;
+        }
+        
+        /*.news-landing .banner-content .card .card-body {*/
+        /*    background-image: linear-gradient(to right, #87746d, #897269, #8b7164, #8c6f60, #8d6e5b);*/
+        /*    height: 330px;*/
+        /*	padding: 33px;*/
+        /*}*/
+        .news-landing .col-sm-6.home-same-height.v-align-image {
+            margin-left: -121px;
+            margin-top: 236px;
+        }
+        
+        .news-landing img.inline-block.img-responsive {
+            border-radius: 10px;
+        }
+        
+        .news-landing button.btn.btn-primary {
+            color: #fff;
+            background-color: #0095da;
+            border-color: #fff;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        .news-landing .img-responsive {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .news-landing .col-sm-6.home-same-height {
+            z-index: 3;
+        }
+        .news-landing button.slick-prev.slick-arrow,.news-landing button.slick-next.slick-arrow,
+        .news-landing .slick-dots,
+        .news-landing #header {
+            z-index: 1200 !important;
+        }
+    </style>
+<div class="bg-hold" style="background-image:url(/media/7648/544546c9-aa71-49c8-a68c-fb471699999e.jpeg);"></div>
+<div class="banner-content   color-black">
+<div class="container ">
+<div class="col-sm-8 col-sm-offset-2">
+<div class="text">
+<p><img data-cfstyle="display: block; margin-left: auto; margin-right: auto;" data-cfsrc="/media/7434/header-text.png?width=397&amp;height=176&amp;mode=max" alt="" height="176" data-udi="umb://media/abd581684f29475dbd293d0438a23fbc" style="display:none;visibility:hidden;" /><noscript><img style="display: block; margin-left: auto; margin-right: auto;" src="/media/7434/header-text.png?width=397&amp;height=176&amp;mode=max" alt="" height="176" data-udi="umb://media/abd581684f29475dbd293d0438a23fbc" /></noscript></p>
+<p style="text-align: center;"><span style="color: #00ccff;"><strong>EVERYTHING YOU NEED IN ONE APP!</strong></span></p>
+<p style="text-align: center;"><span style="color: #cc99ff;">Download from the Google Play or Apple stores</span></p>
+<p style="font-size: 0.9em; text-align: center; color: #35bee3;"><a rel="noopener" href="https://play.google.com/store/apps/details?id=com.dstv.mydstv" target="_blank" title="Click here to download app"><img data-cfstyle="width: 200px; display: block; margin-left: auto; margin-right: auto;" data-cfsrc="/media/7437/google-play-store-button.png?width=500&amp;height=165.3027823240589" alt="google-playstore" data-udi="umb://media/eeb5c0709be64077b29b51741588853a" style="display:none;visibility:hidden;" /><noscript><img style="width: 200px; display: block; margin-left: auto; margin-right: auto;" src="/media/7437/google-play-store-button.png?width=500&amp;height=165.3027823240589" alt="google-playstore" data-udi="umb://media/eeb5c0709be64077b29b51741588853a" /></noscript></a></p>
+<p><a rel="noopener" href="https://itunes.apple.com/in/app/mydstv/id1419652640?mt=8" target="_blank" title="Click here to download app"><img data-cfstyle="width: 200px; display: block; margin-left: auto; margin-right: auto;" data-cfsrc="/media/7436/apple-app-store-button.png?width=500&amp;" alt="apple-appstore" data-udi="umb://media/59a8059fee1545348c442e95a7f61fe3" style="display:none;visibility:hidden;" /><noscript><img style="width: 200px; display: block; margin-left: auto; margin-right: auto;" src="/media/7436/apple-app-store-button.png?width=500&amp;" alt="apple-appstore" data-udi="umb://media/59a8059fee1545348c442e95a7f61fe3" /></noscript></a></p>
+<p> </p>
+<p> </p>
+<p> </p>
+</div>
+<div style="margin-left:-10px; margin-right:-10px;">
+</div>
+</div>
+</div>
+</div>
+<div class="info">
+<div class="play-logo">
+<a href="#" target="_self">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class=" second-slider">
+<div class="highlights-nav-section highlightBG">
+<div class="highlights-text highlightTextColor">
+<h1 style="color: #29c5f6; text-align: center;">WHAT'S <span style="font-weight: bold;">HOT!</span></h1>
+<p style="text-align: center;">Discover unlimited new TV shows, series, blockbuster movies, the latest news and DStv offers <span>tailored specifically for your entertainment needs.</span></p>
+</div>
+<span class="arrows-here"></span>
+<div class="responsive slider">
+<div class="highleight-mid">
+
+<div class="highlight-item-text" style="background:url(/cdn-cgi/image//media/7324/highlights-kids.jpg)">
+<div class="channel-image"><img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7273/301-cartoon-network-light.png" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7273/301-cartoon-network-light.png" alt="" /></noscript></div>
+
+<div class="wraps highlight"><a href="https://offers.dstv.com/campaign/en/dstv-kids-holiday-club-2019/"><span class="arrow-label thinFont">View More</span><button class="bg-gradient-45 arrow-font-color"><span class="icon-ico-arrow-next"></span></button></a></div>
+</div>
+<img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7324/highlights-kids.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7324/highlights-kids.jpg" alt="" /></noscript>
+</div>
+<div class="highleight-mid">
+
+<div class="highlight-item-text" style="background:url(/cdn-cgi/image//media/7326/highlights-telenovelas.jpg)">
+<div class="channel-image"><img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7274/118-telemundo-light.png" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7274/118-telemundo-light.png" alt="" /></noscript></div>
+
+<div class="wraps highlight"><a href="https://offers.dstvafrica.com/campaign/dstv-telenovela/"><span class="arrow-label thinFont">View More</span><button class="bg-gradient-45 arrow-font-color"><span class="icon-ico-arrow-next"></span></button></a></div>
+</div>
+<img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7326/highlights-telenovelas.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7326/highlights-telenovelas.jpg" alt="" /></noscript>
+</div>
+<div class="highleight-mid">
+
+<div class="highlight-item-text" style="background:url(/cdn-cgi/image//media/7327/highlights-wwe.jpg)">
+<div class="channel-image"><img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7330/logo-supersport.png" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7330/logo-supersport.png" alt="" /></noscript></div>
+
+<div class="wraps highlight"><a href="https://offers.dstv.com/campaign/en/dstv-september-highlights-2019/"><span class="arrow-label thinFont">View More</span><button class="bg-gradient-45 arrow-font-color"><span class="icon-ico-arrow-next"></span></button></a></div>
+</div>
+<img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7327/highlights-wwe.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7327/highlights-wwe.jpg" alt="" /></noscript>
+</div>
+<div class="highleight-mid">
+
+<div class="highlight-item-text" style="background:url(/cdn-cgi/image//media/7323/highlights-football.jpg)">
+<div class="channel-image"><img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7282/204-supersport-4-light.png" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7282/204-supersport-4-light.png" alt="" /></noscript></div>
+
+<div class="wraps highlight"><a href="https://offers.dstvafrica.com/campaign/dstv-nfs-nigeria/"><span class="arrow-label thinFont">View More</span><button class="bg-gradient-45 arrow-font-color"><span class="icon-ico-arrow-next"></span></button></a></div>
+</div>
+<img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7323/highlights-football.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7323/highlights-football.jpg" alt="" /></noscript>
+</div>
+ <div class="highleight-mid">
+
+<div class="highlight-item-text" style="background:url(/cdn-cgi/image//media/7325/highlights-october.jpg)">
+<div class="channel-image"><img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7330/logo-supersport.png" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7330/logo-supersport.png" alt="" /></noscript></div>
+
+<div class="wraps highlight"><a href="https://offers.dstv.com/campaign/en/dstv-entertainment-highlights-october-2019/"><span class="arrow-label thinFont">View More</span><button class="bg-gradient-45 arrow-font-color"><span class="icon-ico-arrow-next"></span></button></a></div>
+</div>
+<img data-cfsrc="/cdn-cgi/image/width=249,quality=90 /media/7325/highlights-october.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/cdn-cgi/image/width=249,quality=90 /media/7325/highlights-october.jpg" alt="" /></noscript>
+</div>
+</div>
+</div>
+</div>
+<a href="#main" class="next nextbounce animatedbounce" onclick="javascript: slideToElement('#main');return true;"><span class="fa fa-angle-down"></span></a>
+</div>
+</tag-application>
+<div class="grid-section">
+<div>
+<div class="row clearfix">
+<div class="col-md-12 column">
+<div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="grid-section">
+<div>
+<div class="row clearfix">
+<div class="col-md-12 column">
+<div>
+</div>
+</div> </div>
+</div>
+</div>
+<div class="modal" id="CLFpopup" role="dialog">
+<div class="webform container modal-dialog modal-lg feedback-dialog">
+<div class="modal-content">
+<button type="button" class="close btnClose" data-dismiss="modal"><i class=" icon-Close_M"></i></button>
+<div class="modal-body CLFpopup">
+<div class="col-md-6 leftBlock">
+<h2 class="thinFont">To Pay/Reconnect</h2>
+<a href='https://itunes.apple.com/ng/app/mydstv/id1419652640?ls=1&mt=8' target="_blank"><img src="/media/5661/app-store-blue.svg" class='mobileAppIcon' /></a>
+<a href='https://play.google.com/store/apps/details?id=com.dstv.mydstv&hl=en' target="_blank"><img src="/media/5662/google-play-blue.svg" class='mobileAppIcon' /></a>
+</div>
+<div class="col-md-6 rightBlock">
+<h2 class="thinFont">To Pay/Reconnect</h2>
+<h3>ON THE WEBSITE</h3>
+<a href='/sign-in' class='btn btn-blue' id="CLFpopupLoginLink">
+LOGIN <img data-cfsrc="/media/5658/next-arrow.png" style="display:none;visibility:hidden;" /><noscript><img src='/media/5658/next-arrow.png' /></noscript>
+</a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade bigBrotherpopup" id="BBNpopup" role="dialog" aria-labelledby="bigBrotherpopupLabel">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content bbn">
+<button type="button" class="close btnClose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div class="modal-body ">
+<div class="col-md-6 leftBlock">
+<div class="leftImg">
+<img data-cfsrc="/media/6981/bb-people.png" style="display:none;visibility:hidden;" /><noscript><img src="/media/6981/bb-people.png" /></noscript>
+</div>
+<div class="rightImg">
+<img data-cfsrc="/media/5965/keepyourhousematescopy2-3x.png" style="display:none;visibility:hidden;" /><noscript><img src="/media/5965/keepyourhousematescopy2-3x.png" /></noscript>
+<img data-cfsrc="/media/5951/bb-speachbubble.png" class="speechBbl" style="display:none;visibility:hidden;" /><noscript><img src="/media/5951/bb-speachbubble.png" class="speechBbl" /></noscript>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="col-md-6 rightBlock">
+<img data-cfsrc="/media/5962/downloadnow-3x.png" class="downloadNow" style="display:none;visibility:hidden;" /><noscript><img src="/media/5962/downloadnow-3x.png" class="downloadNow" /></noscript><br />
+<a href='https://play.google.com/store/apps/details?id=com.dstv.mydstv&hl=en'><img data-cfsrc="/media/5963/googleplaywhitecopy-3x.png" class='mobileAppIcon' style="display:none;visibility:hidden;" /><noscript><img src="/media/5963/googleplaywhitecopy-3x.png" class='mobileAppIcon' /></noscript></a><br />
+<a href='https://itunes.apple.com/zm/app/mydstv/id1419652640?ls=1&mt=8'><img data-cfsrc="/media/5961/appstorewhitecopy-3x.png" class='mobileAppIcon' style="display:none;visibility:hidden;" /><noscript><img src="/media/5961/appstorewhitecopy-3x.png" class='mobileAppIcon' /></noscript></a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade FApopup" id="FApopup" role="dialog" aria-labelledby="FApopupLabel">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<button type="button" class="close btnClose" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<div class="modal-body ">
+<div class="col-md-6 leftBlock">
+<div class="leftImg">
+<img data-cfsrc="/media/6485/popup-players.png" style="display:none;visibility:hidden;" /><noscript><img src="/media/6485/popup-players.png" /></noscript>
+</div>
+<div class="rightImg">
+<img data-cfsrc="/media/6463/dstvafrica-info-desktop.png" style="display:none;visibility:hidden;" /><noscript><img src="/media/6463/dstvafrica-info-desktop.png" /></noscript>
+</div>
+<div>
+<img data-cfsrc="/media/6472/ss-logo.png" style="display:none;visibility:hidden;" /><noscript><img src="/media/6472/ss-logo.png" /></noscript>
+<img data-cfsrc="/media/6471/logo-macd.png" style="display:none;visibility:hidden;" /><noscript><img src="/media/6471/logo-macd.png" /></noscript>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="col-md-6 rightBlock">
+<img data-cfsrc="/media/5962/downloadnow-3x.png" class="downloadNow" style="display:none;visibility:hidden;" /><noscript><img src="/media/5962/downloadnow-3x.png" class="downloadNow" /></noscript><br />
+<a href='https://play.google.com/store/apps/details?id=com.dstv.mydstv&hl=en'><img data-cfsrc="/media/5963/googleplaywhitecopy-3x.png" class='mobileAppIcon' style="display:none;visibility:hidden;" /><noscript><img src="/media/5963/googleplaywhitecopy-3x.png" class='mobileAppIcon' /></noscript></a><br />
+<a href='https://itunes.apple.com/zm/app/mydstv/id1419652640?ls=1&mt=8'><img data-cfsrc="/media/5961/appstorewhitecopy-3x.png" class='mobileAppIcon' style="display:none;visibility:hidden;" /><noscript><img src="/media/5961/appstorewhitecopy-3x.png" class='mobileAppIcon' /></noscript></a>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+<style>
+    .row.footer-menu.text-center .mega-stacked.mega-menu>li.lvl-1.has-dropdown {
+        width: auto;
+        display: table-cell;
+        float: none;
+        border: none;
+        text-align: left;
+        padding: 0 0 0 90px;
+    }
+    .row.footer-menu.text-center .mega-menu.mega-stacked .mega-toggle {
+        display: inline-block;
+        width: 100%;
+        min-width: 140px;
+        padding: 0 60px 0 0;
+        position: relative;
+        cursor: pointer;
+        background: 0 0;
+        border: none;
+        text-align: left;
+        outline: 0;
+    }
+    .row.footer-menu.text-center .mega-stacked.mega-menu>li.lvl-1.has-dropdown span.menu-item-txt {
+        font-size: 17px;
+    }
+    .row.footer-menu.text-center .mega-stacked.mega-menu>li.lvl-1.has-dropdown span.mega-icon {
+        display: inline-block;
+        position: absolute;
+        margin-right: -135px !important;
+        right: calc(100% + 99px);
+        top: -17px;
+    }
+    .row.footer-menu.text-center .mega-menu.mega-stacked {
+        display: -webkit-inline-box;
+        width: auto!important;
+        margin-left: -75px !important;
+        text-align: left;
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+    .row.footer-menu.text-center .mega-menu>li.lvl-1 .icon {
+        font-size: 23px;
+        display: inline-block;
+        color: #fff;
+        opacity: .4;
+    }
+    .row.footer-menu.text-center .mega-stacked.mega-menu>li.lvl-1.has-dropdown span.toggle-span {
+        display: block;
+        margin-top: 35px !important;
+    }
+    .row.footer-menu.text-center .mega-stacked.mega-menu>li.lvl-1.has-dropdown span.toggle-span {
+            display: block;
+            margin-right: 92px;
+    }
+    .row.footer-menu.text-center > ul > li.has-dropdown.lvl-1.active > ul > li.lvl-2 {
+        font-size: 10px;
+    }
+    
+    
+</style>
+<footer class="footer-2 bg-dark pt96 pt-xs-40 bg-white">
+<div class="container text-center footer-container pt-2">
+<div class="row pb-2">
+<a href="http://multichoiceafrica.com/" target="_blank"><img data-cfsrc="/media/3579/logo.png" alt="Multichoice" style="display:none;visibility:hidden;" /><noscript><img src="/media/3579/logo.png" alt="Multichoice" /></noscript></a>
+</div>
+<div class="social-links">
+<div class="social-footer">
+<ul class="list-inline social-list">
+<li><a class="text-center" href="https://twitter.com/DStvNg" target="_blank"><i class="icon icon-Twitter"></i></a></li>
+<li><a class="text-center" href="https://www.facebook.com/DStvNigeria" target="_blank"><i class="icon icon-Facebook"></i></a></li>
+<li><a class="text-center" href="https://www.youtube.com/user/MultichoiceAfrica" target="_blank"><i class="icon icon-YouTube"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="row pb-2">
+<ul class="list-inline social-list">
+&copy; Multichoice Africa Holdings BV
+</ul>
+</div>
+<div class="row ">
+<ul class="list-inline footer-menu pb-5">
+<li>
+<a href="https://master.dstvafrica.com/media/6442/dstv-subscription-agreement-of-terms-and-conditions-july-2019.pdf" target="_blank">
+Subscriber Terms &amp; Conditions
+</a>
+</li>
+<li>
+<a href="https://go.dstv.com/multichoice/documents/Standard_T&amp;cs_for_MultiChoice_Africa_Group_Promotions_May2016.pdf" target="_blank">
+Standard Terms &amp; Conditions for MultiChoice Africa Group Promotions
+</a>
+</li>
+<li>
+<a href="/media/6085/term-sheet-tcs-multichoice-v01-june-2019.pdf" target="_blank">
+Term Sheet Term&#39;s and Condition&#39;s
+</a>
+</li>
+<li>
+<a href="/media/4797/commercial-subscriber-terms-conditions.pdf" target="_blank">
+Commercial Subscriber Terms &amp; Conditions
+</a>
+</li>
+<li>
+<a href="https://go.dstv.com/multichoice/Documents/Terms-of-use-2018.pdf" target="_blank">
+Terms Of Use
+</a>
+</li>
+<li>
+<a href="/media/4798/privacy-policy.pdf" target="_blank">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/media/4800/copyright.pdf" target="_blank">
+ Copyright
+</a>
+</li>
+<li>
+<a href="/en-ng/help-contact-us/" target="_self">
+Contact Us
+</a>
+</li>
+<li>
+<a href="/media/5669/standard-terms-and-conditions-for-dstv-thanks.pdf" target="_self">
+DStv Thanks Terms &amp; Conditions
+</a>
+</li>
+<li>
+<a href="https://qa.dstvafrica.com/media/6084/po-tcs-multichoice-v01-june-2019.pdf" target="_blank">
+PO Terms and Conditions
+</a>
+</li>
+<li>
+<a href="https://master.dstvafrica.com/media/6443/mcn-compensation-policy-30-july-2019.pdf" target="_blank">
+MultiChoice Compensation Policy
+</a>
+</li>
+</ul>
+</div>
+<div pb-4></div>
+</div>
+</footer>
+</div>
+</div>
+<script src="/scripts/bootstrap.min.js"></script>
+<script src="/scripts/vendor/jquery.cookie.js"></script>
+<script src="/scripts/jquery.main.js"></script>
+<script src="/scripts/vendor/jquery.cycle2.min.js"></script>
+<script src="/scripts/vendor/jquery.cycle2.carousel.min.js"></script>
+<script src="/scripts/vendor/jquery.cycle2.swipe.min.js"></script>
+<script src="/scripts/vendor/formBuilder.js"></script>
+<script src="/scripts/vendor/smooth-scroll.min.js"></script>
+<script src="/scripts/jquery-autocomplete-custom.js"></script>
+<script src="/scripts/vendor/jquery.colorbox.js"></script>
+<script src="/scripts/scripts.js"></script>
+<script src="/scripts/vendor/jquery.dotdotdot.min.js"></script>
+<script src="/scripts/vendor/slick.min.js"></script>
+<script src="/scripts/toastr.min.js"></script>
+<script src="/scripts/vendor/underscore-min.js"></script>
+<script src="/scripts/vendor/jcf/jcf.js"></script>
+<script src="/scripts/vendor/jcf/jcf.radio.js"></script>
+<script src="/scripts/vendor/jcf/jcf.checkbox.js"></script>
+<script src="/scripts/vendor/jcf/jcf.select.js"></script>
+<script src="/scripts/prototypes.js"></script>
+<script src="/scripts/vendor/datepicker.js"></script>
+<script src="/scripts/vendor/i18n/datepicker.en.js"></script>
+<script src="/scripts/riot-3.6.1.js"></script>
+<script src="/scripts/custom-inputs-validations.js"></script>
+
+<script type="text/javascript">
+    
+    var woopraTracking = false;
+    window.require = {
+        waitSeconds: 60
+    }
+
+    window.cdv = 2019 + "-" + 12 + "-" + 1 + "-" + 10;
+
+    
+    window.connect = { authenticated: false,
+        baseUrl: '/scripts/connect/',
+        waitSeconds: 120,
+        application: 'application',
+        culture: 'en'
+    }
+    // Check that service workers are supported
+    
+</script>
+<script src="/scripts/route.js?cdv=761529440" type="text/javascript"></script><script src="/scripts/tags.js?cdv=761529440" type="text/javascript"></script><script src="/scripts/store/appstore.js?cdv=761529440" type="text/javascript"></script><script src="/scripts/riot-init.js?cdv=761529440" type="text/javascript"></script><script src="/Scripts/Connect/jquery.validate.js?cdv=761529440" type="text/javascript"></script><script src="/Scripts/Connect/jquery.validate.unobtrusive.js?cdv=761529440" type="text/javascript"></script><script src="/Scripts/Connect/require.min.js?cdv=761529440" type="text/javascript"></script><script src="https://stagingapps.dstv.com/Connect/SSO/Scripts/AuthScript.ashx?cdv=761529440" type="text/javascript"></script>
+<script src="/WebResource.axd?d=zwknGD9um8nJ5iro3fpcGzYqnvn72eXqGM48BlkqIL4ey4nd5cDLHyCFli1li5pyAL6FOwlAwP7LHkW_g7_eeRaglrGFHoZNsUavyv-ABYmaeI88CM3guAa0GunaclyBMVztg6BJ4uJkN0tkaM_o2OUgY-CB92NlYZIrz_hfMb01&t=636523015220000000"></script>
+
+<script src="/js/ytplayer-new.js" async="true"></script>
+<script src="/js/custom.js"></script>
+<script type="text/javascript">
+$(document).on('ready', function() {
+    $('.responsive').slick({
+        appendArrows: '.arrows-here',
+        dots: false,
+        infinite: true,
+        nextArrow: '<span class="slick-next slick-arrow arrowColor" aria-label="Next" style="transform: translateY(-50%) rotate(180deg) !important; height:30px !important; width:30px !important; line-height:30px !important; top:auto !important;"></span>',
+        prevArrow: '<span class="slick-prev slick-arrow arrowColor" aria-label="Previous" style="transform: translateY(-50%) rotate(0deg) !important; height:30px !important; width:30px !important; line-height:30px !important; top:auto !important;"></span>',
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+        ]
+    });
+    
+    $('#CLFpopupLoginLink').attr('href',window.culture+'/sign-in');
+   
+    
+});
+
+/* arrows should be adjusted as per length of text By Neha On (15-7-19) */
+$( window ).load(function() {
+        var main_div_height = $('.highlights-nav-section').height();
+        var text_Height = $('.highlights-text').height();
+        var total = main_div_height - text_Height;
+         var bottom_height = (total - 10)/2;
+        $('.main-container .banner-block .second-slider span.arrows-here').css("bottom", bottom_height +"px");
+});
+</script>
+<tag-modal-popup></tag-modal-popup>
+<tag-sign-in></tag-sign-in>
+<script>
+   
+    $(document).ready(function(){
+      
+
+        app.GeoCountry  = 'se';
+        var countries = ["zm","ng","ug","gh"];
+        var oldCountries = ["ao", "bj", "bw", "bf", "bi", "cm", "cv", "td", "cg", "dj", "cd", "gq", "er", "et", "ga", "gm", "gn", "gw", "ci", "ke", "lr", "mg", "mw", "mr", "mu", "mz", "mz", "na", "ne", "rw", "st", "sn", "sc", "sl", "sd", "sz", "tz", "tg", "zw"];
+        
+        
+    });
+     
+    
+    
+    
+    
+    
+    
+
+    </script>
+
+<script>/*{literal}<![CDATA[*/window.usabilla||function(){var a=window,d=a.document,c={},f=d.createElement("div"),h=!1,a=a.usabilla=function(){(c.a=c.a||[]).push(arguments)};a._=c;c.ids={};f.style.display="none";(function(){if(!d.body)return setTimeout(arguments.callee,100);d.body.insertBefore(f,d.body.firstChild).id="usabilla";h=!0})();a.load=function(a,g,k){if(!c.ids[g]){var e=c.ids={};e.url="//"+a+"/"+g+".js?s1";e.config=k;setTimeout(function(){if(!h)return setTimeout(arguments.callee,100);var b=d.createElement("iframe"),a;b.id="usabilla-"+g;/MSIE[ ]+6/.test(navigator.userAgent)&&(b.src="javascript:false");f.appendChild(b);try{b.contentWindow.document.open()}catch(c){e.domain=d.domain,a="javascript:var d=document.open();d.domain='"+e.domain+"';",b.src=a+"void(0);"}try{var l=b.contentWindow.document;l.write(["<!DOCTYPE html><html><head></head><body onload=\"var d = document;d.getElementsByTagName('head')[0].appendChild(d.createElement('script')).src='",e.url,"'\"></body></html>"].join(""));l.close()}catch(m){b.src=a+'d.write("'+loaderHtml().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}b.contentWindow.config=k;b.contentWindow.SCRIPT_ID=g},0)}}}();
+window.usabilla.load("w.usabilla.com", "81d6d039fd60");
+/*]]>{/literal}*/</script>
+
+
+<script type="text/javascript">/*{literal}<![CDATA[*/window.lightningjs||function(c){function g(b,d){d&&(d+=(/\?/.test(d)?"&":"?")+"lv=1");c[b]||function(){var i=window,h=document,j=b,g=h.location.protocol,l="load",k=0;(function(){function b(){a.P(l);a.w=1;c[j]("_load")}c[j]=function(){function m(){m.id=e;return c[j].apply(m,arguments)}var b,e=++k;b=this&&this!=i?this.id||0:0;(a.s=a.s||[]).push([e,b,arguments]);m.then=function(b,c,h){var d=a.fh[e]=a.fh[e]||[],j=a.eh[e]=a.eh[e]||[],f=a.ph[e]=a.ph[e]||[];b&&d.push(b);c&&j.push(c);h&&f.push(h);return m};return m};var a=c[j]._={};a.fh={};a.eh={};a.ph={};a.l=d?d.replace(/^\/\//,(g=="https:"?g:"http:")+"//"):d;a.p={0:+new Date};a.P=function(b){a.p[b]=new Date-a.p[0]};a.w&&b();i.addEventListener?i.addEventListener(l,b,!1):i.attachEvent("on"+l,b);var q=function(){function b(){return["<head></head><",c,' onload="var d=',n,";d.getElementsByTagName('head')[0].",d,"(d.",g,"('script')).",i,"='",a.l,"'\"></",c,">"].join("")}var c="body",e=h[c];if(!e)return setTimeout(q,100);a.P(1);var d="appendChild",g="createElement",i="src",k=h[g]("div"),l=k[d](h[g]("div")),f=h[g]("iframe"),n="document",p;k.style.display="none";e.insertBefore(k,e.firstChild).id=o+"-"+j;f.frameBorder="0";f.id=o+"-frame-"+j;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[i]="javascript:false");f.allowTransparency="true";l[d](f);try{f.contentWindow[n].open()}catch(s){a.domain=h.domain,p="javascript:var d="+n+".open();d.domain='"+h.domain+"';",f[i]=p+"void(0);"}try{var r=f.contentWindow[n];r.write(b());r.close()}catch(t){f[i]=p+'d.write("'+b().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};a.l&&setTimeout(q,0)})()}();c[b].lv="1";return c[b]}var o="lightningjs",k=window[o]=g(o);k.require=g;k.modules=c}({});
+
+window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/f38248ed4143.js");
+
+/*]]>{/literal}*/</script>
+
+</body>
+</html>

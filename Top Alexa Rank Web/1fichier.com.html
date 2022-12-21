@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<title>1fichier.com: Cloud Storage</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="shortcut icon" href="https://img.1fichier.com/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="https://img.1fichier.com/favicon.ico" />
+	<link rel="icon" type="image/png" href="https://img.1fichier.com/favicon.png" />
+	<link rel="apple-touch-icon" href="https://img.1fichier.com/favicon.png" />
+	<link rel="image_src" href="https://img.1fichier.com/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://img.1fichier.com/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://img.1fichier.com/css/jquery.ui.css" />
+	<script type="text/javascript" src="https://img.1fichier.com/js/jquery.js"></script>
+	<script type="text/javascript">
+		<!--
+			jQuery(document).ready(function($) {
+				$(".do_selector3").selectmenu({ width: 250, position: { my : "right center", at: "right center" } });
+				$(".do_selector2").selectmenu({ width: 630 }).selectmenu( "menuWidget" ).addClass("movf");
+				$('input[name=send_ssl]').change( function() {
+					if( $('input[name=send_ssl]').is(':checked') ) $("#files").prop('action', 'https://ru-3.1fichier.com/upload.cgi?id=xVWxMD7cES');
+					else $("#files").prop('action', 'http://ru-3.1fichier.com/upload.cgi?id=xVWxMD7cES');
+					return false;
+				});
+				$('.file-handler').on('change', function() { 
+					var inp = $(this)[0]; var e = $('div.filesList');	e.empty();
+					for (var x = 0; x < inp.files.length; x++) {
+						var $label = $("<div>").text( inp.files[x].name ).attr('style', 'border-bottom: 1px solid #fbc260;');
+						$label.appendTo(e);
+				}});
+				$('div.dispnoti').click( function () { if( $('div.noti').is(":visible") ) $('div.noti').hide(); else $('div.noti').show(); return false; });
+				function ajx() {
+					$.ajax({
+						url: '/up.pl?X-Id=xVWxMD7cES&n=ru-3',
+						type: 'GET',
+						dataType: 'html',
+						beforeSend: function(xhr) { xhr.setRequestHeader("X-Id", "xVWxMD7cES"); xhr.setRequestHeader("X-Node", "ru-3"); },
+						error: function(){ setTimeout(function(){ ajx();}, 3000 ); },
+						success: function(data){
+							if( data.match(/fin$/) ) top.document.location = "https://ru-3.1fichier.com/end.pl?xid=xVWxMD7cES";
+							else { $('div.res').html( data ); setTimeout(function(){ ajx();}, 3000 ); }
+						}
+					});
+				}
+				$('input:submit').click( function() {
+					$('#fu').hide(); $('#fu2').show();
+					setTimeout(function(){ ajx();}, 2000);
+					return true;
+				});
+				
+				
+			});
+		// -->
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+	<!--
+		jQuery(document).ready(function($) {
+			if(getCookie('show_cm') != 'no') { $('#cookie_box').show(); }
+			$('.cookie_box_close').click(function() { $('#cookie_box').hide(); var expires = new Date(); expires.setTime(expires.getTime() + 15552000000); document.cookie = 'show_cm=no; expires=' + expires.toUTCString();	return false; });
+		});
+		function getCookie(cookie_name) {
+			if (document.cookie.length>0) {
+				cookie_start = document.cookie.indexOf(cookie_name + "=");
+				if (cookie_start != -1)	{	cookie_start = cookie_start + cookie_name.length+1;	cookie_end = document.cookie.indexOf(";",cookie_start);
+				if (cookie_end == -1)	{ cookie_end = document.cookie.length; }
+				return unescape(document.cookie.substring(cookie_start,cookie_end));
+			}}
+			return "";
+		}				
+	// -->
+</script>
+<div id="cookie_box">Our website need cookies to work.
+	<br/>Using our services, you accept usage of cookies.
+	<br/>For more informations :
+	<br/><br/><a href="https://1fichier.com/cgu.html">Legal Mentions, Terms of Services, Privacy Policy</a>
+	<br/><br/><a href="#" style="text-decoration-color: #fbc260" class="cookie_box_close">I fully accept usage of cookies and the Terms of Services</a>
+</div>
+
+	<script type="text/javascript">
+	<!-- 
+		$( function() {
+	    $.widget( "custom.iconselectmenu", $.ui.selectmenu, {
+  	    _renderItem: function( ul, item ) {
+    	    var li = $("<li>"), wrapper = $("<div>", { text: item.label });
+					if( item.element.attr("data-imagesrc") )	{ $( "<span>", { style: "background-image: url( \"" + item.element.attr("data-imagesrc") + "\")", "class": "ui-icon avatar" }).appendTo( wrapper ); }
+					else { $( "<span>", { style: "background-image:none", "class": "ui-icon avatar" }).appendTo( wrapper ); }
+	        return li.append( wrapper ).appendTo( ul );
+      	},
+				_renderButtonItem: function( item ) {
+				  var buttonItem;
+					if( item.element.attr("data-imagesrc") ) { buttonItem = $( "<span>", { style: "background-image: url( \"" + item.element.attr("data-imagesrc") + "\")", "class": "ui-selectmenu-text avatar" }) }
+					else {  buttonItem = $( "<span>", { style: "background-image:none", "class": "ui-selectmenu-text avatar" }) }
+				  this._setText( buttonItem, item.label );
+				  return buttonItem;
+				}
+    	});
+
+			
+    	$(".lselector").iconselectmenu({ width:200, change: function( event, ui ) { window.location.href=this.value; }  }).iconselectmenu("menuWidget").addClass( "ui-menu-icons" );
+  	});
+	-->
+</script>
+
+<div id="header">
+	<a href="https://1fichier.com" title="1fichier.com"><img id="logo" src="https://img.1fichier.com/logo.png" alt="logo" width="240" height="70" /></a>
+
+	<div id="btn-container">
+ 		<select class="lselector">
+			<option value="/?lg=en" data-imagesrc="https://img.1fichier.com/flags/en.png" selected="selected">English</option>
+			<option value="/?lg=fr" data-imagesrc="https://img.1fichier.com/flags/fr.png">Français</option>
+    </select>
+
+		<a class="ui-button ui-corner-all" href="https://1fichier.com/tarifs.html" title="Prices">Prices</a>
+
+		
+			<a class="ui-button ui-corner-all" href="https://1fichier.com/register.pl" title="Register">Register</a>
+			<a class="ui-button ui-corner-all" href="https://1fichier.com/login.pl" title="Login">My Account</a>
+		
+	</div>
+	<div class="spacer"></div>
+  <span class="spacer" style="height:1px"></span>
+</div>
+<div class="spacer" style="height:140px"></div>
+	
+		<div id="fu2" style="display:none;min-height:400px;padding:10px;margin:auto;width:600px;overflow:hidden">
+			<h2 style="text-align:center">Upload progress :</h2><br/><br/>
+			<div class="res"></div>
+			<br/><br/>
+			<div class="ct_warn alc">In order for the upload of your files to be correct,<br/>please do not leave this page.</div>
+		</div>
+		<div style="padding:10px" class="alc" id="fu">
+			<form enctype="multipart/form-data" id="files" action="https://ru-3.1fichier.com/upload.cgi?id=xVWxMD7cES" method="post"  autocomplete="off">
+				<div class="fileUpload ui-button" style="border-radius:5px">
+					<span class="ici">Click here to select the files to send</span>
+					<input type="file" name="file[]" title="Select the file to upload" multiple="multiple" class="file-handler" />
+				</div>
+				<div class="spacer filesList" style="height:50px;text-align: left;width: 500px;margin: 10px auto;padding: 20px 0px;line-height:25px;overflow:auto"></div>
+				<div style="width:550px;margin:auto;text-align:left">
+					<label class="CKBR" style="line-height:32px">Send files over a secure SSL connection :
+						<input type="checkbox" name="send_ssl" checked="checked" title="Send files over a secure SSL connection" />
+						<span></span>
+					</label>
+					<div class="spacer spacer-5"></div>
+					<label style="line-height:32px">Host files on the following domain
+						<span class="droite">
+							<select class="do_selector3" name="domain">
+								<option value="0"  >1fichier.com</option>
+								<option value="1"  >alterupload.com</option>
+								<option value="2"  >cjoint.net</option>
+								<option value="3"  >desfichiers.com</option>
+								<option value="4"  >dfichiers.com</option>
+								<option value="5"  >megadl.fr</option>
+								<option value="6"  >mesfichiers.org</option>
+								<option value="7"  >piecejointe.net</option>
+								<option value="8"  >pjointe.com</option>
+								<option value="9"  >tenvoi.com</option>
+								<option value="10"  >dl4free.com</option>
+							</select>
+						</span>
+					</label>
+					<div class="spacer spacer-5"></div>
+					<label style="line-height:32px">Receive the notice by email&nbsp;<span style="font:12px normal italic">(optional)</span><input class="input-text droite ui-corner-all" type="text" name="mail" value="" size="40" maxlength="240" title="To receive a notice by email" /></label>
+					<div class="spacer spacer-5"></div>
+					<label style="line-height:32px">Protect the download by a password&nbsp;<span style="font:12px normal italic">(optional)</span><input class="input-text droite ui-corner-all" type="password" name="dpass" value="" size="40" maxlength="240" title="Protect the download by a password" /></label>
+					
+						<div class="spacer spacer-5"></div>
+						<label style="line-height:32px">Upload to the following registered user&nbsp;<span style="font:12px normal italic">(optional)</span><input class="input-text droite ui-corner-all" type="text" name="user" value="" size="40" maxlength="255" title="Send the file to the user..." placeholder="Registered email address" /></label>
+					
+					<div class="spacer spacer-5"></div>
+					<div class="alc label dispnoti pointer"><img src="https://img.1fichier.com/icons/btn-partager.png" alt="" height="16" width="16" />&nbsp;Send the download link to contacts</div>
+          <div class="noti alc" style="display:none">
+            <span class="spacer spacer-10"></span>
+            <label>Email addresses&nbsp;&nbsp;<span style="font:12px normal italic">(optional, 1 per line - 20 max.)</span></label>
+            <span class="spacer spacer-10"></span>
+            <textarea class="ui-corner-all" style="margin:2px;padding:2px;resize:none;width:98%" name="mails" rows="3" cols="35"></textarea>&nbsp;
+            <span class="spacer spacer-10"></span>
+            <label>Message&nbsp;&nbsp;<span style="font:12px normal italic">(optional, 2000 car. max.)</span></label>
+            <span class="spacer spacer-10"></span>
+            <textarea class="ui-corner-all" style="margin:2px;padding:2px;resize:none;width:98%" name="message" rows="3" cols="35"></textarea>
+          </div>
+				</div>		
+				<div class="spacer spacer-5"></div>
+	
+				
+
+				<div class="spacer spacer-5"></div>
+				<p>
+					Sending files &amp; using our services implies acceptance of our <a href="https://1fichier.com/cgu.html" title="Terms of Use">Terms of Use</a>.
+          <br/>Files can be removed after 15 days without downloads for guests, 30 days for registered users
+					<br/>Files of premium users are not subject to this rule.
+          <br/>File size is limited to 300GB. Storage capacity is not limited.
+				</p>						
+
+				<div class="form-line-container-big">
+					<input id="sub" type="submit" name="submit" value="Send" class="btn-general btn-orange btn-big" />
+				</div>
+				<div class="spacer"></div>
+
+			</form>
+			<div class="spacer spacer-10"></div>
+
+			<div class="cloud">
+				Our network usage
+				<br/><a href="https://1fichier.com/network.html"><img src="https://img.1fichier.com/img/small.png" alt="network usage" style="padding:10px"/></a>			
+			</div>
+		</div>
+	
+
+	<div class="spacer" style="height:20px"></div>
+	<div class="bflex">
+		<div style="width:250px;margin:20px"><div class="bh3">Storage</div>Store and archive all types of content on high quality infrastructures</div>
+		<div style="width:250px;margin:20px"><div class="bh3">Access</div>Access your data securely from everywhere</div>
+		<div style="width:250px;margin:20px"><div class="bh3">Groupware</div>Share your data in a totally secure way with the people of your choice</div>
+		<div style="width:250px;margin:20px"><div class="bh3">Prices</div>Packages and features adapted to all needs and all budgets</div>
+	</div>	
+	<div class="spacer spacer-20"></div>
+	<!--
+	<label style="display:block;text-align:center">Try these upload and download managers !</label>
+	<div style="background-color:#fff;width:100%;border-top:1px solid #fbc260">
+		<div style="padding:0" class="alc essayez">
+			<a target="_new" title="Z-o-o-m" href="http://z-o-o-m.eu"><img src="https://img.1fichier.com/icons/zoom.png" alt="" /><br/>File & Image Uploader</a>
+			<a target="_new" title="Internet Download Manager" href="http://www.internetdownloadmanager.com"><img src="https://img.1fichier.com/icons/idm.png" alt="" /><br/>Internet Download Manager</a>
+			<a target="_new" title="JDownloader2" href="http://jdownloader.org"><img src="https://img.1fichier.com/icons/jd.png" alt="" /><br/>JDownloader2</a>
+			<a target="_new" title="Mipony" href="http://www.mipony.net"><img src="https://img.1fichier.com/icons/mipony.png" alt="" /><br/>Mipony</a>
+			<a target="_new" title="Ponydroid" href="https://play.google.com/store/apps/details?id=ponydroid.ponydroid"><img src="https://img.1fichier.com/icons/ponydroid.png" alt="" /><br/>Ponydroid</a>
+			<a target="_new" title="ShareDownloader" href="https://play.google.com/store/apps/details?id=de.itgecko.sharedownloader&hl=en"><img src="https://img.1fichier.com/icons/sharedownloader.png" alt="" /><br/>ShareDownloader</a>
+			<a target="_new" title="CandiSoft Load!" href="http://www.candisoft.com/?q=en/node/14"><img src="https://img.1fichier.com/icons/candisoftload.png" alt="" /><br/>CandiSoft Load!</a>
+			<a target="_new" title="Module Synology" href="http://www.nas-forum.com/forum/topic/37274-module-download-station-1fichier-host-file-1fichier/"><img src="https://img.1fichier.com/icons/synology.png" alt="" /><br/>Module Synology</a>
+			<span class="spacer spacer-20"></span>
+		</div>
+		<span class="spacer spacer-20"></span>
+	</div>
+	-->
+	<span class="spacer" style="height:90px"></span>
+	
+	<div id="footer">
+	<div class="center-container">
+		<a href="https://1fichier.com" title="Back to home page"><img class="gauche" src="https://img.1fichier.com/logo-footer.png" alt="1fichier.com" /></a>
+		<div id="link-container">
+			<a href="https://1fichier.com/cgu.html">Legal &amp; Terms</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/abus.html">Abuse</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/tarifs.html">Prices</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/revendeurs.html">Resellers</a>&nbsp;&nbsp;&nbsp;
+      <a href="https://1fichier.com/affiliation.html">Affiliation</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/hlp.html">Help</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/network.html">Network/Speedtest</a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/contact.html">Contact</a>
+      <br/>
+      <a target="_new" href="https://twitter.com/1fichiercom"><img src="https://img.1fichier.com/twitter.png" alt="Twitter" style="padding:0;border:0" /></a>&nbsp;&nbsp;&nbsp;
+      <a target="_new" href="https://facebook.com/1fichiercom"><img src="https://img.1fichier.com/facebook.png" alt="Facebook" style="padding:0;border:0" /></a>&nbsp;&nbsp;&nbsp;
+			<a href="https://1fichier.com/api.html" style="vertical-align:top">API</a>&nbsp;&nbsp;&nbsp;
+      <a href="https://1fichier.com/occasions.html" style="vertical-align:top">Used Equipments</a>&nbsp;&nbsp;&nbsp;
+      <a href="https://1fichier.com/servers.html" style="vertical-align:top">Dedicated Servers</a>&nbsp;&nbsp;&nbsp;
+      <a target="_new" href="https://dstorage.fr" style="vertical-align:top">DStorage SASU © 2009-2019</a>
+		</div>
+	</div>
+	<span class="spacer"></span>
+</div>       
+
+</body>
+</html>

@@ -1,0 +1,1384 @@
+
+<!doctype html>
+<html class="d ru"  lang="ru">
+<!-- X-Request-ID: cf8b7308ffefa30c47e594e46d5ff3bc -->
+
+<head>
+    <meta charset="utf-8">
+    <title>DRIVE2.RU</title>
+    <meta name="description" content="Автомобильная социальная сеть">
+    <meta name="yandex-tableau-widget" content="logo=https://www.drive2.ru/images/res/widget-logo-drive2.png, color=#cc0033, feed=https://www.drive2.ru/_api/tableau/feed.json" />
+            <meta name="viewport" content="width=1228">
+                <link rel="alternate" hreflang="x-default" href="https://www.drive2.ru/" />
+        <link rel="alternate" hreflang="ru" href="https://www.drive2.ru/" />
+        <link rel="alternate" hreflang="en" href="https://www.drive2.com/" />
+    <script>
+var ignoredMessagesMasks = [
+    // afx
+    "Ya",
+    "adfox",
+    "adfoxCode",
+    "cbManagers",
+    "containerId",
+    "_bannerOptions",
+
+    // yam
+    "accessing a cross-origin frame",
+    "metrika",
+    "d2 is",
+    "d2.",
+
+    // crt
+    "__pageKind",
+    "__needAd",
+    "Script error",
+    "'create' of undefined",
+    "getEntriesByType(\"resource\")",
+
+    // captcha
+    "<iframe",
+
+    // drop support
+    "MutationObserver",
+    "Объект не поддерживает свойство или метод \"closest\"",
+    "Object doesn't support property or method 'closest'",
+    "has no method 'closest'",
+    "closest is not",
+
+    // misc
+    "abort",
+    "Access-Control-Allow-Origin",
+    "Access is denied",
+    "DOM Exception 18",
+    "localStorage",
+    "blob:",
+    "Failed to fetch",
+    "Unexpected end of",
+    "Global code"
+];
+
+var ads = [
+    "d2",
+    "ya",
+    "yandex",
+    "criteo",
+    "adfox",
+    "blob:",
+    "anonymous",
+    "Global code"
+];
+
+var _rollbarConfig = {
+    accessToken: "994d929157be469db93f67e6ab6f2e59",
+    captureUncaught: true,
+    captureUnhandledRejections: true,
+    payload: {
+        environment: "production"
+    },
+    scrubTelemetryInputs: true,
+    maxTelemetryEvents: 10,
+    autoInstrument: {
+        log: false,
+        dom: false,
+        network: false,
+        connectivity: false
+    },
+    hostWhiteList: [
+        "drive2.ru",
+        "drive2.com",
+        "drive.net"
+    ],
+    ignoredMessages: [
+        "Cannot read property 'adfoxCode' of undefined",
+        "The operation was aborted.",
+        "The operation is insecure.",
+        "Отказано в доступе.",
+        "Unexpected end of input",
+        "Unexpected end of script",
+        "Unexpected end of JSON input",
+        "NetworkError when attempting to fetch resource.",
+        "Вероятно, соединение с Интернетом прервано.",
+        "Failed to fetch",
+        "URI malformed"
+    ],
+    checkIgnore: function(isUncaught, args, payload) {
+        function contains(str, chunk) {
+            return str.indexOf(chunk) >= 0;
+        };
+        function createRegex(list) {
+            return new RegExp(list.join("|"), "gi");
+        };
+
+        var frames = (((payload || {}).body || {}).trace || {}).frames || [];
+        if (frames.length) {
+            var mostRecent = frames[frames.length - 1];
+            var fileName = mostRecent.filename || '';
+            if (!contains(fileName, 'assets/js/') || !contains(fileName, '.js')) {
+                return true;
+            }
+            if (createRegex(ads).test(fileName)) {
+                return true;
+            }
+        }
+
+        var ignoreRegex = createRegex(ignoredMessagesMasks);
+        for (var i in args) {
+            if (ignoreRegex.test(args[i])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+};
+// Rollbar Snippet
+!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){var n=o(1),t=o(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.13.0/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){var n=o(2);function t(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var a=0;function l(r,e){this.options=r,this._rollbarOldOnError=null;var o=a++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var i=o(3),s=function(r,e){return new l(r,e)},d=function(r){return new i(s,r)};function c(r){return t(function(){var e=Array.prototype.slice.call(arguments,0),o={shim:this,method:r,args:e,ts:new Date};window._rollbarShims[this.shimId()].messages.push(o)})}l.prototype.loadFull=function(r,e,o,n,a){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=t(function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,t,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(t=n.args||[],i=0;i<t.length;++i)if("function"==typeof(l=t[i])){l(e);break}}"function"==typeof a&&a(e)}()}}),d.insertBefore(i,s)},l.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),u=0;u<p.length;++u)l.prototype[p[u]]=c(p[u]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var a=new d(e);return t(function(){e.captureUncaught&&(a._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,a,!0),e.wrapGlobalEventHandlers&&n.wrapGlobals(r,a,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,a,!0);var t=e.autoInstrument;return!1!==e.enabled&&(void 0===t||!0===t||"object"==typeof t&&t.network)&&r.addEventListener&&(r.addEventListener("load",a.captureLoad.bind(a)),r.addEventListener("DOMContentLoaded",a.captureDomContentLoaded.bind(a))),r[o]=a,a})()}},Rollbar:d}},function(r,e){function o(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var n;if("function"==typeof e._rollbarOldOnError)n=e._rollbarOldOnError;else if(r.onerror){for(n=r.onerror;n._rollbarOldOnError;)n=n._rollbarOldOnError;e._rollbarOldOnError=n}e.handleAnonymousErrors();var t=function(){var o=Array.prototype.slice.call(arguments,0);!function(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}(r,e,n,o)};o&&(t._rollbarOldOnError=n),r.onerror=t}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}},wrapGlobals:function(r,e,n){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&o(e,r[a].prototype,n)}}}},function(r,e){function o(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(o.prototype)}o.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=o},function(r,e){r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);
+// End Rollbar Snippet
+</script>            <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link href="/assets/css/d/main(aaOkUoV__ty-tFkJJ-qG5gZrOas).css" rel="stylesheet">
+    <link href="/assets/css/d/res(qBW0VImdVlGAihV23vr20MdSMZc).css" rel="stylesheet">
+    <link href="/assets/css/d/search(0tQH5rfKNChKYzcjYRJgMpBqtF0).css" rel="stylesheet">
+    
+    <link href="/assets/css/d/index-desktop(ISGHtK_ZW-wN5ASa-JGn2XcVebw).css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://ads.betweendigital.com" crossorigin>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','_ga');
+            _ga('create', 'UA-21235067-2', {'cookieDomain' : 'drive2.ru'});
+            _ga('set', 'dimension1', 'Guest');
+            _ga('send', 'pageview');
+        </script>
+    <script>
+        var __d2_env = {
+            iconsUrl: '/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg',
+            formContext: {
+                '.FCTX': '_wfqzlwoyisCAAQA3klHy7bDV2S4OOC-_GwtCYGHWi8'
+            },
+            recaptchaSiteKey: '6LfIECkTAAAAABUZX9kBlE5bMq_aJ1Y_5V-JzJXu',
+            uploadUrl: 'https://upload-www.drive2.ru/ajax/upload.cshtml?.AMIG=.AMIG',
+            requestId: 'cf8b7308ffefa30c47e594e46d5ff3bc',
+            context: 'hurricane'
+        };
+        (function(w,r){w[r]=function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'__d2_run');
+    </script>
+    <script id="my-widget-script" src="https://likemore-go.imgsmail.ru/widget.js" data-uid="5352d2962a0856f7e889e6ee28d14ea6" async></script>
+    <script src="/assets/js/bundle(XOfFwIDO1ysfnn9rPT8HDH721wM).js"></script>
+<script src="/assets/js/ru/maina(5vUpK9MWcuV4IepS9XjDZKz39S8).js"></script>    
+    <meta property="og:image" content="https://www.drive2.ru/images/cover.png">
+    <meta property="og:title" content="DRIVE2">
+    <meta property="og:description" content="Сообщество машин и людей">
+
+<script async src="https://www.drive2.ru/assets/_6efeba770d2631ea4896fc299d98a21d/pcode/adfox/header-bidding.js"></script>
+<script>
+    window.YaHeaderBiddingSettings = {
+        biddersMap: {
+            'criteo': '714380',
+            'myTarget': '726568',
+            'betweenDigital': '789810',
+            'adriver': '724076',
+            'rtbhouse': '849631',
+            'relap': '907688',
+            'alfasense': '1062164',
+            'getintent': '815656',
+            'hybrid': '1122453',
+            'adfox_tn-inpool': '958633',
+            'buzzoola': '769160',
+        },
+        adUnits: [
+            {
+                code: 'adfox_1487022369548130',
+                sizes: [
+                    [
+                        300,
+                        600
+                    ]
+                ],
+                bids: [
+                    {
+                        bidder: 'criteo',
+                        params: {
+                            placementId: '917369'
+                        }
+                    },
+                    {
+                        bidder: 'myTarget',
+                        params: {
+                            placementId: '213310'
+                        }
+                    },
+                    {
+                        bidder: 'betweenDigital',
+                        params: {
+                            placementId: '2412836'
+                        }
+                    },
+                    {
+                        bidder: 'adriver',
+                        params: {
+                            placementId: '2500986'
+                        }
+                    },
+                    {
+                        bidder: 'rtbhouse',
+                        params: {
+                            placementId: 'drive2_300x600'
+                        }
+                    },
+                    {
+                        bidder: 'relap',
+                        params: {
+                            placementId: 'qwTbKRyoJTwU168feL'
+                        }
+                    },
+                    {
+                        bidder: 'alfasense',
+                        params: {
+                            placementId: '_7a2q7R1wDrAHx8f'
+                        }
+                    },
+                    {
+                        bidder: 'getintent',
+                        params: {
+                            placementId: 'direct_otm_450'
+                        }
+                    },
+                    {
+                        bidder: 'hybrid',
+                        params: {
+                            placementId: '80_drive_300x600_d2_side1'
+                        }
+                    },
+                    {
+                        bidder: 'adfox_tn-inpool',
+                        params: {
+                             p1: 'cckgh',
+                             p2: 'gdnn'
+                         }
+                    },
+                ]
+            }
+        ],
+        timeout: 1200
+    };
+</script>
+        <script>
+            kvalues = [];
+            (function() {
+                try {
+                    var group = "BiyLdipgklLL6QBUxloz";
+                    var lsKey = "rtb_" + group;
+                    var xhr = new XMLHttpRequest(); if (!("withCredentials" in xhr)) return; xhr.withCredentials = true;
+                    xhr.open('GET', 'https://pubs2-eu.creativecdn.com/bidder/pubs/tagging?type=json&group=' + group);
+                    xhr.onload = function() {
+                        try {
+                            var json = JSON.parse(xhr.responseText); json._ts = new Date().getTime();
+                            localStorage.setItem(lsKey, JSON.stringify(json));
+                        } catch (e) {}
+                    };
+                    xhr.send();
+                    var json = localStorage.getItem(lsKey);
+                    if (json) {
+                        json = JSON.parse(json);
+                        for (var i=0; i<json.deals.length; i++) {
+                            var deal = json.deals[i];
+                            if (!deal.ttl || new Date().getTime() < json._ts + deal.ttl) {
+                                kvalues.push(deal.hash);
+                            }
+                        }
+                    }
+                } catch (e) {}
+            })()
+        </script>
+        <!-- ENDOF: Implement RTBx Script on all pages of the website where RTB House will deliver ads. Please put this below GPT header tag -->
+    
+            <script src="https://www.drive2.ru/assets/_6efeba770d2631ea4896fc299d98a21d/pcode/adfox/loader.js"></script>
+    
+    
+
+</head>
+<body  ><div class="l-body">
+
+    <script>
+        d2.metrikaSuccess('login_email_successful', 'login_phone_successful', 'signup_create_profile');
+        d2.appSuccess(['login', 'email_successful'], ['login', 'phone_successful']);
+    </script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+            ym(33911514, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+                ecommerce: "dataLayer",
+                triggerEvent: true,
+                
+                params: {
+                    user: "Guest",
+                    business: false,
+                    type: "Desktop",
+                    standing: "Unknown",
+                    car: {
+                                "NoCar": { "Guest": true },
+                        },
+                                                                segment: "MDP_2236",
+                }
+            });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/33911514" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+        <script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "20077035" });
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+        </script>
+        <noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&c2=20077035&cv=2.0&cj=1" style="position:absolute;" />
+        </noscript>
+            <script>
+            d2.signupTooltip('Доступно только для зарегистрированных пользователей. Войти:\u003cbr\u003e\r\n    \u003cdiv class=\"o-group o-group--m c-bubble-buttons\"\u003e\r\n        \u003ca class=\"c-button c-button--solid c-button--darkgray\" href=\"/reception/?method=email\" data-action=\"loginform.show\" data-npd data-fromtooltip data-ym-target=\"login_from_bubble_by_email\"\u003eПочта\u003c/a\u003e\r\n            \u003cform action=\"https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2F\u0026amp;method=vk\" method=\"post\"\u003e\r\n                \u003cinput type=\"hidden\" name=\"userProvider\" value=\"VKontakte\"\u003e\r\n                \u003cbutton class=\"c-button c-button--solid c-button--vk c-button--round\" type=\"submit\" data-ym-target=\"login_from_bubble_by_vk\"\u003e\r\n                    \u003csvg class=\"c-button__icon\"\u003e\u003cuse xlink:href=\"/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#vk\"\u003e\u003c/use\u003e\u003c/svg\u003e\r\n                \u003c/button\u003e\r\n            \u003c/form\u003e\r\n        \u003cform action=\"https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2F\u0026amp;method=fb\" method=\"post\"\u003e\r\n            \u003cinput type=\"hidden\" name=\"userProvider\" value=\"Facebook\"\u003e\r\n            \u003cbutton class=\"c-button c-button--solid c-button--fb c-button--round\" type=\"submit\" data-ym-target=\"login_from_bubble_by_fb\"\u003e\r\n                \u003csvg class=\"c-button__icon\"\u003e\u003cuse xlink:href=\"/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#fb\"\u003e\u003c/use\u003e\u003c/svg\u003e\r\n            \u003c/button\u003e\r\n        \u003c/form\u003e\r\n    \u003c/div\u003e\r\n');
+        </script>
+
+        <header class="l-header" data-role="sticky">
+            
+
+<div class="c-top">
+    <div class="c-top__container">
+        
+        
+    <a class="c-logo  " rel="home" href="/"  data-ym-target="menu_logo" >
+        <span>DRIVE2.RU</span>
+    </a>
+
+
+            <div class="c-top__intro">
+                Сообщество машин и людей
+            </div>
+                <div class="c-top__login">
+                    <div class="o-group o-group--m">
+                        <a class="c-button c-button--solid" data-ym-target="signup_from_top menu_top_entry" href="/signup/">Зарегистрироваться</a>
+                        <div>или войти:</div>
+                        <a class="c-button c-button--solid c-button--darkgray" href="/reception/?method=email" data-action="loginform.show" data-npd data-ym-target="login_from_top_by_email menu_top_entry">Почта</a>
+                            <form action="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2F&amp;method=vk" method="post">
+                                <input type="hidden" name="userProvider" value="VKontakte">
+                                <button class="c-button c-button--block c-button--solid c-button--vk c-button--round" type="submit" data-ym-target="login_from_top_by_vk">
+                                    <svg class="c-button__icon"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#vk"></use></svg>
+                                </button>
+                            </form>
+                            <form action="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2F&amp;method=fb" method="post">
+                                <input type="hidden" name="userProvider" value="Facebook">
+                                <button class="c-button c-button--block c-button--solid c-button--fb c-button--round" type="submit" data-ym-target="login_from_top_by_fb">
+                                    <svg class="c-button__icon"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#fb"></use></svg>
+                                </button>
+                            </form>
+                    </div>
+                </div>
+                <div class="js-loginform u-parked">
+                    <div class="c-top-loginform">
+                        <h3 class="c-header  c-header--margin-l js-login-header">Представьтесь, пожалуйста</h3>
+                        <form class="c-top-loginform__form" action="https://www.drive2.ru/reception/?.AMRU=https%3A%2F%2Fwww.drive2.ru%2F" method="post" novalidate onsubmit="return !!this.login.value;">
+                            <input name=".FCTX" type="hidden" value="_wfqzlwoyisCAAQA3klHy7bDV2S4OOC-_GwtCYGHWi8" />
+                            <div class="c-top-loginform__legend">
+                                <label for="loginform.login">Email</label>
+                                <span class="c-top-loginform__notes">Или номер телефона, если он&nbsp;указан&nbsp;в&nbsp;профиле</span>
+                            </div>
+                            <div class="c-top-loginform__field">
+                                <input class="c-input c-top-loginform__input" id="loginform.login" tabindex="1" type="email" name="login" maxlength="64" data-autofocus="1" autocomplete="username">
+                            </div>
+                            <div class="c-top-loginform__legend">
+                                <label for="loginform.password">Пароль</label>
+                            </div>
+                            <div class="c-top-loginform__field">
+                                <input class="c-input c-top-loginform__input" id="loginform.password" tabindex="2" type="password" name="password" maxlength="32" value="" autocomplete="current-password">
+                                <a tabindex="6" class="c-top-loginform__remindpass c-link c-link--text" href="/recovery/">Забыли пароль?</a>
+                            </div>
+                            <div class="c-top-loginform__field">
+                                <div class="c-checkbox-group">
+                                    <label class="c-checkbox">
+                                        <input tabindex="3" type="checkbox" name="rememberMe" id="loginform.rememberMe" value="true" checked>
+                                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Запомнить меня</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="c-top-loginform__field g-resetrecaptcha">
+                                <button type="submit" class="c-button c-button--solid" tabindex="4" data-role="recaptcha" >Войти</button><a tabindex="5" class="c-button c-top-loginform__reg-btn" data-ym-target="signup_from_top" href="/signup/">Зарегистрироваться</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    </div>
+</div>
+
+        </header>
+
+
+
+
+
+<div class="c-index-alt-search">
+<div class="o-img is-cover c-index-alt-search__bg" style="background-color: #97905C;" data-size="1790,570"><span style="display: block; padding-top: 100%"></span><img src="/images/index/cover-3.jpg" width="1790" height="570"></div>
+    <form action="/search" onsubmit="d2.ym('main_guest_search'); return !!this.text.value;">
+        <div class="o-group o-group--xxl">
+            <input class="c-index-alt-search__input" type="search" name="text" autofocus placeholder="Поиск машин, отзывов, запчастей">
+            <button class="c-button c-button--solid c-button--xxl">Найти</button>
+        </div>
+            <div class="c-index-alt-search__preset">
+                <span>Например:</span>
+                    <a href="/search?text=%D0%BA%D0%B8%D0%B0%20%D1%80%D0%B8%D0%BE" rel="nofollow" data-ym-target="main_guest_search">киа рио</a>
+                    <a href="/search?text=%D1%81%D1%82%D0%B0%D0%B9%D0%BB%D0%B8%D0%BD%D0%B3%20%D0%B2%D0%B0%D0%B7" rel="nofollow" data-ym-target="main_guest_search">стайлинг ваз</a>
+                                    или <a href="/search?text=%D1%85%D0%B5%D0%BD%D0%B4%D0%B5%20%D1%81%D0%BE%D0%BB%D1%8F%D1%80%D0%B8%D1%81" rel="nofollow" data-ym-target="main_guest_search">хенде солярис</a>
+            </div>
+    </form>
+</div>
+
+<div class="c-index-alt"><div class="c-index-alt__col">
+    <a class="c-index-alt__header-group" href="/cars/?all" data-ym-target="main_guest_cars_all">
+        <h2 class="c-index-alt__header">Каталог машин</h2>
+        <div class="c-index-alt__more">
+            Все марки
+            <svg><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#angle-arrow-right"></use></svg>
+        </div>
+    </a>
+    <div class="c-index-alt__block">
+            <div class="o-grd">
+                    <a class="c-index-alt__image" href="/cars/volkswagen/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/volkswagen.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/mercedes/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/mercedes.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/audi/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/audi.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/bmw/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/bmw.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/ford/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/ford.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/mitsubishi/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/mitsubishi.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/hyundai/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/hyundai.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/kia/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/kia.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/toyota/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/toyota.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/lada/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/lada.svg" width="100" height="100"></div>
+                    </a>
+                    <a class="c-index-alt__image" href="/cars/renault/" data-ym-target="main_guest_cars_logo">
+<div class="o-img" style="background-color: #1B1A19;" data-size="100,100"><span style="display: block; padding-top: 100%"></span><img src="/images/index/makes/renault.svg" width="100" height="100"></div>
+                    </a>
+            </div>
+        <div class="c-index-alt__brands">
+                    <a class="c-link c-link--white" href="/cars/acura/" data-ym-target="main_guest_cars_brands">Acura</a>
+                    <a class="c-link c-link--white" href="/cars/alfaromeo/" data-ym-target="main_guest_cars_brands">Alfa Romeo</a>
+                    <a class="c-link c-link--white" href="/cars/audi/" data-ym-target="main_guest_cars_brands">Audi</a>
+                    <a class="c-link c-link--white" href="/cars/bmw/" data-ym-target="main_guest_cars_brands">BMW</a>
+                    <a class="c-link c-link--white" href="/cars/cadillac/" data-ym-target="main_guest_cars_brands">Cadillac</a>
+                    <a class="c-link c-link--white" href="/cars/chery/" data-ym-target="main_guest_cars_brands">Chery</a>
+                    <a class="c-link c-link--white" href="/cars/chevrolet/" data-ym-target="main_guest_cars_brands">Chevrolet</a>
+                    <a class="c-link c-link--white" href="/cars/chrysler/" data-ym-target="main_guest_cars_brands">Chrysler</a>
+                    <a class="c-link c-link--white" href="/cars/citroen/" data-ym-target="main_guest_cars_brands">Citroen</a>
+                    <a class="c-link c-link--white" href="/cars/dodge/" data-ym-target="main_guest_cars_brands">Dodge</a>
+                    <a class="c-link c-link--white" href="/cars/ferrari/" data-ym-target="main_guest_cars_brands">Ferrari</a>
+                    <a class="c-link c-link--white" href="/cars/fiat/" data-ym-target="main_guest_cars_brands">FIAT</a>
+                    <a class="c-link c-link--white" href="/cars/ford/" data-ym-target="main_guest_cars_brands">Ford</a>
+                    <a class="c-link c-link--white" href="/cars/geely/" data-ym-target="main_guest_cars_brands">Geely</a>
+                    <a class="c-link c-link--white" href="/cars/honda/" data-ym-target="main_guest_cars_brands">Honda</a>
+                    <a class="c-link c-link--white" href="/cars/hummer/" data-ym-target="main_guest_cars_brands">Hummer</a>
+                    <a class="c-link c-link--white" href="/cars/hyundai/" data-ym-target="main_guest_cars_brands">Hyundai</a>
+                    <a class="c-link c-link--white" href="/cars/infiniti/" data-ym-target="main_guest_cars_brands">Infiniti</a>
+                    <a class="c-link c-link--white" href="/cars/jaguar/" data-ym-target="main_guest_cars_brands">Jaguar</a>
+                    <a class="c-link c-link--white" href="/cars/jeep/" data-ym-target="main_guest_cars_brands">Jeep</a>
+                    <a class="c-link c-link--white" href="/cars/kia/" data-ym-target="main_guest_cars_brands">KIA</a>
+                    <a class="c-link c-link--white" href="/cars/lamborghini/" data-ym-target="main_guest_cars_brands">Lamborghini</a>
+                    <a class="c-link c-link--white" href="/cars/lancia/" data-ym-target="main_guest_cars_brands">Lancia</a>
+                    <a class="c-link c-link--white" href="/cars/landrover/" data-ym-target="main_guest_cars_brands">Land Rover</a>
+                    <a class="c-link c-link--white" href="/cars/lexus/" data-ym-target="main_guest_cars_brands">Lexus</a>
+                    <a class="c-link c-link--white" href="/cars/maserati/" data-ym-target="main_guest_cars_brands">Maserati</a>
+                    <a class="c-link c-link--white" href="/cars/mazda/" data-ym-target="main_guest_cars_brands">Mazda</a>
+                    <a class="c-link c-link--white" href="/cars/mercedes/" data-ym-target="main_guest_cars_brands">Mercedes</a>
+                    <a class="c-link c-link--white" href="/cars/mini/" data-ym-target="main_guest_cars_brands">MINI</a>
+                    <a class="c-link c-link--white" href="/cars/mitsubishi/" data-ym-target="main_guest_cars_brands">Mitsubishi</a>
+                    <a class="c-link c-link--white" href="/cars/nissan/" data-ym-target="main_guest_cars_brands">Nissan</a>
+                    <a class="c-link c-link--white" href="/cars/opel/" data-ym-target="main_guest_cars_brands">Opel</a>
+                    <a class="c-link c-link--white" href="/cars/peugeot/" data-ym-target="main_guest_cars_brands">Peugeot</a>
+                    <a class="c-link c-link--white" href="/cars/pontiac/" data-ym-target="main_guest_cars_brands">Pontiac</a>
+                    <a class="c-link c-link--white" href="/cars/porsche/" data-ym-target="main_guest_cars_brands">Porsche</a>
+                    <a class="c-link c-link--white" href="/cars/renault/" data-ym-target="main_guest_cars_brands">Renault</a>
+                    <a class="c-link c-link--white" href="/cars/saab/" data-ym-target="main_guest_cars_brands">Saab</a>
+                    <a class="c-link c-link--white" href="/cars/scion/" data-ym-target="main_guest_cars_brands">Scion</a>
+                    <a class="c-link c-link--white" href="/cars/seat/" data-ym-target="main_guest_cars_brands">SEAT</a>
+                    <a class="c-link c-link--white" href="/cars/skoda/" data-ym-target="main_guest_cars_brands">Skoda</a>
+                    <a class="c-link c-link--white" href="/cars/smart/" data-ym-target="main_guest_cars_brands">Smart</a>
+                    <a class="c-link c-link--white" href="/cars/subaru/" data-ym-target="main_guest_cars_brands">Subaru</a>
+                    <a class="c-link c-link--white" href="/cars/suzuki/" data-ym-target="main_guest_cars_brands">Suzuki</a>
+                    <a class="c-link c-link--white" href="/cars/tesla/" data-ym-target="main_guest_cars_brands">Tesla</a>
+                    <a class="c-link c-link--white" href="/cars/toyota/" data-ym-target="main_guest_cars_brands">Toyota</a>
+                    <a class="c-link c-link--white" href="/cars/volkswagen/" data-ym-target="main_guest_cars_brands">Volkswagen</a>
+                    <a class="c-link c-link--white" href="/cars/volvo/" data-ym-target="main_guest_cars_brands">Volvo</a>
+                    <a class="c-link c-link--white" href="/cars/gaz/" data-ym-target="main_guest_cars_brands">ГАЗ</a>
+                    <a class="c-link c-link--white" href="/cars/zaz/" data-ym-target="main_guest_cars_brands">ЗАЗ</a>
+                    <a class="c-link c-link--white" href="/cars/lada/" data-ym-target="main_guest_cars_brands">Лада</a>
+                    <a class="c-link c-link--white" href="/cars/luaz/" data-ym-target="main_guest_cars_brands">ЛуАЗ</a>
+                    <a class="c-link c-link--white" href="/cars/uaz/" data-ym-target="main_guest_cars_brands">УАЗ</a>
+                    <a class="c-link c-link--white" href="/cars/other/" data-ym-target="main_guest_cars_brands">Другие</a>
+                    <a class="c-link c-link--white" href="/cars/selfmade/" data-ym-target="main_guest_cars_brands">Самоделки</a>
+        </div>
+    </div>
+
+    <div class="c-index-alt__block">
+        <a class="c-index-alt__header-group" href="/companies/">
+            <h2 class="c-index-alt__header">Компании</h2>
+        </a>
+        <div class="c-index-alt-companies">
+            <header class="c-index-alt-companies__header">
+                <h3 class="u-visually-hidden">Компании</h3>
+            </header>
+            <div class="c-index-alt-companies__body">
+                <p>Сервисы, тюнинг и&nbsp;магазины со&nbsp;всего DRIVE2. С&nbsp;отзывами, блогом и&nbsp;спецусловиями.</p>
+                <a class="c-button c-button--solid c-button--xxl c-index-alt-companies__search" href="/companies/">
+                    Найти компанию
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <div class="l-dv l-dv--alt is-off" data-role="dv"><div class="l-dv__i">
+            <div id="adfox_1480674180674" ></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 59610,
+        containerId: 'adfox_1480674180674',
+        params: {
+            pp: 'g',
+            ps: 'nkx',
+            p2: 'emuv',
+            'puid5': 'guest',
+            'puid11': 'notbranded',
+            
+            puid14: 'adfox_1480674180674'
+        }
+    });
+</script>
+
+        </div></div>
+
+    
+<div class="c-index-alt__header-group">
+    <h2 class="c-index-alt__header">Личный опыт</h2>
+</div>
+<div class="c-index-alt__block">
+    <div class="c-index-alt-exp">
+        <form action="/experience/"
+              method="post"
+              data-role="carselect"
+              data-slot="index-exp.form"
+              autocomplete="off"
+              onsubmit="d2.ym('main_guest_exp_search'); return !!this.brand[this.brand.selectedIndex].value;">
+            <input name=".FCTX" type="hidden" value="_wfqzlwoyisCAAQA3klHy7bDV2S4OOC-_GwtCYGHWi8" />
+            <div class="c-index-alt-exp__type">
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="160" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Автозвук</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="30" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Аксессуары</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="2" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Видео</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="5" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Визит на сервис</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="135" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Встреча</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="100" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Другое</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="25" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">ДТП</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="1" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Заправка</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="35" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Запчасти</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="23" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Колёсные диски</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="155" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Кузовной ремонт</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="15" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Мойка</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="45" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Наблюдение</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="145" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Налоги и пошлины</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="55" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Нарушение ПДД</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="110" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Обкатка</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="10" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Плановое ТО</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="140" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Покатушки</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="65" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Покупка машины</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="120" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Поломка</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="115" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Помощь на дороге</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="75" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Прикол</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="70" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Продажа машины</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="90" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Просто так</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="50" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Путешествие</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="40" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Расходники</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="170" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Рейтинг и продвижение</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="165" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Своими руками</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="185" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Соревнования</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="180" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Стайлинг</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="80" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Страхование</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="130" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Тест-драйв</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="85" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Техосмотр</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="60" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Тюнинг</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="150" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Фотография</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="20" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Шины</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="125" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Эвакуация</span>
+                    </label>
+                    <label class="c-checkbox">
+                        <input name="R" type="checkbox" value="175" data-action="change:index-exp.check" data-ym-target="main_guest_exp_tags">
+                        <span class="c-checkbox__check"></span><span class="c-checkbox__label">Электроника</span>
+                    </label>
+            </div>
+            <div class="c-index-alt-exp__footer">
+                <div class="c-index-alt-exp__description" data-slot="index-exp.description">
+                    Участники нашего сообщества&nbsp;— такие же автовладельцы, как&nbsp;и&nbsp;вы&nbsp;— рассказывают о&nbsp;проблемах и&nbsp;их&nbsp;решении. За&nbsp;12&nbsp;лет мы&nbsp;собрали <span class="u-nobr">17&thinsp;154&thinsp;495</span> историй. Выбирайте&nbsp;тему!
+                </div>
+                <div class="c-index-alt-exp__carselect" data-slot="index-exp.car" style="display: none;">
+                    <select name="BrandName" data-slot="carselect.brand" onchange="d2.ym('main_guest_exp_cars');">
+                            <option value="">марка машины</option>
+                            <option value="527">527</option>
+                            <option value="ac">AC Cobra</option>
+                            <option value="acura">Acura</option>
+                            <option value="alfaromeo">Alfa Romeo</option>
+                            <option value="alpina">Alpina</option>
+                            <option value="amc">AMC</option>
+                            <option value="aro">ARO</option>
+                            <option value="asia">Asia</option>
+                            <option value="astonmartin">Aston Martin</option>
+                            <option value="audi">Audi</option>
+                            <option value="austin">Austin</option>
+                            <option value="autozam">Autozam</option>
+                            <option value="avia">Avia</option>
+                            <option value="bac">BAC</option>
+                            <option value="barkas">Barkas</option>
+                            <option value="bentley">Bentley</option>
+                            <option value="bertone">Bertone</option>
+                            <option value="bilenkinclassiccars">Bilenkin Classic Cars</option>
+                            <option value="bmw">BMW</option>
+                            <option value="bogdan">Bogdan</option>
+                            <option value="brilliance">Brilliance</option>
+                            <option value="bugatti">Bugatti</option>
+                            <option value="buick">Buick</option>
+                            <option value="byd">BYD</option>
+                            <option value="cadillac">Cadillac</option>
+                            <option value="caterham">Caterham</option>
+                            <option value="changan">Changan</option>
+                            <option value="chery">Chery</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="citroen">Citroen</option>
+                            <option value="cord">Cord</option>
+                            <option value="dacia">Dacia</option>
+                            <option value="dadi">Dadi</option>
+                            <option value="daewoo">Daewoo</option>
+                            <option value="daihatsu">Daihatsu</option>
+                            <option value="daimler">Daimler</option>
+                            <option value="datsun">Datsun</option>
+                            <option value="detomaso">de Tomaso</option>
+                            <option value="delorean">DeLorean</option>
+                            <option value="derways">Derways</option>
+                            <option value="dodge">Dodge</option>
+                            <option value="dongfeng">Dongfeng</option>
+                            <option value="eagle">Eagle</option>
+                            <option value="efini">Efini</option>
+                            <option value="eunos">Eunos</option>
+                            <option value="faw">FAW</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="fiat">FIAT</option>
+                            <option value="ford">Ford</option>
+                            <option value="foton">Foton</option>
+                            <option value="fso">FSO</option>
+                            <option value="geely">Geely</option>
+                            <option value="genesis">Genesis</option>
+                            <option value="gmc">GMC</option>
+                            <option value="greatwall">Great Wall</option>
+                            <option value="hafei">Hafei</option>
+                            <option value="haima">Haima</option>
+                            <option value="haval">Haval</option>
+                            <option value="hawtai">Hawtai</option>
+                            <option value="holden">Holden</option>
+                            <option value="honda">Honda</option>
+                            <option value="huanghai">Huanghai</option>
+                            <option value="hummer">Hummer</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="infiniti">Infiniti</option>
+                            <option value="ikco">Iran Khodro</option>
+                            <option value="isuzu">Isuzu</option>
+                            <option value="iveco">Iveco</option>
+                            <option value="jac">JAC</option>
+                            <option value="jaguar">Jaguar</option>
+                            <option value="jeep">Jeep</option>
+                            <option value="kia">KIA</option>
+                            <option value="ktm">KTM</option>
+                            <option value="lamborghini">Lamborghini</option>
+                            <option value="lancia">Lancia</option>
+                            <option value="landrover">Land Rover</option>
+                            <option value="ldv">LDV</option>
+                            <option value="lexus">Lexus</option>
+                            <option value="lifan">Lifan</option>
+                            <option value="ligier">Ligier</option>
+                            <option value="lincoln">Lincoln</option>
+                            <option value="lotus">Lotus</option>
+                            <option value="luxgen">Luxgen</option>
+                            <option value="marussia">Marussia</option>
+                            <option value="maserati">Maserati</option>
+                            <option value="maybach">Maybach</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="mercury">Mercury</option>
+                            <option value="merkur">Merkur</option>
+                            <option value="mg">MG</option>
+                            <option value="mini">MINI</option>
+                            <option value="mitsubishi">Mitsubishi</option>
+                            <option value="morgan">Morgan</option>
+                            <option value="morris">Morris</option>
+                            <option value="nissan">Nissan</option>
+                            <option value="noble">Noble</option>
+                            <option value="nysa">Nysa</option>
+                            <option value="oldsmobile">Oldsmobile</option>
+                            <option value="opel">Opel</option>
+                            <option value="peugeot">Peugeot</option>
+                            <option value="plymouth">Plymouth</option>
+                            <option value="pontiac">Pontiac</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="proton">Proton</option>
+                            <option value="ravon">Ravon</option>
+                            <option value="renault">Renault</option>
+                            <option value="rollsroyce">Rolls-Royce</option>
+                            <option value="rover">Rover</option>
+                            <option value="saab">Saab</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="saturn">Saturn</option>
+                            <option value="scion">Scion</option>
+                            <option value="seat">SEAT</option>
+                            <option value="simca">Simca</option>
+                            <option value="skoda">Skoda</option>
+                            <option value="sma">SMA</option>
+                            <option value="smart">Smart</option>
+                            <option value="ssangyong">SsangYong</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="talbot">Talbot</option>
+                            <option value="tata">Tata</option>
+                            <option value="tatra">Tatra</option>
+                            <option value="tesla">Tesla</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="trabant">Trabant</option>
+                            <option value="vauxhall">Vauxhall</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="wartburg">Wartburg</option>
+                            <option value="wiesmann">Wiesmann</option>
+                            <option value="willys">Willys</option>
+                            <option value="zotye">Zotye</option>
+                            <option value="zx">ZX</option>
+                            <option value="avtokam">Автокам</option>
+                            <option value="vis">ВИС</option>
+                            <option value="gaz">ГАЗ</option>
+                            <option value="eraz">ЕрАЗ</option>
+                            <option value="zaz">ЗАЗ</option>
+                            <option value="zil">ЗИЛ</option>
+                            <option value="izh">ИЖ</option>
+                            <option value="kamaz">КАМАЗ</option>
+                            <option value="lada">Лада</option>
+                            <option value="luaz">ЛуАЗ</option>
+                            <option value="moskvich">Москвич</option>
+                            <option value="raf">РАФ</option>
+                            <option value="seaz">СеАЗ</option>
+                            <option value="tagaz">ТагАЗ</option>
+                            <option value="uaz">УАЗ</option>
+                    </select>
+                    <select name="ModelId" data-slot="carselect.model">
+                        <option value="">модель</option>
+                    </select>
+                    <select class="" name="GenerationId" data-slot="carselect.gen">
+                        <option value="">поколение</option>
+                    </select>
+                    <button class="c-button c-button--solid" type="submit" name="mode" value="side" data-slot="carselect.button">Посмотреть</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+    <a class="c-index-alt__header-group" href="/market" data-ym-target="main_guest_market_all">
+        <h2 class="c-index-alt__header">Барахолка</h2>
+        <div class="c-index-alt__more">
+            Все объявления
+            <svg><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#angle-arrow-right"></use></svg>
+        </div>
+    </a>
+
+<div class="c-index-alt__block c-index-alt-market" data-role="index-market" style="visibility: hidden;">
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQlYlSTfNVFMNYD76vKxxA" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #8D8274;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/multimedia.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Автозвук и&nbsp;мультимедиа</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #504846;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/IwAAAgAq2OA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9E9590;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/s4AAAgOOcuA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpG1xwPdlvK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #7F8A8A;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/interior.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Салон</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #918A81;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/sEAAAgDSLOA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #C7B597;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/ad50a81s.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpG6FC_dmTK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #616E5C;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/brake-system.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Тормозная система</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #93897F;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/7wAAAgIv1OA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #A37C63;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/rAAAAgBOUuA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpGzD9_dlbK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #929089;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/steering.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Рулевое управление</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #8A827A;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/8c321f9s.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #747974;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/ViAAAgEWcuA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpGi0U_dkbK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #6F6C6A;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/engine.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Двигатель и&nbsp;выхлопная система</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #7A695C;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/5YAAAgKucuA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #C3B1A2;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/5gAAAgEucuA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #948984;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/fkAAAgBLaOA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQlIYbJ0DP3yOlPjLXd2Rw" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #8F8A86;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/tires.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Шины и&nbsp;диски</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9E9E9A;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/-yAAAgMucuA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #83807B;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/MAAAAgEcZOA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpGsqdfdlDK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #848485;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/suspension.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Подвеска</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9D8A7B;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/IGAAAgN2sOA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #B6AF2E;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/5c44719s.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpHA8S_dnHK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #8A829D;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/electrical.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Электро-оборудование</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #A5A29E;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/7db33a5s.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #736862;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/doAAAgBZuOA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpG97v_dmrK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #7C756E;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/transmission.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Трансмиссия</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9B8C7D;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/NqAAAgH2cuA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9D958A;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/uUAAAgCdouA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQlYuFd_NVdMNYD76vKxxA" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #92877B;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/lights.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Автосвет</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9E9590;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/a59e6b9s.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #90897D;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/vJAAAgKgIuA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpF5QbHwONfsPXJiCoXKw" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #616E5C;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/accessories.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Аксессуары</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #7D807F;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/YKAAAgMZLOA.jpg" width="198" height="198"></div>
+    </div>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #554C47;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/vxAAAgJ8cuA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpGW8q_dkHK7b_rxIpcfQ" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9F9892;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/gadgets.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Гаджеты</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #9B9895;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/9YAAAgHmcuA.jpg" width="198" height="198"></div>
+    </div>
+
+    <a class="c-index-alt-market__item is-header" data-slot="index-market.header" href="/market#FQpF8Nj3wOhfsPXJiCoXKw" data-ym-target="main_guest_market">
+<div class="o-img c-index-alt-market__pic" style="background-color: #A09093;" data-size="410,410"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market/exterior.jpg" width="410" height="410"></div>
+        <div class="c-index-alt-market__header">Кузов</div>
+    </a>
+    <div class="c-index-alt-market__item" data-slot="index-market.item">
+<div class="o-img c-index-alt-market__pic" style="background-color: #86817D;" data-size="198,198"><span style="display: block; padding-top: 100%"></span><img src="/images/index/market-items/oyAAAgKWcuA.jpg" width="198" height="198"></div>
+    </div>
+</div>
+
+
+        <a class="c-index-alt__header-group" href="/editorial" data-ym-target="main_guest_news_all">
+            <h2 class="c-index-alt__header">Новости и тест-драйвы</h2>
+            <div class="c-index-alt__more">
+                Больше новостей
+                <svg><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#angle-arrow-right"></use></svg>
+            </div>
+        </a>
+        <div class="c-index-alt__block">
+            <div class="o-grd o-grd--wrap">
+                    <a class="c-index-alt-card" href="/e/B5aAwEAAAmE" data-ym-target="main_guest_news">
+<div class="o-img" data-size="480,271"><span style="display: block; padding-top: 56.45833%"></span><img src="https://img.drive.ru/i/0/5de13775ec05c49e1e000034.jpeg" width="480" height="271"></div>
+                        <div class="c-index-alt-card__caption">Купе Pogea Racing Zeus 003 отличилось цветом и&nbsp;отделкой</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 376</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 9</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/e/B5Z9gEAAAl8" data-ym-target="main_guest_news">
+<div class="o-img" data-size="480,271"><span style="display: block; padding-top: 56.45833%"></span><img src="https://img.drive.ru/i/0/5de11dc0ec05c40516000043.jpeg" width="480" height="271"></div>
+                        <div class="c-index-alt-card__caption">Семейство Toyota Yaris в&nbsp;Таиланде обновилось по-своему</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 271</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 16</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/e/B5Z7wEAAAe0" data-ym-target="main_guest_news">
+<div class="o-img" data-size="480,271"><span style="display: block; padding-top: 56.45833%"></span><img src="https://img.drive.ru/i/0/5de12002ec05c4051600007d.jpeg" width="480" height="271"></div>
+                        <div class="c-index-alt-card__caption">Кроссовер Hyundai Nexo установил рекорд пробега на&nbsp;водороде</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 365</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 89</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/e/B5Z0QEAABDo" data-ym-target="main_guest_news">
+<div class="o-img" data-size="480,271"><span style="display: block; padding-top: 56.45833%"></span><img src="https://img.drive.ru/i/0/5de10209ec05c44357000097.jpeg" width="480" height="271"></div>
+                        <div class="c-index-alt-card__caption">Универсал ABT RS4-R поработает рекламой безопасного вождения</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 362</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 16</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/e/B5ZywEAAAuY" data-ym-target="main_guest_news">
+<div class="o-img" data-size="480,271"><span style="display: block; padding-top: 56.45833%"></span><img src="https://img.drive.ru/i/0/5de0eae5ec05c4e70e00004e.jpeg" width="480" height="271"></div>
+                        <div class="c-index-alt-card__caption">Предприятие Spotlight Automotive объединило BMW и&nbsp;Great Wall</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 255</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 29</span>
+                        </div>
+                    </a>
+            </div>
+        </div>
+
+        <a class="c-index-alt__header-group" href="https://www.youtube.com/user/DRIV3RU" rel="noopener" target="_blank" data-ym-target="main_guest_video_all">
+           <h2 class="c-index-alt__header">Видео</h2>
+           <div class="c-index-alt__more">
+               Больше видео
+               <svg><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#angle-arrow-right"></use></svg>
+           </div>
+        </a>
+        <div class="c-index-alt__block">
+            <div class="o-grd o-grd--wrap">
+                    <a class="c-video-thumb o-contain" href="https://www.youtube.com/watch?v=yGcMs_GpC2k" data-action="lightbox.zoomvid" data-slot="lightbox.thumb" data-ym-target="main_guest_video">
+                        <div class="c-video-preview" data-slot="lightbox.pic" data-videoid="yGcMs_GpC2k">
+<img src="https://i.ytimg.com/vi/yGcMs_GpC2k/0.jpg" width="1" height="1" data-simple>
+                            <svg class="c-video-preview__play"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#youtube-play"></use></svg>
+                        </div>
+                    </a>
+                    <a class="c-video-thumb o-contain" href="https://www.youtube.com/watch?v=B4dpAZHGWA4" data-action="lightbox.zoomvid" data-slot="lightbox.thumb" data-ym-target="main_guest_video">
+                        <div class="c-video-preview" data-slot="lightbox.pic" data-videoid="B4dpAZHGWA4">
+<img src="https://i.ytimg.com/vi/B4dpAZHGWA4/0.jpg" width="1" height="1" data-simple>
+                            <svg class="c-video-preview__play"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#youtube-play"></use></svg>
+                        </div>
+                    </a>
+                    <a class="c-video-thumb o-contain" href="https://www.youtube.com/watch?v=tkS2UdTH8D8" data-action="lightbox.zoomvid" data-slot="lightbox.thumb" data-ym-target="main_guest_video">
+                        <div class="c-video-preview" data-slot="lightbox.pic" data-videoid="tkS2UdTH8D8">
+<img src="https://i.ytimg.com/vi/tkS2UdTH8D8/0.jpg" width="1" height="1" data-simple>
+                            <svg class="c-video-preview__play"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#youtube-play"></use></svg>
+                        </div>
+                    </a>
+                    <a class="c-video-thumb o-contain" href="https://www.youtube.com/watch?v=eEfULBcADEc" data-action="lightbox.zoomvid" data-slot="lightbox.thumb" data-ym-target="main_guest_video">
+                        <div class="c-video-preview" data-slot="lightbox.pic" data-videoid="eEfULBcADEc">
+<img src="https://i.ytimg.com/vi/eEfULBcADEc/0.jpg" width="1" height="1" data-simple>
+                            <svg class="c-video-preview__play"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#youtube-play"></use></svg>
+                        </div>
+                    </a>
+                    <a class="c-video-thumb o-contain" href="https://www.youtube.com/watch?v=TFdNabrtlWk" data-action="lightbox.zoomvid" data-slot="lightbox.thumb" data-ym-target="main_guest_video">
+                        <div class="c-video-preview" data-slot="lightbox.pic" data-videoid="TFdNabrtlWk">
+<img src="https://i.ytimg.com/vi/TFdNabrtlWk/0.jpg" width="1" height="1" data-simple>
+                            <svg class="c-video-preview__play"><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#youtube-play"></use></svg>
+                        </div>
+                    </a>
+            </div>
+        </div>
+
+        <a class="c-index-alt__header-group" href="/featured-topics/" data-ym-target="main_guest_interest_all">
+            <h2 class="c-index-alt__header">Самое интересное</h2>
+            <div class="c-index-alt__more">
+                Читать больше
+                <svg><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#angle-arrow-right"></use></svg>
+            </div>
+        </a>
+        <div class="c-index-alt__block">
+            <div class="o-grd o-grd--wrap">
+                    <a class="c-index-alt-card" href="/b/546920724229522321/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #796356;" data-size="480,320"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/7aAAAgKw6eA-480.jpg" width="480" height="320"></div>
+                        <div class="c-index-alt-card__caption">Ущелье Ак-Тюз</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 406</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 27</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546883615712084038/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #ACABAC;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/aAAAAgNXaeA-480.jpg" width="480" height="270"></div>
+                        <div class="c-index-alt-card__caption">Взлет японского автопрома после WWII</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 326</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 56</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546737930421403963/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #908864;" data-size="480,360"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/QIAAAgNmaeA-480.jpg" width="480" height="360"></div>
+                        <div class="c-index-alt-card__caption">Нигде не тонет: гениальный русский вездеход “Шерп” за 7 миллионов</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 951</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 457</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546730508717916738/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #B4ABA5;" data-size="480,450"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/64AAAgP6aeA-480.jpg" width="480" height="450"></div>
+                        <div class="c-index-alt-card__caption">Что в имени тебе моем 81, часть первая … Again NO Jr. Edition / 300 Sport Series</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 337</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 25</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546720613113266218/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #C19180;" data-size="480,360"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/BgAAAgDqaeA-480.jpg" width="480" height="360"></div>
+                        <div class="c-index-alt-card__caption">Новости &quot;С колес&quot; 2. Намибия. Гигантские дюны в Сосусфлей</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 806</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 42</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546690926299317883/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #80796D;" data-size="480,320"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/mIAAAgPcaeA-480.jpg" width="480" height="320"></div>
+                        <div class="c-index-alt-card__caption">Где на Руси грибов много? Едем на родину белого гриба в Подвинье.</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 954</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 86</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546678007037691343/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #A5ABB3;" data-size="480,359"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/BgAAAgEMaeA-480.jpg" width="480" height="359"></div>
+                        <div class="c-index-alt-card__caption">Историйка о том, как я обнаружил корабль в одном из дворов Москвы</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 827</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 122</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546673608991179007/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #747B7E;" data-size="480,315"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/5BAAAgI0aeA-480.jpg" width="480" height="315"></div>
+                        <div class="c-index-alt-card__caption">Абу-Даби 2019: последний Гран-при сезона. Предобзор.</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 493</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 30</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546666187287694363/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #404242;" data-size="480,321"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/qOAAAgOkaeA-480.jpg" width="480" height="321"></div>
+                        <div class="c-index-alt-card__caption">Как &quot;поймать северное сияние&quot; в 40 км от Петербурга?</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 1088</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 125</span>
+                        </div>
+                    </a>
+                    <a class="c-index-alt-card" href="/b/546650244369088554/" data-ym-target="main_guest_interest_post">
+<div class="o-img is-cover" style="background-color: #B4A69F;" data-size="480,321"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/GgAAAgHIaeA-480.jpg" width="480" height="321"></div>
+                        <div class="c-index-alt-card__caption">Hyundai Santa Fe, который покоряет сердца</div>
+                        <div class="c-index-alt-card__info">
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--like-white"></span> 535</span>
+                            <span class="c-icon-counter c-icon-counter--inverted"><span class="c-icon-counter__icon c-icon c-icon--comments-white"></span> 328</span>
+                        </div>
+                    </a>
+            </div>
+        </div>
+
+    <a class="c-index-alt__header-group" href="/election">
+    <h2 class="c-index-alt__header">Машина дня и Выборы</h2>
+    <div class="c-index-alt__more">
+        Голосование
+        <svg><use xlink:href="/assets/images/map(B79rWsANMpTBmXAONq9b6ZgxHnw).svg#angle-arrow-right"></use></svg>
+    </div>
+</a>
+<div class="c-index-alt__block c-index-alt-election">
+    <a class="c-index-alt-election__cotd" href="/r/gaz/21/461949366123366215/">
+<div class="o-img is-cover c-index-alt-election__pic" style="background-color: #B6BBBC;" data-size="960,540"><span style="display: block; padding-top: 71.85474%"></span><img src="https://a.d-cd.net/f770ba5s-960.jpg" width="960" height="540"></div>
+        <div class="c-index-alt-election__cup"></div>
+    </a>
+    <a class="c-index-alt-election__cars" href="/election">
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #7C7A7F;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/KsAAAgEe2OA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #7F7E7D;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/uMAAAgIAoeA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #6B757D;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/egAAAgHE6eA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #595857;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/KcAAAgEEMOA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #888A8B;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/rOAAAgLRquA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #B0AEAF;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/0oAAAgK_WOA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #756B6A;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/6AAAAgNnKeA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #5E5555;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/MEAAAgFooeA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #8E8D87;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/PgAAAgG6qeA-480.jpg" width="480" height="270"></div>
+            </div>
+            <div class="c-index-alt-election__car">
+<div class="o-img c-index-alt-election__pic" style="background-color: #757178;" data-size="480,270"><span style="display: block; padding-top: 56.25%"></span><img src="https://a.d-cd.net/tEAAAgINyeA-480.jpg" width="480" height="270"></div>
+            </div>
+    </a>
+</div>
+
+
+</div></div>
+
+            <footer class="l-footer">
+            <div class="footer">
+                <div class="footer__content">
+                    <div class="footer__bg">
+                        <div class="footer__body">
+                                    <button class="c-button c-button--gray" data-action="fv.set" data-forceto="mobile" data-ym-target="button_mobile">Мобильная версия сайта</button>
+                                <div class="footer__links">
+                                        <p>
+                                            <a class="c-link c-link--gray" href="/help/">Помощь</a>
+                                            <a class="c-link c-link--gray" href="/o/BrandSupport">Символика</a>
+                                                <a class="c-link c-link--gray" href="http://vk.com/drive2" rel="noopener" target="_blank">ВКонтакте</a>
+                                            <a class="c-link c-link--gray" href="/mobile/">Мобильный DRIVE2</a>
+                                        </p>
+                                        <p>
+                                            <a class="c-link c-link--gray" href="/about/">О проекте</a>
+                                            <a class="c-link c-link--gray" href="/jobs/">Вакансии</a>
+                                            <a class="c-link c-link--gray" href="/business/">Бизнес-аккаунт</a>
+                                            <a class="c-link c-link--gray" href="/promo/">Реклама и сотрудничество</a>
+                                        </p>
+                                        <p>
+                                            <a class="c-link c-link--gray" href="/rules/">Правила сайта</a>
+                                            <a class="c-link c-link--gray" href="/agreement/">Пользовательское соглашение</a>
+                                            <a class="c-link c-link--gray" href="/data-use/">Политика обработки персональных данных</a>
+                                        </p>
+                                </div>
+                            <div class="footer__copyrights">
+                                    © DRIVE2.RU, 2019
+                                    <script type="application/ld+json">
+                                    {
+                                        "@context": "https://schema.org",
+                                        "@type": "Organization",
+                                        "url": "https://www.drive2.ru",
+                                        "logo": "https://www.drive2.ru/images/res/d-logo.png"
+                                    }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+            <script>
+                (function(win, doc, cb){
+                    (win[cb] = win[cb] || []).push(function() {
+                        try {
+                            tnsCounterDrive_ru = new TNS.TnsCounter({
+                            'account':'drive_ru',
+                            'tmsec': 'drive2_total'
+                            });
+                        } catch(e){}
+                    });
+
+                    var tnsscript = doc.createElement('script');
+                    tnsscript.type = 'text/javascript';
+                    tnsscript.async = true;
+                    tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+                        '//www.tns-counter.ru/tcounter.js';
+                    var s = doc.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(tnsscript, s);
+                })(window, this.document,'tnscounter_callback');
+            </script>
+            <noscript>
+                <img src="//www.tns-counter.ru/V13a****drive_ru/ru/UTF-8/tmsec=drive2_total/" width="0" height="0" alt="" />
+            </noscript>
+        <script>
+            new Image().src = "//counter.yadro.ru/hit;DRIVE?r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random();
+        </script>
+</div></body>
+</html>
+
+

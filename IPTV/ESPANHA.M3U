@@ -1,0 +1,2168 @@
+
+
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/davigon/m-epg/main/mepg3.xml"
+#EXTM3U x-tvg-url="https://www.tdtchannels.com/epg/TV.xml"
+
+
+#EXTINF:-1,A3 Cine HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/283299
+
+#EXTINF:-1,A3 Cine HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/283299
+
+
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/TVE-24h.png",🇪🇸 ●|  24h 
+http://212.102.48.142:8085/udp/236.3.131.1:1234
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://d2lv662meabn0u.cloudfront.net/boing/static/base/images/refresh-logos/logo_es_es.webp",🇪🇸🧒 ●| Boing 
+http://149.7.216.178:8080/boing/tracks-v1a1/index.m3u8?token=test
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://img2.rtve.es/css/rtve.2015/rtve.infantil/i/icons/logo-clan-pie.png",🇪🇸🧒 ●| Clanᴴᴰ 
+http://149.7.216.178:8080/clan/tracks-v1a1/index.m3u8?token=test
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://images.pluto.tv/channels/5d765786aad587cf4d0e2bf6/colorLogoPNG.png",🧒 ●| Inspector Gadget
+https://bit.ly/3FblQIm?/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://ginikousa.com/channels/logo/cartoon-classics.jpg",🇺🇸🧒 ●| Cartoon Classics
+https://rpn1.bozztv.com/36bay2/gusa-cartoonclassics/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/Ducktv.png",🧒 ●| Duck tv [Pluto]
+https://mmm-ducktv-3-es.samsung.wurl.com/manifest/d3f8ea989ab57c23ee5efc0cdeee512f.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/babyfirts.png",🇺🇸🧒 ●| Baby tv
+https://okkotv-live.cdnvideo.ru/channel/BabyTV/480p.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/babyfirts.png",🇧🇷🧒 ●| Baby Firts [Pluto]
+https://bit.ly/BabyFirts?/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/super_it.png",🇮🇹🧒 ●| Super!Ⓢ 
+https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/master.m3u8
+#EXTINF:-1 group-title="Infantil" tvg-logo="http://www.pakapaka.gob.ar/img/botones/logo-pakapaka-2.png",🇦🇷🧒 ●| Paka Paka
+https://5fb24b460df87.streamlock.net/live-cont.ar/pakapaka/chunklist_w190057400.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://sck.pm/sc9k",🇪🇸🧒 ●| TVG Infantil
+https://infantil-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://graph.facebook.com/cartoonnetwork.spain/picture?width=200&height=200",🇪🇸🧒 ●| Cartoon Network Latino
+https://slvcs87g3x.singularcdn.net.br/live/ctn_latam/playlist-1080p.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://i.postimg.cc/Gt1YX4Zs/TELERED.png",🇪🇸🧒 ●| TeleRed
+http://k4.usastreams.com/ARBtv/teleplus/chunklist_w1566276094.m3u8
+#EXTINF:-1 tvg-id="" group-title="Infantil" tvg-logo="https://graph.facebook.com/Pequeradio/picture?width=200&height=200",🇪🇸🧒 ●| Pequeradio TV 
+https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
+
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M+ Portada
+http://85.50.168.40:8001/1:0:1:759c:422:1:c00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. #0
+http://85.50.168.40:8001/1:0:19:788c:414:1:c00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. estrenos
+http://85.50.168.40:8001/1:0:1:76C0:40E:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. Estrenos 2
+http://85.50.168.40:8001/1:0:1:7588:412:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. Comedia
+http://85.50.168.40:8001/1:0:19:7857:41a:1:c00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. Drama
+http://85.50.168.40:8001/1:0:19:750b:420:1:c00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. Accion
+http://85.50.168.40:8001/1:0:1:746C:3F0:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. Series 2
+http://85.50.168.40:8001/1:0:1:7696:41E:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/094",🇪🇸 ●| M. Cine Ñ
+http://85.50.168.40:8001/1:0:1:7736:416:1:c00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://cdn.amcnetworks.com/sundance/logos/sundance_tv_logo.png",🇪🇸 ●| Sundance tv
+http://84.112.18.204:8001/1:0:1:76a5:41e:1:c00000:0:0:0:
+
+
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/TVE-1.png",🇪🇸 ●| La 1ᴴᴰ 
+http://91.126.141.13:1935/live/41/1800-def.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/TVE-1.png",🇪🇸 ●| La 1ᴴᴰ 
+http://eja.tv/?f637f17a2fdc60ed45df337e150c36fa.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/TVE-1.png",🇪🇸 ●| La 1ᴴᴰ 
+https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/index_2800_av-p.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/TVE-2.png",🇪🇸 ●| La 2ᴴᴰ 
+http://91.126.141.13:1935/live/81/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/TVE-2.png",🇪🇸 ●| La 2ᴴᴰ 
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlsdvrlive_1@60531/index_2800_av-p.m3u8?sd=10&rebase=on
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.antena3.com/public/img/a3com/favicon/icon160.webp",🇪🇸 ●| Antena 3ᴴᴰ 
+http://91.126.141.13:1935/live/11/3500-def.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.antena3.com/public/img/a3com/favicon/icon160.webp",🇪🇸 ●| Antena 3ᴴᴰ
+http://85.50.168.40:8001/1:0:19:772C:416:1:C00000:0:0:0:
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/51/Cuatro_2012.png",🇪🇸 ●| Cuatroᴴᴰ
+http://91.126.141.13:1935/live/51/playlist.m3u8
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://baul.mediaset.es/dist/assets/favicon/telecinco/favicon-32x32.png",🇪🇸 ●| Telecincoᴴᴰ
+http://91.126.141.13:1935/live/61/2500-def.m3u8
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/LaSexta.png",🇪🇸 ●| La Sextaᴴᴰ
+http://91.126.141.13:1935/live/21/3500-def.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/ATRESSeries.png",🇪🇸 ●| AtreSeriesᴴᴰ 
+http://91.126.141.13:1935/live/101/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://github.com/inspirationlinks/inspiration-1/raw/master/ATRESSeries.png",🇪🇸 ●| AtreSeriesᴴᴰ 
+https://mdst-cuatro-live-dash.secure.footprint.net/live/nas_live/a3s/dash/a3s.mpd?begin=&end=&nvb=1527155886&nva=1958691886&hash=089340b5ce26dc28126b08a229fa47efe3a0fee3e
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.atrescine.com/public/img/atrescine/android-chrome-192x192.png",🇪🇸 ●| AtreCineᴴᴰ 
+https://live.atresmediainternacional.com/ATRESMEDIA/a3cine-1080.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5d/Tve_clan.png",🇪🇸 ●| Clan
+https://mdst-cuatro-live-dash.secure.footprint.net/live/nas_live/clan/dash/clan.mpd?begin=&end=&nvb=1527155886&nva=1958691886&hash=077b500a05379a2e5ac15897d8a96f8640f4c30a2
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://files.mediaset.es/cimg/1001/2019/10/01/energy-claro_a8b9.svg",🇪🇸 ●| Energy
+https://mdst-cuatro-live-dash.secure.footprint.net/live/nas_live/energy/dash/energy.mpd?begin=&end=&nvb=1527155886&nva=1958691886&hash=0778f31a36b9167da2ac914efdcd9ceeed5c22767
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/DKissTV/picture?width=200&height=200",🇪🇸 ●| DKiss
+http://88.19.8.196:9981/stream/channelid/324819049?profile=pass
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/novatdt/picture?width=200&height=200",🇪🇸 ●| Novaᴴᴰ
+http://85.50.168.40:8001/1:0:1:7469:3F0:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://raw.githubusercontent.com/teamblue65/LOGO/master/FDFESPANHA.png",🇪🇸 ●| fdfᴴᴰ
+http://85.50.168.40:8001/1:0:1:77BC:40A:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/neox/picture?width=200&height=200",🇪🇸 ●| Neoxᴴᴰ
+http://85.50.168.40:8001/1:0:1:7587:412:1:C00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/neox/picture?width=200&height=200",🇪🇸 ●| Neoxᴴᴰ
+https://mdst-cuatro-live-dash.secure.footprint.net/live/nas_live/neox/dash/neox.mpd?begin=&end=&nvb=1527155886&nva=1958691886&hash=03fab75a9287d0b2dd1aaca726d9d06ad2f64e769
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://baul.mediaset.es/dist/assets/favicon/bemad/favicon-32x32.png",🇪🇸 ●| Bmadᴴᴰ
+https://mdst-cuatro-live-dash.secure.footprint.net/live/nas_live/bmad/dash/bmad.mpd?begin=&end=&nvb=1527155886&nva=1958691886&hash=00b33e3f25c50bcd09f64efb9d49f78a431779e78
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://graph.facebook.com/megaTDT/picture?width=200&height=200",🇪🇸 ●| Mega
+http://149.7.216.178:8080/mega/mono.m3u8?token=test
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://graph.facebook.com/megaTDT/picture?width=200&height=200",🇪🇸 ●| Mega
+https://mdst-cuatro-live-dash.secure.footprint.net/live/nas_live/mega/dash/mega.mpd?begin=&end=&nvb=1527155886&nva=1958691886&hash=0b2c7333d5b73ad0d55785822992f7772763885bc
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://graph.facebook.com/divinityes/picture?width=200&height=200",🇪🇸 ●| Divinityᴴᴰ 
+http://85.50.168.40:8001/1:0:1:749a:41c:1:c00000:0:0:0:
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://beteve.cat/wp-content/themes/beteve/img/logo.svg",🇪🇸 ●| betevéᴴᴰ
+https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
+
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/sc9k",🇪🇸 ●| Galicia Americaᴴᴰ 
+http://america-crtvg.flumotion.com:80/crtvg/america_high/chunks.m3u8?wowzasessionid=inspiration
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://sck.pm/sc9k",🇪🇸 ●| Galicia Europaᴴᴰ 
+http://europa-crtvg.flumotion.com:80/crtvg/europa_high/chunks.m3u8?wowzasessionid=inspiration
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d6/CGTN_Documentary_logo.png",🇪🇸 ●| CGTN Espanol
+https://livees.cgtn.com/1000e/prog_index.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.canalsur.es/css/cssimg/favicon.ico",🇪🇸 ●| Canal Surᴴᴰ
+http://93.241.75.134:19981/stream/channelid/1792089302
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.telesurtv.net/export/sites/telesur/arte/log-iso-telesur.png_253617125.png",🇻🇪 ●| TeleSurᴴᴰ
+https://cdnesmain.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://telesurcostarica.com/images/Logotipo-TeleSUR-2017-500px-Blanco.png",🇨🇷 ●| TeleSurᴴᴰ
+http://k3.usastreams.com:1935/telesur/telesur/playlist.m3u8
+#EXTINF:-1 group-title="Espanha" tvg-logo="https://graph.facebook.com/TRECEtves/picture?width=200&height=200",🇪🇸 ●| Treceᴴᴰ
+https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/SinartTreceCostaRica/picture?width=200&height=200",🇵🇾 ●| Treceᴴᴰ
+http://174.138.118.252/live/trece_src.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://rtvc.es/storage/2021/03/c152.png",🇪🇸 ●| Televisión Canariaᴴᴰ
+https://rtvc-live1-rm.flumotion.com/rtvc-rm/live1-rm_high/chunks.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://statics.ccma.cat/img/logos/tvi_colorBgNegre.svg",🇪🇸 ●| TV3CATᴴᴰ
+https://directes-tv-int.ccma.cat/int/ngrp:tvi_web/chunklist_b4128000_DVR.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.fibracat.cat/img/site-logo.svg",🇪🇸 ●| Fibracat
+https://cdn02.fibracat.cat/fibracattv/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://files.mediaset.es/cimg/1001/2021/05/21/logo-mtmad-2021_13eb.svg?w=undefined",🇪🇸 ●| mtmad 24hᴴᴰ
+https://mdssplive-lh.akamaihd.net/i/mtmad_main@744785/index_1_av-p.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://image.jimcdn.com/app/cms/image/transf/none/path/s5aadee6f79328755/image/i82e48f36514a3b57/version/1470080571/image.png",🇪🇸 ●| Extremadura TVᴴᴰ 
+https://cdnlive.shooowit.net/canalextremaduralive/channel1DVR.smil/chunklist_b1500000_DVR.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://statics.ccma.cat/img/favicons/tv3-apple-touch-icon-180x180.png",🇪🇸 ●| TV3 Catalunya
+http://directes-tv-int.ccma.cat/int/ngrp:tvi_web/chunklist_b4128000.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200",🇪🇸 ●| País Vasco 1ᴴᴰ 
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR1_1@595581/index_2596_av-p.m3u8?sd=8&rebase=on
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://graph.facebook.com/eitb/picture?width=200&height=200",🇪🇸 ●| País Vasco 2ᴴᴰ 
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR2_1@595582/index_2596_av-p.m3u8?sd=8&rebase=on
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://statics.ccma.cat/recursos/img/logos/bondiatv/logo_TV3_blanc_70x60.svg",🇪🇸 ●| Bon Dia tv
+https://directes-tv-int.ccma.cat/int/ngrp:bnd_web/chunklist_b4128000.m3u8
+#EXTINF:-1 tvg-id="" group-title="Espanha" tvg-logo="https://www.cyltv.es/img/la8Burgos.svg",🇪🇸 ●| La 8 Burgosᴴᴰ
+https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/chunklist_b2200000.m3u8
+
+
+
+#EXTINF:-1 ,#0 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3569?checkedby:ahlakid.com
+#EXTINF:-1 ,#0 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6748?checkedby:ahlakid.com
+#EXTINF:-1 ,#VAMOS HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79003?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 13 TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5341?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 24 H
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/662?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 24 HORAS
+http://hostengine.live:25461/palmer/palmer/147587?checkedby:ahlakid.com
+#EXTINF:-1 group-title="News" tvg-logo="https://i.imgur.com/SvUWRQm.png",ahlakid.com - 24 Horas
+http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="News;Undefined",ahlakid.com - rtve.es 24h
+http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/index_1500_av-p.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 24 Horas ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7174?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 24H HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79005?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://i.imgur.com/CnIVW9o.jpg",ahlakid.com - 3/24 (1080p)
+https://directes-tv-int.ccma.cat/int/ngrp:324_web/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 3/24 .cat
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/84?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/M0JqHa9.png",ahlakid.com - 7 Murcia
+http://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/M0JqHa9.png",ahlakid.com - sp:Murcia
+http://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/index_0_av-p.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/M0JqHa9.png",ahlakid.com - 7 Murcia
+https://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 7 Noticias (1080p)
+https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 7RM FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3570?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 7RM Radio Televisión Murcia
+http://paspastv.pasiptv.com:25461/afrika/afrika/91845?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - 8 TV .cat
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/85?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A&E
+http://hostengine.live:25461/palmer/palmer/147588?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A&E HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3571?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A3 SERIES 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/78?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A3 SERIES FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3572?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A3 SERIES HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5368?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A3 SERIES HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/89?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A3 Series ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13544?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - A3S Atreseries HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79006?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AMC FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1909?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AMC FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7255?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AMC HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3573?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ANDALUCIA TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3557?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ANTENA 3 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/384?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ANTENA 3 FHD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79299?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ANTENA 3 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3574?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ANTENA 3 HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/73?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ANTENA 3 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3558?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ARAGON TV
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/4805?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1910?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1520?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7252?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN WHITE FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3575?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN WHITE HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79024?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN WHITE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1521?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AXN White ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13542?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - AZ MUNDO
+http://hostengine.live:25461/palmer/palmer/147590?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/9Xn7ZEZ.jpg",ahlakid.com - Alcarria TV
+http://217.182.77.27/live/alcarriatv-livestream.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Andalucia ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7254?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Antena 3 FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7253?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Antena 3 HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79019?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Antena 3 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8779?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BABY TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1533?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BARCA TV
+http://hostengine.live:25461/palmer/palmer/147591?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BARCA TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3576?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BARÇA TV
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/29?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BE MAD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79027?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BE MAD FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3584?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BE MAD HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6670?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BEIN LALIGA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3578?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BEIN LIGA 3 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3580?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - BEIN SPORTS LA LIGA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3582?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - BEIN SPORTS SPAIN HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3583?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BEMAD TV 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/60?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BETEVE
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/830?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BLAZE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1757?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BOING HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3585?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - BOOMERANG
+http://hostengine.live:25461/palmer/palmer/147592?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Baby TV
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/97?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Baby TV ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8774?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Barca TV ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7250?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Be Mad TV ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/683552?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Blaze
+http://paspastv.pasiptv.com:25461/afrika/afrika/91913?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Boing ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8773?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/pY8zxN3.png",ahlakid.com - ES | Bon Dia TV
+https://directes-tv-int.ccma.cat/int/ngrp:bnd_web/chunklist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CABLE NOTICIAS
+http://hostengine.live:25461/palmer/palmer/147593?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CALLE 13 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1911?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CALLE 13 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1519?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL + FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5343?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL 24 HORAS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3559?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL ACCION HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1522?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL COCINA HEVC
+http://loginto.live:80/JP1584/xuCu1Csjrs/79214?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL COMEDIA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1524?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL COSTA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5342?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL DE LAS ESTRELLAS
+http://hostengine.live:25461/palmer/palmer/147595?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL DELCASA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3587?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL DRAMA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1523?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL MALAGA
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/1009?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL ORBE21 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3560?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL PANDA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3589?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL RCN
+http://hostengine.live:25461/palmer/palmer/147596?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL SUR A.
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6951?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL UNO
+http://hostengine.live:25461/palmer/palmer/147597?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL+ COCINA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3590?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CANAL+ TOROS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3591?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CARTOON NETWORK HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1531?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CAZA Y PESCA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1913?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CAZA Y PESCA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1517?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CGTN
+http://hostengine.live:25461/palmer/palmer/147600?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CINE LATINO
+http://hostengine.live:25461/palmer/palmer/147602?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CINE SONY
+http://hostengine.live:25461/palmer/palmer/147603?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CINE+ SERIES XTRA
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6944?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CITY TV
+http://hostengine.live:25461/palmer/palmer/147605?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CLAN TV
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/94?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CLAN TV HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/545?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CLAN TVE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3592?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CLASSICA
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6950?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CNN EN ESPANOL
+http://hostengine.live:25461/palmer/palmer/147606?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - COMEDY CENTRAL FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1914?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - COMEDY CENTRAL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1761?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - COSMO FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1915?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - COSMO HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1511?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CRIME & INVESTIGATION HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1534?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CRIMEN  INVESTIGACION HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6961?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CUATRO  FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1916?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CUATRO 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/385?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CUATRO HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1830?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CUATRO HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/74?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - CUATRO HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1513?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Calle 13 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7247?checkedby:ahlakid.com
+#EXTINF:-1 ,#0 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13539?checkedby:ahlakid.com
+#EXTINF:-1 ,#0 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16283?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Canal 2000 La Solana (720p)
+http://canal2000.berkano-systems.net/streaming/streams/canal2000.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/2BBGZ1H.png",ahlakid.com - Canal 25 Barbastro
+http://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/FYIM7SD.png",ahlakid.com - Canal 56
+https://videos.canal56.com/directe/stream/index.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Canal Cocina ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7244?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/BXmmroM.jpg",ahlakid.com - Canal Málaga
+http://canalmalaga-tv-live.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/BXmmroM.jpg",ahlakid.com - Canal M�laga
+http://canalmalaga-tv-live.flumotion.com/chunks.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Canal Panda ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/53156?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/U842Z2c.png",ahlakid.com - Canal Parlamento (Opt-2)
+http://congresodirecto-f.akamaihd.net/i/congreso6_1@54665/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/QBzvCJc.png",ahlakid.com - Canal San Roque
+https://elastic10.todostreaming.es/live/sanroque-livestream.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="http://cdn.teleon.tv/logo/Canal-Super3.png",ahlakid.com - Canal Super 3
+https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Canal Sur HD 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/387?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/CanelaTV_553x553.png?raw=true",ahlakid.com - Canela TV
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=65&live=1&app_bundle=com.plexapp.desktop&did=&app_domain=app.plex.tv&app_name=plex&h=1080&w=1920&content_title=vX2gxiT5Q_vtARVYwbZa&content_series=5f5132e362fe160040f26c18&custom4=plex&gdpr=0&device_make=Windows&device_model=Opera&coppa=0&us_privacy=1---&checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Castilla-La Mancha Media
+http://paspastv.pasiptv.com:25461/afrika/afrika/91855?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Caza y Pesca ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7232?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Caza y Pesca FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16269?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/KgbNv4G.png",ahlakid.com - TVG Infantil
+http://infantil-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Clan TV HD
+http://paspastv.pasiptv.com:25461/afrika/afrika/91841?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Clan TVE ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7231?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Comedy Central HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7230?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Cosmo FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7229?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Cosmopolitan HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13537?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Cuatro FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7228?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Cuatro HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8777?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DARK HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6952?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DAZN
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6949?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DAZN 1 FHD VIP ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/683544?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DAZN 2 HD VIP ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/683545?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DAZN F1 1 HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79062?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DE PELÍCULA CLASSICO
+http://hostengine.live:25461/palmer/palmer/147607?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DE PELÍCULA PLUS
+http://hostengine.live:25461/palmer/palmer/147608?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DIGITAL QUINCE
+http://hostengine.live:25461/palmer/palmer/147609?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - DIRECTTV SPORT
+http://hostengine.live:25461/palmer/palmer/147610?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - DIRECTTV SPORT 1
+http://hostengine.live:25461/palmer/palmer/147611?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISCOVERY CHANNEL FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5357?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISCOVERY CHANNEL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1535?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISCOVERY CIVILIZATION
+http://hostengine.live:25461/palmer/palmer/147612?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISCOVERY FAMALIA
+http://hostengine.live:25461/palmer/palmer/147613?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISCOVERY MAX
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/57?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISNEY CHANNEL FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1917?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISNEY CHANNEL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1529?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISNEY HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/92?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISNEY JUNIOR HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1530?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DISTRITO COMEDIA
+http://hostengine.live:25461/palmer/palmer/147614?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DIVINITY
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/186?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DIVINITY HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3594?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DKISS
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/440?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DKISS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5344?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DMAX HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3595?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - DeCasa ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7241?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Discovery Channel ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7226?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Discovery Dmax ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13535?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Divinity HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13534?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Dkiss HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13533?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - E! ENTERTAINMENT
+http://hostengine.live:25461/palmer/palmer/147615?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ENERGY HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1835?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/CnIVW9o.jpg",ahlakid.com - ES | 324
+https://directes-tv-int.ccma.cat/int/ngrp:324_web/chunklist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/VbxfLY5.png",ahlakid.com - ES | El Sembrador TV
+https://zypelive-lh.akamaihd.net/i/default_1@710948/index_3800_av-p.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/QCKNWMJ.jpg",ahlakid.com - TV3 Catalunya
+https://directes-tv-int.ccma.cat/int/ngrp:tvi_web/chunklist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - ESPN 3
+http://hostengine.live:25461/palmer/palmer/147616?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - ESPN DEPORTES
+http://hostengine.live:25461/palmer/palmer/147617?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - ESPN HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3596?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ESTRELLAS
+http://hostengine.live:25461/palmer/palmer/147618?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/KeBXBJE.png",ahlakid.com - ETB 1
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR1_1@595581/index_2596_av-b.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/KeBXBJE.png",ahlakid.com - ETB 1
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR1_1@595581/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/SYkOBKP.png",ahlakid.com - ETB 2
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR2_1@595582/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/SYkOBKP.png",ahlakid.com - ETB 2
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR2_1@595582/index_2596_av-b.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/SYkOBKP.png",ahlakid.com - ETB 2
+http://etbvnogeo-lh.akamaihd.net/i/ETBSTR2_1@595582/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - El Futuro en tu mano (720p)
+https://limited24.todostreaming.es/live/renjillo-livestream.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - El Futuro en tu mano (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZSw3jfFZo_8I9BHSMlT2Fg/live&checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Energy
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/376?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Energy ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8765?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Esport Club
+https://directes-tv-int.ccma.cat/int/ngrp:es3_web/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Eurosport 1 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8746?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Eurosport 2 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13531?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FDF
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/408?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FDF ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7221?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FDF HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1512?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FORO
+http://hostengine.live:25461/palmer/palmer/147619?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX FHD
+http://paspastv.pasiptv.com:25461/afrika/afrika/91864?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1919?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1515?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX LIFE
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1837?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX LIFE FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5370?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX LIFE FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5347?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX Life FHD
+http://paspastv.pasiptv.com:25461/afrika/afrika/91867?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX Life HD
+http://paspastv.pasiptv.com:25461/afrika/afrika/91866?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX NEWS CHANNEL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5371?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX NEWS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5350?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - FOX PREMIUM MOVIES
+http://hostengine.live:25461/palmer/palmer/147625?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Fox FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16267?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - GALICIA TV
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/87?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - GARAGE TV
+http://hostengine.live:25461/palmer/palmer/147626?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - GOL TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1838?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - GOLDEN PLUS
+http://hostengine.live:25461/palmer/palmer/147627?checkedby:ahlakid.com
+#EXTINF:-1 group-title="General;Undefined" tvg-logo="https://i.imgur.com/1Z6svKc.jpg",ahlakid.com - Televisión de Galicia América
+http://america-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Gol TV ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13457?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HBO
+http://hostengine.live:25461/palmer/palmer/147628?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HBO FAMILY ESTE
+http://hostengine.live:25461/palmer/palmer/147629?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HBO PLUS ESTE
+http://hostengine.live:25461/palmer/palmer/147630?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HISTORIA
+http://loginto.live:80/JP1584/xuCu1Csjrs/79086?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HISTORIA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1920?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HISTORIA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1538?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HIT TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5373?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HOLA
+http://hostengine.live:25461/palmer/palmer/147631?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HOLA TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5374?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HOLLYWOOD FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1921?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - HOLLYWOOD HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1841?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/HR3G3Ie.png",ahlakid.com - Hamaika Telebista
+http://wowzaprod130-i.akamaihd.net/hls/live/570468/275f3ea5/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Historia ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7217?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Hollywood FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8768?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - IB3 Global (720p) [Offline]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCff_CBVJDTHP4wOHPjP5BMg/live&checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ID
+http://hostengine.live:25461/palmer/palmer/147633?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Iberalia ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7171?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Ibiza Global TV
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/792?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 1 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/374?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 1 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1922?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 1 HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/71?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 1 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1509?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 2 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/546?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 2 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5340?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 2 HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/72?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA 2 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1510?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 01 - WED 1PM EST ATLETICO MADRID VS LEVANTE
+http://hostengine.live:25461/palmer/palmer/145923?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 02 -
+http://hostengine.live:25461/palmer/palmer/145924?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 03 -
+http://hostengine.live:25461/palmer/palmer/145925?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 04 -
+http://hostengine.live:25461/palmer/palmer/145926?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 05 -
+http://hostengine.live:25461/palmer/palmer/145927?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 07 -
+http://hostengine.live:25461/palmer/palmer/145929?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 08 -
+http://hostengine.live:25461/palmer/palmer/145930?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 09 -
+http://hostengine.live:25461/palmer/palmer/145931?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA 10 -
+http://hostengine.live:25461/palmer/palmer/145932?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA TV BAR FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1923?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA LIGA TV BAR HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3597?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA SEXTA 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/386?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA SEXTA HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/77?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA SEXTA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1514?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA Sexta ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/6671?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA Sexta FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16260?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA Sexta HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7213?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA1 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7215?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA1 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8782?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LA2 FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8781?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LAS ESTRELLAS
+http://hostengine.live:25461/palmer/palmer/147635?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA CAMPEONES FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5351?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 1 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6960?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 2 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6953?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 3 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6957?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 4 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6956?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 5 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6955?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 6 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6959?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 7 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6958?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA DE CAMPEONES 8 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6954?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA TV FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5352?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - LIGA123 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5353?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/0mGTdcg.png",ahlakid.com - La 1
+http://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/index_2800_av-b.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - La 1 Catalunya (576p) [Geo-blocked]
+https://rtvelivestreamv3.akamaized.net/cat/la1_cat_main_dvr.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - La 2
+http://paspastv.pasiptv.com:25461/afrika/afrika/91839?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://pbs.twimg.com/profile_images/1168862725369413632/pogqv5Ob_400x400.png",ahlakid.com - La 2 (1080p) [Timeout]
+https://rtvelivestreamv3.akamaized.net/rtvesec/la2_bkp_dvr.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - La Liga TV BAR HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/669971?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - M+ LALIGA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1924?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - M. DEPORTE 1 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6947?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - M. Liga De Campeones HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79136?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - M.SERIESMANIA HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79144?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MAX UP
+http://hostengine.live:25461/palmer/palmer/147636?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MEGA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1936?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MEGA HD
+http://loginto.live:80/JP1584/xuCu1Csjrs/79146?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MEGA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1856?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MEZZO LIVE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3598?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVIEPLEX
+http://hostengine.live:25461/palmer/palmer/147639?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR  ESTRENOS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1526?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ACCION FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1925?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ACCION HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3561?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 1 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3599?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 2 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3600?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 3 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3601?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 4 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3602?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 5 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3603?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 6 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3604?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 7 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3605?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 8 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3606?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ALQUILER 9 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3607?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR CINE N HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3608?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR CINEDOC&ROLL FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1926?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR CINEDOC&ROLL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3609?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR COMEDIA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1927?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR DCINE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3563?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - MOVISTAR DEPORTES 1 HD+
+http://paspastv.pasiptv.com:25461/afrika/afrika/91947?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - MOVISTAR DEPORTES FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1928?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR DISNEY HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5356?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR DRAMA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1929?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR DRAMA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3611?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ESTRENOS FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1930?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR ETRENOS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5348?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR F1 HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3612?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR FORMULA 1 FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1931?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - MOVISTAR FUTBOL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3613?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - MOVISTAR GOLF HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3614?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR LIGA CAMPEONES HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3615?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR LIGA DE CAMPEONES FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1933?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR SERIES FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1934?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR SERIES HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3617?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR SERIESMANIA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1935?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR SERIESMANIA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3618?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR VAMOS FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3619?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR XTRA FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3620?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - MOVISTAR XTRA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3564?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - MOVISTQR GOLF HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3588?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" group-title="MTV WORLD",ahlakid.com - MTV ESPANA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3621?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" group-title="MTV WORLD",ahlakid.com - MTV Espana ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8759?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" group-title="MTV WORLD",ahlakid.com - MTV LIVE
+http://hostengine.live:25461/palmer/palmer/147640?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Mega HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13824?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Accion FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7245?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Accion HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16280?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Comedia FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7243?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Comedia HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7194?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Movistar Deportes FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16278?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Movistar Deportes HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7240?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Drama FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/685775?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Drama HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/685776?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Esternos FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7192?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Estrenos
+http://paspastv.pasiptv.com:25461/afrika/afrika/91884?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Estrenos ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7222?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar F1 FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7246?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar F1 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13549?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Movistar Golf FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7237?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - Movistar Golf HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13550?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar La Liga FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16274?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Liga De Campeones FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/620686?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Liga De Campeones HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/620685?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Series
+http://paspastv.pasiptv.com:25461/afrika/afrika/91887?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Series FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7191?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Seriesmania
+http://paspastv.pasiptv.com:25461/afrika/afrika/91890?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Seriesmania FHD
+http://paspastv.pasiptv.com:25461/afrika/afrika/91892?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Seriesmania FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7190?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Vamos FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/682871?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Movistar Vamos HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/682872?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NAT GEO KIDS
+http://hostengine.live:25461/palmer/palmer/147641?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NAT GEO WILD
+http://hostengine.live:25461/palmer/palmer/147642?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NAT GEO WILD FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1937?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NAT GEO WILD HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1537?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NATIONAL GEO FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3622?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NATIONAL GEOGRAPHICS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1536?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NEOX
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/378?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NEOX 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/965?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NEOX TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3623?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NEXT TV
+http://hostengine.live:25461/palmer/palmer/147643?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NICK JR
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/190?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NICKELODEON FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1938?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NICKELODEON HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1527?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NICKTOONS
+http://hostengine.live:25461/palmer/palmer/147644?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NICK_JR
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1860?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://graph.facebook.com/NiusDiario/picture?width=320&height=320",ahlakid.com - NIUS (576p)
+https://mdslivehlsb-i.akamaihd.net/hls/live/875601/niusdiario/03.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://graph.facebook.com/NiusDiario/picture?width=320&height=320",ahlakid.com - NIUS (720p)
+https://mdslivehlsb-i.akamaihd.net/hls/live/875601/niusdiario/01.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NON STOP PEOPLE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5376?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NOVA
+http://loginto.live:80/JP1584/xuCu1Csjrs/79174?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NOVA
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/409?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NOVA 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/966?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NOVA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1861?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - NTN 24
+http://hostengine.live:25461/palmer/palmer/147646?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Nat Geo Wild ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7188?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - National Geographic ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16270?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - National Geographic HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13528?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Neox TV ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16264?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Neox TV HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7186?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Nick Jr
+http://paspastv.pasiptv.com:25461/afrika/afrika/91924?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Nick Jr. ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13526?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Nickelodeon HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/16268?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ODISEA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5355?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ONDA CADIZ
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/363?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Odisea TV HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/685777?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - PANDA
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/95?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - PANDA
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1528?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - PARAMOUNT CHANNEL
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1789?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - PARAMOUNT NETWORK
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/1001?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - PASIONES
+http://hostengine.live:25461/palmer/palmer/147647?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Paramount Channel ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8769?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/hwlTrtF.png",ahlakid.com - Popular TV Melilla
+https://5940924978228.streamlock.net/8009/8009/chunklist_w922827150.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/hwlTrtF.png",ahlakid.com - Popular TV Melilla
+https://5940924978228.streamlock.net/8009/8009/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - RCN TELE NOVELAS
+http://hostengine.live:25461/palmer/palmer/147648?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - REAL MADRID TV FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1939?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - REAL MADRID TV HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1862?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - RTE 7
+http://hostengine.live:25461/palmer/palmer/147650?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/ZigKzBj.png",ahlakid.com - RTVE
+http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/index_1500_av-b.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://graph.facebook.com/1121106071333048/picture?width=320&height=320",ahlakid.com - Radio Rutas del Perú (360p) [Not 24/7]
+https://tv.portalexpress.es:3731/stream/play.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Red Advenir ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13524?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/RunTimeEspanol_120x120.png?raw=true",ahlakid.com - Runtime Espanol
+https://ammo-espanol-plex.amagi.tv/hls/amagi_hls_data_plexAAAAA-ammo-espanol-plex/CDN/playlist.m3u8?us_privacy=1---&did=&dnt=1&X-Plex-Token=vX2gxiT5Q_vtARVYwbZa&channelId=5f5132e362fe160040f26c15&checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SHOWTIME BEYOND
+http://hostengine.live:25461/palmer/palmer/147652?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SOMOS FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5359?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SOMOS HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5358?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SP NETFLIX ACTION FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5367?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - SPORT 3 .cat
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/82?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ BLACK
+http://hostengine.live:25461/palmer/palmer/147654?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ COMEDY
+http://hostengine.live:25461/palmer/palmer/147656?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ EDGE
+http://hostengine.live:25461/palmer/palmer/147657?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ ENCORE
+http://hostengine.live:25461/palmer/palmer/147658?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ ENCORE ACTION
+http://hostengine.live:25461/palmer/palmer/147659?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ ENCORE CLASSIC
+http://hostengine.live:25461/palmer/palmer/147661?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ ENCORE FAMILY
+http://hostengine.live:25461/palmer/palmer/147662?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ ENCORE SUSPENSE
+http://hostengine.live:25461/palmer/palmer/147663?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ ENCORE WESTERN
+http://hostengine.live:25461/palmer/palmer/147664?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - STARZ KIDS AND FAMILY
+http://hostengine.live:25461/palmer/palmer/147666?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SUNDANCE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3624?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SUPER 3 /33 .cat
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/83?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SYFY FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3625?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SYFY HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1516?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/RPXusvS.png",ahlakid.com - Sophia TV
+https://www.onairport.live/sophiatv-es-live/livestream_high/master.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Sundance TV ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/14121?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - SyFy FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13522?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 1
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1539?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 2
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1540?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 3
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1541?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 4
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1542?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 5
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1543?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 6
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/4801?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 7
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/4802?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 8
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/4803?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA 9
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/7529?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TAQUILLA10
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/7530?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TBS
+http://hostengine.live:25461/palmer/palmer/147667?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TCM FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1940?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TCM HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3565?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TELE HIT
+http://hostengine.live:25461/palmer/palmer/147670?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TELECINCO FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1941?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TELECINCO HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1867?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TELECINCO HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1865?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TELEDEPORTE FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1942?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TELEDEPORTE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3566?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TEN
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/396?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TEN HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5345?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TLC
+http://hostengine.live:25461/palmer/palmer/147672?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TNT
+http://hostengine.live:25461/palmer/palmer/147673?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TNT FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1943?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TNT FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7177?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TNT HD
+http://paspastv.pasiptv.com:25461/afrika/afrika/91922?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TNT HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1870?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TOONCAST
+http://hostengine.live:25461/palmer/palmer/147674?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TRECE HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3626?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - TUDN ZONA FUTBOL
+http://hostengine.live:25461/palmer/palmer/147675?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV 3 Catalunya ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7175?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV GALICIA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3567?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV Galicia
+http://loginto.live:80/JP1584/xuCu1Csjrs/79192?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV Galicia ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7218?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV3 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/415?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV3 CATALONIA HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3568?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV3 Catalunya HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8780?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TV3 HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/81?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://noticias.adventista.es/wp-content/uploads/sites/8/2014/05/Captura-de-pantalla-2014-05-28-a-las-14.22.231.png",ahlakid.com - TV4 La Vall
+https://limited09.todostreaming.es/live/tarson-livestream.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://pbs.twimg.com/profile_images/1192795318749945858/o-jIBTK-_400x400.jpg",ahlakid.com - TV5 Limares (720p) [Not 24/7]
+https://unlimited6-cl.dps.live/tv5/tv5.smil/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - TVE INTERNACIONAL HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/5377?checkedby:ahlakid.com
+#EXTINF:-1 group-title="General;Undefined" tvg-logo="https://i.imgur.com/QkhxAuY.png",ahlakid.com - TVG (Opt-1)
+http://europa-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/QkhxAuY.png",ahlakid.com - TVG
+http://europa-crtvg.flumotion.com/crtvg/europa_med/chunks.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/YAnSTc6.jpg",ahlakid.com - TVG América
+http://america-crtvg.flumotion.com/crtvg/america_high/chunks.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/KgbNv4G.png",ahlakid.com - TVG Cultural
+http://cultural-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/KgbNv4G.png",ahlakid.com - TVG Evento 1
+http://events1-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/QkhxAuY.png",ahlakid.com - TVG Momentos G
+http://momentog-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local" tvg-logo="https://i.imgur.com/QkhxAuY.png",ahlakid.com - TVG Momento
+http://momentog-crtvg.flumotion.com:80/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Local;Undefined" tvg-logo="https://i.imgur.com/KgbNv4G.png",ahlakid.com - TVG Musigal
+http://musigal-crtvg.flumotion.com/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined",ahlakid.com - TVG Xabarin
+http://infantil-crtvg.flumotion.com/chunks.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 1 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8756?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 1 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7211?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 2
+http://paspastv.pasiptv.com:25461/afrika/afrika/91949?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 2 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8755?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 2 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7210?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 4 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7208?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 5 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8752?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 6 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/8751?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 6 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7206?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 7 HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7205?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Taquilla 8 ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13520?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Religious" tvg-logo="https://i.imgur.com/OgEeQzl.jpg",ahlakid.com - Taroteame TV
+http://93.93.67.117:1935/taroteame/tarot_web/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Tarotvision (576p) [Not 24/7]
+http://149.12.64.81:8080/hls/tarotvision.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Telecinco 1080
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/75?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Telecinco FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/14022?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Telecinco HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/76?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Telecinco HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/11488?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Teledeporte ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7178?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Teledeporte HD
+http://first.datalink.ovh:25461/Miafamili/YisLmb8vq2/36?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/khRXhT1.png",ahlakid.com - Televisio Girona
+http://ventdelnord.tv:8080/girona/directe.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Ten ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13518?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - Toros HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13548?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined" tvg-logo="https://i.imgur.com/3N90uxs.png",ahlakid.com - Trece TV
+https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/021/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Trece.svg/320px-Trece.svg.png",ahlakid.com - Trece TV (576p)
+https://live-edge-bhs-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/playlist.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - UNIMAS
+http://hostengine.live:25461/palmer/palmer/147677?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - UNIVISION
+http://hostengine.live:25461/palmer/palmer/147678?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - UNIVISION DEPORTES
+http://hostengine.live:25461/palmer/palmer/147679?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - VIAJAR FHD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/1912?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - VIAJAR HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/3627?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Undefined",ahlakid.com - Vega Baja TV
+http://185.29.68.24/tvb.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - WIN SPORTS
+http://hostengine.live:25461/palmer/palmer/147681?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - XTRM HD
+http://obsfullhd.tv:25461/speedhd.hd/wk2rl4iWB6/6945?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - XTRM HD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/13527?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - ZOOM
+http://hostengine.live:25461/palmer/palmer/147682?checkedby:ahlakid.com
+#EXTINF:-1 group-title="Sport",ahlakid.com - bein Sports Espana FHD ES
+http://satelliteiptv.xyz:8080/iptvpoint/85g7sjaS6t/7248?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA",ahlakid.com - teve.cat (1080p)
+https://limited35.todostreaming.es/live/mitjans-livestream.m3u8?checkedby:ahlakid.com
+#EXTINF:-1 group-title= "ESPANHA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Logo_TVE-24h.svg/2084px-Logo_TVE-24h.svg.png",ahlakid.com - Canal 24 horas (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live&checkedby:ahlakid.com
+#EXTINF:-1 ,ahlakid.com - Alcarria TV
+http://217.182.77.27/live/alcarriatv-livestream.m3u8
+#EXTINF:-1 ,ahlakid.com - 7 Murcia
+http://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8
+#EXTINF:-1 ,ahlakid.com - Canal Parlamento
+http://congresodirecto-f.akamaihd.net:80/i/congreso6_1@54665/master.m3u8
+#EXTINF:-1 ,ahlakid.com - ETB Sat
+http://etbvnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@300391/master.m3u8
+#EXTINF:-1 ,ahlakid.com - Lancelot TV
+http://62.210.141.18:1935/directo/lancelot.television/live.m3u8
+#EXTINF:-1 ,ahlakid.com - TVG Xabarin
+http://infantil-crtvg.flumotion.com/chunks.m3u8
+#EXTINF:-1 ,ahlakid.com - Vega Baja TV
+http://185.29.68.24/tvb.m3u8
+
+#EXTINF:30 group-title= "ESPANHA",3/24 (1080p)
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:324_web/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",7 La Rioja (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://pc-la7delarioja-hls.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",7 Noticias (1080p)
+#EXTVLCOPT:network-caching=1000
+https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",7 Televisión Región de Murcia (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",9 la Loma TV [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://9laloma.tv/live.m3u8
+#EXTINF:0 group-title= "ESPANHA",+24 (576p)
+#EXTVLCOPT:network-caching=1000
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586402/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",25 TV (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/25televisiolive/smil:channel1.smil/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",28 kanala (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://5940924978228.streamlock.net/8157/8157/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",101 Tele Antequera (1080p)
+#EXTVLCOPT:network-caching=1000
+https://limited38.todostreaming.es/live/101tv-AntequeraHD.m3u8
+#EXTINF:0 group-title= "ESPANHA",101TV Malaga (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://limited38.todostreaming.es/live/101tv-web101tv.m3u8
+#EXTINF:0 group-title= "ESPANHA",+tdp [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://hlsliveamdgl1-lh.akamaihd.net/i/hlsdvrlive_1@39732/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",À Punt (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://bcovlive-a.akamaihd.net/1e7e91116b104391a4f22e13a694d94f/eu-central-1/6057955885001/playlist_dvr.m3u8
+#EXTINF:1230group-title= "ESPANHA",Activa TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://streamtv.mediasector.es/hls/activatv/.m3u8
+#EXTINF:0 group-title= "ESPANHA",Alacantí TV (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8
+#EXTINF:0 group-title= "ESPANHA",Alcarria TV (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cls.alcarria.tv/alcarriatv/livestream/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Anime Zone TV (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://azxtv.com/hls/stream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Aragón Radio (Zaragoza) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cartv.streaming.aranova.es/hls/live/aragonradio_aragonradio1.m3u8
+#EXTINF:0 group-title= "ESPANHA",Aragón TV (360p)
+#EXTVLCOPT:network-caching=1000
+https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
+#EXTINF:0 group-title= "ESPANHA",Bailén TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cpd.bailen.tv:8080/Playlist_CANAL_24H/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Barça TV [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://5.255.90.184:2002/play/a01z
+#EXTINF:0 group-title= "ESPANHA",BARVA.TV (360p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://cp.sradiotv.com:1936/8076/8076/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",BBC News (540p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
+#EXTINF:0 group-title= "ESPANHA",BBC World News (576p)
+#EXTVLCOPT:network-caching=1000
+http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",betevé (1080p)
+#EXTVLCOPT:network-caching=1000
+https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
+#EXTINF:0 group-title= "ESPANHA",Bloomberg TV EMEA Live Event (720p)
+#EXTVLCOPT:network-caching=1000
+https://www.bloomberg.com/media-manifest/streams/eu-event.m3u8
+#EXTINF:0 group-title= "ESPANHA",Bloomberg TV Europe UHD (2160p)
+#EXTVLCOPT:network-caching=1000
+https://bloomberg-bloombergtv-1-it.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Bon Dia TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:bnd_web/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Cadena Elite (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloudvideo.servers10.com:8081/8004/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 4 Mancha Centro (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 10 Empordà (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://ventdelnord.tv:8080/escala/directe.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 24 horas (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
+#EXTINF:0 group-title= "ESPANHA",Canal 24 horas (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://rtvelivestreamv3.akamaized.net/24h_main_dvr.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 24 horas (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://rtvelivestreamv3.akamaized.net/24h_bkp_dvr.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 25 TV (Barbastro) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 33 Madrid (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://5ab29cc78f681.streamlock.net/canal33tvmadridgmailcom/livestream/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 56 (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://videos.canal56.com/directe/stream/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal 2000 La Solana (720p)
+#EXTVLCOPT:network-caching=1000
+http://canal2000.berkano-systems.net/streaming/streams/canal2000.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal Diocesano (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn01.yowi.tv/DDDDDDDDDD/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal Doñana (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://secure5.todostreaming.es/live/division-alm.m3u8
+#EXTINF:0 group-title= "ESPANHA"group-title= "ESPANHA",Canal Extremadura (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/canalextremaduralive/smil:channel1DVR.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA"group-title= "ESPANHA",Canal Málaga RTV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://canalmalaga-tv-live.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal Parlamento (360p)
+#EXTVLCOPT:network-caching=1000
+http://congresodirecto-f.akamaihd.net/i/congreso6_1@54665/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal San Roque (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://elastic10.todostreaming.es/live/sanroque-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal Sierra de Cádiz (1080p)
+#EXTVLCOPT:network-caching=1000
+http://217.125.136.93:8080/canalsierradecadiz1080.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal Super 3 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Canal Sur Andalucía (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqwjtgaJflHga2aPWphG5PQ/live
+#EXTINF:0 group-title= "ESPANHA",Canal Taronja Osona i Moianés (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://taronjavic.streaming-pro.com/hls/vic.m3u8
+#EXTINF:0 group-title= "ESPANHA",CCMA Exclusiu 1 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:oca1_web/playlist_DVR.m3u8
+#EXTINF:0 group-title= "ESPANHA",CCMA Exclusiu 2 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:oca2_web/playlist_DVR.m3u8
+#EXTINF:0 group-title= "ESPANHA",Clan TVE (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://rtvelivestreamv3.akamaized.net/rtvesec/clan_bkp_dvr.m3u8
+#EXTINF:0 group-title= "ESPANHA",CMM TV (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cdnapi.kaltura.com/p/2288691/sp/39582391/playManifest/entryId/0_xs45iy5i/format/applehttp/.m3u8
+#EXTINF:0 group-title= "ESPANHA",CNN International Europe (720p)
+#EXTVLCOPT:network-caching=1000
+https://cnn-cnninternational-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Condavisión (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://145.239.141.154:1935/live/uSCQc5ky/playlist.m3u8
+#EXTINF:11197group-title= "ESPANHA",Congreso de los Diputados 1 (360p)
+#EXTVLCOPT:network-caching=1000
+https://congresodirecto-f.akamaihd.net/i/congreso1_1@71529/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Congreso de los Diputados 2 (360p)
+#EXTVLCOPT:network-caching=1000
+https://congresodirecto-f.akamaihd.net/i/congreso2_1@72033/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Congreso de los Diputados 3 (360p)
+#EXTVLCOPT:network-caching=1000
+https://congresodirecto-f.akamaihd.net/i/congreso3_1@72034/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Congreso de los Diputados 4 (360p)
+#EXTVLCOPT:network-caching=1000
+https://congresodirecto-f.akamaihd.net/i/congreso4_1@53937/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Congreso de los Diputados 5 (360p)
+#EXTVLCOPT:network-caching=1000
+https://congresodirecto-f.akamaihd.net/i/congreso5_1@51923/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Cosmo TV (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://91.126.141.201:1935/live/cosmoHD/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Costa Noroeste TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Cuatro 4 TV Vall Uxa (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://limited09.todostreaming.es/live/tarson-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Diez TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://streaming.cloud.innovasur.es/mmj/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Disney Channel España (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://5.255.90.184:2004/play/a006/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Disney Junior Latinoamérica [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://209.91.213.10:8088/play/a00n
+#EXTINF:0 group-title= "ESPANHA",Distrito TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn01.yowi.tv/KQRSDA7GDB/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",DW English (1080p)
+#EXTVLCOPT:network-caching=1000
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",EDGEsport (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://edgesports-row-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",EiTB 2 (720p)
+#EXTVLCOPT:network-caching=1000
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR2_1@595582/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",EITB (480p)
+#EXTVLCOPT:network-caching=1000
+https://etbvnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@300391/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",El 33 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist_DVR.m3u8
+#EXTINF:0 group-title= "ESPANHA",El Futuro en tu mano (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZSw3jfFZo_8I9BHSMlT2Fg/live
+#EXTINF:0 group-title= "ESPANHA",El Garage TV (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://186.0.233.76:1935/Garage/smil:garage.smil/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",El Toro TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live1-eltorotv.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Elche 7 TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://streaming.elche7tv.es/hls/canal2.m3u8
+#EXTINF:0 group-title= "ESPANHA",ESNE TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://zypelive-lh.akamaihd.net/i/default_1@710948/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Esport3 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:es3_web/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",ESTV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://estv-rakuten.amagi.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",ETB 1 (480p)
+#EXTVLCOPT:network-caching=1000
+https://etbvnogeo-lh.akamaihd.net/i/ETBSTR1_1@595581/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",ETB Eventos 1 (720p)
+#EXTVLCOPT:network-caching=1000
+https://etbvnogeo-lh.akamaihd.net/i/OCA1HD_1@748519/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",EWTN el Canal Católico (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://live-fd164e1.rmbl.ws/slot-21/ngrp:ajdj-xq6n_all/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Factoría de Ficción (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://91.126.141.201:1935/live/smil:fdf.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Fibracat TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn02.fibracat.cat/fibracattv/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Fibwi (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://109.232.71.249/fibwiLIVE_movil/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Fion TV (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://stream.fion.es:1936/live/smil:fion.smil/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",France 24 English (1080p)
+#EXTVLCOPT:network-caching=1000
+http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",GCM TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloud.streamingconnect.tv:455/tbmadrid/tbmadrid.m3u8
+#EXTINF:0 group-title= "ESPANHA",Goiena Eus (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://zuzenean.goienamedia.eus:8443/goiena-telebista.m3u8
+#EXTINF:0 group-title= "ESPANHA",Guada TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloud.streamingconnect.tv:455/guadatv/guadatv.m3u8
+#EXTINF:0 group-title= "ESPANHA",Hamaika Telebista (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://wowzaprod130-i.akamaihd.net/hls/live/570468/275f3ea5/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Arabic (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/39596c72840d27b213caf4e58c39599a6f2ed203/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Baladas (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/5d7d2c21e0ec7a8a99fd1fdbc52cbdc0782f77fc/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Blues (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/81c601f370e44dc566113fd752204be5f5f53b61/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Chill Out (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/183a351ddb0e57af6d735256226e6033c32219ab/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Classic (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/f04129475945936b248aa723de56519ea2ff10fc/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Dance (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/57cf2f51b07ff21988a7a6f0270a66d41086d4a4/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Folk (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/9f5310c179e8e840188d183be235f755b18cf703/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Gym (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/abb87f329d0ed03072b1930e9636a53e8076c8d5/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Hip Hop (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/8327abc87895df4c76db1155435fdca6a3607bbd/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Hits (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/5e2db2017a8fd03f73b40ede363d1a586db4e9a6/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Jazz (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/f204aa5b3f0691e69851b54b7746ef09ede26f6a/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Kids (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/e4bc12dafe33c3ceb3e382e3acc0ec2c012cf7fd/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Latin (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/9a4da7871ec57b4b63ed49597a13d09869172be0/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Pop (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/eb2fa68a058a701fa5bd2c80f6c8a6075896f71d/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Relax (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/dc1b71c6fda2e687050facaa7242062cbf5a7f2a/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Remember (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/57c98e2e295a0b69b52dc5f84edc4b1b68783ba2/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Rock (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/0d6c7ccfac89946bfd41ae34c527e8d94734065c/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",HQM Spanish (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://livelist01.yowi.tv/lista/8635ae40f8d1a32eccd63d1f58b55662c9c98f9f/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",IB3 Global (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCff_CBVJDTHP4wOHPjP5BMg/live
+#EXTINF:0 group-title= "ESPANHA",Ibiza Global TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://ibgrtv.streaming-pro.com/hls/ibgrlive.m3u8
+#EXTINF:0 group-title= "ESPANHA",Imás TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://secure3.todostreaming.es/live/imastv-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Interalmeria TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://interalmeria.tv/directo/live.m3u8
+#EXTINF:0 group-title= "ESPANHA",Intercomarcal TV (288p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://78.41.83.88:8880/hls/tvixa.m3u8
+#EXTINF:0 group-title= "ESPANHA",Islatel (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://zone.controlstreams.com:5443/LiveApp/streams/islatel.m3u8
+#EXTINF:0 group-title= "ESPANHA",KTO (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 1 (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 1 Canarias (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@134665/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 1 Catalunya (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://rtvelivestreamv3.akamaized.net/cat/la1_cat_main_dvr.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 2 (1080p)
+#EXTVLCOPT:network-caching=1000
+https://ztnr.rtve.es/ztnr/1688885.m3u8
+#EXTINF:0 group-title= "ESPANHA",LA7 (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la7live/smil:channel1.smil/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Avila (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8avilalive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Bierzo (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8bierzolive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Burgos (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Leon (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8leonlive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Mediterráneo (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://play.cdn.enetres.net/489DDF7FE98241D19D8970314BC9D3EF021/0226/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Palencia (270p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8palencialive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Salamanca (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8salamancalive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Segovia (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8segovialive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Soria (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8sorialive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Valladolid (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8valladolidlive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La 8 Zamora (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdnlive.shooowit.net/la8zamoralive/smil:streamswitchingchannel.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La Urban TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://urbanrevolution.es:8443/live/TV/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",La Voz 24h (720p)
+#EXTVLCOPT:network-caching=1000
+https://pull12.atresmedia.com/lavoz/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",LaOtra (720p)
+#EXTVLCOPT:network-caching=1000
+https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/laotra_1/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Lebrija TV (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://212.104.160.156:1935/live/lebrijatv2/playlist3.m3u8
+#EXTINF:0 group-title= "ESPANHA",Lleida Televisio (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn01.yowi.tv/lleida/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Locomotion TV (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.222.85.85:81/hls/loco/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",Logos TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Love Nature Español (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00090-blueantmedia-lnrcastilian-samsungspain/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",M95 Televisión Marbella (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://limited2.todostreaming.es/live/m95-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Maestrat TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://stream.maestrat.tv/hls/stream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Mar TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://iptv.btpba1.es.network.do:8080/martv-web/video.m3u8
+#EXTINF:0 group-title= "ESPANHA",MavTV Select (720p)
+#EXTVLCOPT:network-caching=1000
+https://mavtv-mavtvglobal-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Mírame TV (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://bit.controlstreams.com:5443/LiveApp/streams/mirametv.m3u8
+#EXTINF:0 group-title= "ESPANHA",Navarra TV (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://pc-sumandocomunicacion-hls.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",NIUS (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://mdslivehlsb-i.akamaihd.net/hls/live/875601-b/niusdiario/01.m3u8
+#EXTINF:0 group-title= "ESPANHA",Noroeste TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloudvideo.servers10.com:8081/8032/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",NTV Europe (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/ntvuk00332211.stream/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Oizmendi Telebista (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://5940924978228.streamlock.net/8161/8161/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Onda Cádiz (1080p)
+#EXTVLCOPT:network-caching=1000
+https://adc-hls.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",OndaMezquita 7 TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloud.streamingconnect.tv:455/mezquita/mezquita.m3u8
+#EXTINF:0 group-title= "ESPANHA",Pequeradio (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
+#EXTINF:0 group-title= "ESPANHA",Platzi TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://mdstrm.com/live-stream-playlist/5b9076d18ef7b22560354649.m3u8
+#EXTINF:0 group-title= "ESPANHA",Popular TV Cantabria (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Popular TV Melilla (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://5940924978228.streamlock.net:1935/8009/8009/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Popular TV Murcia (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloud.streamingconnect.tv:455/populartvrm/populartvrm.m3u8
+#EXTINF:0 group-title= "ESPANHA",Punt 3 Vall Uixó (1080p)
+#EXTVLCOPT:network-caching=1000
+https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8
+#EXTINF:0 group-title= "ESPANHA",Radio Rutas del Perú (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://tv.portalexpress.es:3731/stream/play.m3u8
+#EXTINF:0 group-title= "ESPANHA",Radio Televisión Melilla (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://tvmelilla-hls-rm-lw.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Rakuten Family (Finland) (720p)
+#EXTVLCOPT:network-caching=1000
+https://rakuten-family-12-fi.samsung.wurl.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Rakuten Top Free 1 (720p)
+#EXTVLCOPT:network-caching=1000
+https://rakuten-topfree-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Rakuten Top Free 2 (720p)
+#EXTVLCOPT:network-caching=1000
+https://rakuten-topfree-2-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Rakuten Top Free 3 (720p)
+#EXTVLCOPT:network-caching=1000
+https://rakuten-topfree-3-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Rakuten Top Free 6 (720p)
+#EXTVLCOPT:network-caching=1000
+https://rakuten-topfree-6-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Rakuten Top Free 7 (720p)
+#EXTVLCOPT:network-caching=1000
+https://rakuten-topfree-7-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Real Madrid TV (404p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Real Madrid TV US Version (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-news-manifest.tubi.video/live-news-manifest/csm/extlive/tubiprd01group-title= "ESPANHA",Real-Madrid.m3u8
+#EXTINF:0 group-title= "ESPANHA",Red Bull TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",RT Documentary (1080p)
+#EXTVLCOPT:network-caching=1000
+https://rt-rtd.gcdn.co/live/rtdoc/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",RT en Español (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://rt-esp.gcdn.co/live/rtesp/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",RT News (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/rt_hd/rt_hd0.m3u8
+#EXTINF:0 group-title= "ESPANHA",RTV Vida (1080p)
+#EXTVLCOPT:network-caching=1000
+https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8
+#EXTINF:0 group-title= "ESPANHA",RTVC (Radio Televisión Canaria) (720p)
+#EXTVLCOPT:network-caching=1000
+https://rtvc-live1-rm.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",RTVE (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/index_1500_av-b.m3u8
+#EXTINF:0 group-title= "ESPANHA",Sal Televisión (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://www.tdtchannels.com/stream/saltv.m3u8
+#EXTINF:0 group-title= "ESPANHA",Sevilla FC TV (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8
+#EXTINF:0 group-title= "ESPANHA",Solidaria TV (720p)
+#EXTVLCOPT:network-caching=1000
+https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8
+#EXTINF:0 group-title= "ESPANHA",Sophia TV (720p)
+#EXTVLCOPT:network-caching=1000
+https://www.onairport.live/sophiatv-es-live/livestream/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",TAC 12 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://nodo01-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
+#EXTINF:0 group-title= "ESPANHA",Tarotéame (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://93.93.67.117:1935/taroteame/tarot_web/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Tarotvision (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://149.12.64.81:8080/hls/tarotvision.m3u8
+#EXTINF:0 group-title= "ESPANHA",Tele Safor (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://video.telesafor.com/hls/video.m3u8
+#EXTINF:0 group-title= "ESPANHA",Teledeporte (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://rtvelivestreamv3.akamaized.net/rtvesec/tdp_bkp_dvr.m3u8
+#EXTINF:0 group-title= "ESPANHA",TeleGilena (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://5940924978228.streamlock.net/Directo1/Directo1/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Telemadrid (720p)
+#EXTVLCOPT:network-caching=1000
+https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/telemadrid_1/index.m3u8
+#EXTINF:0 group-title= "ESPANHA",TeleRibera (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://37.187.7.106/teleribera/live.m3u8
+#EXTINF:0 group-title= "ESPANHA",TeleToledo (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloud.streamingconnect.tv:455/teletoledo/teletoledo.m3u8
+#EXTINF:0 group-title= "ESPANHA",TeleVigo (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cloud.streamingconnect.tv:455/televigo/televigo.m3u8
+#EXTINF:0 group-title= "ESPANHA",TEN TV (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://91.126.141.201:1935/live/smil:ten.smil/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",teve.cat (1080p)
+#EXTVLCOPT:network-caching=1000
+https://limited35.todostreaming.es/live/mitjans-livestream.m3u8
+#EXTINF:0 group-title= "ESPANHA",Trace Sport Stars (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://tracesportstars-samsunges.amagi.tv/hls/amagi_hls_data_samsunguk-tracesport-samsungspain/CDN/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Trebujena TV (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://212.104.160.156:1935/live/trebujenatv2/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Trece TV (576p)
+#EXTVLCOPT:network-caching=1000
+https://live-edge-bhs-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TRT World (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://tv-trtworld.live.trt.com.tr/master.m3u8
+#EXTINF:0 group-title= "ESPANHA",Tuya La Janda Televisión (1080p)
+#EXTVLCOPT:network-caching=1000
+http://185.210.20.13:8080/0.m3u8
+#EXTINF:0 group-title= "ESPANHA",TV3CAT (1080p)
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist_DVR.m3u8
+#EXTINF:0 group-title= "ESPANHA",TV3 Catalunya (1080p)
+#EXTVLCOPT:network-caching=1000
+https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TV Artequatre (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://streaming01.gestec-video.com/hls/artequatreTVA.m3u8
+#EXTINF:0 group-title= "ESPANHA",TV Girona (720p)
+#EXTVLCOPT:network-caching=1000
+http://ventdelnord.tv:8080/girona/directe.m3u8
+#EXTINF:0 group-title= "ESPANHA",TV Vega Baja (576p)
+#EXTVLCOPT:network-caching=1000
+http://185.29.68.24/tvb.m3u8
+#EXTINF:0 group-title= "ESPANHA",tvG2 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://events2-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG América (720p)
+#EXTVLCOPT:network-caching=1000
+https://america-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG Cultural (720p)
+#EXTVLCOPT:network-caching=1000
+https://cultural-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG Europa (720p)
+#EXTVLCOPT:network-caching=1000
+https://europa-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG Evento 1 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://events1-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG Infantil (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://infantil-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG Momento (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://momentog-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",TVG Musigal (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://musigal-crtvg.flumotion.com/playlist.m3u8
+#EXTINF:0 group-title= "ESPANHA",Une Vinalopó (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://78.41.83.88:8880/hls/unesd.m3u8
+#EXTINF:0 group-title= "ESPANHA",Ventdelnord TV (404p) [Offline]
+#EXTVLCOPT:network-caching=1000
+http://ventdelnord.tv:8080/hls/directe.m3u8
+#EXTINF:0 group-title= "ESPANHA",Visión 6 TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://secure3.todostreaming.es/live/visionseis-livestream.m3u8
+
+#EXTINF:-1,A3INTERNACIONAL
+http://45.189.108.58:10000/play/a040/index.m3u8
+#EXTINF:-1,A3SERIES
+http://45.189.108.58:10000/play/a04z/index.m3u8
+#EXTINF:-1,ACN
+http://45.189.108.58:10000/play/a05z/index.m3u8
+#EXTINF:-1,AE Mundo
+http://45.189.108.58:10000/play/a00j/index.m3u8
+#EXTINF:-1,AMC HD
+http://45.189.108.58:10000/play/a020/index.m3u8
+#EXTINF:-1,AMERICAHD
+http://45.189.108.58:10000/play/a00r/index.m3u8
+#EXTINF:-1,ATV
+http://45.189.108.58:10000/play/a04u/index.m3u8
+#EXTINF:-1,ATV NOTICIASHD
+http://45.189.108.58:10000/play/a00w/index.m3u8
+#EXTINF:-1,ATVHD
+http://45.189.108.58:10000/play/a00v/index.m3u8
+#EXTINF:-1,AXN
+http://45.189.108.58:10000/play/a03g/index.m3u8
+#EXTINF:-1,AZ click HD
+http://45.189.108.58:10000/play/a021/index.m3u8
+#EXTINF:-1,AmericaTV
+http://45.189.108.58:10000/play/a04s/index.m3u8
+#EXTINF:-1,Animal Planet
+http://45.189.108.58:10000/play/a00a/index.m3u8
+#EXTINF:-1,CLAVE
+http://45.189.108.58:10000/play/a060/index.m3u8
+#EXTINF:-1,CNN Chile
+http://45.189.108.58:10000/play/a01g/index.m3u8
+#EXTINF:-1,CNN Espanol
+http://45.189.108.58:10000/play/a02t/index.m3u8
+#EXTINF:-1,CONTRIBUCION
+http://45.189.108.58:10000/play/a058/index.m3u8
+#EXTINF:-1,CUBAVISION INTERNACIONAL
+http://45.189.108.58:10000/play/a00y/index.m3u8
+#EXTINF:-1,CUBAVISIONINT
+http://45.189.108.58:10000/play/a05d/index.m3u8
+#EXTINF:-1,CVI
+http://45.189.108.58:10000/play/a066/index.m3u8
+#EXTINF:-1,Canal Estrellas
+http://45.189.108.58:10000/play/a00n/index.m3u8
+#EXTINF:-1,Cartoon Network
+http://45.189.108.58:10000/play/a01k/index.m3u8
+#EXTINF:-1,Cinecanal
+http://45.189.108.58:10000/play/a01a/index.m3u8
+#EXTINF:-1,Cinemax
+http://45.189.108.58:10000/play/a03e/index.m3u8
+#EXTINF:-1,Claro Sports
+http://45.189.108.58:10000/play/a01m/index.m3u8
+#EXTINF:-1,Comedy Central HD
+http://45.189.108.58:10000/play/a01u/index.m3u8
+#EXTINF:-1,DWHD
+http://45.189.108.58:10000/play/a05u/index.m3u8
+#EXTINF:-1,Discovery Channel
+http://45.189.108.58:10000/play/a009/index.m3u8
+#EXTINF:-1,Discovery ID
+http://45.189.108.58:10000/play/a04l/index.m3u8
+#EXTINF:-1,Discovery Kids
+http://45.189.108.58:10000/play/a02s/index.m3u8
+#EXTINF:-1,Discovery Turbo
+http://45.189.108.58:10000/play/a03r/index.m3u8
+#EXTINF:-1,Disney Channel
+http://45.189.108.58:10000/play/a008/index.m3u8
+#EXTINF:-1,Disney Jr
+http://45.189.108.58:10000/play/a036/index.m3u8
+#EXTINF:-1,Disney 😆
+http://45.189.108.58:10000/play/a017/index.m3u8
+#EXTINF:-1,E Entertainment
+http://45.189.108.58:10000/play/a00c/index.m3u8
+#EXTINF:-1,EDUCATIVO1
+http://45.189.108.58:10000/play/a05x/index.m3u8
+#EXTINF:-1,EDUCATIVO2
+http://45.189.108.58:10000/play/a05y/index.m3u8
+#EXTINF:-1,ESPN
+http://45.189.108.58:10000/play/a00f/index.m3u8
+#EXTINF:-1,ESPN 2
+http://45.189.108.58:10000/play/a038/index.m3u8
+#EXTINF:-1,ESPN 2 Latin
+http://45.189.108.58:10000/play/a00e/index.m3u8
+#EXTINF:-1,ESPN 3
+http://45.189.108.58:10000/play/a03t/index.m3u8
+#EXTINF:-1,ESPN 4
+http://45.189.108.58:10000/play/a04v/index.m3u8
+#EXTINF:-1,EXITOSAHD
+http://45.189.108.58:10000/play/a00z/index.m3u8
+#EXTINF:-1,Enlace
+http://45.189.108.58:10000/play/a01p/index.m3u8
+#EXTINF:-1,Esne TV
+http://45.189.108.58:10000/play/a03s/index.m3u8
+#EXTINF:-1,FX
+http://45.189.108.58:10000/play/a03i/index.m3u8
+#EXTINF:-1,FXM
+http://45.189.108.58:10000/play/a02z/index.m3u8
+#EXTINF:-1,Fox Sports 2
+http://45.189.108.58:10000/play/a00o/index.m3u8
+#EXTINF:-1,Fox Sports 3
+http://45.189.108.58:10000/play/a00p/index.m3u8
+#EXTINF:-1,France 24
+http://45.189.108.58:10000/play/a04m/index.m3u8
+#EXTINF:-1,GLOBALHD
+http://45.189.108.58:10000/play/a063/index.m3u8
+#EXTINF:-1,GOLDEN
+http://45.189.108.58:10000/play/a057/index.m3u8
+#EXTINF:-1,Gourmet
+http://45.189.108.58:10000/play/a05t/index.m3u8
+#EXTINF:-1,H2
+http://45.189.108.58:10000/play/a05a/index.m3u8
+#EXTINF:-1,HISPANTVHD
+http://45.189.108.58:10000/play/a062/index.m3u8
+#EXTINF:-1,HOLA! TV HD
+http://45.189.108.58:10000/play/a01t/index.m3u8
+#EXTINF:-1,History Channel
+http://45.189.108.58:10000/play/a019/index.m3u8
+#EXTINF:-1,HomeandHealth
+http://45.189.108.58:10000/play/a04q/index.m3u8
+#EXTINF:-1,I-Sat
+http://45.189.108.58:10000/play/a01c/index.m3u8
+#EXTINF:-1,INFANTIL
+http://45.189.108.58:10000/play/a05w/index.m3u8
+#EXTINF:-1,IPEHD
+http://45.189.108.58:10000/play/a013/index.m3u8
+#EXTINF:-1,JUSTICIATV
+http://45.189.108.58:10000/play/a064/index.m3u8
+#EXTINF:-1,KARIBENAHD
+http://45.189.108.58:10000/play/a010/index.m3u8
+#EXTINF:-1,LATELE
+http://45.189.108.58:10000/play/a053/index.m3u8
+#EXTINF:-1,LATINAHD
+http://45.189.108.58:10000/play/a006/index.m3u8
+#EXTINF:-1,Latina
+http://45.189.108.58:10000/play/a04r/index.m3u8
+#EXTINF:-1 group-title="MTV WORLD",MTV
+http://45.189.108.58:10000/play/a01d/index.m3u8
+#EXTINF:-1,MULTIVISION
+http://45.189.108.58:10000/play/a05b/index.m3u8
+#EXTINF:-1,MULTIVISION
+http://45.189.108.58:10000/play/a001/index.m3u8
+#EXTINF:-1,NATGEOWILD
+http://45.189.108.58:10000/play/a05r/index.m3u8
+#EXTINF:-1,Nat Geo
+http://45.189.108.58:10000/play/a018/index.m3u8
+#EXTINF:-1,NatGeo Kids
+http://45.189.108.58:10000/play/a01j/index.m3u8
+#EXTINF:-1,Nick Jr
+http://45.189.108.58:10000/play/a03q/index.m3u8
+#EXTINF:-1,Nickelodeon
+http://45.189.108.58:10000/play/a016/index.m3u8
+#EXTINF:-1,PANAMERICANAHD
+http://45.189.108.58:10000/play/a002/index.m3u8
+#EXTINF:-1,PAXTV
+http://45.189.108.58:10000/play/a061/index.m3u8
+#EXTINF:-1,Panamericana TV
+http://45.189.108.58:10000/play/a04t/index.m3u8
+#EXTINF:-1,RADIOZ
+http://45.189.108.58:10000/play/a011/index.m3u8
+#EXTINF:-1,RCN Novelas
+http://45.189.108.58:10000/play/a04k/index.m3u8
+#EXTINF:-1,RTHD
+http://45.189.108.58:10000/play/a05v/index.m3u8
+#EXTINF:-1,STAR CHANNEL
+http://45.189.108.58:10000/play/a01h/index.m3u8
+#EXTINF:-1,STAR LIFE
+http://45.189.108.58:10000/play/a01f/index.m3u8
+#EXTINF:-1,Sin Limites
+http://45.189.108.58:10000/play/a04y/index.m3u8
+#EXTINF:-1,Sony
+http://45.189.108.58:10000/play/a03f/index.m3u8
+#EXTINF:-1,Space
+http://45.189.108.58:10000/play/a03h/index.m3u8
+#EXTINF:-1,TBS
+http://45.189.108.58:10000/play/a04o/index.m3u8
+#EXTINF:-1,TCM
+http://45.189.108.58:10000/play/a01i/index.m3u8
+#EXTINF:-1,TELEREBELDE
+http://45.189.108.58:10000/play/a05c/index.m3u8
+#EXTINF:-1,TLC
+http://45.189.108.58:10000/play/a00l/index.m3u8
+#EXTINF:-1,TNT
+http://45.189.108.58:10000/play/a01l/index.m3u8
+#EXTINF:-1,TNT HD
+http://45.189.108.58:10000/play/a01r/index.m3u8
+#EXTINF:-1,TNTSERIES
+http://45.189.108.58:10000/play/a05s/index.m3u8
+#EXTINF:-1,TV Peru
+http://45.189.108.58:10000/play/a04w/index.m3u8
+#EXTINF:-1,TVE
+http://45.189.108.58:10000/play/a01q/index.m3u8
+#EXTINF:-1,TVPERUHD
+http://45.189.108.58:10000/play/a00t/index.m3u8
+#EXTINF:-1,TVPERUNOTICIASHD
+http://45.189.108.58:10000/play/a012/index.m3u8
+#EXTINF:-1,Telemundo
+http://45.189.108.58:10000/play/a00q/index.m3u8
+#EXTINF:-1,TyC
+http://45.189.108.58:10000/play/a00h/index.m3u8
+#EXTINF:-1,UCIHD
+http://45.189.108.58:10000/play/a065/index.m3u8
+#EXTINF:-1,UNIVERSAL CRIME HD
+http://45.189.108.58:10000/play/a01y/index.m3u8
+#EXTINF:-1,UNIVERSAL PREMIERE HD
+http://45.189.108.58:10000/play/a01v/index.m3u8
+#EXTINF:-1,UNIVERSAL PREMIERE O HD
+http://45.189.108.58:10000/play/a01w/index.m3u8
+#EXTINF:-1,UNIVERSAL REALITY HD
+http://45.189.108.58:10000/play/a01x/index.m3u8
+#EXTINF:-1,Universal
+http://45.189.108.58:10000/play/a01b/index.m3u8
+#EXTINF:-1,Universal Cinema SD
+http://45.189.108.58:10000/play/a03a/index.m3u8
+#EXTINF:-1,Universal Comedy SD
+http://45.189.108.58:10000/play/a03b/index.m3u8
+#EXTINF:-1,Universal Premiere SD
+http://45.189.108.58:10000/play/a039/index.m3u8
+#EXTINF:-1,VATICANHD
+http://45.189.108.58:10000/play/a056/index.m3u8
+#EXTINF:-1,Venus
+http://45.189.108.58:10000/play/a00k/index.m3u8
+#EXTINF:-1,ViaX
+http://45.189.108.58:10000/play/a00m/index.m3u8
+#EXTINF:-1,WILLAX
+http://45.189.108.58:10000/play/a04p/index.m3u8
+#EXTINF:-1,WILLAXHD
+http://45.189.108.58:10000/play/a005/index.m3u8
+#EXTINF:-1,Warner
+http://45.189.108.58:10000/play/a00b/index.m3u8
+#EXTINF:-1,Zona Latina
+http://45.189.108.58:10000/play/a01e/index.m3u8
+
+
+#EXTINF:-1,La 1
+http://79.147.151.106:8069/udp/239.250.1.1:1234
+#EXTINF:-1,La 2
+http://79.147.151.106:8069/udp/239.250.1.2:1234
+#EXTINF:-1,24h
+http://79.147.151.106:8069/udp/239.250.1.3:1234
+#EXTINF:-1,Disney Channel
+http://79.147.151.106:8069/udp/239.250.3.1:1234
+#EXTINF:-1,DMAX
+http://79.147.151.106:8069/udp/239.250.3.3:1234
+#EXTINF:-1,PARAMOUNT NETWORK
+http://79.147.151.106:8069/udp/239.250.3.2:1234
+#EXTINF:-1,GOL
+http://79.147.151.106:8069/udp/239.250.3.4:1234
+#EXTINF:-1,antena3
+http://79.147.151.106:8069/udp/239.250.4.1:1234
+#EXTINF:-1,laSexta
+http://79.147.151.106:8069/udp/239.250.4.2:1234
+#EXTINF:-1,nova
+http://79.147.151.106:8069/udp/239.250.4.4:1234
+#EXTINF:-1,neox
+http://79.147.151.106:8069/udp/239.250.4.3:1234
+#EXTINF:-1,laSexta HD
+http://79.147.151.106:8069/udp/239.250.4.6:1234
+#EXTINF:-1,Telecinco
+http://79.147.151.106:8069/udp/239.250.5.1:1234
+#EXTINF:-1,FDF
+http://79.147.151.106:8069/udp/239.250.5.3:1234
+#EXTINF:-1,Divinity
+http://79.147.151.106:8069/udp/239.250.5.4:1234
+#EXTINF:-1,RADIO MARCA
+http://79.147.151.106:8069/udp/239.250.5.2:1234
+#EXTINF:-1,Telemadrid
+http://79.147.151.106:8069/udp/239.255.3.2:1234
+#EXTINF:-1,Telemadrid HD
+http://79.147.151.106:8069/udp/239.255.3.1:1234
+#EXTINF:-1,LA OTRA
+http://79.147.151.106:8069/udp/239.255.3.3:1234
+#EXTINF:-1,BOM
+http://79.147.151.106:8069/udp/239.255.3.4:1234
+#EXTINF:-1,ONDA MADRID
+http://79.147.151.106:8069/udp/239.255.3.5:1234
+#EXTINF:-1,La 1 HD
+http://79.147.151.106:8069/udp/239.255.4.4:1234
+#EXTINF:-1,La 2 HD
+http://79.147.151.106:8069/udp/239.255.4.6:1234
+#EXTINF:-1,antena3 HD
+http://79.147.151.106:8069/udp/239.255.4.14:1234
+#EXTINF:-1,laSexta HD
+http://79.147.151.106:8069/udp/239.255.4.18:1234
+#EXTINF:-1,Telemadrid HD
+http://79.147.151.106:8069/udp/239.255.4.19:1234
+#EXTINF:-1,antena3 HD
+http://79.147.151.106:8069/udp/239.255.4.25:1234
+#EXTINF:-1,Telecinco HD
+http://79.147.151.106:8069/udp/239.255.4.47:1234
+#EXTINF:-1,Cuatro HD
+http://79.147.151.106:8069/udp/239.255.4.49:1234
+#EXTINF:-1,LA OTRA HD
+http://79.147.151.106:8069/udp/239.255.4.53:1234
+#EXTINF:-1,GOL
+http://79.147.151.106:8069/udp/239.255.4.57:1234
+#EXTINF:-1,Radio Nacional de Espaёa
+http://79.147.151.106:8069/udp/239.255.4.74:1234
+#EXTINF:-1,La 1 HD
+http://79.147.151.106:8069/udp/239.255.4.73:1234
+#EXTINF:-1,Telemadrid HD
+http://79.147.151.106:8069/udp/239.255.4.76:1234
+#EXTINF:-1,Vaughan Radio
+http://79.147.151.106:8069/udp/239.255.4.79:1234
+#EXTINF:-1,La 2 HD
+http://79.147.151.106:8069/udp/239.255.4.77:1234
+#EXTINF:-1,CADENA 100
+http://79.147.151.106:8069/udp/239.255.4.81:1234
+
+
+#EXTINF:-1,MOVISTAR Comedia FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/1146
+#EXTINF:-1,MOVISTAR Cine ñ
+http://iptvmedia.live:8080/FM10008/ee54fb4b/64788
+#EXTINF:-1,Movistar Cine ñ
+http://94.177.158.190:8081/live/MCineEspanol.m3u8/chunks.m3u8
+#EXTINF:-1,MOVISTAR Accion FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/1148
+#EXTINF:-1,MOVISTAR Sagas HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/284596
+#EXTINF:-1,Movistar Acción FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/75926
+#EXTINF:-1,MOVISTAR Cine Clasicos HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/281773
+#EXTINF:-1,MOVISTAR Drama FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/1144
+#EXTINF:-1,MOVISTAR Estrenos FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/1143
+#EXTINF:-1,MOVISTAR Fest HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/168992
+#EXTINF:-1,MOVISTAR La Resistencia HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/286800
+#EXTINF:-1,MOVISTAR Series FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/1140
+#EXTINF:-1,MOVISTAR Series 2 FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/1139
+
+
+#EXTINF:-1,NEOX HD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/2208
+#EXTINF:-1,Atreseries FHD
+http://iptvmedia.live:8080/FM10008/ee54fb4b/9102

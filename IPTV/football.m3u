@@ -1,0 +1,301 @@
+#EXTM3U
+
+#EXTINF:-1  ,Star sports Select 1 HD
+
+http://172.16.29.250/hls/Star_Sport_Select1HD.m3u8
+
+#EXTINF:-1 ,SKY SPORTS PREMIER LEAGUE [FHD]
+
+http://tvpanel.one:80/live/den9179/611carc/586761.m3u8
+
+#EXTINF:-1 ,SKY SPORTS PREMIER LEAGUE [HD]
+
+http://tvpanel.one:80/live/den9179/611carc/586762.m3u8
+
+#EXTINF:-1 ,SKY SPORTS FOOTBALL [FHD]
+
+http://tvpanel.one:80/live/den9179/611carc/586763.m3u8
+
+#EXTINF:-1 ,SKY SPORTS FOOTBALL [HD]
+
+http://tvpanel.one:80/live/den9179/611carc/586764.m3u8
+
+#EXTINF:-1 ,beINSPORTS 1 HD+
+
+http://2111.space:8080/live/hossam1/hossam1/42486.ts
+
+#EXTINF:-1 ,SPORT TV 1 🇵🇹
+
+http://185.236.229.13:4000/play/a040
+
+#EXTINF:-1 ,SPORT TV 1 🇵🇹
+
+http://maxfolker.rossteleccom.net/iptv/4N3VF4TY2PZ8R8/2525/index.m3u8
+
+#EXTINF:-1 ,Sport TV 1 HD 🇵🇹
+
+http://161.230.47.149:4344/play/a01k
+
+#EXTINF:-1 ,DIRECTV SPORTS 🇦🇷
+
+http://200.52.154.125:8000/play/a06p/index.m3u8
+
+#EXTINF:-1 ,RTSH Sport 🇦🇱
+
+http://95.107.132.105/out/u/638_1.m3u8
+
+#EXTINF:-1 ,RTSH Sport 🇦🇱
+
+http://185.226.88.6:9510/tch
+
+#EXTINF:-1 ,ZDF 🇩🇪
+
+https://s6.hopslan.com/zdfg1/index.m3u8
+
+#EXTINF:-1 ,HRT 2 🇭🇷
+
+http://195.29.70.67/PLTV/88888888/224/3221226140/index.m3u8?
+
+#EXTINF:-1 ,HRT 2 🇭🇷
+
+http://212.200.197.0:8002/play/a012/index.m3u8
+
+#EXTINF:-1 ,RTK 1 🇽🇰
+
+http://91.187.110.91:5252/rtk1hd
+
+#EXTINF:-1 ,TVK CAMBOYA 🇰🇭
+
+http://203.176.130.123:8989/live/tvk_480k.stream/chunklist.m3u8?
+
+#EXTINF:-1 ,TRT 1 🇹🇷
+
+http://195.155.98.170:5858/play/a09j?checkedby:iptvcat.com
+
+#EXTINF:-1 ,Rai 2 🇮🇹
+
+http://149.22.208.21:9898/play/a00o
+
+#EXTINF:-1 ,Rai 2 🇮🇹
+
+http://146.19.16.211:8018/play/a05c
+
+#EXTINF:-1 ,RTP 1 HD 🇵🇹
+
+http://194.44.48.82:8002/play/a08d
+
+#EXTINF:-1 ,ESPN + 🇺🇸
+
+http://31.14.41.118:8080/live/TViBOXRU/DbTVQJpf1z/35059.ts
+
+#EXTINF:-1 ,ESPN DEPORTES 🇦🇷
+
+http://38.143.137.221:8000/LA81/index.m3u8
+
+#EXTINF:-1 ,LALIGA TV 🇪🇸
+
+http://188.26.204.204:8888/play/davidALCARRER
+
+#EXTINF:-1 ,SKY SPORTS 🇲🇽
+
+http://200.52.154.125:8000/play/a06t/index.m3u8
+
+#EXTINF:-1 ,VIX+ 🇲🇽
+
+http://200.52.154.125:8000/play/a06w/index.m3u8
+
+#EXTINF:-1 ,TIGO SPORTS 🇲🇽
+
+http://190.61.102.67:31589/play/a08q/index.m3u8
+
+#EXTINF:-1 ,ESPN 🇧🇷
+
+http://51.79.82.208:16417
+
+#EXTINF:-1 ,ESPN 🇧🇷
+
+http://189.91.128.146:4444/udp/227.10.20.81:1234
+
+#EXTINF:-1 ,Eleven 2 HD 🇵🇹
+
+http://maxfolker.rossteleccom.net/iptv/4N3VF4TY2PZ8R8/2532/index.m3u8
+
+#EXTINF:-1 ,SCTV 17 🇻🇳
+
+http://vtsstr4.sctv.vn:1935/live/SCTV17_HD_new.smil/CDAM.m3u8
+
+#EXTINF:-1 ,Eleven 1 HD 🇵🇹
+
+http://maxfolker.rossteleccom.net/iptv/4N3VF4TY2PZ8R8/2531/index.m3u8
+
+#EXTINF:-1 ,Eleven 1 HD 🇵🇹
+
+http://golive.yn.lt/live/bola/01.m3u8
+
+#EXTINF:-1 ,MTV INDIA 🇮🇳
+
+http://144.217.70.181:9587/hin2/MTVINDIA/tracks-v1a1/mono.m3u8?token=test
+
+#EXTINF:-1 ,BEIN SPORT 3 🇬🇧
+
+http://175.107.244.52:4457/play/a06x/index.m3u8
+
+#EXTINF:-1 ,BEIN SPORT 3 🇬🇧
+
+http://102.222.232.18:9981/stream/channelid/2100170847?ticket=5CC008508EA4755ED1EF71AF84E018D45AD5E286&profile=matroska
+
+#EXTINF:-1 ,BEIN SPORT 3 🇬🇧
+
+http://102.222.232.18:9981/stream/channelid/2100170847?ticket=206EE47921F25EE1A5AF97E218B33DA299AACA12&profile=matroska
+
+#EXTINF:-1 ,SUPERSPORT 2 🇦🇱
+
+http://ott.global-telecom.eu:25461/mirobec3378/AxRwxqx79k/789
+
+#EXTINF:-1 ,SUPERSPORT 2 🇦🇱
+
+http://185.226.88.6:11026/live/OUT2QyrOQS8xw/UkPn4unfnR/179.ts?|User-Agent=Lavf/57.56.100
+
+#EXTINF:-1 ,SUPERSPORT 2 🇦🇱
+
+http://37.49.230.48:8080/live/GenIptvLast/FaP6YswK77NaOPOF/1312.ts
+
+#EXTINF:-1 ,SUPERSPORT 3 🇦🇱
+
+http://ott.global-telecom.eu:25461/mirobec3378/AxRwxqx79k/790
+
+#EXTINF:-1 ,SUPERSPORT 3 🇦🇱
+
+http://super-media.giize.com:80/sstvwhatchap@gmail.com/upwQb3d9D3/116924.ts
+
+#EXTINF:-1 ,SUPERSPORT 3 🇦🇱
+
+http://37.49.230.48:8080/live/GenIptvLast/FaP6YswK77NaOPOF/1319.ts
+
+#EXTINF:-1 ,SUPERSPORT 3 🇦🇱
+
+http://37.49.230.48:8080/live/GenIptvLast/FaP6YswK77NaOPOF/3638.ts
+
+#EXTINF:-1 ,SUPERSPORT 4 🇦🇱
+
+http://ott.global-telecom.eu:25461/mirobec3378/AxRwxqx79k/791
+
+#EXTINF:-1 ,SUPERSPORT 4 🇦🇱
+
+http://super-media.giize.com:80/sstvwhatchap@gmail.com/upwQb3d9D3/116925.ts
+
+#EXTINF:-1 ,SUPERSPORT 4 🇦🇱
+
+http://37.49.230.48:8080/live/GenIptvLast/FaP6YswK77NaOPOF/1318.ts
+
+#EXTINF:-1 ,SUPERSPORT 5 🇦🇱
+
+http://ott.global-telecom.eu:25461/mirobec3378/AxRwxqx79k/792
+
+#EXTINF:-1 ,SUPERSPORT 5 🇦🇱
+
+http://super-media.giize.com:80/sstvwhatchap@gmail.com/upwQb3d9D3/116926.ts
+
+#EXTINF:-1 ,Gazi TV Freecatv
+
+http://172.16.29.250/hls/Gazi-TV.m3u8
+
+#EXTINF:-1 ,BeIN Sports 1
+
+http://93.152.174.144:4000/play/bein1fr/index.m3u8
+
+#EXTINF:-1 ,FOX NET EAST
+
+http://89.187.175.143:80/4175/index.m3u8
+
+#EXTINF:-1 ,SEC Network HD
+
+http://89.187.175.143:80/3054/index.m3u8
+
+#EXTINF:-1 ,ALTITUDE SPORTS
+
+http://89.187.175.143:80/4164/index.m3u8
+
+#EXTINF:-1 ,MLB NETWORK HD
+
+http://89.187.175.143:80/3003/index.m3u8
+
+#EXTINF:-1 ,NFL HD
+
+http://89.187.175.143:80/3190/index.m3u8
+
+#EXTINF:-1 ,NBC GOLF
+
+http://89.187.175.143:80/3013/index.m3u8
+
+#EXTINF:-1 ,ACC NETWORK HD
+
+http://89.187.175.143:80/3111/index.m3u8
+
+#EXTINF:-1 ,SNY
+
+http://89.187.175.143:80/4091/index.m3u8
+
+#EXTINF:-1 ,Bally Sports San Diego
+
+http://89.187.175.143:80/4181/index.m3u8
+
+#EXTINF:-1 ,TSN1 HD
+
+http://89.187.175.143:80/3038/index.m3u8
+
+#EXTINF:-1 ,TSN2 HD
+
+https://is.gd/MnvJnF
+
+#EXTINF:-1 ,TSN3 HD
+
+http://89.187.175.143:80/3046/index.m3u8
+
+#EXTINF:-1 ,TSN4 HD
+
+http://89.187.175.143:80/3047/index.m3u8
+
+#EXTINF:-1 ,TSN5 HD
+
+http://89.187.175.143:80/3048/index.m3u8
+
+#EXTINF:-1 ,Freecatv Live IPTV
+
+https://drive.google.com/uc?export=download&id=1fJ46hqkJXL-lJbYegEfuG5XLOU8aEk1b
+
+#EXTINF:-1 ,EDGE SPORTS U.S.A [HD]
+
+https://edgesport-samsungus.amagi.tv/playlist720p.m3u8?checkedby:D4N-IPTV
+
+#EXTINF:-1 ,SKY SPORTS FOOTBALL
+
+http://dominoiptv.com:2082/Fauconcon/pzAXuZwFdAjy/104048
+
+#EXTINF:-1 ,beiN Sport 2 English
+
+http://quality-restream.com:8080/GenIptvLast/FaP6YswK77NaOPOF/111
+
+#EXTINF:-1 ,BeIN Sports 2  Premium
+
+http://www.tvxclnt.com:8080/tretvx2022/QP3J8nmeTvIZp82J/2774
+
+#EXTINF:-1 ,BeIN Sports 3  Premium
+
+http://www.tvxclnt.com:8080/tretvx2022/QP3J8nmeTvIZp82J/2775
+
+#EXTINF:-1 ,BeIN Sports 4
+
+http://www.tvxclnt.com:8080/tretvx2022/QP3J8nmeTvIZp82J/2769
+
+#EXTINF:-1 ,beIN Sports 1 English HD 🇬🇧
+
+http://62.182.82.104/L_1_ENGLISH/index.m3u8?token=test&v=697229347
+
+#EXTINF:-1 group-title="freecatv",Star Sports 1 HD
+
+http://172.16.29.250/hls/stersports1hd.m3u8
+
+#EXTINF:-1 group-title="freecatv",Star Sports 2 HD
+
+http://172.16.29.250/hls/starsports2.m3u8

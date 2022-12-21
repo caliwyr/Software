@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<b:include data='blog' name='all-head-content'/>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<title><data:blog.pageTitle/></title>
+<b:else/>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<title><data:blog.pageName/> - <data:blog.title/></title>
+</b:if></b:if>
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+<title>Page Not Found - <data:blog.title/></title>
+</b:if>
+<b:if cond='data:blog.pageType in {&quot;index&quot;} and data:blog.homepageUrl == data:blog.url'>
+<meta expr:content='data:blog.title' name='keywords'/>
+</b:if>    
+<b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
+<meta expr:content='data:blog.pageName' name='keywords'/>
+</b:if>
+<b:if cond='data:blog.pageType in {&quot;archive&quot;} or data:blog.searchLabel or data:blog.searchQuery'>
+<meta content='noindex,nofollow' name='robots'/>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+<meta content='article' property='og:type'/>
+<b:else/>
+<meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta content='website' property='og:type'/>
+</b:if>
+<b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' property='og:description'/></b:if>
+<meta content='xxxxx' property='fb:admins'/>
+<meta content='xxxxx' property='fb:app_id'/>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<link href='https://www.blogger.com/profile/06196182328811376961' rel='publisher'/>
+<link href='https://www.blogger.com/profile/06196182328811376961' rel='author'/>
+<link href='https://www.blogger.com/profile/06196182328811376961' rel='me'/>
+<meta content='OoG3tdpIerg1dVICwwQPW3C6Uv_B5ph1mIV7Ytp6Zho' name='google-site-verification'/>
+<meta expr:content='data:blog.title' name='twitter:site'/>
+<meta content='@xxxxx' name='twitter:creator'/>
+<!-- CHANGE PHONE BAR COLOR -->
+<meta content='#003c8f' name='theme-color'/>
+<meta content='#003c8f' name='msapplication-navbutton-color'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<meta content='#003c8f' name='apple-mobile-web-app-status-bar-style'/>
+<b:skin><![CDATA[
+/*
+Theme Name       : Masign Alpha v2.0
+Theme Date       : 4 Februari 2018
+Theme Update     : 8 Maret 2019
+Designer         : Rhinokage Rio
+URL Designer     : https://www.idblanter.com
+Theme License    : Premium (ALPHA SECURE LICENSE v3.0)
+Credit :
+- https://steelcoders.com/alpha/
+- https://masigngrid.blogspot.com
+*/
+<Group description="New Comment Required - Dont edit">
+<Variable name="body.background" description="Body Background" type="background" color="#000" default="#000 none repeat scroll top left" value="#000 none repeat scroll top left"/>
+<Variable name="body.font" description="Font" type="font" default="normal normal 14px 'roboto', sans-serif" value="normal normal 14px &#39;roboto&#39;, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222" value="#222222"/>
+<Variable name="body.text.font" description="2"
+type="font"
+default="normal normal 14px 'roboto', sans-serif" value="normal normal 14px &#39;roboto&#39;, sans-serif"/>
+<Variable name="posts.background.color" description="6"
+type="color"
+default="#fff" value="#ffffff"/>
+<Variable name="body.link.color" description="7"
+type="color"
+default="#2196f3" value="#2196f3"/>
+<Variable name="body.link.visited.color" description="8"
+type="color"
+default="#2196f3" value="#2196f3"/>
+<Variable name="body.link.hover.color" description="9"
+type="color"
+default="#2196f3" value="#2196f3"/>
+<Variable name="blog.title.font" description="10"
+type="font"
+default="$(robotoBold45)" value="$(robotoBold45)"/>
+<Variable name="blog.title.color" description="11"
+type="color"
+default="#fff" value="#ffffff"/>
+<Variable name="header.icons.color"
+description="12"
+type="color"
+default="#fff" value="#ffffff"/>
+<Variable name="tabs.font" description="13"
+type="font"
+family="'roboto', sans-serif"
+size="14px"
+default="700 normal $(size) $(family)" value="700 normal $(size) $(family)"/>
+<Variable name="tabs.color" description="14"
+type="color"
+default="#ccc" value="#cccccc"/>
+<Variable name="tabs.selected.color" description="15"
+type="color"
+default="#fff" value="#ffffff"/>
+<Variable name="tabs.overflow.background.color" description="16"
+type="color"
+default="#ffffff" value="#ffffff"/>
+<Variable name="tabs.overflow.color" description="17"
+type="color"
+default="#222222" value="#222222"/>
+<Variable name="tabs.overflow.selected.color" description="18"
+type="color"
+default="#212121" value="#212121"/>
+<Variable name="posts.title.color" description="19"
+type="color"
+default="#212121" value="#212121"/>
+<Variable name="posts.title.font" description="20"
+type="font"
+default="$(robotoBold22)" value="$(robotoBold22)"/>
+<Variable name="posts.text.font" description="21"
+type="font"
+default="normal normal 14px 'roboto', sans-serif" value="normal normal 14px &#39;roboto&#39;, sans-serif"/>
+<Variable name="posts.text.color" description="22"
+type="color"
+default="#222222" value="#222222"/>
+<Variable name="posts.icons.color"
+description="23"
+type="color"
+default="#707070" value="#707070"/>
+<Variable name="labels.background.color"
+description="24"
+type="color"
+default="$(sidebar.backgroundColorTopHD)" value="$(sidebar.backgroundColorTopHD)"/>
+</Group>
+#navbar-iframe{height:0;visibility:hidden;display:none}ul{list-style-type:circle}.section,.widget{margin:0}.post-body ol{padding:0 30px}body{background-color:#f6f6f6;color:#4a5764;font-family:'Roboto',Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;text-decoration:none;margin:0;padding:0}iframe{border:none}a,a:link,a:visited,a:active{color:#1565c0;text-decoration:none;transition:all .25s linear}a:hover{color:#444;text-decoration:none;transition:all .5s ease}#responsive,.license-code,h2.date-header,.quickedit,.displaynone{display:none}::selection{background:#b3d4fc;text-shadow:none}abbr{text-decoration:none}#outer-wrapper{position:relative;width:100%;margin:0 auto;margin-top:59px;padding:0;overflow:hidden}#content-wrapper{margin:20px auto;padding-left:150px;position:relative;width:940px;max-width:100%;display:block;transition:all .4s ease-in-out}#main-wrapper,#error-blanter{width:100%;word-wrap:break-word;display:block;padding:0 0 15px;position:relative;margin:0 auto}#sidebar-css{width:310px;border-radius:5px;background:#fff;bottom:0;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);height:100%;top:0;right:0;display:block;float:right}.wrapper{width:1100px;max-width:100%;margin:0 auto}.breadcrumbs{font-size:20px;padding:10px;color:#888;background:#fff;position:relative;margin:-15px -15px 15px;font-family:'Roboto',sans-serif;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom:1px solid #ddd}.breadcrumbs a span{color:#777;text-decoration:none;font-weight:500;padding:0 2px;font-size:13px}.breadcrumbs a{color:#777;padding:5px 2px;font-size:12px}.breadcrumbs span{font-weight:500;font-size:13px}#header-wrapper{background:#fff;height:60px;width:100%;position:fixed;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16);top:0;right:0;left:0;z-index:11;transition:all .5s ease-in-out}#searchwrapper{max-width:100%;margin:0 auto;position:relative}#header{float:left;font-size:160%;text-transform:uppercase;font-weight:300;line-height:57px;margin-top:12px}#header img{margin:0;padding:0;max-width:180px;max-height:70px}.titlewrapper{margin:0;padding:0}.header h1.title,.header p.title{font-size:17px;font-weight:700;color:#555;letter-spacing:-.4px;margin:5px 0}.header .description{display:none}.header a,.header a:hover{color:#333}#search-box{position:relative;width:300px;margin:9px 20px;float:right}#cse-search-box{border-radius:25px;background-color:#eee;overflow:hidden}#search-text{font-size:12px;color:#444;border-width:0;background:transparent;font-family:'Roboto',sans-serif;font-weight:400;line-height:27px;padding:6px 20px 8px 10px}#cse-search-box .blanter-icons{position:absolute;z-index:2;top:12px;left:16px;font-size:18px;color:#555;opacity:.8;transition:all .3s ease-in-out}#search-box input[type="text"]{width:100%;padding-left:45px;opacity:.8;line-height:27px;color:#555;outline:none;font-family:'Roboto',sans-serif;font-weight:400;font-size:14px;transition:all .3s ease-in-out}#search-box .fa-arrow-left{display:none}#cse-search-box::selection{border:#003c8f solid 1px}#search-box input[type="text"]:active,#search-box input[type="text"]:focus,#search-box input[type="text"]:hover,#cse-search-box:hover .material-icons{opacity:1!important}a#showmenu,a#showsearch{text-transform:uppercase;color:#555;font-weight:500;font-size:13px;padding:10px;z-index:9}#showmenu{float:right;padding:7px 10px!important;margin:8px 20px 0;font-size:22px!important;color:#111!important;background:#eee;border-radius:100%}#headermenu{font-family:'Roboto',Arial;visibility:hidden;position:absolute;background:#fff;text-transform:none!important;list-style:none;right:45px;top:45px;padding:0;width:200px;height:1px;transition:all .3s ease-in-out;z-index:9;overflow:hidden;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);opacity:0;border-radius:4px;overflow:hidden}#headermenu li{width:100%}#headermenu li a{padding:10px 15px;width:100%;font-weight:400;color:#666!important;font-size:14px!important}#headermenu li a:hover{background:#e1e1e1}#headermenu.shows{visibility:visible;height:167px;opacity:1}a.blanter{font-size:18px;color:#555;padding:9px 8px;width:24px;text-align:center;margin-top:9px;border-radius:100%;float:right;margin-right:5px;background:#fff}a.blanter:hover{background:#eee}.label-size-1,.label-size-2,.label-size-3,.label-size-4,.label-size-5{font-size:100%;opacity:1}.label-size{background:#fff;display:block;float:left;margin:0 4px 4px 0;color:#999;font-size:11px;line-height:1.2}.label-size a,.label-size span{display:inline-block;color:#666;padding:10px}.label-count{white-space:nowrap;padding-right:3px;margin-left:-3px;color:#999}.label-count:hover{color:#1565c0}#sidebar-css .label-size{position:relative;border:0;display:block;float:left;color:#fff;font-size:12px;margin:0 4px 4px 0}#sidebar-css .label-size a{margin:2px;width:110px;float:left;font-size:13px!important;border-radius:20px;background:#fff;display:inline-block;font-weight:500!important;color:#444;box-shadow:0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149)}#sidebar-css .label-size a:hover{opacity:.8}#sidebar-css .label-size a:before,#sidebar-css .label-size span::before,.input-field .buttonx i,.pencet i,#related-post .material-icons,.breadcrumbs i,.time-publish i,.addcomment i,.js-load i,.tanggal i{font-family:'Font Awesome 5 Free';font-weight:700;font-style:normal;text-decoration:none;content:"\f02b";float:left;margin:-4px 8px -4px -4px;display:block!important;color:#fff;background:linear-gradient(130deg,#d53030,#e8cd24,#41abf6,#34a620);border-radius:100%;padding:5px}.breadcrumbs i,.time-publish i{float:left;font-weight:400;line-height:1.1;font-size:20px;margin:0 8px 0 0;font-family:'Material Icons'}#sidebar-css .label-size a:hover:before,#sidebar-css .label-size span:hover::before{border-color:transparent #1565c0 transparent transparent}#sidebar-css .label-size a:hover,#sidebar-css .label-size span::hover{background:#1565c0}.Label li{margin:0;display:block;transition:all .3s ease-out;padding:0 20px;height:45px;line-height:45px;border-bottom:1px solid #ddd}.Label li a:before{font-family:FontAwesome;font-style:normal;font-weight:400;content:"\f02b";padding:10px;border-radius:100%;background:#eee;margin-right:15px;color:#777;font-size:14px}.Label li a{color:#222}.Label li a:hover{color:#000}.Label li:hover{background:#fbfbfb}.widget-content.list-label-widget-content{background:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 5px 0 rgba(0,0,0,0.12)}.toggleMenu{float:left;padding:10px 12px;margin-top:5px;margin-right:10px;margin-left:15px;font-size:20px;color:#fff!important;border-radius:100%;background:linear-gradient(50deg,#1565c0,#41abf6)}#css-menu{position:fixed;top:60px;width:14.5%;left:0;z-index:10;background:#fff;height:100%;transition:all .4s ease-in-out;box-shadow:0 2px 5px 0 rgba(0,0,0,.12),0 2px 10px 0 rgba(0,0,0,.09)}a.blanter-back{position:inherit!important;top:4px;width:20px;height:20px;padding:13px;z-index:99}#cssmenu,#cssmenu ul{margin:5px 0 0;padding:0;border:0;list-style:none;font-weight:400;text-decoration:none;line-height:1;font-family:'Roboto',sans-serif;font-size:14px;position:relative;text-align:left}#cssmenu a{line-height:1.3;padding:12px 15px}#cssmenu ul li{cursor:pointer;background:#fff;padding:0}#cssmenu ul li a{font-size:13.5px;display:block;color:#777;background:#fff;padding:10px 15px;line-height:2.4;margin:0;font-weight:500}#cssmenu ul li a:hover{text-decoration:none;background:#eee}#cssmenu ul li.active,#cssmenu ul li.active a{background:#eee}#cssmenu ul li.home a:hover{background:#fff}#cssmenu ul li.home{background:#fff;overflow:hidden;color:#444;font-size:18px;font-weight:700;padding:0;display:block;border-bottom:1px solid #eee}#css-menu ul li .caret{position:relative;top:0;float:right;font-size:18px;font-weight:700;margin:8px 0 0 10px}
+#header-background h3{font-size:22px;background:;display:inline-block;color:#fff;padding:10px 15px;text-transform:uppercase;border-radius:10px}#header-background{background:linear-gradient(50deg,#1565c0,#41abf6);text-align:center;color:#fff;font-weight:700;padding:40px;line-height:1.7;padding-left:150px;transition:all .4s ease-in-out}#header-background p{opacity:.8}#header-background.slide{padding-left:0}#cssmenu li span i{background:#1f4c84;color:#fff;border-radius:100%;padding:8px;float:left;margin:-2px 10px 0 0;font-size:19px;width:19px;height:19px}#cssmenu li:nth-child(2) span i{background:#7831ae}#cssmenu li:nth-child(3) span i{background:#34a620}#cssmenu li:nth-child(4) span i{background:#d3177f}#cssmenu li:nth-child(5) span i{background:#d53030}#cssmenu li:nth-child(6) span i{background:#2abd87}#cssmenu li:nth-child(7) span i{background:#8462d8}#cssmenu li:nth-child(8) span i{background:#2aafbd}#menu-widget h2,#css-menu input{display:none}#cssmenu ul ul{padding:0;margin:0;display:none;background:#eee}#cssmenu ul ul li a{color:#777;margin:0;line-height:1.4;border-radius:0;font-weight:400;padding:10px 10px 10px 48px;background:#eee}#cssmenu ul ul li a:hover{background:#ddd}#css-menu.slide{width:4.5%}#css-menu.slide #cssmenu ul li{height:50px;overflow:hidden}#content-wrapper.slide{padding-left:0}#css-menu.disable{left:0!important}#css-menu h3,#css-menu p{padding:0;margin:0}#navmenu2 li i{float:left;margin-right:10px;font-size:18px}#navmenu2.shows{visibility:hidden;margin-left:-20px;opacity:0}.navmenu2 li a{height:30px;text-overflow:ellipsis;overflow:hidden}.navmenu2 li li a{height:auto}#recent-blanter .widget{box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);background:#fff;border-radius:8px;padding:0 0 10px}.post{margin:0;padding:0;background:#fff;position:relative}.post-thumbnail{float:right;margin:0;padding:0}.post h1{display:none}.post-body{line-height:1.8em;color:#555;font-size:100%;padding:0 10px;width:auto!important}.post-body blockquote{line-height:1.3em}.post img{max-width:100%;height:auto;color:#ddd}.separator{float:none;max-width:100%;height:auto;width:auto;margin:0 auto}.separator img{max-width:100%;height:auto;width:auto;margin:0;padding:0}#sharelabel{background:#deedf8;padding:10px 15px;margin:0}#wrap-label{margin:0;padding:0;background:#292e34}.post-body a{color:#1565c0}.infopost{margin:0;padding:0}.postheader{margin-top:20px;padding:0;overflow:hidden}.post-info{padding:10px 15px;margin:0;color:#555;border-top:1px solid #ddd;border-bottom:1px solid #ddd;line-height:1.6em;font-size:13px;overflow:hidden}.post-info i{padding-right:5px}.post-info a{color:#444!important}.time-publish,.comments-publish{text-align:center}#sidebar1,#sidebar2,#sidebar3,#sidebar4,#sidebar6,#sidebar7{margin:0 auto;overflow:hidden;padding:0;margin-bottom:1px}#sidebar-css a:link,#sidebar-css a:visited,#sidebar-css a:active{font-size:100%;text-decoration:none;font-weight:400}#sidebar-css h2{color:#1565c0;font-family:'Roboto',Arial,sans-serif;font-size:13px;font-weight:700;position:relative;margin:0 0 5px;text-transform:uppercase;padding:15px;text-align:center;background:#fff;border-top:1px solid #ddd;border-bottom:2px solid #1565c0}#sidebar1 .widget-content{padding:5px;overflow:hidden}#sidebar1 .widget{background:#fff;margin-bottom:0px}.item-snippet,.blanter-back{display:none}
+.PopularPosts ul{list-style-type:none;background:#fff}
+.PopularPosts li{margin:0;padding:15px 0 17px 15px!important}
+.PopularPosts ul li{background:#fff;margin:10px 5px;padding:0;border:1px solid #ddd;border-radius:7px}
+.PopularPosts li a{font-weight:400;font-family:'Google Sans',sans-serif;font-size:13px;color:#555!important;transition:all .5s;border:none;margin: 0 0 10px 3px}
+.PopularPosts li a:hover{color:#000!important;border:none}
+.PopularPosts img{padding-right:0}.popular-posts img{width:110px;height:90px;border-radius:4px}
+.PopularPosts .item-thumbnail{overflow:hidden;float:left;margin:-10px 10px -16px -10px}
+.cloud-label-widget-content{display:grid;grid-template-columns:1fr 1fr}#sidebar2 .widget-content{margin-top:7px;color:#fff}#sidebar2 ul{font-size:100%!important;list-style:none;margin:0;padding:0 10px 10px}#sidebar2 li{font-size:100%!important;margin:0;padding:0 0 .25em;line-height:18px;color:#aaa;font-weight:400}#sidebar2 ul li{padding-top:10px;padding-bottom:10px}#sidebar2 ul li:last-child{border-bottom:none}#blog-pager .pageicon{font-size:200%;line-height:16px;padding-bottom:5px}#blog-pager{width:100%;font-family:'Roboto',Arial}blockquote{background:#673ab7!important;overflow:hidden;position:relative;margin:.5rem 0 1rem;transition:box-shadow .25s;border-radius:2px;color:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);padding:20px}.colorbox{overflow:hidden;position:relative;margin:.5rem 0 1rem;transition:box-shadow .25s;border-radius:2px;color:#fff;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);padding:20px}.colorbox.blue{background:#003c8f}.colorbox.green{background:#4CAF50}.colorbox.red{background:#F44336}.colorbox.orange{background:#ff9800}#footer{background:#222;width:100%;font-weight:400}#footer a{color:#999}#footer a:hover{color:#ccc}#footer-bottom{background:#eee;display:block;margin:0 auto;max-width:100%;width:100%;text-align:center;overflow:hidden;border-radius:5px}#footer-bottom a{color:#555}#footer-bottom a:hover{color:#000}#footer-bottom #copyright{color:#555;font-weight:500;font-size:11px;text-transform:uppercase;line-height:1.5em;letter-spacing:.5px}.container{width:1200px;max-width:100%;margin:0 auto;position:relative}.group:before,.group:after{content:"";display:table}.group:after{clear:both}.group{zoom:1}.pad.post-content,.pad.format-container{padding-left:40px;padding-right:40px}.grid{margin-right:3.2%;float:left;display:inline;position:relative}.one-half{font-family:'Roboto',sans-serif;width:100%;max-width:100%;padding:10px 0 20px 40px;padding-bottom:10px;text-align:center}.last{clear:right;margin-right:0!important}.post-comment-link{visibility:hidden}.largebanner .widget{padding:10px;transition:all .5s ease 0}.largebanner img,.largebanner iframe{display:block;max-width:100%;border:none;overflow:hidden}kbd{display:inline-block;border:1px solid #ccc;border-radius:4px;padding:.1em .5em;margin:0 .2em;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 2px #fff inset;background-color:#f7f7f7}.widget .post-body ul,.widget .post-body ol{line-height:1.5;font-weight:400}.widget .post-body li{padding:10px 5px;line-height:1.5}.footerbanner{padding:15px 0;width:100%;max-width:970px;margin:0 auto}.footerbanner img,.footerbanner iframe{display:block;max-width:100%;height:auto;border:none;overflow:hidden}.largebanner{margin:0 auto;padding:15px 0;width:100%;max-width:970px;float:none;overflow:hidden;position:relative;clear:both}.largebanner img,.largebanner iframe{display:block;max-width:100%;height:auto;border:none;overflow:hidden}.largebanner img,.footerbanner img{max-height:90px}.post-body table th,.post-body table caption{border-bottom:1px solid #ddd;padding:10px;text-align:left;vertical-align:top}.post-body table.tr-caption-container{border:1px solid #eee}.post-body th{font-weight:700}.post-body table caption{border:none;font-style:italic}.post-body td,.post-body th{vertical-align:top;text-align:left;font-size:13px;padding:3px 5px}.post-body th{background:#fafafa}.post-body table.tr-caption-container td{border:none;padding:8px}.post-body table.tr-caption-container,.post-body table.tr-caption-container img{max-width:100%;height:auto}.post-body td.tr-caption{color:#666;font-size:80%;padding:0 8px 8px!important}img{max-width:100%;height:auto;border:none}table{max-width:100%;width:100%;margin:1.5em auto}table.section-columns td.first.columns-cell{border-left:none}table.section-columns{border:none;table-layout:fixed;width:100%;position:relative}table.columns-2 td.columns-cell{width:50%}table.columns-3 td.columns-cell{width:33.33%}table.columns-4 td.columns-cell{width:25%}table.section-columns td.columns-cell{vertical-align:top}table.tr-caption-container{padding:4px;margin-bottom:.5em}td.tr-caption{font-size:80%}.adsbanner{width:100%;max-width:670px;margin-bottom:20px}#BackToTop{overflow:hidden;position:fixed;transform:scale(0);z-index:90;right:30px;bottom:31px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);width:55px;height:55px;color:#fff;text-align:center;background-color:#1565c0;font-size:22px;line-height:52px;cursor:pointer;border-radius:100%;transition:all .2s ease-in-out}#BackToTop:hover{transform:scale(1.1)!important}#BackToTop.active{transform:scale(1)}.post-author br{display:none}img.authoravatar{background:#fff;width:35px!important;height:35px!important;border-radius:100%;float:left;margin-right:15px;border:2px solid #fff}#material-subscribe{padding:0 15px;background:#fff}.buttonx{background:#1565c0;color:#fff!important;padding:12px 25px;text-transform:uppercase;border-radius:4px;border:none;outline:none;box-shadow:0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);cursor:pointer;transition:all .3s ease-in-out!important;font-weight:700;font-family:'Roboto'}.buttonx:hover{box-shadow:0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)}.buttonx.subs{background:#fff;color:#444!important;text-transform:none;letter-spacing:.5px;font-weight:500;padding:10px 18px}.post-body .buttonx{margin-right:7px}.input-field .buttonx{margin-top:15px}.input-field .buttonx i{margin-right:5px}.input-field{position:relative;margin:15px 0}.input-field input,.input-field textarea{font-size:15px;padding:15px 0;display:block;width:100%;border:none;border-bottom:1px solid #ddd}.input-field input:focus,.input-field textarea:focus{outline:none}.input-field label{color:#999;font-size:14px;font-weight:400;position:absolute;pointer-events:none;left:0;top:18px;transition:.2s ease all}.input-field input:focus~label,.input-field input:valid~label,.input-field textarea:focus~label,.input-field textarea:valid~label{top:-20px;font-size:14px;color:#1565c0}#notif-license span{font-size:40px}#notif-license{display:none;position:fixed}.bar{position:relative;display:block;width:100%}.bar:before,.bar:after{content:'';height:2px;width:0;bottom:1px;position:absolute;background:#1565c0;transition:.2s ease all}.bar:before{left:50%}.bar:after{right:50%}.input-field input:focus~.bar:before,.input-field input:focus~.bar:after,.input-field textarea:focus~.bar:before,.input-field textarea:focus~.bar:after{width:50%}.indigox{background:#3f51b5}.orangex{background:#ff9800}.pinkx{background:#e91e63}.bluex{background:#2196F3}.purplex{background:#9c27b0}.redx{background:#F44336}.greenx{background:#4CAF50}.highlight{position:absolute;height:50%;width:100px;top:25%;left:0;pointer-events:none;opacity:.5}.input-field input:focus~.highlight,.input-field textarea:focus~.highlight{animation:inputHighlighter .3s ease}.input-field input:focus~label,.input-field input:valid~label,.input-field textarea:focus~label,.input-field textarea:valid~label{top:-20px;font-size:13px;color:#1565c0}#ContactForm1,#ContactForm1 br{display:none}.e-waves{position:relative;cursor:pointer;display:inline-block;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;vertical-align:middle;z-index:1;will-change:opacity,transform;-webkit-transition:all .3s ease-out;-moz-transition:all .1s ease-out;-o-transition:all .1s ease-out;-ms-transition:all .1s ease-out;transition:all .1s ease-out}.e-waves .waves-ripple{position:absolute;border-radius:50%;width:20px;height:20px;margin-top:-10px;margin-left:-10px;opacity:0;background:rgba(0,0,0,0.2);-webkit-transition:all .1s ease-out;-moz-transition:all .1s ease-out;-o-transition:all .1s ease-out;-ms-transition:all .1s ease-out;transition:all .1s ease-out;-webkit-transition-property:-webkit-transform,opacity;-moz-transition-property:-moz-transform,opacity;-o-transition-property:-o-transform,opacity;transition-property:transform,opacity;-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);-o-transform:scale(0);transform:scale(0);pointer-events:none}.e-waves.waves-light .waves-ripple{background-color:rgba(255,255,255,0.45)}.e-waves.waves-red .waves-ripple{background-color:rgba(244,67,54,0.7)}.e-waves.waves-yellow .waves-ripple{background-color:rgba(255,235,59,0.7)}.e-waves.waves-orange .waves-ripple{background-color:rgba(255,152,0,0.7)}.e-waves.waves-purple .waves-ripple{background-color:rgba(156,39,176,0.7)}.e-waves.waves-green .waves-ripple{background-color:rgba(76,175,80,0.7)}.e-waves.waves-teal .waves-ripple{background-color:rgba(0,150,136,0.7)}.waves-notransition{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}.waves-circle{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(circle,white 100%,black 100%)}.waves-input-wrapper{border-radius:.2em;vertical-align:bottom;width:100%}.waves-input-wrapper .waves-button-input{position:relative;top:0;left:0;z-index:1}.waves-circle{text-align:center;width:2.5em;height:2.5em;line-height:2.5em;border-radius:50%;-webkit-mask-image:none}.waves-block{display:block}a.e-waves .waves-ripple{z-index:-1}.ripple{display:inline-block;text-decoration:none;overflow:hidden;position:relative;z-index:0}.ink{display:block;position:absolute;background:rgba(255,255,255,0.4);border-radius:100%;-webkit-transform:scale(0);-moz-transform:scale(0);-o-transform:scale(0);transform:scale(0)}.animate{-webkit-animation:ripple .55s linear;-moz-animation:ripple .55s linear;-ms-animation:ripple .55s linear;-o-animation:ripple .55s linear;animation:ripple .55s linear}@-webkit-keyframes ripple{100%{opacity:0;-webkit-transform:scale(2.5)}}@-moz-keyframes ripple{100%{opacity:0;-moz-transform:scale(2.5)}}@-o-keyframes ripple{100%{opacity:0;-o-transform:scale(2.5)}}@keyframes ripple{100%{opacity:0;transform:scale(2.5)}}.tabs ul{list-style:none;padding:0;margin:0}.tab h2{font-size:12px;font-weight:700;padding:5px 15px;display:block;line-height:37px;transition:All .4s ease-out}.tab h2:hover{border-bottom-color:#1565c0}.tabs .widget{border:none!important}.tabs,.tab{margin:0;overflow:hidden;border-radius:5px}.tabs .tab{padding:0}.tabs-menu{padding:0;margin:0;margin-bottom:0;box-shadow:0 0 0 1px #D3D3D3}.tabs-menu li{margin-bottom:0;margin-top:0;font-size:12px;font-weight:500;line-height:37px;width:50%;height:50px;list-style:none;text-align:center;display:inline-block;padding:5px 0;color:#666;border-bottom:2px solid #ddd;cursor:pointer;position:relative;transition:all .1s ease-out}.tabs-menu li:last-child{border-right:0}.tabs-menu .active-tab{border-color:#1565c0;transition:all .5s ease-in-out}.tabs-content{padding:10px;background:#fff;border-top:none;margin-bottom:15px}.tabs-content .sidebar li{margin:0;padding:0}.tabs-content .widget li{background:#fff;color:#333;float:none!important;padding:0 20px}.tabs-content .widget ul{background:#fff;color:#333;overflow:visible}.tabs-menu li.tab-1:before{font-family:"Font Awesome 5 Free";content:"\f005";overflow:hidden;width:100%;float:left;margin:7px 0 0;font-size:20px}.tabs-menu li.tab-2:before{font-family:"Font Awesome 5 Free";content:"\f02c";overflow:hidden;width:100%;float:left;margin:7px 0 0;font-size:20px;font-weight:700}.tabs-menu li.active-tab span{opacity:1;bottom:-5px;color:#1565c0}.tabs-menu li.active-tab:before{margin:0;color:#1565c0}.tabs-menu li span{margin-left:2px;font-size:10px;letter-spacing:.7px;text-transform:uppercase;font-family:'Roboto',Arial;position:absolute;width:100%;bottom:10px;opacity:0;left:0;font-weight:600;transition:all .4s ease-in-out}#showsearch{display:none;padding:15px!important;font-size:18px!important;position:absolute;top:0;right:40px}#cse-search-box.shows{left:0;opacity:1;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09)}@media screen and (max-width:1580px){.menux li{display:inline-block}#share-this a{padding:10px 14px 8px}}@media screen and (max-width:1200px){#css-menu{left:-340px;width:220px}#header-background,#header-background.slide{padding:30px}#css-menu.slide{left:0;width:220px}#css-menu.slide #cssmenu ul li{height:auto}#content-wrapper{padding-left:0}}@media screen and (max-width:1060px){#sidebar-css{width:285px}#content-wrapper{margin:5px!important;padding-left:0}a.blanter{display:none}}@media screen and (max-width:880px){#main-wrapper{float:none!important;width:100%}#main-nav .menu,#main-nav .menu li{width:100%}#main-nav{display:none}#menu-mob{display:block}#share-this a{padding:10px 14px 8px}}@media screen and (max-width:768px){.post-author br{display:block}.darkshadow.slide{visibility:visible;opacity:1}.darkshadow{visibility:hidden;opacity:0;position:fixed;top:0;background:rgba(0,0,0,.66);left:0;right:0;bottom:0;margin:0;z-index:9;transition:all .4s ease-in-out}.buttonx{display:inline-block;margin:5px 0}.blanter-icons{right:16px;left:initial!important}#BackToTop{bottom:20px;right:20px;width:45px;height:45px;line-height:43px}.largebanner{padding:15px 0}.one-half{padding:10px 0}#sidebar-css{width:95%;position:relative}#cse-search-box .material-icons{color:#444}#search-box input[type="text"]{padding-left:40px!important;color:#444;height:45px}#cse-search-box .fa-arrow-left{top:0;left:0;padding:10px 15px;cursor:pointer;z-index:99}#cse-search-box .fa-search{top:10px;right:20px;left:initial}.post-author,.time-publish,.comments-publish{padding:5px}.idb-pager li a{padding:0}ul.idb-pager{padding:5px}#showmenu{position:absolute;top:2px;right:2px;margin:5px 0}.toggleMenu{margin:5px 0!important;padding:0;width:40px;height:40px;line-height:47px;text-align:center;left:10px;top:4px;position:absolute}#header-wrapper li a{width:100%;text-align:left;color:#fff}#header-wrapper li{width:100%}#cse-search-box{left:-500px;transition:all .7s ease-in-out;opacity:0;position:absolute;width:100%;border-radius:0;background:#fff;border-color:#fff}#cse-search-box .blanter-icons{top:15px;font-size:25px}#search-box{width:100%;top:0;left:0;position:fixed;z-index:98;margin:0!important}.nav-menu2{width:100%}#showsearch,#search-box .fa-arrow-left,.blanter-back{display:block}#header{width:190px;height:60px;overflow:hidden;float:none;margin:10px auto}a.show-more{margin:0}#sidebar-css{width:100%}#main-nav .menu,#main-nav .menu li{width:100%}.blog_social_block a i{font-size:13px;width:20px;height:20px}#main-nav,a.blanter{display:none}#share-this a{padding:10px 14px 8px}.click-comment,.pagenav .pages{display:none!important}.nav-menu2>li:hover>a{background:#fff}}@media screen and (max-width:684px){.widget-content.list-label-widget-content{margin-right:50px!important}.comment_child .comment_wrap{padding-left:0!important}.comment_body{width:70%!important}.comment_admin .comment_body{width:60%!important}#material-subscribe{width:90%!important}.menux li{display:inline-block}#sidebar-css{width:100%}#main-nav .menu,#main-nav .menu li{width:100%}#main-nav{display:none}#share-this a{padding:10px 14px 8px}.spanshare{display:none}}@media screen and (max-width:600px){.post-outer{max-width:100%!important}#sidebar-css{width:100%}#main-nav .menu,#main-nav .menu li{width:100%}#main-nav{display:none}#share-this a{padding:10px 14px 8px}}@media screen and (max-width:480px){.buttonx.subs{width:100%}.comment_body{width:55%!important}.comment_admin .comment_body{width:50%!important}.share-post li a{width:40px!important}#share-this{margin:5px 10px}#share-this a{min-width:100%;padding:0;text-align:center!important;height:30px;line-height:35px;margin:0 auto 3px!important}#sidebar-css{width:100%}#nav-wrapper{margin-bottom:70px}#main-nav .menu,#main-nav .menu li{width:100%}#main-nav{display:none}}@media screen and (max-width:320px){#sidebar-css{width:100%}#nav-wrapper{margin-bottom:75px}#main-nav .menu,#main-nav .menu li{width:100%}#main-nav{display:none}}@media screen and (max-width:240px){#main-wrapper{float:none;width:100%}#sidebar-css{width:100%}#nav-wrapper{margin-bottom:80px}#main-nav .menu,#main-nav .menu li{width:100%}#main-nav{display:none}}
+
+]]></b:skin>
+<b:template-skin>
+<![CDATA[
+#layout:before{content:'Masign Alpha Redesign (Metaltaila.co)';text-transform:uppercase;font-size:18px;color:#fff;background:linear-gradient(50deg,#1565c0,#41abf6);margin:0 0 20px;display:inline-block;font-weight:700;font-family:monospace;padding:20px;border-radius:20px}body#layout #css-menu{position:relative;width:65%;height:100%;overflow:hidden;float:right}body#layout #header-left{float:left;width:540px}body#layout #header-right{float:right;width:400px}body#layout #outer-wrapper{width:960px;margin:0 auto}body#layout #content-wrapper{margin:0 auto;padding:0}body#layout #main-wrapper{width:600px;float:left}body#layout #sidebar-css{float:right;width:300px}.quickedit{display:none}body#layout ul,body#layout li{display:none}body#layout .largebanner{width:95.5%;float:none}body#layout #sidebar1{width:90%;float:left}body#layout #rec-widget {float:left;width:90%}body#layout #header-wrapper{position:relative;float:left;width:30%;display:inline-block}body#layout .recent-widget{width:28%;float:left}body#layout .tab1, body#layout .tab2{width:35%;float:left}body#layout .widget-content{border-radius:30px;border-bottom:2px solid #1565c0}body#layout .editlink{border:1px solid #ddd;padding:0 10px;margin-right:20px;font-weight:700;letter-spacing:1px;border-radius:20px}body#layout .tab .layout-widget-description{font-size:10px;line-height:1.5;margin:0 0 20px}body#layout div.section{overflow:hidden;border-radius:10px}body#layout .footerbanner,body#layout .adsbanner{width:95%;max-width:95%}body#layout #header-background{padding:0}
+]]></b:template-skin>
+<b:if cond='data:view.isSingleItem'>
+<style type='text/css'>
+/* CSS Hanya Postingan */
+.headwrap{width:560px;max-width:100%;margin:20px auto 0}a.addcomment{font-size:13px;color:#555;font-weight:500;background:#fff;padding:5px 10px;border-radius:20px;margin:10px 10px 0;float:right}.addcomment i{margin:0 8px 0 0}.share-post{text-align:center;overflow:hidden;border-top:1px solid #eee;margin-bottom:20px;margin-top:15px;padding:14px 0}.share-post ul{padding:0;margin:10px auto;width:300px;max-width:100%}.share-post li{float:left;margin:0;padding:0;list-style:none;position:relative}.share-post li a{padding:15px 5px;margin-right:4px;border-radius:100%;width:42px;text-align:center;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);color:#fff;display:block;font-size:13px;transition:all .6s ease-out}.share-post li a:hover{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}.share-post li .twitter{background-color:#1da1f2}.share-post li .facebook{background-color:#4867aa}.share-post li .xmail{background-color:#650582}.share-post li .pinterest{background-color:#c82828}.share-post li .wa{background:#0dc143}.share-post li .tumblr{background-color:rgba(48,78,108,0.98)}.share-post li .twitter:hover,.share-post li .facebook:hover,.share-post li .gplus:hover,.share-post li .pinterest:hover,.share-post li .tumblr:hover{color:#fff}.share-post li:last-child{margin-right:0}.share-post li .fa:before{top:0;left:0;display:inline-block;padding:5.5px 12px;font-family:fontawesome;text-align:center;color:#fff;line-height:20px;font-size:17px;transition:all .6s ease-out}.share-post i{display:initial;font-size:18px}.spanshare{text-align:center;font-size:15px;text-transform:uppercase;font-weight:500}.post h4{padding:10px;margin:10px 0;font-weight:400;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}ul.idb-pager{padding-top:17px}.idb-pager li.next{height:110px;text-align:left;float:left;padding:0;background:none;margin:0;width:42%;max-width:100%}li.previous a{float:right}.idb-pager li.previous{height:110px;text-align:right;margin:0 -2px 0 0;float:right;padding:0;background:none;width:42%;max-width:100%}.idb-pager li.next a{float:left}.idb-pager li{display:inline;overflow:hidden}.idb-pager li a{position:relative;width:84%;min-height:77px;display:block;padding:15px 0;outline:none;text-decoration:none}.idb-pager li i{color:#444;font-size:18px}.idb-pager li a strong{display:block;font-size:13px;color:#999;font-weight:600;text-transform:uppercase;margin-bottom:10px}img.firstimage{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;background:#eee}.idb-pager li a span{font-size:13px;color:#444;font-weight:700;font-family:&#39;Roboto&#39;;margin:0}.idb-pager li a:hover span,.idb-pager li a:hover i{color:#000}.idb-pager li.previous i{float:right;margin-top:42px;margin-right:5%;margin-left:5px}.idb-pager li.next a strong{text-align:left}.idb-pager li.previous a strong{text-align:right}.idb-pager li.next i{float:left;margin-top:42px;margin-left:5%;margin-right:5px}.idb-pager li.next i,.idb-pager li.previous i,.idb-pager li.next,.idb-pager li.previous{font-size:130%;-webkit-transition-property:background color;-webkit-transition-duration:.4s;-webkit-transition-timing-function:ease-out;-moz-transition-property:background color;-moz-transition-duration:.4s;-moz-transition-timing-function:ease-out;-o-transition-property:background color;-o-transition-duration:.4s;-o-transition-timing-function:ease-out;transition-property:background color;transition-duration:.4s;transition-timing-function:ease-out}.authorboxwrap{background:#fff;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);border-radius:5px;margin:10px;padding:0 0 20px 20px;overflow:hidden}.avatar-container{float:left;margin-right:20px}.avatar-container img:hover{border-color:#7B7B7B}.avatar-container img{width:100px;height:auto;padding:5px;border-radius:100%}.author_description_container h5{font-weight:600;font-size:16px;display:block;margin-bottom:10px;text-transform:uppercase}.author_description_container h5 a{color:#333}.author_description_container p{font-size:12px;line-height:1.7;margin-bottom:15px}.time-publish{float:right;background:#fff;color:#555;line-height:1.8;font-size:13px;padding:5px 10px;margin-right:10px;margin-top:10px;border-radius:20px}.time-publish i{float:left;margin:-2px;margin-right:7px;font-size:16px}.time-publish abbr{color:#555;font-weight:500}#img-pertamax{overflow:hidden;position:relative;margin:-15px -15px 20px}img.firstimage{width:100%;height:auto;max-height:450px}.post-author.vcard{position:absolute;font-size:13px;font-weight:500}.post-author a{line-height:3.8!important;font-weight:700;color:#fff}.img-pertamax{width:100%;max-height:390px}img.author-avatar{width:40px;height:40px;border-radius:100%;float:left;border:4px solid #fff;margin-right:15px}.post-body .separator:nth-of-type(1){display:none}#related-post .material-icons{font-size:200%;font-weight:400;right:20px;color:#fff;font-family:&#39;Material Icons&#39;;top:7px;position:absolute}.img-pertamax{width:100%;max-height:390px}.related-post-item-tooltip{height:54px;overflow:hidden;text-align:center;text-overflow:ellipsis;padding:10px}#related-post{background:#fff;margin:10px}.related-post{margin:30px 0 0;position:relative;padding:0 0 10px}.lol h4 i,.related-post h4 i{margin-right:14px}.lol h4,.related-post h4{border-radius:4px;color:#555;font-size:100%;font-family:&#39;Roboto&#39;,Arial;text-transform:uppercase;text-align:left;font-weight:700;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);position:relative;padding:15px 20px 12px;margin:10px 0 20px}.related-post-style-3,.related-post-style-3 li{margin:0 auto;padding:0!important;list-style:none;word-wrap:break-word}.related-post-style-3 li a{font-family:&#39;Roboto&#39;,sans-serif;color:#666;font-weight:700!important;font-size:14px;line-height:1.4em}.related-post-style-3 li a:hover{color:#111}.related-post-style-3 .related-post-item{display:inline-block;transition:all .4s ease-in-out;border-radius:10px;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);width:100%;margin-right:15px;height:auto;padding:0;margin-bottom:20px!important;position:relative;overflow:hidden}ul.related-post-style-3{max-width:700px;width:100%;margin:0 auto}.related-post-style-3 .related-post-item:focus{outline:none;border:none}.related-post-style-3 .related-post-item-thumbnail{display:block;margin:0;width:100%;height:130px}.related-post-style-3 .related-post-item-thumbnail img{width:100%;height:auto!important;transition:all 1s ease-out}.related-post-item:nth-child(3),.related-post-item:nth-child(6){margin-right:0}.related-post-item:hover .related-post-item-tooltip a{opacity:1}.related-post-item-tooltip a{color:#666!important;transition:transform .6s cubic-bezier(.175,.885,.32,1.275),opacity .3s;text-align:center;font-size:12px!important;position:relative}.related-post-item:hover{box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 5px 10px 0 rgba(0,0,0,0.12), 0 5px 10px -5px rgba(0,0,0,0.2)}@media screen and (max-width:1090px){div#main-wrapper{width:66%}}@media screen and (max-width:600px){.related-post-style-3 .related-post-item-thumbnail{height:100px}.idb-pager li a{width:auto}.idb-pager li{height:70px!important}.idb-pager li a strong{font-size:15px}.related-post-item:nth-child(2),.related-post-item:nth-child(4){margin-right:0}.related-post-item:nth-child(3),.related-post-item:nth-child(6){margin-right:15px}.share-post li .tumblr,.idb-pager li a span{display:none}#content-wrapper{padding:0}.avatar-container img{width:50px}}
+</style>
+</b:if>
+<b:if cond='data:view.isMultipleItems'>
+<style type='text/css'>
+/* CSS Homepage and Index */
+  a.js-load i{width:15px;margin:-3px 8px 0 -4px}.tanggal i{margin:2px 5px 2px 0}#blog-pager span,a.js-load{display:inline-block;margin:10px 0;background:#fff;color:#555;font-size:15px;font-weight:500;padding:10px 25px;border-radius:20px;box-shadow:0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149)}.tanggalx{font-size:13px;background:#fff;padding:10px;position:absolute;bottom:0;left:0;right:0;border-top:1px solid #ddd}.fn.madamx{position:absolute;top:15px;left:15px;z-index:3}.fn.madamx a.g-profile{color:#555;font-weight:500;line-height:2.5;background:#fff;font-size:13px;padding:5px 10px;border-radius:10px;opacity:0;margin-left:-10px;transition:all .3s ease-in-out}.fn.madamx:hover a.g-profile{opacity:1;margin-left:0}.box-body-deg h2 a{font-size:15px;color:#000;font-weight:500}.box-body-deg h2{padding:0}ul.rp_thumbs{margin:0;padding:0;list-style:none}ul.rp_thumbs li{overflow:hidden;font-size:12px;min-height:68px;margin:0 0 8px;padding:10px}ul.rp_thumbs .rp_thumb{position:relative;background:#fbfbfb;margin:0;width:100%;height:190px;overflow:hidden;border-radius:5px}ul.rp_thumbs .rp_thumb img{height:100%;width:100%;transition:transform .3s}ul.rp_thumbs2{font-size:13px;margin:0 0 10px;padding:0}ul.rp_thumbs2 .rp_thumb2{float:left;margin:3px 8px 0 0;height:60px;width:60px}ul.rp_thumbs2 .rp_thumb2 img{height:60px;width:60px;border-radius:5px}.sidebar ul.rp_thumbs li:before,.sidebar ul.rp_thumbs2 li:before,#bottombar ul.rp_thumbs li:before,#bottombar ul.rp_thumbs2 li:before{display:none}.recent-widget:nth-child(2){margin-right:0}#recent-blanter{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:15px}.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:&quot;.&quot;;display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0);padding:0 0 10px}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#111}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}.owl-carousel .owl-item{height:200px;transform:scale(.96);border-radius:10px;overflow:hidden;box-shadow:0 2px 6px 2px rgba(0,0,0,.26);cursor:pointer}.owl-prev{left:20px}.owl-next{right:20px}.owl-prev,.owl-next{color:#222;background:#fff;border:0;font-size:28px;height:45px;width:45px;border-radius:100%;position:absolute;top:42%;visibility:hidden;opacity:0;transition:all .3s ease-in-out;outline:none}.owl-carousel:hover .owl-prev,.owl-carousel:hover .owl-next{opacity:1;visibility:visible}a.slider-image{height:200px}.slider-wrappper{margin:0 0 5px}.slider-wrappper .widget{background:#fff;padding:15px 20px;margin:0 0 25px;border-radius:8px;border:1px solid #d8d8d8;overflow:hidden}.overlayx{background:linear-gradient(0deg,rgba(0,0,0,0.76),rgba(255,255,255,0));position:absolute;width:100%;height:100%;z-index:1}.overlay{position:relative}.overlay:after{content:&#39;&#39;;background:linear-gradient(0deg,rgba(0,0,0,0.76),rgba(255,255,255,0));bottom:0;left:0;right:0;position:absolute;height:100%;z-index:1}.owl-item h2.post-title{bottom:15px;left:15px;right:15px;position:absolute;z-index:2;font-size:14px;font-weight:500}.owl-item h2.post-title a{color:#fff}.slider-wrappper h2 a.manda,.recent-post-title a.manda{float:right;font-weight:500;color:#777;font-size:14.4px;margin:0}.slider-wrappper h2.title{font-size:17px;padding:0 5px 10px}.recent-widget{width:100%}.recent-widget h2 i{float:right;line-height:.8;background:#1565c0;color:#fff;padding:5px;margin:-5px 0 -5px -5px;border-radius:5px}.recent-widget h2{font-size:14px;padding:15px 15px 5px}.recent-widget h2 a{color:#444}span.rp_title{font:normal normal 17px &#39;Roboto&#39;,Arial,sans-serif;display:block;margin:10px 0 5px;line-height:1.5em}span.rp_title2{font-size:12px}span.rp_summary{display:none}span.rollover{position:absolute;width:100%;height:200px;background:linear-gradient(0deg,rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.08));z-index:1}span.rp_meta{background:transparent;display:block;font-size:11px;font-weight:400;color:#999;text-transform:uppercase}span.rp_meta a{color:#8D8D8D!important;display:inline-block}ul.rp_thumbs2 li a:hover{color:#0072C6}ul.rp_thumbs2 li{list-style:none;min-height:66px;font-size:11px;margin:0;background:#fff;padding:5px 10px}.breadcrumbs{margin:15px 0 15px;border-radius:5px}#content-wrapper{width:1000px}.rp_title2 a{color:#666;font-weight:500}.rp_utama{position:relative}.rp_utama a{color:#fff;font-weight:500}.rp_utama .rp_title{position:absolute;bottom:0;left:0;padding:10px 15px;right:0;z-index:1;font-size:14px;letter-spacing:.5px;line-height:1.5}.dunia-blanter-info.tanggal{float:right;padding:2px 10px;text-transform:uppercase;color:#444;font-weight:500;font-size:11px}.author-info,.time-info{background:#1565c0;opacity:0;padding:3px 10px;margin-right:10px;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);transition:all .7s ease-in-out}ul.rp_thumbs li:hover img,.blanterimgthumb img:hover{transform:scale(1.1)}.blanterimgthumb img,.blanterimgthumb{transition:all .3s ease-in-out;height:200px;width:100%;background:#ddd}.post:hover .author-info,.post:hover .time-info{opacity:1}.post{background:#fff;padding:0;position:relative;margin-bottom:25px;margin-right:15px;height:340px;border-radius:8px;overflow:hidden;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);transition:box-shadow .25s}.post-outer{float:left;width:100%;max-width:340px}.post:focus{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}.comment-link,.comment-link a,.comment-link a:hover,.timestamp-link a,.timestamp-link a:hover,.post-author,.post-author a,.post-author a:hover{color:#222}.timestamp-link{color:#222;text-transform:uppercase}#main-wrapper{width:680px!important;float:left;margin:0 auto;border:none;background:none;box-shadow:none}.recent-widget .widget{margin-bottom:15px}.post h2{margin:0;font-family:&#39;Roboto&#39;,Arial,Sans-Serif!important;padding:0;font-size:192%;font-weight:400;overflow:hidden;margin-bottom:5px;line-height:1}.post h2 a{color:#222;font-size:16px;font-weight:500;text-decoration:none}.post h2 a:hover{color:#1565c0;text-decoration:none}.info-face{font:11px Tahoma;line-height:1.6em;margin:0;padding:0;color:#fff;text-decoration:none;display:block}.info-face a{color:#fff;text-decoration:none}.clock,.clock a{list-style:none;text-decoration:none}.snippet-wrapper{display:none}.post-body{margin:0;padding:0}.time-info{padding-right:10px}.time-info .published{text-transform:none}.madamx a:hover,.tanggalx a:hover{color:#000}.tanggalx a{color:#666;font-weight:400;line-height:2.5}.label-info a:nth-child(n+3){display:none}.label-info a i{float:left;margin-right:7px;font-size:20px;line-height:1.2}.label-info a{max-width:80px;max-height:28px;overflow:hidden;font-family:&#39;Roboto&#39;,Arial;background:#fff;color:#1565c0;padding:0 8px;border-radius:4px;float:left;font-size:11.5px;z-index:1;margin:0 5px;font-weight:500;text-transform:uppercase;border:1px solid #ddd}.label-info a:hover{border-color:#fff;box-shadow:0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149)}.post-thumbnail{height:200px;background:#ddd;position:relative;border:none;margin:0 auto;text-align:center;display:block;float:left;width:100%}.post-thumb{float:left;line-height:0;margin-right:20px;position:relative;max-width:100%;width:362px}.jump-link{display:none}.box-body-deg{float:left;display:block;position:relative;overflow:hidden;margin:5px 15px}.box-deg{height:auto;position:relative;margin:0;padding:0}@media screen and (max-width:684px){.post{margin-right:0}#content-wrapper{margin:0!important}.recent-widget{width:100%}#main-wrapper{padding:10px;width:92%!important}#recent-blanter{grid-template-columns:1fr}#recent-blanter h2 a,#recent-blanter div:nth-child(3){display:none}#sidebar-blanter,#recent-blanter{padding:18px}.post-thumbnail{width:93%;margin:15px 15px 0;border-radius:10px;overflow:hidden}.box-body-deg{width:100%;float:left}.time-info,.snippet-wrapper{display:none}.post img{height:200px;width:100%}.post-thumb{overflow:hidden;padding-bottom:20px}.post-outer{width:100%;float:none}}#featuredblanter{margin:15px auto;font-family:&#39;Roboto&#39;,sans-serif}#fancy *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}#fancy li,#fancy ul{padding:0;margin:0;list-style:none;position:relative}#fancy h4,#fancy li,#fancy li:after,.post:after{position:absolute}#fancy ul{height:320px}#fancy li{width:51.2%;background:#ddd;transform:scale(.96);border-radius:10px;overflow:hidden;box-shadow:0 2px 6px 2px rgba(0,0,0,.26);transition:all .4s ease-in-out;height:100%;display:none}#fancy li:nth-child(1),#fancy li:nth-child(2),#fancy li:nth-child(3),#fancy li:nth-child(4),#fancy li:nth-child(5){display:block}#fancy li:nth-child(1){left:-10px;top:-2px;height:104%}#fancy li:nth-child(2){left:50%;width:25%;height:50%}#fancy a{overflow:hidden}#fancy li:nth-child(3){left:75%;width:25%;height:50%}#fancy li:nth-child(4){left:50%;top:52%;width:25%;height:50%}#fancy li:nth-child(5){left:75%;top:52%;width:25%;height:50%}#fancy li:nth-child(1) h4{overflow:hidden;font-size:22px;bottom:10px;color:#fafafa;width:100%;padding:10px;text-shadow:2px 2px 0 rgba(0,0,0,.2);line-height:32px;left:20px}#fancy li:nth-child(1) span.dd{display:block;font-size:30px;padding:12px 15px;background:#ff6553;margin:0}#fancy li:nth-child(1) span.dm{display:block;font-size:14px;background:#333;color:#fff;padding:5px 21px;text-transform:uppercase;margin:0}#fancy li:nth-child(1) span.autname,#fancy li:nth-child(1) span.dy,#fancy .label_text{display:none}#fancy a,#fancy img{display:block;width:100%}#fancy a{height:100%}#fancy img{height:auto;border:0;padding:0;background-color:#333;transition:all .3s linear}#fancy li:hover img{transform:scale(1.1)}#fancy h4{bottom:10px;margin:0 10px 0 0;font-size:13px;left:10px;padding:5px 10px;color:#f9f9f9;z-index:3;line-height:20px;font-weight:500;letter-spacing:1px}@media screen and (max-width:768px){#fancy li{transform:none}#fancy li:nth-child(1){top:0;left:0}#fancy li:nth-child(1) h4{font-size:18px;line-height:24px}}@media screen and (max-width:690px){#fancy ul{height:600px}#fancy li:nth-child(1){width:100%;height:50%}#fancy li:nth-child(2){top:50%;height:25%;left:0;width:50%}#fancy li:nth-child(3){left:50%;top:50%;width:50%;height:25%}#fancy li:nth-child(4){left:0;top:75%;height:25%;width:100%}#fancy li:nth-child(5){display:none}}@media screen and (max-width:480px){#fancy li:nth-child(1) h4{font-size:13px;line-height:16px}}
+</style>
+</b:if>
+<b:if cond='data:blog.pageType != &quot;index&quot;'>
+<style type='text/css'>
+/* CSS Post dan Halaman */
+#main-wrapper{background:#fff;border-radius:10px;padding:15px;box-shadow:0 3px 4px 0 rgba(0,0,0,0.08),0 2px 7px 0 rgba(0,0,0,0.08),0 3px 2px -3px rgba(0,0,0,0.09);width:68%;max-width:100%;float:left;margin-right:10px}#header-background h3{background:transparent;font-size:28px;display:inline-block;color:#fff;text-transform:none;padding:10px 15px;letter-spacing:.5px;border-radius:10px}#content-wrapper{width:1100px;margin:0 auto 20px}.menu-komentar{background:linear-gradient(50deg,#1565c0,#41abf6);overflow:hidden;margin-left:-20px;padding:0 20px;height:50px;line-height:50px;margin-right:-20px;border-bottom:2px solid #eee;border-radius:8px}#comments h3{float:left;font-size:14px;line-height:3.5;text-transform:uppercase;font-weight:500;font-family:&#39;Roboto&#39;,Josefin Sans,Arial;color:#fff;margin:0}#comments h3 i{line-height:1.7;padding:5px 15px 5px 0;float:left}#showkomentarmenu{font-size:20px;padding:10px 20px;border-radius:100%;color:#fff;float:right;margin:-5px -25px 0 0}#komentarmenu{font-family:&#39;Roboto&#39;,Arial;visibility:hidden;position:absolute;background:#fff;text-transform:none!important;list-style:none;right:35px;top:45px;padding:0;width:0;height:0;transition:all .5s cubic-bezier(0.07,0.68,0.35,1.04);z-index:9;overflow:hidden;box-shadow:0 5px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);border-radius:4px}#komentarmenu li{width:100%;margin:0;padding:0}#komentarmenu li a{padding:12px 15px;width:100%;font-weight:400;color:#666!important;font-size:13px!important}a.click-comment{float:right;font-weight:700;text-transform:uppercase;position:absolute;top:20px;right:20px;display:inline-block;background:#3498db;border:2px solid #3498db;padding:8px 10px;font-size:13px;color:#fff}#komentarmenu.shows{visibility:visible;width:200px;height:85px}a.click-comment:hover{background:#fff;color:#3498db}a.comment-reply{position:absolute;bottom:20px;left:25px}.comment-content:before{content:&quot;&quot;;width:0;height:0;position:absolute;top:0;left:-15px;border-width:8px;border-style:solid;border-color:#eee #eee transparent transparent;display:block}.comment-content:after{content:&quot;&quot;;width:0;height:0;position:absolute;top:0;right:100%;border-width:7px;border-style:solid;border-color:#eee #eee transparent transparent;display:block}.google_emo,span.bcm{background:#fff;padding:15px;display:block;margin:0 0 10px;border-radius:10px}.comment-actions .item-control a{position:absolute;left:-67px;top:70px;background:red;color:#fff;display:none}.item-control a.shows{display:inline-block}#comments h4 a{color:#1a73e8;background:#fff;padding:5px 10px;border-radius:15px;margin:-5px 0}#comments h4{text-transform:uppercase;font-weight:500;background:#1a73e8;color:#fff;font-size:14px;padding:12px 15px;border-radius:20px;letter-spacing:.5px}#comments{line-height:1.4em;margin:0;position:relative;background:#fff;padding:0 10px 20px}.komentar h3{font-size:15px;text-align:center;font-weight:500;font-family:&#39;Google Sans&#39;,Arial;color:#418;padding:15px 5px 10px;border:0;border-top:1px solid #eee}.komentar h3 i{display:block;margin-bottom:10px}.post-body img{max-width:100%;width:auto;height:auto}#respond,iframe{overflow:hidden;width:100%}a.show_emo.pencet{background:#418;padding:8px 10px;font-size:12px;color:#fff;border-radius:5px;cursor:pointer}#comments{line-height:1.4em;margin:0;position:relative}img.comment_emo{margin:0;padding:0;vertical-align:middle;width:20px;height:20px}.comment-replies .comment-content{padding:17px}.comment_emo_list{display:none;clear:both;width:100%}.comment_emo_list .item{float:left;text-align:center;margin:0;height:55px;width:55px;color:#646d75}.comment_emo_list span{display:block;font-weight:700;font-size:11px;letter-spacing:1px}.comment_youtube{max-width:100%!important;width:400px;height:225px;display:block;margin:auto}#respond{padding-left:10px;clear:both}.comments-content ol#top-ra{padding:0;margin:0;list-style:none}#pesan-komentar div.riob{position:relative;background:#fff;color:#444;font-size:14px;line-height:1.5em;margin-bottom:20px;padding:15px;font-weight:500;box-shadow:0 0 20px rgba(0,0,0,.15);border-radius:10px}#comments .avatar-image-container{float:left;margin:15px 30px 15px 15px;width:42px;height:42px;max-width:42px;max-height:42px;padding:0;border-radius:100%}#comments .avatar-image-container img{width:42px;height:42px;max-width:42px;max-height:42px;background:url(https://1.bp.blogspot.com/-1hdJkF-oJtM/WU-UPs2_mJI/AAAAAAAAGco/b9Jb3FyQrI4cs2h0sPYCovlhGunslIxwQCLcBGAs/s42/md-blue.png) no-repeat}.comment-thread .user a{font-weight:500;color:#000;padding:0;font-size:12px;text-decoration:none;font-style:normal}.comment-thread .user a:hover{color:inherit}.comment-thread .user{font-weight:700;padding:0;font-size:13px;text-decoration:none;font-style:normal}.comment-thread .datetime a{font-size:12px;color:#555;display:none}.comment-thread .datetime a.shows{display:block}.comments .continue a{display:none}.comment-thread .user{padding:0;font-size:13px;font-weight:700;position:relative}li.comment{list-style:none;margin:0!important;padding:0!important}#top-ce iframe,.comment-replybox-single iframe{min-height:160px;width:100%;margin:15px 0}.comment-actions .item-control{margin-left:0;display:block}.comment-content{display:inline-block;max-width:80%;font-size:14px;padding:17px 17px 42px;margin:5px 0;border-radius:10px;position:relative;background:#eee;color:#444;border-top-left-radius:0}.item-control a{opacity:.7}#comments h4{text-transform:uppercase;font-weight:500}.continue .comment-reply,.inline-thread.hidden .thread-count{display:none}.comment-actions a{color:#000;background:#fff;text-decoration:none;font-weight:400;font-size:12px;padding:2px 8px!important;margin:-10px 30px 0;display:table;border-radius:20px}.comment-header{padding:0}.comments .thread-chrome.thread-collapsed{display:none}.comments .thread-toggle{display:none}.comments .thread-toggle .thread-arrow{display:inline-block;height:6px;margin:2px;overflow:visible;padding-right:4px;width:7px;transform:scale(1.3)}span.thread-toggle{background:#f0f3f5;padding:5px 10px;border-radius:5px}.comments .thread-expanded .thread-arrow{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC) no-repeat scroll 0 0 transparent}.comments .thread-collapsed .thread-arrow{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAJUlEQVR42mNgAILy8vL/DLgASBKnApgkVgXIkhgKiNKJ005s4gDLbCZBiSxfygAAAABJRU5ErkJggg==) no-repeat scroll 0 0 transparent}.comments .hidden{display:none}#top-continue.hidden{display:block}#comments .comments-content .icon.blog-author{width:18px;height:18px;margin-left:5px;vertical-align:0;display:inline-block;background:url(&quot;data:image/svg+xml,<svg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z'/><path d='M0 0h24v24H0z' fill='none'/></svg>&quot;) center center no-repeat}.comment_youtube{max-width:100%!important;width:400px;height:225px;display:block;padding-top:10px;padding-bottom:10px}#respond{overflow:hidden;padding-left:10px;clear:both}.bnm.shows{visibility:visible}.bnm{visibility:hidden}.google_emo .item{float:left;width:40px;text-align:center;height:40px;margin:10px 5px 0 0}.google_emo span{display:block;font-weight:700;font-size:11px;letter-spacing:1px}.google_emo,.pesan-komentar,#parser{display:none;clear:both;height:auto}#parser.show{display:block}.comment_youtube{max-width:100%!important;width:400px;height:225px;display:block;margin:auto}.bcm.hide{display:none}.idbpesan{cursor:auto;position:relative;background:#eaeaea;padding:20px;border-radius:10px;color:#333;margin-top:50px;font-size:14px;font-family:&#39;Google Sans&#39;,Helvetica,Arial,sans-serif;line-height:1.5em;margin-bottom:20px;transition:all .3s ease-out}img.comment_emo{margin:0;padding:0;vertical-align:middle}#comments .pencet{display:inline-block;color:#333;margin:0;padding:7px 15px;background-color:#fff;font-size:12px;border-radius:10px;margin-right:2px;font-weight:700;text-transform:none;text-decoration:none;outline:none;box-shadow:0 1px 2px 0 rgba(60,64,67,.302),0 1px 3px 1px rgba(60,64,67,.149);cursor:pointer}.google_emo{overflow:hidden;padding-bottom:20px}img.comment_emo{margin:0;padding:0;vertical-align:middle;width:24px;height:24px}.small-button{color:#fff;margin-right:10px;padding:0;background:none;font-size:12px;font-weight:400;text-transform:none;transition:all .3s ease-in-out}.small-button a{color:#fff;margin-right:10px;padding:4px 15px;background-color:#009a5d;font-size:12px;font-weight:400;text-transform:none;border-radius:4px;text-decoration:none;outline:none;box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),0 1px 2px #3d4852;text-shadow:0 -1px 0 rgba(0,0,0,0.3);transition:all .3s ease-in-out}.small-button:hover{background:none;color:#fff;text-decoration:none}.small-button a:hover{background-color:#900;color:#fff;text-decoration:none}.pencet i{font-size:18px;float:left;font-family:&#39;Material Icons&#39;;margin-right:5px}.menupesan{padding:5px 0}li.searchbutton{margin:0;padding:0 20px;display:inline-block;cursor:pointer;float:right}li.searchbutton.active{background:transparent}li.searchbutton:after{content:&quot;\f002&quot;;font-family:FontAwesome;font-style:normal;font-weight:400;text-decoration:none;position:relative;font-size:16px;color:#222}ul.related-post-style-3{display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:15px}@media screen and (max-width:680px){.comment-actions a{margin:-10px 20px 0}.comment-content{max-width:70%}#comments .avatar-image-container{margin-right:20px}ul.related-post-style-3{grid-template-columns:1fr 1fr}.idb-pager li.next i,.idb-pager li.previous i{margin-top:12px}.time-publish{position:absolute;right:-10px;bottom:0}.post-author.vcard{left:10px}#main-wrapper{padding:10px;width:95%!important}#content-wrapper{margin:0!important}#comments h3{width:100%}#content-wrapper{padding:0}.avatar-container img{width:50px}#relate-summary .news-text{display:none}.share-post{padding:14px}}@media screen and (max-width:480px){.post-author a{line-height:2!important;display:block;width:130px}.comment_avatar{display:none}#showkomentarmenu{position:absolute;right:20px}}.whitecolumn{overflow:hidden;height:45px}.post-body table td,.post-body table caption{padding:10px;background:#FCFCFC;text-align:left;vertical-align:top}.post-body table th{background:#e6e6e6;padding:10px;text-align:left;vertical-align:top}.post-body table caption{border:none;font-style:italic}.post-body td,.post-body th{vertical-align:top;text-align:left;font-size:13px;padding:3px 5px}.post-body table tr:nth-child(even) &gt; td{background-color:#f5f5f5}.post-body th{background:#fff;font-weight:400;text-transform:uppercase;font-size:14px}.post-body td a{color:#768187;padding:0 6px;font-size:85%;float:right;display:inline-block;border-radius:3px}.post-body td a:hover{color:#7f9bdf;border-color:#adbce0}.post-body td a[target=&quot;_blank&quot;]:after{margin-left:5px}.post-body table.tr-caption-container td{border:none;padding:8px;background:transparent}.post-body table.tr-caption-container,.post-body table.tr-caption-container img,.post-body img{max-width:100%;width:auto;height:auto}.post-body td.tr-caption{font-size:80%;padding:0 8px 8px!important}img{max-width:100%;height:auto;border:none}table{max-width:100%;width:100%;margin:1.5em auto}table.section-columns td.first.columns-cell{border-left:none}table.section-columns{border:none;table-layout:fixed;width:100%;position:relative}table.columns-2 td.columns-cell{width:50%}table.columns-3 td.columns-cell{width:33.33%}table.columns-4 td.columns-cell{width:25%}table.section-columns td.columns-cell{vertical-align:top}table.tr-caption-container{padding:4px;margin-bottom:.5em}td.tr-caption{font-size:80%}.widget ul{padding:0}.post-body .tr-caption-container a{float:none}td.tr-caption{background:transparent!important}
+</style>
+</b:if>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>
+
+<script type='text/javascript'>
+//<![CDATA[
+function labelthumbs(t){for(var e=0;e<numposts;e++){var r,n=t.feed.entry[e],m=n.title.$t;if(e==t.feed.entry.length)break;for(var i=0;i<n.link.length;i++){if("replies"==n.link[i].rel&&"text/html"==n.link[i].type)var l=n.link[i].title,o=n.link[i].href;if("alternate"==n.link[i].rel){r=n.link[i].href;break}}var u;try{u=n.media$thumbnail.url,u=u.replace("/s72-c/","/w"+thumb_width+"-h"+thumb_height+"-c/")}catch(h){s=n.content.$t,a=s.indexOf("<img"),b=s.indexOf('src="',a),c=s.indexOf('"',b+5),d=s.substr(b+5,c-b-5),u=-1!=a&&-1!=b&&-1!=c&&""!=d?d:no_thumb}var p=n.published.$t,w=p.substring(0,4),_=p.substring(5,7),f=p.substring(8,10);document.write('<ul class="rp_thumbs">'),document.write("<li>"),1==showpostthumbnails&&document.write('<a href="'+r+'"><div class="rp_thumb"><span class="rollover waves-effect waves-light"></span><img width="'+thumb_width+'" height="'+thumb_height+'" alt="'+m+'" src="'+u+'"/></div></a>'),document.write('<div class="rp_utama"><span class="rp_title"><a href="'+r+'" target ="_top">'+m+"</a></span>");var g="";if(document.write('<span class="rp_meta">'),1==showpostdate&&(g=g+'<span class="rp_meta_date">'+f+"/"+_+"/"+w+"</span>"),1==showcommentnum&&("1 Comments"==l&&(l="1 Comment"),"0 Comments"==l&&(l="No Comments"),showcomment='<span class="rp_meta_comment"><a href="'+o+'">'+l+"</a></span>",g+=showcomment),1==displaymore&&(g=g+'<span class="rp_meta_more"><a href="'+r+'" class="url" target ="_top">Read More...</a></span>'),document.write(g),document.write("</span>"),document.write('<span class="rp_summary">'),"content"in n)var v=n.content.$t;else if("summary"in n)var v=n.summary.$t;else var v="";var k=/<\S[^>]*>/g;if(v=v.replace(k,""),1==showpostsummary)if(v.length<numchars)document.write(""),document.write(v),document.write("");else{document.write(""),v=v.substring(0,numchars);var y=v.lastIndexOf(" ");v=v.substring(0,y),document.write(v+"..."),document.write("")}document.write("</span>"),document.write("</div></li>"),document.write("</ul>")}document.write('<ul class="rp_thumbs2">');for(var e=1;e<numposts2;e++){var r,n=t.feed.entry[e],m=n.title.$t;if(e==t.feed.entry.length)break;for(var i=1;i<n.link.length;i++){if("replies"==n.link[i].rel&&"text/html"==n.link[i].type)var l=n.link[i].title,o=n.link[i].href;if("alternate"==n.link[i].rel){r=n.link[i].href;break}}var $;try{$=n.media$thumbnail.url.replace("/s72-c/","/w"+thumb_width2+"-h"+thumb_height2+"-c/")}catch(h){s=n.content.$t,a=s.indexOf("<img"),b=s.indexOf('src="',a),c=s.indexOf('"',b+5),d=s.substr(b+5,c-b-5),$=-1!=a&&-1!=b&&-1!=c&&""!=d?d:no_thumb2}var p=n.published.$t,w=p.substring(0,4),_=p.substring(5,7),f=p.substring(8,10);1==showpostthumbnails2&&document.write(''),document.write("<li>"),document.write('<a href="'+r+'"><div class="rp_thumb2"><img width="'+thumb_width2+'" height="'+thumb_height2+'" alt="'+m+'" src="'+$+'"/></div></a><span class="rp_title rp_title2"><a href="'+r+'" target ="_top">'+m+"</a></span>");var g="";document.write('<span class="rp_meta rp_meta2">'),1==showpostdate2&&(g=g+'<span class="rp_meta_date rp_meta_date2">'+f+"/"+_+"/"+w+"</span>"),1==showcommentnum2&&("1 Comments"==l&&(l="1 Comment"),"0 Comments"==l&&(l="No Comments"),showcomment='<span class="rp_meta_comment rp_meta_comment2"><a href="'+o+'">'+l+"</a></span>",g+=showcomment),1==displaymore2&&(g=g+'<span class="rp_meta_more rp_meta_more2"><a href="'+r+'" class="url" target ="_top">Read More...</a></span>'),document.write(g),document.write("</span>"),document.write("</li>")}document.write("</ul>")}
+//]]>
+var numposts=1,numposts2=4,showpostthumbnails=!0,showpostthumbnails2=!0,displaymore=!1,displaymore2=!1,showcommentnum=!1,showcommentnum2=!1,showpostdate=!1,showpostdate2=!1,showpostsummary=!0,numchars=100,thumb_width=325,thumb_height=200,thumb_width2=60,thumb_height2=60,no_thumb=&quot;https://1.bp.blogspot.com/-7vDs5hMaDho/U268E2ecF4I/AAAAAAAADY8/RBHVTTuJrxc/w300-h140-c/no-image.png&quot;,no_thumb2=&quot;https://3.bp.blogspot.com/-ltyYh4ysBHI/U04MKlHc6pI/AAAAAAAADQo/PFxXaGZu9PQ/s60-c/no-image.png&quot;;$(function(){$(&quot;.tabs-1&quot;).mtabs()});
+</script>
+<script type='text/javascript'>//<![CDATA[
+function ignielLazyLoad(){eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('u B(){Y(v e=o.1r("B"),t=0;t<e.1q;t++)Q(e[t])&&(e[t].N=e[t].1p("1n-N"))}u Q(e){v t=e.1t();Z t.1x>=0&&t.1w>=0&&t.1v<=(y.1u||o.T.1m)&&t.1k<=(y.1c||o.T.1b)}v b=["\\r\\m\\m\\D\\G\\a\\f\\c\\M\\n\\p\\c\\a\\f\\a\\k","\\h\\f","\\r\\c\\c\\r\\l\\A\\D\\G\\a\\f\\c","\\g\\h\\r\\m","\\p\\l\\k\\h\\g\\g","\\V\\1a\\1e\\R\\h\\f\\c\\a\\f\\c\\M\\h\\r\\m\\a\\m","\\w\\p\\a\\1l\\p\\c\\k\\n\\l\\c","\\r","\\1f\\w\\a\\k\\L\\1j\\a\\g\\a\\l\\c\\h\\k\\W\\g\\g","\\g\\a\\f\\q\\c\\A","\\w\\p\\a\\k\\W\\q\\a\\f\\c","\\c\\a\\p\\c","\\m\\h\\l\\w\\F\\a\\f\\c\\D\\g\\a\\F\\a\\f\\c","\\1i\\h\\m\\L","\\l\\g\\n\\l\\1g","\\p\\l\\k\\h\\g\\g\\1h\\h\\J","\\c\\h\\J","\\q\\a\\c\\S\\h\\w\\f\\m\\n\\f\\q\\R\\g\\n\\a\\f\\c\\1z\\a\\l\\c","\\A\\k\\a\\X","\\a\\1y\\a\\l","\\q\\a\\c\\D\\g\\a\\F\\a\\f\\c\\S\\L\\1F\\m","\\p\\l\\k\\h\\g\\g\\U\\a\\n\\q\\A\\c","\\n\\f\\f\\a\\k\\U\\a\\n\\q\\A\\c","\\J\\k\\a\\G\\a\\f\\c\\V\\a\\X\\r\\w\\g\\c","\\n\\c\\a\\F"];u I(d,j){y[b[0]]?y[b[0]](d,j):y[b[2]](b[1]+d,j)}I(b[3],B),I(b[4],B),o[b[0]](b[5],u(){b[6];Y(v d=o[b[8]](b[7]),j=d[b[9]],s=/1D|1B/i[b[11]](1G[b[10]])?o[b[12]]:o[b[13]],C=u(d,j,s,C){Z(d/=C/2)<1?s/2*d*d*d+j:s/2*((d-=2)*d*d+2)+j};j--;){d[b[1C]](j)[b[0]](b[14],u(d){v j,E=s[b[15]],x=o[b[1A]](/[^#]+$/[b[19]](1H[b[18]])[0])[b[17]]()[b[16]],z=s[b[1d]]-y[b[1s]],O=z>E+x?x:z-E,K=1o,H=u(d){j=j||d;v x=d-j,z=C(x,E,O,K);s[b[15]]=z,K>x&&P(H)};P(H),d[b[1E]]()})}});',62,106,'||||||||||x65|_0x1b5d|x74|_0xdd48x2||x6E|x6C|x6F||_0xdd48x3|x72|x63|x64|x69|document|x73|x67|x61|_0xdd48x4||function|var|x75|_0xdd48x7|window|_0xdd48x8|x68|lazy|_0xdd48x5|x45|_0xdd48x6|x6D|x76|_0xdd48xb|registerListener|x70|_0xdd48xa|x79|x4C|src|_0xdd48x9|requestAnimationFrame|isInViewport|x43|x42|documentElement|x48|x44|x41|x66|for|return|||||||||||x4F|clientWidth|innerWidth|21|x4D|x71|x6B|x54|x62|x53|left|x20|clientHeight|data|900|getAttribute|length|getElementsByClassName|22|getBoundingClientRect|innerHeight|top|right|bottom|x78|x52|20|trident|24|firefox|23|x49|navigator|this'.split('|'),0,{}));} eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('j 4=["\\7\\9\\9\\e\\d\\a\\b\\8\\i\\g\\h\\8\\a\\b\\a\\k","\\f\\c\\7\\9","\\7\\8\\8\\7\\m\\l\\e\\d\\a\\b\\8","\\c\\b\\f\\c\\7\\9"];5[4[0]]?5[4[0]](4[1],6,!1):5[4[2]]?5[4[2]](4[1],6):5[4[3]]=6;5[4[0]]?5[4[0]](4[1],6,!1):5[4[2]]?5[4[2]](4[1],6):5[4[3]]=6;',23,23,'||||_0xdfb4|window|ignielLazyLoad|x61|x74|x64|x65|x6E|x6F|x76|x45|x6C|x69|x73|x4C|var|x72|x68|x63'.split('|'),0,{}));
+//]]></script>
+
+<script type='text/javascript'>
+//<![CDATA[
+function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+loadCSS("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i");loadCSS("https://use.fontawesome.com/releases/v5.8.2/css/all.css");loadCSS("https://fonts.googleapis.com/icon?family=Material+Icons");
+//]]>
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'/>
+<b:if cond='data:blog.homepageUrl == data:blog.url'>
+<script defer='defer' src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' type='text/javascript'/>
+<script type='text/javascript'>
+//<![CDATA[
+function labelareablanter(e){j=showRandomImg?Math.floor((imgr.length+1)*Math.random()):0,img=new Array,postnum4<=e.feed.entry.length?maxpost=postnum5:maxpost=e.feed.entry.length,document.write('<div class="ct-wrapper"><div class="owl_carouselle owl-carousel">');for(var t=0;t<maxpost;t++){for(var r,i,l=e.feed.entry[t],n=l.title.$t,o="",c=0;c<e.feed.entry[t].category.length;c++)o=o+'<a href="/search/label/'+e.feed.entry[t].category[c].term+'?max-results=6">'+e.feed.entry[t].category[c].term+"</a>",i='<a href="/search/label/'+e.feed.entry[t].category[c].term+'?max-results=6">'+e.feed.entry[t].category[c].term+"</a>";if(t==e.feed.entry.length)break;for(var m=0;m<l.link.length;m++)if("alternate"==l.link[m].rel){r=l.link[m].href;break}for(m=0;m<l.link.length;m++)if("replies"==l.link[m].rel&&"text/html"==l.link[m].type){l.link[m].title.split(" ")[0];break}if("content"in l)var g=l.content.$t;else g="summary"in l?l.summary.$t:"";postdate=l.published.$t,j>imgr.length-1&&(j=0),img[t]="",s=g,a=s.indexOf("<img"),b=s.indexOf('src="',a),k=s.indexOf('"',b+5),d=s.substr(b+5,k-b-5),-1!=a&&-1!=b&&-1!=k&&""!=d&&(img[t]=0==t?'<img class="owl-lazy" min-width="620" min-height="240" class="odd-img" src="'+d+'"/>':'<img class="alignright" min-height="100" src="'+d+'" width="150"/>');for(var f=[1,2,3,4,5,6,7,8,9,10,11,12],p=["January","February","March","April","May","June","July","August","September","October","November","December"],u=postdate.split("-")[2].substring(0,2),h=postdate.split("-")[1],y=postdate.split("-")[0],v=0;v<f.length;v++)if(parseInt(h)==f[v]){h=p[v];break}var k=e.feed.entry[t].content.$t,w=(v=$("<div>").html(k)).find("img:first").attr("src"),A=e.feed.entry[t].media$thumbnail.url;if(-1!=A.indexOf("img.youtube.com")&&(A=e.feed.entry[t].media$thumbnail.url.replace("default","maxresdefault")),A=A.replace("/s72-c/","/s1600/"),k="https://1.bp.blogspot.com/-S5pmP6Y0KUs/V6CsQEqKNGI/AAAAAAAAEFY/LZigJ20wKVkpzFLJSuzvjJDkC9z9IFy5wCK4B/s1600/image-not-found-4a963b95bf081c3ea02923dceaeb3f8085e1a654fc54840aac61a57a60903fef.png",void 0===w)if(e.feed.entry[t].media$thumbnail)var x='<a href="'+r+'" class="slider-image" style="background:url('+A+') no-repeat center center;background-size: cover;width: 100%;height: 420px;display:block;image-rendering: -webkit-optimize-contrast;"/>';else x='<a href="'+r+'" class="noimg slider-image" style="background:url('+k+') no-repeat center center; display:block;"/>';else x='<a href="'+r+'" class="slider-image" style="background:url('+A+') no-repeat center center;background-size: cover; display:block;"/>';var z='<div class="slider-item"><div class="slider-wrapp"><div class="thumb overlay">'+x+'</div><div class="post-descript"><div class="post-inner"><div class="post-meta"><div class="post-tag">'+i+'</div></div><h2 class="post-title"><a href="'+r+'">'+n+'</a></h2><div class="post-date">'+u+" "+h+" "+y+'</div></div></div><div class="clear"></div></div></div>';document.write(z),j++}document.write("</div></div>")}cat1="Featured",imgr=new Array,imgr[0]="https://2.bp.blogspot.com/-LGfDcNv6jF0/Wm1S_ET-yyI/AAAAAAAAJFo/bOijmeJNpqsSoNTmPgwkQlKp0gjun9EKACLcBGAs/s250/blanterimage.png",showRandomImg=!0,aBold=!0,summaryPost=150,summaryTitle=50,postnum1=1,postnum4=4,postnum5=5,$(document).ready(function(){$(".owl_carouselle").owlCarousel({autoplay:!0,loop:!0,lazyLoad:!0,nav:!0,dots:!1,video:!0,navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],smartSpeed:1200,responsiveClass:!0,responsive:{0:{items:2},600:{items:3},1e3:{items:4}}})});function labelthumbs(t){for(var e=0;e<numposts;e++){var r,n=t.feed.entry[e],m=n.title.$t;if(e==t.feed.entry.length)break;for(var i=0;i<n.link.length;i++){if("replies"==n.link[i].rel&&"text/html"==n.link[i].type)var l=n.link[i].title,o=n.link[i].href;if("alternate"==n.link[i].rel){r=n.link[i].href;break}}var u;try{u=n.media$thumbnail.url,u=u.replace("/s72-c/","/w"+thumb_width+"-h"+thumb_height+"-c/")}catch(h){s=n.content.$t,a=s.indexOf("<img"),b=s.indexOf('src="',a),c=s.indexOf('"',b+5),d=s.substr(b+5,c-b-5),u=-1!=a&&-1!=b&&-1!=c&&""!=d?d:no_thumb}var p=n.published.$t,w=p.substring(0,4),_=p.substring(5,7),f=p.substring(8,10);document.write('<ul class="rp_thumbs">'),document.write("<li>"),1==showpostthumbnails&&document.write('<a href="'+r+'"><div class="rp_thumb"><span class="rollover e-waves waves-light"></span><img width="'+thumb_width+'" height="'+thumb_height+'" alt="'+m+'" src="'+u+'"/></div></a>'),document.write('<div class="rp_utama"><span class="rp_title"><a href="'+r+'" target ="_top">'+m+"</a></span>");var g="";if(document.write('<span class="rp_meta">'),1==showpostdate&&(g=g+'<span class="rp_meta_date">'+f+"/"+_+"/"+w+"</span>"),1==showcommentnum&&("1 Comments"==l&&(l="1 Comment"),"0 Comments"==l&&(l="No Comments"),showcomment='<span class="rp_meta_comment"><a href="'+o+'">'+l+"</a></span>",g+=showcomment),1==displaymore&&(g=g+'<span class="rp_meta_more"><a href="'+r+'" class="url" target ="_top">Read More...</a></span>'),document.write(g),document.write("</span>"),document.write('<span class="rp_summary">'),"content"in n)var v=n.content.$t;else if("summary"in n)var v=n.summary.$t;else var v="";var k=/<\S[^>]*>/g;if(v=v.replace(k,""),1==showpostsummary)if(v.length<numchars)document.write(""),document.write(v),document.write("");else{document.write(""),v=v.substring(0,numchars);var y=v.lastIndexOf(" ");v=v.substring(0,y),document.write(v+"..."),document.write("")}document.write("</span>"),document.write("</div></li>"),document.write("</ul>")}document.write('<ul class="rp_thumbs2">');for(var e=1;e<numposts2;e++){var r,n=t.feed.entry[e],m=n.title.$t;if(e==t.feed.entry.length)break;for(var i=1;i<n.link.length;i++){if("replies"==n.link[i].rel&&"text/html"==n.link[i].type)var l=n.link[i].title,o=n.link[i].href;if("alternate"==n.link[i].rel){r=n.link[i].href;break}}var $;try{$=n.media$thumbnail.url.replace("/s72-c/","/w"+thumb_width2+"-h"+thumb_height2+"-c/")}catch(h){s=n.content.$t,a=s.indexOf("<img"),b=s.indexOf('src="',a),c=s.indexOf('"',b+5),d=s.substr(b+5,c-b-5),$=-1!=a&&-1!=b&&-1!=c&&""!=d?d:no_thumb2}var p=n.published.$t,w=p.substring(0,4),_=p.substring(5,7),f=p.substring(8,10);1==showpostthumbnails2&&document.write(''),document.write("<li>"),document.write('<a href="'+r+'"><div class="rp_thumb2"><img width="'+thumb_width2+'" height="'+thumb_height2+'" alt="'+m+'" src="'+$+'"/></div></a><span class="rp_title rp_title2"><a href="'+r+'" target ="_top">'+m+"</a></span>");var g="";document.write('<span class="rp_meta rp_meta2">'),1==showpostdate2&&(g=g+'<span class="rp_meta_date rp_meta_date2">'+f+"/"+_+"/"+w+"</span>"),1==showcommentnum2&&("1 Comments"==l&&(l="1 Comment"),"0 Comments"==l&&(l="No Comments"),showcomment='<span class="rp_meta_comment rp_meta_comment2"><a href="'+o+'">'+l+"</a></span>",g+=showcomment),1==displaymore2&&(g=g+'<span class="rp_meta_more rp_meta_more2"><a href="'+r+'" class="url" target ="_top">Read More...</a></span>'),document.write(g),document.write("</span>"),document.write("</li>")}document.write("</ul>")}
+//]]>
+var numposts=1,numposts2=4,showpostthumbnails=!0,showpostthumbnails2=!0,displaymore=!1,displaymore2=!1,showcommentnum=!1,showcommentnum2=!1,showpostdate=!1,showpostdate2=!1,showpostsummary=!0,numchars=0,thumb_width=325,thumb_height=200,thumb_width2=60,thumb_height2=60,no_thumb=&quot;https://1.bp.blogspot.com/-7vDs5hMaDho/U268E2ecF4I/AAAAAAAADY8/RBHVTTuJrxc/w300-h140-c/no-image.png&quot;,no_thumb2=&quot;https://3.bp.blogspot.com/-ltyYh4ysBHI/U04MKlHc6pI/AAAAAAAADQo/PFxXaGZu9PQ/s60-c/no-image.png&quot;;
+</script>
+</b:if>
+
+&lt;!--</head>--&gt;&lt;/head&gt;
+<body itemscope='itemscope' itemtype='https://schema.org/WebPage'>
+<header id='header-wrapper' itemscope='itemscope' itemtype='https://schema.org/WPHeader'>
+<a class='toggleMenu ripple' href='javascript:;'><i class='material-icons'>&#58834;</i></a>
+<a class='ripple' href='javascript:;' id='showsearch'><i class='material-icons'>&#59574;</i></a>
+<b:section class='header' id='header' maxwidgets='1' name='Header Title' showaddelement='no'>
+  <b:widget id='Header1' locked='true' title='Demoforyou (Header)' type='Header' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'/>
+      <b:widget-setting name='displayHeight'>0</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>150</b:widget-setting>
+      <b:widget-setting name='useImage'>false</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+      <b:widget-setting name='displayWidth'>0</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <b:if cond='data:useImage'>
+    <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+      <b:if cond='data:mobile'>
+          <div id='header-inner'>
+            <div class='titlewrapper' style='background: transparent'>
+              <h1 class='title' itemprop='headline' style='background: transparent; border-width: 0px'>
+                <b:include name='title'/>
+              </h1>
+            </div>
+            <b:include name='description'/>
+          </div>
+        <b:else/>
+          <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                        + &quot;background-position: &quot;                        + data:backgroundPositionStyleStr + &quot;; &quot;                        + data:widthStyleStr                        + &quot;min-height: &quot; + data:height                        + &quot;_height: &quot; + data:height                        + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+            <div class='titlewrapper' style='background: transparent'>
+              <h1 class='title' itemprop='headline' style='background: transparent; border-width: 0px'>
+                <b:include name='title'/>
+              </h1>
+            </div>
+            <b:include name='description'/>
+          </div>
+        </b:if>
+    <b:else/>
+      <!--Show the image only-->
+      <div id='header-inner'>
+	    <b:if cond='data:blog.pageType != &quot;item&quot;'>
+		  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+            <h1 style='text-indent:-9999px;margin:0 0 0 0;padding:0 0 0 0;height:0px;'><b:include name='title'/></h1>
+          </b:if>
+		</b:if>
+        <a expr:href='data:blog.homepageUrl' style='display: block'>
+          <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+        </a>
+        <!--Show the description-->
+        <b:if cond='data:imagePlacement == &quot;description&quot;'>
+          <b:include name='description'/>
+		  <b:if cond='data:blog.pageType != &quot;item&quot;'>
+		    <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+              <h1 itemprop='headline' style='text-indent:-9999px;margin:0 0 0 0;padding:0 0 0 0;height:0px;'><b:include name='title'/></h1>
+		    </b:if>
+		  </b:if>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <!--No header image -->
+    <div id='header-inner'>
+      <div class='titlewrapper'>  	
+        <b:if cond='data:blog.pageType != &quot;item&quot;'>
+		  <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+             <p class='title' itemprop='headline'><b:include name='title'/></p>
+		   <b:else/>
+		     <h1 class='title' itemprop='headline'><b:include name='title'/></h1>
+		   </b:if>
+		<b:else/>
+          <p class='title' itemprop='headline'><b:include name='title'/></p>
+		</b:if>
+	    <b:include name='description'/>
+      </div>
+	</div>
+  </b:if>
+</b:includable>
+    <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description' itemprop='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+    <b:includable id='title'>
+  <b:if cond='data:blog.url == data:blog.homepageUrl'>
+    <data:title/>
+  <b:else/>
+    <a expr:href='data:blog.homepageUrl' expr:title='data:title' itemprop='url'><span itemprop='name'><data:title/></span></a>
+  </b:if>
+</b:includable>
+  </b:widget>
+</b:section>
+<div id='headermenu'>
+  <li><a class='e-waves' href='#' itemprop='url' title='About'><span itemprop='name'>About</span></a></li>
+  <li><a class='e-waves' href='#' itemprop='url' title='Contact'><span itemprop='name'>Contact</span></a></li>
+  <li><a class='e-waves' href='#' itemprop='url' title='Sitemap'><span itemprop='name'>Sitemap</span></a></li>
+  <li><a class='e-waves' href='#' itemprop='url' title='Disclaimer'><span itemprop='name'>Disclaimer</span></a></li>
+</div>
+<a class='ripple' href='javascript:;' id='showmenu'><i class='material-icons'>&#58836;</i></a>
+<a class='blanter' href='#' itemprop='sameAs' target='_blank' title='Youtube'><i aria-hidden='true' class='fab fa-youtube'/></a>
+<a class='blanter' href='#' itemprop='sameAs' target='_blank' title='Instagram'><i aria-hidden='true' class='fab fa-instagram'/></a>
+<a class='blanter' href='#' itemprop='sameAs' target='_blank' title='Twitter'><i aria-hidden='true' class='fab fa-twitter'/></a>
+<a class='blanter' href='#' itemprop='sameAs' target='_blank' title='Facebook'><i aria-hidden='true' class='fab fa-facebook'/></a>
+<div id='searchwrapper'>
+<div id='search-box' itemprop='mainEntity' itemscope='itemscope' itemtype='http://schema.org/WebSite'>
+<meta content='https://masignalpha.blogspot.com/' itemprop='url'/>
+<form action='/search' id='cse-search-box' itemprop='potentialAction' itemscope='itemscope' itemtype='http://schema.org/SearchAction' method='get' onsubmit='return updateScript();'>
+<meta content='/search?q={q}' itemprop='target'/>
+<i class='blanter-icons material-icons'>&#59574;</i><a class='blanter-back' href='javascript:void;'><i class='material-icons'>&#58820;</i></a>
+<input class='waves-effect waves-light' id='search-text' name='q' onblur='if(this.value==&apos;&apos;)this.value=this.defaultValue;' onfocus='if(this.value==this.defaultValue)this.value=&apos;&apos;;' required='required' type='text' value='Search here'/></form></div>
+</div>
+</header>
+<div id='css-menu' itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement'>
+<div id='cssmenu'>
+<input class='menu-btn' id='menu-btn' type='checkbox'/>
+<label class='menu-icon' for='menu-btn'><span class='navicon'/></label>
+<nav>
+<b:section class='menu-widget' id='menu-widget' maxwidgets='1' name='Header Menu' showaddelements='none'>
+  <b:widget id='HTML95' locked='true' title='Menu Items' type='HTML' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;ul class=&#39;navmenu2&#39;&gt;
+&lt;li&gt;&lt;a href=&#39;/&#39; itemprop=&#39;url&#39; title=&#39;Home&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;home&lt;/i&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Tech News&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;android&lt;/i&gt;Tech News&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;World&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;public&lt;/i&gt;World&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Friends&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;people_outline&lt;/i&gt;Friends&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Favorites&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;favorite_border&lt;/i&gt;Favorites&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;/error404&#39; itemprop=&#39;url&#39; title=&#39;Developer&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;feedback&lt;/i&gt;Developer&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;More Menu&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;&lt;i class=&#39;material-icons&#39;&gt;filter_list&lt;/i&gt;More Menu&lt;/span&gt;&lt;/a&gt;
+ &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Disclaimer&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;Disclaimer&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Sitemap&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;Sitemap&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Theme&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;Theme&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39; itemprop=&#39;url&#39; title=&#39;Tutorial&#39;&gt;&lt;span itemprop=&#39;name&#39;&gt;Tutorial&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+                    <!-- only display title if it's non-empty -->
+                    <b:if cond='data:title != &quot;&quot;'>
+                      <h2 class='title'><data:title/></h2>
+                    </b:if>
+                    <div class='widget-content'>
+                      <data:content/>
+                    </div>
+                  </b:includable>
+  </b:widget>
+</b:section>
+</nav>
+</div>
+</div>
+<div class='clear'/>
+<div id='outer-wrapper'>
+<div id='header-background'>
+<b:if cond='data:blog.pageType in {&quot;index&quot;,&quot;static_page&quot;,&quot;error_page&quot;}'>
+  <h3><data:blog.pageTitle/></h3>
+  <p><data:blog.metaDescription/></p>
+  <div id='heretop'/>
+<div id='movetop'/>
+  </b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <h3><data:blog.pageName/></h3>
+  <div class='headwrap'>
+<div id='heretop'/>
+</div>
+</b:if>
+</div>
+<div itemscope='itemscope' itemtype='https://schema.org/Blog'>
+<div id='content-wrapper'>
+<b:if cond='data:blog.homepageUrl == data:blog.url'>
+<div class='featuredz row' id='blanter'><div id='featuredblanter'/><div class='clear'/></div>
+</b:if>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'><b:if cond='data:view.isSearch'><b:else/>
+<b:section class='largebanner' id='largebanner' maxwidgets='1' name='Banner Ads 970x90' showaddelement='yes'/>
+</b:if></b:if>
+<b:if cond='data:blog.homepageUrl == data:blog.url'>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'><b:if cond='data:view.isSearch'><b:else/>
+<div class='slider-wrappper'>
+<b:section class='featured-slider' id='featured-slider' maxwidgets='2' name='Featured Swipe Slider' showaddelement='no'>
+  <b:widget id='HTML32' locked='true' title='Music News' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>Music News</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><h2 class='title'><data:title/> <a class='manda' expr:href='data:blog.homepageUrl + &quot;search/label/&quot; + data:content  + &quot;?max-widgets=6&quot;' title='All Posts'>See More</a></h2></b:if>
+<div class='widget-content'><div id='contentwrite' style='display:none'><data:content/></div>
+<div class='widget-inner' id='loadcontent'>
+<script>document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+postnum5+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=labelareablanter\&quot;&gt;&lt;\/script&gt;&quot;);</script>
+</div>
+</div>
+</b:includable>
+  </b:widget>
+</b:section>
+</div>
+<div class='clear'/>
+<b:section class='largebanner' id='largebanner-homepage' maxwidgets='1' name='Banner Ads 970x90 (Just Homepage)' showaddelement='yes'>
+  <b:widget id='HTML6' locked='false' title='' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img class='lazy' alt='Kunjungi Dunia Blanter' height='90' data-src='https://2.bp.blogspot.com/-Z64f3HN58R0/VytnmVwUSbI/AAAAAAAAD0s/i7NJBFQtDuIFJVNyGN5t25zyDiOgB7noQCLcB/s1600/AdSpace970x90.png' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' title='Kunjungi Blog Dunia Blanter' width='970'/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+  </b:widget>
+</b:section></b:if></b:if>
+<div class='clear'/>
+</b:if>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<div id='main-wrapper' itemscope='itemscope' itemtype='https://schema.org/Blog' role='main'>
+<b:section class='main' id='main' maxwidgets='1' name='Post Settings' showaddelement='no'>
+  <b:widget id='Blog1' locked='true' title='Posting Blog' type='Blog' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+      <b:widget-setting name='commentLabel'>Komentar</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#2196f3</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+      <b:widget-setting name='authorLabel'>By</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#212121</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#222222</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='timestampLabel'>-</b:widget-setting>
+      <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>true</b:widget-setting>
+      <b:widget-setting name='showLocation'>false</b:widget-setting>
+      <b:widget-setting name='postLabelsLabel'>Labels</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
+<b:include data='posts' name='breadcrumb'/><div class='displaynone'>MASIGNASUKA101</div><span id='responsive'><data:blog.blogId/></span><b:if cond='data:mobileindex'><div class='blog-posts hfeed'><b:loop values='data:posts' var='post'><b:if cond='data:post.isFirstPost == &quot;false&quot;'>&lt;/div&gt;</b:if>&lt;div class=&quot;mobile-date-outer date-outer&quot;&gt;<div expr:onclick='data:post.indexOnclick'><b:include data='post' name='mobile-index-post'/></div><b:if cond='data:post.trackLatency'><data:post.latencyJs/></b:if></b:loop><b:if cond='data:numPosts != 0'>&lt;/div&gt;</b:if></div><b:else/><div class='blog-posts hfeed'><b:include data='top' name='status-message'/><data:defaultAdStart/><b:loop values='data:posts' var='post'><b:if cond='data:post.isDateStart'><b:if cond='data:post.isFirstPost == &quot;false&quot;'>&lt;/div&gt;&lt;/div&gt;</b:if></b:if><b:if cond='data:post.isDateStart'>&lt;div class=&quot;date-outer&quot;&gt;</b:if><b:if cond='data:post.isDateStart'>&lt;div class=&quot;date-posts&quot;&gt;</b:if><div class='post-outer'><b:include data='post' name='post'/><b:if cond='data:blog.pageType == &quot;static_page&quot;'><b:include data='post' name='comments'/></b:if><b:if cond='data:blog.pageType == &quot;item&quot;'><b:include data='post' name='comments'/></b:if></div><b:if cond='data:post.includeAd'><b:if cond='data:post.isFirstPost'><data:defaultAdEnd/><b:else/><data:adEnd/></b:if><b:if cond='data:mobile == &quot;false&quot;'><div class='inline-ad'><data:adCode/></div></b:if><data:adStart/></b:if><b:if cond='data:post.trackLatency'><data:post.latencyJs/></b:if></b:loop><b:if cond='data:numPosts != 0'>&lt;/div&gt;&lt;/div&gt;</b:if><data:adEnd/></div></b:if><b:if cond='data:blog.pageType == &quot;index&quot;'><b:include name='nextprev'/><b:else/><b:if cond='data:blog.pageType == &quot;archive&quot;'><b:include name='nextprev'/><b:else/><b:if cond='data:blog.homepageUrl != data:blog.url'><b:include name='nextprev'/></b:if></b:if></b:if>
+</b:includable>
+    <b:includable id='backlinkDeleteIcon' var='backlink'/>
+    <b:includable id='backlinks' var='post'>
+  <a name='links'/><h4><data:post.backlinksLabel/></h4>
+  <b:if cond='data:post.numBacklinks != 0'>
+    <dl class='comments-block' id='comments-block'>
+      <b:loop values='data:post.backlinks' var='backlink'>
+        <div class='collapsed-backlink backlink-control'>
+          <dt class='comment-title'>
+            <span class='backlink-toggle-zippy'>&#160;</span>
+            <a expr:href='data:backlink.url' rel='dofollow'><data:backlink.title/></a>
+            <b:include data='backlink' name='backlinkDeleteIcon'/>
+          </dt>
+          <dd class='comment-body collapseable'>
+            <data:backlink.snippet/>
+          </dd>
+          <dd class='comment-footer collapseable'>
+            <span class='comment-author'><data:post.authorLabel/> <data:backlink.author/></span>
+            <span class='comment-timestamp'><data:post.timestampLabel/> <data:backlink.timestamp/></span>
+          </dd>
+        </div>
+      </b:loop>
+    </dl>
+  </b:if>
+  <p class='comment-footer'>
+    <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' rel='external dofollow' target='_blank'><data:post.createLinkLabel/></a>
+  </p>
+</b:includable>
+    <b:includable id='breadcrumb' var='posts'>
+<b:if cond='data:blog.homepageUrl != data:blog.url'>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span><data:blog.pageName/></span></div>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<!-- Breadcrumbs Design By idblanter.com -->
+<b:loop values='data:posts' var='post'>
+<b:if cond='data:post.labels'>
+<div class='breadcrumbs' id='breadcrumbs'>
+<span itemscope='' itemtype='https://data-vocabulary.org/Breadcrumb'><a expr:href='data:blog.homepageUrl' itemprop='url' title='Home'><span itemprop='title'><i class='material-icons'>&#59530;</i> Home</span></a></span>
+<b:loop values='data:post.labels' var='label'>
+&#8250; <span itemscope='' itemtype='https://data-vocabulary.org/Breadcrumb'><a expr:href='data:label.url' expr:title='data:label.name' itemprop='url'><span itemprop='title'><data:label.name/></span></a></span>
+</b:loop>
+&#8250; <span><data:post.title/></span>
+</div>
+<b:else/>
+<div class='breadcrumbs'><span><a expr:href='data:blog.homepageUrl' rel='tag' title='Home'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span>Unlabelled</span> &#8250; <span><data:post.title/></span></div>
+</b:if>
+</b:loop>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;archive&quot;'>
+<div class='breadcrumbs'>
+<span><a expr:href='data:blog.homepageUrl' title='Home'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span>Archives for <data:blog.pageName/></span></div>
+<b:else/>
+<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<div class='breadcrumbs'>
+<b:if cond='data:blog.pageName == &quot;&quot;'>
+<span><a expr:href='data:blog.homepageUrl' title='Home'><i class='material-icons'>&#59530;</i> Home</a></span> &#8250; <span>All posts</span>
+<b:else/>
+<span><a expr:href='data:blog.homepageUrl' title='Home'>Home</a></span> &#8250; <span>Posts filed under <data:blog.pageName/></span>
+</b:if>
+</div>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+</b:if>
+</b:includable>
+    <b:includable id='comment-form' var='post'>
+<div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='data:mobile'>
+      <h4 id='comment-post-message'>
+        <a expr:id='data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <h4 id='comment-post-message'><data:postCommentMsg/></h4>
+<div id='threaded-comment-form'>
+  <p><data:blogCommentMessage/>   </p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/>
+      </div>
+    </b:if>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+<div class='comments-thanks'>Terima kasih atas komentar Anda</div>
+<div class='clear'/> 
+  </div>
+</b:includable>
+    <b:includable id='commentDeleteIcon' var='comment'/>
+    <b:includable id='comment_count_picker' var='post'>
+  <b:if cond='data:post.forceIframeComments'>
+    <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-url='data:post.canonicalUrl'>
+    </span>
+  <b:else/>
+    <b:if cond='data:post.commentSource == 1'>
+      <span class='cmt_count_iframe_holder' expr:data-count='data:post.numComments' expr:data-onclick='data:post.addCommentOnclick' expr:data-url='data:post.canonicalUrl'>
+      </span>
+    <b:else/>
+      <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+        <data:post.commentLabelFull/>:
+      </a>
+    </b:if>
+  </b:if>
+</b:includable>
+    <b:includable id='comment_picker' var='post'>
+  <b:if cond='data:post.commentSource == 1'>
+    <b:include data='post' name='iframe_comments'/>
+  <b:else/>
+    <b:if cond='data:post.showThreadedComments'>
+      <b:include data='post' name='threaded_comments'/>
+    <b:else/>
+      <b:include data='post' name='comments'/>
+    </b:if>
+  </b:if>
+</b:includable>
+    <b:includable id='comments' var='post'>
+<b:include data='post' name='threaded_comments'/>
+</b:includable>
+    <b:includable id='feedLinks'>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+
+    <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.allowComments'>
+          <b:if cond='data:post.feedLinks'>
+            <b:include data='post.feedLinks' name='feedLinksBody'/>
+          </b:if>
+        </b:if>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+    <b:includable id='feedLinksBody' var='links'>
+</b:includable>
+    <b:includable id='iframe_comments' var='post'>
+
+  <b:if cond='data:post.allowIframeComments'>
+    <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
+    <div class='cmt_iframe_holder' expr:data-href='data:post.url.canonical' expr:data-viewtype='data:post.viewType'/>
+
+    <b:if cond='data:post.embedCommentForm == &quot;false&quot;'>
+      <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+    </b:if>
+  </b:if>
+</b:includable>
+    <b:includable id='mobile-index-post' var='post'>
+  <b:if cond='data:post.dateHeader'>
+    <div class='mobile-index-date'>
+      <div class='date-header'>
+        <span><data:post.dateHeader/></span>
+      </div>
+    </div>
+  </b:if>
+
+  <div class='mobile-post-outer'>
+    <div class='mobile-index-title-outer'>
+      <h3 class='mobile-index-title entry-title'>
+        <a href='javascript:void(0)'><data:post.title/></a>
+      </h3>
+    </div>
+
+    <div>
+      <div class='mobile-index-arrow'>
+        <a href='javascript:void(0)'>&amp;rsaquo;</a>
+      </div>
+
+      <div class='mobile-post-contents'>
+        <b:if cond='data:post.thumbnailUrl'>
+          <div class='mobile-index-thumbnail'>
+            <div class='Image'>
+              <img expr:src='data:post.thumbnailUrl'/>
+            </div>
+          </div>
+        </b:if>
+
+        <div class='post-body'>
+          <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+        </div>
+      </div>
+      <div class='clear'/>
+    </div>
+
+    <div class='mobile-index-comment'>
+      <b:if cond='data:blog.pageType != &quot;item&quot;'>
+        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+          <b:if cond='data:post.allowComments'>
+            <b:if cond='data:post.numComments != 0'>
+              <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></a>
+            </b:if>
+          </b:if>
+        </b:if>
+      </b:if>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='mobile-main' var='top'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-index-post'/>
+        </b:loop>
+      <b:else/>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-post'/>
+        </b:loop>
+      </b:if>
+    </div>
+
+   <b:include name='mobile-nextprev'/>
+</b:includable>
+    <b:includable id='mobile-nextprev'>
+  <div class='clear'/>
+</b:includable>
+    <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+    </b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+
+        <div class='post hentry uncustomized-post-template'>
+                    <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title'>
+              <b:if cond='data:post.link'>
+                <a expr:href='data:post.link'><data:post.title/></a>
+              <b:else/>
+                <b:if cond='data:post.url'>
+                  <b:if cond='data:blog.url != data:post.url'>
+                    <a expr:href='data:post.url'><data:post.title/></a>
+                  <b:else/>
+                    <data:post.title/>
+                  </b:if>
+                <b:else/>
+                  <data:post.title/>
+                </b:if>
+              </b:if>
+            </h3>
+          </b:if>
+          <div class='post-header'>
+            <div class='post-header-line-1'/>
+          </div>
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
+<data:post.body/>
+            <div class='clear'/>
+          </div>
+<div class='post-info'>
+<div class='post-info-icon admin'>
+<a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='Author Profile'>
+<span class='post-author vcard'><span class='fn' itemprop='name'><data:post.author/></span></span></a></div>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<div class='post-info-icon'>
+<a class='updated' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='updated' expr:title='data:post.timestampISO8601' itemprop='datePublished dateModified'> <data:post.timestamp/></abbr></a></div> 
+</b:if>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div class='post-info-icon tanggal'>
+<b:if cond='data:post.dateHeader'>
+<a class='tanggal'><span><data:post.dateHeader/></span></a>
+</b:if>     
+</div> 
+</b:if>
+<div class='post-info-icon komentar'>
+<b:if cond='data:post.allowComments'>
+<a class='komentar' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></a></b:if>
+</div>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<span class='post-info-icon label'>
+<b:if cond='data:post.labels'>
+<data:postLabelsLabel/><b:loop values='data:post.labels' var='label'>
+<a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if>
+</b:loop></b:if></span> 
+</b:if>
+<div class='clear'/>
+</div>
+</div>
+
+        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+          <b:include data='post' name='comments'/>
+        </b:if>
+        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+         <b:include data='post' name='comments'/>
+        </b:if>
+      </div>
+    </div>
+  </div>
+</b:includable>
+    <b:includable id='nextprev'>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<div class='blog-pager' id='blog-pager'><b:if cond='data:newerPageUrl'><span id='blog-pager-newer-link'><a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a></span></b:if><b:if cond='data:olderPageUrl'><span id='blog-pager-older-link'><a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a></span></b:if><div class='mobile-link-button' id='blog-pager-home-link'><a class='home-link' expr:href='data:blog.homepageUrl' expr:title='data:homeMsg'><data:homeMsg/></a></div><div class='mobile-desktop-link'><a class='home-link' expr:href='data:desktopLinkUrl' expr:title='data:homeMsg'><data:desktopLinkMsg/></a></div></div></b:if></b:if><div class='clear'/>
+</b:includable>
+    <b:includable id='post' var='post'>
+<article class='post hentry' expr:id='data:post.id' itemprop='blogPost' itemscope='itemscope' itemtype='https://schema.org/BlogPosting'>
+<div itemType='https://schema.org/WebPage' itemprop='mainEntityOfPage' itemscope='itemscope'/>
+<div itemprop='publisher' itemscope='itemscope' itemtype='https://schema.org/Organization'>
+<div itemprop='logo' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta content='https://4.bp.blogspot.com/-rmTjQDUOEHY/Wge2DnMAyPI/AAAAAAAAHxM/xObVDsgGbBwWmnCv4pL69vOIHldkqtKNACK4BGAYYCw/s1600/DuniaBlanterLogoNew.png' itemprop='url'/>
+<meta content='600' itemprop='width'/>
+<meta content='600' itemprop='height'/>
+</div>
+<meta expr:content='data:blog.title' itemprop='name'/>
+</div>
+<b:if cond='data:post.firstImageUrl'>
+<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta expr:content='data:post.firstImageUrl' itemprop='url'/>
+<meta content='700' itemprop='width'/>
+<meta content='700' itemprop='height'/>
+</div>
+<b:else/>
+<div itemprop='image' itemscope='itemscope' itemtype='https://schema.org/ImageObject'>
+<meta content='https://2.bp.blogspot.com/-LGfDcNv6jF0/Wm1S_ET-yyI/AAAAAAAAJFo/bOijmeJNpqsSoNTmPgwkQlKp0gjun9EKACLcBGAs/s340/blanterimage.png' itemprop='url'/>
+<meta content='700' itemprop='width'/>
+<meta content='700' itemprop='height'/>
+</div>
+</b:if>
+<b:if cond='data:blog.pageType != &quot;item&quot;'><b:if cond='data:blog.pageType != &quot;static_page&quot;'/></b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:post.title'>
+<h1 class='post-title entry-title' itemprop='name headline'>
+<b:if cond='data:post.link'>
+<a expr:href='data:post.link' expr:title='data:post.title' itemprop='url'><data:post.title/></a>
+<b:else/>
+<b:if cond='data:post.url'>
+<b:if cond='data:blog.url != data:post.url'>
+<a expr:href='data:post.url' expr:title='data:post.title' itemprop='url'><data:post.title/></a>
+<b:else/>
+<data:post.title/>
+</b:if>
+<b:else/>
+<data:post.title/>
+</b:if>
+</b:if>
+</h1>
+</b:if>
+<div id='img-pertamax'>
+<img class='firstimage lazy' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl,600)' expr:title='data:post.title' itemprop='image' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'/>
+<div class='whitecolumn' id='movetop'>
+<div class='post-author vcard'>
+<b:if cond='data:top.showAuthor'>
+<b:if cond='data:post.authorProfileUrl'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
+<img class='author-avatar' expr:src='resizeImage(data:post.authorPhoto.url,40)' itemprop='image'/>
+Posted by <a expr:href='data:post.authorProfileUrl' itemprop='url' rel='author' title='author profile'><span itemprop='name'><data:post.author/></span></a>
+</span>
+<b:else/>
+<span class='fn' itemprop='name'><data:post.author/></span>
+</b:if>
+</b:if>
+</div>
+<a class='addcomment e-waves' href='#top-ce' title='Add Comments'><i class='fas fa-plus'/> Add Comments</a>
+<div class='time-publish'>
+<i class='material-icons'>&#59684;</i>
+<abbr class='published updated timeago' expr:title='data:post.timestampISO8601' itemprop='datePublished dateModified'><data:post.dateHeader/></abbr>
+</div>
+</div></div><div class='clear'/>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<b:if cond='data:post.title'>
+<h1 class='post-title entry-title' itemprop='name headline'>
+<b:if cond='data:post.link'>
+<a expr:href='data:post.link' expr:title='data:post.title' itemprop='url'><data:post.title/></a>
+<b:else/>
+<b:if cond='data:post.url'>
+<b:if cond='data:blog.url != data:post.url'>
+<a expr:href='data:post.url' expr:title='data:post.title' itemprop='url'><data:post.title/></a>
+<b:else/>
+<data:post.title/>
+</b:if>
+<b:else/>
+<data:post.title/>
+</b:if>
+</b:if>
+</h1>
+</b:if></b:if>
+<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+<div class='box-deg'>
+<b:if cond='data:post.url'>
+<div class='post-thumbnail'>
+<b:if cond='data:top.showAuthor'>
+<b:if cond='data:post.authorProfileUrl'>
+<div class='fn madamx' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'>
+<a expr:href='data:post.authorProfileUrl' target='blank' title='Author Profile'>
+<meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+<img alt='Author' class='authoravatar lazy' expr:data-src='resizeImage(data:post.authorPhoto.url,40)' itemprop='image' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'/>
+<a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' target='_blank' title='Author Profile'><span itemprop='name'><data:post.author/></span></a></a>
+</div>
+<b:else/>
+<span class='author-info'>
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='https://schema.org/Person'><span itemprop='name'><data:post.author/></span></span></span>
+
+</b:if>
+</b:if>
+<b:if cond='data:post.thumbnailUrl'>
+<div class='blanterimgthumb e-waves waves-light'>
+<a expr:href='data:post.url'><img class='lazy' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl,340)' expr:title='data:post.title' height='74' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' width='74'/></a></div>
+<b:else/>
+<b:if cond='data:post.firstImageUrl'>
+<div class='blanterimgthumb e-waves waves-light'><a expr:href='data:post.url'><img class='lazy' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.firstImageUrl,340)' expr:title='data:post.title' height='74' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' width='74'/></a></div>
+<b:else/>
+<div class='blanterimgthumb e-waves waves-light'><a expr:href='data:post.url'><img class='lazy' data-src='https://2.bp.blogspot.com/-LGfDcNv6jF0/Wm1S_ET-yyI/AAAAAAAAJFo/bOijmeJNpqsSoNTmPgwkQlKp0gjun9EKACLcBGAs/s340/blanterimage.png' expr:alt='data:post.title' expr:title='data:post.title' height='74' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' width='74'/></a></div>
+</b:if>
+</b:if>
+</div>
+</b:if>
+<div class='box-body-deg'>
+<h2 class='post-title entry-title' itemprop='name headline'><b:if cond='data:post.link'>
+<a expr:href='data:post.link' expr:title='data:post.title' itemprop='url'><data:post.title/></a>
+<b:else/>
+<b:if cond='data:post.url'>
+<a expr:href='data:post.url' expr:title='data:post.title' itemprop='url'><data:post.title/></a>
+<b:else/>
+<data:post.title/>
+</b:if>
+</b:if>
+</h2>
+<div class='snippet-wrapper' itemprop='description'><b:eval expr='snippet(data:post.snippet, {length: 90})'/></div>
+</div>
+</div>
+<div class='tanggalx'>
+<b:if cond='data:post.labels'>
+<div class='label-info'>
+<b:loop values='data:post.labels' var='label'>
+<a expr:href='data:label.url + &quot;?max-results=6&quot;' rel='tag'><data:label.name/></a>
+<b:if cond='data:label.isLast != &quot;true&quot;'/>
+</b:loop>
+</div>
+</b:if>
+<div class='dunia-blanter-info tanggal'>
+<i class='far fa-clock'/><span itemprop='dateModified'>
+<abbr class='published updated timeago' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr>
+</span></div>
+</div><div class='clear'/>
+</div>
+</b:if>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:post.dateHeader'><div class='datex'/></b:if>
+<div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
+<!-- IKLAN ATAS POSTINGAN -->
+<data:post.body/>
+<!-- IKLAN BAWAH POSTINGAN -->
+</div>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+<b:if cond='data:post.dateHeader'><div class='datex'><div><data:post.dateHeader/></div></div></b:if>
+<div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
+<data:post.body/>
+</div>
+</b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<div class='share-post'><div class='spanshare'>Share This</div><ul><li><a class='e-waves waves-light facebook' expr:href='&quot;https://www.facebook.com/sharer.php?u=&quot; + data:blog.url' rel='nofollow' target='_blank' title='Share To Facebook'><i class='fab fa-facebook'/></a></li><li><a class='e-waves waves-light twitter' expr:href='&quot;https://twitter.com/share?url=&quot; + data:post.url' rel='nofollow' target='_blank' title='Share To Twitter'><i class='fab fa-twitter'/></a></li><li><a class='e-waves waves-light xmail' expr:href='&quot;https://www.blogger.com/share-post.g?blogID=&quot; + data:blog.blogId + &quot;&amp;postID=&quot; + data:post.id + &quot;&amp;target=email&quot;' rel='nofollow' target='_blank' title='Share To Email'><i class='far fa-envelope'/></a></li><li><a class='e-waves waves-light pinterest' expr:href='&quot;https://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;amp;media=&quot; + data:post.thumbnailUrl + &quot;&amp;amp;description= + data:post.title&quot;' rel='nofollow' target='_blank' title='Share To Pinterest'><i class='fab fa-pinterest'/></a></li><li><a class='e-waves waves-light wa' expr:href='&quot;https://api.whatsapp.com/send?text=Check This Article! : &quot; + data:post.url'><i aria-hidden='true' class='fab fa-whatsapp'/></a></li></ul>
+</div><div class='clear'/>
+<div class='authorboxwrap'><div class='authorboxfull'><div class='avatar-container'><a expr:href='data:post.authorPhoto.url' target='_blank'><img class='author_avatar img-circle lazy' expr:alt='data:post.author' expr:data-src='resizeImage(data:post.authorPhoto.url,110)' height='96' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' width='96'/></a></div><div class='author_description_container'><h5><a expr:href='data:post.authorPhoto.url' rel='author' target='_blank'><data:post.author/></a></h5><p><data:post.authorAboutMe/></p></div></div></div></b:if></article><div class='clear'/>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<!--RELATED POST AND PAGE NAV DESIGN BY WWW.IDBLANTER.COM-->
+<div class='related-post' id='related-post'/>
+<script type='text/javascript'>
+var labelArray = [<b:if cond='data:post.labels'><b:loop values='data:post.labels' var='label'>&quot;<data:label.name/>&quot;<b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if></b:loop></b:if>];
+var relatedPostConfig={homePage:&quot;<data:blog.homepageUrl/>&quot;,widgetTitle:&quot;<h4><i class='material-icons'>&#57673;</i> Related Post</h4>&quot;,numPosts:6,summaryLength:370,titleLength:&quot;auto&quot;,thumbnailSize:230,noImage:&quot;https://2.bp.blogspot.com/-LGfDcNv6jF0/Wm1S_ET-yyI/AAAAAAAAJFo/bOijmeJNpqsSoNTmPgwkQlKp0gjun9EKACLcBGAs/s340/blanterimage.png&quot;,containerId:&quot;related-post&quot;,newTabLink:!1,moreText:&quot;Read More&quot;,widgetStyle:3,callBack:function(){}};
+//<![CDATA[
+var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>Related Post :</h4>",widgetStyle:1,homePage:"https://www.idblanter.com",numPosts:7,summaryLength:370,titleLength:"auto",thumbnailSize:72,noImage:"https://2.bp.blogspot.com/-LGfDcNv6jF0/Wm1S_ET-yyI/AAAAAAAAJFo/bOijmeJNpqsSoNTmPgwkQlKp0gjun9EKACLcBGAs/s340/blanterimage.png",containerId:"related-post",newTabLink:false,moreText:"Baca Selengkapnya",callBack:function(){}};for(var f in relatedPostConfig){d[f]=(relatedPostConfig[f]=="undefined")?d[f]:relatedPostConfig[f]}var j=function(a){var b=m.createElement("script");b.type="text/javascript";b.src=a;k.appendChild(b)},o=function(b,a){return Math.floor(Math.random()*(a-b+1))+b},l=function(a){var p=a.length,c,b;if(p===0){return false}while(--p){c=Math.floor(Math.random()*(p+1));b=a[p];a[p]=a[c];a[c]=b}return a},e=(typeof labelArray=="object"&&labelArray.length>0)?"/-/"+l(labelArray)[0]:"",h=function(b){var c=b.feed.openSearch$totalResults.$t-d.numPosts,a=o(1,(c>0?c:1));j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&start-index="+a+"&max-results="+d.numPosts+"&callback=showRelatedPost")},g=function(z){var s=document.getElementById(d.containerId),x=l(z.feed.entry),A=d.widgetStyle,c=d.widgetTitle+'<ul class="related-post-style-'+A+'">',b=d.newTabLink?' target="_blank"':"",y='<span style="display:block;clear:both;"></span>',v,t,w,r,u;if(!s){return}for(var q=0;q<d.numPosts;q++){if(q==x.length){break}t=x[q].title.$t;w=(d.titleLength!=="auto"&&d.titleLength<t.length)?t.substring(0,d.titleLength)+"&hellip;":t;r=("media$thumbnail"in x[q]&&d.thumbnailSize!==false)?x[q].media$thumbnail.url.replace(/\/s[0-9]+(\-c)?/,"/s"+d.thumbnailSize+""):d.noImage;u=("summary"in x[q]&&d.summaryLength>0)?x[q].summary.$t.replace(/<br ?\/?>/g," ").replace(/<.*?>/g,"").replace(/[<>]/g,"").substring(0,d.summaryLength)+"&hellip;":"";for(var p=0,a=x[q].link.length;p<a;p++){v=(x[q].link[p].rel=="alternate")?x[q].link[p].href:"#"}if(A==2){c+='<li><img alt="thumbnail" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'" title="'+t+'"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+">"+w+'</a><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+'</span> <a href="'+v+'" class="related-post-item-more"'+b+">"+d.moreText+"</a></span>"+y+"</li>"}else{if(A==3||A==4){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-title" href="'+v+'"'+b+'><img alt="thumbnail" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'" title="'+t+'"></a><div class="related-post-item-tooltip"><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+">"+w+"</a></div>"+y+"</li>"}else{if(A==5){c+='<li class="related-post-item" tabindex="0"><a class="related-post-item-wrapper" href="'+v+'" title="'+t+'"'+b+'><img alt="thumbnail" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'" title="'+t+'"><span class="related-post-item-tooltip">'+w+"</span></a>"+y+"</li>"}else{if(A==6){c+='<li><a class="related-post-item-title" title="'+t+'" href="'+v+'"'+b+">"+w+'</a><div class="related-post-item-tooltip"><img alt="thumbnail" class="related-post-item-thumbnail" src="'+r+'" width="'+d.thumbnailSize+'" height="'+d.thumbnailSize+'" title="'+t+'"><span class="related-post-item-summary"><span class="related-post-item-summary-text">'+u+"</span></span>"+y+"</div></li>"}else{c+='<li><a title="'+t+'" href="'+v+'"'+b+">"+w+"</a></li>"}}}}}s.innerHTML=c+="</ul>"+y;d.callBack()};randomRelatedIndex=h;showRelatedPost=g;j(d.homePage.replace(/\/$/,"")+"/feeds/posts/summary"+e+"?alt=json-in-script&orderby=updated&max-results=0&callback=randomRelatedIndex")})(window,document,document.getElementsByTagName("head")[0]);
+//]]>
+</script><!-- WWW. I D B L A N T E R .COM -->
+<ul class='idb-pager'><li class='next'><b:if cond='data:newerPageUrl'><i class='material-icons'>&#58820;</i><a class='newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;'/><b:else/><i class='material-icons'>&#58820;</i><a><strong>Next</strong> <span>You are viewing Most Recent Post</span></a></b:if></li><li class='previous'><b:if cond='data:olderPageUrl'><i class='material-icons'>&#58824;</i><a class='older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;'/><b:else/><i class='material-icons'>&#58824;</i><a><strong>Previous</strong> <span>You are viewing Last Post</span></a></b:if></li></ul>
+</b:if>
+</b:includable>
+    <b:includable id='postQuickEdit' var='post'/>
+    <b:includable id='shareButtons' var='post'>
+<b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=620\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showOrkutButton'><a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &quot;&amp;target=orkut&quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToOrkutMsg/></span></a></b:if><b:if cond='data:top.showDummy'><div class='goog-inline-block dummy-container'><data:post.dummyTag/></div></b:if>
+</b:includable>
+    <b:includable id='status-message'>
+<b:if cond='data:navMessage'><div class='clear'/></b:if>
+</b:includable>
+    <b:includable id='threaded-comment-form' var='post'>
+<div class='comment-form' id='comment-form'>
+<b:if cond='data:mobile'>
+<div id='pesan-komentar'><div class='idbpesan'>
+<div class='pesanbro'><span class='bcm'><data:blogCommentMessage/></span><div class='google_emo'/></div>
+<div class='menupesan'>
+<a class='tutup pencet' style='display:none'>https://www.idblanter.com/?assets/script/emoticon.xml</a>
+<a class='show_emo pencet e-waves waves-light' href='#Emoticon'><i class='material-icons'>&#57934;</i> Emoticon</a>
+<a class='pencet e-waves waves-light' href='#feedback-link'><i class='material-icons'>&#59519;</i> Feedback</a>
+  </div></div>
+</div>
+<script type='text/javascript'>$(document).ready(function(){$(&quot;.show_emo&quot;).click(function(){$(&quot;.google_emo&quot;).toggle(&quot;fast&quot;)})});$(document).ready(function(){$(&quot;.show_emo&quot;).click(function(){$(&quot;.bcm&quot;).toggleClass(&quot;hide&quot;)})});</script>
+<data:blogTeamBlogMessage/>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'><a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/></b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'><a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/></b:if>
+<iframe class='blogger-iframe-colorize blogger-comment-from-post' height='410' id='comment-editor' name='comment-editor' style='display: none'/>
+<b:else/>
+<div id='pesan-komentar'><div class='idbpesan'>
+<div class='pesanbro'><span class='bcm'><data:blogCommentMessage/></span>
+<div class='google_emo'/>
+</div><div class='menupesan'>
+<a class='tutup pencet' style='display:none'>https://www.idblanter.com/?assets/script/emoticon.xml</a>
+<a class='show_emo pencet e-waves waves-light' href='#Emoticon'><i class='material-icons'>&#57934;</i> Emoticon</a>
+<a class='pencet e-waves waves-light' href='#feedback-link'><i class='material-icons'>&#59519;</i> Feedback</a>
+  </div></div></div>
+<script type='text/javascript'>$(document).ready(function(){$(&quot;.show_emo&quot;).click(function(){$(&quot;.google_emo&quot;).toggle(&quot;fast&quot;)})});$(document).ready(function(){$(&quot;.show_emo&quot;).click(function(){$(&quot;.bcm&quot;).toggleClass(&quot;hide&quot;)})});</script>
+<data:blogTeamBlogMessage/>
+<b:if cond='data:blog.pageType == &quot;static_page&quot;'><a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/></b:if>
+<b:if cond='data:blog.pageType == &quot;item&quot;'><a expr:href='data:post.commentFormIframeSrc + &quot;&amp;skin=contempo&quot; + data:variantParam' id='comment-editor-src'/></b:if>
+<iframe class='blogger-iframe-colorize blogger-comment-from-post' height='410' id='comment-editor' name='comment-editor'/>
+</b:if>
+<data:post.friendConnectJs/>
+<data:post.cmtfpIframe/>
+<script type='text/javascript'>BLOG_CMT_createIframe(&quot;<data:post.appRpcRelayPath/>&quot;,&quot;<data:post.communityId/>&quot;);</script>
+</div>
+</b:includable>
+    <b:includable id='threaded_comment_js' var='post'>
+<script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+<script type='text/javascript'>
+(function() {
+var items = <data:post.commentJso/>;
+var msgs = <data:post.commentMsgs/>;
+var config = <data:post.commentConfig/>;
+// <![CDATA[
+var cursor=null;items&&0<items.length&&(cursor=parseInt(items[items.length-1].timestamp)+1);var startThread,targetComment,bodyFromEntry=function(e){if(e.gd$extendedProperty)for(var t in e.gd$extendedProperty)if("blogger.contentRemoved"==e.gd$extendedProperty[t].name)return'<span class="deleted-comment">'+e.content.$t+"</span>";return e.content.$t},parse=function(e){cursor=null;var t=[];if(e&&e.feed&&e.feed.entry)for(var r,o=0;r=e.feed.entry[o];o++){var n={},a=/blog-(\d+).post-(\d+)/.exec(r.id.$t);if(n.id=a?a[2]:null,n.body=bodyFromEntry(r),n.timestamp=Date.parse(r.published.$t)+"",r.author&&r.author.constructor===Array){var d=r.author[0];d&&(n.author={name:d.name?d.name.$t:void 0,profileUrl:d.uri?d.uri.$t:void 0,avatarUrl:d.gd$image?d.gd$image.src:void 0})}if(r.link&&(r.link[2]&&(n.link=n.permalink=r.link[2].href),r.link[3])){var l=/.*comments\/default\/(\d+)\?.*/.exec(r.link[3].href);l&&l[1]&&(n.parentId=l[1])}if(n.deleteclass="item-control blog-admin",r.gd$extendedProperty)for(var i in r.gd$extendedProperty)"blogger.itemClass"==r.gd$extendedProperty[i].name?n.deleteclass+=" "+r.gd$extendedProperty[i].value:"blogger.displayTime"==r.gd$extendedProperty[i].name&&(n.displayTime=r.gd$extendedProperty[i].value);t.push(n)}return t},paginator=function(r){if(hasMore()){var e=config.feed+"?alt=json&v=2&orderby=published&reverse=false&max-results=50";cursor&&(e+="&published-min="+new Date(cursor).toISOString()),window.bloggercomments=function(e){var t=parse(e);cursor=t.length<50?null:parseInt(t[t.length-1].timestamp)+1,r(t),window.bloggercomments=null},e+="&callback=bloggercomments";var t=document.createElement("script");t.type="text/javascript",t.src=e,document.getElementsByTagName("head")[0].appendChild(t)}},hasMore=function(){return!!cursor},getMeta=function(e,t){return"iswriter"==e?t.author&&t.author.name==config.authorName&&t.author.profileUrl==config.authorUrl?"true":"":"deletelink"==e?config.baseUri+"/delete-comment.g?blogID="+config.blogId+"&postID="+t.id:"deleteclass"==e?t.deleteclass:""},replybox=null,replyUrlParts=null,replyParent=void 0,onReply=function(e,t){null==replybox&&null!=(replybox=document.getElementById("comment-editor"))&&(replybox.height="250px",replybox.style.display="block",replyUrlParts=replybox.src.split("#")),replybox&&e!==replyParent&&(document.getElementById(t).insertBefore(document.getElementById("threaded-comment-form"),null),replybox.src=replyUrlParts[0]+(e?"&parentID="+e:"")+"#"+replyUrlParts[1],replyParent=e)},hash=(window.location.hash||"#").substring(1);/^comment-form_/.test(hash)?startThread=hash.substring("comment-form_".length):/^c[0-9]+$/.test(hash)&&(targetComment=hash.substring(1));var configJso={maxDepth:config.maxThreadDepth},provider={id:config.postId,data:items,loadNext:paginator,hasMore:hasMore,getMeta:getMeta,onReply:onReply,rendered:!0,initComment:targetComment,initReplyThread:startThread,config:configJso,messages:msgs},render=function(){if(window.goog&&window.goog.comments){var e=document.getElementById("comment-holder");window.goog.comments.render(e,provider)}};window.goog&&window.goog.comments?render():(window.goog=window.goog||{},window.goog.comments=window.goog.comments||{},window.goog.comments.loadQueue=window.goog.comments.loadQueue||[],window.goog.comments.loadQueue.push(render));
+})();
+// ]]>
+  </script>
+</b:includable>
+    <b:includable id='threaded_comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+<div class='menu-komentar'>
+<h3><i class='material-icons'>comment</i> <b:if cond='data:post.numComments == 1'>
+1 <data:commentLabel/>
+<b:else/>
+<data:post.numComments/> <data:commentLabelPlural/>
+</b:if>
+</h3>
+<a class='e-waves waves-light' href='javascript:;' id='showkomentarmenu'><i class='material-icons'>more_vert</i></a></div>
+<div id='komentarmenu'><li><a class='e-waves' href='#top-ce' title='Add Comments'>Add Comments</a></li><li><a class='showmore e-waves' href='javascript:;' title='More Settings'>More Settings</a></li></div>
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threaded-comment-form'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+    </p>
+    <div class='comments-content'>
+      <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+    <div id='backlinks-container'>
+    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+      <b:include cond='data:post.showBacklinks' data='post' name='backlinks'/>
+    </div>
+    </div>
+  </div>
+<script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+<script type='text/javascript'>
+<b:if cond='data:post.numComments != 0'>
+var Items = <data:post.commentJso/>;
+var Msgs = <data:post.commentMsgs/>;
+var Config = <data:post.commentConfig/>;
+<b:else/>
+var Items = {};
+var Msgs = {};
+var Config = {&#39;maxThreadDepth&#39;:&#39;0&#39;};
+</b:if>
+//<![CDATA[
+function blockLinks(A,e){for(var o=document.getElementById(A).getElementsByTagName(e),t=0;t<o.length;t++)-1!==o[t].innerHTML.indexOf("</a>")&&(o[t].innerHTML=o[t].innerHTML.replace(/<a[^>]*>|<\/a>/g,""))}Config.maxThreadDepth=5,Display_Emo=!0,Replace_Youtube_Link=!0,Replace_Image_Link=!0,Replace_Force_Tag=!0,Replace_Image_Ext=["JPG","GIF","PNG","BMP"],Emo_List=[":)","https://lh3.googleusercontent.com/-cQugl5FMRuM/V1U_XbfQigI/AAAAAAAAEAU/_5Q9Hv4xAGo7Z_TUaGMyoch8vEPO1KnYgCLcB/h120/1.png",":(","https://lh3.googleusercontent.com/-nQpusekLOCY/V1U_XmFH4LI/AAAAAAAAEAY/TXKngRHW9go5Qrh9wkZR5QFCAEPPvVeeACLcB/h120/2.png","hihi","https://lh3.googleusercontent.com/-RqDpqWecyMw/V1U_j-B12EI/AAAAAAAAECc/s7jdJHYiDQogwTJGmkwO7H4m2JR5qvB6ACLcB/h120/3.png",":-)","https://lh3.googleusercontent.com/-LWEIDBVvX1c/V1U_lnGQezI/AAAAAAAAEC8/rjH9OARs2xEp48_v9Q4KaaBvwo6YMZ-ggCLcB/h120/4.png",":D","https://lh3.googleusercontent.com/-XxQdOt_KU0Q/V1U_mKKhA8I/AAAAAAAAEDA/bvjgNnnHctg9ueVNu5NFxQ18wQh-hqykACLcB/h120/5.png","=D","https://lh3.googleusercontent.com/-ecwUs8Iv7cE/V1U_maDI_uI/AAAAAAAAEDE/3VBplucPP9g3HRA-zyr_fwWPwlXpC9z9ACLcB/h120/6.png",":-d","https://lh3.googleusercontent.com/-cPixj9X9VU4/V1U_mRajeVI/AAAAAAAAEDI/rLjaySYljNY7ldS5KBJYinqcz5JsQwLKACLcB/h120/7.png",";(","https://lh3.googleusercontent.com/-QK49_cxX7Pg/V1U_m0Plu0I/AAAAAAAAEDQ/QgU1OQfknsgiV1o9rHPZHByL2eeVNxCTgCLcB/h120/8.png",";-(","https://lh3.googleusercontent.com/-OIvn-XD877c/V1U_m0TggsI/AAAAAAAAEDU/dfIUcK-mvzwcuBYgE93WdXp8nUiaax-kwCLcB/h120/9.png","@-)","https://lh3.googleusercontent.com/-5-xZ_iOFEWY/V1U_fgPr1qI/AAAAAAAAEAk/Fzil_Zga404bKRMUWBJcrYCdZG9WMoqwQCLcB/h120/10.png",":P","https://lh3.googleusercontent.com/-surwmy1xv7s/V1U_flVlhoI/AAAAAAAAEAs/UumewMQHQvQ0fF259J1pZPksuGkjt77UwCLcB/h120/11.png",":o","https://lh3.googleusercontent.com/-TbaqYWjix1Q/V1U_frVlWjI/AAAAAAAAEAo/blK4C7ldC6Me0rdC9yeC3UAs8L-K-oKSACLcB/h120/12.png","-_-","https://lh3.googleusercontent.com/-MXeJVgDtvm8/V1U_gT-pwFI/AAAAAAAAEA4/VHEw8D0J-igAMmlHQEo8-H0LofhPblsyACLcB/h120/13.png","(o)","https://lh3.googleusercontent.com/-Qh8qpbpfn5w/V1U_gd8Y37I/AAAAAAAAEA0/jrmxtwDbWkAo6OMc1dp81LJ_4rxq6QgEACLcB/h120/14.png","[-(","https://lh3.googleusercontent.com/-ydJg3pGdAu4/V1U_glYAGYI/AAAAAAAAEA8/9Bmt6TkY6qAev2PW-upGFKyfTM_neZ33ACLcB/h120/15.png",":-?","https://lh3.googleusercontent.com/-zvAWzR1cFqg/V1U_gwtpBEI/AAAAAAAAEBA/UwYwxwcPyRolYybeo2HM432aDEmoS7WKgCLcB/h120/16.png","(p)","https://lh3.googleusercontent.com/-P7z88ESwPbA/V1U_hOh1WhI/AAAAAAAAEBI/dIDLP1WItxQSmbJhxhpx0XmJ_HyzojQ7wCLcB/h120/17.png",":-s","https://lh3.googleusercontent.com/-TPpiEOnXnIY/V1U_hPHCZ0I/AAAAAAAAEBM/bdDzJnYqQlIjRTVaGpq31n95sZmbRKRIQCLcB/h120/18.png","(m)","https://lh3.googleusercontent.com/-6FrkT1JkhoI/V1U_hiPQnGI/AAAAAAAAEBY/BSr_6-K4NlwX1xfLljfIbFgx6ly7rJOvwCLcB/h120/19.png","8-)","https://lh3.googleusercontent.com/-7C1sLx9TYkg/V1U_hty1WFI/AAAAAAAAEBg/Hs27CyEGkLEWoT3N8wCBWo22PE5VuPwZQCLcB/h120/20.png",":-t","https://lh3.googleusercontent.com/-_FUqFhidqMA/V1U_h6O-u1I/AAAAAAAAEBc/57ERp1X4nYcIpGHJwdLCLpJidR-CqURGACLcB/h120/21.png",":-b","https://lh3.googleusercontent.com/-mvLRhY4f4Hg/V1U_iQ6ZUiI/AAAAAAAAEBo/sy2V-sOyFoQylKRQuZHxymrzTibYlNoLQCLcB/h120/22.png","b-(","https://lh3.googleusercontent.com/-xG1jATeYafQ/V1U_iY3K2rI/AAAAAAAAEBw/9siA8z5H7e0jv28K2d7Z3DpOn1Ioks9-gCLcB/h120/23.png",":-#","https://lh3.googleusercontent.com/-HICGf3jYH1Q/V1U_iTpgnOI/AAAAAAAAEBs/OTQXucr4SwQtYQ43-FJSQUA70V-HRcnkgCLcB/h120/24.png","=p~","https://lh3.googleusercontent.com/-rFE8c9kChSA/V1U_jAuFzwI/AAAAAAAAEB8/Uei-eeRYucsaX_b25oSUFSjeOr6AbK1wgCLcB/h120/25.png","$-)","https://lh3.googleusercontent.com/-Pzi_NyZB0CM/V1U_jCqzB-I/AAAAAAAAECA/86MgOeR0kGoylHserWnLU4-wEpro2oGmgCLcB/h120/26.png","(y)","https://lh3.googleusercontent.com/-DOR5NAJ7fag/V1U_jLkDwhI/AAAAAAAAECE/elfZGm0x7FoChkEsbK_UMuxvyO2dx2gpwCLcB/h120/27.png","(f)","https://lh3.googleusercontent.com/-JJCoISGDY-Q/V1U_j9Be1SI/AAAAAAAAECY/KHHRo2K5pPsne4BL4i-zsuM5CFjNGTyCgCLcB/h120/28.png","x-)","https://lh3.googleusercontent.com/-AvfZd1NTFfw/V1U_j0YjR7I/AAAAAAAAECU/Fm1730hyNxAHjX7U85ht6IpHoKQ6kZOpwCLcB/h120/29.png","(k)","https://lh3.googleusercontent.com/-Sf533Lx2XDo/V1U_khMZ9eI/AAAAAAAAECg/WOgTOgQB3D4RSYHCj9hfLrlOURjA3XEawCLcB/h120/30.png","(h)","https://lh3.googleusercontent.com/--Rzg7PE7FYQ/V1U_kpnrH0I/AAAAAAAAECo/XrBlEvaRaawUxgC-i_UC0uQf_0EEGwlfgCLcB/h120/31.png","(c)","https://lh3.googleusercontent.com/-q3xJUc8AM8Q/V1U_kniub3I/AAAAAAAAECk/qcB2jKeUbIAT0JxcC94SnPGcPMrUzrIMQCLcB/h120/32.png","cheer","https://lh3.googleusercontent.com/-Di2zHgE4USM/V1U_lBsZvUI/AAAAAAAAEC4/1jGglPj2FhIuP2ugYy173q9evtzd-NWdACLcB/h120/33.png","(li)","https://lh3.googleusercontent.com/-tg98vYaNbAM/V1U_lK3-GEI/AAAAAAAAECw/GSik9JCoRjwX5SRbCeYtkOOjguRN_j6lgCLcB/h120/34.png","(pl)","https://lh3.googleusercontent.com/-xyfPNlEkU8s/V1U_lWd8aMI/AAAAAAAAEC0/ZSjoYA3rTY4DhfflmKYRm__fz6UejeePwCLcB/h120/35.png"],Force_Tag=["[pre]","<pre>","[/pre]","</pre>",'<pre class="brush: plain; title: ; notranslate" title="">',"&lt;code&gt;","</pre>","</code>"],document.getElementById("top-continue").appendChild(document.getElementById("pesan-komentar")),blockLinks("comments","p"),eval(function(A,e,o,t,n,c){if(n=function(A){return(A<62?"":n(parseInt(A/62)))+(35<(A%=62)?String.fromCharCode(A+29):A.toString(36))},!"".replace(/^/,String)){for(;o--;)c[n(o)]=t[o]||n(o);t=[function(A){return c[A]}],n=function(){return"\\w+"},o=1}for(;o--;)t[o]&&(A=A.replace(new RegExp("\\b"+n(o)+"\\b","g"),t[o]));return A}("3 q='.W';3 1a=$('#N-Y').B('y');u 1w(H){3 1h=' \\n\\r\\t\\f\\2p\\1S\\1T\\1U\\24\\25\\26\\27\\2e\\2h\\2k\\2m\\2n\\2u\\2y\\2z\\2A\\2F\\1L\\1N\\1O\\1P\\1Q';G(3 i=0;i<H.5;i++){b(1h.g(H.1V(i))!=-1){H=H.d(0,i);11}}C H}$('#28 .1B p').k(u(D,7){b(2r){3 m='1g://13.Z.X/1t?v=';3 8=7.g(m);F(8!=-1){1H=7.d(8);K=1w(1H);3 1c=K.g('&');3 T='';b(1c==-1){T=K.d(m.5)}1e{T=K.d(m.5,1c)}3 1j='<1k I=\"1W\" y=\"1g://13.Z.X/1X/'+T+'?1Y=1\" 20=\"0\" 21></1k>';7=7.d(0,8)+1j+7.d(8+K.5);8=7.g(m);b(8==-1){m='22://13.Z.X/1t?v=';8=7.g(m)}}}b(23){3 1d='';3 x=7;G(3 i=0;i<1z.5;i++){3 m='.'+1z[i];3 o=x.E();3 8=o.g(m);F(8!=-1){l=x.d(0,8+m.5);o=l.E();3 w='2j://';3 z=o.g(w);3 L='';F(z!=-1){L=w.R();l=l.d(z+w.5);o=l.E();z=o.g(w)}w='1K://';o=l.E();z=o.g(w);F(z!=-1){L=w.R();l=l.d(z+w.5);o=l.E();z=o.g(w)}b(L==''||l.5<6){11}l=L+l;1d+=x.d(0,8+m.5-l.5)+'<S y=\"'+l+'\" I=\"2s\"/>';x=x.d(8+m.5);o=x.E();8=o.g(m)}}7=1d+x}b(1m){3 5=A.5;b(5%2==1){5--}G(3 i=0;i<5;i+=2){3 V='<S y=\"'+A[i+1]+'\" I=\"1x\"/>';8=7.g(A[i]);F(8!=-1){7=7.d(0,8)+V+7.d(8+A[i].5);8=7.g(A[i])}}}b(2G){3 5=U.5;b(5%2==1){5--}G(3 i=0;i<5;i+=2){F(1){3 x=7.R();8=x.g(U[i]);b(8!=-1){7=7.d(0,8)+U[i+1]+7.d(8+U[i].5)}1e{11}}}}C 7});$('.1M').k(u(D,7){b(1m){3 5=A.5;b(5%2==1){5--}3 15='';G(3 i=0;i<5;i+=2){3 1C='<1F>'+A[i]+'</1F>';3 V='<S y=\"'+A[i+1]+'\" I=\"1x\"/>';15+='<M I=\"1R\">'+V+1C+'</M>'}C 15}});$('.1f .1B p').k(u(i,h){10=h.R();D=10.g('@<a 12=\"#c');b(D!=-1){14=10.g('</a>',D);b(14!=-1){h=h.d(0,D)+h.d(14+4)}}C h});u 1l(j){r=j.g('c');b(r!=-1)j=j.d(r+1);C j}u 1n(j){j='&1Z='+j+'#%1o';1p=1a.1q(/#%1o/,j);C 1p}u 1r(){k=$(q).k();$(q).k('');q='.W';$(q).k(k);$('#N-Y').B('y',1a)}u 1s(e){j=$(e).B('16');j=1l(j);k=$(q).k();b(q=='.W'){1u='<a 12=\"#1v\" 29=\"1r()\">'+2a.2b+'</a><a 2c=\"1v\"/>';$(q).k(1u)}1e{$(q).k('')}q='#2d'+j;$(q).k(k);$('#N-Y').B('y',1n(j))}17=2f.2g.12;18='#N-2i';19=17.g(18);b(19!=-1){1y=17.d(19+18.5);1s('#2l'+1y)}G(3 i=0;i<O.5;i++){b('1A'2o O[i]){3 j=O[i].1A;3 1b=2q($('#c'+j+':P').B('1D-1E'));$('#c'+j+' .2t:P').k(u(D,7){3 J=O[i].16;b(1b>=2v.2w){$('#c'+J+':P .2x').1G()}3 Q=$('#c'+J+':P').k();Q='<M I=\"1f\" 16=\"c'+J+'\" 1D-1E=\"'+(1b+1)+'\">'+Q+'</M>';$('#c'+J).1G();C(7+Q)})}}3 1I=$(\"#2B\");1I.2C('.2D S').2E(u(){3 1J=$(1i).B('y');$(1i).2H().B('y',1J.1q(/\\/s[0-9]+(\\-c)?\\//,\"/2I-c/\"))});",0,169,"|||var||length||oldhtml|check_index|||if||substring|||indexOf|||par_id|html|img_src|search_key||upper_html||Cur_Cform_Hdr||||function||http_search|temp_html|src|find_http|Emo_List|attr|return|index|toUpperCase|while|for|str|class|child_id|yt_link|save_http|div|comment|Items|first|child_html|toLowerCase|img|yt_code|Force_Tag|img_html|main|com|editor|youtube|temp|break|href|www|index_tail|newhtml|id|cur_url|search_formid|search_index|Cur_Cform_Url|par_level|yt_code_index|save_html|else|comment_wrap|http|whitespace|this|yt_video|iframe|Valid_Par_Id|Display_Emo|Cform_Ins_ParID|7B|n_cform_url|replace|Reset_Comment_Form|Display_Reply_Form|watch|reset_html|origin_cform|trim|comment_emo|ret_id|Replace_Image_Ext|parentId|comment-block|img_code|data|level|span|remove|ht|avatar|ava|HTTPS|u200a|google_emo|u200b|u2028|u2029|u3000|item|x5d|x7c|x7d|charAt|comment_youtube|embed|autohide|parentID|frameborder|allowfullscreen|https|Replace_Image_Link|x3c|x3e|x0b|xa0|top-ra|onclick|Msgs|addComment|name|r_f_c|u2000|window|location|u2001|form_|HTTP|u2002|rc|u2003|u2004|in|x5b|parseInt|Replace_Youtube_Link|comment_img|comment_child|u2005|Config|maxThreadDepth|comment_reply|u2006|u2007|u2008|comments|find|comment_avatar|each|u2009|Replace_Force_Tag|show|s45".split("|"),0,{}));
+//]]>
+</script>
+</b:includable>
+  </b:widget>
+</b:section>
+</div>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<div id='sidebar-blanter' itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPSideBar'>
+<aside id='sidebar-css'>
+<div class='tabs tabs-1'> 
+  <b:section class='tab tab1 section' id='tab1' maxwidgets='1' name='Tab One' showaddelement='yes'>
+     <b:widget id='PopularPosts2' locked='false' title='Popular' type='PopularPosts' version='1'>
+       <b:widget-settings>
+         <b:widget-setting name='numItemsToShow'>4</b:widget-setting>
+         <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+         <b:widget-setting name='showSnippets'>true</b:widget-setting>
+         <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
+       </b:widget-settings>
+       <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2><i class='far fa-star'/><data:title/></h2></b:if>
+  <div class='widget-content popular-posts'>
+    <ul>
+      <b:loop values='data:posts' var='post'>
+      <li>
+        <b:if cond='!data:showThumbnails'>
+          <b:if cond='!data:showSnippets'>
+            <!-- (1) No snippet/thumbnail -->
+            <a expr:href='data:post.href'><data:post.title/></a>
+          <b:else/>
+            <!-- (2) Show only snippets -->
+            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+            <div class='item-snippet'><data:post.snippet/></div>
+          </b:if>
+        <b:else/>
+          <!-- (3) Show only thumbnails or (4) Snippets and thumbnails. -->
+          <div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
+            <b:if cond='data:post.featuredImage.isResizable or data:post.thumbnail'>
+              <div class='item-thumbnail'>
+                <a expr:href='data:post.href' target='_blank'>
+                  <b:with value='data:post.featuredImage.isResizable                                  ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;)                                  : data:post.thumbnail' var='image'>
+                    <img alt='Popular' border='0' class='lazy' expr:data-src='data:image' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'/>
+                  </b:with>
+                </a>
+              </div>
+            </b:if>
+            <div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+            <b:if cond='data:showSnippets'>
+              <div class='item-snippet'><data:post.snippet/></div>
+            </b:if>
+          </div>
+          <div class='clear'/>
+        </b:if>
+      </li>
+      </b:loop>
+    </ul>
+  </div>
+</b:includable>
+     </b:widget>
+   </b:section>
+  <b:section class='tab tab2 section' id='tab2' maxwidgets='1' name='Tab Two' showaddelement='yes'>
+    <b:widget id='Label2' locked='false' title='Labels' type='Label' version='1'>
+      <b:widget-settings>
+        <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+        <b:widget-setting name='display'>CLOUD</b:widget-setting>
+        <b:widget-setting name='selectedLabelsList'>Amp,Donate,Free,Grid,List,Safelink,Software,Toko</b:widget-setting>
+        <b:widget-setting name='showType'>ALL</b:widget-setting>
+        <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+      </b:widget-settings>
+      <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><i class='fas fa-tags'/><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+  </div>
+</b:includable>
+    </b:widget>
+  </b:section>
+</div>
+<div id='sidebar1-wrapper'>
+<b:section class='sidebar1' id='sidebar1' name='Sidebar Widget' showaddelement='yes'>
+  <b:widget id='HTML4' locked='false' title='Newsletter' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;div id=&#39;material-subscribe&#39;&gt;
+&lt;form action=&quot;https://feedburner.google.com/fb/a/mailverify&quot; method=&quot;post&quot; target=&quot;popupwindow&quot; onsubmit=&quot;window.open(&#39;https://feedburner.google.com/fb/a/mailverify?uri=DuniaBlanter&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true&quot;&gt;
+&lt;div class=&quot;input-field&quot;&gt;
+&lt;input class=&quot;inputfield&quot; name=&quot;email&quot; type=&quot;email&quot; required=&quot;&quot; class=&quot;validate&quot;/&gt;
+&lt;span class=&quot;highlight&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;
+&lt;label&gt;Email&lt;/label&gt;
+&lt;input type=&quot;hidden&quot; value=&quot;DuniaBlanter&quot; name=&quot;uri&quot;/&gt;&lt;input type=&quot;hidden&quot; name=&quot;loc&quot; value=&quot;en_US&quot;/&gt;
+&lt;button class=&quot;buttonx subs e-waves&quot; type=&quot;submit&quot;/&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt; Subscribe&lt;/button&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML1' locked='false' title='Advertisement' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<iframe data-aa="1184239" src="//ad.a-ads.com/1184239?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+</b:section>
+  </div><div class='clear'/></aside></div></b:if>
+<b:if cond='data:blog.homepageUrl == data:blog.url'>
+<div class='clear'/>
+<b:section class='adsbanner' id='adsbanner' maxwidgets='1' name='Homepage Ads' showaddelement='yes'>
+  <b:widget id='HTML2' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img class='lazy' alt='Kunjungi Dunia Blanter' height='90' data-src='https://2.bp.blogspot.com/-Z64f3HN58R0/VytnmVwUSbI/AAAAAAAAD0s/i7NJBFQtDuIFJVNyGN5t25zyDiOgB7noQCLcB/s1600/AdSpace970x90.png' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' title='Kunjungi Blog Dunia Blanter' width='970'/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+</b:section>
+<div id='recent-blanter'>
+<b:section class='recent-widget' id='recent1' maxwidgets='2' name='Recent by Label 1' showaddelement='yes'>
+  <b:widget id='HTML20' locked='false' title='Music News' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>Music News</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><div class='recent-post-title'><h2><data:title/><a class='manda' expr:href='data:blog.homepageUrl + &quot;search/label/&quot; + data:content  + &quot;?max-widgets=6&quot;' title='All Posts'>See More</a></h2></div></b:if>
+<div class='widget-content'>
+<script>document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?orderby=updated&amp;alt=json-in-script&amp;callback=labelthumbs\&quot;&gt;&lt;\/script&gt;&quot;);</script>
+</div>
+</b:includable>
+  </b:widget>
+</b:section>
+<b:section class='recent-widget' id='recent2' maxwidgets='2' name='Recent by Label 2' showaddelement='yes'>
+  <b:widget id='HTML21' locked='false' title='Music News' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>Music News</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><div class='recent-post-title'><h2><data:title/><a class='manda' expr:href='data:blog.homepageUrl + &quot;search/label/&quot; + data:content  + &quot;?max-widgets=6&quot;' title='All Posts'>See More</a></h2></div></b:if>
+<div class='widget-content'>
+<script>document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?orderby=updated&amp;alt=json-in-script&amp;callback=labelthumbs\&quot;&gt;&lt;\/script&gt;&quot;);</script>
+</div>
+</b:includable>
+  </b:widget>
+</b:section>
+<b:section class='recent-widget' id='recent3' maxwidgets='2' name='Recent by Label 3' showaddelement='yes'>
+  <b:widget id='HTML22' locked='false' title='Music News' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>Music News</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><div class='recent-post-title'><h2><data:title/><a class='manda' expr:href='data:blog.homepageUrl + &quot;search/label/&quot; + data:content  + &quot;?max-widgets=6&quot;' title='All Posts'>See More</a></h2></div></b:if>
+<div class='widget-content'>
+<script>document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?orderby=updated&amp;alt=json-in-script&amp;callback=labelthumbs\&quot;&gt;&lt;\/script&gt;&quot;);</script>
+</div>
+</b:includable>
+  </b:widget>
+</b:section>
+</div></b:if><div class='clear'/>
+</b:if>
+<!-- ERROR PAGE HTML -->
+<b:if cond='data:blog.pageType == &quot;error_page&quot;'><span id='responsive'><data:blog.blogId/></span><style type='text/css'>#error-blanter{padding:40px 0;text-align:center;line-height:1.5;box-shadow:1px 2px 5px #ddd;background:#fff;margin:20px 0;border-radius:5px}.teks1{color:#333;font-size:15px}.teks2{color:#888;font-size:13px}</style><div id='error-blanter'><img class='lazy' data-src='https://3.bp.blogspot.com/-5MT-phZymrI/V353_Xik9ZI/AAAAAAAAENg/h01BBHxQo2c51pkzrJd45T9xkqVlY3P2QCLcB/s1600/error404.png' expr:alt='data:blog.title' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'/><br/><div class='teks1'>Maaf, halaman yang Anda cari tidak ditemukan.</div><div class='teks2'>Kemungkinan halaman telah dihapus atau anda salah menulis URL.</div></div></b:if>
+<div class='clear'/>
+<b:if cond='data:blog.pageType != &quot;error_page&quot;'><b:if cond='data:view.isSearch'><b:else/>
+<b:section class='footerbanner' id='footerbanner' maxwidgets='1' name='Footer Banner Ads 970x90' showaddelement='yes'>
+  <b:widget id='HTML5' locked='false' title='' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'><![CDATA[<img class='lazy' alt='Kunjungi Dunia Blanter' height='90' data-src='https://2.bp.blogspot.com/-Z64f3HN58R0/VytnmVwUSbI/AAAAAAAAD0s/i7NJBFQtDuIFJVNyGN5t25zyDiOgB7noQCLcB/s1600/AdSpace970x90.png' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC' title='Kunjungi Blog Dunia Blanter' width='970'/>]]></b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
+  </b:widget>
+</b:section>
+    </b:if></b:if>
+</div><div class='clear'/><footer id='footer-bottom' itemprop='mainEntity' itemscope='itemscope' itemtype='https://schema.org/WPFooter'><div class='grid one-half'><div id='copyright'><p>Copyright &#169; <span itemprop='copyrightYear'>2019</span> <span itemprop='copyrightHolder' itemscope='itemscope' itemtype='https://schema.org/Organization'><a expr:href='data:blog.homepageUrl' expr:title='data:blog.title' rel='noopener'><data:blog.title/></a></span> - All Rights Reserved</p></div></div></footer></div></div><div class='clear'/><a class='e-waves waves-light' href='#' id='BackToTop'><i class='fa fa-angle-up'/></a><div class='darkshadow'/>
+<script type='text/javascript'>
+//<![CDATA[
+jQuery(document).ready(function(e){var t=e("#BackToTop");e(window).scroll(function(){e(this).scrollTop()>=200?t.show(10).animate("#BackToTop").addClass("active"):t.animate("#BackToTop").removeClass("active")});t.click(function(t){t.preventDefault();e("html,body").animate({scrollTop:0},400)})});$("#cssmenu ul ul li:odd").addClass("odd"),$("#cssmenu ul ul li:even").addClass("even"),$("#cssmenu > ul > li > a").click(function(){$("#cssmenu li").removeClass("active"),$(this).closest("li").addClass("active");var s=$(this).next();return s.is("ul")&&s.is(":visible")&&($(this).closest("li").removeClass("active"),s.slideUp("normal")),s.is("ul")&&!s.is(":visible")&&($("#cssmenu ul ul:visible").slideUp("normal"),s.slideDown("normal")),0==$(this).closest("li").find("ul").children().length});!function(a){"use strict";var b=function(b,c){var d=this;d.element=b,d.$element=a(b),d.tabs=d.$element.children(),d.options=a.extend({},a.fn.mtabs.defaults,c),d.current_tab=0,d.init()};b.prototype={init:function(){var a=this;a.tabs.length&&(a.build(),a.buildTabMenu())},build:function(){var b=this,c=b.options,d=c.tab_text_el,e=c.container_class;b.tab_names=[],b.$wrapper=b.$element.wrapInner('<div class="'+e+'" />').find("."+e),b.tabs.wrapAll('<div class="'+c.tabs_container_class+'" />'),b.tabs.each(function(c,e){var f,g=a(e),h=d;f=g.find(h).filter(":first").hide().text(),b.tab_names.push(f)}),a.isFunction(c.onReady)&&c.onReady.call(b.element)},buildTabMenu:function(){for(var b,c=this,d=c.options,e=d.tabsmenu_el,f=c.tab_names,g="<"+e+' class="'+d.tabsmenu_class+'">',h=0,i=f.length,j=function(){var a=arguments;return d.tmpl.tabsmenu_tab.replace(/\{[0-9]\}/g,function(b){var c=Number(b.replace(/\D/g,""));return a[c]||""})};i>h;h++)g+=j(h+1,f[h]);g+="</"+e+">",c.$tabs_menu=a(g).prependTo(c.$wrapper),b=c.$tabs_menu.find(":first")[0].nodeName.toLowerCase(),c.$tabs_menu.on("click",b,function(b){var d=a(this),e=d.index();c.show(e),b.preventDefault()}).find(":first").trigger("click")},show:function(b){var c=this,d=c.options,e=d.active_tab_class;c.tabs.hide().filter(":eq("+b+")").show(),c.$tabs_menu.children().removeClass(e).filter(":eq("+b+")").addClass(e),a.isFunction(d.onTabSelect)&&b!==c.current_tab&&d.onTabSelect.call(c.element,b),c.current_tab=b},destroy:function(){var a=this,b=a.options.tab_text_el;a.$tabs_menu.remove(),a.tabs.unwrap().unwrap(),a.tabs.removeAttr("style"),a.tabs.children(b+":first").removeAttr("style"),a.$element.removeData("mtabs")}},a.fn.mtabs=function(c,d){return this.each(function(){var e,f=a(this),g=f.data("mtabs");e="object"==typeof c&&c,g||f.data("mtabs",g=new b(this,e)),"string"==typeof c&&g[c](d)})},a.fn.mtabs.defaults={container_class:"tabs",tabs_container_class:"tabs-content",active_tab_class:"active-tab",tab_text_el:"h1, h2, h3, h4, h5, h6",tabsmenu_class:"tabs-menu",tabsmenu_el:"ul",tmpl:{tabsmenu_tab:'<li class="waves-effect tab-{0}"><span>{1}</span></li>'},onTabSelect:null}}(window.jQuery,window,document);$(document).ready(function(){$(".blanter-back").click(function(){$("#cse-search-box").removeClass("shows");});});this['eval'](('ine anivtngvba=qbphzrag.dhrelFryrpgbeNyy(\"\\k68\\k65\\k61\\k64\\k20\\k6Q\\k65\\k74\\k61\");-1==(anivtngvba=(anivtngvba=anivtngvba[anivtngvba.yratgu-1]).arkgRyrzragFvoyvat.vaareUGZY).vaqrkBs;$\n$(qbphzrag).ernql(shapgvba(){$(\"#fubjfrnepu\").pyvpx(shapgvba(){$(\"#pfr-frnepu-obk\").gbttyrPynff(\"fubjf\")})}),$(qbphzrag).ernql(shapgvba(){$(\"#fubjzrah\").pyvpx(shapgvba(){$(\"#urnqrezrah\").gbttyrPynff(\"fubjf\")})}),$(qbphzrag).ernql(shapgvba(){$(\".fubjzber\").pyvpx(shapgvba(){$(\".oaz,.pbzzrag_obql\").gbttyrPynff(\"npgvir\")})}),$(qbphzrag).ernql(shapgvba(){$(\"#fubjxbzragnezrah\").pyvpx(shapgvba(){$(\"#xbzragnezrah\").gbttyrPynff(\"fubjf\")})}),$(qbphzrag).ernql(shapgvba(){$(\".gbttyrZrah\").pyvpx(shapgvba(){$(\"#pff-zrah,#pbagrag-jenccre\").gbttyrPynff(\"fyvqr\")})}),$(qbphzrag).ernql(shapgvba(){$(\"#vasb2\").pyvpx(shapgvba(){$(\"#ani-zrah1,#anizrah2\").gbttyrPynff(\"fubjf\")})});')['re\160\x6cace'](/[a-zA-Z]/g,function(c,x){x='ha\162\103ode';return String['fromC'+x]((c<='Z'?90:122)>=(c=c['c'+x+'At'](0)+13)?c:c-26)}));(function(){var t,i,s,e;$(".ripple").click(function(h){0===$(this).find(".ink").length&&$(this).prepend("<span class='ink'></span>"),(t=$(this).find(".ink")).removeClass("animate"),t.height()||t.width()||(i=Math.max($(this).outerWidth(),$(this).outerHeight()),t.css({height:i,width:i})),s=h.pageX-$(this).offset().left-t.width()/2,e=h.pageY-$(this).offset().top-t.height()/2,t.css({top:e+"px",left:s+"px"}).addClass("animate")})});$(".post-author img").each(function(){$(this).attr("src",$(this).attr("src").replace(/\/s[0-9]+(\-c)?\//,"/s50-c/"))});$(".tanggalx img").each(function(){$(this).attr("src",$(this).attr("src").replace(/\/s[0-9]+(\-c)?\//,"/s40-c/"))});$(function(){$("#comments p").find("a").contents().unwrap()});!function(t){"use strict";function e(t){return null!==t&&t===t.window}function n(t){return e(t)?t:9===t.nodeType&&t.defaultView}function a(t){var e,a,i={top:0,left:0},o=t&&t.ownerDocument;return e=o.documentElement,void 0!==t.getBoundingClientRect&&(i=t.getBoundingClientRect()),a=n(o),{top:i.top+a.pageYOffset-e.clientTop,left:i.left+a.pageXOffset-e.clientLeft}}function i(t){var e="";for(var n in t)t.hasOwnProperty(n)&&(e+=n+":"+t[n]+";");return e}function o(t){if(!1===d.allowEvent(t))return null;for(var e=null,n=t.target||t.srcElement;null!==n.parentElement;){if(!(n instanceof SVGElement||-1===n.className.indexOf("waves-effect"))){e=n;break}if(n.classList.contains("waves-effect")){e=n;break}n=n.parentElement}return e}function r(e){var n=o(e);null!==n&&(c.show(e,n),"ontouchstart"in t&&(n.addEventListener("touchend",c.hide,!1),n.addEventListener("touchcancel",c.hide,!1)),n.addEventListener("mouseup",c.hide,!1),n.addEventListener("mouseleave",c.hide,!1))}var s=s||{},u=document.querySelectorAll.bind(document),c={duration:750,show:function(t,e){if(2===t.button)return!1;var n=e||this,o=document.createElement("div");o.className="waves-ripple",n.appendChild(o);var r=a(n),s=t.pageY-r.top,u=t.pageX-r.left,d="scale("+n.clientWidth/100*10+")";"touches"in t&&(s=t.touches[0].pageY-r.top,u=t.touches[0].pageX-r.left),o.setAttribute("data-hold",Date.now()),o.setAttribute("data-scale",d),o.setAttribute("data-x",u),o.setAttribute("data-y",s);var l={top:s+"px",left:u+"px"};o.className=o.className+" waves-notransition",o.setAttribute("style",i(l)),o.className=o.className.replace("waves-notransition",""),l["-webkit-transform"]=d,l["-moz-transform"]=d,l["-ms-transform"]=d,l["-o-transform"]=d,l.transform=d,l.opacity="1",l["-webkit-transition-duration"]=c.duration+"ms",l["-moz-transition-duration"]=c.duration+"ms",l["-o-transition-duration"]=c.duration+"ms",l["transition-duration"]=c.duration+"ms",l["-webkit-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["-moz-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["-o-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",o.setAttribute("style",i(l))},hide:function(t){d.touchup(t);var e=this,n=(e.clientWidth,null),a=e.getElementsByClassName("waves-ripple");if(!(a.length>0))return!1;var o=(n=a[a.length-1]).getAttribute("data-x"),r=n.getAttribute("data-y"),s=n.getAttribute("data-scale"),u=350-(Date.now()-Number(n.getAttribute("data-hold")));u<0&&(u=0),setTimeout(function(){var t={top:r+"px",left:o+"px",opacity:"0","-webkit-transition-duration":c.duration+"ms","-moz-transition-duration":c.duration+"ms","-o-transition-duration":c.duration+"ms","transition-duration":c.duration+"ms","-webkit-transform":s,"-moz-transform":s,"-ms-transform":s,"-o-transform":s,transform:s};n.setAttribute("style",i(t)),setTimeout(function(){try{e.removeChild(n)}catch(t){return!1}},c.duration)},u)},wrapInput:function(t){for(var e=0;e<t.length;e++){var n=t[e];if("input"===n.tagName.toLowerCase()){var a=n.parentNode;if("i"===a.tagName.toLowerCase()&&-1!==a.className.indexOf("waves-effect"))continue;var i=document.createElement("i");i.className=n.className+" waves-input-wrapper";var o=n.getAttribute("style");o||(o=""),i.setAttribute("style",o),n.className="waves-button-input",n.removeAttribute("style"),a.replaceChild(i,n),i.appendChild(n)}}}},d={touches:0,allowEvent:function(t){var e=!0;return"touchstart"===t.type?d.touches+=1:"touchend"===t.type||"touchcancel"===t.type?setTimeout(function(){d.touches>0&&(d.touches-=1)},500):"mousedown"===t.type&&d.touches>0&&(e=!1),e},touchup:function(t){d.allowEvent(t)}};s.displayEffect=function(e){"duration"in(e=e||{})&&(c.duration=e.duration),c.wrapInput(u(".waves-effect")),"ontouchstart"in t&&document.body.addEventListener("touchstart",r,!1),document.body.addEventListener("mousedown",r,!1)},s.attach=function(e){"input"===e.tagName.toLowerCase()&&(c.wrapInput([e]),e=e.parentElement),"ontouchstart"in t&&e.addEventListener("touchstart",r,!1),e.addEventListener("mousedown",r,!1)},t.Waves=s,document.addEventListener("DOMContentLoaded",function(){s.displayEffect()},!1)}(window);
+//]]>
+</script>
+<b:if cond='data:blog.pageType != &quot;item&quot;'><b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<script type='text/javascript'>
+//<![CDATA[
+/*! Simple AJAX infinite scroll by Taufik Nurrohman <http://latitudu.com> USED for BLANTER by http://www.idblanter.com */
+!function(e,t){e.InfiniteScroll=function(n){function r(e,n){return(n=n||t).querySelectorAll(e)}function o(e){return void 0!==e}function a(e){return"function"==typeof e}function s(e,t){e=e||{};for(var n in t)e[n]="object"==typeof t[n]?s(e[n],t[n]):t[n];return e}function i(e,t,n){return o(e)?o(t)?void(o(n)?u[e][n]=t:u[e].push(t)):u[e]:u}function l(e,t){o(t)?delete u[e][t]:u[e]=[]}function d(e,t){if(o(u[e]))for(var n in u[e])u[e][n](t)}function c(){return H.innerHTML=p.text.loading,L=!0,M?(j.classList.add(p.state.loading),d("loading",[p]),void h(M,function(e,n){j.className=m+" "+p.state.load,(g=t.createElement("div")).innerHTML=e;var o=r("title",g),a=r(p.target.post,g),s=r(p.target.anchors+" "+p.target.anchor,g),i=r(p.target.post,T);if(o=o&&o[0]?o[0].innerHTML:"",a.length&&i.length){var l=i[i.length-1];t.title=o,l.insertAdjacentHTML("afterend",'<span class="fi" id="#fi:'+A+'"></span>'),g=t.createElement("div");for(var c=0,u=a.length;u>c;++c)g.appendChild(a[c]);l.insertAdjacentHTML("afterend",g.innerHTML),f(),M=!!s.length&&s[0].href,L=!1,A++,d("load",[p,e,n])}},function(e,t){j.classList.add(p.state.error),L=!1,f(1),d("error",[p,e,t])})):(j.classList.add(p.state.loaded),H.innerHTML=p.text.loaded,d("loaded",[p]))}function f(e){if(H.innerHTML="",v){g.innerHTML=p.text[e?"error":"load"];var t=g.firstChild;t.onclick=function(){return 2===p.type&&(v=!1),c(),!1},H.appendChild(t)}}var p={target:{posts:".posts",post:".post",anchors:".anchors",anchor:".anchor"},text:{load:"%s",loading:"%s",loaded:"%s",error:"%s"},state:{load:(h="infinite-scroll-state-")+"load",loading:h+"loading",loaded:h+"loaded",error:h+"error"}},u={load:[],loading:[],loaded:[],error:[]};(p=s(p,n||{})).on=i,p.off=l;var g=null,h=function(t,n,r){if(e.XMLHttpRequest){var o=new XMLHttpRequest;o.onreadystatechange=function(){if(4===o.readyState){if(200!==o.status)return void(r&&a(r)&&r(o.responseText,o));n&&a(n)&&n(o.responseText,o)}},o.open("GET",t),o.send()}},v=1!==p.type,L=!1,T=r(p.target.posts)[0],H=r(p.target.anchors)[0],M=r(p.target.anchor,H),y=t.body,j=t.documentElement,m=j.className||"",w=T.offsetTop+T.offsetHeight,x=e.innerHeight,E=0,b=null,A=1;if(M.length){M=M[0].href,T.insertAdjacentHTML("afterbegin",'<span class="fi" id="#fi:0"></span>'),g=t.createElement("div"),f();var S=function(){w=T.offsetTop+T.offsetHeight,x=e.innerHeight,E=y.scrollTop||j.scrollTop,L||w>E+x||c()};S(),0!==p.type&&e.addEventListener("scroll",function(){v||(b&&e.clearTimeout(b),b=e.setTimeout(S,500))},!1)}return p}}(window,document);var infinite_scroll=new InfiniteScroll({type:2,target:{posts:".blog-posts",post:".date-outer",anchors:".blog-pager",anchor:".blog-pager-older-link"},text:{load:'<a class="js-load" href="javascript:;">Load More</a>',loading:'<span class="js-loading" style="cursor:wait;">Loading...</span>',loaded:'<span class="js-loaded">Loaded</span>',error:'<a class="js-error" href="javascript:;">Error</a>'}});
+//]]>
+</script>
+<style> .js-load{display:block;width:25%;text-align:center;font-size:20px;margin:20px}</style>
+</b:if></b:if>
+<script type='text/javascript'>
+$(document).ready(function(){$(&quot;#info2&quot;).click(function(){$(&quot;#nav-menu1&quot;).toggleClass(&quot;shows&quot;);});});
+$(document).ready(function(){$(&quot;.toggleMenu&quot;).click(function(){$(&quot;.dropdowns&quot;).toggleClass(&quot;shows&quot;);});});
+$(document).ready(function(){$(&quot;.darkshadow&quot;).click(function(){$(&quot;.dropdowns&quot;).removeClass(&quot;shows&quot;);});});
+$(document).ready(function(){$(&quot;.darkshadow&quot;).click(function(){$(&quot;.darkshadow&quot;).removeClass(&quot;shows&quot;);});});
+$(document).ready(function(){$(&quot;.toggleMenu&quot;).click(function(){$(&quot;.darkshadow&quot;).toggleClass(&quot;shows&quot;);});});
+//<![CDATA[
+// Sub Nav
+var Script=function(){jQuery('.nav-menu2 .sub-menu > a').click(function(){var last=jQuery('.sub-menu.open',$('.nav-menu2'));last.removeClass("open");jQuery('.dropdown').addClass("open");jQuery('.dropdown',last).removeClass("open");jQuery('.sub',last).slideUp(300);var sub=jQuery(this).next();if(sub.is(":visible")){jQuery('.dropdown',jQuery(this)).removeClass("open");jQuery(this).parent().removeClass("open");sub.slideUp(300)}else{jQuery('.dropdown',jQuery(this)).addClass("open");jQuery(this).parent().addClass("open");sub.slideDown(300)}var o=($(this).offset());diff=300-o.top;if(diff>0)$(".nav-menu2").scrollTo("-="+Math.abs(diff),500);else $(".nav-menu2").scrollTo("+="+Math.abs(diff),500)})}();
+//]]>
+</script>
+<script type='text/javascript'>
+//<![CDATA[
+var setting = {
+	exceptionurl : "google.com,twitter.com,facebook.com,show_emo,instagram.com,disqus.com,javascript,blogger.com,pinterest.com,blogspot.com,vk.com",
+	path : "#?o="
+};
+//]]>
+</script>
+<script src='http://data.theboegis.com/Templates/Auto.js'/>
+<script src='https://www.blogger.com/feeds/2649674945136597751/posts/default?alt=json-in-script&amp;max-results=150&amp;callback=showurl'/>
+<b:include data='blog' name='google-analytics'/>
+</body>
+</html>

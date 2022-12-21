@@ -1,0 +1,5562 @@
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html  lang="fr">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+        
+        
+        
+            <meta name="description" content="D&eacute;couvrez les offres et services du Cr&eacute;dit Agricole &#x3a; comptes bancaire, assurance-vie, &eacute;pargne, placement, retraite, habitation, pr&eacute;voyance, cr&eacute;dit conso ou auto, cr&eacute;dit immobilier&hellip;" />
+        
+    
+    
+    
+        
+        
+		
+
+		
+            <title>Banque &amp; Assurances - Crédit Agricole</title>
+		
+	
+    <noscript>
+   	 <style type="text/css">
+        body {
+            overflow:hidden;
+        }
+     </style>
+    	<div class="TechnicalError noscript">
+			<div class="TechnicalError-content">
+				<div class="TechnicalError-paragraph">
+					<p class="TechnicalError-firstPara">Malheureusement, votre configuration de navigation actuelle ne vous permet pas de naviguer dans de bonnes conditions.</br> Vous ne pourrez pas profiter de toutes les fonctionnalités de notre site ni accéder à votre espace client.</p>
+				</div>
+			</div>
+		</div>
+	</noscript>
+	<meta name="format-detection" content="telephone=no">
+	<script>
+
+		
+		if ((!window.performance || window.performance.navigation.type === 2)  && window.history && window.history.state && window.history.state.bamBack && !isNaN(parseInt(window.history.state.bamBack))){
+			window.history.go(-1 * parseInt(window.history.state.bamBack));
+		}
+
+        
+        var NPC = NPC || {};
+        
+        NPC.logDebugEnabled = false;
+        
+		NPC.isAuthor =  false  ;
+
+        NPC.idLiveCopyCaisse = 'national';
+        NPC.urlLiveCopyCaisse = '\/';
+        NPC.isNational = true;
+        NPC.isChalus = false;
+        NPC.cheminOperations = '\/particulier\/operations\/';
+
+		if (NPC.isNational){
+			var cookieCRPath = (document.cookie.match('(^|; )cr-path=([^;]*)')||0)[2];
+			if (typeof cookieCRPath !== 'undefined'){ 
+				var urlRedirection = window.location.pathname === '/' ? '/particulier.html' : window.location.pathname;
+				urlRedirection = window.location.pathname.replace(new RegExp(NPC.urlLiveCopyCaisse),cookieCRPath);
+				window.location.pathname = urlRedirection;
+			}
+		}
+		
+		NPC.origin = "\/content\/ca\/national\/npc\/fr\/particulier.html";
+
+        //Enumeration des marches
+   		NPC.ENUM_MARCHES = {
+           	PARTICULIER: 1,
+           	PROMOTEUR: 2,
+           	PROFESSIONNEL: 3,
+           	ENTREPRISE: 4,
+           	AGRICULTEUR: 5,
+           	COLLECTIVITE_PUBLIQUE: 6,
+           	ASSOC_CA_MODERE: 7,
+           	PROFESSION_LIBERALE: 8,
+           	HORS_MARCHE: 9
+           };
+        
+        NPC.ENUM_NOMS_MARCHES = {
+       	 	1: 'particulier',
+            2: 'professionnel',
+            3: 'professionnel',
+            4: 'entreprise',
+            5: 'agriculteur',
+            6: 'collectivites-publiques',
+            7: 'association',
+            8: 'professionnel',
+            9: 'particulier'
+        };
+        
+        // Les versions des navigateurs compatible et partiellement compatible NPC (paramétré sur l'osgi VersionNavigateurConfigService)
+        NPC.versionNavigateur = {
+      		edge_partiellement_compatible: undefined,
+      		edge_compatible: 12.0,
+      		opera_partiellement_compatible: undefined,
+      		opera_compatible: 12.1,
+      		safari_partiellement_compatible: undefined,
+      		safari_compatible: 7.0,
+      		ie_partiellement_compatible: undefined,
+      		ie_compatible: 11.0,
+      		chrome_partiellement_compatible: undefined,
+      		chrome_compatible: 22.0,
+      		firefox_partiellement_compatible: undefined,
+      		firefox_compatible: 24.0,
+      		ios_safari_partiellement_compatible: undefined,
+      		ios_safari_compatible: 5.0,
+      		chrome_android_partiellement_compatible: undefined,
+      		chrome_android_compatible: 22.0,
+      		firefox_android_partiellement_compatible: undefined,
+      		firefox_android_compatible: 27.0,
+      		ie_mobile_partiellement_compatible: undefined,
+      		ie_mobile_compatible: 11.0
+        };
+        
+        //Informations sur l'utilisateur connecte
+        NPC.utilisateur = NPC.utilisateur || {};
+		
+        NPC.utilisateur.idLiveCopyCaisse = "national";
+        NPC.utilisateur.langue = "fr";
+        
+        //Ce marche est determiner par l'url
+        NPC.utilisateur.marche = "particulier";
+        NPC.utilisateur.idMarcheUrl = '1';
+        NPC.utilisateur.libMarcheUrl =(NPC.utilisateur.idMarcheUrl > -1) ? NPC.ENUM_NOMS_MARCHES[NPC.utilisateur.idMarcheUrl] : '';
+     
+		
+		
+	   //Set de la clé api facebook
+        var facebookApiKeyByLiveCopy = JSON.parse('["national:2088572324732225","cr802:742015355847951","cr812:381334225753943","cr813:236194743080113","cr817:2047277348833210","cr820:130615026931","cr822:125693774818703","cr824:1647614682214930","cr825:423804441128386","cr829:335878986882810","cr831:2298331523560690","cr833:246847305421128","cr835:131719023566120","cr836:410973159305257","cr839:117911532212286","cr844:371812043003580","cr845:138041799613644","cr847:874619819339934","cr848:625667387637386","cr861:846789822355312","cr866:671305972904084","cr867:491470254721351","cr868:304579807109578","cr869:869989623123457","cr871:506622003029293","cr872:171287596225615","cr878:202745849751025","cr879:2317784171828151","cr881:257477769149","cr882:117911532212286","cr883:273676492713326","cr887:862084013941588","cr891:402894249820426","cr894:347433648378","cr895:154054731279786","cr900:100001061460615","cr_bretonnes:389368678148569"]');
+        for(var i = 0; i < facebookApiKeyByLiveCopy.length; i++){
+            var keyValueTempArray = facebookApiKeyByLiveCopy[i].split(":");
+            if(keyValueTempArray[0].trim() === "national"){
+				NPC.facebookApiKey = keyValueTempArray[1].trim();
+                break;
+            }
+        }
+        
+        //Set de la clé google api
+	    NPC.googleApiKey = 'AIzaSyBORiJsT58u495bKIywx9PgmoM1cGMqlZY';
+        //Set de l'url d'accès au js Inbenta
+        NPC.inbentaJsUrl = 'https://credit-agricole.inbenta.com/jsonp/inbenta-1.0.0.js';
+        //Set de l'url d'accès au js du compagnion Inbenta
+        NPC.inbentaCompanionJsUrl = 'https://credit-agricole-compagnon.inbenta.com/';
+        //Set de l'url d'accès au js de BazaarVoice
+        NPC.bazaarVoiceJsUrl = 'https://display.ugc.bazaarvoice.com/static/';
+        //Set de l'url d'accès au js du tchat genesys
+        NPC.genesysTchatJsUrl = 'https://bv-chat.credit-agricole.fr/oic-services/js/bver.js';
+      	//Set de l'authorization key au js du tchat genesys
+        NPC.genesysTchatJsAuthorizationKey = 'd737e5e38b3c53149ef8401c577d8643588c9034d0ed0ddbdf0db081cbac97b3';
+        //Nombre maximum de mois pour afficher le détail d'une opération
+        NPC.syntheseN3MaxMonthForDisplayOperationDetail = 1;
+        
+        // Set du temps du keep alive pour le tchat
+        NPC.keepAliveTime = '480000';
+		
+        NPC.genererURLJson = function(selecteurs) {
+        	var pathname = window.location.pathname;
+        	var indexExtension = pathname.indexOf('.html');
+        	if (indexExtension !==-1){
+        		pathname = pathname.substring(0, indexExtension);
+
+        		var indexDebutNoeud = pathname.lastIndexOf('/');
+        		var indexDebutSelecteur = pathname.indexOf('.', indexDebutNoeud);
+        		
+        		if (indexDebutSelecteur !==-1){
+        			pathname = pathname.substring(0, indexDebutSelecteur);
+        		}
+        		pathname = pathname + "/jcr:content" + (selecteurs ? '.' + selecteurs : '') + '.json';
+
+        		return pathname;
+        	}
+        };
+
+       	NPC.urlMarcheCourant = "particulier";
+        NPC.homePage = NPC.urlLiveCopyCaisse + NPC.utilisateur.marche + ".html";
+
+        NPC.branche = "";
+
+        
+            NPC.branche = "branche1";
+            	
+		
+
+		//Set de l'url d'accès à la page FAQ pour inbenta
+		NPC.recupererUrlFaq = function(){
+			return "\/particulier\/faq.html";
+		} 
+		NPC.recupererUrlFaqLogin = function(){
+			return "\/particulier\/acceder\u002Da\u002Dmes\u002Dcomptes.html?resource=%2Fparticulier%2Ffaq.html";
+		} 
+		
+		//Gestion de la session DSP2, on force l'utilisateur a rester sur son parcours DSP2 s'il l'a deja commencé.
+		NPC.dsp2 = NPC.dsp2 || {};
+
+		NPC.dsp2.isCurrentPageDSP2 = function() {
+			var DSP2_PATTERN = new RegExp(".*/dsp2/.*");
+			var ERROR_PATTERN = new RegExp(".*errors.*");
+			return (DSP2_PATTERN.test(window.location.pathname) || ERROR_PATTERN.test(window.location.pathname));
+		};
+
+		NPC.dsp2.isCurrentCookieDSP2 = function() {
+			return (((document.cookie.match('(^|; )' + 'dsp2-en-cours' + '=([^;]*)')||0)[2])!=null);
+		};
+		
+		if (!NPC.dsp2.isCurrentPageDSP2()&&NPC.dsp2.isCurrentCookieDSP2()){
+			window.location.href= NPC.urlLiveCopyCaisse+NPC.utilisateur.marche+"/dsp2/informations.html";
+		};
+		
+		
+		
+	
+		NPC.offsetGuadeloupe = -14400000;
+		NPC.offsetMartinique = -14400000;
+		NPC.offsetReunion = 14400000;
+		NPC.offsetParis = 3600000;
+
+    </script>
+       
+   	
+		
+	    
+	    	
+
+
+
+
+	
+	
+
+
+
+
+
+	
+<script>
+
+	
+	NPC.user = NPC.user || {};
+	NPC.user.isConnected = false;
+
+	NPC.utilisateur.email	 = '';
+	NPC.utilisateur.conseiller = {
+	   	'title': '',
+	    'firstName': '',
+	    'lastName': '',
+		'phoneNumber': '',
+	    'mobilePhoneNumber': ''
+	};
+	
+	NPC.utilisateur.fullName = "";
+	NPC.utilisateur.ccptea = '';
+	NPC.utilisateur.civiliteClient = "";
+	NPC.utilisateur.nomMaritalClient = "";
+	NPC.utilisateur.prenomClient = "";
+	NPC.utilisateur.agenceId='';
+	
+	NPC.utilisateur.idMarcheUtilisateur = '-1';
+    NPC.utilisateur.libMarcheUtilisateur = (NPC.utilisateur.idMarcheUtilisateur > -1) ? NPC.ENUM_NOMS_MARCHES[NPC.utilisateur.idMarcheUtilisateur] : '';
+
+	NPC.utilisateur.fonctionsNpc = {};
+	
+	
+	
+
+	
+	
+	
+	NPC.utilisateur.isMineur = '';
+
+	
+	NPC.timeout = {};
+	
+	
+	NPC.timeout.storageTimeoutKeyPrefix = window.location.hostname + "." + NPC.idLiveCopyCaisse;		
+	
+	
+	NPC.timeout.storageDeconnexionEvent = NPC.timeout.storageTimeoutKeyPrefix + ".NPCDisconnectKey";
+	
+	
+	NPC.timeout.storageLocationRenouvellementSession = NPC.timeout.storageTimeoutKeyPrefix + ".NPCRenouvellementSessionKey";
+	NPC.authent = {};
+	NPC.authent.debugEnabled = 'false' == "true";
+	NPC.authent.localStorage = 'false' == "true";
+
+	if (NPC.user.isConnected) {
+		
+
+		NPC.timeout.timeoutTime = Number('9');
+		NPC.timeout.timeoutDisconnectTime = Number('59');
+		NPC.timeout.timeoutSecurityTime = Number('0');
+
+		NPC.timeout.refreshTokenTTL = '';
+		NPC.timeout.refreshTokenTTLWarning = '';
+		NPC.timeout.refreshTokenTTLEnd = '';
+
+		NPC.timeout.refreshTokenTTLConf = Number('60');
+		NPC.timeout.refreshTokenTTLWarningConf = Number('55');
+		NPC.timeout.refreshTokenTTLEndConf = Number('59');
+	}
+	
+	</script>
+
+	    
+	
+
+    
+
+    
+
+	
+    
+
+    
+
+ 	<link rel="stylesheet" href="/etc/designs/ca/npc/clientlib-part.min.c37f12490368acdb26716ed215f70b0c.css" type="text/css">
+
+
+    <link rel="stylesheet" href="/etc/designs/ca/npc/clientlibStoreLocatorT33Part.min.f72730de703c2d266b7fde791cfa1701.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/ca/npc/clientlibStoreLocatorT34Part.min.d6f5a64818501f04345746b0e2618b09.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/ca/npc/clientlibBoutonVertPart.min.d41d8cd98f00b204e9800998ecf8427e.css" type="text/css">
+
+
+    
+
+
+
+
+
+
+
+
+
+ 
+<link rel="stylesheet" href="/etc/designs/ca/npc/clientlibMarcheSpeBanquePriveePart.min.85f04ffde530698811885b2a9be814f3.css" type="text/css">
+ 
+
+
+
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery.min.5e8d3382f82b03b0bf3fea3024eecd61.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/utils.min.6968fb10cbad8a699b7bcf06fbd45b91.js"></script>
+<script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.min.b82fcc6ac1f7e79cd9f66e927be67ebb.js"></script>
+
+<script type="text/javascript" src="/etc/designs/ca/npc/clientlib-bootstrap-jquery.min.df9d6ac4b08627bd99478dab5fa9e747.js"></script>
+
+<script type="text/javascript" src="/etc/designs/ca/npc/clientlibHeader.min.17a238919df023a602e73f4e9fbbe29a.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function(){
+var ua = window.navigator.userAgent;
+var msie = ua.indexOf("MSIE ");
+
+
+if (NPC && NPC.informationNavigateur && NPC.informationNavigateur.incompatible) {
+    window.location = "\/navigateurNonCompatible.html";
+}
+
+var compatibiliteNav = function() {
+	 
+	     
+	     
+	
+	     
+	     if (NPC && NPC.informationNavigateur){
+			     if (NPC.informationNavigateur.partiellementCompatible) {
+			    	 $("#bandeauNav").css("display", "block");
+			         $("a.Header-login").css("display", "none");
+			         $("a.HeaderSticky-login").css("display", "none");
+		
+			     } else if (NPC.informationNavigateur.incompatible) {
+			         $("#pageNav").css("display", "block");
+			     }
+		     }
+	     
+	 
+    
+    $( ".croix-bandeau" ).on( "click", function() {
+    	$("#bandeauNav").css("display", "none");
+	});
+    
+    if (NPC && NPC.informationNavigateur){
+    	$('[data-npc-display-os]').each(function(){
+	    	var $this = $(this);
+		    if (NPC.informationNavigateur[$this.attr('data-npc-display-os')]){
+		    	$this.removeClass('hidden');
+		    }
+	    });
+    	$('[data-npc-display-categorie]').each(function(){
+	    	var $this = $(this);
+		    if (NPC.informationNavigateur[$this.attr('data-npc-display-categorie')]){
+		    	$this.removeClass('hidden');
+		    }
+	    });
+    }
+ }
+
+if(msie > 0) {
+	if(window.attachEvent) {
+    	window.attachEvent("onload", compatibiliteNav);
+    } else {
+		window.addEventListener("load", compatibiliteNav);
+    }
+} else {
+    $( document ).ready(compatibiliteNav);
+}
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+	
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+			<script type="application/ld+json">
+                {
+"@context" : "http://schema.org",
+"@type" : "Organization",
+"name" : "Crédit Agricole",
+"url" : "https://www.credit-agricole.fr",
+"logo" : "https://www.credit-agricole.fr/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_V.svg",
+"sameAs" : [ "https://www.facebook.com/CreditAgricole",
+"https://twitter.com/CreditAgricole",
+"https://www.linkedin.com/company/7467",
+"https://www.youtube.com/creditagricole",
+"http://www.dailymotion.com/CreditAgricole",
+"https://www.instagram.com/creditagricole",
+"https://fr.pinterest.com/creditagricole"]
+}
+            </script> 
+    
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+<script>
+	//Initialize data for datalayout
+	var tc_vars = {};
+
+    /***** ERRORS **********/
+    tc_vars.page_erreur = "";
+
+
+	/**** UTILISATEUR ******/
+	tc_vars.utilisateur_authentifie = "N";
+	tc_vars.utilisateur_cookie_consent = "O";
+	/*tc_vars.utilisateur_statut_partenaire = "Visiteur";*/
+	tc_vars.utilisateur_id_part = "";
+	tc_vars.utilisateur_code_EDS = "0";
+
+	// Récupération et traitement de l'appareil
+	// condition: les stores du contexthub sont prêts
+	tc_vars.utilisateur_device = 'Ordinateur';
+	
+	var code_cr = "";
+    (code_cr == '') ? tc_vars.utilisateur_id_CR = "" : tc_vars.utilisateur_id_CR = (code_cr+'00');
+
+	//Nom de la caisse régionale qui apparaît en mode connecté	
+	tc_vars.utilisateur_nom_CR = "";
+    tc_vars.utilisateur_code_marche = ""; // ID MARCHE
+    tc_vars.utilisateur_segment_client = "";
+
+	/**** PRODUIT ******/
+	tc_vars.produit_id_offre = '';
+	tc_vars.produit_nom_offre = "";
+
+	//A confirmer R2 LOT2 : suppression à valider
+	/*tc_vars.produit_marche = ""; // NIVEAU 2 DE L'ARBORESCENCE
+	tc_vars.produit_univers_besoin = '';
+	tc_vars.produit_category = '';*/
+
+	/**** ENVIRONNEMENT ******/
+	tc_vars.environnement_technique_du_site = "Production"; /* EN FONCTION DE L'ENVIRONNEMENT (PRODUCTION soit VMOE-VMOA-DEVTU => Cycle de vie) */
+	tc_vars.environnement_langue = "fr";
+	tc_vars.environnement_id_CR = "98100";
+	tc_vars.environnement_nom_du_site = "Crédit Agricole";
+
+ 	/**** PAGE ******/
+	tc_vars.page_gabarit = "accueil particuliers et BP";
+	if(tc_vars.page_gabarit === "fonctions_connectees_virement" && window.location.hash.indexOf("#!/virement-multiple") !== -1){
+        tc_vars.page_gabarit = "fonctions_connectees_virement_multiple";
+    }
+    tc_vars.page_arbo_niveau_1 = "particulier";
+	tc_vars.page_arbo_niveau_2 = '';
+	tc_vars.page_arbo_niveau_3 = '';
+	tc_vars.page_nom = "particulier";
+	tc_vars.page_titre = "Particulier";
+	tc_vars.page_fil_d_ariane = "Accueil / Français / Particulier";
+    tc_vars.page_url = [location.protocol, '//', location.host, location.pathname].join('');
+    tc_vars.page_url_complete = location.href;
+    
+    tc_vars.page_entete_H1 = ''; // Code to valuate is in the footer
+    
+    /**** CONVERSION ****/
+    tc_vars.conversion_avant_vte_categorie = "";
+    tc_vars.conversion_avant_vte_univers = "";
+    tc_vars.conversion_categorie = ''; // Variable utilisée pour la VEL, alimentée à vide dans NPC 
+    tc_vars.conversion_etape = ''; // Variable utilisée pour la VEL, alimentée à vide dans NPC 
+    tc_vars.conversion_numero_commande = ''; // Variable utilisée pour la VEL, alimentée à vide dans NPC 
+
+	
+</script>
+
+
+
+
+
+
+	
+		
+		        <script src="https://cdn.tagcommander.com/3633/tc_NPCPRIVACY_1.js"></script>
+		
+		    
+	
+	
+	
+	
+		
+	        <script src="https://cdn.tagcommander.com/3315/tc_PortailClientCreditAgricole_1.js"></script>
+		
+	    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/etc/designs/ca/npc.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript">
+            (function() {
+                window.ContextHub = window.ContextHub || {};
+
+                /* setting paths */
+                ContextHub.Paths = ContextHub.Paths || {};
+                ContextHub.Paths.CONTEXTHUB_PATH = "/etc/cloudsettings/default/contexthub";
+                ContextHub.Paths.RESOURCE_PATH = "\/content\/ca\/national\/npc\/fr\/particulier\/jcr:content\/contexthub";
+                ContextHub.Paths.SEGMENTATION_PATH = "\/etc\/segmentation\/contexthub\/national";
+                ContextHub.Paths.CQ_CONTEXT_PATH = "";
+
+                /* setting initial constants */
+                ContextHub.Constants = ContextHub.Constants || {};
+                ContextHub.Constants.ANONYMOUS_HOME = "/home/users/3/31qyKkM4DG7Z9RJzZ2Qe";
+                ContextHub.Constants.MODE = "no-ui";
+            }());
+        </script><script src="/etc/cloudsettings/default/contexthub.kernel.branche1.js" type="text/javascript"></script>
+
+<script>document.cookie = 'reload-ch=; path=' + NPC.urlLiveCopyCaisse + '; expires=Thu, 01 Jan 1970 00:00:01 GMT;';</script>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+	
+		<header>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+		
+		    
+		    
+		    	
+		    		
+		        		<div class="header parbase">
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="AlertBanner AlertBanner--top js-AlertBanner js-DisconnectBanner hidden" >
+    <div class="AlertBanner-icon"><i class="icon npc-information-blank"></i></div>
+
+    <div class="AlertBanner-message hidden" id="message-timeout" >
+            <b>FIN DE CONNEXION</b> - Vous n'êtes actuellement plus connecté à Crédit Agricole en Ligne. Si vous souhaitez poursuivre la consultation de vos comptes, nous vous invitons à vous identifier à nouveau.
+    </div>
+
+
+      <div class="AlertBanner-message hidden" id="message-deconnexion" >
+            <b>FIN DE CONNEXION</b> - Vous n'êtes actuellement plus connecté à Crédit Agricole en Ligne
+   	 </div>
+   	 
+   	 <div class="AlertBanner-message hidden" id="message-timeout-dsp2" >
+            <b>FIN DE CONNEXION</b> - Vous n'êtes actuellement plus connecté à Crédit Agricole En Ligne. Si vous souhaitez poursuivre la consultation de vos comptes, nous vous invitons à vous identifier à nouveau 
+   	 </div>
+   	 
+   	 <div class="AlertBanner-message hidden" id="message-hard-timeout-dsp2" >
+            <b>FIN DE CONNEXION</b> - Vous n'êtes actuellement plus connecté à Crédit Agricole En Ligne. Si vous souhaitez poursuivre la consultation de vos comptes, nous vous invitons à vous identifier à nouveau 
+   	 </div>
+   	 
+   	  <div class="AlertBanner-message hidden" id="message-deconnexion-dsp2" >
+            <b>FIN DE CONNEXION</b> - Vous n'êtes actuellement plus connecté à Crédit Agricole En Ligne. Si vous souhaitez poursuivre la consultation de vos comptes, nous vous invitons à vous identifier à nouveau 
+   	 </div>
+   	 
+
+    <a class="icon npc-close AlertBanner-close js-AlertBanner-close" href="#" title="Fermer le bandeau"></a> 
+</div>
+
+
+
+	
+	
+		
+	
+
+
+
+
+<div class="Header js-Header contexthub-header-non-connecte">
+    
+    
+    
+    	
+    	<div class="Header-logo logo-header">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="logo" style="height:100%">
+
+		
+		
+			
+        	<a href="/" class="Header-logoTitle">
+        		<img class="Header-logoImg js-needFakeNotSvg" src="/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_V.svg" alt="Crédit Agricole - Banque et assurances" style="height: 100%"/>
+        	</a>
+		
+
+</span>
+
+<script>
+    (function(){
+        var elem = document.querySelector('.Login-logo');
+        if(elem != undefined){
+            elem.firstElementChild.classList.remove('Header-logo');
+        }
+    })();
+</script> 
+</div>
+
+    
+    <div class="Header-nav">
+        <div class="Header-upperNav">
+            <a href="#" class="Header-buttonMenu js-openMenuMobile" role="button" aria-label="Menu"></a>
+
+			<a href="/" class="Header-logoContent">
+    			<img class="Header-logo--xs  js-needFakeNotSvg" src="/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_H.svg" alt="Crédit Agricole - Banque et assurances"/>
+            </a>
+			
+            <a href="#status" class="Header-market js-toggleLayerNav" role="button">Vous êtes un particulier&nbsp;</a>
+            <div class="Header-search js-Header-search" tabindex="0" role="link" aria-label="Recherche" id="ct001-search">
+                <div class="Header-searchPlaceholder">Rechercher une thématique, un produit...</div>
+            </div>
+
+            <a onclick="NPC.storeLocator.gotoAccesCrEtAgence();event.preventDefault()" href="#" aria-label="Trouver une agence" class="Header-locator" role="button">
+				<i class="Header-locatorLogo icon npc-locator-circle"></i>
+            </a>
+           
+   			
+            	
+            	
+		            <div class="Header-help--bouton-vert--trigger">
+
+
+
+
+
+
+
+
+
+
+	
+
+					
+ 	
+ 	
+		
+		
+            <a class="Header-help" href="javascript: void(0);" role="button" aria-label="Nous Contacter" style="color: #fff;" data-trackingclass="oic_nous_contacter">
+                <img class="Header-helpPicto" src="/etc/designs/ca/npc/clientlib-resources/images/commun/099-talk-blank.svg" alt=""/>
+            <div class="Header-helpText">Nous contacter</div>
+            </a>
+
+     
+               		 
+     
+
+
+
+
+	
+ 	
+		
+	
+               	
+     
+ 	
+
+
+
+
+	
+ 	
+		
+	
+               	
+     
+ 	
+
+
+
+
+  
+	  
+
+
+
+
+
+   
+
+
+
+ 
+   
+
+
+ 
+   
+
+<div class="bouton-vertWrapper" style="display: none;" data-value='{
+"erreurGpu":false,
+"erreurSi":false,
+"erreurTableStart" :false,
+"erreurGeoloc":false,
+"conseillerDispo" :false,
+"activationNumArcep" :false,
+"gpuData":"undefined",
+"modelData":,
+"dayDate":"",
+"dayTime":"",
+"agence":&#34;undefined&#34;,
+"conseiller":&#34;undefined&#34;,
+"motifSelected":"",
+"startDataInf":"",
+"startDataOpt":"",
+"startDataInfMotifSelected":"",
+"idMotif":[5]
+
+}'>
+	<div class="GreenBtnContainer js-GreenBtnContainer hidden-print">
+    <div class="GreenBtn-callbackHome" style="display: none;" data-trackingClass="oic_layer_national">
+        
+        <div class="GreenBtn-callbackHomeHeader">
+            <p class="GreenBtn-callbackHomeHeaderTitle GreenBtn-callbackPara--noMarginBot js-GreenBtn-Main" style="display: none;width: 100%">UN BESOIN ? UN PROJET ? CONTACTEZ-NOUS</p>
+   			<p class="GreenBtn-callbackHomeHeaderTitle GreenBtn-callbackPara--noMarginBot js-GreenBtn-Urgence" style="display: none;width: 100%">Aide et urgence ?</p>
+            <a id="fermetureLayerBV" href="javascript: void(0);" class="icon npc-close GreenBtn-callbackClose" data-trackingclass="oic_fermer"></a>
+        </div>
+
+		
+
+            <div class="GreenBtn-callbackHomeContent bouton-vertContent js-GreenBtn-Main" style="display: none;">
+                <a href="javascript: void(0);" class="GreenBtn-callbackHomeHeaderBtn" data-trackingclass="oic_urgence"><b>Aide et urgence ?</b></a>
+                
+				
+					            
+							<div class="GreenBtn-callbackUrgencyMessage">
+								<div class="GreenBtn-callbackUrgencyMessageTitle">Vous souhaitez contacter un conseiller du Crédit Agricole</div>
+								<p class="GreenBtn-callbackUrgencyMessagePara">Pour mieux répondre à vos besoins, les Caisses Régionales mettent à votre disposition des moyens de contact qui vous permettront d’entrer en relation avec un conseiller.</p>
+								<div class="GreenBtn-callbackHomeContentLink">
+									<a onclick="NPC.storeLocator.gotoAccesCr();event.preventDefault()" href="#" class="btn btn-default GreenBtn-callbackUrgencyMessageBtn" data-trackingclass="oic_trouver_ma_CR">Trouver ma caisse régionale</a>
+								</div>
+							</div>
+					
+
+					
+					
+				
+				
+            </div>
+		
+            <div class="GreenBtn-callbackHomeContent GreenBtn-callbackHomeContent--urgencyLayer bouton-vertContent js-GreenBtn-Urgence" style="display: none;">
+                <a href="javascript: void(0);" class="GreenBtn-callbackHomeHeaderBtn--urgencyLayer bouton-vertNumeroRetour">
+                    <span class="icon npc-left GreenBtn-callbackUrgencyLayerIconHeader"></span>Retour</a>
+                
+                <div class="GreenBtn-callbackUrgencyLayerWrapper">
+                	
+                	
+					
+                	
+                    <div class="GreenBtn-callbackUrgencyLayerBlocWrapper">
+                        <div class="GreenBtn-callbackUrgencyLayerBloc">
+                            <div class="GreenBtn-callbackUrgencyLayerBlocTitle">
+                                Vos moyens de paiement
+                                <ul class="GreenBtn-callbackUrgencyLayerBlocTitleList">
+                                    <li>Carte bloquée, volée ou perdue</li>
+                                    <li>Faire opposition sur un chèque ou un chéquier</li>
+                                </ul>
+                            </div>
+
+                            <div class="GreenBtn-callbackUrgencyLayerBlocDescription">
+                                <a href="tel://+33969399291" class="GreenBtn-callbackUrgencyLayerBlocDescriptionClick">
+                                    <div class="GreenBtn-callbackUrgencyLayerBlocNumber">09 69 39 92 91</div>
+                                    <div class="GreenBtn-callbackUrgencyLayerBlocPrice">Prix d'un appel local</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="GreenBtn-callbackUrgencyLayerSubBloc">
+                            <ul class="GreenBtn-callbackUrgencyLayerSubBlocLists">
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Le service SOS CARTE du Crédit Agricole est disponible pour tous vos moyens de paiement 7j/7 et 24h/24.</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Faites une déclaration aux autorités de police, ou au consulat si vous êtes à l’étranger.</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Toute demande d’opposition doit être confirmée par lettre recommandée dans les plus brefs délais, adressée à votre agence du Crédit Agricole.</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Depuis l’étranger, contactez le +(33) 9 69 39 92 91 *</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="GreenBtn-callbackUrgencyLayerBlocWrapper">
+                        <div class="GreenBtn-callbackUrgencyLayerBloc">                           
+                                <div class="GreenBtn-callbackUrgencyLayerBlocTitle">Vous avez subi un sinistre Auto, Habitation, <br />assurance accidents de la vie ?<br /></div>                            
+                            <div class="GreenBtn-callbackUrgencyLayerBlocDescription">
+                                <a href="tel://+33800810812" class="GreenBtn-callbackUrgencyLayerBlocDescriptionClick">
+                                    
+                                    <div class="Arcep">
+                                        <span class="Arcep-number">0 800 810 812</span>
+                                        <div class="Arcep-legalMentions">
+                                            <div class="Arcep-legalMention">
+                                                Service & appel
+                                                <p class="Arcep-legalMentionsInfo">gratuits</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="GreenBtn-callbackUrgencyLayerSubBloc">
+                            <ul class="GreenBtn-callbackUrgencyLayerSubBlocLists">
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Pour déclarer un sinistre ou bénéficier des prestations d’assistance, nos spécialistes sont à votre écoute 7j/7 et 24h/24.</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Depuis l’étranger, contactez le (+33) 1 40 25 58 48 *</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="GreenBtn-callbackUrgencyLayerBlocWrapper">
+                        <div class="GreenBtn-callbackUrgencyLayerBloc">
+                            <div class="GreenBtn-callbackUrgencyLayerBlocDescription">
+                                <div class="GreenBtn-callbackUrgencyLayerBlocTitle">Protection Juridique Pleins Droits</div>
+                            </div>
+                            <div class="GreenBtn-callbackUrgencyLayerBlocDescription">
+                                <a href="tel://+33800813810" class="GreenBtn-callbackUrgencyLayerBlocDescriptionClick">
+                                    
+                                    <div class="Arcep">
+                                        <span class="Arcep-number">0 800 813 810</span>
+                                        <div class="Arcep-legalMentions">
+                                            <div class="Arcep-legalMention">
+                                                Service & appel
+                                                <p class="Arcep-legalMentionsInfo">gratuits</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="GreenBtn-callbackUrgencyLayerSubBloc">
+                            <ul class="GreenBtn-callbackUrgencyLayerSubBlocLists">
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Vous avez souscrit un contrat Pleins Droits et vous avez un litige à déclarer. Nos conseillers sont à votre écoute du lundi au vendredi, de 8h30 à 19h et le samedi de 9h à 16h.</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Depuis l’étranger, contactez le (+33) 2 35 59 42 78 *</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">N’entreprenez aucune démarche avant d’avoir appelé.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="GreenBtn-callbackUrgencyLayerBlocWrapper">
+                        <div class="GreenBtn-callbackUrgencyLayerBloc">
+                            <div class="GreenBtn-callbackUrgencyLayerBlocDescription">
+                                <div class="GreenBtn-callbackUrgencyLayerBlocTitle">Vous avez choisi la complémentaire santé du<br />Crédit Agricole pour vos dépenses de santé ?<br /></div>
+                            </div>
+                            <div class="GreenBtn-callbackUrgencyLayerBlocDescription">
+                                <a href="tel://+33977405000" class="GreenBtn-callbackUrgencyLayerBlocDescriptionClick">
+                                    <div class="GreenBtn-callbackUrgencyLayerBlocNumber">09 77 40 50 00</div>
+                                    <div class="GreenBtn-callbackUrgencyLayerBlocPrice">Prix d'un appel local</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="GreenBtn-callbackUrgencyLayerSubBloc">
+                            <ul class="GreenBtn-callbackUrgencyLayerSubBlocLists">
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">Nos conseillers sont à votre écoute pour la prise en charge de votre dossier, du lundi au vendredi de 8h à  18h (sauf jours fériés)</li>
+                                <li class="GreenBtn-callbackUrgencyLayerSubBlocList">En cas d’urgence, pour bénéficier des services d’assistance en France comme de l’étranger, appelez le  (+33) 1 40 25 58 48 *</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <a href="#" id="lienFaq" class="GreenBtn-callbackHomeFooter--urgencyLayer">Consultez notre Foire Aux Questions</a>
+                    <div class="GreenBtn-callbackUrgencyLayerCallCosts">
+                        <span class="GreenBtn-callbackUrgencyLayerCallCost">* Depuis l’étranger – Coût selon opérateur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="GreenBtn" style="display: none;"></div>
+        <div id="CaptchaBoutonVert" class="hidden" style="color:black">
+             <div class="parsys-captcha captcha parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Captcha" data-npc-captcha>
+	<div class="Captcha-title">Merci de faire ce calcul afin de vérifier que vous n’êtes pas un robot</div>
+	<div class="Captcha-body">
+		<div class="Captcha-calcul js-Captcha-calcul">
+		</div>
+		<div class="Captcha-answer">
+			<div class="form-group">
+				<div class="input-field">
+					<input class="form-control js-Captcha-response" type="text" placeholder="Votre réponse" style="border-color: rgb(204, 204, 204);" >
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="Captcha-errorMessage errorValue js-Captcha-errorMessageValue hidden">
+		La valeur saisie est incorrecte
+	</div>
+
+	<div class="Captcha-errorMessage errorMissing js-Captcha-errorMessageMissing hidden">
+		Merci de renseigner ce champ
+	</div>
+</div>
+</div>
+
+        </div>
+   </div>
+</div>
+<script>
+	NPC.trouverAgencesRun = function(){
+		if (NPC.trouverAGENCE.initAgences){
+			NPC.trouverAGENCE.initAgences(); 
+		}
+	};
+	
+	NPC.trouverAgencesAddresseRun = function(){
+		if (NPC.trouverAGENCE.initAgencesAddresse){
+			NPC.trouverAGENCE.initAgencesAddresse(); 
+		}
+	};
+
+</script>
+
+<script id="template-parcours-storelocator-email-rdv" type="text/x-jquery-tmpl">
+
+<div class="GreenBtn-header">
+   <p class="GreenBtn-headerTitle findAgencyNumberParcours" data-content="title"></p>
+   <a href="#" class="icon npc-close GreenBtn-headerClose" data-template-bind='[{"attribute": "data-niveau", "value": "niveau"}]'></a>
+</div>
+<div class="GreenBtn-content js-StoreLocator-bloc" data-store-map-param='{"DEFAULT_FILTERS": {"type": "", "service": [], "openings": ["monday", "saturday"], "attribute": []}}'>
+   <a href="#" class="GreenBtn-back" data-template-bind='[{"attribute": "data-niveau", "value": "niveau"},{"attribute": "data-parcours", "value": "parcours"}]'><span class="icon npc-left GreenBtn-iconBack"></span>Retour</a>
+   <a href="#" class="StoreLocatorCard-headLink StoreLocatorCard-headLink--mobile js-filter hidden">Filtrer</a>
+   <div class="GreenBtn-callbackHomeContentDemand" id="lienConnexionBV">   
+		<p class="GreenBtn-callbackHomeContentDemandTitle GreenBtn-callbackPara--noMarginBot" data-class="lienConnexionClient">Vous êtes client ?</p>
+      	<a id="lienConnexionClientAccesCompte" class="GreenBtn-contentBlockItemBtnPrimaryWhite" href="/particulier/acceder-a-mes-comptes.html" data-class="parcours" class="GreenBtn-contentInfoLink">Connectez-vous</a>
+   </div>
+   <div class="GreenBtn-contentBlock" id="greenBtnblockContainer">
+      <div class="GreenBtn-contentBlockInner">
+         <form class="GreenBtn-contentBlockItem js-findAgenceForm" data-class="showHideStoreLocator">
+            <div class="GreenBtn-contentBlockItemTitle" data-content="itemTitlebloc"></div>
+            <div class="GreenBtn-contentBlockItemText">Trouvez une agence proche de vous.</div>
+            <div class="GreenBtn-contentBlockItemBtn">
+               <button id="findAgenceAuto" type="button" class="btn GreenBtn-contentBlockItemBtnPrimary geolocalisationStorelocator"><i class="icon npc-locator-circle GreenBtn-contentBlockItemBtnIcon"></i>Autour de moi</button>
+               <p style="color:red" id="errorGeolocalisation" class="hidden">Il nous est impossible de déterminer votre géolocalisation, peut-être que les paramètres de votre navigateur ne l'autorisent pas. Nous vous invitons à saisir votre adresse dans le champ en dessous du bouton «Autour de moi».</p>
+			</div>
+            <div class="GreenBtn-contentBlockItemText">OU</div>
+            <div class="GreenBtn-contentBlockItemInput">
+               <div class="input-group">
+                  <input type="text" class="form-control js-findAgenceForm-input" placeholder="Adresse, CP, ville">
+				  <span class="input-group-btn">
+                  <button class="btn GreenBtn-contentBlockItemBtnPrimary GreenBtn-contentBlockItemBtnPrimary--noMarg geolocalisationStorelocator" type="submit">Valider</button>
+                  </span>
+               </div>
+			   <p id="errorAdress" class="hidden" style="color:red">Veuillez saisir une adresse valide.</p>
+               <p id="emptyAdress" class="hidden" style="color:red">Veuillez saisir une adresse.</p>
+            </div>
+         </form>
+            <div class="GreenBtn-contentBlockItem"  data-class="showHideBlocContactTel">
+              <div class="GreenBtn-contentBlockItemTitle">Prendre rendez-vous par téléphone</div>
+			  <a data-href="phoneNumberHref" class="GreenBtn-callbackUrgencyLayerBlocDescriptionClick">
+    		  	<div class="GreenBtn-contentBlockItemNumber" data-class="sansArcep" data-content="phoneNumber"></div>
+			  </a>
+              <div class="GreenBtn-contentBlockItemNumber" data-class="avecArcep">
+				<a data-href="phoneNumberHref">
+                	<div class="Arcep" data-class="typeArcep">
+                  		<span class="Arcep-number" data-content="phoneNumber"></span>
+                  		<span class="Arcep-legalMentions Arcep-legalMentions--small" data-content="serviceArcep"></span>
+                	</div>
+				</a>
+              </div>
+              <div class="GreenBtn-contentBlockItemText GreenBtn-contentBlockItemText--gris" data-content="greyTitle"></div>
+              <div class="GreenBtn-contentBlockItemText GreenBtn-contentBlockItemText--gris" data-content="hours1"></div>
+              <div class="GreenBtn-contentBlockItemText GreenBtn-contentBlockItemText--gris" data-content="hours2"></div>
+              <div class="GreenBtn-contentBlockItemText GreenBtn-contentBlockItemText--gris" data-content="hours3"></div>
+            </div>
+         <div class="GreenBtn-contentBlockItem" data-class="showHideBlocContactForm">
+            <div class="GreenBtn-contentBlockItemTitle">Contacter directement un conseiller</div>
+            <div class="GreenBtn-contentBlockItemText">Vous serez mis en relation avec un de nos conseillers qui vous répondra dans les meilleurs délais.</div>
+            <div class="GreenBtn-contentBlockItemBtn">
+               <button type="submit" class="btn GreenBtn-contentBlockItemBtnPrimary" data-content="title" data-id="boutonParcours"></button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   
+   <!-- MODAL -->
+<div id="FilterModal-Bv" class="modal fade Modal filterModal--filteronly js-FilterModal" role="dialog">
+  <div class="Modal-dialog">
+    <div class="Modal-content">
+      <div class="Modal-header">
+        <button type="button" class="Modal-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="Modal-body">
+        <p class="Modal-mainTitle">Filtrer</p>
+
+        <div class="FilterModal-Content">
+          <div class="FilterModal-Filters toggle-open js-FilterModal-Filters">
+            <div class="FilterModal-Filter">
+              <div class="form-group">
+                <div class="checkbox">
+                  <input type="checkbox" value="monday" class="checkbox-input" id="m-filter-open--monday-bv" data-filter="openings">
+                  <label class="checkbox-label" for="m-filter-open--monday-bv">Ouvert le lundi</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" value="saturday" class="checkbox-input" id="m-filter-open--saturday-bv" data-filter="openings">
+                  <label class="checkbox-label" for="m-filter-open--saturday-bv">Ouvert le
+                    samedi</label>
+                </div>
+              </div>
+            </div>
+            <div class="FilterModal-Filter">
+              <div class="form-group ">
+	      <select class="selectpicker show-menu-arrow bootstrap-select--default" data-filter="type" data-dropdown-align-right="true" data-dropup-auto="false">
+    		<option value="" data-hidden="true">Type d'agence</option>
+	        <option value="generalPublic">Agences grand Public</option>
+	        <option value="privateBanking">Banques Privées</option>
+	        <option value="enterprise">Centres d'affaires et  Agences Entreprises</option>
+	        <option value="pro_farmer_association">Agences pros, agris, associations</option>
+	        <option value="publicCollectivity">Agences collectivités publiques</option>
+	        <option value="">Tout</option>
+	      </select>
+              </div>
+              <div class="FilterModal-Actions">
+                <a href="#" class="FormActions-btn js-FilterModal-reset">Effacer</a>
+                <button class="FormActions-btn FormActions-btn--submit js-FilterModal-apply">Appliquer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</script>
+
+<script id="template-email-rdv-form" type="text/x-jquery-tmpl">
+
+<form id="formulaire" method="post" class="GreenBtn-contentBlockInner">
+        <div id="blocInsertionAgenceAfter" class="GreenBtn-contentBlockItem GreenBtn-contentBlockItem--noPad GreenBtn-contentBlockItem--minH">
+          <div class="GreenBtn-contentBlockItemBody GreenBtn-contentBlockItemBody--table">
+            <div class="GreenBtn-contentBlockItemText GreenBtn-contentBlockItem--noMarg GreenBtn-contentBlockItemBody--tableCell">Votre demande concerne
+              <span class="hidden-xs">: </span>
+              <span class="GreenBtn-contentBlockItemSpan" data-content="qualifdemande"></span>
+            </div>
+            <div class="GreenBtn-contentBlockItemContentLink GreenBtn-contentBlockItemBody--tableCell">
+              <a href="#" id="changerMotifGreenBtn" class="GreenBtn-contentBlockItemLink">Changer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="GreenBtn-contentBlockItem GreenBtn-contentBlockItem--overflowInherit GreenBtn-contentBlockItem--noPad emailFormHide">
+          <div class="GreenBtn-contentBlockItemHeader">
+            <div class="GreenBtn-contentBlockItemTitle GreenBtn-contentBlockItemTitle--leftWhite">Vous souhaitez nous rendre visite <span class="hidden-xs">:</span></div>
+          </div>
+          <div class="GreenBtn-contentBlockItemBody">
+
+            <div class="GreenBtn-callbackFormContent GreenBtn-contentBlockItem--noPad">
+              <div class="GreenBtn-callbackFormContactInfo">
+                <div class="row">
+                  <div class="form-group col-xs-12 col-sm-5">
+                    <label for="dayForm">Jour</label>
+                    <div class="input-field">
+                      <input type="text" id="dayForm" name="dayForm" class="form-control date js-appointmentCalendar" readonly="readonly"  placeholder="jj/mm/aaaa">
+                      <span class="icon npc-calendar input-field-icon"></span>
+                    </div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-5">
+                    <label for="hour">Créneau horaire</label>
+                    <select id="hour" name="hour" class="selectpicker show-menu-arrow bootstrap-select--default GreenBtn-callbackFormContactCivility GreenBtn-callbackFormContactHour GreenBtn-callbackFormContactHour--width">
+    				  <option data-hidden="true">Créneau horaire</option>
+    				  <option>Le matin</option>
+                      <option>L'après-midi</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="GreenBtn-contentBlockItem GreenBtn-contentBlockItem--overflowInherit GreenBtn-contentBlockItem--noPad">
+          <div class="GreenBtn-contentBlockItemHeader">
+            <div class="GreenBtn-contentBlockItemTitle GreenBtn-contentBlockItemTitle--leftWhite">Renseignez vos coordonnées <span class="hidden-xs">:</span></div>
+          </div>
+          <div class="GreenBtn-contentBlockItemBody">
+
+            <div class="GreenBtn-callbackFormContent GreenBtn-contentBlockItem--noPad">
+              <p class="GreenBtn-callbackFormRequiredField">champ obligatoire</p>
+
+                <div class="GreenBtn-callbackFormContactInfo">
+                  <div class="row">
+                    <div class="form-group col-xs-12 col-sm-4">
+                      <select id="civility" name="civility" class="selectpicker show-menu-arrow GreenBtn-callbackFormContactCivility">
+    					<option data-hidden="true">Civilité</option>
+    					<option>Madame</option>
+                        <option>Monsieur</option>
+                      </select>
+                    </div>
+                    <div class="GreenBtn-callbackFormGroup--NoPadLeft form-group col-xs-12 col-sm-4">
+                      <div class="input-field">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Nom" minlength="2" maxlength="100">
+                        <span class="input-field-icon GreenBtn-callbackFormInputIcon2">*</span>
+                      </div>
+                    </div>
+                    <div class="GreenBtn-callbackFormGroup--NoPadLeft form-group col-xs-12 col-sm-4">
+                      <div class="input-field">
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Prénom" minlength="2" maxlength="100">
+                        <span class="input-field-icon GreenBtn-callbackFormInputIcon2">*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" id="emailDivMove">
+                    <div class="form-group col-xs-12 col-sm-5 emailFormHide">
+                      <label for="birthdateForm">Date de naissance</label>
+                      <div class="input-field">
+                        <input type="text" id="birthdateForm" name="birthdateForm" class="form-control date js-appointmentCalendar" readonly="readonly" placeholder="jj/mm/aaaa">
+                        <span class="icon npc-calendar input-field-icon"></span>
+                      </div>
+                    </div>
+                    <div id="emailContainer" class="GreenBtn-callbackFormGroup--NoPadLeft form-group col-xs-12 col-sm-6">
+                      <label for="email">Email</label>
+                      <div class="input-field">
+                        <input type="email" class="form-control" id="emailForm" name="emailForm" placeholder="adresse@mail.fr" maxlength="100">
+                        <span class="input-field-icon GreenBtn-callbackFormInputIcon2">*</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" id="emailNewContainer">
+                    <p class="col-xs-12 GreenBtn-callbackFormLabel">téléphone</p>
+                    <div class="form-group col-xs-12 col-sm-6">
+                      <select id="country" name="country" class="selectpicker show-menu-arrow bootstrap-select--default GreenBtn-callbackFormContactCivility">
+   						<option data-minlength="12" data-maxlength="14">France (+33)</option>
+   <option data-minlength="14" data-maxlength="19">Belgique (+32)</option>
+   <option data-minlength="14" data-maxlength="19">Allemagne (+49)</option>
+   <option data-minlength="14" data-maxlength="19">Italie (+39)</option>
+   <option data-minlength="14" data-maxlength="19">Royaume-Uni (+44)</option>
+   <option data-minlength="14" data-maxlength="19">Espagne (+34)</option>
+   <option data-minlength="14" data-maxlength="19">Gibraltar (+350)</option>
+   <option data-minlength="14" data-maxlength="19">Portugal (+351)</option>
+   <option data-minlength="14" data-maxlength="19">Luxembourg (+352)</option>
+   <option data-minlength="14" data-maxlength="19">Irlande (+353)</option>
+   <option data-minlength="14" data-maxlength="19">Islande (+354)</option>
+   <option data-minlength="14" data-maxlength="19">Albanie (+355)</option>
+   <option data-minlength="14" data-maxlength="19">Malte (+356)</option>
+   <option data-minlength="14" data-maxlength="19">Chypre (+357)</option>
+   <option data-minlength="14" data-maxlength="19">Finlande (+358)</option>
+   <option data-minlength="14" data-maxlength="19">Bulgarie (+359)</option>
+   <option data-minlength="14" data-maxlength="19">Hongrie (+36)</option>
+   <option data-minlength="14" data-maxlength="19">Lituanie (+370)</option>
+   <option data-minlength="14" data-maxlength="19">Lettonie (+371)</option>
+   <option data-minlength="14" data-maxlength="19">Estonie (+372)</option>
+   <option data-minlength="14" data-maxlength="19">Moldavie (+373)</option>
+   <option data-minlength="14" data-maxlength="19">Arménie (+374)</option>
+   <option data-minlength="14" data-maxlength="19">Biélorussie (+375)</option>
+   <option data-minlength="14" data-maxlength="19">Andorre (+376)</option>
+   <option data-minlength="14" data-maxlength="19">Monaco (+377)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Marin (+378)</option>
+   <option data-minlength="14" data-maxlength="19">Vatican (+379)</option>
+   <option data-minlength="14" data-maxlength="19">Ukraine (+380)</option>
+   <option data-minlength="14" data-maxlength="19">Serbie (+381)</option>
+   <option data-minlength="14" data-maxlength="19">Monténégro (+382)</option>
+   <option data-minlength="14" data-maxlength="19">Croatie (+385)</option>
+   <option data-minlength="14" data-maxlength="19">Slovénie (+386)</option>
+   <option data-minlength="14" data-maxlength="19">Bosnie-Herzégovine (+387)</option>
+   <option data-minlength="14" data-maxlength="19">Macédoine (+389)</option>
+   <option data-minlength="14" data-maxlength="19">Roumanie (+40)</option>
+   <option data-minlength="14" data-maxlength="19">Suisse (+41)</option>
+   <option data-minlength="14" data-maxlength="19">Grèce (+30)</option>
+   <option data-minlength="14" data-maxlength="19">Pays-Bas (+31)</option>
+   <option data-minlength="14" data-maxlength="19">République tchèque (+420)</option>
+   <option data-minlength="14" data-maxlength="19">Slovaquie (+421)</option>
+   <option data-minlength="14" data-maxlength="19">Liechtenstein (+423)</option>
+   <option data-minlength="14" data-maxlength="19">Autriche (+43)</option>
+   <option data-minlength="14" data-maxlength="19">Danemark (+45)</option>
+   <option data-minlength="14" data-maxlength="19">Suède (+46)</option>
+   <option data-minlength="14" data-maxlength="19">Norvège (+47)</option>
+   <option data-minlength="14" data-maxlength="19">Pologne (+48)</option>
+   <option data-minlength="14" data-maxlength="19">États-Unis (+1)</option>
+   <option data-minlength="14" data-maxlength="19">Canada (+1)</option>
+   <option data-minlength="14" data-maxlength="19">Bahamas (+1242)</option>
+   <option data-minlength="14" data-maxlength="19">Barbade (+1246)</option>
+   <option data-minlength="14" data-maxlength="19">Anguilla (+1264)</option>
+   <option data-minlength="14" data-maxlength="19">Antigua-et-Barbuda (+1268)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Vierges britanniques (+1284)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Vierges des États-Unis (+1340)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Caïmans (+1345)</option>
+   <option data-minlength="14" data-maxlength="19">Bermudes (+1441)</option>
+   <option data-minlength="14" data-maxlength="19">Grenade (+1473)</option>
+   <option data-minlength="14" data-maxlength="19">îles Turks-et-Caïcos (+1649)</option>
+   <option data-minlength="14" data-maxlength="19">Montserrat (+1664)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Mariannes du Nord (+1670)</option>
+   <option data-minlength="14" data-maxlength="19">Guam (+1671)</option>
+   <option data-minlength="14" data-maxlength="19">Samoa américaines (+1684)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Martin (+1921)</option>
+   <option data-minlength="14" data-maxlength="19">Sainte-Lucie (+1958)</option>
+   <option data-minlength="14" data-maxlength="19">Dominique (+1967)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Vincent-et-les-Grenadines (+1984)</option>
+   <option data-minlength="14" data-maxlength="19">Porto Rico (+1987)</option>
+   <option data-minlength="14" data-maxlength="19">République dominicaine (+1809)</option>
+   <option data-minlength="14" data-maxlength="19">Trinité-et-Tobago (+1868)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Christophe-et-Niévès (+1869)</option>
+   <option data-minlength="14" data-maxlength="19">Jamaïque (+1876)</option>
+   <option data-minlength="14" data-maxlength="19">Égypte (+20)</option>
+   <option data-minlength="14" data-maxlength="19">Soudan du Sud (+211)</option>
+   <option data-minlength="14" data-maxlength="19">Maroc (+212)</option>
+   <option data-minlength="14" data-maxlength="19">Algérie (+213)</option>
+   <option data-minlength="14" data-maxlength="19">Tunisie (+216)</option>
+   <option data-minlength="14" data-maxlength="19">Libye (+218)</option>
+   <option data-minlength="14" data-maxlength="19">Gambie (+220)</option>
+   <option data-minlength="14" data-maxlength="19">Sénégal (+221)</option>
+   <option data-minlength="14" data-maxlength="19">Mauritanie (+222)</option>
+   <option data-minlength="14" data-maxlength="19">Mali (+223)</option>
+   <option data-minlength="14" data-maxlength="19">Guinée (+224)</option>
+   <option data-minlength="14" data-maxlength="19">Côte d'Ivoire (+225)</option>
+   <option data-minlength="14" data-maxlength="19">Burkina Faso (+226)</option>
+   <option data-minlength="14" data-maxlength="19">Niger (+227)</option>
+   <option data-minlength="14" data-maxlength="19">Togo (+228)</option>
+   <option data-minlength="14" data-maxlength="19">Bénin (+229)</option>
+   <option data-minlength="14" data-maxlength="19">Maurice (+230)</option>
+   <option data-minlength="14" data-maxlength="19">Libéria (+231)</option>
+   <option data-minlength="14" data-maxlength="19">Sierra Leone (+232)</option>
+   <option data-minlength="14" data-maxlength="19">Ghana (+233)</option>
+   <option data-minlength="14" data-maxlength="19">Nigeria (+234)</option>
+   <option data-minlength="14" data-maxlength="19">Tchad (+235)</option>
+   <option data-minlength="14" data-maxlength="19">République centrafricaine (+236)</option>
+   <option data-minlength="14" data-maxlength="19">Cameroun (+237)</option>
+   <option data-minlength="14" data-maxlength="19">Cap-Vert (+238)</option>
+   <option data-minlength="14" data-maxlength="19">Sao Tomé-et-Principe (+239)</option>
+   <option data-minlength="14" data-maxlength="19">Guinée équatoriale (+240)</option>
+   <option data-minlength="14" data-maxlength="19">Gabon (+241)</option>
+   <option data-minlength="14" data-maxlength="19">République du Congo (+242)</option>
+   <option data-minlength="14" data-maxlength="19">République démocratique du Congo (+243)</option>
+   <option data-minlength="14" data-maxlength="19">Angola (+244)</option>
+   <option data-minlength="14" data-maxlength="19">Guinée-Bissau (+245)</option>
+   <option data-minlength="14" data-maxlength="19">Territoire Britannique de l'océan Indien (+246)</option>
+   <option data-minlength="14" data-maxlength="19">Seychelles (+248)</option>
+   <option data-minlength="14" data-maxlength="19">Soudan (+249)</option>
+   <option data-minlength="14" data-maxlength="19">Rwanda (+250)</option>
+   <option data-minlength="14" data-maxlength="19">Éthiopie (+251)</option>
+   <option data-minlength="14" data-maxlength="19">Somalie (+252)</option>
+   <option data-minlength="14" data-maxlength="19">Djibouti (+253)</option>
+   <option data-minlength="14" data-maxlength="19">Kenya (+254)</option>
+   <option data-minlength="14" data-maxlength="19">Tanzanie (+255)</option>
+   <option data-minlength="14" data-maxlength="19">Ouganda (+256)</option>
+   <option data-minlength="14" data-maxlength="19">Burundi (+257)</option>
+   <option data-minlength="14" data-maxlength="19">Mozambique (+258)</option>
+   <option data-minlength="14" data-maxlength="19">Zambie (+260)</option>
+   <option data-minlength="14" data-maxlength="19">Madagascar (+261)</option>
+   <option data-minlength="14" data-maxlength="19">La Réunion (+262)</option>
+   <option data-minlength="14" data-maxlength="19">Mayotte (+262)</option>
+   <option data-minlength="14" data-maxlength="19">Zimbabwe (+263)</option>
+   <option data-minlength="14" data-maxlength="19">Namibie (+264)</option>
+   <option data-minlength="14" data-maxlength="19">Malawi (+265)</option>
+   <option data-minlength="14" data-maxlength="19">Lesotho (+266)</option>
+   <option data-minlength="14" data-maxlength="19">Botswana (+267)</option>
+   <option data-minlength="14" data-maxlength="19">Swaziland (+268)</option>
+   <option data-minlength="14" data-maxlength="19">Comores (+269)</option>
+   <option data-minlength="14" data-maxlength="19">Afrique du Sud (+27)</option>
+   <option data-minlength="14" data-maxlength="19">Saint Helena (+290)</option>
+   <option data-minlength="14" data-maxlength="19">Érythrée (+291)</option>
+   <option data-minlength="14" data-maxlength="19">Aruba (+297)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Féroé (+298)</option>
+   <option data-minlength="14" data-maxlength="19">Groenland (+299)</option>
+   <option data-minlength="14" data-maxlength="19">Belize (+501)</option>
+   <option data-minlength="14" data-maxlength="19">Guatemala (+502)</option>
+   <option data-minlength="14" data-maxlength="19">Salvador (+503)</option>
+   <option data-minlength="14" data-maxlength="19">Honduras (+504)</option>
+   <option data-minlength="14" data-maxlength="19">Nicaragua (+505)</option>
+   <option data-minlength="14" data-maxlength="19">Costa Rica (+506)</option>
+   <option data-minlength="14" data-maxlength="19">Panama (+507)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Pierre-et-Miquelon (+508)</option>
+   <option data-minlength="14" data-maxlength="19">Haïti (+509)</option>
+   <option data-minlength="14" data-maxlength="19">Pérou (+51)</option>
+   <option data-minlength="14" data-maxlength="19">Mexique (+52)</option>
+   <option data-minlength="14" data-maxlength="19">Cuba (+53)</option>
+   <option data-minlength="14" data-maxlength="19">Argentine (+54)</option>
+   <option data-minlength="14" data-maxlength="19">Brésil (+55)</option>
+   <option data-minlength="14" data-maxlength="19">Chili (+56)</option>
+   <option data-minlength="14" data-maxlength="19">Colombie (+57)</option>
+   <option data-minlength="14" data-maxlength="19">Venezuela (+58)</option>
+   <option data-minlength="14" data-maxlength="19">Guadeloupe (+590)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Barthélemy (+590)</option>
+   <option data-minlength="14" data-maxlength="19">Saint-Martin (+590)</option>
+   <option data-minlength="14" data-maxlength="19">Bolivie (+591)</option>
+   <option data-minlength="14" data-maxlength="19">Guyana (+592)</option>
+   <option data-minlength="14" data-maxlength="19">Équateur (+593)</option>
+   <option data-minlength="14" data-maxlength="19">Guyane Française (+594)</option>
+   <option data-minlength="14" data-maxlength="19">Paraguay (+595)</option>
+   <option data-minlength="14" data-maxlength="19">Martinique (+596)</option>
+   <option data-minlength="14" data-maxlength="19">Suriname (+597)</option>
+   <option data-minlength="14" data-maxlength="19">Uruguay (+598)</option>
+   <option data-minlength="14" data-maxlength="19">Curaçao (+599)</option>
+   <option data-minlength="14" data-maxlength="19">Malaisie (+60)</option>
+   <option data-minlength="14" data-maxlength="19">Australie (+61)</option>
+   <option data-minlength="14" data-maxlength="19">Indonésie (+62)</option>
+   <option data-minlength="14" data-maxlength="19">Philippines (+63)</option>
+   <option data-minlength="14" data-maxlength="19">Nouvelle-Zélande (+64)</option>
+   <option data-minlength="14" data-maxlength="19">Singapour (+65)</option>
+   <option data-minlength="14" data-maxlength="19">Thaïlande (+66)</option>
+   <option data-minlength="14" data-maxlength="19">Timor oriental (+670)</option>
+   <option data-minlength="14" data-maxlength="19">Norfolk Island (+672)</option>
+   <option data-minlength="14" data-maxlength="19">Brunei (+673)</option>
+   <option data-minlength="14" data-maxlength="19">Nauru (+674)</option>
+   <option data-minlength="14" data-maxlength="19">Papouasie-Nouvelle-Guinée (+675)</option>
+   <option data-minlength="14" data-maxlength="19">Tonga (+676)</option>
+   <option data-minlength="14" data-maxlength="19">Salomon (+677)</option>
+   <option data-minlength="14" data-maxlength="19">Vanuatu (+678)</option>
+   <option data-minlength="14" data-maxlength="19">Fidji (+679)</option>
+   <option data-minlength="14" data-maxlength="19">Palaos (+680)</option>
+   <option data-minlength="14" data-maxlength="19">Wallis-et-Futuna (+681)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Cook (+682)</option>
+   <option data-minlength="14" data-maxlength="19">Niue (+683)</option>
+   <option data-minlength="14" data-maxlength="19">Samoa américaines (+1684)</option>
+   <option data-minlength="14" data-maxlength="19">Samoa (+685)</option>
+   <option data-minlength="14" data-maxlength="19">Kiribati (+686)</option>
+   <option data-minlength="14" data-maxlength="19">Nouvelle-Calédonie (+687)</option>
+   <option data-minlength="14" data-maxlength="19">Tuvalu (+688)</option>
+   <option data-minlength="14" data-maxlength="19">Polynésie française (+689)</option>
+   <option data-minlength="14" data-maxlength="19">Tokelau (+690)</option>
+   <option data-minlength="14" data-maxlength="19">États fédérés de Micronésie (+691)</option>
+   <option data-minlength="14" data-maxlength="19">Îles Marshall (+692)</option>
+   <option data-minlength="14" data-maxlength="19">Kazakhstan (+7)</option>
+   <option data-minlength="14" data-maxlength="19">Russie (+7)</option>
+   <option data-minlength="14" data-maxlength="19">Japon (+81)</option>
+   <option data-minlength="14" data-maxlength="19">Corée du Sud (+82)</option>
+   <option data-minlength="14" data-maxlength="19">Viêtnam (+84)</option>
+   <option data-minlength="14" data-maxlength="19">Corée du Nord (+850)</option>
+   <option data-minlength="14" data-maxlength="19">Hong Kong (+852)</option>
+   <option data-minlength="14" data-maxlength="19">Macao (+853)</option>
+   <option data-minlength="14" data-maxlength="19">Cambodge (+855)</option>
+   <option data-minlength="14" data-maxlength="19">Laos (+856)</option>
+   <option data-minlength="14" data-maxlength="19">Chine (+86)</option>
+   <option data-minlength="14" data-maxlength="19">Bangladesh (+880)</option>
+   <option data-minlength="14" data-maxlength="19">Taïwan (+886)</option>
+   <option data-minlength="14" data-maxlength="19">Turquie (+90)</option>
+   <option data-minlength="14" data-maxlength="19">Inde (+91)</option>
+   <option data-minlength="14" data-maxlength="19">Pakistan (+92)</option>
+   <option data-minlength="14" data-maxlength="19">Afghanistan (+93)</option>
+   <option data-minlength="14" data-maxlength="19">Sri Lanka (+94)</option>
+   <option data-minlength="14" data-maxlength="19">Birmanie (+95)</option>
+   <option data-minlength="14" data-maxlength="19">Maldives (+960)</option>
+   <option data-minlength="14" data-maxlength="19">Liban (+961)</option>
+   <option data-minlength="14" data-maxlength="19">Jordanie (+962)</option>
+   <option data-minlength="14" data-maxlength="19">Syrie (+963)</option>
+   <option data-minlength="14" data-maxlength="19">Irak (+964)</option>
+   <option data-minlength="14" data-maxlength="19">Koweït (+965)</option>
+   <option data-minlength="14" data-maxlength="19">Arabie saoudite (+966)</option>
+   <option data-minlength="14" data-maxlength="19">Yémen (+967)</option>
+   <option data-minlength="14" data-maxlength="19">Oman (+968)</option>
+   <option data-minlength="14" data-maxlength="19">Palestine (+970)</option>
+   <option data-minlength="14" data-maxlength="19">Émirats arabes unis (+971)</option>
+   <option data-minlength="14" data-maxlength="19">Israël (+972)</option>
+   <option data-minlength="14" data-maxlength="19">Bahreïn (+973)</option>
+   <option data-minlength="14" data-maxlength="19">Qatar (+974)</option>
+   <option data-minlength="14" data-maxlength="19">Bhoutan (+975)</option>
+   <option data-minlength="14" data-maxlength="19">Mongolie (+976)</option>
+   <option data-minlength="14" data-maxlength="19">Népal (+977)</option>
+   <option data-minlength="14" data-maxlength="19">Iran (+98)</option>
+   <option data-minlength="14" data-maxlength="19">Tadjikistan (+992)</option>
+   <option data-minlength="14" data-maxlength="19">Turkménistan (+993)</option>
+   <option data-minlength="14" data-maxlength="19">Azerbaïdjan (+994)</option>
+   <option data-minlength="14" data-maxlength="19">Géorgie (+995)</option>
+   <option data-minlength="14" data-maxlength="19">Kirghizistan (+996)</option>
+                      </select>
+                    </div>
+                    <div class="GreenBtn-callbackFormGroup--NoPadLeft form-group col-xs-12 col-sm-5">
+                      <div class="input-field"> 
+                        <input id="phonenumberForm" name="phonenumberForm" type="text" class="form-control" placeholder="01 23 45 67 89" minlength="12" maxlength="14">
+                        <span class="input-field-icon GreenBtn-callbackFormInputIcon2">*</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="CaptchaBoutonVertAfter" class="GreenBtn-contentBlockItem GreenBtn-contentBlockItem--noPad">
+          <div class="GreenBtn-contentBlockItemHeader">
+            <div class="GreenBtn-contentBlockItemTitle GreenBtn-contentBlockItemTitle--leftWhite">Formulez votre demande <span class="hidden-xs">:</span></div>
+          </div>
+          <div class="GreenBtn-contentBlockItemBody">
+            <textarea id="comment" name="comment" class="GreenBtn-contentBlockItemTextarea" placeholder="Votre message ici …" maxlength="500"></textarea>
+          </div>
+        </div>
+
+        <div class="GreenBtn-callbackLaterFooter">
+
+          <div class="checkbox">
+              <input type="checkbox" value="" class="checkbox-input" id="checkboxMentionsLegales" name="checkboxMentionsLegales">
+              <label class="checkbox-label GreenBtn-callbackLaterFooterFormLabel GreenBtn-callbackFormLabel--lowerCase" for="checkboxMentionsLegales">Je certifie avoir pris connaissance des
+              <a href="/particulier/informations/mentions-legales.html" id="checkboxMentionLegale" class="GreenBtn-callbackLaterFooterFormLink" target="_blank">mentions légales</a>
+            </label>
+          </div>
+        </div>
+
+        <button id="sendEmailForm" type="submit" class="btn GreenBtn-callbackLaterFooterBtn" data-template-bind='[{"attribute": "data-trackingClass", "value": "trackingClass"}]'>Valider</button>
+
+      </form>
+
+</script>
+
+
+<script id="template-restitution-agence" type="text/x-jquery-tmpl">
+<div class="GreenBtn-contentBlockInner">
+   <div class="restitutionAgences GreenBtn-contentInfo GreenBtn-contentInfo--fsMB GreenBtn-contentInfo--aLNpl GreenBtn-contentBlockItem--noPad GreenBtn-contentBlockItem--noMarg">Merci de sélectionner l'agence à laquelle vous souhaitez vous adresser.</div>
+   <div class="restitutionAgences GreenBtn-contentBlockItem GreenBtn-contentBlockItem--noPad GreenBtn-contentBlockItem--brandContact">
+      <div class="StoreLocatorMap-head">
+         <p class="StoreLocatorMap-near">
+            <span class="js-StoreLocatorMap-near">0 agence</span> à proximité
+         </p>
+         <a class="js-StoreLocatorCard-headLink--redirect GreenBtn-contentBlockItemBackLink" id="voirPlusAgences" href="#">Voir plus<span class="hidden-xs hidden-sm"> d'agences</span></a>
+      </div>
+      <div class="StoreLocatorMap-Filters js-StoreLocatorMap-Filters">
+         <div class="StoreLocatorMap-Filter">
+            <div class="form-group">
+               <div class="checkbox">
+                  <input type="checkbox" value="monday" class="checkbox-input" id="filter-open--monday-bv" data-filter="openings">
+                  <label class="checkbox-label" for="filter-open--monday-bv">Ouvert le lundi</label>
+               </div>
+               <div class="checkbox">
+                  <input type="checkbox" value="saturday" class="checkbox-input" id="filter-open--saturday-bv" data-filter="openings">
+                  <label class="checkbox-label" for="filter-open--saturday-bv">Ouvert le
+                  samedi</label>
+               </div>
+            </div>
+         </div>
+         <div class="StoreLocatorMap-Filter StoreLocatorMap-Filter--sep  "></div>
+         <div class="StoreLocatorMap-Filter">
+            <div class="form-group">
+               <div class="checkbox">
+                  <input type="checkbox" value="desk" class="checkbox-input" id="filter-office--ca" data-filter="service">
+                  <label class="checkbox-label" for="filter-office--ca">
+                  Guichets et distributeurs Crédit Agricole
+                  </label>
+               </div>
+            </div>
+         </div>
+         <div class="StoreLocatorMap-Filter StoreLocatorMap-Filter--sep"></div>
+         <div class="StoreLocatorMap-Filter">
+            <div class="form-group">
+               <div class="checkbox">
+                  <input type="checkbox" value="appointement" class="checkbox-input" id="filter-appointement" data-filter="attribute">
+                  <label class="checkbox-label" for="filter-appointement">
+                  Prise de rendez-vous
+                  </label>
+               </div>
+            </div>
+         </div>
+         <div class="StoreLocatorMap-Filter StoreLocatorMap-Filter--noSep">
+            <div class="form-group  ">
+	      <select class="selectpicker show-menu-arrow bootstrap-select--default" data-filter="type" data-dropdown-align-right="true" data-dropup-auto="false">
+    		<option value="" data-hidden="true">Type d'agence</option>
+	        <option value="generalPublic">Agences grand Public</option>
+	        <option value="privateBanking">Banques Privées</option>
+	        <option value="enterprise">Centres d'affaires et  Agences Entreprises</option>
+	        <option value="pro_farmer_association">Agences pros, agris, associations</option>
+	        <option value="publicCollectivity">Agences collectivités publiques</option>
+	        <option value="">Tout</option>
+	      </select>
+	    </div>
+         </div>
+      </div>
+      <div class="StoreLocatorMap-content js-StoreLocatorMap-content">
+         <div class="StoreLocatorMap-Agencies js-StoreLocatorMap-Agencies">
+            <ul class="StoreLocatorMap-AgenciesList">
+            </ul>
+         </div>
+         <div class="StoreLocatorMap-Map js-StoreLocatorMap-Map">
+            <div class="StoreLocatorMap-GMap js-StoreLocatorMap-GMap"></div>
+         </div>
+      </div>
+   </div>
+   <div class="restitutionAgences StoreLocatorMap-Toggles">
+      <div class="StoreLocatorMap-Toggle js-StoreLocatorToggle" data-target="js-StoreLocatorMap-Map" id="mapAgency">
+         Carte
+      </div>
+      <div class="StoreLocatorMap-Toggle js-StoreLocatorToggle active" data-target="js-StoreLocatorMap-Agencies" id="listAgency">
+         Liste
+      </div>
+   </div>
+</div>
+</div>
+</script>
+
+<script id="template-carte-agence" type="text/x-jquery-tmpl">
+<li class="StoreLocatorMap-Agency js-storeLoc-agency listeAgenceGeolocalisee"  data-template-bind='[{"attribute": "data-agenceid", "value": "agenceIdList"},
+{"attribute": "data-val", "value": "valueAttr"}]'>
+    <input class="js-agency" type="hidden" 
+        data-template-bind='[{"attribute": "data-latitude", "value": "latitude"},
+        {"attribute": "data-longitude", "value": "longitude"},
+        {"attribute": "data-market", "value": "markets"},
+        {"attribute": "data-opening", "value": "opening"}]'>
+    <div class="hidden js-storeLoc-content">
+        <h2 class="GMap-AgencyTitle"></h2>
+        <p class="GMap-openings" data-content="agenceName"></p>
+        <p class="GMap-today" data-content="horaireTodayAgenceForMobile"></p>
+        <a href="#"  data-template-bind='[{"attribute": "data-agenceid", "value": "agenceIdList"}]' class="plusInfo GreenBtn-GMap-more">Cliquer ici pour choisir cette agence</a>
+    </div>
+    <h2 class="StoreLocatorMap-AgencyTitle" data-content="agenceName"></h2>
+    <p class="StoreLocatorMap-AgencyAddress"  data-content="horaireAdressCPVille"></p>
+    <div class="StoreLocatorMap-AgencyProx">
+		
+		
+			
+			
+				<img src="/etc/designs/ca/npc/clientlib-resources/images/store-locator/ca-pin.png" alt="Pin" class="StoreLocatorMap-AgencyProxIcon" />
+			
+		
+        <span class="StoreLocatorMap-AgencyProxValue" data-content="agenceDistance"></span>
+    </div>
+</li>
+ </script>
+
+
+    <script id="template-fiche-agence" type="text/x-jquery-tmpl">
+   <div data-class="agenceId" class="ficheAgence GreenBtn-contentBlockItem GreenBtn-contentBlockItem--noPad hidden">
+      <div class="GreenBtn-contentBlockItemHeader">
+         <div class="GreenBtn-contentBlockItemTitle GreenBtn-contentBlockItemTitle--leftWhite">
+            Votre agence
+            <span class="hidden-xs">:</span>
+         </div>
+      </div>
+      <div class="GreenBtn-contentBlockItemBody">
+         <div class="GreenBtn-contentBlockItemTitle GreenBtn-contentBlockItemTitle--green" data-template-bind='[{"attribute": "data-tracking-affichage_fiche_agence", "value": "agenceName"}]' data-content="agenceName"></div>
+         <div class="GreenBtn-contentBlockItemText GreenBtn-contentBlockItemText--black" data-content="horaireTodayAgence"></div>
+         <div class="js-blockMoreInformations">
+            <div class="CardAgencyFunc-element">
+               <h2 class="CardAgencyFunc-title"> Contact : </h2>
+               <p class="CardAgencyFunc-address" data-content="addressCpVille"></p>
+               <div class="CardAgencyFunc-bloc">
+                  <p class="CardAgencyFunc-line">
+                     <span class="CardAgencyFunc-label"> Tel : </span>
+                     <a data-href="phoneNumberHref" class="CardAgencyFunc-value" data-content="phoneNumber"></a>
+                  </p>
+                  <p class="CardAgencyFunc-line">
+                     <span class="CardAgencyFunc-label"> Fax : </span>
+                     <span class="CardAgencyFunc-value CardAgencyFunc-value--bold" data-content="fax"></span>
+                  </p>
+                  <p class="CardAgencyFunc-line">
+                     <span class="CardAgencyFunc-label"> E-mail : </span>
+                     <a data-href="emailAddressHref" class="CardAgencyFunc-value" id="emailAgency" data-content="emailAddress"></a>
+                  </p>
+               </div>
+            </div>
+            <div class="CardAgencyFunc-element">
+               <h2 class="CardAgencyFunc-title"> Ouverture : </h2>
+               <ul class="CardAgencyFunc-days">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-6">
+                        <li class="CardAgencyFunc-day" data-class="ouvertureLundi">
+                           <span class="CardAgencyFund-dayName">Lundi</span>
+                           <span class="CardAgencyFund-daySeparator"></span>
+                           <span class="CardAgencyFund-dayOpening" data-content="planingLundi"></span>
+                        </li>
+                        <li class="CardAgencyFunc-day" data-class="ouvertureMardi">
+                           <span class="CardAgencyFund-dayName">Mardi</span>
+                           <span class="CardAgencyFund-daySeparator"></span>
+                           <span class="CardAgencyFund-dayOpening" data-content="planingMardi"></span>
+                        </li>
+                        <li class="CardAgencyFunc-day" data-class="ouvertureMercredi">
+                           <span class="CardAgencyFund-dayName">Mercredi</span>
+                           <span class="CardAgencyFund-daySeparator"></span>
+                           <span class="CardAgencyFund-dayOpening" data-content="planingMercredi"></span>
+                        </li>
+                        <li class="CardAgencyFunc-day" data-class="ouvertureJeudi">
+                        <span class="CardAgencyFund-dayName">Jeudi</span>
+                        <span class="CardAgencyFund-daySeparator"></span>
+                        <span class="CardAgencyFund-dayOpening" data-content="planingJeudi"></span>
+                        </li> 
+                     </div>
+                     <div class="col-xs-12 col-sm-6">
+                        <li class="CardAgencyFunc-day" data-class="ouvertureVendredi">
+                           <span class="CardAgencyFund-dayName">Vendredi</span>
+                           <span class="CardAgencyFund-daySeparator">
+                           </span>
+                           <span class="CardAgencyFund-dayOpening" data-content="planingVendredi"></span>
+                        </li>
+                        <li class="CardAgencyFunc-day" data-class="ouvertureSamedi">
+                           <span class="CardAgencyFund-dayName"">Samedi</span>
+                           <span class="CardAgencyFund-daySeparator"></span>
+                           <span class="CardAgencyFund-dayOpening" data-content="planingSamedi"></span>
+                        </li>
+                        <li class="CardAgencyFunc-day" data-class="ouvertureDimanche">
+                           <span class="CardAgencyFund-dayName">Dimanche</span>
+                           <span class="CardAgencyFund-daySeparator">
+                           </span>
+                           <span class="CardAgencyFund-dayOpening" data-content="planingDimanche"></span>
+                        </li>
+                     </div>
+                  </div>
+               </ul>
+            </div>
+            <div class="CardAgencyFunc-element" data-class="crdAgencyFuncElementShow">
+               <h2 class="CardAgencyFunc-title"> Services : </h2>
+               <ul class="CardAgencyFunc-list">
+					<div class="row">
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="atm">Distributeurs automatiques de billets</li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="automaticCashMachine">Guichets automatiques</li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="wheelChairAccess">Accès handicapé</li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="carPark">Parking</li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="exchangeCurrency">Change</li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="extraService1Show" data-content="extraService1"></li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="extraService2Show" data-content="extraService2"></li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="extraService3Show" data-content="extraService3"></li>
+                        <li class="CardAgencyFunc-elem col-xs-12 col-sm-6" data-class="ouvertureSamediShow">Ouvert le samedi</li>
+					</div>
+                  
+               </ul>
+            </div>
+         </div>
+         <div id="masquerMoreInfo" class="GreenBtn-contentBlockItemContentLink hidden"><a href="#" class="GreenBtn-contentBlockItemLink js-moreInformationsLink">Plus d’informations</a></div>
+      </div>
+   </div>
+   <button type="submit" data-class="agenceId" class="ficheAgence btn btn-default GreenBtn-callbackLaterFooterBtn hidden">Fermer</button>
+ </script>
+
+<script id="template-emailform-success" type="text/x-jquery-tmpl">
+    <div class="GreenBtn-contentBlockInner">
+        <div class="GreenBtn-contentBlockItemMessageError">
+          Merci de votre confiance
+        </div>
+
+        <div class="GreenBtn-contentBlockItemMessageError GreenBtn-contentBlockItemTitle--fw" data-content="messageParcours">
+        </div>
+
+        <div class="GreenBtn-contentBlockItemBack GreenBtn-contentBlockItem--noMarg">
+          <a href="#" class="btn GreenBtn-callbackLaterFooterBtn" data-id="niveauParcours">Fermer</a>
+        </div>
+    </div>
+</script>
+</div>
+
+		        
+            
+            
+            
+            
+            	<div class="Header-open">
+
+
+
+
+
+
+
+
+
+
+<a class="Header-open" href="/particulier/ouvrir-un-compte.html" role="button" target="_self">Ouvrir un compte</a></div>
+
+           	
+           	
+            <div class="mon-espace parbase">
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+			
+			
+				
+			
+		
+		
+
+		
+			
+				
+				<a href="/particulier/acces-cr.html?origin=/content/ca/national/npc/fr/particulier/acceder-a-mes-comptes.html" class="Header-login" role="button" aria-label="Accéder à mes comptes" data-trackingclass="connexion_client">
+					<div class="Header-loginText">mon espace</div>
+				</a>
+			
+			
+		
+	
+	
+	
+
+</div>
+
+        </div>
+        
+        <div class="Header-lowerNav">
+            <nav class="MainNav js-sliderNav" data-max-items="99">
+                <ul class="MainNav-list js-sliderNav-nav" role="menubar">
+                    
+                     
+						
+                            
+                            
+                        
+        				<li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/compte.html" id="link-menu0-besoin1" class="MainNav-listLink " role="menuitem">Comptes &amp; Cartes</a></li>
+                     
+						
+                            
+                            
+                        
+        				<li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/epargne.html" id="link-menu1-besoin1" class="MainNav-listLink " role="menuitem">Épargner</a></li>
+                     
+						
+                            
+                            
+                        
+        				<li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/assurances.html" id="link-menu2-besoin1" class="MainNav-listLink " role="menuitem">S&#39;assurer</a></li>
+                     
+						
+                            
+                            
+                        
+        				<li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/credit.html" id="link-menu3-besoin1" class="MainNav-listLink " role="menuitem">Emprunter</a></li>
+                    
+                     
+						
+                            
+                            
+                        
+        				<li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/simulation-devis.html" id="link-menu0-RSD1" class="MainNav-listLink " role="menuitem">Simulation &amp; Devis</a></li>
+                    
+                    <li class="MainNav-listItem js-sliderNav-item"><a href="#advices" class="MainNav-listLink MainNav-listLink--mega js-toggleLayerNav">nos conseils</a></li>
+                </ul>
+                <span class="sliderNav--prev js-sliderNav--prev">...</span>
+  				<span class="sliderNav--next js-sliderNav--next">...</span>	
+                <a href="#" class="MainNav-moreLink js-sliderNav-toggle">Voir plus</a>
+            </nav>
+        </div>
+    </div>
+</div>
+ 
+
+<div class="HeaderSticky js-HeaderSticky">
+    <a href="/" class="HeaderSticky-logo">
+		<img class="HeaderSticky-logoImg  js-needFakeNotSvg" src="/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_H.svg" alt=""/>
+		<img class="HeaderSticky-logo--xs js-needFakeNotSvg" src="/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_H.svg" alt=""/>
+	</a>
+ 
+    <div class="HeaderSticky-needs">
+        <nav class="MainNav js-sliderNav" data-max-items="99">
+	        <ul class="MainNav-list js-sliderNav-nav" role="menubar">
+	             
+	                
+	                    
+	                    
+	                
+	                <li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/compte.html" id="link-menu0-besoin2" class="MainNav-listLink " role="menuitem">Comptes &amp; Cartes</a></li>
+	             
+	                
+	                    
+	                    
+	                
+	                <li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/epargne.html" id="link-menu1-besoin2" class="MainNav-listLink " role="menuitem">Épargner</a></li>
+	             
+	                
+	                    
+	                    
+	                
+	                <li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/assurances.html" id="link-menu2-besoin2" class="MainNav-listLink " role="menuitem">S&#39;assurer</a></li>
+	             
+	                
+	                    
+	                    
+	                
+	                <li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/credit.html" id="link-menu3-besoin2" class="MainNav-listLink " role="menuitem">Emprunter</a></li>
+	            
+	             
+	                
+	                    
+	                    
+	                
+	                <li class="MainNav-listItem js-sliderNav-item"><a href="/particulier/simulation-devis.html" id="link-menu0-RSD2" class="MainNav-listLink " role="menuitem">Simulation &amp; Devis</a></li>
+	              
+	              <li class="MainNav-listItem js-sliderNav-item"><a href="#advices" class="MainNav-listLink MainNav-listLink--mega js-toggleLayerNav">nos conseils</a></li>
+	          </ul>
+	      	<span class="sliderNav--prev js-sliderNav--prev">...</span>
+			<span class="sliderNav--next js-sliderNav--next">...</span>
+	          <a href="#" class="MainNav-moreLink js-sliderNav-toggle">Voir plus</a>
+	      </nav>
+    </div>
+
+    <div class="HeaderSticky-search js-Header-search"></div>
+    <a href="#" class="HeaderSticky-help">
+        <img class="Header-helpPicto" src="/etc/designs/ca/npc/clientlib-resources/images/commun/099-talk-blank.svg" alt=""/>
+    </a>
+      
+    
+	    
+	     	 <a href="/particulier/acces-cr.html?origin=/content/ca/national/npc/fr/particulier/acceder-a-mes-comptes.html" class="HeaderSticky-login"></a>
+	        
+	    
+	
+			
+</div>
+
+	
+	
+
+
+
+
+<div class="Header-layers hidden js-headerLayers">
+	
+
+
+
+
+
+
+
+
+
+<div id="header-layer-menu-markets" class="LayerNav js-LayerNav-status hidden">
+    <div class="row row-no-padding LayerNav-inner">
+        <div class="visible-xs visible-sm">
+     		<a href="#" class="LayerNav-backMobile js-backMenuMobile"><i class="icon npc-left LayerNav-backMobileIcon"></i> Retour</a>
+    	</div>
+
+			
+		<div class="col-md-4 hidden-xs hidden-sm LayerNav-push">
+
+
+
+
+
+
+
+
+
+
+
+    <div class="LayerNav-pushImg" style="background-image:url('/content/dam/assetsca/master/public/commun/images/autre/images/mega-menu-layer-vous-etes.jpg')"></div>
+
+
+<div class="LayerNav-pushMsg">
+	<div class="LayerNav-pushTitle">
+		<div class="SimpleText">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+    	<b>Nous nous engageons pour le développement des territoires</b><br />
+
+    
+    
+    
+
+</div>
+
+	</div>
+	<div class="LayerNav-pushText">
+		<div class="texte">
+
+
+
+
+
+<div tabindex="0">
+    <p>Auprès des particuliers, des associations, des professionnels, des entreprises, des collectivités...<br>
+Le Crédit Agricole œuvre chaque jour au développement économique et social des territoires.</p>
+
+</div>
+</div>
+
+	</div>
+	<div class="SimpleText">
+
+
+
+
+
+
+
+
+
+
+
+    
+    	
+    
+        
+        	<a href="/particulier/informations/banque-cooperative.html" class="lien-ca" target="_self">
+        
+
+            <i> </i>Découvrir notre modèle <br />
+
+
+        
+        	</a>
+        
+    
+    
+</div>
+
+</div></div>
+
+		
+        <div class="col-xs-12 col-md-8 LayerNav-content">	
+            <dl class="LayerNav-dlist">
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/" class="LayerNav-dlistLink">Particulier</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/banque-privee.html" class="LayerNav-dlistLink">Banque privée</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/professionnel.html" class="LayerNav-dlistLink">Professionnel</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/agriculteur.html" class="LayerNav-dlistLink">Agriculteur</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/entreprise.html" class="LayerNav-dlistLink">Entreprise</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/association.html" class="LayerNav-dlistLink">Association</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+                    <dt class="LayerNav-dlistTitle">
+                    	
+	        				
+	        				
+	        					<a href="/collectivites-publiques.html" class="LayerNav-dlistLink">Collectivité publique et logement social</a>
+	        				
+        				
+                    </dt>
+                    <dd></dd>
+                
+            </dl>
+            
+            <a id="header-link-hide-markets" class="LayerNav-close js-LayerNav-close" href="#" title="Fermer le menu"><i class="icon npc-close"></i></a>
+        </div>
+    </div>
+</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<div class="LayerNav js-LayerNav-advices hidden">
+	<div class="row row-no-padding LayerNav-inner">
+		<div class="col-md-4 LayerNav-push LayerNav-push--nav">
+			<div class="visible-xs visible-sm">
+	        	<a href="#" class="LayerNav-backMobile js-backMenuMobile"><i class="icon npc-left LayerNav-backMobileIcon"></i> Retour</a>
+	        
+	        	<div class="LayerNav-header">
+                	<div class="LayerNav-title">Nos conseils</div>
+           		</div>
+	        </div>
+			<nav class="LayerNav-pushNav">
+				
+					<a data-href="#conseils-0" class="LayerNav-pushNavItem js-LayerNav-pushNavItem LayerNav-pushNavItem--active"><span class="LayerNav-pushNavItemInner">Ma vie d&#39;étudiant / d&#39;apprenti</span></a>
+				
+					<a data-href="#conseils-1" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Ma vie de famille</span></a>
+				
+					<a data-href="#conseils-2" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Ma retraite</span></a>
+				
+					<a data-href="#conseils-3" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Mon argent, mon patrimoine</span></a>
+				
+					<a data-href="#conseils-4" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Mon logement</span></a>
+				
+					<a data-href="#conseils-5" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Mon véhicule</span></a>
+				
+					<a data-href="#conseils-6" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Ma protection et celle de mes proches</span></a>
+				
+					<a data-href="#conseils-7" class="LayerNav-pushNavItem js-LayerNav-pushNavItem "><span class="LayerNav-pushNavItemInner">Mes coups durs</span></a>
+				
+				
+				<span class="LayerNav-pushNavItemSpacer"></span>
+				
+				
+				<a data-href="#conseils-magazine" class="LayerNav-pushNavItem js-LayerNav-pushNavItem hidden-xs hidden-sm"><span class="LayerNav-pushNavItemInner">Tout un mag pour vous</span></a>
+                <a href="/particulier/conseils/magazine/tout-un-mag.html" class="LayerNav-pushNavItem hidden-md hidden-lg"><span class="LayerNav-pushNavItemInner">Tout un mag pour vous</span></a>
+			</nav>
+		</div>
+
+		<div class="col-xs-12 col-md-8 LayerNav-content">
+			<div class="LayerNav-tabs js-LayerNav-tabs">
+				<div class="visible-xs visible-sm">
+	        		<a href="#" class="LayerNav-backMobile js-LayerNav-backMobile hidden"><i class="icon npc-left LayerNav-backMobileIcon"></i> Retour</a>
+	        	</div>
+				
+					<div id="conseils-0" class="LayerNav-tab js-LayerNav-tab LayerNav-tab--active">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Ma vie d'étudiant / d'apprenti</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/mes-etudes/ma-vie-d-etudiant-d-apprenti.html" class="LayerNav-listLink">Ma vie d&#39;étudiant / d&#39;apprenti</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-1" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Ma vie de famille</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/ma-vie-de-famille/famille.html" class="LayerNav-listLink">Ma famille</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-2" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Ma retraite</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/retraite/preparer-sa-retraite.html" class="LayerNav-listLink">Préparer ma retraite</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/retraite/bien-vivre-ma-retraite.html" class="LayerNav-listLink">Bien vivre ma retraite</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-3" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Mon argent, mon patrimoine</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/patrimoine/reserve-argent.html" class="LayerNav-listLink">Disposer d’une réserve d’argent disponible</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/patrimoine/investissement-immobilier.html" class="LayerNav-listLink">Investir dans l&#39;immobilier</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/patrimoine/gerer.html" class="LayerNav-listLink">Gérer mon patrimoine</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/patrimoine/diversifier.html" class="LayerNav-listLink">Diversifier mon patrimoine et mon placement</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-4" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Mon logement</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/logement/financer.html" class="LayerNav-listLink">Financer l’achat de mon logement</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/logement/assurer.html" class="LayerNav-listLink">Protéger et assurer mon logement</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/logement/travaux.html" class="LayerNav-listLink">Réaliser des travaux</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/logement/demenagement.html" class="LayerNav-listLink">Déménager et m&#39;installer</a></li>
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/logement/rechercher.html" class="LayerNav-listLink">Rechercher un logement</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-5" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Mon véhicule</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/mon-vehicule/vehicule.html" class="LayerNav-listLink">Mon véhicule</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-6" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Ma protection et celle de mes proches</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/ma-protection-et-celle-de-mes-proches/protection.html" class="LayerNav-listLink">Ma protection et celle de mes proches</a></li>
+							
+						</ul>
+					</div>
+				
+					<div id="conseils-7" class="LayerNav-tab js-LayerNav-tab ">
+						<div class="LayerNav-header">
+							
+                         		<div class="LayerNav-supTitle">Le Crédit Agricole vous accompagne</div>
+                         	
+							<div class="LayerNav-title">Mes coups durs</div>
+							
+						</div>
+	
+						<ul class="LayerNav-list">
+							
+								<li class="LayerNav-listItem"><a href="/particulier/conseils/coups-durs/mes-coups-durs.html" class="LayerNav-listLink">Mes coups durs</a></li>
+							
+						</ul>
+					</div>
+				
+				
+				
+				<div id="conseils-magazine" class="LayerNav-tab js-LayerNav-tab">
+					<div class="LayerNav-header">
+						
+                        		<div class="LayerNav-title"><p><span class="h1">TOUT <b>UN MAG</b> POUR VOUS</span>
+</p>
+</div>
+                        	
+						<div class="LayerNav-title"></div>
+						
+                         		<div class="LayerNav-subTitle">Toutes les questions que vous vous posez sur l'argent et même sur la vie</div>
+                         	
+					</div>
+
+					<div class="LayerNav-articlesWrapper">
+						<div class="LayerNav-articles">
+							
+							
+								
+									<div class="LayerNav-article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cardMagArticle cardMagArticle--image cardMagArticle--article magHome-gridItem magHome-gridItem--landscape" style="background-image: url(&#39;/content/dam/assetsca/master/public/commun/images/mag/images-d%C3%A9coratives/part/top-5-des-sites-de-voyage-pour-les-etudiants/top-5-des-sites-de-voyage-pour-les-etudiants-paysage.jpg&#39;)">
+	<div class="cardMagArticle-inner">
+		<div class="cardMagArticle-main">
+			<p class="cardMagArticle-heading">Tendances</p>
+
+			
+
+			
+			<a href="/particulier/conseils/magazine/tout-un-mag/top-5-des-sites-de-voyage-pour-les-etudiants.html" class="cardMagArticle-title" target="_self">
+            	
+					
+					
+						Top 5 des sites de voyage pour les étudiants
+					
+				
+            </a>
+
+			<div class="cardMagArticle-footer">
+				<div class="cardMagArticle-hashtags">
+					
+						<span class="cardMagArticle-hashtag">#Jeunes</span>
+					
+						<span class="cardMagArticle-hashtag">#Loisir</span>
+					
+						<span class="cardMagArticle-hashtag">#Etudiant</span>
+					
+				</div>
+
+				<div class="cardMagArticle-iconWrapper">
+					<span class="cardMagArticle-icon"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="cardMagArticle-layer">
+			<div class="cardMagArticle-layerInner">
+				
+				<a href="/particulier/conseils/magazine/tout-un-mag/top-5-des-sites-de-voyage-pour-les-etudiants.html" class="cardMagArticle-layerTitle" target="_self">
+					
+                        
+                        
+                            Top 5 des sites de voyage pour les étudiants
+                        
+                    
+                </a>
+					
+						
+							<div class="cardMagArticle-layerContent">Vous rêvez de vous envoler pour Barcelone, Londres, New York, mais votre budget étudiant est (très) serré. Heureusement, grâce aux sites de voyage pour étudiants, le monde reste à portée de clic. Ces agences jonglent entre vos envies et ...</div>
+						
+						
+					
+				<span class="cardMagArticle-layerButton">Lire la suite</span>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+								
+							
+								
+									<div class="LayerNav-article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cardMagArticle cardMagArticle--image cardMagArticle--article magHome-gridItem magHome-gridItem--square" style="background-image: url(&#39;/content/dam/assetsca/master/public/commun/images/mag/images-d%C3%A9coratives/part/creche-garde-d-enfant-a-domicile-quel-cout-quelles-aides/creche-garde-d-enfant-a-domicile-quel-cout-quelles-aides-carre.jpg&#39;)">
+	<div class="cardMagArticle-inner">
+		<div class="cardMagArticle-main">
+			<p class="cardMagArticle-heading">Budget</p>
+
+			
+
+			
+			<a href="/particulier/conseils/magazine/tout-un-mag/creche-garde-d-enfant-a-domicile-quel-cout-quelles-aides.html" class="cardMagArticle-title" target="_self">
+            	
+					
+					
+						Crèche, garde d&#39;enfant à domicile : quel coût, quelles aides ?
+					
+				
+            </a>
+
+			<div class="cardMagArticle-footer">
+				<div class="cardMagArticle-hashtags">
+					
+						<span class="cardMagArticle-hashtag">#Famille</span>
+					
+						<span class="cardMagArticle-hashtag">#Enfants</span>
+					
+						<span class="cardMagArticle-hashtag">#Argent</span>
+					
+				</div>
+
+				<div class="cardMagArticle-iconWrapper">
+					<span class="cardMagArticle-icon"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="cardMagArticle-layer">
+			<div class="cardMagArticle-layerInner">
+				
+				<a href="/particulier/conseils/magazine/tout-un-mag/creche-garde-d-enfant-a-domicile-quel-cout-quelles-aides.html" class="cardMagArticle-layerTitle" target="_self">
+					
+                        
+                        
+                            Crèche, garde d&#39;enfant à domicile : quel coût, quelles aides ?
+                        
+                    
+                </a>
+					
+						
+							<div class="cardMagArticle-layerContent">Selon l’Observatoire national de la petite enfance (Onape), « 79% des familles obtiennent le mode de garde souhaité initialement ».  Encore faut-il avoir une idée précise de ce qu’on souhaite. Entre la crèche et la garde d’enfant à domic...</div>
+						
+						
+					
+				<span class="cardMagArticle-layerButton">Lire la suite</span>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+								
+							
+								
+									<div class="LayerNav-article">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cardMagArticle cardMagArticle--imageLight cardMagArticle--article magHome-gridItem magHome-gridItem--landscape" style="background-image: url(&#39;/content/dam/assetsca/master/public/commun/images/mag/images-d%C3%A9coratives/part/fraudes-a-la-carte-bancaire-en-2018-des-conditions-de-remboursement/fraudes-a-la-carte-bancaire-en-2018-paysage.jpg&#39;)">
+	<div class="cardMagArticle-inner">
+		<div class="cardMagArticle-main">
+			<p class="cardMagArticle-heading">Moyens de Paiement</p>
+
+			
+
+			
+			<a href="/particulier/conseils/magazine/tout-un-mag/fraudes-a-la-carte-bancaire-des-conditions-de-remboursement-plus-favorables.html" class="cardMagArticle-title" target="_self">
+            	
+					
+					
+						Fraudes à la carte bancaire : des conditions de remboursement plus favorables
+					
+				
+            </a>
+
+			<div class="cardMagArticle-footer">
+				<div class="cardMagArticle-hashtags">
+					
+						<span class="cardMagArticle-hashtag">#Aléas de la vie</span>
+					
+						<span class="cardMagArticle-hashtag">#Argent</span>
+					
+						<span class="cardMagArticle-hashtag">#Etudiant</span>
+					
+				</div>
+
+				<div class="cardMagArticle-iconWrapper">
+					<span class="cardMagArticle-icon"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="cardMagArticle-layer">
+			<div class="cardMagArticle-layerInner">
+				
+				<a href="/particulier/conseils/magazine/tout-un-mag/fraudes-a-la-carte-bancaire-des-conditions-de-remboursement-plus-favorables.html" class="cardMagArticle-layerTitle" target="_self">
+					
+                        
+                        
+                            Fraudes à la carte bancaire : des conditions de remboursement plus favorables
+                        
+                    
+                </a>
+					
+						
+						
+							<div class="cardMagArticle-layerContent">Carte bancaire perdue ou volée ? Si des opérations frauduleuses ont été commises avec votre CB avant que vous ayez pu faire opposition, sachez que depuis 2018, votre banque vous indemnisera mieux. Explications.</div>
+						
+					
+				<span class="cardMagArticle-layerButton">Lire la suite</span>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+								
+							
+                        </div>
+                        <div>
+                            <a href="/particulier/conseils/magazine/tout-un-mag.html" class="LayerNav-articlesBtn">Voir plus d’articles</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<a class="LayerNav-close js-LayerNav-close" href="#" title="Fermer le menu"><i class="icon npc-close"></i></a>
+		</div>
+	</div>
+</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Header-menu js-MenuMobile hidden">
+	<div class="Header-menuHeader">
+		
+		<a href="#" class="Header-menuClose js-MenuMobile-close" id="ct001-btn-close" role="button" aria-label="Fermer le menu"></a>
+		
+			
+				<div class="Header-menuLogo" style="background-image: url('/content/dam/assetsca/npc/logos/CA_Toute-une-banque-pour-vous_H.svg')"></div>
+			
+			
+		
+	</div>
+	<div class="Header-menuRows js-menuRows-main">
+        <a href="#status" id="a-masque-menu-non-connecte-tab" class="Header-menuRow Header-menuRow--back js-toggleLayerNav">
+	      <span class="Header-menuIcon npc-left"></span>
+	      <span class="Header-menuRowText Header-menuRowText--back">Je ne suis pas un particulier</span>
+    	</a>
+		
+		
+      
+      
+		  
+              	<a href="/particulier/compte.html" class="Header-menuRow">
+                    <span class="Header-menuIcon npc-card"></span>
+                    <span class="Header-menuRowText">Comptes &amp; Cartes</span>
+                </a>
+	      
+              	<a href="/particulier/epargne.html" class="Header-menuRow">
+                    <span class="Header-menuIcon npc-card"></span>
+                    <span class="Header-menuRowText">Épargner</span>
+                </a>
+	      
+              	<a href="/particulier/assurances.html" class="Header-menuRow">
+                    <span class="Header-menuIcon npc-card"></span>
+                    <span class="Header-menuRowText">S&#39;assurer</span>
+                </a>
+	      
+              	<a href="/particulier/credit.html" class="Header-menuRow">
+                    <span class="Header-menuIcon npc-card"></span>
+                    <span class="Header-menuRowText">Emprunter</span>
+                </a>
+	      
+		  
+              	<a href="/particulier/simulation-devis.html" class="Header-menuRow">
+                    <span class="Header-menuIcon npc-card"></span>
+                    <span class="Header-menuRowText">Simulation &amp; Devis</span>
+                </a>
+	      
+      
+      
+    
+    
+      
+      
+    
+		<a href="#advices" class="Header-menuRow js-toggleLayerNav">
+			<span class="Header-menuIcon npc-bulb"></span>
+      		<span class="Header-menuRowText Header-menuRowText--em">
+      		Nos conseils
+      		
+      		</span>
+		</a>
+    
+
+	</div>
+	
+	
+	  
+	<div class="Header-menuSubfooter js-Header-search">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-10">
+					<input type="text" class="form-control Header-menuInput" id="search-input" placeholder="Posez votre question">
+				</div>
+				<div class="col-xs-2 text-center">
+					 <div class="icon npc-magnifer Header-menuSubfooterIcon" tabindex="0" role="button" aria-label="Rechercher"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="Header-menuFooter">
+		<div class="container-fluid">
+			<div class="row">
+			
+			
+			
+				
+				<div class="col-xs-4 text-center">
+					<a class="Header-menuFooterBtn" onclick="NPC.storeLocator.gotoAccesCrEtAgence();event.preventDefault()" href="#" aria-label="Trouver une agence" role="button">
+						 <div class="icon npc-locator-circle Header-menuFooterIcon"></div>
+						 <div class="Header-menuFooterText">
+						 	Trouver une agence
+						 </div>
+					</a>
+				</div>
+				
+				<div class="col-xs-4 text-center bv-trigger-burger">
+					<img class="Header-helpPicto" src="/etc/designs/ca/npc/clientlib-resources/images/commun/099-talk-blank.svg" alt=""/>
+					 <div class="Header-menuFooterText "  tabindex="0" role="button">Nous contacter</div>
+				</div>
+	
+				<div class="col-xs-4 text-center">
+					
+
+
+
+
+
+
+
+
+
+
+<a class="Header-menuFooterBtn" href="/particulier/ouvrir-un-compte.html" target="_self">
+	 <div class="icon npc-add Header-menuFooterIcon"></div>
+	<div class="Header-menuFooterText">Ouvrir un compte</div>
+</a>
+				</div>
+			
+			
+			
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<script type="text/html" id="template-retour-menu-mobile">
+    <div class="visible-xs visible-sm">
+      <a href="#" class="LayerNav-backMobile js-backMenuMobile"><i class="icon npc-left LayerNav-backMobileIcon"></i> Retour</a>
+    </div>
+</script>
+
+<script type="text/html" id="template-item-menu-mobile-connecte-non-cliquable">
+	<a href="#" class="row Header-menuRow">
+		<div class="col-xs-2 text-center Header-menuIcon"><div class="icon npc-card"></div></div>
+		<div class="col-xs-8"><span class="Header-menuRowText" data-content="noeudMenuTitre"></span></div>
+		<div class="col-xs-2 text-center"><div class="icon npc-arrow-next"></div></div>
+	</a>
+</script>
+
+<script type="text/html" id="template-item-menu-mobile-connecte">
+	<a data-href="noeudMenuHref" class="row Header-menuRow">
+		<div class="col-xs-2 text-center Header-menuIcon"><div class="icon npc-card"></div></div>
+		<div class="col-xs-8"><span class="Header-menuRowText" data-content="noeudMenuTitre"></span></div>
+		<div class="col-xs-2 text-center"><div class="icon npc-arrow-next"></div></div>
+	</a>
+</script>
+
+
+
+	<div class="compatibilite-nav parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="bandeauNav" class="CookieHeadband" style="display: none;">
+	<div class="CookieHeadband-content">
+		<div class="CookieHeadband-text">
+			<div class="row row-no-padding">
+				<div class="col-md-6">
+					<p><p><b>Mise à jour de votre navigateur</b></p>
+</p>
+					<p>Afin de profiter pleinement de toutes les fonctionalités de votre Espace Client, il est nécéssaire de mettre à jour votre navigateur. Cette opération ne prend que quelques minutes.</p>
+				</div>
+				<div class="col-md-6 text-center">
+					
+						
+							<div class="col-md-3">
+								<a href="https://support.mozilla.org/fr/kb/mettre-jour-firefox-derniere-version" class="CookieHeadband-logo CookieHeadband-logo--firefox" target="_blank">
+									<div class="CookieHeadband-logoTitle">Firefox</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://support.google.com/chrome/answer/95414?co=GENIE.Platform%3DDesktop&hl=fr" class="CookieHeadband-logo CookieHeadband-logo--chrome" target="_blank">
+									<div class="CookieHeadband-logoTitle">Chrome</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://www.microsoft.com/fr-fr/download/internet-explorer.aspx" class="CookieHeadband-logo CookieHeadband-logo--edge" target="_blank">
+									<div class="CookieHeadband-logoTitle">Edge</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://support.apple.com/fr-fr/safari" class="CookieHeadband-logo CookieHeadband-logo--safari" target="_blank">
+									<div class="CookieHeadband-logoTitle">Safari</div>
+								</a>
+							</div>
+						
+						
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="CookieHeadband-cross">
+		<a class="CookieHeadband-crossLink" onclick="$('.CookieHeadband').css('display', 'none')"> <span
+			class="icon npc-close"></span>
+		</a>
+	</div>
+</div>
+
+
+
+
+<main>
+<div id="pageNav" style="display: none;">
+	<table class="CompatibilityError">
+		<tbody>
+			<tr>
+				<td class="CompatibilityError-header">
+				
+					
+					
+						<img src="/content/dam/assetsca/npc/logos/logo_ca.png" alt="" height="40"/>
+					
+				
+				</td>
+			</tr>
+			<tr>
+				<td class="CompatibilityError-content">
+					<div class="CompatibilityError-container" style="margin-top: 13%;">
+						<i class="CompatibilityError-icon icon npc-exclamation"></i>
+						<div class="h1"><p>Votre navigateur est <b>obsolète</b></p>
+</div>
+						<p>Le site que vous visitez ne peut être visualisé que sur un navigateur moderne. Nous vous invitons à mettre à jour votre navigateur pour améliorer la qualité et la sécurité de votre navigation. Pour ce faire, veuillez sélectionner le navigateur vous concernant ci-dessous.</p>
+						<div class="CompatibilityError-logos" style="padding-top: 50px;">
+							
+								
+									<div class="col-md-3">
+										<a href="https://support.mozilla.org/fr/kb/mettre-jour-firefox-derniere-version" class="CookieHeadband-logo CookieHeadband-logo--firefox" target="_blank">
+											<div class="CookieHeadband-logoTitle">Firefox</div>
+										</a>
+									</div>
+									<div class="col-md-3">
+										<a href="https://support.google.com/chrome/answer/95414?co=GENIE.Platform%3DDesktop&hl=fr" class="CookieHeadband-logo CookieHeadband-logo--chrome" target="_blank">
+											<div class="CookieHeadband-logoTitle">Chrome</div>
+										</a>
+									</div>
+									<div class="col-md-3">
+										<a href="https://www.microsoft.com/fr-fr/download/internet-explorer.aspx" class="CookieHeadband-logo CookieHeadband-logo--edge" target="_blank">
+											<div class="CookieHeadband-logoTitle">Edge</div>
+										</a>
+									</div>
+									<div class="col-md-3">
+										<a href="https://support.apple.com/fr-fr/safari" class="CookieHeadband-logo CookieHeadband-logo--safari" target="_blank">
+											<div class="CookieHeadband-logoTitle">Safari</div>
+										</a>
+									</div>
+								
+								
+							
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</main>
+
+
+<script>
+(function(){
+var ua = window.navigator.userAgent;
+var msie = ua.indexOf("MSIE ");
+
+var compatibiliteNav = function() {
+	 
+	     
+	     
+
+		     if (NPC.informationNavigateur.partiellementCompatible) {
+		         $("#bandeauNav").css("display", "block");
+		         $("a.Header-login").css("display", "none");
+		         $("a.HeaderSticky-login").css("display", "none");
+	
+		     } else if (NPC.informationNavigateur.incompatible) {
+		         $("#pageNav").css("display", "block");
+		     }
+	     
+	 
+    
+    $( ".croix-bandeau" ).on( "click", function() {
+        $("#bandeauNav").addClass('hidden');
+	});
+ }
+
+if(msie > 0) {
+	if(window.attachEvent) {
+    	window.attachEvent("onload", compatibiliteNav);
+    } else {
+		window.addEventListener("load", compatibiliteNav);
+    }
+} else {
+    $( document ).ready(compatibiliteNav);
+}
+})();
+</script></div>
+
+</div>
+
+		    		
+		    		
+		   		
+		    
+		    
+		
+	
+
+
+
+
+
+<div id="inbenta" class="inbenta-interface hidden-print" data-cr="national" data-langue="fr" data-marche="particulier" data-univers-besoin="">
+</div>
+
+<div id="inbenta-compagnon-container" class="hidden-print" data-cr="national" data-langue="fr" data-marche="particulier" data-univers-besoin="">
+    
+</div>
+<div id="tchat_session" class="hidden-print" data-value='{"genesysTchat": false}'>
+    
+</div>
+		</header>
+	
+	<main>
+		
+
+
+
+
+
+
+
+
+
+
+	
+ 
+
+<div class="Template">
+	<div class="container-fluid">
+		<div class="row js-Template-head">
+			
+			<div class="col-xs-12 col-md-push-6 col-md-6">
+
+    			<h1>
+    				<div class="baliseH1 texte">
+
+
+
+
+
+<div tabindex="0">
+    
+</div>
+</div>
+
+    			</h1>
+			
+				
+
+				<div class="Template-splitMinHeight50 contexthub-mode-reconnu hidden">
+					<div>
+						<div class="placeholder-2-2 parsys"><div class="acces-rapides parbase section">
+
+
+
+
+
+
+
+
+
+
+
+<div class="FastAccess">
+   <div class="FastAccess-content">
+
+
+     <div class="FastAccess-title">
+        <div class="title texte">
+
+
+
+
+
+<div tabindex="0">
+    <p><span class="h2"><span class="h1"></span>MES ACCES RAPIDES</span></p>
+
+</div>
+</div>
+
+     </div>
+
+     
+   	
+
+
+ 
+
+
+    
+
+    
+    	<ul class="FastAccess-list">
+       	
+      		<li class="FastAccess-item">
+      			
+    			
+				
+				
+         		<a href="/particulier/operations/synthese.html" class="FastAccess-link" target="_self">
+       				
+           				<img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictogrammes/livre-17-01-/pictos-illustratifs_categ/CATEG_Bourse%20et%20placements.svg" alt="" class="FastAccess-linkImg"/>
+        			
+           			<span class="FastAccess-linkTxt">Accéder à mes comptes</span>
+        		</a>
+       		</li>
+		
+      		<li class="FastAccess-item">
+      			
+    			
+				
+				
+         		<a href="/particulier/operations/profil/banque-moi/prendre-rdv.html" class="FastAccess-link" target="_self">
+       				
+           				<img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictogrammes/livre-17-01-/pictos-illustratifs_categ/CATEG_Bourse%20et%20placements.svg" alt="" class="FastAccess-linkImg"/>
+        			
+           			<span class="FastAccess-linkTxt">Prendre rendez-vous avec mon conseiller</span>
+        		</a>
+       		</li>
+		
+      		<li class="FastAccess-item">
+      			
+    			
+				
+				
+         		<a href="/particulier/operations/moyens-paiement/virement.html" class="FastAccess-link" target="_self">
+       				
+           				<img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictogrammes/livre-17-01-/pictos-illustratifs_categ/CATEG_Bourse%20et%20placements.svg" alt="" class="FastAccess-linkImg"/>
+        			
+           			<span class="FastAccess-linkTxt">Faire un virement</span>
+        		</a>
+       		</li>
+		
+      		<li class="FastAccess-item">
+      			
+    			
+				
+				
+         		<a href="/particulier/operations/profil/banque-moi/messagerie.html" class="FastAccess-link" target="_self">
+       				
+           				<img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictogrammes/livre-17-01-/pictos-illustratifs_categ/CATEG_Bourse%20et%20placements.svg" alt="" class="FastAccess-linkImg"/>
+        			
+           			<span class="FastAccess-linkTxt">Accéder à la messagerie sécurisée</span>
+        		</a>
+       		</li>
+		
+      		<li class="FastAccess-item">
+      			
+    			
+				
+				
+         		<a href="/particulier/operations/operations-courantes/editer-rib.html" class="FastAccess-link" target="_self">
+       				
+           				<img src="" alt="" class="FastAccess-linkImg"/>
+        			
+           			<span class="FastAccess-linkTxt">Editer un RIB</span>
+        		</a>
+       		</li>
+		
+     	</ul>
+    
+
+   </div>
+</div></div>
+
+</div>
+
+					</div>
+				</div>
+				<div class="Template-splitMinHeight50 contexthub-mode-non-reconnu hidden">
+					<div class="placeholder-2-1 parsys"><div class="push-projet parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="C012">
+    	<div class="C012-content">
+        	<img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/Planche-Pictox3-28-06-2108_Particulier.svg" alt=""/> 
+        	<h2 style="text-transform:initial;"><h2>Achat immobilier, études, retraite, achat de voiture, déménagement…</h2></h2>
+        	<a href="#liste-hub">Et vous quel est votre besoin ?</a>
+    	</div>
+	</div>
+
+</div>
+
+</div>
+
+				</div>
+				<div>
+					<div class="placeholder-3 parsys"><div class="push-multiple parbase section">
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		<div class="pushMultiple pushMultiple--container">
+		
+			
+			    <p class="pushMultiple-title">
+			    <span class="pushMultiple-title--bold">FAITES AVANCER VOS PROJETS ! </span>
+			    
+			    <a href="/particulier/simulation-devis.html" class="pushMultiple-all" target="_self">Voir tous les simulateurs  </a>
+			    </p>
+			
+
+			<ul class="pushMultiple-list js-pushMultiple">
+				
+                    
+                        
+                            
+                            
+                        
+                        
+                        
+                    
+					<li class="pushMultiple-item" data-trackingClass ="avant_vente_fiche_produit"
+					data-tracking-conversion_avant_vente_nom="Simulateur Prêt immobilier"
+					data-tracking-conversion_avant_vente_categorie="Simulateur"
+					data-tracking-conversion_avant_vente_univers_de_besoin="emprunt">
+                        
+
+                        
+                            
+                            
+                            
+                                <div data-custom-redirect='{"url": "https://e-immobilier.credit-agricole.fr/simulca/?ORI=npc&xtor=CS3-800-%5bNPC%5d-%5bsimulation%5d-%5bbloc%5d", "target": "_self"}' class="BlockLink" x-cq-linkchecker="valid" tabindex="-1" >
+                                    <div class="BlockLink-cell BlockLink-cell--icon">
+                                        <img class="BlockLink-icon" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-cp/Crédit%20%20Immobilier.svg" alt=""/>
+                                    </div>
+                                    <div class="BlockLink-cell">
+                                        <p class="BlockLink-cat">Simulateur</p>
+
+                                        <p class="BlockLink-title"><a href="https://e-immobilier.credit-agricole.fr/simulca/?ORI=npc&xtor=CS3-800-%5bNPC%5d-%5bsimulation%5d-%5bbloc%5d" target="_self">
+                                            Simulateur Prêt immobilier</a></p>					
+
+                                    </div>
+                                </div>
+                            
+                        
+					</li>
+				
+                    
+                        
+                        
+                        
+                            
+                            
+                        
+                    
+					<li class="pushMultiple-item" data-trackingClass ="avant_vente_fiche_produit"
+					data-tracking-conversion_avant_vente_nom="Devis Assurance habitation"
+					data-tracking-conversion_avant_vente_categorie="Devis"
+					data-tracking-conversion_avant_vente_univers_de_besoin="assurance">
+                        
+
+                        
+                            
+								
+                              	
+								
+                                
+                             	
+		                                            
+		                                            
+                                <div class="BlockLink" onclick="NPC.redirectIfConnectedOrOpenModal('bc24d982-bc75-4112-b879-8336fb6c90f7', '/particulier/operations/moco/pacifica/_jcr_content.init.html?situation_travail=DEVHABI&codeOffre=VEH_LOISIR')" data-toggle="modal">
+                                    <div class="BlockLink-cell BlockLink-cell--icon">
+                                        <img class="BlockLink-icon" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-cp/Assurances%20habitation.svg" alt=""/>
+                                    </div>
+                                    <div class="BlockLink-cell">
+                                        <p class="BlockLink-cat">Devis</p>
+
+                                        <p class="BlockLink-title"><a href="#" target="_self">
+                                            Devis Assurance habitation</a></p>					
+
+                                    </div>
+                                </div>
+                                <div id="bc24d982-bc75-4112-b879-8336fb6c90f7" class="modal fade Modal Modal--small" role="dialog">
+                                    <div class="Modal-dialog">
+                                        <div class="Modal-content">
+                                            <div class="Modal-header">
+                                                <button type="button" class="Modal-close" data-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="Modal-body">
+                                                <p class="Modal-mainTitle">Déjà client? Identifiez-vous</p>
+
+                                                <div class="Modal-actions">
+                                                  	<a href="/particulier/acceder-a-mes-comptes.html?resource=%2Fparticulier%2Foperations%2Fmoco%2Fpacifica%2F_jcr_content.init.html%3Fsituation_travail%3DDEVHABI%26codeOffre%3DVEH_LOISIR" class="Modal-action Modal-action--default">S'identifier</a>
+                                                    <div class="Modal-action Modal-action--primary" data-custom-redirect='{"url": "/particulier/simulation-devis/assurance/devis-habitation.html?displayHeaderAlternate=true", "target": "_blank"}' x-cq-linkchecker="valid" tabindex="0" >Non merci</div>
+                                            	</div>
+                                        	</div>
+                                    	</div>
+                                	</div>
+                            	</div>
+                            
+                            
+                        
+					</li>
+				
+			</ul>
+		</div>
+	
+</div>
+<div class="push-multiple parbase section">
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		<div class="pushMultiple pushMultiple--container">
+		
+			
+			    <p class="pushMultiple-title">
+			    <span class="pushMultiple-title--bold"></span>
+			    
+			    <a href="" class="pushMultiple-all" target="_self"></a>
+			    </p>
+			
+
+			<ul class="pushMultiple-list js-pushMultiple">
+				
+                    
+                        
+                        
+                        
+                            
+                            
+                        
+                    
+					<li class="pushMultiple-item" data-trackingClass ="avant_vente_fiche_produit"
+					data-tracking-conversion_avant_vente_nom="Simulateur Livrets d&#39;Épargne"
+					data-tracking-conversion_avant_vente_categorie="Simulateur"
+					data-tracking-conversion_avant_vente_univers_de_besoin="epargne">
+                        
+
+                        
+                            
+                            
+                            
+                                <div data-custom-redirect='{"url": "/particulier/simulation-devis/epargne/simulateur-livrets-d-epargne.html?displayHeaderAlternate=true", "target": "_self"}' class="BlockLink" x-cq-linkchecker="valid" tabindex="-1" >
+                                    <div class="BlockLink-cell BlockLink-cell--icon">
+                                        <img class="BlockLink-icon" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-cp/Epargne-et-placements.svg" alt=""/>
+                                    </div>
+                                    <div class="BlockLink-cell">
+                                        <p class="BlockLink-cat">Simulateur</p>
+
+                                        <p class="BlockLink-title"><a href="/particulier/simulation-devis/epargne/simulateur-livrets-d-epargne.html?displayHeaderAlternate=true" target="_self">
+                                            Simulateur Livrets d&#39;Épargne</a></p>					
+
+                                    </div>
+                                </div>
+                            
+                        
+					</li>
+				
+                    
+                        
+                        
+                        
+                            
+                            
+                        
+                    
+					<li class="pushMultiple-item" data-trackingClass ="avant_vente_fiche_produit"
+					data-tracking-conversion_avant_vente_nom="Devis Assurance auto"
+					data-tracking-conversion_avant_vente_categorie="Devis"
+					data-tracking-conversion_avant_vente_univers_de_besoin="assurance">
+                        
+
+                        
+                            
+                            
+                            
+                                <div data-custom-redirect='{"url": "/particulier/simulation-devis/assurance/devis-auto.html?displayHeaderAlternate=true", "target": "_self"}' class="BlockLink" x-cq-linkchecker="valid" tabindex="-1" >
+                                    <div class="BlockLink-cell BlockLink-cell--icon">
+                                        <img class="BlockLink-icon" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-cp/Assurances%20auto%20et%202%20roues.svg" alt=""/>
+                                    </div>
+                                    <div class="BlockLink-cell">
+                                        <p class="BlockLink-cat">Devis</p>
+
+                                        <p class="BlockLink-title"><a href="/particulier/simulation-devis/assurance/devis-auto.html?displayHeaderAlternate=true" target="_self">
+                                            Devis Assurance auto</a></p>					
+
+                                    </div>
+                                </div>
+                            
+                        
+					</li>
+				
+			</ul>
+		</div>
+	
+</div>
+
+</div>
+
+				</div>
+			</div>
+
+			
+			<div class="col-xs-12 col-md-6 col-md-pull-6">
+				<div class="js-StickyPush">
+					<div class="js-FullHeight row">
+						<div class="placeholder-1 parsys"><div class="new-zdg parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+<script>
+	$(function() {
+	    window.ContextHub.eventing.on(ContextHub.SegmentEngine.PageInteraction.Teaser.prototype.info.loadEvent, function(event) {
+	        $(window).trigger('initCustomRedirect');
+	    });
+	 	// Anomalie 351261 : il faut enlever la dernière <br> qui traine en fin de la zone de dialogue RTE
+		// Pour garder que les 20px attendus entre la description et le bas de l'aplat
+	    $("div[class='PushCommunication-text']").find("p").each(function(){
+	        var inner = $(this)[0].innerHTML.trim();
+			var brIfExist = inner.substr(inner.length-4);
+	        var brAndNbspIfExist = inner.substr(inner.length-11);
+			if (brIfExist.indexOf("<br>")>=0 || (brAndNbspIfExist.indexOf("<br>")>=0 && brAndNbspIfExist.indexOf("&nbsp;")>=0))
+	        {
+	            setTimeout(removeLastBr,1000,$(this));
+	        }
+	    });
+	    function removeLastBr(p)
+	    {
+			$(p).find("br:last-child").remove();
+	    }
+	});
+</script>
+
+
+	
+<div class="componentZdg">
+  <div class="PushCarousel3" >
+  <div><button class="PushCarousel3-masking" onclick="toggleStateCarousel('hom')">Mettre en pause ou redémarrer le défilement du carousel</button></div>
+  <div class="PushCarousel3-carousel">
+    <div data-trackingclass="carrousel" class="PushCarousel3-carouselInner">
+      
+		  
+          <div class="PushCarousel3-item" data-trackinginfo="prognat_blackfriday2019_1">
+
+        <div class="PushCommunication-backgroundWrapper">
+            <div class="PushCommunication-background PushCommunication-background--filterTransparent" style="background-image: url('/content/dam/assetsca/national/elements-recus/images/1080x1080_IMG.jpg')"></div>
+        </div>
+                <div class="PushCommunication-zoning PushCommunication-zoning--bottomCenter PushCommunication-zoning--primary"  data-custom-redirect="/particulier/campagnes/black-friday-11.html" tabindex="-1">
+            
+		  
+			
+				
+                <a href="/particulier/campagnes/black-friday-11.html" class="PushCommunication-title" target="_self"><div class="texte section"><p><b><span class="p">PRÉPAREZ LE BLACK FRIDAY DÈS&nbsp; MAINTENANT</span></b></p></div></a>
+             
+             
+          
+          <div class="PushCommunication-text">
+            <div class="texte section">
+              <p><span class="p">UN&nbsp;CRÉDIT VOUS ENGAGE ET DOIT ÊTRE REMBOURSÉ. VÉRIFIEZ VOS CAPACITÉS DE REMBOURSEMENT AVANT DE VOUS ENGAGER.</span><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+          </div>
+        </div>
+        
+			
+                <span class="PushCommunication-btn PushCommunication-btn--primary">EN SAVOIR PLUS</span>
+             
+             
+          
+      </div>
+       </div>         
+          
+		  
+          <div class="PushCarousel3-item" data-trackinginfo="Prognat_PER_2">
+
+        <div class="PushCommunication-backgroundWrapper">
+            <div class="PushCommunication-background PushCommunication-background--filterTransparent" style="background-image: url('/content/dam/assetsca/national/elements-recus/images/PER_1080x1080px_InSitu.jpg')"></div>
+        </div>
+                <div class="PushCommunication-zoning PushCommunication-zoning--bottomCenter PushCommunication-zoning--white"  data-custom-redirect="/particulier/conseils/retraite/preparer-sa-retraite.html" tabindex="-1">
+            
+		  
+			
+				
+                <a href="/particulier/conseils/retraite/preparer-sa-retraite.html" class="PushCommunication-title" target="_self"><div class="texte section"><p><span class="h3"><b>LA RETRAITE, C'EST UNE NOUVELLE VIE.&nbsp;</b></span></p>
+
+
+
+<p><span class="h3"><b>ET UNE NOUVELLE VIE, ÇA SE PRÉPARE.</b></span></p></div></a>
+             
+             
+          
+          <div class="PushCommunication-text">
+            <div class="texte section">
+              <p>PLAN ÉPARGNE RETRAITE<br>
+
+
+
+
+
+
+
+
+</p>
+          </div>
+        </div>
+        
+			
+                <span class="PushCommunication-btn PushCommunication-btn--primary">EN SAVOIR PLUS</span>
+             
+             
+          
+      </div>
+       </div>         
+          
+		  
+          <div class="PushCarousel3-item" data-trackinginfo="Prognat_comptenoel_2019">
+
+        <div class="PushCommunication-backgroundWrapper">
+            <div class="PushCommunication-background PushCommunication-background--filterTransparent" style="background-image: url('/content/dam/assetsca/national/elements-recus/images/1080x1080_jeu.jpg')"></div>
+        </div>
+                <div class="PushCommunication-zoning PushCommunication-zoning--bottomCenter PushCommunication-zoning--primary"  data-custom-redirect="https://comptedenoel.fr/#xtor=AD-30" tabindex="-1">
+            
+		  
+			
+				
+                <a href="https://comptedenoel.fr/#xtor=AD-30" class="PushCommunication-title" target="_blank"><div class="texte section"><p><b>TENTEZ DE GAGNER UN VOYAGE EN ISLANDE OU UNE CARTE CADEAU CDISCOUNT*</b></p></div></a>
+             
+             
+          
+          <div class="PushCommunication-text">
+            <div class="texte section">
+              <p>* Voir modalités sur le site comptedenoel.fr</p>
+          </div>
+        </div>
+        
+			
+                <span class="PushCommunication-btn PushCommunication-btn--primary">EN SAVOIR PLUS</span>
+             
+             
+          
+      </div>
+       </div>         
+          
+		  
+          <div class="PushCarousel3-item" data-trackinginfo="crowdfunding_sport-vie_2">
+
+        <div class="PushCommunication-backgroundWrapper">
+            <div class="PushCommunication-background PushCommunication-background--filterTransparent" style="background-image: url('/content/dam/assetsca/national/elements-recus/images/Crowdfunding_NPC_1080x1080px.jpg')"></div>
+        </div>
+                <div class="PushCommunication-zoning PushCommunication-zoning--bottomCenter PushCommunication-zoning--primary"  data-custom-redirect="https://ca-sport.tudigo.co/" tabindex="-1">
+            
+		  
+			
+				
+                <a href="https://ca-sport.tudigo.co/" class="PushCommunication-title" target="_blank"><div class="texte section"><p><b>FAITES VIVRE PLUS FORT LES VALEURS DU SPORT.</b></p></div></a>
+             
+             
+          
+          <div class="PushCommunication-text">
+            <div class="texte section">
+              <p>Il y a forcément un club avec un projet à soutenir près de chez vous.&nbsp;</p>
+          </div>
+        </div>
+        
+			
+                <span class="PushCommunication-btn PushCommunication-btn--primary">EN SAVOIR PLUS</span>
+             
+             
+          
+      </div>
+       </div>         
+          
+		  
+          <div class="PushCarousel3-item" data-trackinginfo="prognat_yapla_3">
+
+        <div class="PushCommunication-backgroundWrapper">
+            <div class="PushCommunication-background PushCommunication-background--filterTransparent" style="background-image: url('/content/dam/assetsca/national/elements-recus/images/YAPLA_Immersif-NPC-1080x1080.jpg')"></div>
+        </div>
+                <div class="PushCommunication-zoning PushCommunication-zoning--bottomCenter PushCommunication-zoning--white"  data-custom-redirect="https://yapla.fr/ca/particulier" tabindex="-1">
+            
+		  
+			
+				
+                <a href="https://yapla.fr/ca/particulier" class="PushCommunication-title" target="_blank"><div class="texte section"><p><b><span class="h3">LES ASSOCIATIONS ONT UNE MISSION, LES AIDER EST LA NÔTRE.</span></b></p></div></a>
+             
+             
+          
+          <div class="PushCommunication-text">
+            <div class="texte section">
+              <p>Le Crédit Agricole est partenaire de YAPLA, la plateforme de gestion et de paiement qui simplifie le quotidien des associations.&nbsp;</p>
+          </div>
+        </div>
+        
+			
+                <span class="PushCommunication-btn PushCommunication-btn--primary">En savoir plus</span>
+             
+             
+          
+      </div>
+       </div>         
+          
+
+    </div>
+  </div>
+</div>
+</div>
+<script>
+	if (typeof sliderRelationalMessage ==='function') {
+		sliderRelationalMessage();
+	};
+</script>
+	
+	
+    
+    
+    
+
+</div>
+
+</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="Template-reduceMargin15px">
+			
+			
+				<div class="placeholder-4-national parsys"><div class="push-vers-CR parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<div class="PushCR GeolocOk" style='display: none'>
+	    <div class="hidden-xs hidden-sm PushCR-item">
+	      	
+	    </div>  
+	    
+	    <div class="PushCR-item">
+	    	<span>
+			     
+					
+					 
+						 <img class="js-needFakeNotSvg" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/ici_picto.png" alt=""/>
+					
+				  
+		    </span>
+	    </div>
+	   
+	    <div class="PushCR-item PushCR-item--gras">
+	      <div>
+	        Vous avez été localisé dans la caisse régionale <strong class="GeolocCR">XXXXXX</strong>
+	        <a onclick="NPC.storeLocator.gotoAccesCr();event.preventDefault()" href="#" class="PushCR-link">
+	         	
+					
+					 
+						 Modifier
+					
+				  
+	        </a>
+	      </div>
+	    </div>
+	    <div class="PushCR-item ">
+	    	<a href="#" class="GeolocCRLink btn PushCR-button">Découvrir l'espace dédié de <span class="GeolocCR">XXXX</span></a>
+	    </div>
+	</div>
+
+    
+    <div class="PushCR GeolocKo" style='display: none'> 
+     	<div class="hidden-xs hidden-sm PushCR-item">
+	      	
+	    </div> 
+         <div class="PushCR-item">
+	    	<span>
+			     
+					
+					 
+						 <img class="js-needFakeNotSvg" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/ici_picto.png" alt=""/>
+					
+				  
+		    </span>
+	    </div>
+        <div class="PushCR-item">
+        
+			
+			 
+				Accéder au site de votre Caisse régionale
+			
+		  
+        </div>
+        <div class="PushCR-item">
+        	<a onclick="NPC.storeLocator.gotoAccesCr();event.preventDefault()" href="#" class="GeolocKo btn PushCR-button">
+        		
+					
+					 
+						 Afficher
+					
+				  
+        	</a>
+        </div>
+	</div>
+
+
+<script>
+	
+	NPC = NPC || {};
+	NPC.pushCRun = function(){
+		if (NPC.pushCR.init){
+			NPC.pushCR.init(); 
+		}
+	};
+	
+	
+</script></div>
+
+</div>
+
+			
+
+		</div>
+
+		
+		
+
+
+
+
+
+
+<script>if (document.cookie.match('(^|; )id-part=([^;]*)')){ 	$('.contexthub-mode-reconnu').removeClass('hidden'); }else{	$('.contexthub-mode-non-reconnu').removeClass('hidden');}</script>
+
+		<div class="Template-reduceMargin15px">
+			<div class="placeholder-6 parsys"><div class="liste-hub parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<div id="liste-hub" class="PushAccomp" id="C132"
+			data-list-hub-images='["/content/dam/assetsca/master/public/commun/images/zone-de-gauche/editorial/zdg-march%C3%A9s/HP%20PART%20C132_fond_1.jpg"]'>
+
+			<div class="PushAccomp-content">
+
+				<h2 class="Title PushAccomp-title"><p style="text-align: center;">LE CRÉDIT AGRICOLE <b>M'ACCOMPAGNE</b></p>
+</h2>
+
+				<div class="container">
+					<div class="row Template-marginBot5perc">
+						
+							<div class="col-md-4">
+								<div class="row">
+									<div class="col-md-12 PushAccomp-contentTitle">
+										<h3><p>&nbsp;</p></h3>
+									</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/mes-etudes/ma-vie-d-etudiant-d-apprenti.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Mes études</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/ma-vie-de-famille/famille.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Ma vie de famille</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/patrimoine.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Mon argent, mon patrimoine</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+								</div>
+							</div>
+						
+							<div class="col-md-4">
+								<div class="row">
+									<div class="col-md-12 PushAccomp-contentTitle">
+										<h3><p>&nbsp;</p></h3>
+									</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/ma-protection-et-celle-de-mes-proches/protection.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Ma protection et celle de mes proches</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/retraite.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Ma retraite</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/coups-durs/mes-coups-durs.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Mes coups durs</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+								</div>
+							</div>
+						
+							<div class="col-md-4">
+								<div class="row">
+									<div class="col-md-12 PushAccomp-contentTitle">
+										<h3><p>&nbsp;</p></h3>
+									</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/mon-vehicule/vehicule.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Mon véhicule</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="/particulier/conseils/logement.html" class="PushAccomp-btnLink" target="_self">
+													<div class="PushAccomp-contentSubtitle">Mon logement</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+										<div class="col-md-12 PushAccomp-colMerge">
+											<div class="PushAccomp-btn">
+												
+												<a href="https://www.credit-agricole.fr/particulier/conseils/logement/demenagement.html" class="PushAccomp-btnLink" target="_blank">
+													<div class="PushAccomp-contentSubtitle">Mon déménagement</div>
+													<div class="PushAccomp-contentArrow">
+														<i class="icon npc-arrow-next"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									
+								</div>
+							</div>
+						
+					</div>
+
+					<div class="PushAccomp-tips">
+						
+							<div class="PushAccomp-tipsPictoContainer">
+								<div class="PushAccomp-tipsPicto">
+									<img src="/content/dam/assetsca/master/public/commun/images/zone-de-gauche/editorial/zdg-marchés/c132_picto_info.png" alt="" class="PushAccomp-tipsPictoImg"/>
+								</div>
+							</div>
+						
+						<div class="PushAccomp-tipsText"><p>Besoin d’informations ? Retrouvez les réponses aux questions que vous vous posez sur l’argent et même sur la vie.&nbsp;&nbsp;<a href="/particulier/conseils/magazine/tout-un-mag.html"><span class="RichText-texteBlanc">En savoir plus</span></a><br>
+</p>
+</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+
+<script>
+	var NPC = NPC || {};
+
+	NPC.refreshListeHub = function() {
+		$('div[data-list-hub-images]').each(
+				function() {
+					var $this = $(this);
+					var imagesJson = $this.data('listHubImages');
+					if (imagesJson.length !== 0) {
+						var randomKey = Math
+								.floor((Math.random() * imagesJson.length));
+						var img = imagesJson[randomKey];
+						$this.css('background-image', 'url(' + img + ')');
+					}
+				});
+	};
+
+	$(document).ready(function($) {
+		NPC.refreshListeHub();
+	});
+</script></div>
+
+</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-8">
+				<div class="Template-reduceMargin15px">
+					<div class="placeholder-7 parsys"><div class="citation parbase section">
+
+
+
+
+
+
+
+
+
+
+<div class="Citation matchHeight" style="background-image:url(/content/dam/assetsca/master/public/commun/images/homepage/visuel2_test2_part_engagement.jpg);">
+
+	<div class="Citation-head">
+		<h2 class="Citation-title">
+			
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+    	<p>les engagements</p>
+<p>du crédit agricole</p>
+
+    
+    
+    
+
+
+				
+			
+				
+			
+		</h2>
+	</div>
+
+	<div class="Citation-content">
+    	<div class="Citation-text">
+      		<div class="SimpleText">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+    	Pouvoir compter sur sa banque 24h/24, être libre de changer d’avis, avoir confiance, voir sa fidélité reconnue…<br />
+
+    
+    
+    
+
+</div>
+
+    	</div>
+
+    	<div class="Citation-signature">
+      		<div class="footerText texte">
+
+
+
+
+
+<div tabindex="0">
+    
+</div>
+</div>
+
+    	</div>
+	</div>
+	
+</div>
+</div>
+
+</div>
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="Template-reduceMargin15px">
+					<div class="placeholder-8 parsys"><div class="carousel-5-ecrans parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+		
+		<div class="PushCarousel5 matchHeight">
+			<div>
+				<button class="PushCarousel5-masking" onclick="toggleStateCarousel('carousel-engagement')">Mettre en pause ou redémarrer le défilement du carousel</button>
+			</div>
+			<div id="PushCarousel5-carousel" class="carousel slide PushCarousel5-carousel" data-ride="carousel" tabindex="0">
+       	  		
+                
+                  
+                      <ol class="carousel-indicators PushCarousel5-carouselIndicators">
+                  
+                  
+               
+		        	
+					  	<li data-target="#PushCarousel5-carousel" data-slide-to="0" class="active"></li>
+				  	
+					  	<li data-target="#PushCarousel5-carousel" data-slide-to="1" class=""></li>
+				  	
+					  	<li data-target="#PushCarousel5-carousel" data-slide-to="2" class=""></li>
+				  	
+					  	<li data-target="#PushCarousel5-carousel" data-slide-to="3" class=""></li>
+				  	
+		        </ol>
+		        <div class="carousel-inner PushCarousel5-carouselInner" role="listbox">
+		        	
+		        			
+						  		
+						  			<div class="item PushCarousel5-item active">
+						  		
+						  		
+					  		
+					  		<div class="carousel-caption PushCarousel5-carouselCaption">
+			                	<span class="PushCarousel5-badge">1</span>
+			                    <h2 class="PushCarousel5-text"><p><b>Charte des données personnelles</b></p>
+<p>Au Crédit Agricole, nous prenons des engagements sur la protection des données de tous nos clients</p>
+</h2>
+			                    <div class="PushCarousel5-blockButton">
+			                    	
+			                        <a href="particulier/informations/nos-engagements/charte-des-donnees-personnelles.html" class="btn PushCarousel5-button" target="_self">EN SAVOIR PLUS</a>
+			                    </div>
+			                </div>
+				  		</div>
+		        	
+		        			
+						  		
+						  		
+						  			<div class="item PushCarousel5-item">
+						  		
+					  		
+					  		<div class="carousel-caption PushCarousel5-carouselCaption">
+			                	<span class="PushCarousel5-badge">2</span>
+			                    <h2 class="PushCarousel5-text"><p><b>Les engagements relationnels</b></p>
+<p>Nous souhaitons vous apporter la qualité de service qui vous donnera envie de rester chez nous<br>
+</p>
+</h2>
+			                    <div class="PushCarousel5-blockButton">
+			                    	
+			                        <a href="particulier/informations/nos-engagements.html" class="btn PushCarousel5-button" target="_self">EN SAVOIR PLUS</a>
+			                    </div>
+			                </div>
+				  		</div>
+		        	
+		        			
+						  		
+						  		
+						  			<div class="item PushCarousel5-item">
+						  		
+					  		
+					  		<div class="carousel-caption PushCarousel5-carouselCaption">
+			                	<span class="PushCarousel5-badge">3</span>
+			                    <h2 class="PushCarousel5-text"><p><b>Point Passerelle</b></p>
+<p>Nous accompagnons les clients dont l’équilibre financier et social se trouve déstabilisé par un événement<br>
+</p>
+</h2>
+			                    <div class="PushCarousel5-blockButton">
+			                    	
+			                        <a href="particulier/informations/nos-engagements/point-passerelle.html" class="btn PushCarousel5-button" target="_self">EN SAVOIR PLUS</a>
+			                    </div>
+			                </div>
+				  		</div>
+		        	
+		        			
+						  		
+						  		
+						  			<div class="item PushCarousel5-item">
+						  		
+					  		
+					  		<div class="carousel-caption PushCarousel5-carouselCaption">
+			                	<span class="PushCarousel5-badge">4</span>
+			                    <h2 class="PushCarousel5-text"><p><b>Le sport comme école de la vie</b></p>
+<p>Parce que le sport est une école qui permet de se construire pour être plus fort, nous soutenons partout en France ceux qui font vivre le sport et ses valeurs</p>
+</h2>
+			                    <div class="PushCarousel5-blockButton">
+			                    	
+			                        <a href="particulier/sports/sport-comme-ecole-de-la-vie.html" class="btn PushCarousel5-button" target="_self">EN SAVOIR PLUS</a>
+			                    </div>
+			                </div>
+				  		</div>
+		        	
+		        </div>
+	    	</div>
+	    </div>
+    
+
+</div>
+
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="Template-reduceMargin15px">
+			<div class="placeholder-9 parsys"><div class="push-page parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="PushPage">
+	<div class="PushPage-head">
+		<div class="h2"><h2><b>Une Banque Coopérative,</b> <b>c'est :</b></h2>
+</div>
+	</div>
+
+    <div class="PushPage-main">
+		    <div class="PushPage-items js-PushPage-items">
+		    	<div class="PushPage-item">
+        			<div class="PushPage-itemImageWrap">
+          				<img class="PushPage-itemImage" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/Pictos-Ronds_PictoB-Particulier.svg" alt=""/>
+        			</div>
+       				 <div class="PushPage-itemTitle"><h3>Une banque qui rend&nbsp;<span class="h3"><b>votre épargne utile</b></span></h3>
+</div>
+      			</div>
+      			<div class="PushPage-item">
+        			<div class="PushPage-itemImageWrap">
+          				<img class="PushPage-itemImage" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/Pictos-Ronds_PictoA-Particulier.svg" alt=""/>
+        			</div>
+       				 <div class="PushPage-itemTitle"><h3>Une banque qui <b>s’engage près de chez vous</b><br>
+</h3>
+</div>
+      			</div>
+      			<div class="PushPage-item">
+        			<div class="PushPage-itemImageWrap">
+          				<img class="PushPage-itemImage" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/Pictos-Ronds_PictoC-Particulier.svg" alt=""/>
+        			</div>
+       				 <div class="PushPage-itemTitle"><h3>Une banque qui <b>dynamise l’économie locale</b><br>
+</h3>
+</div>
+      			</div>
+		</div>
+	</div>
+	
+	
+	    <div class="PushPage-bottom">
+	        <a id="urlEspaceSocietaire" href="/particulier/espace-societaire.html" class="btn PushPage-button" target="_self">
+	        	DÉCOUVREZ VOTRE ESPACE SOCIÉTAIRE
+	        </a>
+	    </div>
+	
+</div></div>
+
+</div>
+
+		</div>
+
+		<div class="row Template-backgroundBrandGray01">
+			<div class="col-xs-12">
+				<div class="Template-reduceMargin15px text-center">
+					<div class="placeholder-10 parsys"><div class="texte section">
+
+
+
+
+
+<div tabindex="0">
+    <h2 style="text-align: center;"><b>Tout un mag pour vous&nbsp;</b></h2>
+
+</div>
+</div>
+
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row Template-backgroundBrandGray01">
+			<div class="placeholder-11 parsys"><div class="owl-carousel CarouselActu js-carouselActu section">
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+        
+			<div class="PushActu matchHeight" data-custom-redirect="/particulier/conseils/magazine/tout-un-mag/comment-financer-un-investissement-immobilier.html" tabindex="0">
+        
+	
+		
+			<script>
+				window.parent.magPushActu_resourceType = "ca/npc/components/pages/accueil-banque-privee";
+				var global_magPushActu_wcmMode = "DISABLED";
+				window.parent.magPushActu_currentPagePath = "/content/ca/national/npc/fr/particulier";
+			</script>
+		
+		
+			
+	        
+				<div class="PushActu-imageWrapper" style="background-image: url('/content/dam/assetsca/master/public/commun/images/mag/images-d%C3%A9coratives/part/comment-financer-un-investissement-immobilier/comment-financer-un-investissement-immobilier-paysage.jpg')">
+	        
+        
+			<img class="PushActu-image" src="/content/dam/assetsca/master/public/commun/images/mag/images-décoratives/part/comment-financer-un-investissement-immobilier/comment-financer-un-investissement-immobilier-paysage.jpg" alt="Image blog"/>
+			
+		</div>
+		
+			
+	        
+	        	<div class="PushActu-content" tabindex="0">
+	        
+        
+			
+				<div class="PushActu-category">Tout un mag pour vous</div>
+			
+			<div class="PushActu-date">Crédit</div>
+			
+				
+        		
+					<h3 class="PushActu-title"><a href="/particulier/conseils/magazine/tout-un-mag/comment-financer-un-investissement-immobilier.html">Comment financer un investissement immobilier ?</a></h3>
+                
+			
+			
+				<div class="PushActu-text">Acheter pour la première fois sa résidence principale, ou acheter pour louer… L’investissement immobilier est un projet majeur dans votre vie, qui peut être financé en recourant aussi bien à l’épargne (apport personnel) qu’au crédit. Voici comment.</div>
+			
+			<br /> 
+			
+				
+				
+					<p class="PushActu-link">Lire l&#39;article</p>
+				
+			
+		</div>
+	</div>
+
+	
+		
+        
+			<div class="PushActu matchHeight" data-custom-redirect="/particulier/conseils/magazine/tout-un-mag/job-etudiant-7-conseils-pour-trouver-un-job-d-ete.html" tabindex="0">
+        
+	
+		
+		
+			
+	        
+				<div class="PushActu-imageWrapper" style="background-image: url('/content/dam/assetsca/master/public/commun/images/mag/images-d%C3%A9coratives/part/job-etudiant-7-conseils-pour-trouver-un-job-d-ete/job-etudiant-7-conseils-pour-trouver-un-job-d-ete-paysage.jpg')">
+	        
+        
+			<img class="PushActu-image" src="/content/dam/assetsca/master/public/commun/images/mag/images-décoratives/part/job-etudiant-7-conseils-pour-trouver-un-job-d-ete/job-etudiant-7-conseils-pour-trouver-un-job-d-ete-paysage.jpg" alt="Image blog"/>
+			
+		</div>
+		
+			
+	        
+	        	<div class="PushActu-content" tabindex="0">
+	        
+        
+			
+				<div class="PushActu-category">Tout un mag pour vous</div>
+			
+			<div class="PushActu-date">Tendances</div>
+			
+				
+        		
+					<h3 class="PushActu-title"><a href="/particulier/conseils/magazine/tout-un-mag/job-etudiant-7-conseils-pour-trouver-un-job-d-ete.html">Job étudiant : 7 conseils pour trouver un job d’été</a></h3>
+                
+			
+			
+				<div class="PushActu-text">Pendant l’été et les grandes vacances, vous avez du temps libre et aucune révision à faire. C’est donc la période rêvée pour travailler. En plus, un emploi saisonnier va vous aider à financer un voyage, un gros achat ou tout simplement améliorer l&#39;ordinaire ! Voici nos conseils pour trouver un job d’été sympa et acquérir une première expérience professionnelle.</div>
+			
+			<br /> 
+			
+				
+				
+					<p class="PushActu-link">Lire l&#39;article</p>
+				
+			
+		</div>
+	</div>
+
+	
+		
+        
+			<div class="PushActu matchHeight" data-custom-redirect="/particulier/conseils/magazine/tout-un-mag/assurez-vous-d-etre-bien-protege.html" tabindex="0">
+        
+	
+		
+		
+			
+	        
+				<div class="PushActu-imageWrapper" style="background-image: url('/content/dam/assetsca/master/public/commun/images/mag/images-d%C3%A9coratives/part/assurez-vous-d-etre-bien-protege/assurez-vous-d-etre-bien-protege-paysage.jpg')">
+	        
+        
+			<img class="PushActu-image" src="/content/dam/assetsca/master/public/commun/images/mag/images-décoratives/part/assurez-vous-d-etre-bien-protege/assurez-vous-d-etre-bien-protege-paysage.jpg" alt="Image blog"/>
+			
+		</div>
+		
+			
+	        
+	        	<div class="PushActu-content" tabindex="0">
+	        
+        
+			
+				<div class="PushActu-category">Tout un mag pour vous</div>
+			
+			<div class="PushActu-date">Assurance</div>
+			
+				
+        		
+					<h3 class="PushActu-title"><a href="/particulier/conseils/magazine/tout-un-mag/assurez-vous-d-etre-bien-protege.html">Assurez-vous d’être bien protégé</a></h3>
+                
+			
+			
+				<div class="PushActu-text">Ça y est ! Vous allez être  l’heureux propriétaire de votre résidence principale. Félicitations ! De la souscription d’une assurance habitation à la mise en place d’un système de télésurveillance, il vous faut maintenant prendre certaines mesures afin de protéger votre maison et ses habitants.</div>
+			
+			<br /> 
+			
+				
+				
+					<p class="PushActu-link">Lire l&#39;article</p>
+				
+			
+		</div>
+	</div>
+
+
+</div>
+
+</div>
+
+		</div>
+
+		<div class="row Template-padTopBot30px">
+			<div class="col-xs-12">
+				<div class="row parsys">
+					<div class="placeholder-12 parsys">
+</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row Template-padTopBot30px Template-backgroundBrandGray01">
+			<div class="col-xs-12 col-md-4">
+				<div class="placeholder-13 parsys"><div class="agence-proche parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ClosestAgency ClosestAgency--col matchHeight agence-la-plus-proche-inner-div ">
+    <a href="/particulier/acces-cr-et-agence.html?origin=/content/ca/national/npc/fr/particulier.html" class="row ClosestAgency-row">
+		<div class="col-md-12 col-xs-4 ClosestAgency-image">
+			<img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/surfooter/Picto-PART-Agences.svg" alt="pictogramme"/>
+		</div>
+		<div class="col-md-12 col-xs-8 ClosestAgency-content">
+			<div class="ClosestAgency-blockLink">
+				<h4 class="ClosestAgency-text GeolocOk">Des agences partout en France</h4>
+				<h4 class="ClosestAgency-text GeolocKo">Un réseau d’agences bancaires de proximité</h4>
+				<p class="ClosestAgency-adresse"></p>
+			</div>
+			<div class="ClosestAgency-map"></div>
+			<div class="ClosestAgency-link">Trouver votre agence</div>
+		</div>
+	</a>
+</div>
+
+
+
+<script>
+
+	NPC = NPC || {};
+	NPC.nbAgence="5979";
+	NPC.agenceProcheRun = function(){
+		if (NPC.agenceProche.init){
+			NPC.agenceProche.init(); 
+		}
+	};
+
+	//Because AEM add div around component :( 
+	$('.ClosestAgency').parent().addClass("");
+	
+</script></div>
+
+</div>
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="placeholder-14 parsys"><div class="sur-footer-sos parbase section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+	<div class=" sur-footer-sos-inner-div matchHeight" data-class="">
+	
+        <div class="PushNeedHelp">
+            <div class="row PushNeedHelp-row">
+                <div class="col-md-12 col-xs-4 PushNeedHelp-blockImage">
+                	
+                    <a href="/particulier/sos-numeros-d-urgence.html" class="PushNeedHelp-image" target="_self">
+                        <img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/surfooter/Picto-PART-Aide.svg" alt="BESOIN D&#39;AIDE ?"/>
+                    </a>
+                </div>
+                <div class="col-md-12 col-xs-8 PushNeedHelp-content">
+                	
+                    <a href="/particulier/sos-numeros-d-urgence.html" class="PushNeedHelp-blockTitle" target="_self">
+                        <h4 class="PushNeedHelp-title">BESOIN D&#39;AIDE ?</h4>
+                    </a>
+                    <div class="PushNeedHelp-text"><p>Opposition sur votre carte bancaire, question concernant vos solutions... Retrouvez toutes nos informations de contacts</p>
+
+</div>
+                    
+                    <a href="/particulier/sos-numeros-d-urgence.html" class="PushNeedHelp-link" target="_self">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+	if (NPC && typeof NPC.injectDataClassToParent === "function") {
+		NPC.injectDataClassToParent();
+	}
+</script></div>
+
+</div>
+
+			</div>
+			<div class="col-xs-12 col-md-4">
+				<div class="placeholder-15 parsys"><div class="sur-footer-store-apps-ca parbase section">
+
+
+
+
+
+
+
+
+
+
+
+<div class="AppStoreCA sur-footer-store-apps-ca-inner-div " data-class="">
+	<div class="row AppStoreCA-row">
+		<div class="col-md-12 col-xs-4 AppStoreCA-image">
+			<div class="pictogramme image parbase">
+
+
+
+
+
+
+
+
+
+
+
+    
+        <div class="">
+            <img src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/surfooter/Picto-PART-Appli.svg" alt=""/>
+        </div>
+    
+    
+</div>
+
+		</div>
+		<div class="col-md-12 col-xs-8 AppStoreCA-content ">
+            
+				<div class="AppStoreCA-text">
+					<div class="SimpleText">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+    	<p>Télécharger les applications</p>
+<p>du crÉdit agricole</p>
+
+    
+    
+    
+
+</div>
+
+        		</div>
+        	
+			<div class="AppStoreCA-app-logo">
+                <div data-npc-display-os="android" data-npc-display-categorie="desktop" class="hidden">
+                <div class="picto-google-play image-cliquable image parbase">
+
+
+
+
+
+
+
+
+
+
+
+	
+		<div class="">
+			<a href="/particulier/informations/applications-credit-agricole.html" target="_self"><img class="js-needFakeNotSvg" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/applications/google4.png" alt=""/></a>
+		</div>
+	
+	
+</div>
+
+                </div>
+                <div data-npc-display-os="iOS" data-npc-display-categorie="desktop" class="hidden">
+                <div class="picto-app-store image-cliquable image parbase">
+
+
+
+
+
+
+
+
+
+
+
+	
+		<div class="">
+			<a href="/particulier/informations/applications-credit-agricole.html" target="_self"><img class="js-needFakeNotSvg" src="/content/dam/assetsca/master/public/commun/images/pictogramme/pictos-homepage/applications/app.png" alt=""/></a>
+		</div>
+	
+	
+</div>
+
+                </div>
+                <div data-npc-display-os="windowsMobile" data-npc-display-categorie="desktop" class="hidden">
+                <div class="picto-windows-store image-cliquable image parbase">
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+	
+</div>
+
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	if (NPC && typeof NPC.injectDataClassToParent === "function") {
+		NPC.injectDataClassToParent();
+	}
+</script></div>
+
+</div>
+
+			</div>
+		</div>
+		<div class="row row-no-padding">
+			<div class="col-xs-12">
+				<div class="placeholder-sur-footer parsys">
+</div>
+
+			</div>
+		</div>
+	</div>
+	
+
+	<script>
+
+	$( window ).load(function() {
+		
+		//Echantillonage de 1%
+		var frequence = 100;
+		if (Math.floor(Math.random()*(frequence+1))===frequence) {
+			
+			if(window.performance && window.performance.timing && window.performance.timing.fetchStart && window.performance.timing.loadEventStart)	{
+				var start = window.performance.timing.fetchStart;
+				var stop = window.performance.timing.loadEventStart;
+				var timing = (stop-start);
+				var data = {};
+				data.kpi=timing;
+
+	      		$.ajax({
+	          		type: "POST",
+	          		url: NPC.genererURLJson("vitrine.kpi"),
+	         		data: data,
+	          		success: function () {
+	        	  	//Rien à faire
+	          		},
+	         		error: function () {
+	        	  	//Permissif, rien a faire
+	          		}
+	        	});
+			}
+		}
+		
+		// Anomalie 354342 : il faut éliminer les margin/padding lorsque le composant a été ajouté mais n'a pas été contribué
+		var contenuContributionPlaceholder4AvantTrim = $("div.placeholder-4 > div > div").html();
+		if (typeof contenuContributionPlaceholder4AvantTrim != 'undefined') {
+			var contenuContributionPlaceholder4 = contenuContributionPlaceholder4AvantTrim.trim();
+	        if (contenuContributionPlaceholder4.length == 0 || contenuContributionPlaceholder4 == ""){
+	        	$("div.placeholder-4 > div").css({"margin": "0","padding": "0"});
+	        }
+		}
+	});
+
+	</script>
+	
+</div>
+	</main>
+
+	
+	<script>
+        
+        var NPC = NPC || {};
+    </script>
+
+	
+		<footer>
+			
+		    <div class="Footer">
+				
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<div class="TopFooterSocial">
+	
+		
+			
+				<div class="push-to-social parsys"><span class="button-facebook button-template section">
+
+
+
+
+
+
+
+
+
+
+<a href="https://fr-fr.facebook.com/CreditAgricole/" target="_blank" class="TopFooterSocial-Links" data-trackingclass="Clic-Facebook">
+    <span class="TopFooterSocial-imgSocial icon">
+        <img class="img-responsive" alt="Facebook" src="/content/dam/assetsca/npc/social_buttons/facebook.png" width="20"/>
+    </span>
+</a>
+
+</span>
+<span class="button-twitter button-template section">
+
+
+
+
+
+
+
+
+
+
+<a href="https://twitter.com/creditagricole" target="_blank" class="TopFooterSocial-Links" data-trackingclass="Clic-Twitter">
+    <span class="TopFooterSocial-imgSocial icon">
+        <img class="img-responsive" alt="Twitter" src="/content/dam/assetsca/npc/social_buttons/twitter.png" width="20"/>
+    </span>
+</a>
+
+</span>
+<span class="button-video button-template section">
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/channel/UCwK3SPhGD6EmPeROug6f8bQ" target="_blank" class="TopFooterSocial-Links" data-trackingclass="Clic-Youtube ">
+    <span class="TopFooterSocial-imgSocial icon">
+        <img class="img-responsive" alt="Youtube" src="/content/dam/assetsca/npc/social_buttons/video.png" width="20"/>
+    </span>
+</a>
+
+</span>
+<span class="button-photo button-template section">
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.instagram.com/creditagricole/?hl=fr" target="_blank" class="TopFooterSocial-Links" data-trackingclass="Clic-Instagram">
+    <span class="TopFooterSocial-imgSocial icon">
+        <img class="img-responsive" alt="Instagram" src="/content/dam/assetsca/npc/social_buttons/photo.png" width="20"/>
+    </span>
+</a>
+
+</span>
+
+</div>
+
+			
+		
+		
+	
+</div>
+
+
+
+<div class="MidFooterLink">
+	<div class="MidFooterLink-SubCategory">
+		
+			
+				
+					<div class="logo-footer parbase">
+
+
+
+
+
+
+
+
+
+
+
+<img src="/content/dam/assetsca/npc/logos/logo_footer.png" alt="<h2>#</h2>" class="MidFooterLink-CaLogo"/></div>
+
+				
+			
+			
+		
+	</div>
+
+	<div class="MidFooterLink-SubCategory">
+		
+			
+				
+					<div class="footer-groupe-col-1 c061_footer_banque parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="MidFooterLink-SubCategoryTitle">
+    <h3 class="MidFooterLink-SubCategoryTitleTag" style="color:inherit;"><p>LE CREDIT AGRICOLE</p>
+</h3>
+    <span class="icon npc-arrow-down MidFooterLink-Chevrons"></span>
+</div>
+<div class="MidFooterLink-SubCategoryBlocLinks">
+	
+		
+            
+                
+    				
+    				<a href="/particulier/informations/banque-cooperative.html" class="MidFooterLink-SubCategoryLink" target="_self">Banque coopérative</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="/particulier/epargne/livret-epargne-logement/livret-societaires.html" class="MidFooterLink-SubCategoryLink" target="_self">Espace sociétaire</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="/particulier/informations/charte-ethique.html" class="MidFooterLink-SubCategoryLink" target="_self">Charte éthique</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="https://www.credit-agricole.com/" class="MidFooterLink-SubCategoryLink" target="_blank">Groupe Crédit Agricole</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="https://www.groupecreditagricole.jobs/" class="MidFooterLink-SubCategoryLink" target="_blank">Recrutement</a>
+                
+            
+            
+        
+	
+</div></div>
+
+				
+			
+			
+		
+	</div>
+
+	<div class="MidFooterLink-SubCategory">
+		
+			
+				
+					<div class="footer-groupe-col-2 c061_footer_banque parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="MidFooterLink-SubCategoryTitle">
+    <h3 class="MidFooterLink-SubCategoryTitleTag" style="color:inherit;"><p>RELATION BANQUE CLIENT<br>
+</p>
+</h3>
+    <span class="icon npc-arrow-down MidFooterLink-Chevrons"></span>
+</div>
+<div class="MidFooterLink-SubCategoryBlocLinks">
+	
+		
+            
+                
+    				
+    				<a href="/particulier/informations/reclamation-mediation.html" class="MidFooterLink-SubCategoryLink" target="_self">Réclamation et médiation</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="/particulier/informations/tarifs.html" class="MidFooterLink-SubCategoryLink" target="_self">Tarifs</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="/particulier/informations/relation-banque-client.html" class="MidFooterLink-SubCategoryLink" target="_self">Informations réglementaires</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="/particulier/informations/fgdr.html" class="MidFooterLink-SubCategoryLink" target="_self">Fonds de Garantie des Dépôts et de Résolution (FGDR)</a>
+                
+            
+            
+        
+	
+		
+            
+                
+    				
+    				<a href="/particulier/caisses-regionales.html" class="MidFooterLink-SubCategoryLink" target="_self">Sites des Caisses Régionales</a>
+                
+            
+            
+        
+	
+</div></div>
+
+				
+			
+			
+		
+	</div>
+
+	<div class="MidFooterLink-SubCategory">
+		
+			
+				
+					<div class="footer-groupe-col-3 footer-double-colonne parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="MidFooterLink-SubCategoryTitle">
+	<h3 class="MidFooterLink-SubCategoryTitleTag" style="color:inherit;">
+        <p>SITES SPECIALISES&nbsp;<br>
+</p>
+
+    </h3>
+	<span class="icon npc-arrow-down MidFooterLink-Chevrons"></span>
+</div>
+<div class="MidFooterLink-SubCategoryBlocLinks">
+	<div class="MidFooterLink-SubCategoryLinks">
+		
+			
+				
+					
+						
+						<a href="https://e-immobilier.credit-agricole.fr/simulca/pages/ptenational_dt?ORI=npc&xtor=CS3-800-%5bNPC%5d-%5bfooter_site%5d-%5blien%5d" class="MidFooterLink-SubCategoryLink" target="_blank">Prêt immobilier en ligne</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://eko-by-ca.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Ouverture de compte Eko</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://www.squarehabitat.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Agences immobilières Square Habitat</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://www.nexecur.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Service de télésurveillance</a>
+					
+				
+				
+			
+		
+	</div>
+	<div class="MidFooterLink-SubCategoryLinks">
+		
+			
+				
+					
+						
+						<a href="https://www.ca-immobilier.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Crédit Agricole Immobilier</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://www.jesuisentrepreneur.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Création d’entreprise</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://www.onatousuncotefoot.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Sponsoring football</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://www.talents-gourmands.fr/" class="MidFooterLink-SubCategoryLink" target="_blank">Talents Gourmands</a>
+					
+				
+				
+			
+		
+			
+				
+					
+						
+						<a href="https://www.pleinchamp.com/" class="MidFooterLink-SubCategoryLink" target="_blank">Pleinchamp.com</a>
+					
+				
+				
+			
+		
+	</div>
+</div>
+</div>
+
+				
+			
+			
+		
+	</div>
+
+	<div class="MidFooterLink-SubCategory MidFooterLink-SubCategoryBorder">
+		
+			
+				
+					<div class="footer-accessibilite parbase">
+
+
+
+
+
+
+
+
+
+
+
+<div class="MidFooterLink-SubCategoryTitle">
+	<h3 class="MidFooterLink-SubCategoryTitleTag" style="color:inherit;">
+		<p>Accessibilité numérique du site</p>
+
+	</h3>
+	<span class="icon npc-arrow-down MidFooterLink-Chevrons"></span>
+</div>
+
+<div class="MidFooterLink-SubCategoryBlocLinks">
+	<p class="MidFooterLink-MalEntendantLogo">
+		<img src="/etc/designs/ca/npc/clientlib-resources/images/commun/mal-entendant.png" alt="ear" tabindex="0" class="tabindexable"/>
+    </p>
+	
+	
+		
+			
+				
+					<a href="/particulier/accessibilite.html" target="_blank" class="MidFooterLink-MalEntendantLink"> Accessibilité</a>
+				
+			
+			
+		
+	
+</div>
+</div>
+
+				
+			
+			
+		
+	</div>
+</div>
+
+
+
+<div class="LowFooterMention">
+	<div class="LowFooterMention-BlocLinks">
+		<input name="language" value="fr" type="hidden" />
+
+		
+			
+				
+					<div class="footer-mentions parbase">
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<a href="/particulier/informations/mentions-legales.html" class="LowFooterMention-Links LowFooterMention-FirstLink" target="_self">
+	<div class="label1 texteSimple">
+
+
+
+
+
+
+<div>
+    MENTIONS LÉGALES
+</div></div>
+
+</a>
+<a href="/particulier/informations/politique-de-confidentialite.html" class="LowFooterMention-Links" target="_self">
+	<div class="label2 texteSimple">
+
+
+
+
+
+
+<div>
+    PROTECTION DES DONNÉES PERSONNELLES
+</div></div>
+
+</a>
+<a href="/particulier/informations/politique-de-protection-des-donnees-personnelles-de-la-caisse-regionale.html" class="LowFooterMention-Links" target="_self">
+	<div class="label3 texteSimple">
+
+
+
+
+
+
+<div>
+    
+</div></div>
+
+</a>
+<a href="https://www.credit-agricole.fr/guidesecurite/" class="LowFooterMention-Links" target="_blank">
+	<div class="label4 texteSimple">
+
+
+
+
+
+
+<div>
+    SÉCURITÉ
+</div></div>
+
+</a>
+<a href="#" class="LowFooterMention-Links" target="_self">
+	<div class="label5 texteSimple">
+
+
+
+
+
+
+<div>
+    
+</div></div>
+
+</a>
+
+
+	
+	
+		<span class="LowFooterMention-Links">© Crédit Agricole</span>
+	
+
+</div>
+
+				
+			
+			
+		
+	</div>
+</div>
+
+
+		    </div>
+	    </footer>
+	
+
+
+	
+
+	
+	<script type="text/javascript" src="/etc/designs/ca/npc/clientlib-npc-components.min.811a985d6a96cca46d954621de5674fb.js"></script>
+
+	
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/etc/designs/ca/npc/clientlibPageProduit.min.b2fcf6dfb25ad47f273492347b933dfd.js"></script>
+
+
+	
+	    
+	        
+	        
+         		<script type="text/javascript" src="/etc/designs/ca/npc/clientlib-google-map.min.0c0fa9ea75f3b7ad49e7d8a958b1f79f.js"></script>
+<script type="text/javascript" src="/etc/designs/ca/npc/clientlibBoutonVertGeneralVitrine.min.6d348345996e281d0dad6f57327e095a.js"></script>
+
+	        
+	    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* JQUERY IS NOT AVAILABLE IN THE HEADER */
+    jQuery(document).ready(function()
+    {
+    	// First header h1
+    	tc_vars = tc_vars || {};
+        tc_vars.page_entete_H1 = '';
+        for(var i=0;i<jQuery('h1').length;i++) {
+			tc_vars.page_entete_H1 = jQuery('h1').get(i).textContent.trim();
+            if(tc_vars.page_entete_H1 !== '') {break;}
+        }
+        
+        if(ContextHub != null) {
+    		var deviceStore = ContextHub.getStore("surferinfo");
+    		deviceStore.eventing.on(ContextHub.Constants.EVENT_STORE_READY, function() {
+    			var categoryDevice = deviceStore.getItem("/device").category;
+    			if (categoryDevice === 'Desktop')
+    				categoryDevice = 'Ordinateur';
+    			else if (categoryDevice === 'Tablet')
+    				categoryDevice = 'Tablette';
+    			tc_vars.utilisateur_device = categoryDevice;
+    	    });
+    	}
+    });
+</script>
+
+
+
+	
+
+
+
+
+	
+		
+	
+		    
+		        <script src="https://cdn.tagcommander.com/3315/tc_PortailClientCreditAgricole_2.js" async></script>
+		    
+		    
+		        <script src="https://cdn.tagcommander.com/3315/tc_PortailClientCreditAgricole_4.js" async></script>
+		    
+	
+		
+		
+	
+
+
+
+</body>
+</html>

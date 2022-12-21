@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 1 * * *'
+jobs:
+  github_followers_job:
+    runs-on: ubuntu-latest
+    name: A job to display github followers in your profile
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: use github-follower-action to update README.md
+        id: github-follower
+        uses: JieDing/github-followers@main
+        env:
+          login: ${{ github.repository_owner }}
+          pat: ${{ secrets.GH_PAT }}
+      - name: Commit changes
+        run: |
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add -A
+            git diff-index --quiet HEAD || git commit -m "jangan lupa follow @caliwyr"
+      - name: Pull changes
+        run: git pull -r
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_PAT }}
+          branch: ${{ github.ref }}

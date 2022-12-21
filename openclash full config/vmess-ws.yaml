@@ -1,0 +1,16 @@
+proxies:
+- name: cekekstraunli-apachmad1.kitu.xyz
+  type: vmess
+  server: insert host
+  port: 443
+  uuid: insert pass
+  alterId: insert id
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: domain.com
+  network: ws
+  ws-path: "/insert path/"
+  ws-headers:
+    Host: domain.com

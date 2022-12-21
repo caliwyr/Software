@@ -1,0 +1,3 @@
+Khusus untuk template In SEO Safelink Pro :
+
+Buka file menggunakan Notepad (Open with Notepad) > Salin semua isi di dalam file dan paste langsung ke Edit HTML di Blogger > Simpan tema.

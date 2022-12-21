@@ -1,0 +1,9 @@
+proxies:
+- name: "insert name proxy"
+  type: trojan
+  server: insert host or ip
+  port: insert port
+  password: insert password
+  udp: true
+  sni: bug.com
+  skip-cert-verify: true

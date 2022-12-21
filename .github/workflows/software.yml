@@ -1,0 +1,30 @@
+name: Software Commit
+
+on:
+  push:
+    branches:
+      - main
+      
+  schedule:
+    - cron: "2 * * * *"
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          
+      - name: Run Bot Task
+        run: |
+          chmod +x ./task.sh
+          ./task.sh
+          
+      - name: GitHub Push
+        uses: actions/checkout@v2
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GH_TOKEN }}

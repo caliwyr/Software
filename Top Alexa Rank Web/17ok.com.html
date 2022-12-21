@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<title>财界网 - 中国财经金融门户</title>
+		<meta name=description content="财界网（17ok.com）,中国知名财经金融门户网站，财富领域里的领袖媒体.全天候为网民提供专业、及时、丰富全面的资讯内容，财经资讯包括股票、财经、理财、基金、金融、证券、行情、银行、信用卡、大宗商品、期货、股指期货、黄金，综合资讯包括城市、企业、部委、视频、创投、创业板、房产、汽车、奢侈品、健康、娱乐，互动包括博客、千股吧、基金岛、社区。除此之外还有实用的广告服务、行情数据、高端资讯产品、软件产品及投资工具">
+		<meta name=keywords content="股票,财经,理财,基金,城市,企业,部委,金融,证券,行情,视频,创投,创业板,银行,信用卡,房产,汽车,大宗商品,期货,股指期货,黄金,奢侈品,健康,娱乐,博客,千股吧,基金岛,社区, stock,money,finance,guminba,news, fund,bank,blog,bbs">
+		<link href="newscj/css/base.css" rel="stylesheet" type="text/css">
+		<link href="newscj/css/center.css" rel="stylesheet" type="text/css">
+		<link href="newscj/css/rightbox.css" rel="stylesheet" type="text/css">		
+		<script type="text/javascript" src="newscj/js/jquery-1.7.2.min.js"></script>
+		<script src="newscj/js/terminator2.2.min.js" type="text/javascript" async="true"></script>
+		<script src="newscj/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="newscj/js/koala.min.1.5.js" type="text/javascript"></script>
+		<base target="_blank">
+		<script type="text/javascript">
+		mobile_device_detect();
+		function mobile_device_detect()
+        {
+            var thisOS=navigator.platform;
+            var os=new Array("iPhone","iPod","iPad","android","Nokia","SymbianOS","Symbian","Windows Phone","Phone","Linux armv71","MAUI","UNTRUSTED/1.0","Windows CE","BlackBerry","IEMobile");
+            for(var i=0;i<os.length;i++)
+            {
+                if(thisOS.match(os[i]))
+                {
+                    window.location.href='http://www.17ok.com/mobile/';
+                }
+
+            }
+            //因为相当部分的手机系统不知道信息,这里是做临时性特殊辨认
+            if(navigator.platform.indexOf('iPad') != -1)
+            {
+                window.location.href='http://www.17ok.com/mobile/';
+            }
+            //做这一部分是因为Android手机的内核也是Linux
+            //但是navigator.platform显示信息不尽相同情况繁多,因此从浏览器下手，即用navigator.appVersion信息做判断
+            var check = navigator.appVersion;
+            if( check.match(/linux/i) )
+            {
+                //X11是UC浏览器的平台 ，如果有其他特殊浏览器也可以附加上条件
+                if(check.match(/mobile/i) || check.match(/X11/i))
+                {
+                    window.location.href='http://www.17ok.com/mobile/';
+                }
+            }
+            //类in_array函数
+            Array.prototype.in_array = function(e)
+            {
+                for(i=0;i<this.length;i++)
+                {
+                    if(this[i] == e)
+                        return true;
+                }
+                return false;
+            }
+        }
+        
+			$(document).ready(function() {
+
+				$(".nav-list>ul>li").hover(function() {
+					$(this).addClass("hover")
+				}, function() {
+					$(this).removeClass("hover")
+				});
+
+			});
+		</script>
+
+		<!--飘红 样式    begin -->
+		<!--<style>-->
+			<!--html{}-->
+			<!--body {background: url('/newscj/img2018/2019gq_btbg_top.png') top center no-repeat;  margin: 0px;}-->
+			<!--.box_left {-->
+				<!--float: left;-->
+				<!--width: 154px;-->
+				<!--z-index: 999;-->
+				<!--position: none;-->
+			<!--}-->
+			[an error occurred while processing this directive]
+	</head>
+	<body>
+		<a id="closeA" href="http://finance.17ok.com/subject/china70/" style="
+    width: 100%;
+    min-height: 206px;
+    position: absolute;
+    display: block; z-index: 1;
+		"></a>
+		<!--header begin -->
+		<div class="topheader">
+			<div class="topbar">
+				<div class="fl">
+				
+				  <td class="time"><script src="http://www.17ok.com/js/getdate.js" type="text/javascript" language="javascript" charset="utf-8"></script></td>
+				  
+				</div>
+				<div class="fr">
+					<div class="logreg">
+						<ul>
+							<li>
+								<a href="http://www.17ok.com/login_2018/login.html" class="white" targee="_blank">登录</a>
+							</li>
+							<li>|</li>
+							<li>
+								<a href="http://www.17ok.com/login_2018/register.html" class="white" targee="_blank">注册</a>
+							</li>
+
+
+
+						</ul>
+					</div>
+					<div class="user_bar">
+						<ul>
+							<!--<li>-->
+								<!--<a href="http://www.17ok.com/ys_st20190202.shtml" class="white" targee="_blank">春节视听</a>-->
+							<!--</li>-->
+							<!--<li>|</li>-->
+							<!--<li>-->
+								<!--<a href="http://v.17ok.com/list_2016.php?tid=13" class="white" targee="_blank">影视</a>-->
+							<!--</li>-->
+							<!--<li>|</li>-->
+							<!--<li>-->
+								<!--<a href="http://music.17ok.com" class="white" targee="_blank">音乐</a>-->
+							<!--</li>-->
+							<!--<li>|</li>-->
+							<!--<li>-->
+								<!--<a href="http://dm.17ok.com" class="white" targee="_blank">动漫</a>-->
+							<!--</li>-->
+							<!--<li>|</li>-->
+							<!--<li>-->
+								<!--<a href="http://game.17ok.com" class="white" targee="_blank">游戏</a>-->
+							<!--</li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--header end -->
+		<!--飘红代码   begin (放在财界网topheader下面)-->
+		<!--<a onclick="closefun()">-->
+			<!--<div id="close" class="close" style="position: absolute; right: 10px; top: 0px; z-index: 2;"></div>-->
+			<!--<div id="top1">-->
+				<!--<div id="top" class="top">-->
+					<!--<div class="wrap cl" id="cftu"></div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</a>-->
+		<!-- 飘红代码  end   -->
+		<!--header end -->
+		<div style="margin:0 auto;width:1200px;background: #ffffff;height:1200px;margin-top:60px;">
+		<div class="box cl">
+			<div style="position: relative;float:left;">
+				<div class="box_left" id="float" >
+				<!--<div class="box_left" id="float">-->
+					<div class="logo">
+						<img src="newscj/img2018/logo.png">
+					</div>
+					<!--nav begin -->
+					<div class="nav">
+						<div class="nav-list">
+							<ul>
+								<li  class="nav-ti" >
+									<a href="/"  class="white"  target="_self"><span>首 页</span></a>
+								</li>
+								<li >
+									<a href="http://www.17ok.com/tj.shtml"><span>推 荐</span></a>
+								</li>
+								<li >
+									<a href="http://www.17ok.com/financial201862.shtml" ><span>财 经</span></a>
+									<ul>
+										<li>
+											<a href="http://www.17ok.com/financial201862.shtml?position=2">观 察</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/financial201862.shtml?position=3">国 内</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/financial201862.shtml?position=4">国 际</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/financial201862.shtml?position=5">政 府</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/financial201862.shtml?position=6">人 物</a>
+										</li>
+											<li>
+											<a href="http://www.17ok.com/financial201862.shtml?position=7">财界速读</a>
+										</li>
+									</ul>
+								</li>
+								<li >
+									<a href="http://www.17ok.com/stock2018531.shtml" ><span>股 票</span></a>
+									<ul>
+										<li>
+											<a href="http://www.17ok.com/stock2018531.shtml?position=2">要闻 </a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/stock2018531.shtml?position=3">公司 </a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/stock2018531.shtml?position=4">金股 </a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/stock2018531.shtml?position=5">板块</a>
+										</li>
+									</ul>
+								</li>
+								<li >
+									<a href="http://www.17ok.com/money201862.shtml"   ><span>理 财</span></a>
+									<ul>
+										<li>
+											<a href="http://www.17ok.com/money201862.shtml?position=2">技 巧</a>
+										</li>
+
+										<li>
+											<a href="http://www.17ok.com/money201862.shtml?position=3">理财故事</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/money201862.shtml?position=4">黄 金</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/money201862.shtml?position=5">期 货</a>
+										</li>
+
+									</ul>
+								</li>
+								<li >
+									<a href="http://www.17ok.com/foundation201862.shtml" ><span>基 金</span></a>
+									<ul>
+										<li>
+											<a href="http://www.17ok.com/foundation201862.shtml?position=2">动 态</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/foundation201862.shtml?position=3">看 市</a>
+										</li>
+									</ul>
+								</li>
+								<li >
+									<a href="http://www.360zbt.cn" ><span>证保通</span></a>
+								</li>
+								<li >
+									<a href="http://www.17ok.com/thirdboard201862.shtml"  ><span>新三板</span></a>
+									<ul>
+										<li>
+											<a href="http://www.17ok.com/thirdboard201862.shtml?position=2">要 闻</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/thirdboard201862.shtml?position=3">个股动态</a>
+										</li>
+										<li>
+											<a href="http://www.17ok.com/thirdboard201862.shtml?position=4">研 报</a>
+										</li>
+
+										<li>
+											<a href="http://www.17ok.com/thirdboard201862.shtml?position=5">三板学院</a>
+										</li>
+
+									</ul>
+								</li>
+								<li>
+									<a href="http://www.17ok.com/kcb.shtml"><span>科创板</span></a>
+								</li>
+								<li>
+									<a href="http://v.17ok.com"><span>视 频</span></a>
+								</li>
+								<li>
+									<a href="http://www.17ok.com/internet201862.shtml"><span>综 合</span></a>
+
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<script type="text/javascript">
+						var IO = document.getElementById('float'),
+							Y = IO,
+							H = 0,
+							IE6;
+						IE6 = window.ActiveXObject && !window.XMLHttpRequest;
+						while(Y) {
+							H += Y.offsetTop;
+							Y = Y.offsetParent
+						};
+						if(IE6)
+							IO.style.cssText = "position:absolute;top:expression(this.fix?(document" +
+							".documentElement.scrollTop-(this.javascript||" + H + ")):0)";
+						window.onscroll = function() {
+							var d = document,
+								s = Math.max(d.documentElement.scrollTop, document.body.scrollTop);
+							if(s > H && IO.fix || s <= H && !IO.fix) return;
+							if(!IE6) IO.style.position = IO.fix ? "" : "static";
+							IO.fix = !IO.fix;
+						};
+						try {
+							document.execCommand("BackgroundImageCache", false, true)
+						} catch(e) {};
+						//]]>
+					</script>
+					<!--nav end -->
+					<!--二维码 begin -->
+					<div class="orcord">
+						<div class="orcord_or"><img src="newscj/img2018/caijienews.png"></div>
+						<div class="orcord_name">扫描二维码<br /> 下载
+							<span class="red">《财界新闻》APP</span></div>
+						<div class="orcord_or"><img src="http://static.17ok.com/2018_yp/jiricaijie.png"></div>
+						<div class="orcord_name">扫描二维码<br /> 下载
+							<span class="red">《今日财界》APP</span></div>
+					</div>
+					<!--二维码 end -->
+						<div class="orcord">
+						<!--<div class="orcord_or"><a class="red" href="http://www.17ok.com/applist/" title="网高科技APP推荐下载"  target="_blank"><img src="http://www.17ok.com/images/moreapp.jpg" alt="网高科技APP推荐下载"></a></div>-->
+					</div>
+				</div>
+			</div>
+
+			<div class="index_content_dv">
+				<!--焦点图  begin-->
+				<div class="jiaodian">
+					<!-- 代码 开始 -->
+					<div id="fsD1" class="focus">
+						<div id="D1pic1" class="fPic">
+							<div class="fcon"><a href="http://finance.17ok.com/news/4/2019/1202/2686819.html"><img src="http://img.17ok.com/admin/media/images/20191202074208-11106.jpg" style="opacity: 1;"></a><span class="shadow"><a href="http://finance.17ok.com/news/4/2019/1202/2686819.html">智能制造是推动制造业高质量发展的主攻方向</a></span></div><div class="fcon"><a href="http://finance.17ok.com/news/4/2019/1129/2686721.html"><img src="http://img.17ok.com/admin/media/images/20191129074057-66158.jpg" style="opacity: 1;"></a><span class="shadow"><a href="http://finance.17ok.com/news/4/2019/1129/2686721.html">国务院金融稳定发展委员会召开第十次会议</a></span></div><div class="fcon"><a href="http://finance.17ok.com/news/4/2019/1128/2686660.html"><img src="http://img.17ok.com/admin/media/images/20191128073527-53155.jpg" style="opacity: 1;"></a><span class="shadow"><a href="http://finance.17ok.com/news/4/2019/1128/2686660.html">加强投资项目资本金管理措施落地</a></span></div><div class="fcon"><a href="http://finance.17ok.com/news/4/2019/1127/2686608.html"><img src="http://img.17ok.com/admin/media/images/20191127073910-45383.jpg" style="opacity: 1;"></a><span class="shadow"><a href="http://finance.17ok.com/news/4/2019/1127/2686608.html">中国将每年发布系统重要性银行名单 实施差异化监管</a></span></div>							
+						</div>
+						<div class="fbg">
+							<div class="D1fBt" id="D1fBt">
+								<a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>1</i></a>
+								<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>
+								<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a>
+								<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						Qfast.add('widgets', {
+							path: "newscj/js/terminator2.2.min.js",
+							type: "js",
+							requires: ['fx']
+						});
+						Qfast(false, 'widgets', function() {
+
+                            $("#D1fBt").html("");
+                            var nn = $(".fcon").length;
+                            if (nn > 1) {
+                                $(new Array(nn)).each(function(index){
+                                    console.log(index+1);
+                                    var ii = index+1;
+                                    $("#D1fBt").append('<a href="javascript:void(0)" hidefocus="true" target="_self"><i>'+ii+'</i></a>');
+                                });
+                            }
+
+							K.tabs({
+								id: 'fsD1', //焦点图包裹id  
+								conId: "D1pic1", //** 大图域包裹id  
+								tabId: "D1fBt",
+								tabTn: "a",
+								conCn: '.fcon', //** 大图域配置class       
+								auto: 1, //自动播放 1或0
+								effect: 'fade', //效果配置
+								eType: 'click', //** 鼠标事件
+								pageBt: true, //是否有按钮切换页码
+								bns: ['.prev', '.next'], //** 前后按钮配置class                          
+								interval: 3000 //** 停顿时间  
+							})
+						})
+					</script>
+					<!-- 代码 结束 -->
+				</div>
+				<!--焦点图  end -->
+				<!--新闻列表  begin -->
+				<div class="infinite-wrapper fl"  id="container">
+					<ul>
+						<li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686816.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202072307-48238.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686816.html" target="_blank">中国将在长三角创新区域一体化发展体制机制</a></div><div class="footer_bar"><div class="stick fl">置顶</div><a href="#" class="red fl"></a> <span class="fl">长三角创新</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686817.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202072610-1533.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686817.html" target="_blank">滴滴顺风车试运营11日 首批试运营城市乘客称安全繁琐</a></div><div class="footer_bar"><div class="stick fl">置顶</div><a href="#" class="red fl"></a> <span class="fl">滴滴顺风</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686820.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202073224-5218.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686820.html" target="_blank">再好的区块链也吹不起只惦记飞的猪</a></div><div class="footer_bar"><div class="stick fl">置顶</div><a href="#" class="red fl"></a> <span class="fl">区块链</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686821.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202073344-12628.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686821.html" target="_blank">国际经济下行 主要经济体应更紧密融合</a></div><div class="footer_bar"><div class="stick fl">置顶</div><a href="#" class="red fl"></a> <span class="fl">国际经济</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686852.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202112420-78457.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686852.html" target="_blank">易纲：坚守币值稳定目标 实施稳健货币政策</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">易纲</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1202/2686850.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202112211-81999.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1202/2686850.html" target="_blank">杨德龙：大量破净和破发同时出现说明市场处于底部区域</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">破净</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686847.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202111928-3749.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686847.html" target="_blank">多重驱动力助推 新能源汽车板块春天将至？</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">新能源汽车</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686845.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202111054-45203.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686845.html" target="_blank">长三角一体化发展规划亮相 有哪些影响？</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">长三角</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686844.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202102313-32654.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686844.html" target="_blank">科创板并购重组审核规则落地</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">科创板</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686843.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202102156-7571.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686843.html" target="_blank">11月财新中国制造业PMI录得51.8 为2017年以来最高</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">PMI</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686842.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202101014-56118.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686842.html" target="_blank">11月财新制造业PMI录得51.8 连续四个月处于扩张区间</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">PMI</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686841.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202100628-1857.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686841.html" target="_blank">人民币中间价2日调升36点</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">人民币中间价</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686840.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202100411-42184.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686840.html" target="_blank">11月北上资金净买入超600亿 周期性行业获大幅加仓</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">北上资金</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1202/2686839.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202100146-958.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1202/2686839.html" target="_blank">巨丰投顾：周末消息偏暖 市场有望企稳反弹</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">A股市场</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1202/2686838.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202095926-44484.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1202/2686838.html" target="_blank">天信投顾：数据向好短期进入筑底阶段</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">A股市场</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686834.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202092946-96135.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686834.html" target="_blank">中国上月官方制造业PMI升50.2％ 8个月高</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">PMI</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686832.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202092557-75011.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686832.html" target="_blank">国资委发布通知进一步推动构建国资监管大格局有关工作</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">国资委</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686831.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202092306-6385.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686831.html" target="_blank">央行副行长范一飞：区块链等17项金融行业标准已立项 正在加紧研制</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">区块链</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686829.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202092111-78622.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686829.html" target="_blank">《长江三角洲区域一体化发展规划纲要》发布</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">长江三角洲</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1202/2686827.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202091956-87758.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1202/2686827.html" target="_blank">早盘内参：中国11月官方制造业PMI为50.2% 非制造业PMI为54.4%</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">制造业PMI</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1202/2686825.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202091834-73536.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1202/2686825.html" target="_blank">本周股市三大猜想及应对策略：券商股王者归来？</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">券商股</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686823.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202073654-55205.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686823.html" target="_blank">马德里气候大会前瞻：面临三大挑战 行动刻不容缓</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">气候大会</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686822.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202073516-43895.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686822.html" target="_blank">2019中国国际车联网技术大会开幕 聚焦5G车联</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">5G车联</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686819.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202072942-87676.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686819.html" target="_blank">智能制造是推动制造业高质量发展的主攻方向</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">智能制造</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1202/2686818.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191202072805-90231.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1202/2686818.html" target="_blank">业界聚焦生物质能发展：如何跟上“风”“光”脚步？</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">生物质能</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686809.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128133450-63947.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686809.html" target="_blank">央行多措并举化解小微企业融资难题，前三季度普惠小微贷款新增1.8万亿元</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">小微企业融资</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686808.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128133114-17520.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686808.html" target="_blank">政策驱动环保板块业绩或迎拐点，12只概念股布局机会获机构看好</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">环保板块</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686807.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128132458-12354.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686807.html" target="_blank">国资委四维度推进国资监管职能转变，强化资本运作</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">国资监管</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686806.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128132053-62644.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686806.html" target="_blank">平安、小米两家消费金融迎监管批复，消费金融牌照成为“香饽饽”</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">消费金融</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686805.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128115932-60531.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686805.html" target="_blank">券商集合理财收益洗牌：债券型领跑，股票型垫底</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">券商集合理财</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686804.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128115548-36159.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686804.html" target="_blank">减税降费红利加速释放，前三季度新增减负1.78万亿元</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">减税降费</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686803.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128115107-90672.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686803.html" target="_blank">新三板深改细则征求意见结束，反馈意见中三大新提法引关注</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">新三板深改细则</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686802.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128114735-4913.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686802.html" target="_blank">敢担当善作为，站稳人民立场，努力实现新时代资本市场高质量发展</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">资本市场</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686801.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127150806-2666.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686801.html" target="_blank">娱乐资本风光不再 年内1884家影视公司关停</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">影视公司</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686800.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127150226-16251.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686800.html" target="_blank">年内195家上市公司引入国资战投，疏困民企、深化混改各有所求</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">上市公司</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686799.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127145846-95085.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686799.html" target="_blank">借力资本市场，让更多企业获得股权融资机会</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">股权融资</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686798.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127145401-69840.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686798.html" target="_blank">外资保险巨头布局中国“拼手速”，保费和市场份额双提升</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">外资保险</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686797.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127145054-46845.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686797.html" target="_blank">专家：科创板运行已取得了初步成效，可以逐步推广行之有效的制度安排</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">科创板</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686796.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127144803-59316.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686796.html" target="_blank">四季度以来机构密集调研50只年报预喜股，34只受到机构扎堆推荐</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">年报预喜股</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1201/2686795.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191127144310-76152.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1201/2686795.html" target="_blank">商品期权品种增至11个，强化服务实体经济能力</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">商品期权</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686794.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129134043-41671.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686794.html" target="_blank">工信部：大力推进5G等信息技术服务智慧城市建设</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">5G</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1130/2686793.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129113831-99996.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1130/2686793.html" target="_blank">华西证券：明年中枢有望逐步抬升 短期扰动是加仓机会</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">加仓机会</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686792.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129113659-26089.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686792.html" target="_blank">12月份市场走势偏乐观 看好基建、消费、第三产业</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">基建</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686791.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129111455-21470.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686791.html" target="_blank">美联储政策成金价风向标 能否守住1445美元很关键！机构对后市有何看法？</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">美联储</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686790.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129111229-34399.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686790.html" target="_blank">兴证策略王德伦：我们正处在新一轮科技创新周期起点</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">科技创新</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686789.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129110955-37879.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686789.html" target="_blank">养老目标基金11月密集发行 总数接近60只规模超200亿</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">养老目标基金</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686788.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129110807-75335.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686788.html" target="_blank">杨德龙：当前投资者面临的最大风险是选股的风险</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">风险</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686786.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129134237-78349.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686786.html" target="_blank">杨德龙：外资大量流入A股 2020年沪指预计有20%涨幅</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">外资</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686784.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129135156-9196.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686784.html" target="_blank">资本市场基础制度体系不断完善 构建投资者保护全方位立体新格局</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">资本市场</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686783.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129133906-42388.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686783.html" target="_blank">中信证券：房价增速放缓 对利率意味着什么？</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">房价</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1130/2686782.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128133708-9518.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1130/2686782.html" target="_blank">电子行业整体业绩见底反弹  关注业绩预期向好个股</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">电子行业</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686781.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129113432-99082.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686781.html" target="_blank">2020年纺织服装行业投资策略：继续关注高景气度赛道及低估值龙头</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">纺织服装</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://finance.17ok.com/news/4/2019/1130/2686780.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191128133035-78675.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://finance.17ok.com/news/4/2019/1130/2686780.html" target="_blank">《5G+工业互联网512工程推进方案》解读</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">工业互联网</span></div></div></div></div></li><li><div class="article_item"><div class="article_img"><a href="http://stock.17ok.com/news/335/2019/1130/2686779.html"  target="_blank" ><img src="http://img.17ok.com/admin/media/images/20191129113124-78799.jpg"></a></div><div class="article_box"><div class="article_text"><div class="article_title"><a href="http://stock.17ok.com/news/335/2019/1130/2686779.html" target="_blank">消费电子板块行情有望跨年 三主线布局消费电子</a></div><div class="footer_bar"><a href="#" class="red fl"></a> <span class="fl">消费电子</span></div></div></div></div></li>
+					</ul>
+					</div>
+					<div class="nodata"></div> 
+					<!--新闻列表 end -->
+				</div>
+				<!--右侧    begin -->
+				<div class="rightbox">
+					<!--search begin-->
+					<div class="search_box">
+						<form action="http://www.17ok.com/search/" method="post">
+							<div class="search fl"><input type="text" class="fl input" placeholder="请输入要搜索的内容" name="title"autocomplete="off" /><input type="submit" class="search_btn" value="搜索"></div>
+						</form>
+					</div>
+					<!--search end-->
+					<!--<div class="server">-->
+						<!--<ul>-->
+							<!--<li class="baodao"><a href="http://www.17ok.com/CJtougao/baodao.html" target="_blank">寻求报道</a></li>-->
+							<!--<li class="tougao"><a href="http://www.17ok.com/CJtougao/tougao.html" target="_blank">投稿</a></li>-->
+							<!--&lt;!&ndash;<li class="zhaosh"><a href="http://www.17ok.com/aboutus2016/Contactus.html" target="_blank">广告招商</a></li>&ndash;&gt;-->
+							<!--<li class="zhaosh">招商:18311372291</li>-->
+
+						<!--</ul>-->
+					<!--</div>-->
+
+
+					<div class="server">
+
+						<ul>
+
+							<li>
+								<a class="red" href=" http://www.17ok.com/CJtougao/baodao.html" target="_blank">寻求报道</a></li>
+							<li>
+								<a class="red" href="http://www.17ok.com/CJtougao/tougao.html" target="_blank">投稿</a>
+							</li>
+							<li class="red">广告招商:18311372291</li>
+						</ul>
+
+					</div>
+
+
+					<div class="ban_position">
+					
+					       
+							<div class="ban1"><a href="http://dmzg.17ok.com/"><img src="http://img.17ok.com/admin/media/images/20190708-184505.jpg?11" width="340" height="100" ></a></div><div class="ban1 lx_mgt10"><a href="http://finance.17ok.com/subject/china70/"><img src="http://img.17ok.com/admin/media/images/20190927151033-11379.jpg" width="340" height="100" ></a></div> 
+						
+					</div>
+                    <!--大盘指数   begin -->
+					<div class="stock lx_mgt15">
+						<ul><li class="lx_mgr10 wid153">
+								<h3>上证A指</h3>
+								<div class="stock_zs red size18">2882.00</div>
+								<div class="stock_zs">
+									<span class="red size14">10.02</span>
+									<span class="red size14">0.35%↑</span>
+								</div>
+							</li>
+							<li class="wid153">
+								<h3>深证成指</h3>
+								<div class="stock_zs red size18">9632.54</div>
+								<div class="stock_zs">
+									<span class="red size14">50.38</span>
+									<span class="red size14">0.53%↑</span>
+								</div>
+							</li>
+						</ul>
+						<ul>
+							<li class="lx_mgr10 wid153">
+									<h3>上证50</h3>
+								<div class="stock_zs red size18">2907.15</div>
+								<div class="stock_zs">
+									<span class="red size14">12.43</span>
+									<span class="red size14">0.43%↑</span>
+								</div>
+							</li>
+							<li class="wid153">
+								<h3>沪深300</h3>
+								<div class="stock_zs red size18">3847.85</div>
+								<div class="stock_zs">
+									<span class="red size14">19.18</span>
+									<span class="red size14">0.50%↑</span>
+								</div>
+							</li>
+						</ul> 
+						
+					</div>
+					<div class="guanggao lx_mgt15">
+	
+					</div> 							   
+			  <!--今日财界  begin -->
+				<div class="rightlist_text lx_mgt15">
+					<div class="rlist_tit"><a href="http://v.17ok.com/" target="_blank" class="title_12blue01" title="《今日财界》手机电视平台">《今日财界》手机电视平台</a></li></div>
+					<div class="rlist_con">
+					<div class="img_text bottom_line"><div class="pic"><a href="http://v.17ok.com/new_last_2016.php?vid=63652" target="_blank"><img src="http://img.17ok.com/admin/media/images/20191129110227-10726.jpg"></a></div><a href="http://v.17ok.com/new_last_2016.php?vid=63652" target="_blank"><span>白萝卜这样腌，过一夜就能吃，又脆又开胃</span></a></div><div class="img_text bottom_line"><div class="pic"><a href="http://v.17ok.com/new_last_2016.php?vid=63651" target="_blank"><img src="http://img.17ok.com/admin/media/images/20191129110135-66537.jpg"></a></div><a href="http://v.17ok.com/new_last_2016.php?vid=63651" target="_blank"><span>粉条一炒就成团？别只会傻傻浸泡，多加这</span></a></div><div class="rightlist"><ul><li><a href="http://v.17ok.com/new_last_2016.php?vid=63649" target="_blank"><span>红烧茄子做法简单易学，软嫩鲜香，好吃下</span></a></li><li><a href="http://v.17ok.com/new_last_2016.php?vid=63648" target="_blank"><span>日本748人齐背论语创吉尼斯纪录</span></a></li><li><a href="http://v.17ok.com/new_last_2016.php?vid=63647" target="_blank"><span>时代周刊公布2019年度十佳影片</span></a></li><li><a href="http://v.17ok.com/new_last_2016.php?vid=63646" target="_blank"><span>韭菜豆腐这样做，我家隔天就吃一次</span></a></li><li><a href="http://v.17ok.com/new_last_2016.php?vid=63645" target="_blank"><span>花样面点新做法，面皮一擀一捏就变高颜值</span></a></li><li><a href="http://v.17ok.com/new_last_2016.php?vid=63644" target="_blank"><span>他们号称深海猎人</span></a></li><li><a href="http://v.17ok.com/new_last_2016.php?vid=63643" target="_blank"><span>心内科医生：年轻人猝死多是太累了</span></a></li></ul></div>
+					</div>
+				</div>
+						<div class="guanggao lx_mgt15"><a href="http://www.songdujingdian.com/"><img src="http://img.17ok.com/admin/media/images/20190319-094446.jpg?8" width="340" height="120"></a></div><div class="guanggao lx_mgt15"><a href="http://finance.17ok.com/news/4/2019/0327/2673191.html"><img src="http://img.17ok.com/admin/media/images/20190328-162301.jpg?14"  width="340" height="120"></a></div> 				
+					<!--证保通  begin -->				
+					<div class="rightlist_text lx_mgt15">		
+					<div class="rlist_tit"><a href="http://www.360zbt.cn" target="_blank" class="title_12blue01" title="证保通">证保通</a></div>
+							<div class="rlist_con">
+							<div class="right_zbt"><ul class="lx_mgr15"><li><a href="http://www.360zbt.cn/news/2183/2019/0725/2680275.html"><img src="http://img.17ok.com/admin/media/images/20190726-134322.webp%20(1)?7"></a></li><li class="zbttit"><a href="http://www.360zbt.cn/news/2183/2019/0725/2680275.html"><span>139只私募产品违规超购科创板新股被罚</span></a></li></ul><ul><li><a href="http://www.360zbt.cn/news/2183/2019/0725/2680274.html"><img src="http://img.17ok.com/admin/media/images/20190726-134826.jpg?7"></a></li><li class="zbttit"><a href="http://www.360zbt.cn/news/2183/2019/0725/2680274.html"><span>个人持有新三板股票超1年免征股息红利个税 税收优惠政策再延续5年</span></a></li></ul></div><div class="rightlist"><ul><li><a href="http://www.360zbt.cn/news/2183/2019/0725/2680273.html"><span>央行TMLF与MLF操作并举 昨日投放资金4977亿元</span></a></li><li><a href="http://www.360zbt.cn/news/2188/2019/0725/2680301.html"><span>公证提存化解投资者与证券公司理财产品业务纠纷案例</span></a></li><li><a href="http://www.360zbt.cn/news/2188/2019/0725/2680300.html"><span>投资者与上市公司虚假陈述赔偿纠纷案例（二）</span></a></li><li><a href="http://www.360zbt.cn/news/2188/2019/0725/2680299.html"><span>投资者与期货公司及其营业部期货交易纠纷案例</span></a></li></ul></div> 
+					    </div>
+					</div>
+					<!--证保通  end 手推1743 替换-->
+                      <div class="guanggao lx_mgt15"><a href="http://www.360zbt.cn/"><img src="http://img.17ok.com/admin/media/images/20190319-094646.jpg?15" width="340" height="120" ></a></div> 
+					<!--排行  begin -->
+					<div class="guanggao lx_mgt15">
+					<img src="http://www.17ok.com/img2016/zhjd.jpg" width="340" height="180" >
+					</div>
+					<div class="rightlist_text lx_mgt15">
+						<div class="rlist_tit">排行</div>
+
+						<!--代码部分begin-->
+						<div id="menu">
+							<!--tag标题-->
+							<ul id="nav">
+								<li><span class="onmouse">财经</span></li>
+								<li><span class="onmouse">股票</span></li>
+								<li><span class="onmouse">理财</span></li>
+								<li><span class="onmouse">基金</span></li>
+								<li><span class="onmouse">新三板</span></li>
+							</ul>
+							<!--二级菜单-->
+							<div id="menu_con">
+								<div class="tag" style="display:block">
+									<ol>
+									 <li><i class="number_red">1</i><a href="http://finance.17ok.com/news/4/2019/1202/2686852.html"  class="red"  target="_blank" title="易纲：坚守币值稳定目标 实施稳健货币政策" >易纲：坚守币值稳定目标 实施稳健货币政策</a></li><li><i class="number_red">2</i><a href="http://finance.17ok.com/news/4/2019/1202/2686847.html"  class="red"  target="_blank" title="多重驱动力助推 新能源汽车板块春天将至？" >多重驱动力助推 新能源汽车板块春天将至？</a></li><li><i class="number_red">3</i><a href="http://finance.17ok.com/news/4/2019/1202/2686845.html"  class="red"  target="_blank" title="长三角一体化发展规划亮相 有哪些影响？" >长三角一体化发展规划亮相 有哪些影响？</a></li><li><i class="number_black">4</i><a href="http://finance.17ok.com/news/4/2019/1202/2686844.html"    target="_blank" title="科创板并购重组审核规则落地" >科创板并购重组审核规则落地</a></li><li><i class="number_black">5</i><a href="http://finance.17ok.com/news/4/2019/1202/2686843.html"    target="_blank" title="11月财新中国制造业PMI录得51.8 为2017年以来最高" >11月财新中国制造业PMI录得51.8 为2017年以来最高</a></li><li><i class="number_black">6</i><a href="http://finance.17ok.com/news/4/2019/1202/2686842.html"    target="_blank" title="11月财新制造业PMI录得51.8 连续四个月处于扩张区间" >11月财新制造业PMI录得51.8 连续四个月处于扩张区间</a></li><li><i class="number_black">7</i><a href="http://finance.17ok.com/news/4/2019/1202/2686841.html"    target="_blank" title="人民币中间价2日调升36点" >人民币中间价2日调升36点</a></li><li><i class="number_black">8</i><a href="http://finance.17ok.com/news/4/2019/1202/2686840.html"    target="_blank" title="11月北上资金净买入超600亿 周期性行业获大幅加仓" >11月北上资金净买入超600亿 周期性行业获大幅加仓</a></li><li><i class="number_black">9</i><a href="http://finance.17ok.com/news/4/2019/1202/2686834.html"    target="_blank" title="中国上月官方制造业PMI升50.2％ 8个月高" >中国上月官方制造业PMI升50.2％ 8个月高</a></li><li><i class="number_black">10</i><a href="http://finance.17ok.com/news/4/2019/1202/2686832.html"    target="_blank" title="国资委发布通知进一步推动构建国资监管大格局有关工作" >国资委发布通知进一步推动构建国资监管大格局有关工作</a></li> 										
+									</ol>
+								</div>
+								<div class="tag" style="display:none">
+									<ol>
+										<li><i class="number_red">1</i><a href="http://stock.17ok.com/news/335/2019/1202/2686850.html"  class="red"  target="_blank" title="杨德龙：大量破净和破发同时出现说明市场处于底部区域" >杨德龙：大量破净和破发同时出现说明市场处于底部区域</a></li><li><i class="number_red">2</i><a href="http://stock.17ok.com/news/335/2019/1202/2686839.html"  class="red"  target="_blank" title="巨丰投顾：周末消息偏暖 市场有望企稳反弹" >巨丰投顾：周末消息偏暖 市场有望企稳反弹</a></li><li><i class="number_red">3</i><a href="http://stock.17ok.com/news/335/2019/1202/2686838.html"  class="red"  target="_blank" title="天信投顾：数据向好短期进入筑底阶段" >天信投顾：数据向好短期进入筑底阶段</a></li><li><i class="number_black">4</i><a href="http://stock.17ok.com/news/335/2019/1202/2686827.html"    target="_blank" title="早盘内参：中国11月官方制造业PMI为50.2% 非制造业PMI为54.4%" >早盘内参：中国11月官方制造业PMI为50.2% 非制造业PMI为54.4%</a></li><li><i class="number_black">5</i><a href="http://stock.17ok.com/news/335/2019/1202/2686825.html"    target="_blank" title="本周股市三大猜想及应对策略：券商股王者归来？" >本周股市三大猜想及应对策略：券商股王者归来？</a></li><li><i class="number_black">6</i><a href="http://stock.17ok.com/news/335/2019/1130/2686793.html"    target="_blank" title="华西证券：明年中枢有望逐步抬升 短期扰动是加仓机会" >华西证券：明年中枢有望逐步抬升 短期扰动是加仓机会</a></li><li><i class="number_black">7</i><a href="http://stock.17ok.com/news/335/2019/1130/2686782.html"    target="_blank" title="电子行业整体业绩见底反弹  关注业绩预期向好个股" >电子行业整体业绩见底反弹  关注业绩预期向好个股</a></li><li><i class="number_black">8</i><a href="http://stock.17ok.com/news/335/2019/1130/2686779.html"    target="_blank" title="消费电子板块行情有望跨年 三主线布局消费电子" >消费电子板块行情有望跨年 三主线布局消费电子</a></li><li><i class="number_black">9</i><a href="http://stock.17ok.com/news/335/2019/1129/2686770.html"    target="_blank" title="湘财证券：白马联手大跌传递重磅信号" >湘财证券：白马联手大跌传递重磅信号</a></li><li><i class="number_black">10</i><a href="http://stock.17ok.com/news/335/2019/1129/2686769.html"    target="_blank" title="源达：指数或受高价股补跌拖累 三类低位滞涨股可布局" >源达：指数或受高价股补跌拖累 三类低位滞涨股可布局</a></li>
+									</ol>
+								</div>
+								<div class="tag" style="display:none">
+									<ol>
+										<li><i class="number_red">1</i><a href="http://money.17ok.com/news/437/2019/1027/2685034.html"  class="red"  target="_blank" title="只有低PE投资才是价值投资吗？" >只有低PE投资才是价值投资吗？</a></li><li><i class="number_red">2</i><a href="http://money.17ok.com/news/437/2019/1013/2684392.html"  class="red"  target="_blank" title="全国期货市场前三季度成交额超去年全年" >全国期货市场前三季度成交额超去年全年</a></li><li><i class="number_red">3</i><a href="http://money.17ok.com/news/437/2019/1005/2684064.html"  class="red"  target="_blank" title="为什么那么多的富人愿意把钱存在瑞士银行？4点原因来解释" >为什么那么多的富人愿意把钱存在瑞士银行？4点原因来解释</a></li><li><i class="number_black">4</i><a href="http://money.17ok.com/news/437/2019/0702/2679209.html"    target="_blank" title="央行再次出手，打爆境外空头！" >央行再次出手，打爆境外空头！</a></li><li><i class="number_black">5</i><a href="http://money.17ok.com/news/439/2019/0702/2679207.html"    target="_blank" title="现在的100万，和10年前相比差了3套房！" >现在的100万，和10年前相比差了3套房！</a></li><li><i class="number_black">6</i><a href="http://money.17ok.com/news/439/2019/0702/2679206.html"    target="_blank" title="怎样在下一个5年，赚到更多的钱？" >怎样在下一个5年，赚到更多的钱？</a></li><li><i class="number_black">7</i><a href="http://money.17ok.com/news/439/2019/0625/2678941.html"    target="_blank" title="预算不够，在大城市先买套老破小安顿下来，可以吗？" >预算不够，在大城市先买套老破小安顿下来，可以吗？</a></li><li><i class="number_black">8</i><a href="http://money.17ok.com/news/439/2019/0625/2678940.html"    target="_blank" title="普通人想获得专业的理财投资建议，到底有多难？" >普通人想获得专业的理财投资建议，到底有多难？</a></li><li><i class="number_black">9</i><a href="http://money.17ok.com/news/439/2019/0625/2678939.html"    target="_blank" title="楼市二八定律初现！刚需入手正当时，投资炒房请自重！" >楼市二八定律初现！刚需入手正当时，投资炒房请自重！</a></li><li><i class="number_black">10</i><a href="http://money.17ok.com/news/437/2019/0625/2678936.html"    target="_blank" title="穷人翻身有多难？下一波机遇也许就在5年后！" >穷人翻身有多难？下一波机遇也许就在5年后！</a></li> 			
+									</ol>
+								</div>
+								<div class="tag" style="display:none">
+									<ol>
+										<li><i class="number_red">1</i><a href="http://fund.17ok.com/news/445/2019/1124/2686471.html"  class="red"  target="_blank" title="2019年新基金募集规模或将突破1万亿人民币" >2019年新基金募集规模或将突破1万亿人民币</a></li><li><i class="number_red">2</i><a href="http://fund.17ok.com/news/445/2019/1110/2685767.html"  class="red"  target="_blank" title="前10月成立权益类ETF80只 募资金额合计1293.06亿" >前10月成立权益类ETF80只 募资金额合计1293.06亿</a></li><li><i class="number_red">3</i><a href="http://fund.17ok.com/news/445/2019/1007/2684089.html"  class="red"  target="_blank" title="据统计 今年以来ETF发行总规模已破千亿" >据统计 今年以来ETF发行总规模已破千亿</a></li><li><i class="number_black">4</i><a href="http://fund.17ok.com/news/445/2019/1005/2684052.html"    target="_blank" title="多家公募基金公司玩起“定开”发行 为何成为市场潮流？" >多家公募基金公司玩起“定开”发行 为何成为市场潮流？</a></li><li><i class="number_black">5</i><a href="http://fund.17ok.com/news/445/2019/0711/2679542.html"    target="_blank" title="6月份30只混基涨超10% 广发易方达旗下多产品居前" >6月份30只混基涨超10% 广发易方达旗下多产品居前</a></li>
+									</ol>
+								</div>
+								<div class="tag" style="display:none">
+									<ol>
+										<li><i class="number_red">1</i><a href="http://sanban.17ok.com/news/1110/2019/1124/2686480.html"  class="red"  target="_blank" title="今年以来新三板挂牌公司累计成交金额达695.64亿元" >今年以来新三板挂牌公司累计成交金额达695.64亿元</a></li><li><i class="number_red">2</i><a href="http://sanban.17ok.com/news/1110/2019/1120/2686324.html"  class="red"  target="_blank" title="图解“股票定向发行规则（征求意见稿）” " >图解“股票定向发行规则（征求意见稿）” </a></li><li><i class="number_red">3</i><a href="http://sanban.17ok.com/news/1110/2019/1120/2686322.html"  class="red"  target="_blank" title="图解“股票交易规则（征求意见稿）” " >图解“股票交易规则（征求意见稿）” </a></li><li><i class="number_black">4</i><a href="http://sanban.17ok.com/news/1110/2019/1120/2686320.html"    target="_blank" title="图解“分层管理办法（征求意见稿）” " >图解“分层管理办法（征求意见稿）” </a></li><li><i class="number_black">5</i><a href="http://sanban.17ok.com/news/1110/2019/1120/2686318.html"    target="_blank" title="图解“向不特定合格投资者公开发行并在精选层挂牌规则（试行）（征求意见稿）” " >图解“向不特定合格投资者公开发行并在精选层挂牌规则（试行）（征求意见稿）” </a></li><li><i class="number_black">6</i><a href="http://sanban.17ok.com/news/1110/2019/1120/2686316.html"    target="_blank" title="图解“信息披露规则（征求意见稿）” " >图解“信息披露规则（征求意见稿）” </a></li><li><i class="number_black">7</i><a href="http://sanban.17ok.com/news/1110/2019/1110/2685768.html"    target="_blank" title="董登新：新三板缺转板机制而不是换手率" >董登新：新三板缺转板机制而不是换手率</a></li><li><i class="number_black">8</i><a href="http://sanban.17ok.com/news/1110/2019/1109/2685752.html"    target="_blank" title="新三板改革速度超预期 优质创新层企业会成为明星" >新三板改革速度超预期 优质创新层企业会成为明星</a></li><li><i class="number_black">9</i><a href="http://sanban.17ok.com/news/1110/2019/1108/2685721.html"    target="_blank" title="全国股转公司就深化新三板改革相关业务规则公开征求意见 " >全国股转公司就深化新三板改革相关业务规则公开征求意见 </a></li><li><i class="number_black">10</i><a href="http://sanban.17ok.com/news/1110/2019/1027/2685042.html"    target="_blank" title="今年以来共有490家挂牌公司在新三板完成股票发行融资" >今年以来共有490家挂牌公司在新三板完成股票发行融资</a></li> 			
+									</ol>
+								</div>
+
+							</div>
+						</div>
+						<script>
+							var tabs = function() {
+								function tag(name, elem) {
+									return(elem || document).getElementsByTagName(name);
+								}
+								//获得相应ID的元素
+								function id(name) {
+									return document.getElementById(name);
+								}
+
+								function first(elem) {
+									elem = elem.firstChild;
+									return elem && elem.nodeType == 1 ? elem : next(elem);
+								}
+
+								function next(elem) {
+									do {
+										elem = elem.nextSibling;
+									} while (
+										elem && elem.nodeType != 1
+									)
+									return elem;
+								}
+								return {
+									set: function(elemId, tabId) {
+										var elem = tag("li", id(elemId));
+										var tabs = tag("div", id(tabId));
+										var listNum = elem.length;
+										var tabNum = tabs.length;
+										for(var i = 0; i < listNum; i++) {
+											elem[i].onmouseover = (function(i) {
+												return function() {
+													for(var j = 0; j < tabNum; j++) {
+														if(i == j) {
+															tabs[j].style.display = "block";
+															//alert(elem[j].firstChild);
+															elem[j].firstChild.className = "selected";
+														} else {
+															tabs[j].style.display = "none";
+															elem[j].firstChild.className = "";
+														}
+													}
+												}
+											})(i)
+										}
+									}
+								}
+							}();
+							tabs.set("nav", "menu_con"); //执行
+						</script>
+						<!--代码部分end-->
+					</div>
+					<!--排行 end -->
+					<!--hot begin -->
+
+					<div class="hotbox lx_mgt20">
+						<div class="hoticon">
+							<img src="newscj/img2018/hot.png">
+						</div>
+						<div class="hotborder">
+							<div class="plate">
+								<ul>
+								    <!--1744-->
+									
+									<li style="margin-left:40px;"><a href="http://sanban.17ok.com/news/1110/2019/0328/2673320.html"><span>新三板</span></a></li><li ><a href="http://finance.17ok.com/news/4/2019/0328/2673259.html"><span>科创板企业受理</span></a></li><li ><a href="http://stock.17ok.com/news/658/2019/0328/2673324.html"><span>医药板块</span></a></li><li ><a href="http://fund.17ok.com/news/444/2019/0328/2673321.html"><span>封闭式基金</span></a></li><li ><a href="http://finance.17ok.com/news/4/2019/0328/2673299.html"><span>一汽轿车</span></a></li><li ><a href="http://finance.17ok.com/news/5/2019/0328/2673315.html"><span>EIA原油</span></a></li><li ><a href="http://stock.17ok.com/news/335/2019/0328/2673322.html"><span>工业大麻</span></a></li><li ><a href="http://finance.17ok.com/news/5/2019/0328/2673313.html"><span>美元指数</span></a></li><li ><a href="http://finance.17ok.com/news/5/2019/0328/2673293.html"><span>贸易逆差</span></a></li> 
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>						
+					<div class="guanggao lx_mgt15"><a href="http://finance.17ok.com/news/4/2019/0327/2673188.html"><img src="http://img.17ok.com/admin/media/images/20190319-094757.jpg?12 " width="340" height="120"></a></div> 
+					<!--hot end -->
+
+					<div class="guanggao lx_mgt15">
+					<img src="http://www.17ok.com/img2016/guoxue.jpg " width="340" height="180">
+					</div>					
+					<div class="guanggao lx_mgt15"><a href="http://www.songdujingdian.com/shiWenChannel.html"><img src="http://img.17ok.com/admin/media/images/20190328-172948.jpg?6"width="340" height="120"></a></div><div class="guanggao lx_mgt15"><a href="http://www.songdujingdian.com/zhuankeChannel.html"><img src="http://img.17ok.com/admin/media/images/20190328-172955.jpg?7"width="340" height="120"></a></div> 
+					<!--关于我们     begin -->
+					<div class="rightlist_text lx_mgt20">
+						<div class="rlist_tit">关于我们</div>
+						<div class="aboutus">
+							<ul>
+								<li>
+									 <a href="http://www.17ok.com/aboutus2016/event.html" title="大事记" target="_blank" class="title_12blue01">大事记</a>
+								</li>
+								<li> <a href="http://www.17ok.com/aboutus2016/Productservice.html" target="_blank" class="title_12blue01" title="产品与服务">产品与服务</a></li>
+								<li><a href="http://www.17ok.com/aboutus2016/clause.html" target="_blank" class="title_12blue01" title="服务条款">服务条款</a></li>
+								<li><a href="http://www.17ok.com/aboutus2016/law.html" target="_blank" class="title_12blue01" title="法律声明">法律声明</a></li>
+								<li><a href="http://www.17ok.com/17ok/adshow/" target="_blank" class="title_12blue01" title="广告服务">广告服务</a></li>
+								<li><a href="http://www.17ok.com/CJtougao/baodao.html" target="_blank" class="title_12blue01" title="寻求报道">寻求报道</a></li>
+								<li><a href="http://www.17ok.com/CJtougao/tougao.html" target="_blank" class="title_12blue01" title="征稿启事" >征稿启事</a></li>
+								<li><a href="http://www.17ok.com/aboutus2016/blogroll.html" target="_blank" class="title_12blue01" title="友情链接">友情链接</a></li>
+								<li><a href="http://www.17ok.com/aboutus2016/Contactus.html" target="_blank" class="title_12blue01" title="联系我们">联系我们</a></li>
+								<li>总机：010-65948888 </li>
+								<li>新闻中心：010-65948888-811</li>
+								<li>举报中心电话：010-65910258</li>
+								<li>举报中心邮箱：jubao@17ok.com</li>
+							</ul>
+						</div>
+						
+							</div>
+						<!--关于我们    end -->
+						<!--热点专题  begin -->
+						<div class="rightlist_text lx_mgt20">
+							<div class="rlist_tit">热点专题</div>
+								<div class="guanggao lx_mgt15"><a href="http://finance.17ok.com/news/4/2019/0327/2673192.html"><img src="http://img.17ok.com/admin/media/images/20190328-170356.jpg?7"  width="340" height="120"></a></div><div class="guanggao lx_mgt15"><a href="http://finance.17ok.com/subject/20190510/"><img src="http://img.17ok.com/admin/media/images/20190510-151145.jpg?14"  width="340" height="120"></a></div><div class="guanggao lx_mgt15"><a href="http://www.17ok.com/"><img src="http://img.17ok.com/admin/media/images/20190219-113844.jpg?5"  width="340" height="120"></a></div><div class="guanggao lx_mgt15"><a href="http://finance.17ok.com/subject/shuhuazhanger03/"><img src="http://img.17ok.com/admin/media/images/20190326-103035.jpg?5" width="340" height="120"></a></div> 
+							</div>
+						<!--热点专题  end -->
+						<!--友情链接   begin -->
+                    <!--<div class="rightlist_text lx_mgt20">
+                 <div class="rlist_tit">友情链接</div>
+                 <div class="aboutus">
+                     <!--	<ul>
+                          <li><a title="财政部" target="_blank" href="http://www.mof.gov.cn/index.htm">财政部</a></li>
+                         <li><a title="国务院国资委" target="_blank" href="http://www.sasac.gov.cn/">国务院国资委</a></li>
+                         <li><a title="中国人民银行" target="_blank" href="http://www.pbc.gov.cn/">中国人民银行</a></li>
+                         <li><a title="中国银行保险监督管理委员会" target="_blank" href="http://www.cbrc.gov.cn/chinese/newIndex.html">中国银保监会</a> </li>
+                         <li><a title="中国证券监督管理委员会" target="_blank" href="http://www.csrc.gov.cn/pub/newsite/">中国证监会</a></li>
+                         <li><a title="#" target="_blank" href="#"></a></li>
+                         <li><a title="中国证券业协会" target="_blank" href="http://www.sac.net.cn/">中国证券业协会</a> </li>
+                         <li><a title="基金业协会" target="_blank" href="http://www.amac.org.cn/">基金业协会</a> </li>
+
+                         <li><a title="中国期货业协会" target="_blank" href="http://www.cfachina.org/">中国期货业协会</a> </li>
+                         <li><a title="期货保证金监控中心" target="_blank" href="http://www.cfmmc.com">期货保证金监控中心</a> </li>
+                         <li><a title="上海证券交易所" target="_blank" href="http://www.sse.com.cn/home/">上海证券交易所</a></li>
+                         <li><a title="深圳证券交易所" target="_blank" href="http://www.szse.cn/">深圳证券交易所</a></li>
+                         <li><a title="郑州商品交易所" target="_blank" href="http://www.czce.com.cn">郑州商品交易所</a></li>
+                         <li><a title="大连商品交易所" target="_blank" href="http://www.dce.com.cn">大连商品交易所</a></li>
+                         <li><a title="上海期货交易所 " target="_blank" href="http://www.cffex.com.cn/">上海期货交易所</a></li>
+                         <li><a title="中国金融期货交易所" target="_blank" href="http://www.shfe.com.cn">中国金融期货交易所</a></li>
+
+                         <li><a title="证券登记结算公司" target="_blank" href="http://www.chinaclear.cn">证券登记结算公司</a></li>
+                         <li><a title="中国证券金融公司" target="_blank" href="http://www.csf.com.cn">中国证券金融公司</a></li>
+                         <li><a title="证券投资者保护基金" target="_blank" href="http://www.sipf.com.cn/">证券投资者保护基金</a></li>
+                         <li><a title="全国股转系统" target="_blank" href="http://www.neeq.com.cn/">全国股转系统</a></li>
+                         <li><a title="中华诵官方网站" target="_blank" href="http://www.zhonghuasong.cn/">中华诵</a></li>
+                         <li><a title="中华经典诵读工程官方网站" target="_blank" href="http://www.songdujingdian.com/">中华经典诵读工程官方网站</a></li>
+                         <li><a title="证保通" target="_blank" href="http://www.360zbt.cn/">证保通</a></li> -->
+
+                                    <!--<li><a href="http://www.neeq.com.cn/" target="_blank" title="全国中小企业股份转让系统">全国中小企业股份转让系统</a></li>-->
+									<!--<li><a href="http://www.pedata.cn/" target="_blank" title="清科私募通">清科私募通</a></li>-->
+                    <!--</ul>
+                </div>
+                </div>-->
+							<!--友情链接   end -->
+
+							<!--版权声明   begin -->
+							<div class="banquan lx_mgt15">
+								<p class="red">财界网所载文章、数据仅供投资者参考，并不构成投资建议。投资者据此操作，风险自担。</p></br>
+								<br><a target="_blank" title="网络文化经营许可证 京网文[2015]0754-334号"  href="http://www.17ok.com/17ok/linense/wlwh.shtml">网络文化经营许可证 京网文[2015]0754-334号 </a></br><a target="_blank"  href="http://www.17ok.com/17ok/linense/xxwlst.shtml" title="网络视听许可证0109406号">信息网络传播视听节目许可证 0109406号</a></p>
+								<p><a target="_blank"  title="国家药监局(京)-经营性-2014-0006号" href="http://www.17ok.com/17ok/linense/ypzgzs.shtml">国家药监局(京)-经营性-2014-0006号 </a> </br><a target="_blank" title="电信业务审批[2007]字第96号 京卫网审[2010]第0004号" href="http://www.17ok.com/17ok/linense/dzgg.shtml">电信业务审批[2007]字第96号</a></br> 京公网安备 11010102002796号</p>
+								<p><a target="_blank" title="增值电信业务经营许可证B2"  href="http://www.17ok.com/17ok/linense/zzdxyw.shtml">增值电信业务经营许可证B2-20090426</a></br> <a target="_blank"  title="广播电视节目制作经营许可证（京）字第900号" href="http://www.17ok.com/17ok/linense/gbdsjy.shtml">广播电视节目制作经营许可证（京）字第900号</a></p>
+								<p><a target="_blank" title="《中华人民共和国电信与信息服务业务经营许可证》编号：京ICP证070168号 京ICP备09031787"  href="http://www.17ok.com/17ok/linense/wgicp.shtml">《中华人民共和国电信与信息服务业务经营许可证》编号：京ICP证070168号 京ICP备09031787</a></p>
+								<p>Copyright © 2007 - 2019 </p>
+								<p>财界网 (www.17ok.com)</p>
+								<p class="lx_mgt10"><img src="http://img.17ok.com/admin/media/17ok/biaoshi.gif"><a href="http://www.bj.cyberpolice.cn/index.jsp" > <img src="http://www.17ok.com/img2016/bottom/bj110.gif"></a></p>
+								<p><a target="_blank" href="http://www.12377.cn/"><img border="0" src="http://img.17ok.com/admin/media/17ok/12377.jpg"></a></p>
+							</div>
+
+							<!--版权声明 end -->
+					<!--右侧固定内容  begin -->
+					<div class="father">
+						<div id="AdLayer">
+
+							<div class="rightbox" id="scroll">
+								<!--证保通  begin -->
+								<div class="rightlist_text lx_mgt15">
+									<div class="rlist_tit"><a href="http://www.360zbt.cn" target="_blank" class="title_12blue01" title="证保通">证保通</a></div>
+									<div class="rlist_con">
+
+										<div class="right_zbt"><ul class="lx_mgr15"><li><a href="http://www.360zbt.cn/news/2183/2019/0725/2680275.html"><img src="http://img.17ok.com/admin/media/images/20190726-134322.webp%20(1)?7"></a></li><li class="zbttit"><a href="http://www.360zbt.cn/news/2183/2019/0725/2680275.html"><span>139只私募产品违规超购科创板新股被罚</span></a></li></ul><ul><li><a href="http://www.360zbt.cn/news/2183/2019/0725/2680274.html"><img src="http://img.17ok.com/admin/media/images/20190726-134826.jpg?7"></a></li><li class="zbttit"><a href="http://www.360zbt.cn/news/2183/2019/0725/2680274.html"><span>个人持有新三板股票超1年免征股息红利个税 税收优惠政策再延续5年</span></a></li></ul></div><div class="rightlist"><ul><li><a href="http://www.360zbt.cn/news/2183/2019/0725/2680273.html"><span>央行TMLF与MLF操作并举 昨日投放资金4977亿元</span></a></li><li><a href="http://www.360zbt.cn/news/2188/2019/0725/2680301.html"><span>公证提存化解投资者与证券公司理财产品业务纠纷案例</span></a></li><li><a href="http://www.360zbt.cn/news/2188/2019/0725/2680300.html"><span>投资者与上市公司虚假陈述赔偿纠纷案例（二）</span></a></li><li><a href="http://www.360zbt.cn/news/2188/2019/0725/2680299.html"><span>投资者与期货公司及其营业部期货交易纠纷案例</span></a></li></ul></div>
+
+										<div class="guanggao lx_mgt15"><a href="http://www.360zbt.cn/"><img src="http://img.17ok.com/admin/media/images/20190319-094646.jpg?15" width="340" height="120" ></a></div>
+
+									</div>
+								</div>
+								<!--证保通  end -->
+								<!--排行  begin 2-->
+
+								<div class="hotbox lx_mgt20">
+									<div class="hoticon">
+										<img src="newscj/img2018/hot.png">
+									</div>
+									<div class="hotborder">
+										<div class="plate">
+											<ul>
+												<!--1744-->
+
+												<li style="margin-left:40px;"><a href="http://sanban.17ok.com/news/1110/2019/0328/2673320.html"><span>新三板</span></a></li><li ><a href="http://finance.17ok.com/news/4/2019/0328/2673259.html"><span>科创板企业受理</span></a></li><li ><a href="http://stock.17ok.com/news/658/2019/0328/2673324.html"><span>医药板块</span></a></li><li ><a href="http://fund.17ok.com/news/444/2019/0328/2673321.html"><span>封闭式基金</span></a></li><li ><a href="http://finance.17ok.com/news/4/2019/0328/2673299.html"><span>一汽轿车</span></a></li><li ><a href="http://finance.17ok.com/news/5/2019/0328/2673315.html"><span>EIA原油</span></a></li><li ><a href="http://stock.17ok.com/news/335/2019/0328/2673322.html"><span>工业大麻</span></a></li><li ><a href="http://finance.17ok.com/news/5/2019/0328/2673313.html"><span>美元指数</span></a></li><li ><a href="http://finance.17ok.com/news/5/2019/0328/2673293.html"><span>贸易逆差</span></a></li>
+
+
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--排行 end2 -->
+
+
+							</div>
+						</div>
+					</div>
+					<script>
+                        window.onscroll = function() {
+                            //滚动的距离,距离顶部的距离
+                            var topScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                            //获取到导航栏id
+                            var bignav = document.getElementById("AdLayer");
+                            //当滚动距离大于5700时执行 固定位置 距离
+                            if(topScroll > 5700) {
+                                bignav.style.position = 'fixed';
+                                bignav.style.top = 30 + 'px';
+                                bignav.style.display = 'block';
+                            } else {
+                                //当滚动距离小于5700让导航栏恢复原状
+                                bignav.style.display = 'none';
+                                bignav.style.top = 20 + 'px';
+                            }
+                        }
+					</script>
+					<!--右侧固定内容   end-->
+				</div>
+						<!--右侧   end -->
+					</div>
+		</div>
+	</body>
+
+</html>
+<script src="newscj/js/jquery-1.7.2.min.js"></script>
+<script>
+var i=1;
+$(window).scroll(function(){
+var scrollPos = $(this).scrollTop();
+var dbHiht = $(document).height();
+
+if(dbHiht - scrollPos - $(this).height() < 1){
+			$.ajax({ 
+					url:"newscj/last.php", 
+					type:"GET", 
+				    data: "page="+i,
+					success:function(arr){ 
+					    if(arr)
+					    {						
+			              $("#container").append(arr); 
+							i++;
+					    }else{
+							$(".nodata").show().html("别滚动了，已经到底了。。。"); 
+							   return false; 
+							}		
+					}, 
+			}); 
+}
+})
+
+
+
+	
+</script>

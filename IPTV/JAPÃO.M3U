@@ -1,0 +1,186 @@
+#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/jp/tvguide.myjcom.jp.epg.xml"
+
+
+#EXTINF:0 group-title="JAPÃO",Animax Japan (720p)
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00026/index.m3u8
+#EXTINF:0 group-title="JAPÃO",AT-X (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sub2.neetball.net/live/neet.m3u8
+#EXTINF:0 group-title="JAPÃO",BBC News (540p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
+#EXTINF:0 group-title="JAPÃO",BBC World News (576p)
+#EXTVLCOPT:network-caching=1000
+http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Bloomberg TV Asia (720p)
+#EXTVLCOPT:network-caching=1000
+https://liveprodapnortheast.global.ssl.fastly.net/ap1/Channel-APTVqvs-AWS-tokyo-1/Source-APTVqvs-1000-1_live.m3u8
+#EXTINF:0 group-title="JAPÃO",Bloomberg TV Asia Live Event (720p)
+#EXTVLCOPT:network-caching=1000
+https://www.bloomberg.com/media-manifest/streams/asia-event.m3u8
+#EXTINF:0 group-title="JAPÃO",BS Asahi (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00048/index.m3u8
+#EXTINF:0 group-title="JAPÃO",BS Fuji TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00049/index.m3u8
+#EXTINF:0 group-title="JAPÃO",BS Nippon TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00047/index.m3u8
+#EXTINF:0 group-title="JAPÃO",BS TV Tokyo (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00050/index.m3u8
+#EXTINF:0 group-title="JAPÃO",BS-TBS (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00051/index.m3u8
+#EXTINF:0 group-title="JAPÃO",CGNTV Japan (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://cgntv-glive.ofsdelivery.net/live/cgntv_jp/playlist.m3u8
+#EXTINF:0 group-title="JAPÃO",Disney Channel Japan (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://redlabmcdn.s.llnwi.net/jp04/bs13hd/index.mpd
+#EXTINF:0 group-title="JAPÃO",DW English (1080p)
+#EXTVLCOPT:network-caching=1000
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Family Gekijo (Japanese Subs) (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00011/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Family Gekijo (Japanese Subs) (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hlsok/j00011/index.m3u8
+#EXTINF:0 group-title="JAPÃO",France 24 English (1080p)
+#EXTVLCOPT:network-caching=1000
+http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8
+#EXTINF:0 group-title="JAPÃO",,Fuji TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00010/index.m3u8
+#EXTINF:0 group-title="JAPÃO",,GAORA (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00045/index.m3u8
+#EXTINF:0 group-title="JAPÃO",GSTV (720p)
+#EXTVLCOPT:network-caching=1000
+https://gemstv.wide-stream.net/gemstv01/smil:gemstv01.smil/playlist.m3u8
+#EXTINF:0 group-title="JAPÃO",GTN Typhome (English Subs) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://hamada.gaki-no-tsukai.eu:2087/hls/test.m3u8
+#EXTINF:0 group-title="JAPÃO",Gunma TV (720p)
+#EXTVLCOPT:network-caching=1000
+https://movie.mcas.jp/switcher/smil:mcas8.smil/master.m3u8
+#EXTINF:0 group-title="JAPÃO",J Sports 1 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00042/index.m3u8
+#EXTINF:0 group-title="JAPÃO",J Sports 2 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00041/index.m3u8
+#EXTINF:0 group-title="JAPÃO",J Sports 3 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00040/index.m3u8
+#EXTINF:0 group-title="JAPÃO",J Sports 4 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00039/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Kansai TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00006/index.m3u8
+#EXTINF:0 group-title="JAPÃO",MBS (Mainichi Broadcasting System) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00038/index.m3u8
+#EXTINF:0 group-title="JAPÃO",New Japan Pro Wrestling World (540p)
+#EXTVLCOPT:network-caching=1000
+https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_channel01_3/playlist_DVR.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK + NHE (Sub Audio) (2160p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://iptv.tvfix.org/hls/nhkg2.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK + NHKE (Sub Audio) (2160p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://iptv.tvfix.org/hls/nhke2.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK BS1 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00037/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK BSP (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00036/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK Chinese Vision (720p)
+#EXTVLCOPT:network-caching=1000
+https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK E (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00034/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK G Osaka (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00032/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK G Tokyo (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00033/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK World (720p)
+#EXTVLCOPT:network-caching=1000
+https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/sycc-live/zh/playlist.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK World Japan (1080p)
+#EXTVLCOPT:network-caching=1000
+https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NHK华语视界 (360p)
+#EXTVLCOPT:network-caching=1000
+https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
+#EXTINF:0 group-title="JAPÃO",Nippon TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00004/index.m3u8
+#EXTINF:0 group-title="JAPÃO",NTV News24 (480p)
+#EXTVLCOPT:network-caching=1000
+https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
+#EXTINF:0 group-title="JAPÃO",QVC Japan (720p)
+#EXTVLCOPT:network-caching=1000
+https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8
+#EXTINF:0 group-title="JAPÃO",Red Bull TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:0 group-title="JAPÃO",RT Documentary (1080p)
+#EXTVLCOPT:network-caching=1000
+https://rt-rtd.gcdn.co/live/rtdoc/playlist.m3u8
+#EXTINF:0 group-title="JAPÃO",RT News (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/rt_hd/rt_hd0.m3u8
+#EXTINF:0 group-title="JAPÃO",Shop Channel (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://stream3.shopch.jp/HLS/master.m3u8
+#EXTINF:0 group-title="JAPÃO",Star 1 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00019/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Star 2 (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00018/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Star 3 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00017/index.m3u8
+#EXTINF:0 group-title="JAPÃO",TBS (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00031/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Tokyo MX1 (720p)
+#EXTVLCOPT:network-caching=1000
+https://movie.mcas.jp/mcas/mx1_2/master.m3u8
+#EXTINF:0 group-title="JAPÃO",Tokyo MX1 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hlsok/j00030/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Tokyo MX2 (720p)
+#EXTVLCOPT:network-caching=1000
+https://movie.mcas.jp/mcas/mx2_2/master.m3u8
+#EXTINF:0 group-title="JAPÃO",TRT World (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://tv-trtworld.live.trt.com.tr/master.m3u8
+#EXTINF:0 group-title="JAPÃO",TV Asahi (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00014/index.m3u8
+#EXTINF:0 group-title="JAPÃO",TV Osaka (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00013/index.m3u8
+#EXTINF:0 group-title="JAPÃO",TV Tokyo (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hlsok/j00012/index.m3u8
+#EXTINF:0 group-title="JAPÃO",TV Tokyo (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://51.79.193.108:8080/hls/j00012/index.m3u8
+#EXTINF:0 group-title="JAPÃO",Weather Channel (ウェザーニュース) (BS | WNI) (720p)
+#EXTVLCOPT:network-caching=1000
+http://movie.mcas.jp/mcas/wn1_2/master.m3u8
+#EXTINF:0 group-title="JAPÃO",Weather News (720p)
+#EXTVLCOPT:network-caching=1000
+https://movie.mcas.jp/mcas/smil:wn1.smil/master.m3u8

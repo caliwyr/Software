@@ -1,0 +1,928 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>		
+		<meta name="title" content="Employees' Provident Fund Organisation">
+		<meta name = "keywords" content = "Epfo, Online Services, What's New, About Us, Vision " />
+		<meta name = "description" content = "About Employees' Provident Fund Organisation" />
+		<meta name="language" content="English" />	
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="../images/EPFOlogo.ico" type="image/jpg">
+        <title>Employees' Provident Fund Organisation</title>
+        <link rel="stylesheet" type="text/css" href="../css/site.css">
+        <link href="../css/site_bootstrap_required.css" rel="stylesheet">
+        <link href="../css/jquery-ui.css" rel="stylesheet">
+        <script type="text/javascript" src="../Resource/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../Resource/jquery-ui.js" defer></script>
+        <script type="text/javascript" src="../Resource/responsiveslides.js" defer></script>	
+        <script type="text/javascript" src="../Resource/jquery.easing.min.js" defer></script>
+        <script type="text/javascript" src="../Resource/jquery.easy-ticker.js" defer></script>
+        <script type="text/javascript" src="../Resource/site_home.js" defer></script>
+        <link href="../css/flexslider.css" rel="stylesheet"> 
+        <script type="text/javascript" src="../Resource/jquery.flexslider.js" defer></script>
+        <script type="text/javascript" src="../Resource/wow.js" defer></script>
+        <!--<link rel="stylesheet" type="text/css" href="../css/menu.css"> -->
+				
+		<!-- To make menu keyboard operable-->
+		<link href="../Resource/menu_cs_js/base.css" rel="stylesheet" />  
+		<script src="../Resource/menu_cs_js/framework.js"></script>
+		<script src="../Resource/menu_cs_js/swithcer.js"></script>
+        <script type="text/javascript">
+            ddsmoothmenu.init({
+                mainmenuid: "smoothmenu1", //menu DIV id
+                orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+                classname: 'ddsmoothmenu', //class added to menu's outer DIV
+                //customtheme: ["#1c5a80", "#18374a"],
+                contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+            });
+        </script>
+        <script>
+            $(function () {
+                $("#accordion").accordion();
+            });
+        </script>
+
+		<script>
+		function blinker() {
+		$('.blinking').fadeOut(300);
+		$('.blinking').fadeIn(500);
+		}
+		setInterval(blinker, 3000);
+		</script>
+<script>
+		function blinker() {
+		$('.blinking1').fadeOut(300);
+		$('.blinking1').fadeIn(300);
+		}
+		setInterval(blinker, 2000);
+		</script>
+ <style>
+            .ui-accordion .ui-accordion-header {
+                color: #333333;
+                background-color: #E5E5E5;
+                border-color: transparent;
+                /*                padding: 10px 15px;*/
+                border-bottom: 4px solid transparent;
+                border-top-right-radius: 3px;
+                border-top-left-radius: 3px;
+                vertical-align: middle;
+                outline: none;
+            }
+
+            .ui-accordion .ui-accordion-content {
+                padding:2px;
+            }
+            #accordion_mainpage .ui-icon { display: none; }
+            #accordion_mainpage .ui-accordion-header a { padding-left: 0; }
+        </style>
+
+		
+		<script>		
+			$(document).ready(function(){						
+			window.addEventListener("contextmenu", 
+			function(e){
+			e.stopPropagation()
+			}, true);
+			});
+		</script>	
+		<style type="text/css">
+    .flex-direction-nav .flex-next {
+        background-position: 100% 0;
+        right: 0px;
+    }
+
+    .flex-direction-nav .flex-prev {
+        left: 0px;
+    }
+</style>
+		
+<!-- pop up 04.07.2019 -->	
+<style>
+.modal1 {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+
+    background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+  
+}
+.modal-content1 {
+	  position: relative;
+      margin: auto;
+      padding: 0;
+      width: 60%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* The Close Button */
+.close1 {
+    color: #000;
+    margin-right:-50px;
+	margin-top:50px;
+    font-size: 35px;
+    font-weight: bold;
+	position:absolute;
+    right:30px;
+}
+.close1:hover,
+.close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>		
+<!-- end pop up 04.07.2019 -->			
+<!-- Modal Pop-up "Know your Balance" 10.12.2018 -->			
+<style>
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+/* Modal Content */
+.modal-content {
+	border:1px solid black;
+	border-radius: 10px;
+    position: fixed;
+    bottom: 0%;
+	right:0%;
+    background-color: #ffffff;
+    width: 16%;
+    float: right;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;	
+	font-size:15px;
+    background-color:#27408B;
+    color: white;
+	 border-top-left-radius: 8px;
+	 border-top-right-radius: 8px;
+}
+.modal-body {padding: 1px 16px;}
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+</style>
+
+<!-- Color contrast  -->
+<style>
+.img_col {color:black;}
+.img_col img{color:black;}
+.img_col a img{color:black;}
+.img_col a {color:blue;}
+</style>
+
+
+    </head>
+    <body oncontextmenu="return false;">
+        <div id="header">
+            <header>
+   
+	
+	 <div style="width:100%" class="ends" id="start_bar">
+		<div style="width:30%;float:left"> 
+		
+		<span style="height:20px; margin-left:2px;" class="img_col">  
+			<img src="../images/helpdesk.gif" style="margin-top:1px;height:27px; width:340px;" Alt='helpdesk' usemap="#helpdesk">
+<map name="helpdesk">  
+  <area title="For Employers Queries : employerfeedback@epfindia.gov.in&#10;For Employees Queries : employeefeedback@epfindia.gov.in"  coords="2,1,20,29" shape="rect" Alt='helpdesk' href="#">
+    <area  title="Help Desk/TollFree Number is operational 24x7."  coords="24,1,311,29" shape="rect" Alt='helpdesk' href="#">
+    <area target="_blank" title="Helpline Numbers of Regional Offices" href="../site_docs/PDFs/Contact_PDF/ro_pro.pdf" coords="314,3,330,29" style="outline:none;" shape="rect" Alt='helpdesk'>
+</map>
+		</span> 
+		</div>
+	
+	<div style="width:40%;float:left;font-weight:bold;margin-top:8px;">
+	
+		<marquee scrollamount="3">
+		
+		
+		<span style='margin-left:100px;' > <a href="https://pledge.cvc.nic.in/" target="_blank"><b>VAW 2019 -Have you taken Integrity Pledge?  Click </b></a>  </span>
+
+
+		
+
+		<span style='margin-left:100px;'>Please note-THERE IS NO APP, OTHER THAN 'UMANG', FOR EPFO RELATED SERVICES.</span>
+
+		<span style='margin-left:100px;'>KINDLY BEWARE OF THE FAKE WEBSITES THAT ARE FLASHING WRONG INFORMATION ABOUT EPFO. https://www.epfindia.gov.in IS THE ONLY OFFICIAL WEBSITE OF EPFO.</span>
+
+		<span style='margin-left:100px;'>PLEASE DO NOT SHARE YOUR PERSONAL DETAILS LIKE AADHAAR/PAN/UAN OVER TELEPHONE WITH ANYONE. </span>                      
+
+		<span style='margin-left:100px;'>EPFO HR SOFTWARE CAN BE ACCESSED USING https://hr.epfindia.gov.in/hrm [For Office Use>>Logins>> HR Soft Login]</span>
+
+		<span style='margin-left:100px;'>ATTENTION PENSIONER!! PLEASE SUBMIT DIGITAL LIFE CERTIFICATE FOR THE YEAR 2019 FROM 1.11.2018 ONWARDS EITHER THROUGH UMANG MOBILE APP/AT ANY NEARBY COMMON SERVICE CENTER/EPFO OFFICE/BANK BRANCH.</span>
+
+		<span style='margin-left:100px;'>EMPLOYER CAN PAY DUES DIRECTLY THROUGH CENTRAL BANK OF INDIA.</span>
+		
+		</marquee>
+
+		
+			
+	</div>
+	<div style="width:10%;float:left;font-weight:bold;margin-top:8px; margin-left:60px;" class="img_col">
+	<a href="#middle_sec" title="Main Content"  style="color:#fff">Skip to main content</a>
+	</div>
+	
+       <div style="width:10%;float:left;"> <span class="img_col header_link">
+            <a href="#" id="increase_font" title="Increase Text Size">A<sup>+</sup></a>
+            <a href="#" id="normal_font" title="Normal Text Size">A</a>
+            <a href="#" id="decrease_font" title="Decrease Text Size">A<sup>-</sup>
+            </a></span>
+			</div>
+			<div style="width:4%;float:left;"> <span class="img_col header_link"><a href="../site_hi/index.php" class="site" title="Hindi Site"><img src='../images/hindi.gif' style="height:26px;margin-top:2px;width:54px" alt="Hindi Site"></a></span></div>
+    </div>
+	
+	
+	
+<div id="header_div">
+<div style="display:table; width:100%">
+	<div style="display:table-row;">
+		<div style="display:table-cell; vertical-align:middle; width:10%" class="img_col" ><a href="index.php"><img src="../images/logo_shadow.png" width="100" height="100" id="epf_img" alt="EPFO" title="EPFO"></a></div>
+		<div style="display:table-cell; vertical-align:middle; width:75%;" class="img_col">
+        	<a href="index.php"><span id="epfo">Employees' Provident Fund Organisation, India</span></a><br>
+			<a href="index.php"><span id="goi">Ministry of Labour & Employment, Government of India </span></a><br>
+ 
+			  <span style="float:right; text-align:right;"><a href="index.php"><img src="../images/home1.png" class="img_icon" alt="Home" title="Home"></a>&nbsp;
+			
+			  <a href="Contact_us.php"><img src="../images/contact1.png" class="img_icon" Alt="Contact Us" title="Contact Us"/></a>&nbsp;
+			  <a href="https://twitter.com/socialepfo/" target="_blank" id="imp_out1"  title="Follow Us on Twitter (External Non-Government website)"><img src="../images/twitter1.png" class="img_icon" Alt="Twitter"  title="Follow Us on Twitter (External Non-Government website)" /></a>&nbsp;<a href="https://www.facebook.com/socialepfo/" target="_blank" id="imp_out2"    title="Find Us on Facebook (External Non-Government website)"><img src="../images/fb.png" class="img_icon" Alt="Facebook" title="Find Us on Facebook (External Non-Government website)"></a>&nbsp;<a href="help.php"><img src="../images/hlp.png" class="img_icon" Alt="Help" title="Let us Help"></a>&nbsp;<a href="faq.php"><img src="../images/faq.png" class="img_icon" Alt="Faq" title="Faq"/></a>&nbsp;
+			</span>
+        </div>
+		<div class="img_col">&nbsp;<a href="http://epfigms.gov.in/" target="_blank" id="imp_out3"><img style="width:60px;height:70px;margin-top:47px;" src="../images/EPFiGMS.gif" class="img_icon" Alt="EPFiGMS" title="EPFiGMS"/></a>&nbsp;</div>
+		
+		<div class="img_col" style="display:table-cell;vertical-align:middle;padding-top:1%;padding-bottom:1%; width:8%;"><a href="index.php"><img src="../images/nationalemblem1.png" id="epf_img1" Alt="National Emblem"></a></div>
+
+<!-- Code of conduct 11.03.2019 so pic & link removed		
+		<div style="display:table-cell; vertical-align:middle; width:10%; ">
+		<a href='state_minister_profile.php'  target="_blank" ><img src="../images/santoshgangwar.jpg" id="epf_img2" Alt="Hon'ble Minister MOLE"></a></div>
+-->	
+	
+	</div>
+</div>
+</div>
+</header>
+        </div>	
+		<noscript>This page is trying to run JavaScript and your browser either does not support JavaScript or you may have turned-off JavaScript. If you have disabled JavaScript on your computer, please turn on JavaScript, to have proper access to this page. </noscript>
+		<!--For keyboard operable Menu -->			
+		<nav class="wrapper1 nav-wrapper">
+				<!--first div of menu start -->
+                                <div id="hideThisFromNonJs" style="display:none">
+				<div id="main-menu" class="container nav-container">
+					<!--second div of menu Start -->
+					<div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+				 						
+								
+		<ul class="menu img_col" id="1">
+    		<li class="menu__item is-expanded expanded menu-mlid-944"><a  title="Our Services"  class="menu__link" href="#">Our Services&nbsp;<img src='../images/down.gif' style="height:10px;width:10px;" alt="Down pointer"></a><ul  class='menu'><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='For_Employers.php?id=sm1_index'   class='menu__link'>For Employers</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='For_Employees.php?id=sm2_index'   class='menu__link'>For Employees</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='International_workers.php?id=sm3_index'   class='menu__link'>For International Workers</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://jeevanpramaan.gov.in/locater'  class='menu__link'>For Pensioners - Locate Jeevan Pramaan Centre</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://search.epfindia.gov.in/locate_office/office_location.php'  class='menu__link'>Locate an EPFO Office</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Contact_us.php?id=sm4_index'   class='menu__link'>Who's Who</a></li></ul></li>
+			
+			<li class="menu__item is-expanded expanded menu-mlid-944"><a   title="Status Of Establishments"  class="menu__link"  href="#">Status Of Establishments&nbsp;<img src='../images/down.gif' style="height:10px;width:10px;" alt="Down pointer"></a><ul class='menu'><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/exmpted_est/exempted_est_list.pdf?id=sm1_index'  class='menu__link'>List of Exempted Establishment</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_en/Per_Exempted.php?id=sm2_index'  class='menu__link'>Perfor. Evaluation of Exempted Estt</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://iwu.epfindia.gov.in/caiu/defWebList'  class='menu__link'>Current Defaulting Establishments</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/exmpted_est/Exempted_ReturnManual.pdf?id=sm3_index'  class='menu__link'>Exempted Return Manual</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/exmpted_est/Payroll_Data_EPFO.pdf?id=sm5_index' title='Date of Next data release - 20-December-2019'   class='menu__link'>Provisional Monthly Estimate of Payroll</a></li></ul></li>
+			
+			<li class="menu__item is-expanded expanded menu-mlid-944"><a title="EPFO Corner"  class="menu__link"  href="#">EPFO Corner&nbsp;<img src='../images/down.gif' style="height:10px;width:10px;" alt="Down pointer"></a><ul class='menu'><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Our_CEO.php?id=sm4_index'   class='menu__link'>Chief Executive Officer</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='EPFAT.php?id=sm4_index'   class='menu__link'>Central Govt. Industrial Tribunal</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Training_Institutes.php?id=sm5_index'   class='menu__link'>EPF Training Institutes</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Dashboards.php?id=sm6_index'   class='menu__link'>Dashboards</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='narakas.php?id=sm23_index'   class='menu__link'>नराकास</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Office_Use.php?id=sm7_index'   class='menu__link'>For Office Use</a></li></ul></li>
+			
+    		<li class="menu__item is-expanded expanded menu-mlid-944"><a title="Miscellaneous"  class="menu__link"   href="#">Miscellaneous&nbsp;<img src='../images/down.gif' style="height:10px;width:10px;" alt="Down pointer"></a><ul class='menu'><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://pledge.cvc.nic.in/'   class='menu__link'>Integrity Pledge - Central Vigilance Commission</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='http://cvc.nic.in/?q=citizens-corner/whistle-blower-complaints'   class='menu__link'>Whistle Blower Policy - CVC</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='EODB.php?id=sm22_index'   class='menu__link'>Ease of Doing Business</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Downloads.php?id=sm8_index'   class='menu__link'>Downloads</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Recruitments.php?id=sm9_index'   class='menu__link'>Recruitments</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='Tender_Auction.php?id=sm10_index'   class='menu__link'>Tenders / Auctions</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/PDFs/MiscPDFs/CitizenCharter.pdf' target='_blank'   class='menu__link'>Citizen's Charter</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='RTI.php?id=sm12_index'   class='menu__link'>RTI Act</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://search.epfindia.gov.in/OperationStatistics/operational_stats_en.php'   class='menu__link'>Operational Statistics</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://search.epfindia.gov.in/eNewsletters/eNewsletters_en.php'   class='menu__link'>e - Newsletter</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/PDFs/MiscPDFs/UAN-BenefitsForMembers_May2016.pdf' target='_blank'   class='menu__link'>UAN Presentation</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://www.facebook.com/santosh.gangwar/'   class='menu__link'>Facebook Link of LEM</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://twitter.com/santoshgangwar'   class='menu__link'>Twitter Handle of LEM</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/PDFs/MiscPDFs/EPS1995_PensionDisbursingAgenciesList.pdf'   class='menu__link'>EPS 1995 - List of Pension Disbursing Banks</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='http://www.hudco.org/writereaddata/Niwasoffice.pdf'   class='menu__link'>List of HUDCO Niwas Offices</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='http://hudco.org/writereaddata/PMAY.pdf'   class='menu__link'>Pradhan Mantri Awas Yojana, Credit Linked Subsidy Scheme (CLSS)</a></li></ul></li>
+			
+		<li class="menu__item is-expanded expanded menu-mlid-944"><a title="Contact Us"  class="menu__link"   href="Contact_us.php">Contact Us&nbsp;</a></li>
+		
+		<li class="menu__item is-expanded expanded menu-mlid-944"><a title="PM-SYM"  class="menu__link"   href="#">PM-SYM&nbsp;<img src='../images/down.gif' style="height:10px;width:10px;" alt="PM-SYM" >&nbsp;<img src='../images/new.gif' style="height:10px;width:30px;padding-bottom:6px" alt="New"></a><ul class='menu'><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/PDFs/MiscPDFs/Scheme_PM-SYM.pdf'   class='menu__link'>PM-SYM Scheme</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/PDFs/MiscPDFs/Enrolment_PM-SYM.pdf'   class='menu__link'>Enrolment in PM-SYM </a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='https://locator.csccloud.in'   class='menu__link'>Common Service Centres</a></li><li class='menu__item is-leaf leaf menu-mlid-1505'><a href='../site_docs/PDFs/MiscPDFs/FAQ_PM-SYM.pdf'   class='menu__link'>FAQ</a></li></ul></li>
+			
+		<!--		<li class="menu__item is-expanded expanded menu-mlid-944"  ><a  class="menu__link"   href="#"><span style="display:none";></span><img src='#' style="height:10px;width:10px;"></img></a><span style="display:none";></span></li> -->
+				
+				<li class="menu__item is-expanded expanded menu-mlid-944"  ><a href='#' style="height:40px;width:10px;"></a></li>
+				
+				
+			
+		</ul>					</div><!--Second div of menu End -->
+				</div><!--first div of menu End -->
+                                </div>
+			 </nav>		
+        <div id="main_section" class="img_col">         	
+            <div id="topflex_sec" style="display:none">   
+                
+<script></script>
+<div class="blnk1"></div>
+
+<div id="slider_custom">
+
+
+    <!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider hidden-md hidden-sm hidden-xs" style="margin-bottom: 2px;">
+        <ul class="slides img_col">
+		
+			<!--
+             <li>
+                <img src="https://cbpssubscriber.mygov.in/assets/uploads/juGajmc1gOVBUtt5" id="_HHbotCElg04DCqyq" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/HHbotCElg04DCqyq')" style="cursor:pointer" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)" >
+            </li>	
+		
+             <li>
+                <img src="../images/slide7.jpg" class="img-rounded" />
+            </li>
+-->			
+			 <li>
+                <img src="../images/gandhiji1.jpg" class="img-rounded" Alt="Cleanliness"/>
+            </li>
+             <li>
+                <img src="../images/slide6.jpg" class="img-rounded" Alt="EPFO initiatives"/>
+            </li>
+			<li>
+             <!--   <img src="../images/slide8.png" class="img-rounded" Alt="EPFO Services are now available on UMANG"/>  WHEN JINGLE ADDED -->
+				
+				<div class="img-rounded">
+<img src="../images/slide8.png" class="img-rounded" Alt="EPFO Services are now available on UMANG"/>
+  <audio controls  style="width: 230px; height: 20px;" >
+    <source src="EPFO.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+</div>
+
+
+            </li>		
+			
+            <li>
+                <img src="../images/slide9.png" class="img-rounded" Alt="EPFO initiatives"/>
+            </li>			
+			
+            <li>
+                <img src="../images/slide1.jpg" class="img-rounded" alt="EPFO Services"   />
+            </li>
+            
+            <li>
+                <img src="../images/slide2.jpg" class="img-rounded" alt="Pradhan Mantri Rozgar Protsahan Yojana" />
+            </li>
+            <li>
+                <img src="../images/slide3.jpg" class="img-rounded" alt="EPFO won Gold Award (2015-16)"/>
+            </li>
+
+            <li>
+                <img src="../images/slide4.jpg" class="img-rounded" alt="One Employee One EPF Account"  />
+            </li>
+			
+            <!-- <li>
+                <img src="../images/slide5.jpg" class="img-rounded" alt="OLRE"/>
+            </li> -->
+           
+            
+
+        </ul>
+    </div>
+
+</div>
+
+<div id="link_custom" class="img_col">
+
+
+    <div id="link_box">
+
+        <div class="link_box_woimg">
+
+		
+		
+		<a href="http://registration.shramsuvidha.gov.in/user/login" target="_blank" style="color: white;"><img  src="../images/img1.png" class="img-rounded"  alt="Establishment Registration" ></a>
+		
+			
+        </div>
+
+        <div class="link_box_woimg">
+           <a href="https://web.umang.gov.in/web/#/" target="_blank" style="color: white;"><img  src="../images/img3-2.png" class="img-rounded"  alt="UMANG" ></a>
+        </div>
+        
+         <div class="link_box_woimg">
+            <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" style="color: white;"><img  src="../images/img3-new.png" class="img-rounded"  alt="Online Claims Member Account Transfer" ></a>
+        </div>
+        
+         <div class="link_box_woimg">
+            <a href="https://iwu.epfindia.gov.in/caiu/defWebList" target="_blank" style="color: white;"><img  src="../images/img7.png" class="img-rounded" alt="Performance of Establishments"  ></a>
+        </div>
+
+    </div>
+        <div id="link_box" >
+
+        <div class="link_box_woimg">
+            <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" style="color: white;"><img  src="../images/img2.png" class="img-rounded"  alt="KYC Updation (Member)" ></a>
+        </div>
+
+        <div class="link_box_woimg">
+            <a href="http://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" style="color: white;"><img  src="../images/img4.png" class="img-rounded"  alt="ECR/Returns/Payment" ></a>
+        </div>
+        
+         <div class="link_box_woimg">
+		 
+            <a href="https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp" target="_blank" style="color: white;" title="PF Balance"><img  src="../images/img6.png" class="img-rounded"  alt="e-Passbook" ></a> 
+
+			
+        </div>
+        
+         <div class="link_box_woimg">
+            <a href="http://return.shramsuvidha.gov.in/user/login" target="_blank" style="color: white;"><img  src="../images/img8.png" class="img-rounded" alt="Shram suvidha Common ECR (EPFO/ESIC)" ></a>
+        </div>
+
+    </div>
+</div>
+
+<div class="blnk2"></div>
+
+<style type="text/css">
+  
+ .img-rounded audio {
+  position: relative;
+  top: -80px;
+  left: 420px;
+}
+
+
+</style>
+
+ 
+            </div>                           
+	<div id="middle_sec"></div>                    
+        <div id="topflex_sec" class="img_col">    <!-- Middle section --> 
+                <div class="blnk1"></div>               
+                <div id="left_accordian">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="padding:0px;background-color:#E5E5E5;"> <img style="width:24px;height:24px;" src="../images/globe.png" alt="Online Services">&nbsp;<b style="color:blue">Online Services</b></div>
+                        <div class="panel-body">
+                            <div class="row" style="height:160px">
+                                <div class="info">
+                                    <ul id="img_col">
+                                                                           
+                                        <li><a href="https://iwu.epfindia.gov.in/caiu" target="_blank" style="color: black;">Principal Employers-CAIU Portal</a></li>
+                                        		
+										<li><a href="https://mis.epfindia.gov.in/PensionPaymentEnquiry" target="_blank" style="color: black;">Pensioners' Portal<sup><img style="width:27px;height:12px;" src="../images/n-e.gif" alt="New"></sup></a></li>
+										                                        
+										
+	                                     <li><a href="https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadSearchTrrnHome" target="_blank" style="color: black;">TRRN Query Search</a></li>	
+										
+										<li><a href="https://epfoportals.epfindia.gov.in/iwu/" target="_blank" style="color: black;">International Workers Portal</a>
+										</li>
+										
+										<li><a href="https://iwu.epfindia.gov.in/eKYC" target="_blank" style="color: black;">eKYC Portal</a>
+																				
+										</li>												
+<!--										
+										<li>
+										<p class="blinking"> <a href="https://ibpsonline.ibps.in/epfoamay19/" target="_blank" style="color: black;"><b>Online Registration for Examination to the post of "ASSISTANTS"</b></a> </p>
+										</li>						
+ 
+										<li>
+										<p class="blinking"><a href="https://cdn.digialm.com//EForms/configuredHtml/1258/61633//Instruction.html" target="_blank" style="color: black;"><b>Online Application for LDCE for promotion to the post of "SECTION SUPERVISOR"</b></a>  </p>
+										</li>
+-->										
+                                    </ul>
+                                </div>
+                                <div>
+                                </div>	
+                            </div>
+                            <div class="panel-footer" style="padding: 0px;"> </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading img_col " style="padding:0px;background-color:#E5E5E5;"> <img style="width:24px;height:24px;" src="../images/icon-news.png" alt="What's New">&nbsp;<b style="color:blue">What's New</b></div>
+                        <div style="height:273px; overflow-y: scroll;">
+                            <div class="info" id="news_custom" style="position: relative; overflow: hidden;">
+                                <ul style='padding-right:15px;'><li>GRIEVANCE HANDLING MECHANISM AT EPFO.... <a href='../site_docs/PDFs/Updates/GHM_EPFO.pdf' target='_blank'>Read</a></li><li>Notice inviting application for empanelment of advocates.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocate_accchpd_102019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for the Block period 2019-21 - Regional Office, Goa.... <a href='../site_docs/PDFs/Updates/Goa_Empanelment_Advocates_092019.pdf' target='_blank'>Read</a></li><li>Workshop for Representatives of Exempted Establishments to be held from 23rd-24th December 2019 at PDNASS - Inviting Nominations.... <a href='../site_docs/PDFs/Updates/PDNASS_EE_CEO_1132.pdf' target='_blank'>Read</a></li><li>Training Calendar of PDNASS for the Year 2019-20.... <a href='../site_docs/PDFs/Updates/PDNASS_TrgCal_2019-20_1107.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates in NE Region - Zonal Office (NER), Guwahati.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_NER_092019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment Of Advocates for the State of Maharashtra (Excluding Mumbai) - Zonal Office, Maharashtra (Excluding Mumbai).... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates__Maharashtra_092019.pdf' target='_blank'>Read</a></li><li>Empanelment of Advocates for the Block year 2019-21 in EPFO Gujarat Zone.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_082019.pdf' target='_blank'>Read</a></li><li>Notice to Economically Weaker Section (EWS), Male candidates for Conduct of Direct Recruitment Examination to the post of Assistants in EPFO (Miscellaneous >> Recruitment).... <a href='../site_docs/PDFs/Updates/Exam_Assistant_EWS_117.pdf' target='_blank'>Read</a></li><li>Recruitment to the post of Social Security Assistant in EPFO (Miscellaneous>>Recruitment).... <a href='../site_docs/PDFs/Updates/Exam_Recruit_SSA_109.pdf' target='_blank'>Read</a></li><li>Addendum - Recruitment of Assistants in Employees' Provident Fund Organisation (Miscellaneous>>Recruitment).... <a href='../site_docs/PDFs/Updates/Add2-Exam_RR_Assistan_51.pdf' target='_blank'>Read</a></li><li>Corrigendum - Recruitment of Assistants in Employees' Provident Fund Organisation.... <a href='../site_docs/PDFs/Updates/Corrigendum_Assistants_81.pdf' target='_blank'>Read</a></li><li>RFP for selection of Portfolio Managers: 1) Pre - Qualification bid opening on 11.06.2019 at 12.00 Noon 2) Technical bid opening on 12.06.2019 at 03.00 P.M 3) Financial bid opening on 19.06.2019 at 11.00 PM</li><li>Addendum for the post of Assistants in EPFO (Miscellaneous >> Recruitment).... <a href='../site_docs/PDFs/Updates/Add-Exam_RR_Assistan_51.pdf' target='_blank'>Read</a></li><li>List of selected Advocates in Panel of EPFO, UP Zone for the block year 2019-21.... <a href='../site_docs/PDFs/Updates/SelectedAdvocates_UPzone_052019.pdf' target='_blank'>Read</a></li><li>Recruitment of Assistants in Employees Provident Fund Organisation.... <a href='../site_docs/PDFs/Updates/Exam_RR_Assistan_51.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_Ahmedabad_052019.pdf(1).pdf' target='_blank'>Read</a></li><li>Constitution of fresh panel of advocates to represent EPFO before various Legal Fora-Head office-Head Office, New Delhi..... <a href='../site_docs/PDFs/Updates/Panel_Advocates_HO_052019.pdf' target='_blank'>Read</a></li><li>Filling up of the posts on deputation basis in EPFO.... <a href='../site_docs/PDFs/Updates/HRM1Depudation_ISD_1243.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Kannur-1.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_kannur_052019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Kozhikode.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_kozikhode_052019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Kottayam.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_kottayam_052019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Agra.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_Agra_042019.pdf' target='_blank'>Read</a></li><li>Notice inviting Application for Empanelment of advocates -   Zonal Office, Hubli.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocate_acchubli_042019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Bareilly.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocates_Bareilly_042019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for empanelment of Advocates for Haryana Zone - Zonal Office, Haryana.... <a href='../site_docs/PDFs/Updates/Empanlement_Advocates_Haryana_042019.pdf' target='_blank'>Read</a></li><li>Notice inviting application for empanelment of advocates for the state of Telangana.... <a href='../site_docs/PDFs/Updates/Empanlement_Advocates_Telanagana_042019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for empanelment of Advocates for the state of Karnataka under Bengalur Zone.... <a href='../site_docs/PDFs/Updates/Bengalur_Empanelment_Advocates_042019.pdf' target='_blank'>Read</a></li><li>Notice inviting applications for empanelment of Advocates 2019-2021.... <a href='../site_docs/PDFs/Updates/Chennai1_Empanelment_Advocates_042019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for Supreme Court of India, New Delhi for the block year 2019-21.... <a href='../site_docs/PDFs/Updates/HO_Empanelment_Advocates_032019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Coimbatore.... <a href='../site_docs/PDFs/Updates/Coimbatore_Empanelment_Advocates_032019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Bhatinda.... <a href='../site_docs/PDFs/Updates/Bhatinda_Empanelment_Advocates_032019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Chandigarh.... <a href='../site_docs/PDFs/Updates/Chandigarh_Empanelment_Advocates_032019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Application for Empanelment of Advocates - Regional Office Ludhiana.... <a href='../site_docs/PDFs/Updates/Ludhiana_Empanelment_Advocates_032019.pdf' target='_blank'>Read</a></li><li>Extension of last date for submission of Applications for Empanelment of Advocates for Supreme Court of India for the block year 2019-21 - Head Office, New Delhi.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocate_HeadOffice_032019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for the period 01.04.2019 to 31.03.2021 - Regional Office Jalandhar.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocate_Jalandhar_032019.pdf' target='_blank'>Read</a></li><li>Empanelment of Advocates for the Block Year 2019-2020 and 2020-2021 in EPFO in Uttrakhand State - Zonal Office, Delhi and Uttarakhand.... <a href='../site_docs/PDFs/Updates/Selection_Advocates_DLUK_022019_1528.pdf' target='_blank'>Read</a></li><li>Notice Inviting Application for Empanelment of Advocates - Regional Office Surat.... <a href='../site_docs/PDFs/Updates/Surat_Empanelment_Advocates_022019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for Uttar Pradesh panel for the year 2019-21.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocate_uttarpradesh_022019.pdf' target='_blank'>Read</a></li><li>Interaction/Interview for Selection for the Empanelment of Panel Advocates for Uttarakhand State for the Block Year 2019-2020 and 2020-2021  -  Zonal Office, Delhi and Uttarakhand.... <a href='../site_docs/PDFs/Updates/Interview_EmpanelAdv_Uttarakhand_ZODLUK_022019.pdf' target='_blank'>Read</a></li><li>Empanelment of Advocates for the Block Year 2019-2020 and 2020-2021 in EPFO in Delhi State - Zonal Office, Delhi and Uttarakhand.... <a href='../site_docs/PDFs/Updates/Selection_Advocates_DLUK_022019_1437.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for the State of Andhra Pradesh - Zonal Office, Vijayawada.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_Vijayawada_568_022019.pdf.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for Supreme Court of India, New Delhi.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_SCND_012019.pdf' target='_blank'>Read</a></li><li>Interview for Empanelment as Panel Advocate of EPFO for the period 2019-2021 in Delhi.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_DLUK_1321.pdf' target='_blank'>Read</a></li><li>Applications are invited for appointment on deputation to Vigilance posts in EPFO.... <a href='../site_docs/PDFs/Updates/HRM7_DepuVacancy_DDVig_16761.pdf' target='_blank'>Read</a></li><li>Applications are invited for appointment on deputation to Engineering posts in EPFO.... <a href='../site_docs/PDFs/Updates/HRM7_VacPos_Engg_16481.pdf' target='_blank'>Read</a></li><li>Panel of Advocates in addition to existing panel for the block year 2017-2019 in EPFO, Uttar Pradesh.... <a href='../site_docs/PDFs/Updates/AddlPanelAdvocate_UP_012019.pdf' target='_blank'>Read</a></li><li>EPFO celebrated 66th Foundation Day on 1st November, 2018.... <a href='../site_docs/PDFs/Updates/PressRelease_01112018.pdf' target='_blank'>Read</a></li><li>Notice Inviting applications for Income Tax Advocates - Regional Office, Muzaffarpur.... <a href='../site_docs/PDFs/Updates/ITAdvocate_Muzaffarpur_012019.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates for Uttarakhand - Zonal Office, Delhi and Uttarakhand.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_Uttarakhand_ZODLUK_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Zonal Office, Orissa.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_ZOOR_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Zonal Office, Delhi and Uttarakhand.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_ZODL_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Zonal Office, Haryana.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_ZOHR_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Zonal Office, NE Regions.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_ZONER_122018.pdf' target='_blank'>Read</a></li><li>Notice inviting applications for Empanelment of Auditor Firms for audit of PF Accounts of Exempted PF Trusts - Regional Office, Muzaffarpur.... <a href='../site_docs/PDFs/Updates/EmpanelmentAuditor_Muzaffarpur_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms - Regional Office, Kolkata.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Kolkata_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms (REVISED) - Regional Office, Bhagalpur.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Bhagalpur_122018_Revised.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms - Regional Office, Bhagalpur.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Bhagalpur_122018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms - Regional Office, Amritsar.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Amritsar_112018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Zonal Office, Kolkata.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_ZOKolkata_102018.pdf' target='_blank'>Read</a></li><li>Selection of Panel of Advocates for conducting cases for the Block Year 2018-20 in respect of Zonal Office, Bandra and Thane.... <a href='../site_docs/PDFs/Updates/SelectionAdvocate_ZOMumbaiThane_102018.pdf' target='_blank'>Read</a></li><li>Notice inviting applications for Empanelment of Auditor Firms for re-audit of PF Accounts of Exempted PF Trusts - Regional Office, Muzaffarpur.... <a href='../site_docs/PDFs/Updates/EmpanelmentAuditor_Muzaffarpur_16102018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms - Regional Office, Patna.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Bihar_2018.pdf' target='_blank'>Read</a></li><li>International Training Programme on Management of Social Security Systems by PDNASS - Last Date Extended upto 15 September, 2018.... <a href='../site_docs/PDFs/Updates/PDNASS_IntlTrgProg_MSSS_082018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms - Regional Office, Kochi.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Kochi_082018.pdf' target='_blank'>Read</a></li><li>International Training Programme on Management of Social Security Systems by PDNASS - Last Date Extended upto 15 August, 2018.... <a href='../site_docs/PDFs/Updates/PDNASS_IntlTrgProg_MSSS_072018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of Advocates - Regional Office, Goa.... <a href='../site_docs/PDFs/Updates/Empanelment_Advocate_Goa_082018.pdf' target='_blank'>Read</a></li><li>Notice Inviting Applications for Empanelment of CA Firms - Regional Office, Jamshedpur.... <a href='../site_docs/PDFs/Updates/EmpanelmentCA_Jamshedpur_082018.pdf' target='_blank'>Read</a></li><li>M/s Synthetics & Chemicals Limited, Bareilly (UPBLY0001151000) Disbursement Scheme; List of Beneficiaries (1998-99).... <a href='../site_docs/PDFs/Updates/Beneficiary_UPBLY1151_98_99.pdf' target='_blank'>Read</a></li><li>M/s Synthetics & Chemicals Limited, Bareilly (UPBLY0001151000) Disbursement Scheme; List of Beneficiaries (1999-2000).... <a href='../site_docs/PDFs/Updates/Beneficiary_UPBLY1151_99_00.pdf' target='_blank'>Read</a></li><li>Empanelment of advocates for EPFO, Rajasthan Zone.... <a href='../site_docs/PDFs/Updates/EmpanelmentAdvocate_RJZone_2018.pdf' target='_blank'>Read</a></li><li>Empanelment of Retired Officers as the Inquiry Officers for conducting Departmental Inquiries.... <a href='../site_docs/PDFs/Updates/HR_Empanelment_InqOff.pdf' target='_blank'>Read</a></li><li>The member services available on EPFO-Mobile App have been migrated to Central Government Mobile App UMANG</li><li>Result of Second National Research Fellowship at PDUNASS.... <a href='../site_docs/PDFs/Updates/PDUNASS_Result__Second_Fellowship.pdf' target='_blank'>Read</a></li><li>M/s Synthetics & Chemicals Limited, Bareilly (UPBLY0001151000) Disbursement Scheme; List of Beneficiaries.... <a href='../site_docs/PDFs/Updates/Beneficiary_List_UPBLY1151.pdf' target='_blank'>Read</a></li><li>Vigilance Awareness Week - Integrity Pledge   (Link available in Miscellaneous Tab).... <a href='../site_docs/PDFs/Updates/IntegrityPledge_CVC_2017.pdf' target='_blank'>Read</a></li><li>Internship Scheme of EPFO - Invitation for Application.... <a href='../site_docs/PDFs/Updates/InternshipScheme_2017.pdf' target='_blank'>Read</a></li><li>Selection Result for Research Fellowship in Social Security at PDUNASS.... <a href='../site_docs/PDFs/Updates/PDUNASS_Selection_ResearchFellowship.pdf' target='_blank'>Read</a></li><li>Gross wages in ECR is now optional. This change in software will be made available from 01/04/2017.</li><li>Software Changes in PMRPY/PMPRPY software applicable from 01/04/2017.... <a href='../site_docs/PDFs/Updates/PMRPY_PMPRPY.pdf' target='_blank'>Read</a></li><li>Ease of doing business - Initiatives by the Ministry of Labour & Employment.... <a href='../site_docs/PDFs/Updates/EaseOfDoingBusiness_MoLE_Initiatives.pdf' target='_blank'>Read</a></li><li>Online Transfer Claim Portal for members started</li><li>A validation tool for ECR-II made available for download.  please validate your ECR files before uploading. (Our Services -> For Employers -> Downloads)</li><li>Please register on https://pmrpy.gov.in/pmrpy for availing pension contribution (8.33%) under Pradhan Mantri Rojgar Protsahan Yojna.</li><li>Employers may pay directly through Internet Banking of PNB, Indian Bank, Allahabad Bank & SBI in addition to Payment Gateway of SBI</li><li>Reference Documents for Unified Portal uploaded on website.... <a href='EPFOUnifiedPortal.php'>Read</a></li><li>For Financial inclusion of workers, all establishments are advised to make timely payment of wages through bank account. Pre-paid cards of suitable denomination can also be used for making part payment.</li><li>Maintenance and migration activities are being carried out on UAN Help Desk Portal.  Services shall remain affected to that extent.</li><li>Presentation - EPF Services for Employers.... <a href='../site_docs/PDFs/Updates/Presentation_ERservices062016.pdf' target='_blank'>Read</a></li><li>EPFO launches Mobile Application for Employers, Employees and Pensioners</li><li>A facility to Employers and Members to register the UAN related queries has been provided.</li><li>Dear Members! Activate your UAN!  EPFO has launched Short Code SMS Services! Get your balances on your mobile phone!.... <a href='../site_docs/PDFs/Updates/EPFO_ShortCodeSMS.pdf' target='_blank'>Read</a></li></ul>                            </div>
+                        </div>
+                        <div class="info panel-footer" style="text-align:right;"> 
+                            <a href="Updates.php">See all...</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="right_accordian" style="display:none;" >
+                    <div id="accordion_mainpage" >					
+					<!-- Start part -->	
+						<div style="padding:0px; ">
+						<div class="panel-heading" >
+						<!--<img style="width:24px;height:24px;" src="../images/info.png"></img>&nbsp;-->
+						<b>&nbsp;&nbsp;&nbsp;<a href="#" style="color:blue;font-weight: bold;">About Us</a></b>
+						</div>
+						</div>
+						
+                        <div class="panel-body" >
+                            <div class="info" style="max-height:400px; line-height: 1.5em;" >
+
+                                <ul style="margin: 1px 10px 1px;padding-left: 10px;line-height:20px" class="img_col">
+                                    <li>EPFO is one of the World's largest Social Security Organisations in terms of clientele and the volume of financial transactions undertaken.  At present it maintains 19.34 crore accounts (Annual Report 2016-17) pertaining to its members. </li>
+									
+									<li>The Employees' Provident Fund came into existence with the promulgation of the <a href="../site_docs/PDFs/Downloads_PDFs/ACT_081951_15111951.pdf" target="_blank">Employees' Provident Funds Ordinance</a> on the 15th November, 1951. It was replaced by the Employees' Provident Funds Act, 1952. <a href="../site_docs/PDFs/Downloads_PDFs/EPF_Bill_1952.pdf" target="_blank">The Employees' Provident Funds Bill</a> was introduced in the Parliament as Bill Number 15 of the year 1952 as a Bill to provide for the institution of provident funds for employees in factories and other establishments. The Act is now referred as the <a href="../site_docs/PDFs/Downloads_PDFs/EPFAct1952.pdf" target="_blank">Employees' Provident Funds & Miscellaneous Provisions Act, 1952</a> which extends to the whole of India. The Act and Schemes framed there under are administered by a tri-partite Board known as the Central Board of Trustees, Employees' Provident Fund,consisting of representatives of Government (Both Central and State), Employers, and Employees.</li>
+									<li><a href="Our_Board.php">The Central Board of Trustees</a> administers a contributory provident fund, pension scheme and an insurance scheme for the workforce engaged in the organized sector in India. The Board is assisted by the Employees’ PF Organization (EPFO), consisting of offices at 135 locations across the country. The Organization has a well equipped training set up where officers and employees of the Organization as well as Representatives of the Employers and Employees attend sessions for trainings and seminars.The EPFO is under the administrative control of Ministry of Labour and Employment, Government of India <a href="../site_docs/PDFs/Downloads_PDFs/abr18.pdf" target="_blank">(click here)</a><br>
+									<a href="../site_docs/PDFs/Downloads_PDFs/OrgChart_e.pdf" target="_blank">EPFO Organisation Structure</a> (Annual Report 2015-16) 
+									</li>
+									<li>The Board operates three schemes - EPF Scheme 1952, Pension Scheme 1995 (EPS) and Insurance Scheme 1976 (EDLI).</li></ul>
+                            </div>
+                        </div>
+																				
+					
+                        <div style="padding:0px;">
+                            <div class="panel-heading">
+                                
+								<b>&nbsp;&nbsp;&nbsp;<a href='#' style="color:blue;font-weight: bold;">Vision</a></b>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                           
+                            <div class="info text-justify" style="max-height:400px;padding-left: 15px;padding-right: 15px;padding-top: 2px; padding-bottom: 10px;">
+							Employees' Provident Fund Organisation has a vision to reposition itself as a world class Social Security Organisation providing futuristic services meeting the growing requirements of all categories of its stakeholders. EPFO Vision 2030 envisages:
+                                <ul>
+                                    <li>Universal Social Security Coverage on mandatory basis by way of Provident Fund, Pension and Life Insurance for all workers of the country</li>
+                                    <li>Online Services for all EPFO benefits with State-of-the-Art Technology</li>
+                                    <li>Implementation of policies for a benefit structure with adequate support level of social security</li>
+                                </ul>                    
+                        </div>
+					</div>
+					
+						<div style="padding:0px;">
+                            <div class="panel-heading" >
+                                
+								<b>&nbsp;&nbsp;&nbsp;<a href="#" style="color:blue;font-weight: bold;">Mission</a></b>
+                            </div>
+						</div>
+                        <div class="panel-body">
+                            
+                            <div class=" info text-justify" style="max-height:400px;padding-left: 15px;padding-right: 15px;padding-top: 2px; padding-bottom: 10px; line-height: 1.5em;">
+                             Our mission is to extend the reach and quality of publicly managed old age income security programs through consistent and ever-improving standards of compliance and benefit delivery in a manner that wins the approval and confidence of members in our methods, fairness, honesty and integrity, thereby contributing to the economic and social well-being of the nation.<br/>
+							 The technology-driven and hassle-free services are envisaged to improve the level of trust on the functioning of EPFO include:
+						<ul>			
+							<li>Provide minimum interface but maximum output from the EPFO offices</li>
+							<li>Improved and reliable facility for on line services</li>
+							<li>Real time monthly updation of member accounts</li>
+							<li>Online access to member account</li>
+							<li>Ensure one Employee one EPF account</li>
+							<li>Reduce the time for settlement of claims from the present 20 days to 3 days</li>
+							<li>Facilitate the ease of compliance</li>
+							<li>Encourage and promote voluntary compliance</li>
+							<li>Keep up the vigil and ensure proper compliance by all establishments</li>
+							<li>Further improvise easy interaction with EPFO to obtain information or seek redressal</li>
+						</ul>                    
+
+                        </div>
+                            
+                        </div>
+           
+							<div style="padding:0px;">
+                            <div class="panel-heading">
+                               
+								<b>&nbsp;&nbsp;&nbsp;<a href='#' style="color:blue;font-weight: bold;">EPFO celebrates 66th Foundation Day - 1st Nov. 2018</a></b>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-body">
+                          
+                            <div class="info text-justify " style="max-height:400px;padding-left: 15px;padding-right: 15px;padding-top: 2px; padding-bottom: 10px;">
+							
+                                <ul style="padding-left:150px; " >
+                                   
+									
+                                </ul>
+								<span style="margin-left:40px;font-weight:bold;" class="img_col"><a href="../site_docs/PDFs/EPFO_FD/Press_Release_E.pdf" target="_blank">Press Release</a></span>
+									<span style="margin-left:40px;font-weight:bold" class="img_col"><a href="../site_docs/PDFs/EPFO_FD/EPFO_Journey.pdf" target="_blank">A Journey Well Travelled</a></span> <span style="margin-left:40px;font-weight:bold;"><a href="EventWise_PhotoGallery2.php?eventID=E179">Photo Gallery</a></span><br>
+									
+									<span><br>66th foundation day of Employees’ Provident Fund Organisation (EPFO) was celebrated on 1st November 2018. The day marked the milestone of roll out of the Employees’ Provident Fund Scheme on 1st November 1952 - the first social security scheme under the EPF Act. </span><br>
+
+									<span><br>EPFO through its journey of 66 years today is a reliable arm of the Government in social security. Beginning its journey with a few lakh beneficiaries, it now services more than 4.5 crore contributing work force, engaged in around 6 lakh contributing establishments. With 63 lakh pensioners, it is the 21st largest pension fund globally as per Willis Towers Watson report 2017.</span><br>
+				
+									
+	<!--<video width="525" height="340"  preload="none" controls ">
+  <source src="../video/epfo.mp4" type="video/mp4">-->
+
+								
+                        </div>
+						<!-- end part -->
+					</div>
+					
+						
+						<div style="padding:0px;">
+                            <div class="panel-heading" >
+							<b>&nbsp;&nbsp;&nbsp;<a href="#" style="color:blue;font-weight: bold;">EPFO Schemes</a></b>
+                            </div>
+						</div>
+                        <div class="panel-body">
+                           
+                            <div class="info" style="max-height:400px; line-height: 1.5em;" >
+                             <ul><li><b><a href="../site_docs/PDFs/Downloads_PDFs/EPFScheme.pdf" target="_blank">EPF Scheme 1952</a></b>
+                                        <ul>
+                                            <li>Accumulation plus interest upon retirement and death</li>
+                                            <li>Partial withdrawals allowed for education, marriage, illness and house construction </li>
+											<li>Housing Scheme for EPFO Members to achieve Hon'ble Prime Minister's Vision of housing to all Indians by 2022</li>
+                                        </ul>
+                                    </li></ul>
+                                    <ul><li><b><a href="../site_docs/PDFs/Downloads_PDFs/EPS95.pdf" target="_blank">Pension Scheme 1995 (EPS)</a></b>
+                                        <ul>
+                                            <li>Monthly benefit for superannuation/retirement, disability, survivor, widow(er) and children</li>
+                                            <li>Minimum pension on disablement</li>
+                                            <li>Past service benefit to participants of erstwhile Family Pension Scheme, 1971</li>
+                                        </ul>
+                                    </li></ul>
+                                    <ul><li><b><a href="../site_docs/PDFs/Downloads_PDFs/EDLI_1976.pdf" target="_blank">Insurance Scheme 1976 (EDLI)</a></b>
+                                        <ul>
+                                            <li>Benefit provided in case of death of an employee who was a member of the scheme at the time of death</li>
+                                            <li>Benefit amount 20 times of the wages. Maximum benefit of 6 lakh. </li>
+                                        </ul>	
+                                    </li></ul>
+                              
+                        </div>
+                            
+                        </div>
+						
+				</div>
+				</div>
+
+                </div>
+
+                <div class="blnk2"></div>
+         <!--   </div>  -->
+            <!-- Middle section ends-->
+
+
+            <div id="bottom_sec">    <!-- Bottom section -->
+
+                <div style="clear:both;"></div><!-- Div is required for nullyfying the effect of floating divs -->
+                <!-- Buttons -->
+                <div class="button_bar img_col" >
+                    <div class="leftm_butn"></div>
+                    
+					<a href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" style="color: white;"><div class="imp_butn" id="bt3" style="line-height: 43px;">Employers Portal</div></a>
+                    <!-- <a href="EPFO_IN_NEWS.php"><div class="imp_butn" id="bt1" style="line-height: 50px;">EPFO in News</div></a>-->
+                    <a href="http://pmrpy.gov.in/pmrpy/" target="_blank" id="imp_out4"><div class="imp_butn" id="bt2" style="line-height: 25px; margin-left:10px">Pradhan Mantri Rojgar<br/> Protsahan Yojana</div></a>
+                    <a href="https://web.umang.gov.in/web/#/" target="_blank" id="imp_out"><div class="imp_butn" id="bt4" style="line-height: 50px; margin-left:10px">mGovernance</div></a>
+                    <a href="Press_Release.php"><div class="imp_butn" id="bt5" style="line-height: 43px; margin-left:10px">EPFO's Press Release</div></a>
+                    <a href="Photo_Gallery.php"><div class="imp_butn" id="bt6" style="line-height: 43px; margin-left:10px">Photo Gallery</div></a>
+                    <div class="rightm_butn"></div>
+                </div>
+
+                <div id="rel_site" style="display:none;">
+                    <ul>
+					    <li><img src="../images/NCS_LOGO_2.png" alt="ncs" /><a href="https://www.ncs.gov.in/Pages/default.aspx" target="blank">National Career service</a></li>
+                        <li><img src="../images/emblem.png" alt="MOLE" /><a href="http://labour.gov.in" target="blank">Ministry of Labour & Employment</a></li>
+                        <li><img src="../images/ESIC_Logo1.png" alt="ESIC" /><a href="http://esic.nic.in" target="blank">Employees' State Insurance Corporation</a></li>
+					
+                        <li><img src="../images/ILO1.png" alt="ILO" /><a href="http://ilo.org"  class="external" title="External Non-Government website that opens in a new window" target="_blank">International Labour Organisation</a></li>
+                        <li><img src="../images/Emblem.jpg" alt="LB" /><a href="http://labourbureau.gov.in" target="blank">Labour Bureau</a></li>
+                        <li><img src="../images/ISSA.png" alt="ISSA" /><a href="http://issa.int" class="external" title="External Non-Government website that opens in a new window" target="_blank">International Social Security Association</a></li>
+                        <li><img src="../images/emblem.png" alt="MOLE" /><a href="https://shramsuvidha.gov.in/" target="blank">Shram Suvidha Portal-MOL&E</a></li>
+                    </ul>    
+                </div>
+                <div id="gov_india">
+                    <a href="http://www.nvsp.in/" target="_blank" style="width:17%;"><img src="../images/nvsp3.png"  alt="National Voters' Service Portal" /></a>
+                    <a href="../site_en/DigiLocker.php" target="_blank" style="width:15%;"><img src="../images/digilocker.png"  alt="DigiLocker-Yours Document Anytime,Anywhere"  /></a>
+                    <a href="https://www.facebook.com/socialepfo/" target="_blank" id="imp_out5" style="width:13%;"><img src="../images/facebook_logo.png"  alt="Find Us on Facebook" /></a>
+                    <a href="https://twitter.com/socialepfo/" target="_blank" id="imp_out6" style="width:13%;"><img src="../images/twitter_logo.png"  alt="Follow Us on Twitter" /></a>
+                    <a href="http://india.gov.in/" target="_blank" style="width:20%;"><img src="../images/nationalportalnews.png"  alt="National Portal" /></a>
+					<a href="https://indiacode.nic.in/" target="_blank" style="width:15%;"><img src="../images/indiacodelogo1.png"  alt="India code" /></a>
+					
+                </div>
+
+            </div>                   <!-- Bottom section ends-->
+        </div>
+        <div style="clear:both;"></div>
+        <div id="footer">
+            
+
+<footer>
+<div id="footer_div">
+<div id="footer_link" class="img_col"><a href="index.php">Home </a><span class="vertical_bar">|</span> <a href="Contact_us.php">Contact Us </a><span class="vertical_bar">|</span> <a href="SiteMap.php">Sitemap </a><span class="vertical_bar">|</span><a href="Disclaimer.php">Disclaimer</a> <span class="vertical_bar">|</span><a href="Copyright.php">Copyright Policy</a><span  class="vertical_bar">|</span><a href="Hyperlinking_Policy.php">Hyperlinking Policy </a><span class="vertical_bar">|</span> <a href="Terms_Of_Use.php">Terms Of Use </a><span class="vertical_bar">|</span> <a href="Feedback.php"> Feedback</a><span  class="vertical_bar">|</span><a href="Privacy_Policy.php"> Privacy Policy</a></div>
+</div>
+<p class="ends" id="end_bar"><span id="copyrt" style=margin-left:60px;>&copy; Employees' Provident Fund Organisation, India</span>
+<span style="float:left;
+margin:7px 2% 4px -4%;">Last updated: 28-Nov-2019</span>
+<span id='counter' style=margin-right:70px;>Visitor Count (w.e.f 06-08-2016): 460606188</span></p>
+</footer>
+
+        </div>
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+
+
+
+                $(".dropdown").hover(
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("4000");
+                            $(this).toggleClass('open');
+                        },
+                        function () {
+                            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("4000");
+                            $(this).toggleClass('open');
+                        }
+                );
+
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    namespace: "flex-", //{NEW} String: Prefix string attached to the class of every element generated by the plugin
+                    selector: ".slides > li", //{NEW} Selector: Must match a simple pattern. '{container} > {slide}' -- Ignore pattern at your own peril
+                    easing: "swing", //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+                    direction: "horizontal", //String: Select the sliding direction, "horizontal" or "vertical"
+                    reverse: false, //{NEW} Boolean: Reverse the animation direction
+                    animationLoop: true, //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+                    smoothHeight: false, //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode  
+                    startAt: 0, //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+                    slideshow: true, //Boolean: Animate slider automatically
+                    slideshowSpeed: 7000, //Integer: Set the speed of the slideshow cycling, in milliseconds
+                    animationSpeed: 600, //Integer: Set the speed of animations, in milliseconds
+                    initDelay: 0, //{NEW} Integer: Set an initialization delay, in milliseconds
+                    randomize: false, //Boolean: Randomize slide order
+
+                    // Usability features
+                    pauseOnAction: true, //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+                    pauseOnHover: true, //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+                    useCSS: true, //{NEW} Boolean: Slider will use CSS3 transitions if available
+                    touch: true, //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+                    video: false, //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+
+                    // Primary Controls
+                    controlNav: false, //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+                    directionNav: true, //Boolean: Create navigation for previous/next navigation? (true/false)
+                    prevText: "Previous", //String: Set the text for the "previous" directionNav item
+                    nextText: "Next",
+                });
+
+
+
+                $('ul.dropdown-menu.mega-dropdown-menu').on('click', function (event) {
+                    //The event won't be propagated to the document NODE and 
+                    // therefore events delegated to document won't be fired
+                    event.stopPropagation();
+                });
+
+
+                var wow = new WOW(
+                        {
+                            boxClass: 'wow', // animated element css class (default is wow)
+                            animateClass: 'animated', // animation css class (default is animated)
+                            offset: 0, // distance to the element when triggering the animation (default is 0)
+                            mobile: true, // trigger animations on mobile devices (default is true)
+                            live: true, // act on asynchronously loaded content (default is true)
+                            callback: function (box) {
+                                // the callback is fired every time an animation is started
+                                // the argument that is passed in is the DOM node being animated
+                            },
+                            scrollContainer: null // optional scroll container selector, otherwise use window
+                        }
+                );
+                wow.init();
+
+                $('#news_custom').easyTicker({
+                    direction: 'up',
+                    easing: 'jswing',
+                    speed: 'slow',
+                    interval: 2000,
+                    height: 'auto',
+                    visible: 6,
+                    mousePause: 1,
+                    controls: {
+                        up: '.up',
+                        down: '.down',
+                        toggle: '.toggle',
+                        stopText: 'Stop !!!'
+                    }
+                }).data('easyTicker');
+
+                var dd = $('#rel_site').easyTicker({
+                    direction: 'up',
+                    easing: 'jswing',
+                    speed: 'slow',
+                    interval: 2000,
+                    height: 'auto',
+                    visible: 1,
+                    mousePause: 1,
+                    controls: {
+                        up: '.up',
+                        down: '.down',
+                        toggle: '.toggle',
+                        stopText: 'Stop !!!'
+                    }
+                }).data('easyTicker');
+
+
+            });
+
+            document.onkeydown = function (e) {
+                if (e.ctrlKey &&
+                        (e.keyCode === 67 ||
+                                e.keyCode === 86 ||
+                                e.keyCode === 85 ||
+                                e.keyCode === 117)) {
+                    return false;
+                } else {
+                    return true;
+                }
+            };
+
+        </script>
+
+        <script>
+            $(function () {
+                $("#accordion_mainpage").accordion({
+                    heightStyle: "auto",
+                    active: 0
+                });
+            });
+        </script>
+<script type="text/javascript">
+document.getElementById('topflex_sec').style.display='block';
+document.getElementById('hideThisFromNonJs').style.display='block';
+document.getElementById('right_accordian').style.display='block';
+document.getElementById('rel_site').style.display='block';
+document.getElementById('left_accordian').style.width='41.4%';
+
+</script>
+       
+		<div id="myModal" class="modal img_col">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <p>Know Your Balance</p>
+    </div>	
+<div class="modal-body">
+<pre style="font-size:12px;color:#000000"><a href="../site_docs/PDFs/MiscPDFs/Missed_Call_Service.pdf" target="_blank"><img style="width:12px; height:9px;top:20px;margin-top:5px;" src="../images/bullet7.gif" alt="bullet" >Give a Missed call to 
+  01122901406</a></pre><Pre style="font-size:12px;color:#000000"><img style="width:12px; height:9px" src="../images/bullet7.gif" alt="bullet" ><a href='../site_docs/PDFs/MiscPDFs/Short_Code_SMS_Service.pdf' target="_blank">SMS EPFOHO&lt;UAN&gt;&lt;LAN&gt; &nbsp; 
+  to 7738299899</a></pre>
+    </div> 	
+  </div>
+</div>
+<script>
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+$(document).ready( function() {
+    modal.style.display = "block";
+})
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>	
+<div id="myModal1" class="modal1 img_col">
+  <div class="modal-content1 img_col">
+   <span class="close1 img_col">&times;</span>
+<img style="width:800px;height:500px;margin-top:82px;border:3px solid grey" alt="Alert Box"  src="../images/alert_e.jpg"><p class="blinking1" style="margin-top:-370px;color:red !important;margin-left:330px;font-size:20px !important">ALERT</p> 
+
+  </div>
+</div>
+
+
+
+<script>
+var modal1 = document.getElementById('myModal1');
+var span = document.getElementsByClassName("close1")[0];
+$(document).ready(function() {
+    modal1.style.display = "block";
+})
+span.onclick = function() {
+    modal1.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+
+</script>	
+    </body>
+    
+
+</html>

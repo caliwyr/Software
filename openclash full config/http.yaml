@@ -1,0 +1,9 @@
+  - name: "http"
+    type: http
+    server: server
+    port: 443
+    # username: username
+    # password: password
+    # tls: true # https
+    # skip-cert-verify: true
+    # sni: custom.com

@@ -1,0 +1,9 @@
+proxies:
+- name: "Direct"
+  type: trojan
+  server: id1-trojan.bonds.id
+  port: 443
+  password: 330743d0-dd7a-11eb-a324-1239d0255272
+  udp: true
+  sni: isibug.com
+  skip-cert-verify: true

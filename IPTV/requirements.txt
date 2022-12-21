@@ -1,0 +1,6 @@
+youtube-dl
+requests
+beautifulsoup4
+fastapi
+uvicorn
+schedule

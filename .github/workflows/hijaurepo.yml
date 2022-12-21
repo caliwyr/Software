@@ -1,0 +1,53 @@
+# 
+
+name: CI
+
+# 
+on:
+  # 
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+
+  pull_request:
+    branches: [ main ]
+
+  # 
+
+# 
+jobs:
+  # 
+  build:
+    # 
+    runs-on: ubuntu-latest
+
+    # 
+    steps:
+      # 
+      - uses: actions/checkout@v2
+
+      # 
+      - name: first commit
+        run: date >> -
+
+      # 
+      - name: second commit
+        run: |
+          git add .
+          git config user.name 'caliwyr'
+          git config user.email '60120589+caliwyr@users.noreply.github.com'
+          git commit -m "-"
+          git push 
+          
+      - name: third commit
+        run: date >> -
+        
+      - name: finishing
+        run: |
+          git add .
+          git config user.name 'caliwyr'
+          git config user.email '60120589+caliwyr@users.noreply.github.com'
+          git commit -m "-"
+          git push 

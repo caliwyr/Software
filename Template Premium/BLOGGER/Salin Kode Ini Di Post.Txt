@@ -1,0 +1,26 @@
+Masukan Kode ini di post 
+
+
+
+<div class="productPhoto">
+<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 📷 Photo  -->Masukan Foto<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ / 📷 Photo -->
+</div>
+<div class="productDetail" data-stock="on">
+<span class="productPrice" data-discount-percent="0" itemprop="price">10000</span>
+<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 💬 Detail Description-->
+<br />
+<div class="detailDescription">
+<b>Detail Produk</b>
+<br />
+<ul>
+<li>Artikel 500 kata</li>
+<li>Artikel berkulitas</li>
+<li>HD Resolusi</li>
+<li>Bonus mockup software box</li>
+</ul>
+<small><b>Desain Software Box:</b> Software box biasanya digunakan untuk mempresentasikan apa yang ada dalam suatu software atau produk digital, Anda bisa menggunakan software box saat melakukan promosi atau marketing terhadap produk digital ini.&nbsp;</small><br />
+<small><br /></small>
+<small>Jika anda ingin memesan desain software box ini, anda bisa mengisi form deskripsi pada saat pemesanan dengan melengkapi informasi berikut ini: Judul Software Box Kata-Kata yang akan di tuangkan di Software Box Warna (Optional) Gambar (Optional).</small>
+</div>
+<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ / 💬 Detail Description-->
+</div>

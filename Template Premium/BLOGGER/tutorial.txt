@@ -1,0 +1,10 @@
+Dokumne toko online 
+
+1.Instal template dengan cara
+klik tema >>> backup/ pulihkan >>>browser pilih file template toko online >>> upload
+2. posting jualan
+klik setelan >>> lainnya >>> impor konten >>> pilih file backup dan upload
+3. buat halaman keranjang
+klik halaman >>> halaman baru >>>> tulis judul halaman Troli Belajaan Saya >>> pada html pastekan kode  troli.txt >>> publik
+4. buat halaman bayar 
+klik halaman >>> halaman baru >>> tulis judul halaman Bayar Sekarang >>> pada html pastekan kode bayar.txt >>> publik

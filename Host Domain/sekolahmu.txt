@@ -1,0 +1,23 @@
+New Scanning Bug Pelajar 2020
+
+Created Boychongzen aka Xroot
+
+
+sekolah.mu
+
+cek.sekolah.mu
+
+dev.sekolah.mu
+
+event.sekolah.mu
+
+prakerja.sekolah.mu
+
+staging.sekolah.mu
+
+war.sekolah.mu
+
+war-prod.sekolah.mu
+
+war-test.sekolah.mu
+

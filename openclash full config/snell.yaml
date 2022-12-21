@@ -1,0 +1,9 @@
+  - name: "snell"
+    type: snell
+    server: server
+    port: 44046
+    psk: yourpsk
+    # version: 2
+    # obfs-opts:
+      # mode: http # or tls
+      # host: bing.com

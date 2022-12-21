@@ -1,0 +1,244 @@
+---
+proxy-providers:
+  Game:
+    type: file
+    path: "./proxy_provider/Proxies-Game.yaml"
+    health-check:
+      enable: false
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Sosmed:
+    type: file
+    path: "./proxy_provider/Proxies-Sosmed.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Stream:
+    type: file
+    path: "./proxy_provider/Proxies-Stream.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  Browser:
+    type: file
+    path: "./proxy_provider/Proxies-Browser.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+proxy-groups:
+- name: Game
+  type: url-test
+  disable-udp: false
+  proxies:
+  - DIRECT
+  use:
+  - Game
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: Sosmed
+  type: url-test
+  disable-udp: false
+  proxies:
+  - DIRECT
+  use:
+  - Sosmed
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: Stream
+  type: url-test
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - Stream
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: Browser
+  type: url-test
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - Browser
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+- name: LB Proxies and Rules
+  type: load-balance
+  strategy: consistent-hashing
+  disable-udp: false
+  proxies:
+  - Game
+  - Sosmed
+  - Stream
+  - Browser
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+redir-port: 7892
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: reyre
+bind-address: "*"
+external-ui: "/usr/share/openclash/dashboard"
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 127.0.0.1:7874
+  nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  fallback:
+  - https://cloudflare-dns.com/dns-query
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  - tls://8.8.8.8:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 0.0.0.0/8
+    - 10.0.0.0/8
+    - 100.64.0.0/10
+    - 127.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.0.0.0/24
+    - 192.0.2.0/24
+    - 192.88.99.0/24
+    - 192.168.0.0/16
+    - 198.18.0.0/15
+    - 198.51.100.0/24
+    - 203.0.113.0/24
+    - 224.0.0.0/4
+    - 240.0.0.0/4
+    - 255.255.255.255/32
+    domain:
+    - "+.google.com"
+    - "+.facebook.com"
+    - "+.youtube.com"
+    - "+.githubusercontent.com"
+    - "+.pubgmobile.com"
+    - "+.mobilelegends.com"
+    - "+.ff.mobile.com"
+  fake-ip-filter:
+  - "*.lan"
+  - time.windows.com
+  - time.nist.gov
+  - time.apple.com
+  - time.asia.apple.com
+  - 0.id.pool.ntp.org
+  - 1.id.pool.ntp.org
+  - 2.id.pool.ntp.org
+  - 3.id.pool.ntp.org
+  - "*.ntp.org.cn"
+  - "*.openwrt.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - time.ustc.edu.cn
+  - pool.ntp.org
+  - ntp.ubuntu.com
+  - ntp.aliyun.com
+  - ntp1.aliyun.com
+  - ntp2.aliyun.com
+  - ntp3.aliyun.com
+  - ntp4.aliyun.com
+  - ntp5.aliyun.com
+  - ntp6.aliyun.com
+  - ntp7.aliyun.com
+  - time1.aliyun.com
+  - time2.aliyun.com
+  - time3.aliyun.com
+  - time4.aliyun.com
+  - time5.aliyun.com
+  - time6.aliyun.com
+  - time7.aliyun.com
+  - "*.time.edu.cn"
+  - time1.apple.com
+  - time2.apple.com
+  - time3.apple.com
+  - time4.apple.com
+  - time5.apple.com
+  - time6.apple.com
+  - time7.apple.com
+  - time1.google.com
+  - time2.google.com
+  - time3.google.com
+  - time4.google.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "*.msftconnecttest.com"
+  - "*.msftncsi.com"
+  - localhost.ptlogin2.qq.com
+  - "+.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.microsoft.com
+  - "+.xboxlive.com"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "+.battlenet.com.cn"
+ipv6: false
+profile:
+  store-selected: true
+rules:
+- RULE-SET,Browser,Browser
+- RULE-SET,Direct,DIRECT
+- RULE-SET,Sosmed,DIRECT
+- RULE-SET,Game,DIRECT
+- RULE-SET,Stream,Stream
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- MATCH,GLOBAL
+rule-providers:
+  Sosmed:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Rule-Sosmed.yaml"
+  Stream:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Rule-Stream.yaml"
+  Game:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Rule-Game.yaml"
+  Browser:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Rule-Browser.yaml"
+  Direct:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Direct.yaml"
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53

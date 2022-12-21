@@ -1,0 +1,7 @@
+proxies:
+- name: "socks"
+  type: socks5
+  server: server
+  port: 443
+  tls: true, 
+  skip-cert-verify: true

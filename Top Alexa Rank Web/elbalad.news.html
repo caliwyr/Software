@@ -1,0 +1,3722 @@
+
+<!DOCTYPE html>
+<html>
+
+<head id="ctl00_Head1"><title>
+	صدى البلد
+</title><link rel="shortcut icon" href="/favicon.ico" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+
+<meta property="og:locale" content="ar_AR" /><meta name="twitter:site" content="@el_balad" /><meta name="keywords" content=" " /><meta property="fb:app_id" content=" " /><meta property="fb:admins" content=" " /><link rel="apple-touch-icon" sizes="57x57" href="/themes/balad/favicon/apple-icon-57x57.png" /><link rel="apple-touch-icon" sizes="60x60" href="/themes/balad/favicon/apple-icon-60x60.png" /><link rel="apple-touch-icon" sizes="72x72" href="/themes/balad/favicon/apple-icon-72x72.png" /><link rel="apple-touch-icon" sizes="76x76" href="/themes/balad/favicon/apple-icon-76x76.png" /><link rel="apple-touch-icon" sizes="114x114" href="/themes/balad/favicon/apple-icon-114x114.png" /><link rel="apple-touch-icon" sizes="120x120" href="/themes/balad/favicon/apple-icon-120x120.png" /><link rel="apple-touch-icon" sizes="144x144" href="/themes/balad/favicon/apple-icon-144x144.png" /><link rel="apple-touch-icon" sizes="152x152" href="/themes/balad/favicon/apple-icon-152x152.png" /><link rel="apple-touch-icon" sizes="180x180" href="/themes/balad/favicon/apple-icon-180x180.png" /><link rel="icon" type="image/png" sizes="192x192" href="/themes/balad/favicon/android-icon-192x192.png" /><link rel="icon" type="image/png" sizes="32x32" href="/themes/balad/favicon/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="96x96" href="/themes/balad/favicon/favicon-96x96.png" /><link rel="icon" type="image/png" sizes="16x16" href="/themes/balad/favicon/favicon-16x16.png" /><link rel="manifest" href="/themes/balad/favicon/manifest.json" /><meta name="msapplication-TileColor" content="#ffffff" /><meta name="msapplication-TileImage" content="/themes/balad/favicon/ms-icon-144x144.png" /><meta name="theme-color" content="#660099" /><link rel="stylesheet" href="/themes/balad/rs/royalslider.css" /><link rel="stylesheet" href="/themes/balad/rs/skins/default/rs-default.css?r=3" /><link href="/themes/balad/css/bootstrap.css?r=19" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="/themes/balad/css/bootstrap-rtl.min.css" /><link href="/themes/balad/css/jquery.smartmenus.bootstrap.css?r=3" rel="stylesheet" /><link rel="stylesheet" href="/themes/balad/css/font-awesome.min.css" /><link rel="stylesheet" href="/themes/balad/css/owl.carousel.css" /><link rel="stylesheet" href="/themes/balad/css/owl.theme.default.min.css" /><link rel="stylesheet" href="/themes/balad/slick/slick-theme.css?" /><link rel="stylesheet" href="/themes/balad/css/design.css?r=6.1" />
+<script src="/themes/balad/js/modernizr.js?r=1"></script>
+<script type="text/javascript" src="/themes/balad/js/jquery.js"></script>
+<script type="text/javascript" src="/themes/balad/slick/slick.min.js"></script>
+<script type="text/javascript">
+			$(document).ready(function(){
+				
+				 $('.tp-slider').slick({
+					   rtl: true,
+						arrows: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					  autoplay: true,
+				  autoplaySpeed:4000,
+					fade: false,
+					infinite: false,
+				  asNavFor: '.tp-nav',
+					 
+					 lazyLoad: 'ondemand', 
+				 
+});
+				
+				
+$('.tp-nav').slick({
+	    rtl: true,
+    asNavFor: '.tp-slider',
+    dots: false,
+    centerMode: false,
+    infinite: false,
+arrows:true,
+   autoplay: true,
+  autoplaySpeed: 4000,
+    focusOnSelect: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    lazyLoad: 'ondemand',
+    responsive: [
+
+        {
+            breakpoint:320,
+            settings: {
+                slidesToShow: 3,
+				    arrows: true,
+               slidesToScroll: 1,
+                //infinite: true,
+                //   dots: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+				    arrows: true,
+                 slidesToScroll: 1,
+                //infinite: true,
+                //   dots: true
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow:6,
+				    arrows: true,
+                 slidesToScroll: 1,
+                //infinite: true,
+                //   dots: true
+            }
+        }
+    ]
+});
+				
+			});
+			
+			
+			</script>
+<script>
+ $(document).ready(function(e) {
+     var oldPlace3 = $(".block.oldplace");
+     var newPlace3 = $(".block.newplace ");
+  
+	var movable3 = $(".adplcemovable");
+ 
+	var ww2= $(window).width();
+	
+ 	if(ww2 > 992) {
+		
+ 	    movable3.appendTo(oldPlace3);
+ 	    console.log("moved to old place 3 because window larger than 992px");
+				} else {
+ 	    movable3.appendTo( newPlace3);
+ 	    console.log("moved to new place 3 ");
+				}
+ 
+ 
+ });
+        </script>
+<script>
+
+    $(document).ready(function () {
+        $('.adplace,.adv300').each(function (i, o) { var cc = $(o).children().length; try { if (cc <= 0) { $(o).css({ display: 'none' }); } else { var ta = $(o).find('a'); if (ta.attr('href').indexOf('&ifr=1') > -1) { ta.find('img').attr('alt', ''); ta.addClass('iframe'); ta.fancybox({ autoDimensions: false, width: 750, height: 500 }); } } } catch (e) { } })
+    });
+
+</script>
+<style>
+        .tp-nav, .tp-slider {
+            max-height:0;
+            overflow:hidden;
+        }
+        .slick-initialized.slick-slider{
+            max-height:none;
+        }
+
+        img[rel="nofollow"] {
+            display:none;
+        }
+        .block.oldplace , .block.newplace {
+            float: right;
+            width: 100%;
+            margin-bottom: 10px;
+            border:0;
+        }
+
+
+    </style>
+<style>
+       .mob-header {
+           float: right;
+           width: 100%;
+           display: none;
+           position:relative;
+           z-index:999999999;
+           margin-bottom:15px;
+       }
+       .mob-header .top {
+           float: right;
+           width:100%;
+           padding: 2px 0;
+           background:#4b4b4b;
+       }
+
+       .mob-header .top .msocial {
+           float: right;
+           text-align:  center;
+
+          
+       }
+       
+         .mob-header .top .msocial a {
+             display: inline-block;
+             width: 24px;
+             height: 24px;
+             border-radius: 50%;
+             margin: 3px;
+             line-height: 24px;
+             text-align: center;
+             color:#fff;
+         }
+
+        .mob-header .mid {
+            float: right;
+            width: 100%;
+            background: #f2f2f2;
+            padding: 5px 0;
+        }
+
+        .mob-header .mid .admin {
+           width: 50%; 
+           float: right;
+        color:#000;
+           text-align: center;
+
+
+        }
+        #Mmenu {
+            float: right;
+            width: 100%;
+            max-height: 80vh;
+            overflow:auto;
+            background:#454444;
+        }
+
+           #Mmenu ul li  a  {
+               font-weight: bold;
+               font-family: sans-serif !important;
+               font-size: 16px;
+               color:#fff;
+                   border-bottom: 1px solid #333;
+    padding: 5px 7px;
+           }
+
+              #Mmenu ul li  a:hover ,    #Mmenu ul li  a:focus{
+               color:#000;
+           }
+
+            .mob-header .mid .admin  .title {
+                float: right;
+                width: 100%;
+                text-align: center;
+                line-height:14px;
+                font-size: 12px;
+                font-family: sans-serif  !important;
+            }
+            .mob-header .mid .admin  .name {
+                float: right;
+                width: 100%;
+                text-align: center;
+                font-weight:bold;
+                font-size: 22px;
+                line-height:18px;
+                font-family: sans-serif  !important;
+            }
+            
+
+        #search-mobile {
+            float: right;
+            width: 100%;
+            padding: 5px 15px;
+            background: #394c54;
+            position: relative;
+        }
+	   #search-mobile .fa {
+		color: #fff !important;
+	}
+	   #search-mobile .card {
+		background: transparent;
+		border: 0;
+		border-radius: 0;
+	}
+            #search-mobile .card-body {
+                padding: 10px;
+                border: 0;
+                background: transparent;
+                border-radius: 0;
+            }
+		
+	   #search-mobile	.form-control {
+			border-radius: 0;
+		 
+			border: 0;
+		 
+		}
+		 
+	   #search-mobile	.btn {
+			border-radius: 0 !important ; 
+	    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+		}
+ 
+ .mob-header  .bar {
+     float: right;
+     width: 100%;
+     height: 50px;
+     text-align: center;
+     background: #fff;
+     	    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    position:relative;
+    z-index:333333;
+    
+    
+ }
+
+ a.fb {
+  background: #3b5998;
+}
+
+  a.fb:hover {
+  background: #f4f4f4;
+  color: #3b5998;
+}
+
+  a.tw {
+  background: #00aced;
+}
+
+  a.tw:hover {
+  background: #f4f4f4;
+  color: #00aced;
+}
+
+ a.gp {
+  background: #db4437;
+}
+
+  a.gp:hover {
+  background: #f4f4f4;
+  color: #db4437;
+}
+
+  a.yt {
+  background: #bb0000;
+}
+
+  a.yt:hover {
+  background: #f4f4f4;
+  color: #bb0000;
+}
+
+  a.in {
+  background: #517fa4;
+}
+
+ a.in:hover {
+  background: #f4f4f4;
+  color: #517fa4;
+}
+
+  a.rs {
+  background: #fb8f3d;
+}
+
+  a.rs:hover {
+  background: #fff;
+  color: #fb8f3d;
+}
+
+  .card-body .form-control {
+      width: calc(100% - 50px);
+      float:right;
+      background:#fff;
+      color:#000;
+  }
+
+ .form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+   .mob-header  .bar .btn {
+       height:50px;
+       width: 50px;
+       text-align: center;
+       padding:0;
+       line-height:50px;
+       text-align:center;
+       font-size:24px;
+   }
+  .mob-header  .bar .mlogo {
+      display: inline-block;
+      height:50px;
+    /*
+      width: 115px !important;
+   
+  margin-top: -20px;*/ 
+  }
+
+    .mob-header  .bar .mlogo img {
+        width:auto;
+        height: 100%;
+    }
+
+   .is-sticky .mob-header .bar .mlogo {
+            width: 70px !important;
+    margin-top: 0 !important;
+    }
+
+    @media(max-width: 767px){
+
+        .category-title .txt h1 {
+            font-size:16px;
+        }
+            .mob-header {
+        display:block;
+    }
+
+            header {display:none;}
+    }
+ 
+    </style>
+<link rel="stylesheet" type="text/css" href="/fb/fb.css" /><script type="text/javascript">var mainDomain='elbalad.news';var WebURL='https://www.elbalad.news/';var RootURL='/';var siteobj = {}; siteobj.load = null;</script><script type="text/javascript" src="/fb/fb.js"></script><script type="text/javascript" src="/scripts/swfo.js"></script>
+<script type="text/javascript" src="scripts/jq.lz.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2916028972616363",
+    enable_page_level_ads: true
+  });
+</script>
+<meta name="description" content="اخبار صدى البلد تعرض لكم لحظة بلحظة اخر اخبار مصر مباشر واهم الاخبار العاجلة ف مصر والعالم العربي ونرصد لكم اخبار عالمية و اخبار اليوم لكل عشاق الرياضة فنحن ننقل لكم الحدث بكل شفافية" /></head>
+<body>
+<script type="text/javascript">
+        var _gaq = _gaq || [];
+
+
+           _gaq.push(['_setCustomVar',
+      1,
+      'Section',
+      '-1',
+                   3
+               ]);
+
+  _gaq.push(['_setAccount', 'UA-25397556-1']);
+  _gaq.push(['_trackPageview']);
+  setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"5dPIi1a4ZP000P", domain:"elbalad.news",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=5dPIi1a4ZP000P" style="display:none" height="1" width="1" alt="" /></noscript>
+
+<style>
+
+        .tp-nav .item-bg a .img-cont:before {
+            opacity:0;
+        }
+          .overAd .ad728 .ad-block{
+              width:970px !important;
+              max-width: 100%;
+              
+          }
+        .adv728 .ad-block, .overAd .ad728 .ad-block{
+           background: transparent !important;
+          
+            height:auto !important;
+
+        }
+        .post .adplace > div {
+            min-width: 100%;
+        }
+      
+.sponser {
+  float: right;
+  height: 600px;
+  display: none;
+  width: 160px;
+  overflow: hidden;
+  /*
+	@media(min-width: 1468px){
+		width: 160px;
+	&.ad-right {
+	 float: right;
+		margin-right: -160px;
+	}
+	&.ad-left {
+	 float: left;
+		margin-left: -160px;
+	}
+	}
+	*/
+}
+ .is-sticky  .stick {
+    top:0 !important;
+}
+.is-sticky  .mlogo  img 
+{
+       width:auto !important;
+    height:50px !important;
+}
+
+.is-sticky  .mlogo   {
+    width:auto !important;
+    height:50px !important;
+    margin:0 !important;
+}
+.sponser.ad-right {
+  float: right;
+  margin-right: -160px;
+}
+
+.sponser.ad-left {
+  float: left;
+  margin-left: -160px;
+}
+
+.sponser img {
+  width: 100%;
+}
+
+@media (min-width: 1300px) {
+  main .container-fluid {
+    width: calc(100% - 320px);
+    padding: 0;
+    float: right;
+  }
+  .sponser {
+    display: block;
+  }
+}
+
+
+        #adLeft .sticky-wrapper , #adRight .sticky-wrapper{
+                position: absolute;
+    top: 313px;
+    width: 160px;
+    z-index: 9999999999;
+
+        }
+
+        @media(max-width: 768px){
+               .block.post {
+            border:0;
+        }
+        }
+     
+    </style>
+<div style="float: right; width: 100%; height: 0; position: relative; z-index: 5566;">
+<div class="container" style="height: 0;">
+<div class="sponser ad-right">
+<div class="ad120" style="position:fixed; top:0;" id="brdleft"></div>
+</div>
+<div class="sponser ad-left">
+<div class="ad120" style="position:fixed; top:0" id="brdright"></div>
+</div>
+</div>
+</div>
+
+<div style="overflow-x:hidden;  width:100%;
+max-width: 100%;    position: relative;
+    z-index: 1;">
+<style>
+
+              .hedad {
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  z-index:  999999999999;
+                  
+              }
+              .old-nav .social {
+                      margin-top:   11px;
+                      margin-bottom:   0;
+              }
+              .old-nav .social a {
+                      min-width: initial !important;
+    text-align: center !important;
+    padding: 0 !important;
+    line-height:   37px !important;
+ 
+              }
+              @media (max-width: 992px){
+                   .old-nav .social {
+                       display: block !important;
+                   }
+              }
+
+
+              @media (max-width: 529px) {
+                  header .header-med .admin-old  {
+                 float:right;
+                      width: calc(100% - 160px) !important;
+                  }
+              }
+              @media(max-width: 400px){
+                  .admin-old  {
+                      width: calc(100% - 160px) !important;
+                  }
+                   .admin-old .item {
+                       width: 100% !important;
+    margin: 7px 0 0 0 !important;
+                   }
+              }
+
+
+             .header-top {
+                 float: right;
+                 width: 100%;
+
+                 height: 42px;
+                 border-top:   2px solid #0776b5;
+                 background: #454444;
+              
+
+
+
+
+             }
+             
+             @media(min-width: 768px){
+                 .dropdown-menu.sm-nowrap {
+                         top: 50px !important;
+                 }
+                
+                 a.has-submenu: hover , a.has-submenu: focus ,   .open  a.has-submenu: hover ,  .open  a.has-submenu: focus , .open > a  {
+                     background:#0776b5 !important;
+                     color:#fff;
+                 }
+             }
+             .header-top .newsTicker{
+                 background: transparent !important;
+             }
+              .header-top .newsTicker a {
+                  color: #fff !important;
+              }
+               .header-top .newsTicker a: hover {
+                   color:   #d10b0c !important;
+               }
+
+               .header-top  .search {
+                   width: 180px;
+                   margin-bottom:   0;
+                   clear: none;
+                   margin-top:  3px;
+                  
+              
+               }
+               .header-top .search input {
+                   height:33px
+               }
+               .header-top .search  button {
+                   padding: 5px 10px;
+               }
+               @media (min-width: 768px){
+                   .newsTicker {
+                        width: calc(100% - 283px);
+                    }
+               }
+
+               .old-date {
+                   display: none;
+               }
+ 
+               .overAd {
+                   float: right;
+                   width: 100%;
+                   display:none;
+                 
+               }
+
+                 @media (min-width: 768px){
+                     .overAd {
+display: block ;
+                     }
+
+                 
+                       
+                   }
+               .overAd .ad728 {
+                   float: right;
+                  
+                 width: 100%;
+                  padding: 10px 0;
+                }
+               .overAd .ad728 .ad-block {
+                       width: 728px;
+                    height: 92px;
+                    margin: 0px auto;
+                    overflow: hidden;
+               }
+
+               .nav.sm  > li > a {
+                margin-left:   0;
+                padding: 15px 7px;
+                min-width:   70px !important;
+               }
+
+               @media(min-width: 992px){
+                     .navbar-collapse {
+                    padding-right:   0 !important;
+                    padding-left:   15px;
+                }
+               }
+               /*
+          .navbar-collapse  li:nth-child(3)  {background: rgb(158,0,93);
+background: -moz-linear-gradient(top, rgba(158,0,93,1) 0%, rgba(251,177,60,1) 100%);
+background: -webkit-linear-gradient(top, rgba(158,0,93,1) 0%,rgba(251,177,60,1) 100%);
+background: linear-gradient(to bottom, rgba(158,0,93,1) 0%,rgba(251,177,60,1) 100%);}
+             */
+          </style>
+<h1 class="hidden">ﻣﻮﻗﻊ ﺻﺪﻱ اﻟﺒﻠﺪ </h1>
+<div class="visible-print"><script type="text/javascript" style="display:none">
+//<![CDATA[
+window.__mirage2 = {petok:"7a791d723b802fc4900a4ca8f13fa9c0500119b0-1575262576-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<img alt="صدى البلد" data-cfsrc="/themes/balad/images/sada.png" height="90" style="display:none;visibility:hidden;" /><noscript><img alt="صدى البلد" src="/themes/balad/images/sada.png" height="90" /></noscript></div>
+<div class="mob-header">
+<div class="top"><div class="msocial">
+<a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"> <span class="fa fa-facebook"></span></a>
+<a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"> <span class="fa fa-twitter"></span></a>
+<a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"> <span class="fa fa-youtube-play"></span></a>
+<a class="in" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"> <span class="fa fa-instagram"></span></a>
+<a class="rs" href="/rss.aspx" target="_blank"> <span class="fa fa-rss"></span></a>
+</div>
+<a href="https://see.news/" class="btn btn-primary btn-sm pull-left" style="direction: ltr; "><img data-cfsrc="../themes/balad/images/en.png" style="display:none;visibility:hidden;" /><noscript><img src="../themes/balad/images/en.png" /></noscript> EN</a>
+</div>
+<div class="mid"> <div class="admin">
+<div class="title"> الإشراف العام</div>
+<div class="name"> إلهام أبو الفتح</div>
+</div>
+<div class="admin">
+<div class="title"> رئيس التحرير</div>
+<div class="name"> أحمد صبري</div>
+</div>
+</div>
+<div class="stick" style="float: right;
+width: 100%;">
+<div id="search-mobile" class="collapse  " style="">
+<div class="row justify-content-center">
+<div class="col-12 col-md-10 col-lg-8">
+<form class="card card-sm" action="/list.aspx">
+<div class="card-body row no-gutters align-items-center ">
+
+<input name="w" type="text" class="form-control input-sm" maxlength="64" placeholder="البحث فى الموقع  ">
+
+<button class="btn btn-sm btn-primary" type="submit">بحث</button>
+
+</div>
+</form>
+</div>
+
+</div>
+</div>
+<div class="bar">
+<a href="#Mmenu" class="btn btn-primary pull-right" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="search-moile"><i class="fa fa-bars"></i></a>
+<a href="/" class="mlogo" title="صدى البلد"> <img alt="صدى البلد" data-cfsrc="/themes/balad/images/sada.png" style="display:none;visibility:hidden;" /><noscript><img alt="صدى البلد" src="/themes/balad/images/sada.png" /></noscript></a>
+<a href="#search-mobile" title="" class="btn btn-primary pull-left" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="search-moile"><i class="fa fa-search"></i></a>
+</div>
+<div id="Mmenu" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li> <a class="c0" href="/">الرئيسية</a> </li>
+<li> <a class="c2064" href="/list.aspx?props=topstory&sel=c2064&t=أهم الأخبار">أهم الأخبار</a> </li>
+<li> <a class="c1" href="/list/1">أخبار البلد</a> </li>
+<li> <a class="c4" href="/list/4">حوادث</a> </li>
+<li> <a class="c5" href="/list/5">رياضة</a> </li>
+<li> <a class="c8" href="/list/8">فن</a> </li>
+<li> <a class="c4023" href="/list/4023">أصل الحكاية</a> </li>
+<li> <a class="c7" href="/list/7">توك شو</a> </li>
+<li> <a class="c10" href="/list/10">مرأة</a> </li>
+<li> <a class="c14" href="/list/14">ديني</a> </li>
+<li> <a class="c11" href="/list/11">منوعات</a> </li>
+<li> <a class="c3889" href="/list/3889">تعليم</a> </li>
+<li> <a class="c4022" href="/list/4022">فيديو جراف</a> </li>
+<li> <a class="c3" href="/list/3">محافظات</a> </li>
+<li> <a class="c6" href="/list/6">اقتصاد</a> </li>
+<li> <a class="c9" href="/list/9">أخبار العالم</a> </li>
+<li> <a class="c4027" href="/list/4027">بين الناس</a> </li>
+<li> <a class="c17" href="/list/17">سيارات</a> </li>
+<li> <a class="c4727" href="/list/4727/tech">تكنولوجيا</a> </li>
+<li> <a class="c2066" href="/list/2066">مقالات</a> </li>
+<li> <a class="c2067" href="/list/2067">ثقافة</a> </li>
+<li> <a class="c2068" href="/list.aspx?type=2">فيديو</a> </li>
+<li> <a class="c2069" href="/list.aspx?type=1">صور</a> </li>
+<li> <a class="c2070" href="/list/2070">ساحة رأي</a> </li>
+<li> <a class="c2" href="/list/2">برلمان</a> </li>
+<li> <a class="c2065" href="/list/2065">ملفات</a> </li>
+</ul>
+</div>
+</div>
+</div>
+<header style="z-index:999999999 ">
+<div Class="overAd">
+<div Class="ad728">
+<div Class="ad-block">
+<img src="/adview/4374$7cview" rel="nofollow" style="display:none" /><div class="ad">
+<center>
+<div style="
+text-align: center;
+font-size:10px;
+display: block;
+margin: -5px 0;
+padding-top:4px;
+">
+<span style="color: #666666;height: 23px;display: inline-block;">AdvertisementS</span>
+</div>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<div id='fulltop1'>
+<script>
+     window.googletag = window.googletag || {cmd: []};
+       googletag.cmd.push(function() {
+         googletag
+           .defineSlot('/26140141/2020_Full_Top_1', [[728, 90], [970, 250], [468, 60], [970, 90]], 'fulltop1')
+           .addService(googletag.pubads());
+              googletag.enableServices();
+         googletag.display('fulltop1');
+     });
+  </script>
+</div>
+</center>
+</div>
+</div>
+</div>
+</div>
+<div class="header-top  ">
+<div class="container">
+<div class="top-featured" style="z-index: 999999;
+position: relative;">
+<div class="newsTicker hidden-xs">
+<div class="name" style="cursor:pointer" onclick="location.href='/list.aspx?props=breaking';"> ﻋﺎﺟﻞ </div>
+<div id="news" class="marq">
+<a href="/4079483"> بعد تربعه على عرش إيرادات السينما .. ماذا قالت شيرين رضا عن الفيل الأزرق 2</a>
+<a href="/4079475"> تقرير أممي يفضح قطر: بلد العنصرية والتمييز على أساس العرق والجنسية </a>
+<a href="/4079497"> كل مرة باشوفك فيها .. تامر حسني يشعل حفل اعتزال ياسر القحطاني</a>
+<a href="/4079492"> تحطم طائرة صغيرة بالولايات المتحدة ومصرع ركابها </a>
+<a href="/4079491"> حمدي النقاز يرهن استمراره مع الزمالك بشرط .. اعرف التفاصيل</a>
+<a href="/4079488"> بعد فسخ تعاقده .. رسالة حمدي النقاز لجماهير الزمالك وزملائه</a>
+<a href="/4079412"> تعليق غريب من عماد النحاس على تصدر المقاولون بطولة الدوري</a>
+<a href="/4079487"> النقاز يفسخ عقده مع الزمالك.. ثلاثية مازيمبي تشعل أزمة طارق حامد وساسي </a>
+<a href="/4079417"> عماد النحاس: الأهلي تعرض لظلم أمام النجم الساحلي.. وبيراميدز والزمالك عائق أمام الأحمر</a>
+<a href="/4079447"> البنك الدولي: مصر خامس أكبر دول العالم في التحويلات من الخارج لعام 2018</a>
+</div>
+</div>
+<a href="https://see.news/" class="btn btn-primary btn-sm pull-left" style="direction: ltr; margin-top:3px ; margin-right:8px;"><img data-cfsrc="../themes/balad/images/en.png" style="display:none;visibility:hidden;" /><noscript><img src="../themes/balad/images/en.png" /></noscript> EN</a>
+<div class="search">
+<form action="/list.aspx">
+<button type="submit" class="btn btn-primary btn-sm"> <span class="fa fa-search"></span> </button>
+<input name="w" type="text" class="form-control input-sm" maxlength="64" placeholder="البحث فى الموقع  " />
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="header-med">
+<div class="container">
+<a class="logo" href="/" style="position:relative;">
+<img alt="صدى البلد" height="127" data-cfsrc="/themes/balad/images/sada.png" width="176" style="display:none;visibility:hidden;" /><noscript><img alt="صدى البلد" height="127" src="/themes/balad/images/sada.png" width="176" /></noscript>
+</a>
+<div class="admin-old">
+<div class="item">
+<div class="title"> الإشراف العام</div>
+<div class="name"> إلهام أبو الفتح</div>
+</div>
+<div class="item">
+<div class="title"> رئيس التحرير</div>
+<div class="name" style="    font-size: 20px;
+   "> أحمــد صبـري</div>
+</div>
+</div>
+<div class="adv728  hidden-xs"> <div class="ad-block" style="overflow:hidden">
+<img src="/adview/4372$7cview" rel="nofollow" style="display:none" /><div class="ad">
+<center>
+<div style="
+text-align: center;
+font-size:10px;
+display: block;
+margin: -5px 0;
+padding-top:4px;
+">
+<span style="color: #666666;height: 23px;display: inline-block;">AdvertisementS</span>
+</div>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<div id='Header'>
+<script>
+     window.googletag = window.googletag || {cmd: []};
+       googletag.cmd.push(function() {
+         googletag
+           .defineSlot('/26140141/2020_Header_beside_logo', [[730, 100], [728, 90], [468, 60]], 'Header')
+           .addService(googletag.pubads());
+              googletag.enableServices();
+         googletag.display('Header');
+     });
+  </script>
+</div>
+</center>
+</div>
+</div></div>
+<div class="pull-left old-date">
+<div class="hidden-lg hidden-md col-sm-12 hidden-xs" style="height:20px"></div>
+<div class="date-cont hidden-sm hidden-xs">
+<a href="https://en.elbalad.news/" class="btn btn-primary btn-sm pull-left" target="_blank" style="background-image:url('/images/en.png');background-position:center left;background-repeat:no-repeat"><span class="fa fa-flag" style="visibility:hidden"></span> EN </a>
+<div class="date">الإثنين 02 ديسمبر 2019 - 55 : 06 ص </div>
+</div>
+<div class="social hidden-sm hidden-xs">
+<a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"> <span class="fa fa-facebook"></span></a>
+<a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"> <span class="fa fa-twitter"></span></a>
+<a class="gp" href="https://plus.google.com/+ElBaladOfficial" target="_blank"> <span class="fa fa-google-plus"></span></a>
+<a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"> <span class="fa fa-youtube-play"></span></a>
+<a class="in" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"> <span class="fa fa-instagram"></span></a>
+<a class="rs" href="/rss.aspx" target="_blank"> <span class="fa fa-rss"></span></a>
+</div>
+</div>
+</div>
+</div>
+<div id="sticky" class="old-nav ">
+<div class="container">
+<button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navOld"> <span class="fa fa-bars"></span>
+القائمة
+</button>
+<div class="social  hidden">
+<a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"> <span class="fa fa-facebook"></span></a>
+<a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"> <span class="fa fa-twitter"></span></a>
+<a class="gp" href="https://plus.google.com/+ElBaladOfficial" target="_blank"> <span class="fa fa-google-plus"></span></a>
+<a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"> <span class="fa fa-youtube-play"></span></a>
+<a class="in" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"> <span class="fa fa-instagram"></span></a>
+</div>
+<div class="collapse navbar-collapse" id="navOld">
+<ul id="menu" class="nav navbar-nav  ">
+<li> <a class="c0" href="/">الرئيسية</a> </li>
+<li> <a class="c2064" href="/list.aspx?props=topstory&sel=c2064&t=أهم الأخبار">أهم الأخبار</a> </li>
+<li> <a class="c1" href="/list/1">أخبار البلد</a> </li>
+<li> <a class="c4" href="/list/4">حوادث</a> </li>
+<li> <a class="c5" href="/list/5">رياضة</a> </li>
+<li> <a class="c8" href="/list/8">فن</a> </li>
+<li> <a class="c4023" href="/list/4023">أصل الحكاية</a> </li>
+<li> <a class="c7" href="/list/7">توك شو</a> </li>
+<li> <a class="c10" href="/list/10">مرأة</a> </li>
+<li> <a class="c14" href="/list/14">ديني</a> </li>
+<li> <a class="c11" href="/list/11">منوعات</a> </li>
+<li class="visible-sm visible-xs"> <a class="c3889" href="/list/3889">تعليم</a> </li>
+<li class="visible-sm visible-xs"> <a class="c4022" href="/list/4022">فيديو جراف</a> </li>
+<li class="visible-sm visible-xs"> <a class="c3" href="/list/3">محافظات</a> </li>
+<li class="visible-sm visible-xs"> <a class="c6" href="/list/6">اقتصاد</a> </li>
+<li class="visible-sm visible-xs"> <a class="c9" href="/list/9">أخبار العالم</a> </li>
+<li class="visible-sm visible-xs"> <a class="c4027" href="/list/4027">بين الناس</a> </li>
+<li class="visible-sm visible-xs"> <a class="c17" href="/list/17">سيارات</a> </li>
+<li class="visible-sm visible-xs"> <a class="c4727" href="/list/4727/tech">تكنولوجيا</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2066" href="/list/2066">مقالات</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2067" href="/list/2067">ثقافة</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2068" href="/list.aspx?type=2">فيديو</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2069" href="/list.aspx?type=1">صور</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2070" href="/list/2070">ساحة رأي</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2" href="/list/2">برلمان</a> </li>
+<li class="visible-sm visible-xs"> <a class="c2065" href="/list/2065">ملفات</a> </li>
+<li class="hidden-lg hidden-md">
+<a class="c2070 " href="/list/2070">القراء يكتبون</a>
+</li>
+<li class="visible-md visible-lg">
+<a href="#"> المزيد <span class="fa fa-caret-down"></span> </a>
+<ul class="dropdown-menu dropdown-menu-left">
+<li> <a class="c3889" href="/list/3889">تعليم</a> </li>
+<li> <a class="c4022" href="/list/4022">فيديو جراف</a> </li>
+<li> <a class="c3" href="/list/3">محافظات</a> </li>
+<li> <a class="c6" href="/list/6">اقتصاد</a> </li>
+<li> <a class="c9" href="/list/9">أخبار العالم</a> </li>
+<li> <a class="c4027" href="/list/4027">بين الناس</a> </li>
+<li> <a class="c17" href="/list/17">سيارات</a> </li>
+<li> <a class="c4727" href="/list/4727/tech">تكنولوجيا</a> </li>
+<li> <a class="c2066" href="/list/2066">مقالات</a> </li>
+<li> <a class="c2067" href="/list/2067">ثقافة</a> </li>
+<li> <a class="c2068" href="/list.aspx?type=2">فيديو</a> </li>
+<li> <a class="c2069" href="/list.aspx?type=1">صور</a> </li>
+<li> <a class="c2070" href="/list/2070">ساحة رأي</a> </li>
+<li> <a class="c2" href="/list/2">برلمان</a> </li>
+<li> <a class="c2065" href="/list/2065">ملفات</a> </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<style>
+    
+     .vote-num {
+         display: inline-block;
+         text-align: center;
+             width: 290px;
+     }
+
+ .vote-num  .title {
+    float: right;
+    width: 100%;
+    height: 36px;
+    background: #ed1b34;
+    line-height: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: bb;
+         font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+
+    margin-top: 0;
+
+    background: #454444;
+ }
+      .vote-num .total {
+          float: right;
+          width: 100%;
+
+          margin-bottom: 10px;
+
+          background: rgba(255, 255, 255, 0.68);
+      }
+      .vote-num .value {
+              font-size: 26px;
+    font-family: "bb";
+    float: right;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+        height: 24px;
+    line-height: 24px;
+      }
+      .vote-num .total .title {
+          background: #424242 !important;
+      }
+      .vote-num .col-sm-6 {
+              padding-left: 15px;
+    padding-right: 15px;
+      }
+      .vote-num .true {
+        background: green;
+                  color: #fff;
+                  width: 100%;
+    float: right;
+      }
+       .vote-num .false {
+          width: 100%;
+         background: red;
+    color: #fff;
+      float: right;
+      }
+
+      .vote-num .true .title {
+          background:  #03ad07 !important;
+      }
+
+      .vote-num .false .title {
+          background: #f50000 !important;
+      }
+     .results {
+         float: right;
+         width: 100%;
+         
+     }
+
+     .el {
+         float: right;
+         width: 100%;
+         margin: 10px 0;
+         padding: 15px;
+         
+          text-align: center;
+         background:url("images/bg5.jpg") no-repeat center ;
+
+     }
+
+
+     @media(max-width: 768px){
+         .el {
+             display: none;
+         }
+     }
+     .el .person {
+         position: relative;
+          float: right;
+          text-align: center;
+     }
+
+     .el .person .name { font-size: 20px;    background: rgba(255, 255, 255, 0.9);
+    color: #000; }
+     .el .person:last-child{
+         float:left;
+     }
+
+      .el .person:last-child .num {
+          left: auto;
+          right: -25px;
+      }
+     .el .person .img-cont {
+       
+      
+          overflow: hidden;
+         width: 110px;
+         height: 110px;
+               border-radius: 50%;
+              border: 5px solid  #0776b5;
+     }
+     .el .person .img-cont  img {
+         width: 100%;
+         height: 100%;
+     
+     }
+
+       .el .person .num  {
+           position: absolute;
+               border-radius: 50%;
+                   left: -25px;
+    top: 36px;
+    font-weight: bold;
+           width: 50px;
+           height: 50px;
+           text-align: center;
+           line-height: 50px;
+           color: #fff;
+         background: #ed1b1b;
+     }
+</style>
+<style> .header-med {
+     padding:5px 0 !important;
+ }
+    .post .mainImg .caption {
+        padding: 0px;
+        float: none;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        max-width: 550px;
+        margin: auto;
+    }
+     
+   @media(max-width: 439px){
+           .owl-album  .owl-item {
+        opacity:0 ;
+    }
+     .owl-album  .owl-item.active {
+         opacity: 1;
+     }
+   }
+    @media(max-width: 530px) {
+        .admin-old
+    {
+            width:100%;
+        }
+        .admin-old .item{
+            margin-left:0px !important;
+            margin-right:0px !important;
+            width:49.9%;
+        }
+
+        .admin-old .item {
+                width: 100%;
+    text-align: center;
+        }
+
+.old .item-li:nth-child(3)
+ {
+    background: #e7e7e7 !important;
+}
+
+
+.old .item-li:nth-child(4){
+    background: #fff !important;
+}
+
+
+    }
+
+
+    @media(min-width: 1300px){
+        .admin-old {
+            width: 140px;
+                margin-top: 5px ;
+
+        }
+
+        .admin-old .item {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+#fancybox-wrap {
+    z-index: 999999999999;
+}
+
+    .col-md-4.content-left {
+        float: left;
+    } 
+    .newsTicker .marq a:hover {
+    color:  #d10b0c;
+}
+    .rsDefault .rsThumbsArrow.rsThumbsArrowDisabled {
+        opacity: 0.3;
+    }
+    .slider-sm .rsThumbs .rsThumb {
+        direction: ltr;
+    }
+    .slider-sm   .rsThumb {
+        float: left;
+
+    }
+    .slider-sm .rsThumbs {
+        margin-top: 0;
+            padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    }
+    .rsDefault.rsWithThumbsHor .rsThumbsContainer {
+          
+    }
+     .slider-sm .rsThumbs .rsThumb.rsNavSelected .img  {
+              border: 4px solid #0776b5;
+      }
+    .slider-sm .rsThumbs .rsThumb.rsNavSelected img {
+        border: hidden !important;
+    }
+    .slider-sm .rsThumbs .rsThumb {
+            padding: 8px 5px;
+                 
+    height: 81px;
+    }
+    .slider-sm .rsThumbs .rsThumb .img img {
+            width: 138%;
+    }
+    .slider-sm .rsThumbs .rsThumb .img {
+            overflow: hidden;
+    }
+    .newsTicker {
+        overflow: hidden;
+    }
+    .sticky-wrapper {
+        width: 100%;
+    }
+    .category .item:hover {
+    background: #e2e2e2 !important;
+}
+    @media (min-width: 1440px) {
+        header .header-med .old-date {
+    width: 535px;
+}
+    }
+
+</style>
+<div class="container  main">
+<div class="featured-area">
+<div class="row">
+<div class="adv300 hidden-lg hidden-md ">
+<div class="ad-block" style="max-width:100%;max-height:374px;overflow:hidden; height:300px; background: transparent; width: 320px !important; height: auto!important;">
+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12">
+<div class="block mian-s" style="margin-top: 10px;" ord="props=topstory&top=27">
+<div class="royalSlider slider-sm  slider-h  slider-main  rsDefault">
+<div class="rsContent  ">
+<a href="/4079494" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/494.jpg?q=1" alt="في محيط الرعب .." style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/494.jpg?q=1" alt="في محيط الرعب .." /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>في محيط الرعب .. نجوم الكرة العالمية في اعتزال ياسر القحطاني</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/494.jpg?q=1" width="120" height="64" alt="في محيط الرعب .." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/494.jpg?q=1" width="120" height="64" alt="في محيط الرعب .." /></noscript>
+</div>
+<div class="txt">في محيط الرعب .. نجوم الكرة العالمية في اعتزال ياسر القحطاني</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079475" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/475.jpg?q=1" alt="تقرير أممي يفضح قطر:" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/475.jpg?q=1" alt="تقرير أممي يفضح قطر:" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>تقرير أممي يفضح قطر: بلد العنصرية والتمييز على أساس العرق والجنسية </h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/475.jpg?q=1" width="120" height="64" alt="تقرير أممي يفضح قطر:" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/475.jpg?q=1" width="120" height="64" alt="تقرير أممي يفضح قطر:" /></noscript>
+</div>
+<div class="txt">تقرير أممي يفضح قطر: بلد العنصرية والتمييز على أساس العرق والجنسية </div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079498" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/498.jpg?q=1" alt="أخبار الفن..الراقصة" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/498.jpg?q=1" alt="أخبار الفن..الراقصة" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>أخبار الفن..الراقصة جوهرة تعلق على أزمة الفيديوهات الإباحية..بسمة وهبة تخرج عن صمتها .. وحميد الشاعري في ظهور نادر مع زوجته</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/498.jpg?q=1" width="120" height="64" alt="أخبار الفن..الراقصة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/498.jpg?q=1" width="120" height="64" alt="أخبار الفن..الراقصة" /></noscript>
+</div>
+<div class="txt">أخبار الفن..الراقصة جوهرة تعلق على أزمة الفيديوهات الإباحية..بسمة وهبة تخرج عن صمتها .. وحميد الشاعري في ظهور نادر مع زوجته</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079434" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/434.jpg" alt="إياد نصار: قمت بتجهيزات" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/434.jpg" alt="إياد نصار: قمت بتجهيزات" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>إياد نصار: قمت بتجهيزات معينة لشخصية الضابط الإسرائيلي في فيلم الممر.. فيديو</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/434.jpg" width="120" height="64" alt="إياد نصار: قمت بتجهيزات" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/434.jpg" width="120" height="64" alt="إياد نصار: قمت بتجهيزات" /></noscript>
+</div>
+<div class="txt">إياد نصار: قمت بتجهيزات معينة لشخصية الضابط الإسرائيلي في فيلم الممر.. فيديو</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079471" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/471.jpg" alt="بعد شائعات عملية" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/471.jpg" alt="بعد شائعات عملية" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>بعد شائعات عملية تجميل الفك.. هل خضع تامر حسني لعملية تجميل أذنيه؟</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/471.jpg" width="120" height="64" alt="بعد شائعات عملية" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/471.jpg" width="120" height="64" alt="بعد شائعات عملية" /></noscript>
+</div>
+<div class="txt">بعد شائعات عملية تجميل الفك.. هل خضع تامر حسني لعملية تجميل أذنيه؟</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4078909" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/8/600x338o/909.jpg" alt="الدمعة .. نوكيا تعيد" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/8/600x338o/909.jpg" alt="الدمعة .. نوكيا تعيد" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>الدمعة .. نوكيا تعيد تقديم هاتف 7610 من جديد</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/8/100x56o/909.jpg" width="120" height="64" alt="الدمعة .. نوكيا تعيد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/100x56o/909.jpg" width="120" height="64" alt="الدمعة .. نوكيا تعيد" /></noscript>
+</div>
+<div class="txt">الدمعة .. نوكيا تعيد تقديم هاتف 7610 من جديد</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079483" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/483.jpg?q=1" alt="بعد تربعه على عرش" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/483.jpg?q=1" alt="بعد تربعه على عرش" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>بعد تربعه على عرش إيرادات السينما .. ماذا قالت شيرين رضا عن الفيل الأزرق 2</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/483.jpg?q=1" width="120" height="64" alt="بعد تربعه على عرش" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/483.jpg?q=1" width="120" height="64" alt="بعد تربعه على عرش" /></noscript>
+</div>
+<div class="txt">بعد تربعه على عرش إيرادات السينما .. ماذا قالت شيرين رضا عن الفيل الأزرق 2</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079437" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/437.jpg" alt="اقض على الكوليسترول" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/437.jpg" alt="اقض على الكوليسترول" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>اقض على الكوليسترول وضغط الدم بنوع خارق من البذور</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/437.jpg" width="120" height="64" alt="اقض على الكوليسترول" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/437.jpg" width="120" height="64" alt="اقض على الكوليسترول" /></noscript>
+</div>
+<div class="txt">اقض على الكوليسترول وضغط الدم بنوع خارق من البذور</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079052" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/52.jpg" alt="WhatsApp يطلعك على" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/52.jpg" alt="WhatsApp يطلعك على" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>WhatsApp يطلعك على أكثر شخص تقضى وقتك معه.. خاصية جديدة</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/52.jpg" width="120" height="64" alt="WhatsApp يطلعك على" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/52.jpg" width="120" height="64" alt="WhatsApp يطلعك على" /></noscript>
+</div>
+<div class="txt">WhatsApp يطلعك على أكثر شخص تقضى وقتك معه.. خاصية جديدة</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079473" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/473.jpg" alt="البيت الأبيض يكشف" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/473.jpg" alt="البيت الأبيض يكشف" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>البيت الأبيض يكشف موقف مشاركته في جلسة مساءلة ترامب </h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/473.jpg" width="120" height="64" alt="البيت الأبيض يكشف" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/473.jpg" width="120" height="64" alt="البيت الأبيض يكشف" /></noscript>
+</div>
+<div class="txt">البيت الأبيض يكشف موقف مشاركته في جلسة مساءلة ترامب </div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079454" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/454.jpg" alt="نزهة بـ بالون تنتهي" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/454.jpg" alt="نزهة بـ بالون تنتهي" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>نزهة بـ بالون تنتهي بحروق عنيفة.. والتعويض مليون جنيه استرليني</h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/454.jpg" width="120" height="64" alt="نزهة بـ بالون تنتهي" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/454.jpg" width="120" height="64" alt="نزهة بـ بالون تنتهي" /></noscript>
+</div>
+<div class="txt">نزهة بـ بالون تنتهي بحروق عنيفة.. والتعويض مليون جنيه استرليني</div>
+</div>
+</a>
+</div>
+<div class="rsContent  ">
+<a href="/4079258" title="">
+<img class="rsImg" data-cfsrc="/upload/photo/news/407/9/600x338o/258.jpg" alt="أب يناشد وزارة الصحة" style="display:none;visibility:hidden;" /><noscript><img class="rsImg" src="/upload/photo/news/407/9/600x338o/258.jpg" alt="أب يناشد وزارة الصحة" /></noscript>
+<div class="rsABlock" data-move-effect="none" data-fade-effect="false">
+<div class="overlay">
+<div class="txt-block">
+<h2>أب يناشد وزارة الصحة علاج نجله على نفقة الدولة </h2>
+</div>
+</div>
+</div>
+<div class="rsTmb ">
+<div class="img"><img data-cfsrc="/upload/photo/news/407/9/100x56o/258.jpg" width="120" height="64" alt="أب يناشد وزارة الصحة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/100x56o/258.jpg" width="120" height="64" alt="أب يناشد وزارة الصحة" /></noscript>
+</div>
+<div class="txt">أب يناشد وزارة الصحة علاج نجله على نفقة الدولة </div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+
+<div class="custom-banner">
+<div class="cont-wrap" style="max-width:100%">
+<img src="/adview/4373$7cview" rel="nofollow" style="display:none" /><div class="ad">
+<center>
+<div style="
+text-align: center;
+font-size:10px;
+display: block;
+margin: -5px 0;
+padding-top:4px;
+">
+<span style="color: #666666;height: 23px;display: inline-block;">AdvertisementS</span>
+</div>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<div id='HomeShowcase'>
+<script>
+     window.googletag = window.googletag || {cmd: []};
+       googletag.cmd.push(function() {
+         googletag
+           .defineSlot('/26140141/2020_home_showcase', [[336, 280], [360, 300], [320, 50], [300, 100], [300, 250], [360, 280]], 'HomeShowcase')
+           .addService(googletag.pubads());
+              googletag.enableServices();
+         googletag.display('HomeShowcase');
+     });
+  </script>
+</div>
+</center>
+</div>
+</div>
+</div>
+<div class="custom-banner">
+<div class="cont-wrap" style="max-width:100%">
+<img src="/adview/1$7cview" rel="nofollow" style="display:none" /><a target="_blank" href="/adclick/MXw2MzcxMDg2NjUzMTQ4NzA4Njh8L2xpc3QuYXNweD9yPTI2" class="ad" rel="nofollow"><img data-cfsrc="/upload/ads/0/0/1.png" width="300" height="92" alt="ads" data-cfstyle="border:0px" style="display:none;visibility:hidden;" /><noscript><img src="/upload/ads/0/0/1.png" width="300" height="92" alt="ads" style="border:0px" /></noscript></a>
+</div>
+</div>
+<div class="custom-banner">
+<div class="cont-wrap" style="max-width:100%">
+<img src="/adview/3850$7cview" rel="nofollow" style="display:none" /><a target="_blank" href="/adclick/Mzg1MHw2MzcxMDg2NjUzMTQ4NzA4Njh8L2xpc3QvNDM3NS9TZXJ2aWNlcw%3d%3d" class="ad" rel="nofollow"><img data-cfsrc="/upload/ads/0/3/850.gif" width="300" height="120" alt="ads" data-cfstyle="border:0px" style="display:none;visibility:hidden;" /><noscript><img src="/upload/ads/0/3/850.gif" width="300" height="120" alt="ads" style="border:0px" /></noscript></a>
+</div>
+</div>
+<div class="block oldplace hidden-lg hidden-md">
+<div class="adv300 adplcemovable ">
+<div class="ad-block" style="max-width:100%;max-height:374px;overflow:hidden; height:300px; background: transparent; width:300px !important; height: auto!important;">
+
+</div>
+</div>
+</div>
+<div class="adv300">
+<div class="ad-block" style="max-width:100%;max-height:374px;overflow:hidden; height:300px; background: transparent; width: 300px !important; height: auto!important;">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<style>
+    .ad-full img {
+        width:100% !important;
+        height:auto !important;
+    }
+   
+</style>
+<div class="ad-full" style="clear:both">
+<div class="ad-block" style="overflow:hidden">
+<div class=" hidden ">
+</div>
+</div>
+</div>
+<div class="col-md-8 content-right" style="z-index:99999">
+<div class="block has-title most old  " ord="&top=23">
+<div class="title">
+<div class="txt">
+<a href="/list.aspx?props=topstory&sel=c2064&t=أهم%20الأخبار">
+<h2> أهم الأخبار </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079497">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/497.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/497.jpg?q=1" width="740" height="416" alt="" /></noscript>
+</div>
+<div class="txt">
+<h2>
+كل مرة باشوفك فيها .. تامر حسني يشعل حفل اعتزال ياسر القحطاني
+</h2>
+<p class="hidden-xs hidden-sm">
+تفاعلت الجماهير الحاضرة في مدرجات ملعب جامعة الملك سعود في الرياض لحضور حفل اعتزال ياسر القحطاني مع تقديم المطرب تامر حسني، قبل أن يتجول في الملعب ويغني أغنيته الشهيرة "كل مرة بشوفك فيها". وسجلت ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079432">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/432.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/432.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+Money لـ محمد رمضان تقترب من الـ 3 ملايين مشاهدة.. فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079446">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/446.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/446.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لن نشتري هذا العام شجرة.. سيدة تستقبل عيد الميلاد بطريقة غريبة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079404">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/404.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/404.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+كمال عبد الواحد: شوقي غريب خلاني جامد أوي
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079430">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/430.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/430.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+محاكمة إسرائيلي أمام محكمة أمن الدولة الأردنية.. لهذا السبب
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079486">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/486.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/486.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+هل يظهر صراع في البلد المعزول؟.. عودة عم زعيم كوريا الشمالية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079492">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/492.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/492.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+تحطم طائرة صغيرة بالولايات المتحدة ومصرع ركابها
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079491">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/491.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/491.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+حمدي النقاز يرهن استمراره مع الزمالك بشرط .. اعرف التفاصيل
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079488">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/488.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/488.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+بعد فسخ تعاقده .. رسالة حمدي النقاز لجماهير الزمالك وزملائه
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079464">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/464.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/464.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+إلغاء رحلات جوية وتحذيرات.. العواصف الجوية تضرب الولايات المتحدة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079467">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/467.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/467.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+هاكر يسرق 49 مليون دولار بعملات مشفرة
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=2065&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/2065">
+<h2> ملفات </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079342">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/342.jpg" width="740" height="416" alt="رئيس المصريين الأحرار:" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/342.jpg" width="740" height="416" alt="رئيس المصريين الأحرار:" /></noscript>
+</div>
+<div class="txt">
+<h2>
+رئيس المصريين الأحرار: نساند توجه الرئيس السيسي بأن النقلة للمستقبل هى الرقمنة.. ونحتاج بناء الثقة في الشارع لإعادة الأحزاب
+</h2>
+<p class="hidden-xs hidden-sm">
+رئيس المصريين الأحرار: نستنكر صمت العالم أمام ما يحدث في ليبيا خطوات جادة في النهوض بالبلاد ومنها تمكين الشباب حل الدكتور عصام خليل رئيس ضيفا ببرنامج صالة التحرير المذاع علي فضائية صدي ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079295">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/295.jpg" alt="الجامعات اليوم.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/295.jpg" alt="الجامعات اليوم.." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+الجامعات اليوم.. الأزهر تنشر أسماء المقبولين في المدينة.. المنصورة تجري إخلاء طارئا ومكافحة حريق.. ندوة مناهضة العنف ضد المرأة في الفيوم
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079232">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/232.jpg" alt="نجوم أثارو الجدل" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/232.jpg" alt="نجوم أثارو الجدل" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+نجوم أثارو الجدل بسبب زلات اللسان.. منى زكى تشبه الرجال بـ الحيوانات.. أسما شريف منير تسب الشعراوى.. وخطأ فادح لـ سمية الخشاب.. وشيرين عبدالوهاب تواصل مسلسل الأزمات
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079184">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/184.jpg" alt="3 أفلام ترويجية عن" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/184.jpg" alt="3 أفلام ترويجية عن" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+3 أفلام ترويجية عن المتحف المصرى الكبير | ديسكفرى تبثها لخلق شغف عالمي | والوزيرة: إضافة كبيرة للسياحة المصرية و العالمية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079385">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/385.jpg" alt="القصة الكاملة لميراث" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/385.jpg" alt="القصة الكاملة لميراث" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+القصة الكاملة لميراث هيثم أحمد زكي.. وحقيقة خلافات الورثة على التركة وتبرعه للأيتام
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=1&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/1">
+<h2> أخبار البلد </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079459">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/459.jpg?q=2" width="740" height="416" alt="متآمر وأهبل .. محمد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/459.jpg?q=2" width="740" height="416" alt="متآمر وأهبل .. محمد" /></noscript>
+</div>
+<div class="txt">
+<h2>
+متآمر وأهبل .. محمد علي يكشف لمذيع الجزيرة أسماء المتعاملين معه .. شاهد
+</h2>
+<p class="hidden-xs hidden-sm">
+سخر، المواطن سامح أبو الخير من لقاء الهارب محمد علي، الذى أذيع مؤخرًا على قناة الجزيرة، قائلا: "يجب محاكمة العاملين بقناة الجزيرة بتهمة الغباء". ونشر عبر حسابه على موقع "تويتر" جزء من اللقاء، وعلق ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079410">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/410.jpg?q=1" alt="علاء الراعى: بعض" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/410.jpg?q=1" alt="علاء الراعى: بعض" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+علاء الراعى: بعض المقبلين على الزواج لا يعرفون المسئولية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079266">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/266.jpg" alt="عضو الوطنية للصحافة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/266.jpg" alt="عضو الوطنية للصحافة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+عضو "الوطنية للصحافة" يطالب أجهزة الدولة بالتفاعل مع المواطنين على مواقع التواصل الاجتماعى
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079370">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/370.jpg?q=1" alt="محمود البدوي: البلاد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/370.jpg?q=1" alt="محمود البدوي: البلاد" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+محمود البدوي: البلاد تشهد تطورا ملحوظا فى ملف الأطفال
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079386">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/386.jpg?q=1" alt="هانى هلال: فيلم العذراء" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/386.jpg?q=1" alt="هانى هلال: فيلم العذراء" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+هانى هلال: فيلم العذراء والشعر الأبيض جسد معاناة الأطفال فى الأسر البديلة بواقعية
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=4&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/4">
+<h2> حوادث </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079383">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/383.jpg" width="740" height="416" alt="حبس سائق لاتهامه" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/383.jpg" width="740" height="416" alt="حبس سائق لاتهامه" /></noscript>
+</div>
+<div class="txt">
+<h2>
+حبس سائق لاتهامه بالاستيلاء على 20 ألف دولار من سيارة نقل أموال بـ الأميرية
+</h2>
+<p class="hidden-xs hidden-sm">
+قررت النيابة العامة حبس شخص 4 أيام على ذمة التحقيقات لاتهامه بسرقة 20 ألف دولار من سيارة نقل أموال بالأميرية. وكان تبلغ لقسم شرطة الأميرية من مسئول الشئون القانونية بشركة لنقل الأموال قرر بتضرره من ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079387">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/387.jpg" alt="محاكمة المتهمين في" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/387.jpg" alt="محاكمة المتهمين في" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+محاكمة المتهمين في "كتائب حلوان"..اليوم
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079356">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/356.jpg" alt="مواصلة الحملات التموينية" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/356.jpg" alt="مواصلة الحملات التموينية" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+مواصلة الحملات التموينية لضبط الأسواق
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079351">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/351.jpg?q=1" alt="ضبط  6 آلاف مخالفة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/351.jpg?q=1" alt="ضبط  6 آلاف مخالفة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+ضبط 6 آلاف مخالفة مرورية متنوعة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079359">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/359.jpg" alt="ضبط 225 قطعة سلاح" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/359.jpg" alt="ضبط 225 قطعة سلاح" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+ضبط 225 قطعة سلاح نارى و265 قضية مخدرات
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=5&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/5">
+<h2> رياضة </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079425">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/425.jpg?q=1" width="740" height="416" alt="كل مايكبر يزداد بريقه.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/425.jpg?q=1" width="740" height="416" alt="كل مايكبر يزداد بريقه.." /></noscript>
+</div>
+<div class="txt">
+<h2>
+كل مايكبر يزداد بريقه.. أحمد حمودى مهنئا وليد سليمان بعيد ميلاده
+</h2>
+<p class="hidden-xs hidden-sm">
+هنأ أحمد حمودي نجم الأهلي السابق وبيراميدز الحالي زميله وليد سليمان بعيد ميلاده الـ 35. ونشر أحمد حمودي صورة له برفقة وليد سليمان خلال تدريب سابق للفريق على"انستجرام" وعلق قائلا "‏من الشخصيات ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079494">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/494.jpg?q=1" alt="في محيط الرعب .." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/494.jpg?q=1" alt="في محيط الرعب .." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+في محيط الرعب .. نجوم الكرة العالمية في اعتزال ياسر القحطاني
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079496">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/496.jpg?q=1" alt="رسالة مؤثرة.. والد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/496.jpg?q=1" alt="رسالة مؤثرة.. والد" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+رسالة مؤثرة.. والد ياسر القحطاني: شكرا لكل من دعم نجلي وسانده
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079497">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/497.jpg?q=1" alt="كل مرة باشوفك فيها" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/497.jpg?q=1" alt="كل مرة باشوفك فيها" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+كل مرة باشوفك فيها .. تامر حسني يشعل حفل اعتزال ياسر القحطاني
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079495">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/495.jpg?q=1" alt="مفاجأة مثيرة من تركي" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/495.jpg?q=1" alt="مفاجأة مثيرة من تركي" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+مفاجأة مثيرة من تركي آل شيخ للقحطاني في مباراة اعتزاله
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=8&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/8">
+<h2> فن </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079483">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/483.jpg?q=1" width="740" height="416" alt="بعد تربعه على عرش" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/483.jpg?q=1" width="740" height="416" alt="بعد تربعه على عرش" /></noscript>
+</div>
+<div class="txt">
+<h2>
+بعد تربعه على عرش إيرادات السينما .. ماذا قالت شيرين رضا عن الفيل الأزرق 2
+</h2>
+<p class="hidden-xs hidden-sm">
+حقق الجزء الثاني من فيلم "الفيل الأزرق"، نجاحا باهرا إذ سجل أعلى إيرادات في تاريخ السينما المصرية. وتحدثت الفنانة شيرين رضا، لـ صدى البلد عن نجاح الفيلم قائلة :" سعيدة جدا بنجاح الفيل الأزرق 2 ، كنت ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079471">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/471.jpg" alt="بعد شائعات عملية" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/471.jpg" alt="بعد شائعات عملية" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+بعد شائعات عملية تجميل الفك.. هل خضع تامر حسني لعملية تجميل أذنيه؟
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079498">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/498.jpg?q=1" alt="أخبار الفن..الراقصة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/498.jpg?q=1" alt="أخبار الفن..الراقصة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+أخبار الفن..الراقصة جوهرة تعلق على أزمة الفيديوهات الإباحية..بسمة وهبة تخرج عن صمتها .. وحميد الشاعري في ظهور نادر مع زوجته
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079432">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/432.jpg" alt="Money لـ محمد رمضان" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/432.jpg" alt="Money لـ محمد رمضان" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+Money لـ محمد رمضان تقترب من الـ 3 ملايين مشاهدة.. فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079490">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/490.jpg?q=1" alt="في عيد ميلاده الـ" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/490.jpg?q=1" alt="في عيد ميلاده الـ" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+في عيد ميلاده الـ 58.. حميد الشاعري في ظهور نادر مع زوجته
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=7&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/7">
+<h2> توك شو </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079373">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/373.jpg" width="740" height="416" alt="برلمانى: الأزهر لم" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/373.jpg" width="740" height="416" alt="برلمانى: الأزهر لم" /></noscript>
+</div>
+<div class="txt">
+<h2>
+برلمانى: الأزهر لم يرد على مقترح النواب حول قانون الأحوال الشخصية..فيديو
+</h2>
+<p class="hidden-xs hidden-sm">
+قال النائب محمد فؤاد، إنه أخذ على الأزهر تنحي مقترحات مشروع قانون الأحوال الشخصية جانبا المقدمة من النواب، وتقديم مشروع قانون جديد. وأضاف النائب محمد فؤاد عضو مجلس النواب، خلال حواره التليفزيونى ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079434">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/434.jpg" alt="إياد نصار: قمت بتجهيزات" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/434.jpg" alt="إياد نصار: قمت بتجهيزات" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+إياد نصار: قمت بتجهيزات معينة لشخصية الضابط الإسرائيلي في فيلم الممر.. فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079296">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/296.jpg" alt="عبد الله النجار:" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/296.jpg" alt="عبد الله النجار:" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+عبد الله النجار: الإسلام والأديان السماوية تهتم بكل ما يتعلق بالأحوال الشخصية.. فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079427">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/427.jpg" alt="عمرو طلعت: سنؤهل" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/427.jpg" alt="عمرو طلعت: سنؤهل" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+عمرو طلعت: سنؤهل البريد لتقديم خدمات مميكنة للمواطنين
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079419">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/419.jpg?q=1" alt="ما تقطعوش شرايينكم.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/419.jpg?q=1" alt="ما تقطعوش شرايينكم.." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+ما تقطعوش شرايينكم.. لميس الحديدي تعلق على بوستات إياد نصار لزوجته.. فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=9&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/9">
+<h2> أخبار العالم </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079473">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/473.jpg" width="740" height="416" alt="البيت الأبيض يكشف" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/473.jpg" width="740" height="416" alt="البيت الأبيض يكشف" /></noscript>
+</div>
+<div class="txt">
+<h2>
+البيت الأبيض يكشف موقف مشاركته في جلسة مساءلة ترامب
+</h2>
+<p class="hidden-xs hidden-sm">
+أعلن البيت الأبيض في رسالة إلى رئيس اللجنة القضائية بمجلس النواب الأمريكي عدم مشاركته في جلسة مساءلة الرئيس الأمريكي دونالد ترمب الأربعاء المقبل. وانتهى ليلة أمس، الموعد النهائي المحدد ليوضح البيت ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079475">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/475.jpg?q=1" alt="تقرير أممي يفضح قطر:" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/475.jpg?q=1" alt="تقرير أممي يفضح قطر:" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+تقرير أممي يفضح قطر: بلد العنصرية والتمييز على أساس العرق والجنسية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079430">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/430.jpg" alt="محاكمة إسرائيلي أمام" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/430.jpg" alt="محاكمة إسرائيلي أمام" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+محاكمة إسرائيلي أمام محكمة أمن الدولة الأردنية.. لهذا السبب
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079486">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/486.jpg?q=1" alt="هل يظهر صراع في البلد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/486.jpg?q=1" alt="هل يظهر صراع في البلد" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+هل يظهر صراع في البلد المعزول؟.. عودة عم زعيم كوريا الشمالية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079492">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/492.jpg?q=1" alt="تحطم طائرة صغيرة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/492.jpg?q=1" alt="تحطم طائرة صغيرة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+تحطم طائرة صغيرة بالولايات المتحدة ومصرع ركابها
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=10&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/10">
+<h2> مرأة </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079437">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/437.jpg" width="740" height="416" alt="اقض على الكوليسترول" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/437.jpg" width="740" height="416" alt="اقض على الكوليسترول" /></noscript>
+</div>
+<div class="txt">
+<h2>
+اقض على الكوليسترول وضغط الدم بنوع خارق من البذور
+</h2>
+<p class="hidden-xs hidden-sm">
+أمراض القلب لا تزال القاتل الصامت للكثيرين يمكنك الحفاظ على صحة قلبك بالحرص على إدخال تلك الأطعمة لنظامك الغذائى اليومى يقدمها موقع هيلث لاين. 1. البروكلي: هو مصدر طبيعي من حمض الفوليك الذى يقلل من ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079480">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/480.jpg" alt="يقوي الذاكرة.. فوائد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/480.jpg" alt="يقوي الذاكرة.. فوائد" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+يقوي الذاكرة.. فوائد غير متوقعة للزنجبيل.. تعرف عليها
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079440">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/440.jpg" alt="احذر.. أطعمة غير" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/440.jpg" alt="احذر.. أطعمة غير" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+احذر.. أطعمة غير متوقعة تؤثر على صحة البنكرياس
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079443">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/443.jpg?q=1" alt="لو عيد ميلادك النهاردة.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/443.jpg?q=1" alt="لو عيد ميلادك النهاردة.." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لو عيد ميلادك النهاردة.. اعرف شخصيتك من علم الأرقام!
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079477">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/477.jpg" alt="الابتعاد عن التوتر" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/477.jpg" alt="الابتعاد عن التوتر" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+الابتعاد عن التوتر أبرزها.. 7 نصائح للتخلص من النقرس نهائيًا
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=11&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/11">
+<h2> منوعات </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079454">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/454.jpg" width="740" height="416" alt="نزهة بـ بالون تنتهي" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/454.jpg" width="740" height="416" alt="نزهة بـ بالون تنتهي" /></noscript>
+</div>
+<div class="txt">
+<h2>
+نزهة بـ بالون تنتهي بحروق عنيفة.. والتعويض مليون جنيه استرليني
+</h2>
+<p class="hidden-xs hidden-sm">
+كانت تستعد بكل طاقتها أن تكون طبيبة كما تمنت طوال عمرها، ولكن جاءت الرياح بما لا تشتهي "ريبيكا" حيث تعترض لحادث مروع أبعدها عن تحقيق حلمها مسافات بعيدة، الامر الذي دفعها لطلب تعويض هائل بسبب جروحها. ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079435">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/435.jpg?q=1" alt="بتنورة.. لجين عمران" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/435.jpg?q=1" alt="بتنورة.. لجين عمران" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+بتنورة.. لجين عمران تخطف أنظار متابعيها عبر إنستجرام
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079446">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/446.jpg" alt="لن نشتري هذا العام" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/446.jpg" alt="لن نشتري هذا العام" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لن نشتري هذا العام شجرة.. سيدة تستقبل عيد الميلاد بطريقة غريبة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079416">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/416.jpg" alt="4 مراهقين يدخلون" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/416.jpg" alt="4 مراهقين يدخلون" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+4 مراهقين يدخلون السجن بسبب خروف
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079355">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/355.jpg" alt="شاهد .. عامل كاد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/355.jpg" alt="شاهد .. عامل كاد" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+شاهد .. عامل كاد يحرق حيًا بعد انفجار فرن
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=14&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/14">
+<h2> ديني </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4078881">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/881.jpg" width="740" height="416" alt="يقرأ الورد اليومي" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/881.jpg" width="740" height="416" alt="يقرأ الورد اليومي" /></noscript>
+</div>
+<div class="txt">
+<h2>
+يقرأ الورد اليومي من التليفون وليس المصحف.. هل نفس الثواب
+</h2>
+<p class="hidden-xs hidden-sm">
+ورد سؤال للشيخ علي فخر امين الفتوى بدار الإفتاء، من سائل يقول" أقرأ الورد اليومي من على التلفون وليس المصحف.. هل نفس الثواب". أجاب أمين الفتوى خلال البث المباشر عبر الصفحة الرسمية للدار، أنه لا مانع ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078856">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/856.jpg" alt="حُكم وضوء المرأة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/856.jpg" alt="حُكم وضوء المرأة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+حُكم وضوء المرأة حال خروج إفرازات طبيعية بعد الحيض
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078848">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/848.jpg" alt="فضل حفظ القرآن الكريم.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/848.jpg" alt="فضل حفظ القرآن الكريم.." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+فضل حفظ القرآن الكريم.. 8 أمور ترفع قدرك وتجعلك تبادل إليه على الفور
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078771">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/771.jpg" alt="هل الذهب المدخر لتجهيز" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/771.jpg" alt="هل الذهب المدخر لتجهيز" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+هل الذهب المدخر لتجهيز الفتيات عليه زكاة ؟.. أستاذ فقه يجيب
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078805">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/805.jpg" alt="كيفية حفظ القرآن" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/805.jpg" alt="كيفية حفظ القرآن" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+كيفية حفظ القرآن الكريم بسهولة.. تعرف على 8 أمور تعينك على الفهم السريع
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=17&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/17">
+<h2> سيارات </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4078091">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/91.jpg?q=3" width="740" height="416" alt="جاجوار jaguar تعلن" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/91.jpg?q=3" width="740" height="416" alt="جاجوار jaguar تعلن" /></noscript>
+</div>
+<div class="txt">
+<h2>
+جاجوار jaguar تعلن تخفيض 100 ألف جنيه على موديلات 2020
+</h2>
+<p class="hidden-xs hidden-sm">
+قدمت شركة جاجوار موديلات 2020 في السوق المصرية، منها طرازات جاجوار jaguar f pace بعد تقديمها لموديلات jaguar xe الجديدة 2020.
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078891">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/891.jpg" alt="لكزس LX الجديدة كليًا" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/891.jpg" alt="لكزس LX الجديدة كليًا" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لكزس LX الجديدة كليًا تصل بموديل 2022 .. صور
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078887">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/887.jpg?q=1" alt="بوجاتي شيرون تحصل" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/887.jpg?q=1" alt="بوجاتي شيرون تحصل" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+بوجاتي شيرون تحصل على الإصدار الخاص «نوار» .. صور
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078859">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/859.jpg?q=1" alt="فورد موستنج خارقة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/859.jpg?q=1" alt="فورد موستنج خارقة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+فورد موستنج خارقة بقوة 1000 حصان معروضة بأمريكا فقط.. فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078785">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/785.jpg?q=1" alt="لو طفلك بيركب معاك" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/785.jpg?q=1" alt="لو طفلك بيركب معاك" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لو طفلك بيركب معاك العربية .. تعرف على مواصفات كرسي الأطفال الأكثر أمانًا
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=4023&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/4023">
+<h2> أصل الحكاية </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079076">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/76.jpg?q=1" width="740" height="416" alt="ليست الفيديوهات الإباحية" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/76.jpg?q=1" width="740" height="416" alt="ليست الفيديوهات الإباحية" /></noscript>
+</div>
+<div class="txt">
+<h2>
+ليست الفيديوهات الإباحية وحدها.. قصة الراقصة جوهرة مع إثارة الرأي العام «كل يوم حكاية شكل»
+</h2>
+<p class="hidden-xs hidden-sm">
+منذ وصولها إلى مصر قادمة من روسيا نهاية شهر يناير في عام 2018، ولم تتوقف الراقصة جوهرة عن إثارة الجدل بين الحين والأخر، إلا أن جدلها يختلف عن غيره فكله جدل تحت شعار «لتحريضها على الفسق والفجور». ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078921">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/921.jpg?q=1" alt="ريتشارد بوديكر مهندس" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/921.jpg?q=1" alt="ريتشارد بوديكر مهندس" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+ريتشارد بوديكر مهندس تخضير المملكة.. هكذا كرمته السعودية بعد وفاته
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078872">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/872.jpg?q=1" alt="في الذكرى الخامسة" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/872.jpg?q=1" alt="في الذكرى الخامسة" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+في الذكرى الخامسة لمبايعته ملكا.. ماذا قدم سلمان بن عبدالعزيز للسعودية؟
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078832">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/832.jpg?q=1" alt="قرش جديد على سواحل" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/832.jpg?q=1" alt="قرش جديد على سواحل" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+قرش جديد على سواحل الغردقة.. حكاية «بهلول» جالب السعادة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078774">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/774.jpg?q=1" alt="ألقى المنديل.. هل" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/774.jpg?q=1" alt="ألقى المنديل.. هل" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+ألقى المنديل.. هل يعترف جوارديولا بفشله مع مانشستر سيتي هذا الموسم؟
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=4727&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/4727/tech">
+<h2> تكنولوجيا </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079052">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/52.jpg" width="740" height="416" alt="WhatsApp يطلعك على" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/52.jpg" width="740" height="416" alt="WhatsApp يطلعك على" /></noscript>
+</div>
+<div class="txt">
+<h2>
+WhatsApp يطلعك على أكثر شخص تقضى وقتك معه.. خاصية جديدة
+</h2>
+<p class="hidden-xs hidden-sm">
+كشفت صحيفة إكسبرس عن خاصية في تطبيق واتس أب WhatsApp"" تطلعك على عدد الرسائل التى أرسلتها بالإضافة إلى الإيموجي والصور وغيرها من التى قد تكون أرسلتهم لأحد في قائمة الأصدقاء الخاصة بك. وتجعلك الخاصية ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078909">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/909.jpg" alt="الدمعة .. نوكيا تعيد" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/909.jpg" alt="الدمعة .. نوكيا تعيد" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+الدمعة .. نوكيا تعيد تقديم هاتف 7610 من جديد
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079467">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/467.jpg" alt="هاكر يسرق 49 مليون" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/467.jpg" alt="هاكر يسرق 49 مليون" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+هاكر يسرق 49 مليون دولار بعملات مشفرة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078892">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/892.jpg" alt="خذ بنصيحة مدير تويتر" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/892.jpg" alt="خذ بنصيحة مدير تويتر" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+خذ بنصيحة مدير تويتر وتجنب استخدام جوجل.. تعرف على أفضل 4 محركات بحث
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079402">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/402.jpg" alt="لازم تغير مكيف الهواء" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/402.jpg" alt="لازم تغير مكيف الهواء" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لازم تغير مكيف الهواء لهذا السبب
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=6&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/6">
+<h2> اقتصاد </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079204">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/204.jpg" width="740" height="416" alt="البورصة: تطبيقات" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/204.jpg" width="740" height="416" alt="البورصة: تطبيقات" /></noscript>
+</div>
+<div class="txt">
+<h2>
+البورصة: تطبيقات التكنولوجيا المالية تعزز النمو الاحتوائي
+</h2>
+<p class="hidden-xs hidden-sm">
+أكد محمد فريد رئيس اتحاد البورصات العربية والبورصة المصرية، أن تطبيقات التكنولوجيا المالية تساعد إلى حد كبير أسواق الأوراق المالية العربية فى تحقيق مستهدفاتها وخاصة دعم جهود تعزيز النمو الاقتصادى ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079299">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/299.jpg" alt="راكتا: توقف الإنتاج" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/299.jpg" alt="راكتا: توقف الإنتاج" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+راكتا: توقف الإنتاج في أكتوبر نتيجة الورق المستورد
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079323">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/323.jpg" alt="صناعة الأخشاب تطلق" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/323.jpg" alt="صناعة الأخشاب تطلق" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+صناعة الأخشاب تطلق مؤتمرا للتصدير لإفريقيا منتصف الشهر الجاري
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079315">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/315.jpg" alt="المصري للدراسات الاقتصادية" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/315.jpg" alt="المصري للدراسات الاقتصادية" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+المصري للدراسات الاقتصادية يناقش دعم ريادة الأعمال
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079247">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/247.jpg?q=1" alt="المتوسط أكثر من 10" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/247.jpg?q=1" alt="المتوسط أكثر من 10" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+المتوسط أكثر من 10 آلاف ريال.. تعرف على رواتب موظفي القطاع الخاص في السعودية
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  " ord="id=3&top=5">
+<div class="title">
+<div class="txt">
+<a href="/list/3">
+<h2> محافظات </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-block">
+<a href="/4079335">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/335.jpg?q=1" width="740" height="416" alt="تقادم وحدة إنتاج" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/335.jpg?q=1" width="740" height="416" alt="تقادم وحدة إنتاج" /></noscript>
+</div>
+<div class="txt">
+<h2>
+تقادم وحدة إنتاج حامض النيتريك بمصنع كيما القديم بأسوان سبب تسرب الأدخنة
+</h2>
+<p class="hidden-xs hidden-sm">
+أيام قليلة مرت على واقعة تعرض 84 طالبة ومعلمة بمدرسة حسين مرسال الثانوية الفنية للبنات بمنطقة المحمودية بمدينة أسوان لاختناق رئوى نتيجة تسرب أدخنة من مصنع كيما القديم الأسبوع الماضى، وعلى الفور تم ...
+</p>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079338">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/338.jpg?q=1" alt="في أولى جولاته الميدانية.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/338.jpg?q=1" alt="في أولى جولاته الميدانية.." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+في أولى جولاته الميدانية.. 11 قرارا بتكليف من محافظ الإسكندرية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079281">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/281.jpg?q=1" alt="للحفاظ على أرواح" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/281.jpg?q=1" alt="للحفاظ على أرواح" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+للحفاظ على أرواح المواطنين.. محافظ الإسكندرية: تغيير قضبان مزلقان محطة ترام الوزارة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079215">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/215.jpg?q=1" alt="لسلامة المواطنين.." style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/215.jpg?q=1" alt="لسلامة المواطنين.." /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+لسلامة المواطنين.. إغلاق 12 منشأة طبية مخالفة في الدقهلية
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079214">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/214.jpg?q=1" alt="حياة كريمة .. قوافل" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/214.jpg?q=1" alt="حياة كريمة .. قوافل" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+حياة كريمة .. قوافل علاجية مجانية لأهالى قرى الدقهلية شهريا
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="block has-title most old  hidden-xs">
+<div class="title"><div class="txt"><a href="https://www.facebook.com/ElBaladOfficial"><h2> تابعنا على الفيس بوك </h2> <span class="fa fa-plus"></span></a></div></div>
+<div class="content" style="max-width:100%;overflow:hidden">
+<iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FElBaladOfficial&amp;width=650&amp;height=180&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23EBE9E9&amp;stream=false&amp;header=false&amp;appId=165399323503009" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 100%
+height: 190px;" allowtransparency="true"></iframe>
+</div></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+<div class="ad-area-wide adplace"></div>
+</div>
+<div class="col-md-4 content-left">
+<div class="hidden-sm hidden-xs" style="height:46px;"></div>
+<div class="block  adv300 newplace">
+<div class="ad-block" style="max-width:100%;max-height:374px;overflow:hidden; height:300px; background: transparent; width: 320px !important; height: auto!important;">
+</div>
+</div>
+<div style="clear:both"></div>
+<div class="hidden-xs " style="float: right; width: 100%;">
+
+<div class="adplace" style="width: 300px;margin: 10px auto;"></div>
+
+<div class="adplace"></div>
+</div>
+
+<div class="adplace"><img src="/adview/4371$7cview" rel="nofollow" style="display:none" /><div class="ad">
+<center>
+<div style="
+text-align: center;
+font-size:10px;
+display: block;
+margin: -5px 0;
+padding-top:4px;
+">
+<span style="color: #666666;height: 23px;display: inline-block;">AdvertisementS</span>
+</div>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<div id='HLeftCol0'>
+<script>
+     window.googletag = window.googletag || {cmd: []};
+       googletag.cmd.push(function() {
+         googletag
+           .defineSlot('/26140141/2020_2nd_Showcase_Homepage', [[360, 280], [300, 600], [300, 250], [336, 280], [360, 300], [300, 100]], 'HLeftCol0')
+           .addService(googletag.pubads());
+              googletag.enableServices();
+         googletag.display('HLeftCol0');
+     });
+  </script>
+</div>
+</center>
+</div></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+
+<div class="adplace"></div>
+<div class="hidden-sm hidden-xs" style="height:15px;"></div>
+<div class="oldMostReadPlace">
+<div class="block tabbed movable">
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#read" aria-controls="read" role="tab" data-toggle="tab"><span class="fa fa-fire"></span> ﺗﻔﻀﻴﻼﺕ اﻟﻘﺮاء </a></li>
+</ul>
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="read">
+<div class="content">
+<div class="item-li  ">
+<a href="/4079449">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/449.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/449.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> محمود كهربا يرد على أنباء توقيعه للأهلي |شاهد
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079488">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/488.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/488.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> بعد فسخ تعاقده .. رسالة حمدي النقاز لجماهير الزمالك وزملائه
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079307">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/307.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/307.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> أول رد فعل من جوهرة بعد انتشار فيديوهات إباحية لها
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079394">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/394.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/394.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> نشرة الفن.. أول تعليق من جوهرة على الفيديو الإباحى.. وعمر فاروق الفيشاوى يكشف اللحظات الأخيرة فى حياة والده
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079472">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/472.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/472.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> صدمة للجماهير.. مرتضى منصور يلغي إطلاق قناة الزمالك لهذا السبب
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079324">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/324.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/324.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> بسمة وهبة: أنا بقالي كتير ساكتة بس قررت أتكلم| فيديو
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079437">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/437.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/437.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> اقض على الكوليسترول وضغط الدم بنوع خارق من البذور
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079487">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/487.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/487.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> النقاز يفسخ عقده مع الزمالك.. ثلاثية مازيمبي تشعل أزمة طارق حامد وساسي
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079313">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/313.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/313.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> مشهد مرعب وصادم.. ركاب لعبة ملاهي يتطايرون فى الهواء ويسقطون على الأرض بعنف.. شاهد
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079491">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/491.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/491.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> حمدي النقاز يرهن استمراره مع الزمالك بشرط .. اعرف التفاصيل
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4078805">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/8/200x112o/805.jpg" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/200x112o/805.jpg" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> كيفية حفظ القرآن الكريم بسهولة.. تعرف على 8 أمور تعينك على الفهم السريع
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4079476">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/476.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/476.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2> انقطع عن التدريب .. النقاز يودع زملاءه بالزمالك عبر السوشيال ميديا
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+    .content-left .adplace{
+        min-width: 100%;
+        max-width: 336px;
+        text-align: center;
+
+    } 
+</style>
+<div class="adplace 300"></div>
+<div class="adplace 300"></div>
+<div class="photos" ord="type=1">
+<div class="title" style="cursor:pointer;" onclick="location.href='/list.aspx?type=1';">
+<h3> ﺑﺎﻟﺼﻮﺭ </h3>
+</div>
+<div class="item">
+<a href="/4078529" target="_blank">
+<h2>
+شيك وغير مكلف.. 20 صورة لتزيين منزلك بـ الأرفف الخشبية
+</h2>
+<div class="img-cont">
+<span class="fa fa-camera"></span>
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/529.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/529.jpg?q=1" width="740" height="416" alt="" /></noscript>
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/529.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/529.jpg?q=1" width="740" height="416" alt="" /></noscript>
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/529.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/529.jpg?q=1" width="740" height="416" alt="" /></noscript>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="/4079148" target="_blank">
+<h2>
+عادة نفعلها عند صنع الكيكة تسبب التسمم المعوي
+</h2>
+<div class="img-cont">
+<span class="fa fa-camera"></span>
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/148.jpg" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/148.jpg" width="740" height="416" alt="" /></noscript>
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/148.jpg" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/148.jpg" width="740" height="416" alt="" /></noscript>
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/148.jpg" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/148.jpg" width="740" height="416" alt="" /></noscript>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="/4078820" target="_blank">
+<h2>
+نجع حمادي الأشهر في الإنتاج.. عصارات العسل الأسود.. صناعة تاريخيه تبحث عن التطوير
+</h2>
+<div class="img-cont">
+<span class="fa fa-camera"></span>
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/820.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/820.jpg?q=1" width="740" height="416" alt="" /></noscript>
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/820.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/820.jpg?q=1" width="740" height="416" alt="" /></noscript>
+<img data-cfsrc="/upload/photo/news/407/8/400x225o/820.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/8/400x225o/820.jpg?q=1" width="740" height="416" alt="" /></noscript>
+</div>
+</a>
+</div>
+</div>
+<div class="adplace 300"></div>
+<div class="block has-title most old multi" ord="type=2">
+<div class="title">
+<div class="txt">
+<a href="/list.aspx?type=2">
+<h2> فيديو </h2>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-bg">
+<a href="/4079373" target="_blank">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/373.jpg" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/373.jpg" width="740" height="416" alt="" /></noscript>
+<div class="overlay">برلمانى: الأزهر لم يرد على مقترح النواب حول قانون الأحوال الشخصية..فيديو </div>
+</a>
+</div>
+<div class="item-bg">
+<a href="/4079434" target="_blank">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/434.jpg" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/434.jpg" width="740" height="416" alt="" /></noscript>
+<div class="overlay">إياد نصار: قمت بتجهيزات معينة لشخصية الضابط الإسرائيلي في فيلم الممر.. فيديو </div>
+</a>
+</div>
+<div class="item-bg">
+<a href="/4079296" target="_blank">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/296.jpg" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/296.jpg" width="740" height="416" alt="" /></noscript>
+<div class="overlay">عبد الله النجار: الإسلام والأديان السماوية تهتم بكل ما يتعلق بالأحوال الشخصية.. فيديو </div>
+</a>
+</div>
+<div class="item-bg">
+<a href="/4079419" target="_blank">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/419.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/419.jpg?q=1" width="740" height="416" alt="" /></noscript>
+<div class="overlay">ما تقطعوش شرايينكم.. لميس الحديدي تعلق على بوستات إياد نصار لزوجته.. فيديو </div>
+</a>
+</div>
+<div class="item-bg">
+<a href="/4079436" target="_blank">
+<img data-cfsrc="/upload/photo/news/407/9/400x225o/436.jpg?q=1" width="740" height="416" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/400x225o/436.jpg?q=1" width="740" height="416" alt="" /></noscript>
+<div class="overlay">إياد نصار: التمثيل مغامرة.. والشهرة جزء من المهنة.. فيديو </div>
+</a>
+</div>
+</div>
+</div>
+<div class="hidden-xs">
+<div class="block has-title art" ord="r=0">
+<div class="title">
+<div class="txt">
+<h2>
+ساحة رأي
+</h2>
+</div>
+</div>
+<div class="content">
+<div class="art-item  ">
+<div class="img-cont">
+<a href="/4078434"><img data-cfsrc="/upload/photo/writers/0/2/60x70o/236.jpg" alt="" title="" style="display:none;visibility:hidden;"><noscript><img src="/upload/photo/writers/0/2/60x70o/236.jpg" alt="" title=""></noscript></a>
+</div>
+<div class="text-hold">
+<div class="name"> <a href="list.aspx?r=2236"> عاطف عبد الستار </a></div>
+<div class="tit"> <a href="/4078434">
+أحفاد العقرب قادرون على ردع أردوغان في ليبيا</a>
+</div>
+</div>
+</div>
+<div class="art-item  ">
+<div class="img-cont">
+<a href="/4078444"><img data-cfsrc="/upload/photo/writers/0/2/60x70o/287.jpg" alt="" title="" style="display:none;visibility:hidden;"><noscript><img src="/upload/photo/writers/0/2/60x70o/287.jpg" alt="" title=""></noscript></a>
+</div>
+<div class="text-hold">
+<div class="name"> <a href="list.aspx?r=2287"> د.جهاد عودة </a></div>
+<div class="tit"> <a href="/4078444">
+التشفير فى إسرائيل</a>
+</div>
+</div>
+</div>
+<div class="art-item  ">
+<div class="img-cont">
+<a href="/4078453"><img data-cfsrc="/upload/photo/writers/0/0/60x70o/955.jpg" alt="" title="" style="display:none;visibility:hidden;"><noscript><img src="/upload/photo/writers/0/0/60x70o/955.jpg" alt="" title=""></noscript></a>
+</div>
+<div class="text-hold">
+<div class="name"> <a href="list.aspx?r=955"> منى المراغي </a></div>
+<div class="tit"> <a href="/4078453">
+صحتك بالدنيا ... </a>
+</div>
+</div>
+</div>
+<div class="art-item  ">
+<div class="img-cont">
+<a href="/4078439"><img data-cfsrc="/upload/photo/writers/0/2/60x70o/110.jpg" alt="" title="" style="display:none;visibility:hidden;"><noscript><img src="/upload/photo/writers/0/2/60x70o/110.jpg" alt="" title=""></noscript></a>
+</div>
+<div class="text-hold">
+<div class="name"> <a href="list.aspx?r=2110"> محمود دياب </a></div>
+<div class="tit"> <a href="/4078439">
+ليست حرية شخصية</a>
+</div>
+</div>
+</div>
+<div class="art-item  ">
+<div class="img-cont">
+<a href="/4077656"><img data-cfsrc="/upload/photo/writers/0/0/60x70o/899.jpg" alt="" title="" style="display:none;visibility:hidden;"><noscript><img src="/upload/photo/writers/0/0/60x70o/899.jpg" alt="" title=""></noscript></a>
+</div>
+<div class="text-hold">
+<div class="name"> <a href="list.aspx?r=899"> د.احمد فخرى </a></div>
+<div class="tit"> <a href="/4077656">
+فتره المراهقة.. وحيرة الأهل </a>
+</div>
+</div>
+</div>
+</div>
+<div class="foot">
+<a href="/list.aspx?r=0"> اﻟﻤﺰﻳﺪ <span class="fa fa-long-arrow-left"></span></a>
+</div>
+</div>
+</div>
+<div class="block has-title poll">
+<div class="title">
+<div class="txt">
+<h2>
+ﺗﺼﻮﻳﺖ
+</h2>
+</div>
+</div>
+<div class="content">
+<div class="voteform" id="pnlResult" style=" display:none;">
+<div class="form-group formq" style="color:#000;font-weight:bold">
+هل تؤيد إقالة ميتشو من تدريب الزمالك ؟
+</div>
+<div class="opt ">
+<p><label for="p2974">
+<span class="fa fa-caret-left"></span>
+نعم
+<span class="pull-left">
+50%
+</span>
+</label></p>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+</div>
+</div>
+</div>
+<div class="opt ">
+<p><label for="p2975">
+<span class="fa fa-caret-left"></span>
+لا
+<span class="pull-left">
+36%
+</span>
+</label></p>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width: 36%;">
+</div>
+</div>
+</div>
+<div class="opt ">
+<p><label for="p2976">
+<span class="fa fa-caret-left"></span>
+لا أهتم
+<span class="pull-left">
+14%
+</span>
+</label></p>
+<div class="progress">
+<div class="progress-bar" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100" style="width: 14%;">
+</div>
+</div>
+</div>
+</div>
+<form role="form" class="voteform" id="pnlForm">
+<div class="form-group formq" style="color:#000;font-weight:bold">
+هل تؤيد إقالة ميتشو من تدريب الزمالك ؟
+</div>
+<div class="form-group choices">
+<div class="radio choice">
+<label>
+<input type="radio" name="poll898" id="p2974" selector=".master_poll" />
+نعم </label>
+</div>
+<div class="radio choice">
+<label>
+<input type="radio" name="poll898" id="p2975" selector=".master_poll" />
+لا </label>
+</div>
+<div class="radio choice">
+<label>
+<input type="radio" name="poll898" id="p2976" selector=".master_poll" />
+لا أهتم </label>
+</div>
+</div>
+<button type="button" class="btn btn-primary  btn-sm" id="btnVote">تصويت </button>
+<button type="button" class="btn btn-primary btn-sm" id="btnResult">النتائج</button>
+</form>
+</div>
+</div>
+<script type="text/javascript">var poll_id = 898;
+
+    $(document).ready(function(){
+        try {
+            dopoll(poll_id, 0, '.master_poll');
+        } catch (ex) { }
+    });
+
+</script>
+<script>
+
+    $(document).ready(function () {
+        //-52px -257px
+        try {
+            dopoll(poll_id, 0);
+            $('.poll .choice label').css('cursor', 'pointer');
+            $('.poll .choice input').each(function (i, o) {
+                var hid = $(o).attr('id').substr(1);
+                $(o).click(function () {
+                    act_poll = hid;
+                });
+            });
+        } catch (ex) { }
+
+        $('#btnVote').click(function () {
+            dopoll(0, act_poll);
+            $('#pnlResult').css('display', 'block');
+            $('#pnlForm').css('display', 'none');
+
+            return false;
+        });
+
+
+        $('#btnResult').click(function () {
+            $('#pnlResult').css('display', 'block');
+            $('#pnlForm').css('display', 'none');
+
+            return false;
+        });
+
+
+    });
+
+
+    var poll_state = 0;
+    var act_poll = 0;
+
+    function dopoll(pid, hid) {
+        try {
+
+            if (poll_state == 0) {
+                poll_state = 0;
+                $('.poll .choice input:not(:checked)').css('visibility', 'hidden');
+
+                console.log( '/service/poll.aspx?pid=' + pid + '&hid=' + hid);
+                $.ajax({
+                    url: '/service/poll.aspx?pid=' + pid + '&hid=' + hid,
+                    cache: false,
+                    timeout: 20000,
+                    error: function (jqXHR, textStatus, errorThrown) {
+                    },
+                    success: function (html) {
+                        var c = parseInt(html);
+                        $('.poll .choice input').css('visibility', '');
+                        if (c > 0) {
+                            $('#p' + c).prop('checked', true);
+                            $('.poll .choice input:not(:checked)').attr('disabled', true);
+                        } else {
+                            poll_state = 0;
+                        }
+                    }
+                });
+            }
+        } catch (ex) { }
+    }
+
+
+</script>
+<div class="block">
+</div>
+<div class="hidden-xs">
+<div class="block has-title   " ord="id=2070&top=4">
+<div class="title">
+<div class="txt">
+<a href="/list/2070">
+<h2> ساحة رأي </h2>
+<span class="fa fa-plus"></span>
+</a>
+</div>
+</div>
+<div class="content">
+<div class="item-li  ">
+<a href="/4079294">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/9/200x112o/294.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/9/200x112o/294.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+حسام الفحام يكتب : الأحمق والعميل .. في معركة الرمق الأخير
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4077645">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/7/200x112o/645.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/7/200x112o/645.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+د.ريمون ميشيل يكتب: "قواعد هامة لضبط مشاعرك"
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4077392">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/7/200x112o/392.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/7/200x112o/392.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+د. مجدى بدران يكتب: الأهداب التنفسية والمخاط والمناعة
+</h2>
+</div>
+</div>
+</a>
+</div>
+<div class="item-li  ">
+<a href="/4077433">
+<div class="img-cont">
+<img data-cfsrc="/upload/photo/news/407/7/200x112o/433.jpg?q=1" alt="" style="display:none;visibility:hidden;" /><noscript><img src="/upload/photo/news/407/7/200x112o/433.jpg?q=1" alt="" /></noscript>
+</div>
+<div class="overlay">
+<div class="txt-block">
+<h2>
+بشرى بو جمعة تكتب: المشاعر وتجارب الحياة
+</h2>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="foot">
+<a href="/custom/people"> أرسل مشاركتك <span class="fa fa-long-arrow-left"></span></a>
+</div>
+</div>
+</div>
+<div class="adplace"></div>
+<div class="adplace"></div>
+<div class="adplace"></div>
+<div style="float:left; width:100%; margin:15px  0; overflow-x: hidden;">
+</div>
+<div class="hidden-xs">
+</div>
+</div>
+</div>
+<footer>
+<script type='text/javascript'>footervarsettings={'refpublisherid': '12558'}; (function(d) {var s = d.createElement('script'); s.async = true;s.id='madv2014rtgfooter';s.type='text/javascript';s.src = (d.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.mainadv.com/Visibility/FooterIN-min.js';var a = d.getElementsByTagName('script')[0]; a.parentNode.insertBefore(s, a);}(document));</script>
+<div class="container">
+<a class="cd-top" href="#"><span class="fa fa-angle-up"></span></a>
+<div class="top"> إلى أعلي </div>
+<div class="footer-top">
+<div class="flogo">
+<a class="logo" href="/">
+<img alt="" height="121" data-cfsrc="/themes/balad/images/logow.png" width="158" style="display:none;visibility:hidden;" /><noscript><img alt="" height="121" src="/themes/balad/images/logow.png" width="158" /></noscript></a>
+</div>
+<div class="fnav">
+<a href="/"><span class="fa fa-home"></span> اﻟﺮﺋﻴﺴﻴﺔ</a>
+<a href="/list.aspx?props=topstory&sel=c2064&t=أهم الأخبار">أهم الأخبار</a>
+<a href="/list/1">أخبار البلد</a>
+<a href="/list/4">حوادث</a>
+<a href="/list/5">رياضة</a>
+<a href="/list/8">فن</a>
+<a href="/list/4023">أصل الحكاية</a>
+<a href="/list/7">توك شو</a>
+<a href="/list/10">مرأة</a>
+<a href="/list/14">ديني</a>
+<a href="/list/11">منوعات</a>
+<a href="/list/3889">تعليم</a>
+<a href="/list/4022">فيديو جراف</a>
+<a href="/list/3">محافظات</a>
+<a href="/list/6">اقتصاد</a>
+<a href="/list/9">أخبار العالم</a>
+<a href="/list/4027">بين الناس</a>
+<a href="/list/17">سيارات</a>
+<a href="/list/4727/tech">تكنولوجيا</a>
+<a href="/list/2066">مقالات</a>
+<a href="/list/2067">ثقافة</a>
+<a href="/list.aspx?type=2">فيديو</a>
+<a href="/list.aspx?type=1">صور</a>
+<a href="/list/2070">ساحة رأي</a>
+<a href="/list/2">برلمان</a>
+<a href="/list/2065">ملفات</a>
+</div>
+<div class="social">
+<p> ﺗﺎﺑﻌﻨﺎ ﻋﻠﻰ </p>
+<a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"> <span class="fa fa-facebook"></span></a>
+<a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"> <span class="fa fa-twitter"></span></a>
+<a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"> <span class="fa fa-youtube-play"></span></a>
+<a class="in" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"> <span class="fa fa-instagram"></span></a>
+<a class="rs" href="/rss.aspx" target="_blank"> <span class="fa fa-rss"></span></a>
+</div>
+</div>
+</div>
+<div class="footer-btm">
+<div class="container">
+<div class="pull-left">
+© 2016 el-balad.news All Rights Reserved. |<a href="http://www.synceg.com" target="_blank">
+<img alt="" height="21" data-cfsrc="/themes/balad/images/sync.png" width="181" style="display:none;visibility:hidden;" /><noscript><img alt="" height="21" src="/themes/balad/images/sync.png" width="181" /></noscript>
+</a>
+</div>
+<div class="pull-right">
+<a href="#"> ﺑﻴﺎﻥ اﻟﺨﺼﻮﺻﻴﺔ </a> .
+<a href="/3835348"> ﻣﻦ ﻧﺤﻦ </a> .
+<a href="/3835346"> ﺇﺗﺼﻞ ﺑﻨﺎ </a>
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript">var _sel = 'c0', _subsel = 'c0';</script>
+<script type="text/javascript" src="/scripts/main.js?r=45"></script>
+<script type="text/javascript" src="/themes/balad/js/jqueryui.js"></script>
+<div class="hidden-print no-print"></div>
+<div id="adPop" style="display: none;position: fixed;padding: 5px;bottom: 2px;width: 100%;z-index: 99999999;" class="hidden-print no-print">
+<div id="popin" style="width: 700px;margin: 0px auto;position: relative;" class="hidden-print no-print">
+<a href="javascript:;" onclick="$('#adPop').css('display','none');$('#adPop').html('');" style="position:absolute;top:-5px;right:-10px;z-index:99999999"><img data-cfsrc="/fb/fancy_close.png" data-cfstyle="width: 50px;height: 50px;" style="display:none;visibility:hidden;"><noscript><img src="/fb/fancy_close.png" style="width: 50px;height: 50px;"></noscript></a>
+<div id="popadin">
+</div>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        setTimeout(function () {
+
+
+            var iframeForAd = $("#google_ads_frame15");
+
+            if ($(iframeForAd.contents()[0]).find("body").html() === "") {
+            } else {
+
+                if ($('#popadin').children().length > 0) {
+
+                    //if (get_cookie('adpop') == '') {
+                        $('#adPop').css({ display: 'block' });
+                        //document.cookie = "adpop=yes"
+                    //}
+
+
+                        setTimeout(function () {
+                            $('#adPop').css({ display: 'none' });
+                        },15000)
+
+                }
+
+
+            }
+
+        }, 3000)
+        
+
+
+    });
+
+
+
+     
+
+    function get_cookie(Name) {
+        var search = Name + "="
+        var returnvalue = "";
+        if (document.cookie.length > 0) {
+            offset = document.cookie.indexOf(search)
+            if (offset != -1) { // if cookie exists
+                offset += search.length
+                // set index of beginning of value
+                end = document.cookie.indexOf(";", offset);
+                // set index of end of cookie value
+                if (end == -1)
+                    end = document.cookie.length;
+                returnvalue = unescape(document.cookie.substring(offset, end))
+            }
+        }
+        return returnvalue;
+    }
+     
+
+</script>
+<script type="text/javascript" src="/themes/balad/js/bootstrap.min.js"></script>
+<script src="/themes/balad/js/jquery.smartmenus.min.js"></script>
+<script src="/themes/balad/js/jquery.smartmenus.bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/themes/balad/js/jquery.simplemarquee.js"></script>
+<script src="/themes/balad/js/owl.carousel.min.js"></script>
+<script src="/themes/balad/js/jquery.sticky.js"></script>
+<script src="/themes/balad/js/jquery.sticky-kit.min.js"></script>
+<script>
+        $(document).ready(function () {
+            try {
+             //   $(".sponser.ad-right .ad120").sticky({ topSpacing: 50 });
+                ///  $(".sponser.ad-left .ad120").sticky({ topSpacing: 50 });
+                $(".stick").sticky({ topSpacing: 20 });
+             } catch (exp) { }
+        });
+    </script>
+<script src="/themes/balad/rs/jquery.royalslider.min.js"></script>
+<script type="text/javascript" src="/themes/balad/js/custom.js?r=5"></script>
+</div>
+</body>
+</html>

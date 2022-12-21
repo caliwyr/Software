@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NGNJXMW');</script>
+<script type="text/javascript" src="https://static.criteo.net/js/ld/ld.js" async="true"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Alodokter - Info Kesehatan, Booking dan Chat Dokter</title>
+    <meta http-equiv="Pragma" content="public">
+    <meta http-equiv="Cache-Control" content="public">
+
+    <!-- CSS -->
+    <style>
+    @font-face {
+        font-family: 'LatoWeb';
+        src: url("/assets/cms_engine/lato/Lato-Regular-e735410675eacc363b257112f39eb819a854b03077d7b1f0caa6e7660ffbd8b3.eot");
+        /* IE9 Compat Modes */
+        src: url("/assets/cms_engine/lato/Lato-Regular-e735410675eacc363b257112f39eb819a854b03077d7b1f0caa6e7660ffbd8b3.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+        url("/assets/cms_engine/lato/Lato-Regular-983b0caf336e8542214fc17019a4fc5e0360864b92806ca14d55c1fc1c2c5a0f.woff2") format('woff2'), /* Modern Browsers */
+        url("/assets/cms_engine/lato/Lato-Regular-5b9025dda4d7688e3311b0c17eddc501133b807def33effaef6593843cf5416e.woff") format('woff'), /* Modern Browsers */
+        url("/assets/cms_engine/lato/Lato-Regular-089ab6d4a57e0e6c4dd3b681b6fd50a5184f1b902429d35e1227e52d6ccad1bd.ttf") format('truetype');
+        font-style: normal;
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+    }
+
+    @font-face {
+        font-family: 'LatoWeb';
+        src: url("/assets/cms_engine/lato/Lato-Bold-b91fc1ca55df440dc11354b32a39b45db663d24bb17b16dcb2e706330955b0d1.eot");
+        /* IE9 Compat Modes */
+        src: url("/assets/cms_engine/lato/Lato-Bold-b91fc1ca55df440dc11354b32a39b45db663d24bb17b16dcb2e706330955b0d1.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+        url("/assets/cms_engine/lato/Lato-Bold-ae88fc0d7a961832f809527d30bd3983a6866d42f66a56ade23f543681594db6.woff2") format('woff2'), /* Modern Browsers */
+        url("/assets/cms_engine/lato/Lato-Bold-0e56b17d142eb366c8007031d14e34da48c70b4a9d9a0ca492e696a7bae45e1e.woff") format('woff'), /* Modern Browsers */
+        url("/assets/cms_engine/lato/Lato-Bold-f71f833c099f450606f8107b83ef208ae918c0ea00779466d45e9be96b0bc7cc.ttf") format('truetype');
+        font-style: normal;
+        font-weight: 700;
+        text-rendering: optimizeLegibility;
+    }
+
+    html, body {
+        margin: 0 auto;
+        font-family: "LatoWeb", sans-serif;
+        font-size: 16px;
+        color: #3b3738;
+        line-height: 1.44;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -moz-font-feature-settings: "liga" on;
+      }
+
+    input{
+       font-family: "LatoWeb", sans-serif !important;
+    }
+
+      ::placeholder {
+        color: #dadee4;
+      }
+
+      /* GLOBAL CSS */
+      .container-fluid {
+        width: 1340px;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        display:flex;
+        justify-content: space-between;
+      }
+
+      blockquote {
+        box-sizing: border-box;
+        margin: 1.5em 0px;
+        padding: 0 8px;
+        border-left: 4px solid #3570d2;
+        font-weight: bold;
+      }
+
+      .main-container {
+        width: 667px;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        padding-top: 45px;
+      }
+
+      .side-container {
+        width: 300px;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        padding-top: 45px;
+      }
+
+      .dfp-container {
+        margin-bottom: 20px;
+      }
+
+      .post-index-title{color:#000;}
+
+      .post-content {
+        line-height: 1.7;
+      }
+
+      .post-content a {
+          color: #3570d2;
+        }
+
+      .search-tag-container{
+        margin: 20px 0px;
+      }
+      .adunit {
+        margin-bottom: 20px;
+      }
+      .search-result-view {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.55;
+        margin: 45px 0 -35px 0;
+      }
+      .h2-related{
+        font-size: 24px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        color: #000000;
+        margin-top: 20px;
+        margin-bottom: 12px;
+      }
+      .h2-related-article{
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: -0.3px;
+        margin: 0;
+        margin-bottom: 20px;
+        color: #000;
+      }
+
+
+
+      @media only screen and (max-width: 1340px) {
+          .content-inner {
+            width: 1340px;
+          }
+        }
+</style>
+
+    <!-- CSS -->
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/assets/cms_engine/favicon-ceb59d400927f792b36ef791c3c2b8ce7a5e62df114a75d95b6b75d58076c6bc.ico" />
+<link rel="icon" type="image/png" href="/assets/cms_engine/favicon-16x16-46bf9957223d4c890754803399233819115dce25e4c76f81a09c6d53651821ca.png" />
+<link rel="icon" type="image/png" href="/assets/cms_engine/favicon-32x32-ebd4fc63e86204c7e18caff7fb3fc1d929253daca92d814d64f52df111e6344f.png" />
+<link rel="icon" type="image/png" href="/assets/cms_engine/android-chrome-192x192-fbe9a22f2fc74b52818c962ab91b40031f1e6dd2d614f376eb1efcc03c5bba0b.png" sizes="192x192" />
+<link rel="apple-touch-icon" type="image/png" href="/assets/cms_engine/apple-touch-icon-49502c5cda884df7e0a5765fcabe5d5d7fa3082a528f70bc094eae17c0bbbbc0.png" sizes="180x180" />
+<link rel="manifest" href="/assets/cms_engine/webmanifest-6fd6d99ef66b541c48449962afdb8342cacc00c296fa27e6d9c20dcbcd94036e.json" />
+
+<meta name="apple-mobile-web-app-title" content="Alodokter">
+<meta name="application-name" content="Alodokter">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="apple-mobile-web-app-status-bar-style" content="#3973cf">
+<meta name="theme-color" content="#3973cf">
+
+<meta name="alexaVerifyID" content="n_Kykr_OZlOYYRDisl_bHGZYccc">
+<meta name="google-site-verification" content=j8xshrH7uBo3AEjk-HfjufpapvzwkNHw57NXFN3G07Y>
+<meta name="msvalidate.01" content=C233DAA628883F2DD70CD54C789D0494>
+<meta name="criteo_account" content="62444">
+<meta name="description" content="App Kesehatan No.1 Di Indonesia. Dapatkan Info Kesehatan Terkini &amp;amp; Terlengkap, Fasilitas Online Booking Rumah Sakit &amp;amp; Dokter, Chat Bersama Dokter, Gratis!" />
+<meta name="keywords" content="alodokter, kesehatan, medis, penyakit, komunitas kesehatan, dokter, konsultasi kesehatan, informasi kesehatan, komunitas, diskusi kesehatan" />
+
+<meta property="fb:app_id" content="331705120345014" />
+<meta property="og:site_name" content="Alodokter" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Alodokter - Info Kesehatan, Booking dan Chat Dokter" />
+<meta property="og:url" content="https://www.alodokter.com" />
+<meta property="og:description" content="App Kesehatan No.1 Di Indonesia. Dapatkan Info Kesehatan Terkini &amp;amp; Terlengkap, Fasilitas Online Booking Rumah Sakit &amp;amp; Dokter, Chat Bersama Dokter, Gratis!" />
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://www.alodokter.com/wp-content/uploads/2014/07/dokter-indonesia-alodokter.jpg" />
+
+<meta property="og:image:width" content="650" />
+<meta property="og:image:height" content="433" />
+<meta property="og:image:type" content="image/jpeg" />
+
+<link rel='canonical' href='https://www.alodokter.com' />
+<meta name="referer" content="http://www.google.com" />
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Alodokter",
+  "url": "https://www.alodokter.com",
+  "logo": "https://res.cloudinary.com/dk0z4ums3/image/upload/v1532655371/3669156ccbf6b6fa159776f00e2dca9432c0f183_kdsyjs.png",
+  "sameAs": [
+    "https://www.facebook.com/alodokter",
+    "https://www.instagram.com/alodokter_id",
+    "https://www.youtube.com/channel/UCVlQXBPDCbz5YES_gBpC1rg",
+    "https://www.twitter.com/alodokter",
+    "https://plus.google.com/+Alodokter-com",
+    "https://www.linkedin.com/company/alodokter"
+  ]
+}
+</script>
+
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="FPbzZmjcwSr52T0CoP4/H05LrOt+TE4c7cl/QZ1kud8aQ9PiEszO7VK0GpK7OXDuQGAmuWxiLhiI0B6KUdd/Xg==" />
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '948327898593359');
+        fbq('track', "PageView");
+    </script>
+    <!-- <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=948327898593359&ev=PageView&noscript=1"/></noscript> -->
+    <!-- End Facebook Pixel Code -->
+
+    <!-- GA -->
+    <script type='text/javascript'>
+        function initExperiment(ExperimentID, callback){if (!ExperimentID){return callback(null);}var r=false; var s=document.createElement('script'); s.type='text/javascript'; s.src='//www.google-analytics.com/cx/api.js?experiment='+ExperimentID; s.onload=function(){if (!r && (!this.readyState || this.readyState=='complete')){r=true; callback(cxApi.chooseVariation());}else{callback(null)}}; s.onerror=function(){callback(null)}; var t=document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);}
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-52179504-1', 'alodokter.com');
+        ga('require', 'displayfeatures');
+
+        var typePage = 'cms_engine/home';
+        if (typePage == 'cms_engine/article') {
+            window.GAPageType = 'Article';
+            ga('set', 'contentGroup1', 'Article Page');
+        } else if (typePage == 'cms_engine/komunitas/topics' || typePage == 'cms_engine/komunitas/discussions') {
+            window.GAPageType = 'Komunitas';
+            ga('set', 'contentGroup1', 'Komunitas Page');
+        } else if (typePage == 'cms_engine/disease') {
+            window.GAPageType = 'Diseases';
+            ga('set', 'contentGroup1', 'Disease Page');
+        } else if (typePage == 'cms_engine/drugs') {
+            window.GAPageType = 'Drugs';
+            ga('set', 'contentGroup1', 'Drug Page');
+        } else {
+            window.GAPageType = 'General';
+        }
+        initExperiment(window.ExperimentID, function(variation) {
+            if (variation !== null) {
+                window.ExperimentReady = true;
+                window.ExperimentVariation = variation;
+                ga('set', 'expId', window.ExperimentID);
+                ga('set', 'expVar', window.ExperimentVariation);
+            }
+            ga('send', 'pageview');
+            ga('send', 'event', 'Scroll Depth', GAPageType, '0%');
+        });
+    </script>
+    <!-- GA -->
+
+    <!-- Google Tag -->
+    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <!-- Google Tag -->
+
+    <script type='text/javascript'>
+        _atrk_opts = { atrk_acct:"2x5el1aUUYj05T", domain:"alodokter.com",dynamic: true};(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    </script>
+    <!--<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=2x5el1aUUYj05T" style="display:none" height="1" width="1" alt="" /></noscript>-->
+
+</head>
+<body>
+    <!-- <message-bar id="messageBar"></message-bar> -->
+    <!-- HEADER -->
+    
+
+
+    <top-navbar-view id="top-navbar-view"
+        user-login=""
+        user-fullname=""
+        total-notif="0"
+        user-link=""
+
+    ></top-navbar-view>
+
+
+    <!-- HEADER -->
+
+    <div class="content" id="content">
+        <hero-view is-display-insurance-link='true'  >
+        </hero-view>
+        <sub-navbar></sub-navbar>
+
+        <div class="content-inner">
+            <div class="container" id="container">
+                <script type='text/javascript'>
+    googletag.cmd.push(function() {
+        googletag.defineSlot('/38162042/d_home_sidebar_300x600', [300, 600], 'div-gpt-ad-1428907644705-3').addService(googletag.pubads());
+        googletag.defineSlot('/38162042/d_home_sidebar_below_300x600', [300, 600], 'div-gpt-ad-1448859288233-0').addService(googletag.pubads());
+        googletag.defineSlot('/38162042/d_home_sidebar_third_300x600', [300, 600], 'div-gpt-ad-1461741108478-0').addService(googletag.pubads());
+        googletag.defineSlot('/38162042/d_home_sidebar_middle_300x250', [300, 250], 'div-gpt-ad-1442888492994-0').addService(googletag.pubads());
+        googletag.defineSlot('/38162042/d_homepage_html_video_sidebar_above', [300, 250], 'div-gpt-ad-1483519785947-0').addService(googletag.pubads());
+        googletag.pubads().enableAsyncRendering();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+</script>
+<div class="main-container"  style="padding: 0 0 0 0;">
+<link-button
+        href="/komunitas/diskusi/penyakit"
+        type="tanya-dokter-icon"
+        image-background="icon_doctor"
+        value=""
+    ></link-button>
+        <!-- TRENDING NOW -->
+        <trending-now
+            url-path="/kenali-6-tanda-diabetes-pada-bayi"
+            title="Kenali 6 Tanda Diabetes pada Bayi"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_667,h_336,c_fill/v1574654319/attached_image/kenali-6-tanda-diabetes-pada-bayi.jpg"
+            category="Kesehatan "
+            category-label="kesehatan"
+            short-description="Meski umum terjadi pada orang dewasa, diabetes juga bisa diderita oleh bayi. Oleh karena itu, kenali tanda diabetes pada bayi..."
+        ></trending-now>
+        <!-- TRENDING NOW -->
+
+    <!-- LAST POST -->
+        <card-post-index
+            url-path="/kenali-lebih-jauh-seputar-bintik-kuning-di-mata"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575216466/attached_image/kenali-lebih-jauh-seputar-bintik-kuning-di-mata.jpg"
+            category="Kesehatan"
+            label="kesehatan"
+            title="Kenali Lebih Jauh Seputar Bintik Kuning di Mata"
+            short-description="Bintik kuning di mata kerap menimbulkan rasa khawatir. Selain mengganggu penampilan, bintik kuning pada bola..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/cara-memilih-jenis-kelamin-bayi"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575216129/attached_image/cara-memilih-jenis-kelamin-bayi.jpg"
+            category="Keluarga"
+            label="keluarga"
+            title="Cara Memilih Jenis Kelamin Bayi"
+            short-description="Banyak pasangan suami istri datang ke dokter kandungan untuk menanyakan cara memilih jenis kelamin bayi..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/macam-macam-vaksin-untuk-ibu-hamil-dan-manfaatnya"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575216029/attached_image/macam-macam-vaksin-untuk-ibu-hamil-dan-manfaatnya.jpg"
+            category="Keluarga"
+            label="keluarga"
+            title="Macam-Macam Vaksin untuk Ibu Hamil dan Manfaatnya"
+            short-description="Banyak yang bertanya, apakah ibu hamil perlu melakukan vaksinasi? Jawabannya, ya. Vaksin untuk ibu hamil..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/sehatkah-menggoreng-dengan-air-fryer"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575215502/attached_image/sehatkah-menggoreng-dengan-air-fryer.jpg"
+            category="Hidup Sehat"
+            label="hidup-sehat"
+            title="Sehatkah Menggoreng dengan Air Fryer?"
+            short-description="Air fryer merupakan alat masak modern yang dapat digunakan untuk menggoreng berbagai jenis makanan, seperti..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/perbedaan-darah-rendah-dan-kurang-darah"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575215319/attached_image/perbedaan-darah-rendah-dan-kurang-darah.jpg"
+            category="Kesehatan"
+            label="kesehatan"
+            title="Perbedaan Darah Rendah dan Kurang Darah"
+            short-description="Darah rendah dan kurang darah sering kali dianggap sama. Namun sebenarnya, kedua kondisi ini merupakan..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/metode-diet-water-fasting-manfaat-dan-bahayanya"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575215018/attached_image/metode-diet-water-fasting-manfaat-dan-bahayanya.jpg"
+            category="Hidup Sehat"
+            label="hidup-sehat"
+            title="Metode Diet Water Fasting, Manfaat dan Bahayanya"
+            short-description="Water fasting atau diet air putih adalah metode diet yang dilakukan dengan hanya mengonsumsi air..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/donor-darah-saat-hamil-amankah"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575006971/attached_image/donor-darah-saat-hamil-amankah.jpg"
+            category="Kesehatan"
+            label="kesehatan"
+            title="Donor Darah saat Hamil, Amankah?"
+            short-description="Jika sebelum hamil Anda biasa melakukan donor darah. Apakah saat hamil Anda masih bisa melakukan..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/ini-lho-penyebab-bayi-terus-menerus-minta-menyusu"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575005837/attached_image/ini-lho-penyebab-bayi-terus-menerus-minta-menyusu.jpg"
+            category="Keluarga"
+            label="keluarga"
+            title="Ini Lho Penyebab Bayi Terus-menerus Minta Menyusu"
+            short-description="Si Kecil terus-menerus minta menyusu? Jika iya, kemungkinan dia mengalami cluster feeding. Yuk, Bunda, ketahui..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/bayi-mengalami-anemia-ini-penyebab-dan-cara-menanganinya"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575000720/attached_image/bayi-mengalami-anemia-ini-penyebab-dan-cara-menanganinya.jpg"
+            category="Kesehatan"
+            label="kesehatan"
+            title="Bayi Mengalami Anemia? Ini Penyebab dan Cara Menanganinya"
+            short-description="Bukan hanya orang dewasa, bayi juga bisa mengalami anemia, lho. Kondisi ini tidak boleh dibiarkan..."
+        >
+        </card-post-index>
+        <card-post-index
+            url-path="/bunda-yuk-ajari-si-kecil-agar-suka-berolahraga"
+            image-url="https://res.cloudinary.com/dk0z4ums3/image/upload/w_300,h_166,c_fill/v1575000208/attached_image/bunda-yuk-ajari-si-kecil-agar-suka-berolahraga.jpg"
+            category="Keluarga"
+            label="keluarga"
+            title="Bunda, Yuk, Ajari Si Kecil agar Suka Berolahraga"
+            short-description="Sama seperti orang dewasa, anak-anak juga perlu rutin berolahraga lho, Bun. Namun, masalahnya adalah anak-anak..."
+        >
+        </card-post-index>
+    <!-- LAST POST -->
+
+    <paginate-button
+        next-page="2"
+        prev-page="0"
+        page-url="page/"
+        base-url="/"
+    >
+    </paginate-button>
+</div>
+<!-- DFP -->
+<div class="side-container" style="padding: 0 0 0 0;">
+        <div class="dfp-container">
+
+            <!-- /38162042/d_homepage_html_video_sidebar_above -->
+            <div id='div-gpt-ad-1483519785947-0' style='height:250px; width:300px;' class='adunit'>
+                <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1483519785947-0'); });
+                </script>
+            </div>
+
+            <!-- /38162042/d_home_sidebar_middle_300x250 -->
+            <div id='div-gpt-ad-1442888492994-0' style='height:250px; width:300px;' class='adunit'>
+                <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442888492994-0'); });
+                </script>
+            </div>
+
+            <!-- /38162042/d_home_sidebar_300x600 -->
+            <div id='div-gpt-ad-1428907644705-3' style='height:600px; width:300px;' class='adunit'>
+                <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428907644705-3'); });
+                </script>
+            </div>
+
+            <!-- /38162042/d_home_sidebar_below_300x600 -->
+            <div id='div-gpt-ad-1448859288233-0' style='height:600px; width:300px;' class='adunit'>
+                <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1448859288233-0'); });
+                </script>
+            </div>
+            <!-- /38162042/d_home_sidebar_third_300x600 -->
+            <div id='div-gpt-ad-1461741108478-0' style='height:600px; width:300px;' class='adunit'>
+                <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461741108478-0'); });
+                </script>
+            </div>
+
+        </div>
+</div>
+<!-- End Center Post Content -->
+
+            </div>
+        </div>
+
+    </div>
+
+     <!-- HEADER -->
+    <footer-view></footer-view>
+    <!-- HEADER -->
+
+    <!-- Polymer 3 -->
+    <script src="/assets/cms_engine/custom-elements-es5-adapter-8c38dd9f2e16de3af85d83b3567ad32138ea58f33ec1412f607f10acf62ae652.js" defer="defer"></script>
+    <script src="/packs/home-page-09289a3b9fbc81b401b3.js" defer="defer"></script>
+    <!-- Polymer 3 -->
+
+    <!-- IRON AJAX -->
+    <!-- IRON AJAX -->
+
+    <script type='text/javascript'>
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete"){
+                console.log("ready!");
+                // create cookies previous_url
+                document.cookie = "previous_url=" + window.location.pathname+";path=/";
+            }
+
+            /**
+             * Track depth scroll
+             */
+            var currentDepthScroll = 0;
+
+            function trackDepthScroll() {
+
+                var bottom  = window.pageYOffset + window.innerHeight;
+                var height  = document.body.clientHeight;
+                var percent = (bottom/height)*100;
+                var done25 = false;
+                var done50 = false;
+                var done75 = false;
+                var done100 = false;
+
+                if (percent >= 25 && currentDepthScroll < 25 && done25 == false) {
+                    done25 = true;
+                    currentDepthScroll = 25;
+                    console.log("GA Type : "+ window.GAPageType);
+                    console.log('Scroll Depth 25%');
+                    ga('send', 'event', 'Scroll Depth', window.GAPageType, '25%');
+                }
+
+                if (percent >= 50 && currentDepthScroll < 50 && done50 == false) {
+                    done50 = true;
+                    currentDepthScroll = 50;
+                    console.log('Scroll Depth 50%');
+                    ga('send', 'event', 'Scroll Depth', window.GAPageType, '50%');
+                }
+
+                if (percent >= 75 && currentDepthScroll < 75 && done75 == false) {
+                    done75 = true;
+                    currentDepthScroll = 75;
+                    console.log('Scroll Depth 75%');
+                    ga('send', 'event', 'Scroll Depth', window.GAPageType, '75%');
+                }
+
+                if (percent >= 100 && currentDepthScroll < 99 && done100 == false) {
+                    done100 = true;
+                    currentDepthScroll = 100;
+                    console.log('Scroll Depth 100%');
+                    ga('send', 'event', 'Scroll Depth', window.GAPageType, '100%');
+                }
+
+            }
+
+            window.onscroll = function() {
+                trackDepthScroll();
+            }
+        };
+    </script>
+    <script type='text/javascript'>
+        (function() {
+            function getScript(url,success){
+                var script=document.createElement('script');
+                script.src=url;
+                var head=document.getElementsByTagName('head')[0],
+                    done=false;
+                script.onload=script.onreadystatechange = function(){
+                    if ( !done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') ) {
+                        done=true;
+                        success();
+                        script.onload = script.onreadystatechange = null;
+                        head.removeChild(script);
+                    }
+                };
+                head.appendChild(script);
+              }
+            // getScript('/assets/cms_engine/application-742159561c00b2c12595557c1de5e10934f0a649281ed00085fb9aa3ae64ead7.js',function(){});
+        })();
+        var page = "";
+        if (page !== ""){
+            document.getElementById("container").style.paddingTop = "45px";
+        }
+    </script>
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGNJXMW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

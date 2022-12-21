@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>「我要啦」网站流量统计 - 最精准易用的网站统计分析平台</title>
+  <meta name="keywords" content="51la,网站数据分析,网站流量统计,访问统计,网站流量查询,网站流量排名,网站统计,我要啦,数据统计,大数据分析">
+  <meta name="description" content="我要啦 统计面向网站站长提供免费的、功能完善的、人性化的网站流量统计分析服务">
+  <meta content="always" name="referrer">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="baidu-site-verification" content="OrUy4NqAIe">
+  <meta name="shenma-site-verification" content="fef8660d7b8627f242dd44310c6504ed_1565573076">
+  <link rel="stylesheet" href="//images.51.la/v5/js/vendor/peppermint/peppermint.required.css?v=1574060187296">
+  <link rel="stylesheet" href="//images.51.la/v5/js/vendor/peppermint/peppermint.suggested.css?v=1574060187296">
+  <link rel="stylesheet" href="//images.51.la/v5/dist/front-style2.css?v=1574060187296">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body class="index-body">
+  <div class="slide-function">
+  <div class="item feedback">
+    <i class="iconfont icon-fankui"></i>
+  </div>
+  <div class="item qr-code">
+    <i class="iconfont icon-weixin"></i>
+  </div>
+  <div class="item back-top">
+    <i class="iconfont icon-TOP"></i>
+  </div>
+</div>
+
+<div class="feedback-content hide">
+  <input type="hidden" id="feedback-userLogin" value="0">
+  <div class="feedback-title clearfix">
+    <div class="pull-left">产品反馈</div>
+    <div class="pull-right mr10">
+      <a href="javascript:;" class="feedback-close icon-close"></a>
+    </div>
+  </div>
+  <div class="feedback-box">
+    <form action="/user/feedback/add" class="c-form-vertical form-feedback" onsubmit="return false">
+      <input type="hidden" name="images">
+      <label>问题类型</label>
+      <div class="form-group form-group-b">
+        <div class="c-radio-inline">
+          <label>
+            <input name="type" type="radio" value="1" data-required="type" checked>
+            <i class="icon iconfont"></i>产品相关</label>
+        </div>
+        <div class="c-radio-inline">
+          <label>
+            <input name="type" type="radio" value="2" data-required="type">
+            <i class="icon iconfont"></i>使用故障</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="clearfix">
+          <div class="tcolor-dark pull-left">问题描述</div>
+          <div class="tf-s tcolor-light pull-right">
+            <a href="/user/feedback">反馈列表</a>
+          </div>
+        </div>
+        <textarea name="content" class="form-control form-callback" style="resize:none" placeholder="最多可输入400字" data-required="content"
+          maxlength="400"></textarea>
+      </div>
+      <div class="form-group">
+        <!--dom结构部分-->
+        <div id="uploader-demo">
+          <!--用来存放item-->
+          <div id="fileList" class="uploader-list">
+          </div>
+          <div id="filePicker" data-token="">选择图片
+            <span class="tf-s ml5 tcolor-light">(支持JPG/GIF/PNG，单张不超过2MB)</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group tc">
+        <a href="javascript:;" class="btn btn-primary btn-feedback">提交</a>
+      </div>
+    
+<input type="hidden" name="_csrf" value="C34zVL0G-XhZwP-Mtd-_LRYA_9JcTRIMgRWE" /></form>
+  </div>
+</div>
+
+<div class="qr-code-content hide">
+  <img width="100" height="100" src="/images/index/wechat.png" alt="">
+</div>
+
+  
+<style>
+.box-da-a2 .content {
+  position: relative;
+  min-height: 20px;
+}
+.box-da-a2 .close-a2 {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  line-height: 20px;
+  z-index: 2;
+  font-size: 16px;
+  text-align: center;
+}
+</style>
+<div class="box-da-a2 " role="a2">
+  <div class="content">
+    
+    <a class="item da-item" href="https://www.yisu.com/hk/huodong.html/?f=51latop&amp;ystimes=20191121"
+      data-url="/ad/adclick?code=亿速云-11月&location=A2-1&url=https%3A%2F%2Fwww.yisu.com%2Fhk%2Fhuodong.html%2F%3Ff%3D51latop%26ystimes%3D20191121"
+      target="_blank"
+      style="display:block;position: relative;">
+      <img src="https://images.51.la/20191121164148-画板(11).png" style="width: 100%;height:50px;position: relative;z-index: 1;" alt="">
+      <img src="//v.admaster.com.cn/i/a128310,b3472203,c4774,i0,m202,8a1,8b2,h" style="position: absolute;top:-60px;left: 0;" alt="">
+    </a>
+    <a href="javascript:;" class="close-a2" id="btnCloseA2">x</a>
+    
+  </div>
+</div>
+
+
+  <div class="header-front">
+  <a href="/" class="logo pull-left"><i class="iconfont icon-logo"></i><span>网站统计</span></a>
+  <ul class="nav-header">
+    <li class="nav-item"><a href="/">首页</a></li>
+    <li class="nav-item"><a href="https://dwz.51.la/" target="_blank">短链平台</a></li>
+    <!-- <li class="nav-item">
+      <a href="javascript:;">产品列表</a>
+      <ul class="nav-sub">
+        <li class="nav-sub-item"><a target="_blank" href="https://dwz.51.la/">51LA短链分发平台</a></li>
+        <li class="nav-sub-item"><a target="_blank" href="https://kf.51.la">51LA智能客服</a></li>
+        <li class="nav-sub-item"><a target="_blank" href="https://mpa.51.la/">51LA小程序统计</a></li>
+      </ul>
+    </li> -->
+    <li class="nav-item">
+      <a href="/ranking/day">排行榜</a>
+      <ul class="nav-sub">
+        <li class="nav-sub-item"><a href="/ranking/day">日流量排行榜</a></li>
+        <li class="nav-sub-item"><a href="/ranking/week">周流量排行榜</a></li>
+        <li class="nav-sub-item"><a href="/ranking/os">操作系统排行榜</a></li>
+        <li class="nav-sub-item"><a href="/ranking/search_engine">搜索引擎排行榜</a></li>
+        <li class="nav-sub-item"><a href="/ranking/browser">浏览器排行榜</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a href="/news/list">动态资讯</a></li>
+    <li class="nav-item"><a href="/doc/" target="_blank">帮助文档</a></li>
+    <li class="nav-item"><a href="javascript:;" class="item feedback">意见反馈</a></li>
+  </ul>
+  <div class="panel-user">
+    
+    <div class="pull-right" id="JLogin">
+      <div class="entry">
+        <a href="javascript:;" class="ml10 mr30" type="register">注册</a>
+        <a href="javascript:;" type="login">登录</a>
+      </div>
+    </div>
+    <div class="pull-right to-panel"><a href="/report/main?comId=2260177" class="btn mr30">产品演示</a></div>
+    
+  </div>
+</div>
+<div class="layer-box hide" id="layer-fogetPassword">
+  <div class="layer-content">
+    <a href="javascript:;" class="btn-close">
+      <i class="iconfont icon-close"></i>
+    </a>
+    <div class="layer-userHeader">
+      找回密码
+    </div>
+    <div class="by-mobile">通过手机找回密码</div>
+    <div class="by-email">通过邮箱找回密码</div>
+  </div>
+</div>
+<div class="layer-box hide" id="layer-forgetMobile">
+  <div class="layer-content">
+    <a href="javascript:;" class="btn-close">
+      <i class="iconfont icon-close"></i>
+    </a>
+    <div class="layer-userHeader">
+      找回密码
+    </div>
+    <form action="/resecode/check" class="form-forget-mobile mt15 c-form-vertical">
+      <div class="form-group">
+        <div class="col-12">
+          <input type="text" name="smsNum" class="form-control" data-required="smsNum" placeholder="请输入您的手机号">
+        </div>
+      </div>
+      <div class="form-group clearfix">
+        <div class="col-12">
+          <input type="text" name="code" class="form-control pull-left" data-required="code" maxlength="6" placeholder="验证码">
+          <button class="btn btn-default btn-m register-code pull-right" type="button" id="reset-mobile-code--login">发送验证码</button>
+        </div>
+      </div>
+      <div class="form-group clearfix">
+        <div class="col-5">
+          <button type="button" class="btn btn-default btn-fluid ruturn-back-mobile">返回</button>
+        </div>
+        <div class="col-5-last">
+          <button type="submit" class="btn btn-primary btn-fluid">提交</button>
+        </div>
+      </div>
+    
+<input type="hidden" name="_csrf" value="fqL91cpO-v7EUMiXBShdcANSEXKrTd8HrH40" /></form>
+  </div>
+</div>
+
+<div class="layer-box hide" id="layer-forgetEmail">
+  <div class="layer-content">
+    <a href="javascript:;" class="btn-close">
+      <i class="iconfont icon-close"></i>
+    </a>
+    <div class="layer-userHeader">
+      找回密码
+    </div>
+    <form action="/resetPass/emailCode/check" class="form-forget-email mt15 c-form-vertical">
+      <div class="form-group">
+        <div class="col-12">
+          <input type="text" name="account" class="form-control" data-required="account" placeholder="请输入您的邮箱">
+        </div>
+      </div>
+      <div class="form-group clearfix">
+        <div class="col-12">
+          <input type="text" name="code" class="form-control pull-left" data-required="code" maxlength="6" placeholder="验证码">
+          <button class="btn btn-default btn-m register-code pull-right" type="button" id="reset-email-code--login">发送验证码</button>
+        </div>
+      </div>
+      <div class="form-group clearfix">
+        <div class="col-5">
+          <button type="button" class="btn btn-default btn-fluid ruturn-back-email">返回</button>
+        </div>
+        <div class=" col-5 pull-right ">
+          <button type="submit" class="btn btn-primary btn-fluid">提交</button>
+        </div>
+      </div>
+    
+<input type="hidden" name="_csrf" value="VmppDvjP-5sziYkgbLSzvPbnMPG26F8Gogo8" /></form>
+  </div>
+</div>
+
+<div class="layer-box hide" id="layer-resetPassword">
+  <div class="layer-content">
+    <a href="javascript:; " class="btn-close ">
+      <i class="iconfont icon-close "></i>
+    </a>
+    <div class="layer-userHeader ">重置密码</div>
+    <form action="/pass/reset" class="form-forget-password mt15 c-form-vertical ">
+      <div class="form-group ">
+        <div class="col-12 ">
+          <input type="password" name="newPass1" class="form-control" placeholder="密码" maxlength="16
+            " data-required="newPass1">
+        </div>
+      </div>
+      <div class="form-group ">
+        <div class="col-12 ">
+          <input type="password" name="newPass2" class="form-control" maxlength="16
+            " data-required="newPass2" placeholder="确认密码">
+        </div>
+      </div>
+      <div class="form-group clearfix">
+        <div class="col-5 ">
+          <button type="button" class="btn btn-default btn-all ruturn-back">返回</button>
+        </div>
+        <div class="col-5 pull-right">
+          <button type="submit" class="btn btn-primary btn-all">提交</button>
+        </div>
+      </div>
+    
+<input type="hidden" name="_csrf" value="ftebSOaW-MHwylfPhYB2n-mZ2AhNjpJzbMgI" /></form>
+  </div>
+</div>
+
+<script async src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+<script type="text/html" id="tpl-login">
+  <div class="login-wrapper">
+    <a href="javascript:;" class="btn-close icon-close"></a>
+    <div class="mod-login-title tabs-header clearfix">
+      <a class="tabs-item" href="javascript:;" type="login">登录</a>
+      <a class="tabs-item" href="javascript:;" type="register">注册</a>
+    </div>
+    <div class="tabs-container">
+      <div class="tabs-content" id="tab-login">
+        <form action="/login" class="mt15 form-login c-form-vertical c-form-vertical-l">
+          <div class="form-group">
+            <div class="col-12">
+              <div class="pr">
+                
+                <input type="text" name="name" class="form-control" placeholder="用户名/手机号" data-required="name" value="">
+                
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-12">
+              <div class="pr">
+                <input type="password" name="pass" class="form-control" placeholder="密码" maxlength="16"
+                  data-required="pass">
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-btn">
+            <button class="btn btn-primary">登录</button>
+          </div>
+          <div class="form-group">
+            <div class="clearfix mt20">
+              <div class="pull-right">
+                <a href="javascript:;" class="btn-forgetPassword">忘记密码？</a>
+              </div>
+            </div>
+          </div>
+        
+<input type="hidden" name="_csrf" value="02dlUlR7-uiOGO2r5agZjePIPOZDVEN55SMY" /></form>
+      </div>
+      <div class="tabs-content" id="tab-register">
+        <form action="/reg" class="form-register c-form-vertical">
+          <div class="form-group">
+            <div class="col-12">
+              
+              <input type="text" name="smsNum" class="form-control" data-required="smsNum" maxlength="11" placeholder="手机" value="">
+              
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <div class="col-12">
+              <input type="text" name="code" class="form-control pull-left" data-required="code" maxlength="6" placeholder="验证码">
+              <button class="btn btn-default btn-m register-code pull-right" id="btn-register-code" data-appid="2069817081" data-cbfn="callbackSms" type="button">发送验证码</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-12">
+              <input type="password" name="pass" class="form-control" placeholder="密码" maxlength="16" data-required="pass">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="c-checkbox">
+              <label>
+                <input type="checkbox" name="rule" value="1" checked data-required="rule">
+                <i class="icon iconfont"></i>我同意并承诺遵守</label>
+              <a href="/service/terms_of_service" target="_blank" class="provision">《服务协议》</a>
+            </div>
+          </div>
+          <div class="form-group form-btn">
+            <button class="btn btn-primary" type="submit">注册</button>
+          </div>
+        
+<input type="hidden" name="_csrf" value="3w3sHfRm-Ravd1aCL2KeoTJsT2EdzBLciIjE" /></form>
+      </div>
+    </div>
+  </div>
+</script>
+
+
+  <div class="peppermint peppermint-inactive" id="peppermint">
+    
+    <div>
+      <a class="item da-item" href="https://www.yisu.com/hk/huodong.html/?f=51la&amp;ystimes=20191121" data-url="/ad/adclick?code=亿速云-11.8&location=A0-5&url=https%3A%2F%2Fwww.yisu.com%2Fhk%2Fhuodong.html%2F%3Ff%3D51la%26ystimes%3D20191121" target="_blank" style="background:#2e2f3a url('https://images.51.la/20191128141948-亿速云banner_副本.png') center center no-repeat;height:500px;background-size:cover ;display:block;"></a>
+    </div>
+    
+  </div>
+  
+  <div class="home-article">
+      <div class="content">
+          
+          <a class="item" target="_blank" href="/news/detail?id=651&from=list">
+            <h1>一款功能强大的短网址工具推荐</h1>
+            <p>短网址在生活中随处可见，除了缩短外还有很强大的功能</p>
+          </a>
+          
+          <a class="item" target="_blank" href="/news/detail?id=653&from=list">
+            <h1>SEO没流量？那是你没做到这四点</h1>
+            <p>与竞争对手保持长期平行发展，流量只会越来越少</p>
+          </a>
+          
+          <a class="item" target="_blank" href="/news/detail?id=655&from=list">
+            <h1>网易网盘月底关闭第三方账号登录 </h1>
+            <p>已经有多个网盘品牌以不同的方式退出市场。</p>
+          </a>
+          
+      </div>
+  </div>
+  
+   
+<div class="box-da-A1" role="a1">
+  <div class="content clearfix">
+    
+    <a href="http://xp.mabu688.cn/" rel="nofollow" class="da-item  " target="_blank" data-url="/ad/adclick?code=2761322447&location=A1-5&url=http%3A%2F%2Fxp.mabu688.cn%2F">
+      <img src="https://images.51.la/20191121130458-1.gif" width="180" height="50">
+    </a>
+    
+    <a href="https://yw868.com/" rel="nofollow" class="da-item  " target="_blank" data-url="/ad/adclick?code=868333&location=A1-6&url=https%3A%2F%2Fyw868.com%2F">
+      <img src="https://images.51.la/20190919144003-QQ图片20190919144036.gif" width="180" height="50">
+    </a>
+    
+    <a href="http://www.keji456.com" rel="nofollow" class="da-item  " target="_blank" data-url="/ad/adclick?code=2633199034&location=A1-2&url=http%3A%2F%2Fwww.keji456.com">
+      <img src="https://images.51.la/20191031163544-A1-9820262.gif" width="180" height="50">
+    </a>
+    
+    <a href="http://4053555.com/" rel="nofollow" class="da-item  " target="_blank" data-url="/ad/adclick?code=2148991426&location=A1-4&url=http%3A%2F%2F4053555.com%2F">
+      <img src="https://images.51.la/20191101145126-7033288.gif" width="180" height="50">
+    </a>
+    
+    <a href="https://4061555.com/1229555.html" rel="nofollow" class="da-item  " target="_blank" data-url="/ad/adclick?code=2148991426&location=A1-3&url=https%3A%2F%2F4061555.com%2F1229555.html">
+      <img src="https://images.51.la/20191101145134-1229555.gif" width="180" height="50">
+    </a>
+    
+    <a href="https://www.4061555.com/" rel="nofollow" class="da-item  " target="_blank" data-url="/ad/adclick?code=2148991426&location=A1-1&url=https%3A%2F%2Fwww.4061555.com%2F">
+      <img src="https://images.51.la/20191101145142-3823355.gif" width="180" height="50">
+    </a>
+    
+    <a href="javascript::" rel="nofollow" class="da-item  nomr" target="_blank" data-url="/ad/adclick?code=861666&location=A1-7&url=javascript%3A%3A">
+      <img src="https://images.51.la/20190801142040-A1-861666.gif" width="180" height="50">
+    </a>
+    
+  </div>
+</div>
+
+
+  <!-- -introduce strart -->
+  <div class="home-about home-content-wrap">
+    <div class="home-title home-about-title mb15">51LA — 免费的流量统计技术服务提供商</div>
+    <div class="home-title home-about-title mb40">专业 · 精准 · 易用</div>
+    <div class="home-introduce home-about-introduce" style="border-bottom: 1px solid #ececec;">
+      <p>51LA是国内领先的免费流量统计技术服务提供商，为互联网各类网站提供第三方数据统计分析服务。</p>
+      <p><span class="fb">操作简单</span>，<span class="fb">容易上手</span>，<span class="fb">数据精准</span>，让站长实时把握网站脉搏，了解网站现状。</p>
+    </div>
+    <div class="home-about-server">已服务</div>
+    <div class="home-about-date clearfix">
+      <p class="pull-left">3,525,513 <span class="ml10">注册站长</span></p>
+      <p class="pull-right">19,450,579 <span class="ml10">统计网站</span></p>
+    </div>
+    <div class="home-introduce home-about-introduce mt35">
+      <p>16年来51LA一如既往地专注于网站统计，拥有实时访客智能监测、 实时记录搜索引擎蜘蛛爬虫、全端页面阅读深度分析、 热力图分析等四大核心数据统计功能。</p>
+      <p>
+        更有<a href="/news/detail?id=263&from=list" class="fb">流量波动提醒</a>、<a href="/news/detail?id=263&from=list" class="fb">数据引用</a>、<a href="/news/detail?id=263&from=list" class="fb">批量创建站点</a>、<a href="/news/detail?id=355&from=list" class="fb">网站流量卡</a>等多项特色功能，为站长们提供全面的数据统计分析服务。
+      </p>
+    </div>
+    <a href="/report/main?comId=2260177" class="fastlink">前往体验</a>
+  </div>
+  <!-- about end -->
+  <div class="home-advantage home-content-wrap">
+    <div class="content">
+      <div class="home-title home-advantage-title">功能优势</div>
+      <div class="home-introduce home-advantage-introduce mt15">51LA具备四大核心数据统计功能，风靡站长圈十六年，是一众站长们的制胜法宝！</div>
+      <ul class="advantage-list mt10 clearfix">
+        <li class="item">
+          <div class="icon home-online"></div>
+          <p class="title">实时访客智能监测</p>
+          <p class="text">实时掌握访客动态，清晰揭示目标用户，降低推广成本。</p>
+          <a href="/report/online?comId=2260177" class="fastlink">前往体验</a>
+        </li>
+        <li class="item">
+          <div class="icon home-heatmap"></div>
+          <p class="title">热力图监控分析</p>
+          <p class="text">洞察访客浏览偏好，把握用户交互行为，精准描绘用户画像。</p>
+          <!-- <a href="/report/heatmap?comId=2260177" class="fastlink">前往体验</a> -->
+          <a href="javascript:;" class="fastlink">前往体验</a>
+        </li>
+        <li class="item">
+          <div class="icon home-spider"></div>
+          <p class="title">搜索引擎蜘蛛爬虫</p>
+          <p class="text">让每一个来访蜘蛛都有迹可循，解决无效搜索蜘蛛抓取问题，提升网站收录排名。</p>
+          <!-- <a href="/report/content/spider?comId=2260177" class="fastlink">前往体验</a> -->
+          <a href="javascript:;" class="fastlink">前往体验</a>
+        </li>
+        <li class="item">
+          <div class="icon home-visit"></div>
+          <p class="title">全端页面阅读深度</p>
+          <p class="text">了解访客对内容的兴趣程度，合理把握网站结构布局，增加内容粘度提高用户忠诚度。</p>
+          <a href="/report/attraction/visit_depth?comId=2260177" class="fastlink">前往体验</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- -home-advantage end -->
+  <div class="home-reason home-content-wrap">
+    <div class="content">
+      <div class="home-title home-reason-title">使用51LA的六大理由</div>
+      <ul class="reason-list clearfix mt10">
+        <li class="item">
+          <p class="title">站群站长</p>
+          <p class="text">批量创建多个统计ID，方便我管理多站点</p>
+        </li>
+        <li class="item">
+          <p class="title">电商网站</p>
+          <p class="text">通过回头客分析，让我迅速调整营销策略来提高转化率</p>
+        </li>
+        <li class="item">
+          <p class="title">企业网站</p>
+          <p class="text">通过用户来路分析渠道推广效果</p>
+        </li>
+        <li class="item">
+          <p class="title">政府网站</p>
+          <p class="text">简单易用，一键生成报表向领导汇报</p>
+        </li>
+        <li class="item">
+          <p class="title">小说网站</p>
+          <p class="text">阅读深度让我快速了解用户对内容的兴趣程度</p>
+        </li>
+        <li class="item">
+          <p class="title">影视网站</p>
+          <p class="text">可以查看网站实时在线人数，了解网站的访问情况</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- home-reason end -->
+  <div class="home-who home-content-wrap">
+    <div class="content">
+      <div class="home-title home-who-title">他们都在使用51LA</div>
+      <ul class="who-list clearfix mt25">
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-15&url=javascript%3A%3B"><img src="https://images.51.la/20181129190027-默认标题_自定义px_2018.11.29 (11).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-5&url=javascript%3A%3B"><img src="https://images.51.la/20181129190049-默认标题_自定义px_2018.11.29 (13).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-13&url=javascript%3A%3B"><img src="https://images.51.la/20181129190043-默认标题_自定义px_2018.11.29 (12).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-10&url=javascript%3A%3B"><img src="https://images.51.la/20181129190007-默认标题_自定义px_2018.11.29 (10).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-12&url=javascript%3A%3B"><img src="https://images.51.la/20181129185954-默认标题_自定义px_2018.11.29 (8).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-7&url=javascript%3A%3B"><img src="https://images.51.la/20181129190020-默认标题_自定义px_2018.11.29 (9).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-1&url=javascript%3A%3B"><img src="https://images.51.la/20181129185947-默认标题_自定义px_2018.11.29 (7).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-20&url=javascript%3A%3B"><img src="https://images.51.la/20181129185858-默认标题_自定义px_2018.11.29 (3).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-8&url=javascript%3A%3B"><img src="https://images.51.la/20181129185940-默认标题_自定义px_2018.11.29 (6).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="javascript:;" class="da-item " data-url="/ad/adclick?code=1&location=D1-6&url=javascript%3A%3B"><img src="https://images.51.la/20181129185903-默认标题_自定义px_2018.11.29 (4).png" width="220" height="70" alt="" /></a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+  <!-- home-who end -->
+  <div class="home-free">
+    <div class="content">
+      <div class="home-free-title home-title">马上行动，探索网站数据增长的奥秘</div>
+      <a href="javascript:;" id="JRegisterFromIndex" class="fastlink">立即注册</a>
+    </div>
+  </div>
+  <!-- free end -->
+  <div class="home-friendlink home-content-wrap">
+    <div class="content">
+      <div class="home-title home-friendlink-title">友情链接</div>
+      <ul class="friendlink-list clearfix mt25">
+        
+        
+        <li class="item">
+          <a href="https://www.vpsor.cn" target="_blank" class="da-item " data-url="/ad/adclick?code=243697478&location=D2-10&url=https%3A%2F%2Fwww.vpsor.cn">硅云</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.huzhan.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-互站网&location=D2-2&url=https%3A%2F%2Fwww.huzhan.com%2F">站长交易平台</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.yuntask.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-云客网&location=D2-3&url=https%3A%2F%2Fwww.yuntask.com%2F">SEO</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.2898.com" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-站长资源平台&location=D2-4&url=http%3A%2F%2Fwww.2898.com">站长资源平台</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.zhongjie.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-中介网&location=D2-5&url=https%3A%2F%2Fwww.zhongjie.com%2F">中介网</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.ylmf888.com" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-雨林木风&location=D2-1&url=http%3A%2F%2Fwww.ylmf888.com">雨林木风</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.cssmoban.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-模板之家&location=D2-6&url=http%3A%2F%2Fwww.cssmoban.com%2F">网站模板</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.iis7.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-站长工具&location=D2-7&url=http%3A%2F%2Fwww.iis7.com%2F">IIS7站长工具</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://new.weijuju.com" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-有客多小程序&location=D2-8&url=http%3A%2F%2Fnew.weijuju.com">小程序</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.cddgg.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-顶呱呱&location=D2-9&url=http%3A%2F%2Fwww.cddgg.com%2F">成都网站建设</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.hy755.cn/" target="_blank" class="da-item " data-url="/ad/adclick?code=315839870&location=D2-12&url=http%3A%2F%2Fwww.hy755.cn%2F">网站建设</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.jisuapp.cn/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-微信小程序&location=D2-17&url=http%3A%2F%2Fwww.jisuapp.cn%2F">微信小程序</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.alexa.cn/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-网站排名查询&location=D2-18&url=http%3A%2F%2Fwww.alexa.cn%2F">网站排名查询</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://liulanqi.2018.cn/" target="_blank" class="da-item " data-url="/ad/adclick?code=浏览器下载&location=D2-20&url=http%3A%2F%2Fliulanqi.2018.cn%2F">浏览器下载</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.bt.cn/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-宝塔&location=D2-21&url=https%3A%2F%2Fwww.bt.cn%2F">服务器管理</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.5118.com" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-5118&location=D2-19&url=https%3A%2F%2Fwww.5118.com">5118大数据</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.61916.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-深圳网站建设&location=D2-25&url=https%3A%2F%2Fwww.61916.com%2F">深圳网站建设</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.im286.net/forum.php" target="_blank" class="da-item " data-url="/ad/adclick?code=1&location=D2-11&url=https%3A%2F%2Fwww.im286.net%2Fforum.php">落伍者论坛</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.juming.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-域名查询&location=D2-22&url=http%3A%2F%2Fwww.juming.com%2F">域名查询</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.zhanyouyun.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=友链-网站优化&location=D2-14&url=https%3A%2F%2Fwww.zhanyouyun.com%2F">网站优化</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.shmiaosai.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=3002859664&location=D2-24&url=https%3A%2F%2Fwww.shmiaosai.com%2F">短信群发平台</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="http://www.xudoodoo.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=228766586&location=D2-16&url=http%3A%2F%2Fwww.xudoodoo.com%2F">网站建设</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.xinruiyun.cn/" target="_blank" class="da-item " data-url="/ad/adclick?code=664978998&location=D2-13&url=https%3A%2F%2Fwww.xinruiyun.cn%2F">云服务器</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://www.usa-idc.com/" target="_blank" class="da-item " data-url="/ad/adclick?code=2019431725&location=D2-15&url=https%3A%2F%2Fwww.usa-idc.com%2F">香港服务器</a>
+        </li>
+        
+        
+        
+        <li class="item">
+          <a href="https://dwz.51.la/" target="_blank" class="da-item nomr" data-url="/ad/adclick?code=dwz&location=D2-23&url=https%3A%2F%2Fdwz.51.la%2F">51la短链接</a>
+        </li>
+        
+        
+        <li class="item"><a href="/service/friend_link">查看更多</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- home-friendlink end -->
+  <div class="home-footer">
+    <div class="content">
+      <div class="clearfix">
+        <div class="col-2">
+          <h3 class="h3 mb20">产品中心</h3>
+          <p class="text"><a href="https://dwz.51.la/" target="_blank" class="text">51LA短链分发平台</a></p>
+          <p class="text"><a href="https://kf.51.la" target="_blank" class="text">51LA智能客服</a></p>
+          <p class="text"><a href="https://mpa.51.la/" target="_blank" class="text">51LA小程序统计</a></p>
+        </div>
+        <div class="col-3">
+          <h3 class="h3 mb20">联系我们</h3>
+          <p class="text">广告合作：3187548973（官方唯一QQ）</p>
+          <p class="text">客服服务：1962406908（QQ）</p>
+          <p class="text">邮箱：1962406908@qq.com</p>
+          <p class="text">Q群：608879616</p>
+        </div>
+        <div class="col-3">
+          <h3 class="h3 mb20">文档中心</h3>
+          <p class="text"><a href="/doc/ru-he-tian-jia-tong-ji-dai-ma-ff1f.html" target="_blank" class="text">使用帮助</a></p>
+          <p class="text"><a href="/doc/tong-ji-zhi-biao-de-biao-zhun-shi-shi-yao-ff1f.html" target="_blank" class="text">指标释义</a></p>
+          <p class="text"><a href="/service/update_log" target="_blank" class="text">更新日志</a></p>
+        </div>
+        <div class="col-2 pull-right">
+          <h3 class="h3 mb20">关注51LA</h3>
+          <img src="//images.51.la/v5/images/index/wechat.png" alt="二维码" width="130" height="130" />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="lh-l link">
+          <a href="/service/terms_of_service">用户协议</a> <a href="/service/copyright_notice">版权声明</a> <a href="/ranking/day">排行榜</a> <a href="/news/list">动态资讯</a> <a href="javascript:;" id="JResetPasswordFromIndex">找回密码</a>
+        <a href="/service/biz_contact">广告联系</a> <a href="/service/special_user">典型用户</a> <a href="/service/friend_link">友情链接</a>
+        </div>
+        <div class="lh-l mt5">
+          <span>Copyright © 2016-2019 51.la All Rights Reserved</span>|<a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备17055553号-1</a>|<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602004893">粤公网安备 44010602004893号</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -footer end -->
+  <script src="//images.51.la/v5/js/vendor/jquery.js"></script>
+  <script src="//images.51.la/v5/js/vendor/peppermint/peppermint.min.js"></script>
+  <script>
+    $('.peppermint').Peppermint({
+      dots: true,
+      slideshow: true,
+      speed: 500,
+      slideshowInterval: 5000,
+      onSetup: function (n) { }
+    })
+  </script>
+  <script src="//images.51.la/v5/dist/global.js?v=1574060187296"></script>
+  <script src="//images.51.la/v5/dist/index.js?v=1574060187296"></script>
+  <!-- <script>
+    if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      (function(){var hm=document.createElement("script");hm.src="//kf.51.la/smartAi.js?appId=6c205222d07e41de8dd7a6339ac8ef8b";hm.charset='UTF-8';var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();
+    }
+  </script> -->
+  <div class="hide">
+  <!-- 51la -->
+  <script type="text/javascript" src="//js.users.51.la/19236546.js"></script>
+  <script type="text/javascript" src="//trace2.pv.com.cn/50002450.js" defer></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112772236-1"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-112772236-1');
+  </script> -->
+  <!-- baidu detect -->
+  <script>
+    var _hmt = _hmt || []
+    ;(function() {
+      var hm = document.createElement('script')
+      hm.src = 'https://hm.baidu.com/hm.js?bd18429bc8eb892f081d3f995c802e1e'
+      var s = document.getElementsByTagName('script')[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+  </script>
+  <!-- cnzz detect -->
+  <script src="https://s22.cnzz.com/z_stat.php?id=1273154340&web_id=1273154340" language="JavaScript"></script>
+  <!-- 51la image detect -->
+  <img src="https://ia.51.la/go1?id=19421897&pvFlag=1" />
+</div>
+
+</body>
+</html>

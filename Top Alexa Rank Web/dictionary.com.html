@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+    <html lang="en" prefix="og: http://ogp.me/ns#">
+      <head>        
+        <script>
+!function(n,e){var t,o,i,c=[],f={passive:!0,capture:!0},r=new Date,a="pointerup",u="pointercancel";function p(n,c){t||(t=c,o=n,i=new Date,w(e),s())}function s(){o>=0&&o<i-r&&(c.forEach(function(n){n(o,t)}),c=[])}function l(t){if(t.cancelable){var o=(t.timeStamp>1e12?new Date:performance.now())-t.timeStamp;"pointerdown"==t.type?function(t,o){function i(){p(t,o),r()}function c(){r()}function r(){e(a,i,f),e(u,c,f)}n(a,i,f),n(u,c,f)}(o,t):p(o,t)}}function w(n){["click","mousedown","keydown","touchstart","pointerdown"].forEach(function(e){n(e,l,f)})}w(n),self.perfMetrics=self.perfMetrics||{},self.perfMetrics.onFirstInputDelay=function(n){c.push(n),s()}}(addEventListener,removeEventListener);
+perfMetrics.onFirstInputDelay(function(delay, evt) {
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        event: 'FID',
+        action: evt.type,
+        value: delay
+    });
+});
+</script>
+        
+        
+  <meta charSet="utf-8">
+  <link rel="canonical" href="https://www.dictionary.com/">
+  <title>Dictionary.com | Meanings and Definitions of Words at Dictionary.com</title>
+  <meta name="description" content="Dictionary.com is the world’s leading online source for English definitions, synonyms, word origins and etymologies, audio pronunciations, example sentences, slang phrases, idioms, word games, legal and medical terms, Word of the Day and more. For over 20 years, Dictionary.com has been helping millions of people improve their use of the English language with its free digital services.">
+  
+  
+  
+  <meta property="og:title" content="Dictionary.com Is The World’s Favorite Online Dictionary">
+  <meta property="og:image" content="https://www.dictionary.com/hp-assets/dictionary_social_logo-a60fa43a7f4c5e78893e1b228bdc74b3.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.dictionary.com/">
+  <meta property="og:description" content="Dictionary.com is the world’s leading online source for English definitions, pronunciations, word origins, idioms, Word of the Day, and more.">
+  <meta property="og:site_name" content="Dictionary.com">
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Dictionarycom">
+  <meta name="twitter:creator" content="@Dictionarycom">
+  <meta name="twitter:title" content="Dictionary.com | Meanings and Definitions of Words at Dictionary.com" />
+
+  <link rel="icon" type="image/png" href="https://www.dictionary.com/hp-assets/dcom_favicon-1bff2f1b49c077ed504e55c3649f2a4b.png">
+  <meta
+  name="google-site-verification"
+  content=CW6ZjP5DwCOJ8EiGWZuA54-ScKUf9H8kWiXsiX3Nadg
+/>
+
+  <link rel="preload" href="https://www.dictionary.com/hp-assets/dictionary-font-5d87afd67fd47a8061b1c553345b342c.woff" as="font" type="font/woff" crossorigin="anonymous">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://ads.pubmatic.com">
+  <link rel="preconnect" href="https://www.googletagservices.com">
+  <link rel="preconnect" href="https://c.amazon-adsystem.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+
+        <script defer src="https://www.dictionary.com/hp-assets/vendor1-663e592c.js"></script>
+                    <script defer src="https://www.dictionary.com/hp-assets/vendor2-44a46fec.js"></script>
+                    <script defer src="https://www.dictionary.com/hp-assets/client-8c3e8534.js"></script>
+        <!-- Ad integration with callback begins here, must be in head, expects page type to get appropriate configs -->
+        <script type="text/javascript">
+        var generateFormattedTime = function generateFormattedTime() {
+  var date = new Date();
+  var formattedMilliseconds = "".concat(date.getMilliseconds());
+
+  while (formattedMilliseconds.length < 3) {
+    formattedMilliseconds = "0".concat(formattedMilliseconds);
+  }
+
+  var formattedSeconds = "".concat(date.getSeconds());
+
+  while (formattedSeconds.length < 2) {
+    formattedSeconds = "0".concat(formattedSeconds);
+  }
+
+  return "".concat(date.getHours(), ":").concat(date.getMinutes(), ":").concat(formattedSeconds, ".").concat(formattedMilliseconds);
+};
+        var generateSessionId = function generateSessionId() {
+  var sessionId = '';
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+  for (var i = 0; i < 32; i += 1) {
+    sessionId += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+
+  return sessionId;
+};
+        var sessionId = generateSessionId();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({event: 'oneTrustScriptLoaded', timing: generateFormattedTime(), sessionId: sessionId});
+
+        if (typeof window.__cmp === 'function') {
+          window.__cmp('getVendorConsents', {}, function (c) {
+            window.dataLayer.push({event: 'cmpDoesExist', timing: generateFormattedTime(), consents: JSON.stringify(c), sessionId: sessionId});
+          });
+        } else {
+          window.dataLayer.push({event: 'cmpDoesNotExist', timing: generateFormattedTime(), sessionId: sessionId});
+        }
+
+        window.performance.mark('adStackStart');
+        // IE CustomEvent polyfill
+        (function () {
+
+          if ( typeof window.CustomEvent === "function" ) return false;
+
+          function CustomEvent ( event, params ) {
+            params = params || { bubbles: false, cancelable: false, detail: null };
+            var evt = document.createEvent( 'CustomEvent' );
+            evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+            return evt;
+           }
+
+          window.CustomEvent = CustomEvent;
+        })();
+        var page = 'dcom_hp';
+        var PWT = {};
+        var isEU = false;
+        /**---------- Page level ad targeting configs ----------*/
+        var pageTargeting = {"tx1":"homepage","tx2":"homepage","ptype":"homepage","ld":"0","spe":"n","kw":"","loc":"US","rpv":"16","evince":"ad"};
+        pageTargeting.dow = new Date().getDay().toString();
+        var slotConfigs = [{"placement":"dcom_quiz_dkt_atf_728x90_pos1","code":"/23219321/iac.dict.dictry.dw/fun/quiz","ad_uuid":"dcom_quiz_dkt_atf_728x90_pos1","rtf":true,"sizes":[[728,90]],"sticky":true,"targeting":{"pos":"top","pos2":"1"}},{"placement":"dcomHomeTop-728x90","code":"/23219321/iac.dict.dictry.dw/sitecorehomepage/homepage/homepage","ad_uuid":"728x90_top","rtf":true,"sizes":[[728,90]],"targeting":{"pos":"top","pos2":"1"}},{"placement":"dcomHomeTop-300x250","code":"/23219321/iac.dict.dictry.dw/sitecorehomepage/homepage/homepage","ad_uuid":"300x250_top","rtf":true,"sizes":[[300,250]],"targeting":{"pos":"top","pos2":"10"}},{"placement":"dcomHomeBot-728x90","code":"/23219321/iac.dict.dictry.dw/sitecorehomepage/homepage/homepage","ad_uuid":"728x90_bot","rtf":true,"sizes":[[728,90]],"targeting":{"pos":"bot","pos2":"20"}}];
+        var lazySlotConfigs = [{"placement":"DcomHomeDesktop_728x90_pos30","code":"/23219321/iac.dict.dictry.dw/sitecorehomepage/homepage/homepage","ad_uuid":"728x90_pos30","rtf":true,"sizes":[[970,250],[728,90]],"targeting":{"pos":"bot","pos2":"30"}}];
+        var allSlotConfigs = (slotConfigs || []).concat(lazySlotConfigs);
+        var determineConsent = function determineConsent() {
+  /*
+    FPB
+    Determine IAB consent for ad personalization, and set for GPT. 
+    Default for EU is false, and default for non-EU is true.
+  */
+  if (isEU) {
+    try {
+      if (typeof __cmp === 'function') {
+        __cmp('getVendorConsents', {}, function (c) {
+          var consent = false;
+
+          if (Array.isArray(c.purposeConsents)) {
+            consent = c.purposeConsents.indexOf('3:true') !== -1;
+          } else if (typeof c.purposeConsents === 'object') {
+            consent = c.purposeConsents[3];
+          }
+
+          if (consent !== false && consent !== true) consent = false;
+          setFpbGPTPersonalization(consent);
+        });
+      } else {
+        setFpbGPTPersonalization(false);
+      }
+    } catch (error) {
+      console.error('personalization: ', error);
+      setFpbGPTPersonalization(false);
+    }
+  } else {
+    setFpbGPTPersonalization(true);
+  }
+};
+        var setFpbGPTPersonalization = function setFpbGPTPersonalization(personalized, googletag) {
+  /*
+    FPB
+    Wait until DFP is ready and push personalization to DPT.
+  */
+  googletag = googletag || window.googletag;
+  googletag.cmd.push(function () {
+    if (!window.dfpReady) {
+      console.log('Awaiting DFP setup.');
+      setTimeout(setFpbGPTPersonalization, 100, personalized);
+    } else {
+      console.log('Doing personalization.');
+
+      if (personalized) {
+        googletag.pubads().setRequestNonPersonalizedAds(0);
+      } else {
+        googletag.pubads().setRequestNonPersonalizedAds(1);
+      }
+    }
+  });
+};
+        /**---------- Targeting runtime setup ----------*/
+        pageTargeting.ref = window.document.referrer.search(
+          "dictionary.com|thesaurus.com|reference.com"
+        ) > -1 ? "organic" : "direct";
+        pageTargeting.lang = window.navigator.userLanguage || window.navigator.language;
+        pageTargeting.pv = typeof SCCookie !== "undefined" ? SCCookie.getPageViewCount() + "" : "";
+        pageTargeting.ABC = "12345";
+
+        var apstagSlots = [{"slotID":"dcom_quiz_dkt_atf_728x90_pos1","sizes":[[728,90]]},{"slotID":"dcomHomeTop-728x90","sizes":[[728,90]]},{"slotID":"dcomHomeTop-300x250","sizes":[[300,250]]},{"slotID":"dcomHomeBot-728x90","sizes":[[728,90]]}];
+        window.adlerData = {mup: {values: null, processed: false}, rtf: {values: null, processed: false}};
+        var FAILSAFE_TIMEOUT = 5000; // this timeout should be more than OpenWrap timeout
+
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        var adSlots = adSlots || {
+          slots: {},
+        };
+    </script>
+    <script type="text/javascript">
+        window.performance.mark('gptLoadStart');
+    </script>
+    <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" onload="(function() {
+        window.performance.mark('gptLoadEnd');
+        window.performance.measure('gptLoad', 'gptLoadStart', 'gptLoadEnd');
+        var timing = window.performance.getEntriesByName('gptLoad')[0].duration;
+        window.dataLayer.push({
+          event: 'gptLoad',
+          page: page,
+          timing: timing
+        });
+      })()">
+    </script>
+    <script type="text/javascript" src="//ads.pubmatic.com/AdServer/js/pwt/103207/1481/pwt.js"></script>
+    <script type="text/javascript">
+      determineConsent();
+      window.dataLayer.push({event: 'initialDetermineConsentInvocationComplete', timing: generateFormattedTime(), sessionId: sessionId});
+      
+      function initAdserver(wasCalledByFailsafe) {
+        if (window.initAdserverFlag !== true && (wasCalledByFailsafe === true || (PWT.a9_BidsReceived && PWT.ow_BidsReceived && window.adlerData.mup.values && window.adlerData.rtf.values))) {
+            window.dataLayer.push({event: 'initAdServerRun', timing: generateFormattedTime(), sessionId: sessionId});
+
+            window.initAdserverFlag = true;
+
+            if (!PWT.ow_Bids) {
+              var owBackup = [];
+              for (var i = 0; i < slotConfigs.length; i++) {
+                owBackup.push({
+                  adUnitIndex: ''+i,
+                  adUnitId: slotConfigs[i].code,
+                  bidData: { kvp: {} },
+                  code: slotConfigs[i].placement,
+                  divId: slotConfigs[i].placement,
+                });
+              }
+              PWT.ow_Bids = owBackup;
+            }
+
+            if (!PWT.a9_Bids) {
+              PWT.a9_Bids = [];
+            }
+
+            processMupFpbValues(PWT.ow_Bids);
+            processRtfFpbValues(PWT.ow_Bids, PWT.a9_Bids, allSlotConfigs);
+            PWT.addKeyValuePairsToGPTSlots(PWT.ow_Bids);
+
+            PWT.a9_BidsReceived = PWT.ow_BidsReceived = false;
+            PWT.a9_Bids = PWT.ow_Bids = undefined;
+
+            googletag.pubads().refresh(PWT.requestBidSlots);
+
+            window.performance.mark('adStackEnd');
+            window.performance.measure('adStack', 'adStackStart', 'adStackEnd');
+            window.performance.clearMarks();
+            window.performance.clearMeasures();
+        }
+      }
+
+      googletag.cmd.push(function() {
+        window.dataLayer.push({event: 'setupDFP', timing: generateFormattedTime(), sessionId: sessionId});
+
+        /**---------- Set page level targeting for DFP ----------*/
+        (function setPageLevelTargeting(googletag) {
+  /*
+    Both Bidders
+    Set targeting params pertaining to all slots on page.
+  */
+  googletag = googletag || window.googletag;
+  Object.keys(pageTargeting).forEach(function (pageTarget) {
+    if (Object.prototype.hasOwnProperty.call(pageTargeting, pageTarget)) {
+      (function (key, value) {
+        googletag.cmd.push(function () {
+          googletag.pubads().setTargeting(key, value);
+        });
+      })(pageTarget, pageTargeting[pageTarget]);
+    }
+  });
+})(googletag);
+
+        /**---------- Set ad slot level targeting for DFP ----------*/
+        if (typeof slotConfigs === "object") {
+          (function setAdSlotTargeting(googletag) {
+  /*
+    Both Bidders
+    1. Define initial (static) slots for DPT.
+    2. Add listeners for events relevant to analytics.
+    3. Set targeting params pertaining to individual slots. 
+  */
+  var adSlotRenderPeriods = {};
+  googletag = googletag || window.googletag;
+  slotConfigs.forEach(function (slot) {
+    googletag.cmd.push(function () {
+      adSlots.slots[slot.placement] = googletag.defineSlot(slot.code, slot.sizes, slot.placement).addService(googletag.pubads());
+      googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+        if (event.slot === adSlots.slots[slot.placement]) {
+          adSlotRenderPeriods[slot.placement] = Date.now();
+        }
+      });
+      googletag.pubads().addEventListener('slotOnload', function (event) {
+        if (event.slot === adSlots.slots[slot.placement]) {
+          window.dataLayer.push({
+            event: 'gptSlotRenderPeriod',
+            page: page,
+            slotId: slot.placement,
+            code: slot.code,
+            position: slot.targeting.pos,
+            position2: slot.targeting.pos2,
+            time: Date.now() - adSlotRenderPeriods[slot.placement]
+          });
+        }
+      });
+      googletag.pubads().addEventListener('impressionViewable', function (event) {
+        if (event.slot === adSlots.slots[slot.placement]) {
+          window.dataLayer.push({
+            event: 'gptImpressionViewable',
+            page: page,
+            slotId: slot.placement,
+            code: slot.code,
+            position: slot.targeting.pos,
+            position2: slot.targeting.pos2
+          });
+        }
+      });
+      Object.keys(slot.targeting).forEach(function (target) {
+        if (Object.prototype.hasOwnProperty.call(slot.targeting, target)) {
+          adSlots.slots[slot.placement].setTargeting(target, slot.targeting[target]);
+        }
+      });
+      adSlots.slots[slot.placement].setTargeting('adrefresh', 'n');
+    });
+  });
+})(googletag);
+        }
+        (function pushAdSlots(googletag) {
+  googletag = googletag || window.googletag;
+  googletag.cmd.push(function () {
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+    window.dfpReady = true;
+  });
+})(googletag);
+        googletag.display();
+
+        PWT.requestBidSlots = googletag.pubads().getSlots();
+        if(typeof PWT.requestBids === 'function'){
+          const config = PWT.generateConfForGPT(
+            PWT.requestBidSlots
+          );
+          PWT.requestBids(
+            config,
+            function(adUnitsArray) {
+              PWT.ow_Bids = adUnitsArray;
+              PWT.ow_BidsReceived = true;
+              initAdserver(false);
+            }
+          );
+        }
+
+        setTimeout(function() {
+            initAdserver(true);
+        }, FAILSAFE_TIMEOUT);
+      });
+    </script>
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+    /**---- A9 ----*/
+    (function getA9(a9, a, p, s, t, A, g) {
+  if (a[a9]) return;
+
+  function q(c, r) {
+    a[a9]._Q.push([c, r]);
+  }
+
+  a[a9] = {
+    init: function init() {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      q('i', args);
+    },
+    fetchBids: function fetchBids() {
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      q('f', args);
+    },
+    setDisplayBids: function setDisplayBids() {},
+    _Q: []
+  };
+  A = p.createElement(s);
+  A.async = !0;
+  A.src = t;
+  g = p.getElementsByTagName(s)[0];
+  g.parentNode.insertBefore(A, g);
+})("apstag", window, document, "script", "https://c.amazon-adsystem.com/aax2/apstag.js");
+    /**----- Initialize apstag (A9) -----*/
+    apstag.init({
+      pubID: '3067',
+      adServer: 'googletag',
+      bidTimeout: 1000
+    });
+    window.dataLayer.push({event: 'initialA9RequestInitiated', timing: generateFormattedTime(), sessionId: sessionId});
+    apstag.fetchBids({
+        slots: apstagSlots,
+        timeout: 1000 // Make sure this timeout is less than or equal to OpenWrap TimeOut
+      }, function(bids) {
+        window.dataLayer.push({event: 'initialA9RequestResponseReceived', timing: generateFormattedTime(), bids: JSON.stringify(bids), sessionId: sessionId});
+        googletag.cmd.push(function(){
+        apstag.setDisplayBids();
+        PWT.a9_Bids = bids;
+        PWT.a9_BidsReceived = true;
+        initAdserver(false);
+      });
+    });
+    });
+    </script>
+<script type="text/javascript">
+    /**---------- Mup Fpb integration ----------*/
+    var MAGIC = 0xbeefcafe;
+    var mupFpbConfiguration = {"adlerGeo":"ROWLO","detectedDevice":"Desktop","mupFpbApiEndpoint":"https://irene.dictionary.com/mup-fpb/v1","site":"dcom"};
+    function getMupFpbParams(mupFpbSlotConfigs, mupFpbConfig) {
+  var mupParams = {};
+  mupFpbSlotConfigs.forEach(function (slotConfig) {
+    try {
+      mupParams[slotConfig.placement] = {
+        site: mupFpbConfig.site,
+        geo: mupFpbConfig.adlerGeo || '',
+        platform: mupFpbConfig.detectedDevice,
+        sizes: slotConfig.sizes,
+        position: slotConfig.targeting.pos
+      };
+    } catch (error) {
+      console.log('Error forming mup params:', error.message);
+      return false;
+    }
+
+    return true;
+  });
+  return mupParams;
+};
+    function getAdlerKey(size) {
+  var keyMap = {
+    '970x250': 'adler_a',
+    '300x600': 'adler_a',
+    '320x100': 'adler_a',
+    '970x90': 'adler_b',
+    '728x90': 'adler',
+    '300x250': 'adler',
+    '320x50': 'adler',
+    '160x600': 'adler'
+  };
+  return keyMap[size];
+};
+    function parseMupResponse(mupFpbAjaxCall) {
+  try {
+    window.adlerData.mup.values = JSON.parse(mupFpbAjaxCall.responseText);
+    initAdserver(false);
+  } catch (err) {
+    console.log("Error parsing mupResponse: ".concat(err.message));
+  }
+};
+    function processMupFpbValues(adUnitsArray) {
+  if (!window.adlerData.mup.values) return false;
+  var mupFpbValues = window.adlerData.mup.values;
+  adUnitsArray.forEach(function (adUnit) {
+    if (adUnit.bidData.kvp.pwtsz) {
+      try {
+        var adlerKey = getAdlerKey(adUnit.bidData.kvp.pwtsz);
+
+        if (adlerKey === null || !mupFpbValues[adUnit.code] || !mupFpbValues[adUnit.code][adlerKey]) {
+          return false;
+        }
+
+        var markup = mupFpbValues[adUnit.code][adlerKey];
+        var deobfuscatedMarkup = deobMup(markup.adler);
+        var muv = 100 + deobfuscatedMarkup;
+        var centPwtecp = parseInt(adUnit.bidData.kvp.pwtecp.replace('.', ''), 10);
+        var adjustedPwtecp = centPwtecp * muv / 10000;
+        adUnit.bidData.kvp.pwtecp = adjustedPwtecp.toFixed(2);
+        adUnit.bidData.kvp.mup = "".concat(deobfuscatedMarkup);
+      } catch (error) {
+        console.log('Error applying mup for:', adUnit.code);
+        return false;
+      }
+    }
+
+    return true;
+  });
+  window.adlerData.mup.processed = true;
+  return true;
+};
+    function callMupFpb(slotConfigs, mupFpbConfig) {
+  var mupFpbReq = new XMLHttpRequest();
+  mupFpbReq.addEventListener('load', parseMupResponse.bind(null, mupFpbReq));
+  mupFpbReq.open('POST', mupFpbConfig.mupFpbApiEndpoint, true);
+  mupFpbReq.timeout = 1000;
+  mupFpbReq.send(JSON.stringify(getMupFpbParams(slotConfigs, mupFpbConfig)));
+};
+    function reverse(n) {
+  var x = new Uint32Array(1);
+  x[0] = n;
+  x[0] = (x[0] & 0x0000ffff) << 16 | (x[0] & 0xffff0000) >>> 16;
+  x[0] = (x[0] & 0x55555555) << 1 | (x[0] & 0xaaaaaaaa) >>> 1;
+  x[0] = (x[0] & 0x33333333) << 2 | (x[0] & 0xcccccccc) >>> 2;
+  x[0] = (x[0] & 0x0f0f0f0f) << 4 | (x[0] & 0xf0f0f0f0) >>> 4;
+  x[0] = (x[0] & 0x00ff00ff) << 8 | (x[0] & 0xff00ff00) >>> 8;
+  return x[0];
+};
+    function unflip(n) {
+  return reverse(n ^ MAGIC);
+};
+    function deobMup(encryptedMup) {
+  if (!encryptedMup) {
+    throw new Error('Missing Mup. Please confirm value is being passed in.');
+  }
+
+  var decryptedMup = unflip(parseInt(encryptedMup, 10));
+  return decryptedMup;
+};
+    /**---------- End of Mup Fpb integration ----------*/
+    /**---------- Rtf integration ----------*/
+    var rtfFpbConfig = {"adlerGeo":"ROWLO","detectedDevice":"Desktop","rtfFpbApiEndpoint":"https://irene.dictionary.com/v1","site":"dcom"};
+    function setRtfInstrumentationKV(rtfSlotConfigs, status, error) {
+  rtfSlotConfigs.forEach(function (slotConfig) {
+    slotConfig.targeting.adler_status = status;
+
+    if (error) {
+      slotConfig.targeting.adler_error = error;
+    }
+  });
+};
+    function getRtfParams(rtfSlotConfigs, rtfFpbConfig) {
+  var requestParams = {};
+  var geo = rtfFpbConfig.adlerGeo || '';
+
+  if (geo === '') {
+    setRtfInstrumentationKV(rtfSlotConfigs, 'nogeo', 'nogeo');
+  }
+
+  rtfSlotConfigs.forEach(function (slotConfig) {
+    try {
+      requestParams[slotConfig.placement] = {
+        site: rtfFpbConfig.site,
+        geo: geo,
+        platform: rtfFpbConfig.detectedDevice,
+        sizes: slotConfig.sizes,
+        position: slotConfig.targeting.pos
+      };
+    } catch (error) {
+      console.log('Error forming rtf params:', error.message);
+      return false;
+    }
+
+    return true;
+  });
+  return requestParams;
+};
+    function rtfFallback(rtfSlotConfigs, event) {
+  setRtfInstrumentationKV(rtfSlotConfigs, event.type);
+};
+    function injectRtfValue(adUnit, rtfSlotConfigs) {
+  var rtfFpbValues = window.adlerData.rtf.values;
+  rtfSlotConfigs.forEach(function (slotConfig) {
+    if (slotConfig.placement !== adUnit.code) return false;
+
+    if (!rtfFpbValues[slotConfig.placement]) {
+      slotConfig.targeting.adler_status = 'nofloor';
+    } else {
+      slotConfig.targeting.adler = rtfFpbValues[slotConfig.placement].adler;
+      slotConfig.targeting.adler_a = rtfFpbValues[slotConfig.placement].adler_a;
+      slotConfig.targeting.adler_b = rtfFpbValues[slotConfig.placement].adler_b;
+      slotConfig.targeting.adler_status = 'ok';
+    }
+
+    return true;
+  });
+};
+    function parseRtfValues(rtfAjaxCall, rtfSlotConfigs) {
+  try {
+    window.adlerData.rtf.values = JSON.parse(rtfAjaxCall.responseText);
+    initAdserver(false);
+  } catch (err) {
+    setRtfInstrumentationKV(rtfSlotConfigs, 'parse', err.message);
+  }
+};
+    function processRtfFpbValues(pubmaticAdUnitsArray, a9BidsArray, rtfSlotConfigs) {
+  if (!window.adlerData.rtf.values) return false;
+  var rtfFpbValues = window.adlerData.rtf.values;
+  var a9NoBidValues = ['0', '1', '2'];
+
+  for (var i = 0; i < pubmaticAdUnitsArray.length; i += 1) {
+    var adUnit = pubmaticAdUnitsArray[i];
+    var noA9bidForSlot = false;
+
+    for (var j = 0; j < a9BidsArray.length; j += 1) {
+      var a9Bid = a9BidsArray[j];
+
+      if (a9Bid.slotID === pubmaticAdUnitsArray[i].code && (!a9Bid.amznbid || a9NoBidValues.indexOf(a9Bid.amznbid) !== -1)) {
+        noA9bidForSlot = true;
+        break;
+      }
+    }
+
+    if (!adUnit.bidData.kvp.pwtsz && (noA9bidForSlot || a9BidsArray.length === 0)) {
+      try {
+        if (!rtfFpbValues[adUnit.code]) {
+          return false;
+        }
+
+        var rtfValue = rtfFpbValues[adUnit.code].adler_a || rtfFpbValues[adUnit.code].adler;
+        adUnit.bidData.kvp.pwtpid = 'loki';
+        adUnit.bidData.kvp.pwtecp = rtfValue;
+        adUnit.bidData.kvp.pwtbst = '1';
+        injectRtfValue(adUnit, rtfSlotConfigs);
+      } catch (error) {
+        console.log('Error applying rtf for:', adUnit.code);
+      }
+    }
+  }
+
+  window.adlerData.rtf.processed = true;
+  return true;
+};
+    function callRTFFpb(slotConfigs, rtfFpbConfig) {
+  var rtfReq = new XMLHttpRequest();
+  rtfReq.addEventListener('load', parseRtfValues.bind(null, rtfReq, slotConfigs));
+  rtfReq.addEventListener('timeout', rtfFallback.bind(null, slotConfigs));
+  rtfReq.addEventListener('error', rtfFallback.bind(null, slotConfigs));
+  rtfReq.open('POST', rtfFpbConfig.rtfFpbApiEndpoint, true);
+  rtfReq.timeout = 1000;
+  rtfReq.send(JSON.stringify(getRtfParams(slotConfigs, rtfFpbConfig)));
+};
+    /**---------- End of Rtf integration ----------*/
+    googletag.cmd.push(function() {
+    callMupFpb(allSlotConfigs, mupFpbConfiguration);
+    callRTFFpb(allSlotConfigs, rtfFpbConfig);
+  });
+</script>
+    <script type="text/javascript">
+    var testAdParam = {};
+    var mupData = {"profileNumber":"1702"};
+    var updatePageTargeting = function(pageTargeting, testParam) {
+      pageTargeting.spe = 'n';
+      pageTargeting.kw = '';
+      pageTargeting.loc = 'US';
+      pageTargeting.rpv = Math.floor(Math.random() * 100 + 1).toString();
+      pageTargeting.evince = 'ad';
+      if (mupData) {
+        pageTargeting.mup = mupData.profileNumber;
+      }
+      const objs = [pageTargeting, testParam];
+      const targeting = objs.reduce( function(r, o){
+        Object.keys(o).forEach(function(key) {
+          r[key] = o[key];
+        });
+        return r;
+      });
+
+      return targeting;
+    }
+
+    function refreshAds(event) {
+      var refreshSlotConfigs = event.detail.slotConfigs.concat(event.detail.lazySlotConfigs);
+      var pageTargeting = updatePageTargeting(event.detail.pageTargeting, testAdParam);
+      window.performance.mark('adStackStart');
+      (function refreshLazySlots(lazySlotConfigs) {
+  window.refreshLazyAds = lazySlotConfigs.map(function (slot) {
+    return {
+      placement: slot.placement,
+      refresh: true
+    };
+  });
+})(event.detail.lazySlotConfigs);
+
+      // Clear old state
+      window.initAdserverFlag = false;
+
+      // Delete old config
+      googletag.destroySlots();
+
+      /** ---------- extend pageTargeting at runtime 2 ----------*/
+      pageTargeting.spe = 'n';
+      pageTargeting.ref = 'organic';
+      pageTargeting.kw = '';
+      pageTargeting.lang = window.navigator.userLanguage || window.navigator.language;
+      pageTargeting.loc = 'US';
+      pageTargeting.dow = new Date().getDay().toString();
+      pageTargeting.rpv = Math.floor(Math.random() * 100 + 1).toString();
+      pageTargeting.pv = typeof SCCookie !== "undefined" ? SCCookie.getPageViewCount() + "" : "";
+      pageTargeting.evince = 'ad';
+
+      callMupFpb(refreshSlotConfigs, mupFpbConfiguration);
+      callRTFFpb(refreshSlotConfigs, rtfFpbConfig);
+
+      determineConsent();
+      /**---------- Set page level targeting for DFP ----------*/
+      (function setPageLevelTargeting(googletag) {
+  /*
+    Both Bidders
+    Set targeting params pertaining to all slots on page.
+  */
+  googletag = googletag || window.googletag;
+  Object.keys(pageTargeting).forEach(function (pageTarget) {
+    if (Object.prototype.hasOwnProperty.call(pageTargeting, pageTarget)) {
+      (function (key, value) {
+        googletag.cmd.push(function () {
+          googletag.pubads().setTargeting(key, value);
+        });
+      })(pageTarget, pageTargeting[pageTarget]);
+    }
+  });
+})(googletag);
+
+      /**---------- Set ad slot level targeting for DFP ----------*/
+      if (typeof event.detail.slotConfigs === "object") {
+        (function setSpecificAdSlotTargeting(googletag, specificSlotConfigs) {
+  var refresh = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  /*
+    FPB
+    1. Define initial (static) slots for DPT.
+    2. Add listeners for events relevant to analytics.
+    3. Set targeting params pertaining to individual slots. 
+  */
+  var adSlotRenderPeriods = {};
+  googletag = googletag || window.googletag;
+  specificSlotConfigs.forEach(function (slot) {
+    googletag.cmd.push(function () {
+      adSlots.slots[slot.placement] = googletag.defineSlot(slot.code, slot.sizes, slot.placement).addService(googletag.pubads());
+      googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+        if (event.slot === adSlots.slots[slot.placement]) {
+          adSlotRenderPeriods[slot.placement] = Date.now();
+        }
+      });
+      googletag.pubads().addEventListener('slotOnload', function (event) {
+        if (event.slot === adSlots.slots[slot.placement]) {
+          window.dataLayer.push({
+            event: 'gptSlotRenderPeriod',
+            page: page,
+            slotId: slot.placement,
+            code: slot.code,
+            position: slot.targeting.pos,
+            position2: slot.targeting.pos2,
+            time: Date.now() - adSlotRenderPeriods[slot.placement]
+          });
+        }
+      });
+      googletag.pubads().addEventListener('impressionViewable', function (event) {
+        if (event.slot === adSlots.slots[slot.placement]) {
+          window.dataLayer.push({
+            event: 'gptImpressionViewable',
+            page: page,
+            slotId: slot.placement,
+            code: slot.code,
+            position: slot.targeting.pos,
+            position2: slot.targeting.pos2
+          });
+        }
+      });
+      Object.keys(slot.targeting).forEach(function (target) {
+        if (Object.prototype.hasOwnProperty.call(slot.targeting, target)) {
+          adSlots.slots[slot.placement].setTargeting(target, slot.targeting[target]);
+        }
+      });
+      adSlots.slots[slot.placement].setTargeting('adrefresh', refresh ? 'y' : 'n');
+    });
+  });
+})(googletag, event.detail.slotConfigs, true);
+      }
+      (function pushAdSlots(googletag) {
+  googletag = googletag || window.googletag;
+  googletag.cmd.push(function () {
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+    window.dfpReady = true;
+  });
+})(googletag);
+      googletag.display();
+
+      PWT.requestBidSlots = googletag.pubads().getSlots();
+      if(typeof PWT.requestBids === 'function'){
+        const config = PWT.generateConfForGPT(PWT.requestBidSlots);
+        PWT.requestBids(
+          config,
+          function(adUnitsArray) {
+            PWT.ow_Bids = adUnitsArray;
+            PWT.ow_BidsReceived = true;
+            initAdserver(false);
+          }
+        );
+      }
+
+      apstag.fetchBids({
+        slots: apstagSlots,
+        timeout: 1000 // Make sure this timeout is less than or equal to OpenWrap TimeOut
+      }, function(bids) {
+        googletag.cmd.push(function(){
+          apstag.setDisplayBids();
+          PWT.a9_Bids = bids;
+          PWT.a9_BidsReceived = true;
+          initAdserver(false);
+        });
+      });
+    }
+
+    function requestLazyAd(event) {
+      var results = {};
+      var lazyInitAdserver = function(slot) {
+        if (results.a9_BidsReceived && results.ow_BidsReceived && window.adlerData.mup.values && window.adlerData.rtf.values) {
+          if (!results.ow_Bids) {
+            var owBackup = [];
+            for (var i = 0; i < slotConfigs.length; i++) {
+              owBackup.push({
+                adUnitIndex: ''+i,
+                adUnitId: slotConfigs[i].code,
+                bidData: { kvp: {} },
+                code: slotConfigs[i].placement,
+                divId: slotConfigs[i].placement,
+              });
+            }
+            results.ow_Bids = owBackup;
+          }
+          if (!results.a9_Bids) {
+            results.a9_Bids = [];
+          }
+          processMupFpbValues(results.ow_Bids);
+          processRtfFpbValues(results.ow_Bids, results.a9_Bids, allSlotConfigs);
+          PWT.addKeyValuePairsToGPTSlots(results.ow_Bids);
+          googletag.display(slotConfig.placement);
+          googletag.pubads().refresh([slot]);
+        }
+      }
+      var slotConfig = lazySlotConfigs.find(
+        (function(config) {
+          return config.placement === event.detail;
+        })
+      );
+
+      if (slotConfig && googletag) {
+        var apstagSlot = (function formatApstagSlot(slot) {
+      var slots = [{
+        slotID: slot.placement,
+        sizes: slot.sizes
+      }];
+      return slots;
+    })(slotConfig);
+        googletag.cmd.push(function() {
+          googletag.destroySlots([adSlots.slots[slotConfig.placement]]);
+          adSlots.slots[slotConfig.placement] = null;
+          const slot = googletag.defineSlot(
+            slotConfig.code,
+            slotConfig.sizes,
+            slotConfig.placement
+          );
+          if (slot) {
+            adSlots.slots[slotConfig.placement] = slot.addService(
+              googletag.pubads()
+            );
+
+            Object.keys(slotConfig.targeting).forEach(function(key) {
+              adSlots.slots[slotConfig.placement].setTargeting(
+                key,
+                slotConfig.targeting[key]
+              );
+            });
+
+            if(typeof PWT.requestBids === 'function'){
+              const config = PWT.generateConfForGPT([slot]);
+              PWT.requestBids(
+                config,
+                function(adUnitsArray) {
+                  results.ow_Bids = adUnitsArray;
+                  results.ow_BidsReceived = true;
+                  lazyInitAdserver(slot);
+                }
+              );
+            }
+            apstag.fetchBids(
+              {
+                slots: apstagSlot,
+                timeout: 1000
+              },
+              (function(bids) {
+                googletag.cmd.push(function() {
+                  apstag.setDisplayBids();
+                  results.a9_Bids = bids;
+                  results.a9_BidsReceived = true;
+                  lazyInitAdserver(slot);
+                });
+              })
+            );
+          }
+        });
+      }
+    };
+    window.addEventListener('refreshAds', refreshAds);
+    window.addEventListener('requestLazyAd', requestLazyAd);
+    </script>
+        <!-- Pubmatic wrapper and GPT Tag ends here -->
+        <!-- Google Analytics GTM dataLayer starts here -->
+        
+      <script type='text/javascript'>
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+          event: 'pageview',
+          device: 'Desktop',
+          pageName: 'dict-home',
+          LDid: '0',
+          sessionId: null,
+          browserId: null,
+        });
+      </script>
+      <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TXC5GP');
+      </script>
+
+        <!-- Google Analytics GTM dataLayer ends here -->
+        
+        
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.dictionary.com/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.dictionary.com/browse/{search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+  }</script>
+
+        <style>html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:0.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:0.35em 0.75em 0.625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}@font-face{font-family:'dictionary-fonticon';src: url(https://www.dictionary.com/hp-assets/dictionary-font-7804c0d4b571cc3ee0739b0b5490444e.eot) format('embedded-opentype'), url(https://www.dictionary.com/hp-assets/dictionary-font-5d87afd67fd47a8061b1c553345b342c.woff) format('woff'), url(https://www.dictionary.com/hp-assets/dictionary-font-aed4ca2866efe7dba28cf306573d2c4a.ttf) format('truetype'), url(https://www.dictionary.com/hp-assets/dictionary-font-b6a3748ba7d4dfbe2cf03d639b3cd058.svg#dictionary-font) format('svg');}::-moz-selection{background:#3A76C3;text-shadow:none;}@media print{*,*::before,*::after{background:transparent !important;color:#1a1a1a !important box-shadow:none !important;text-shadow:none !important;}a,a:visited{-webkit-text-decoration:underline;text-decoration:underline;}a[href]::after{content:' (' attr(href) ')';}abbr[title]::after{content:' (' attr(title) ')';}a[href^='#']::after,a[href^='javascript:']::after{content:'';}pre,blockquote{border:1px solid #979797;page-break-inside:avoid;}thead{display:table-header-group;}tr,img{page-break-inside:avoid;}img{max-width:100% !important;}p,h2,h3{orphans:3;widows:3;}h2,h3{page-break-after:avoid;}}html{box-sizing:border-box;}html.hamburger-overlay{overflow:hidden;}*,*::before,*::after{box-sizing:border-box;-ms-flex:1 0 0;}*::before,*::after{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}body{background-color:#f5f5f5;}.bold{font-weight:bold;}.italic{font-style:italic;}.css-12jladn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:100vh;font-family:Arial,sans-serif;padding-top:124px;overflow:hidden;}@media (min-width:900px){.css-12jladn{overflow:auto;}}.css-yk5h7d{z-index:2000000001;position:fixed;top:0;-webkit-transform:none;-ms-transform:none;transform:none;-webkit-transition:-webkit-transform 0.4s ease;-webkit-transition:transform 0.4s ease;transition:transform 0.4s ease;width:100vw;}.css-yk5h7d header{background-color:#f3f3f3;}.css-yk5h7d header nav .hamburger-overlay{height:100vh;}.css-yk5h7d header nav nav{height:100vh;}.css-7lhd3d-Header{font-family:Arial,sans-serif;}.css-145r0xm-Navigation{background:#ffffff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;}.css-6u1vpe-Container{background:#0e5ab6;}.css-p5rnoq-Overlay{position:absolute;display:none;top:0;left:0;height:100%;width:100%;background-color:rgba(0,0,0,0.6);z-index:4;}.css-1fay3fr-Nav{position:absolute;top:0;left:calc(-100% + 65px);width:calc(100% - 65px);height:100%;background-color:#0e5ab6;}@media (min-width:480px){.css-1fay3fr-Nav{left:-300px;width:300px;}}.css-17g2mt7-List{list-style-type:none;padding:15px 15px 7px;margin:0;}.css-12jbd0i-Item{font-size:16px;font-style:italic;font-weight:bold;line-height:normal;font-family:Arial;border-top:1px solid #66cef6;font-stretch:normal;-webkit-letter-spacing:normal;-moz-letter-spacing:normal;-ms-letter-spacing:normal;letter-spacing:normal;color:#ffffff;-webkit-font-smoothing:antialiased;}.css-12jbd0i-Item:first-of-type{border-top:0;}.css-12jbd0i-Item:first-of-type > a{padding-top:0;}.css-1j22r93-Link{display:block;color:#f5f5f5;padding:18px 0;-webkit-text-decoration:none;text-decoration:none;}.css-1j22r93-Link:hover{color:#66cef6;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}.css-ioerk6-NestedList{font-family:Arial;font-size:16px;font-weight:normal;line-height:normal;font-style:normal;font-stretch:normal;-webkit-letter-spacing:normal;-moz-letter-spacing:normal;-ms-letter-spacing:normal;letter-spacing:normal;color:#ffffff;list-style-type:none;padding:0 15px 7px;-webkit-font-smoothing:antialiased;}.css-ioerk6-NestedList > li > a{padding:8px 0 14px;font-style:normal;-webkit-text-decoration:none;text-decoration:none;}.css-1pbd48u-HamburgerButton{font-family:dictionary-fonticon;color:inherit;width:36px;height:36px;cursor:pointer;padding:0;border:none;outline:none;position:relative;display:inline-block;-webkit-font-smoothing:antialiased;background-color:#fff;font-size:24px;line-height:1;z-index:5;}.css-1pbd48u-HamburgerButton::before{content:'';}.css-1pbd48u-HamburgerButton:hover{background-color:#f3f3f3;}.css-1pbd48u-HamburgerButton:active{background-color:#e1e1e1;}.css-1bfcprh-TabContainer{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;margin:0;padding:0;}.css-mbltsl-TabActive{cursor:pointer;-webkit-flex:1;-ms-flex:1;flex:1;list-style-type:none;text-align:center;z-index:3;background-color:#0e5ab6;color:#ffffff;font-weight:bold;}@media (min-width:768px){.css-mbltsl-TabActive{-webkit-flex:none;-ms-flex:none;flex:none;width:200px;}}.css-101p9x5-Link{color:inherit;display:inline-block;font-size:14px;padding:10px 0;-webkit-text-decoration:none;text-decoration:none;}.css-7uual2-TabInactive{cursor:pointer;-webkit-flex:1;-ms-flex:1;flex:1;list-style-type:none;text-align:center;z-index:3;color:#666666;}@media (min-width:768px){.css-7uual2-TabInactive{-webkit-flex:none;-ms-flex:none;flex:none;width:200px;}}.css-7uual2-TabInactive:last-of-type{border-right:1px solid #b6b6b6;}.css-7uual2-TabInactive:first-of-type{border-left:1px solid #b6b6b6;}.css-7uual2-TabInactive:hover{background-color:#f3f3f3;}.css-7uual2-TabInactive:active{background-color:#e1e1e1;}.css-1m8vgu3-SearchContainer{background:#0e5ab6;color:#4a4a4a;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-1azpvos-SearchRow{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 auto;max-width:798px;padding:8px;width:100%;}@media (min-width:768px){.css-1azpvos-SearchRow{padding:16px;}}.css-1w3y4j8-LogoContainer{display:none;}@media (min-width:768px){.css-1w3y4j8-LogoContainer{display:block;}}.css-8en0us-Logo{margin:0 20px 0 0;width:176px;height:40px;}.css-105e91s-SearchWrapper{-webkit-flex:1;-ms-flex:1;flex:1;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-va0hcf-StyledForm{background-color:#fff;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;}.css-pvhgk7-FilterNavContainer{border-right:1px solid #b6b6b6;cursor:pointer;display:none;margin:8px;padding-right:4px;}@media (min-width:480px){.css-pvhgk7-FilterNavContainer{display:block;}}.css-bw0xv8-FilterNavInner{position:relative;}.css-1vsksql-FilterItemContainer{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:3px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:8px;padding-right:4px;}.css-1vsksql-FilterItemContainer:hover{background:#f3f3f3;}.css-1vsksql-FilterItemContainer:active{background:#e1e1e1;}.css-1bzwsqu-FilterItem{color:#4a4a4a;font-size:12px;font-weight:bold;}.css-1pc7935{background:none;font-family:'dictionary-fonticon';speak:none;font-size:24px;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;margin-left:4px;}.css-1pc7935:after{content:'\e613';}.css-bjumj{background:#fff;border-radius:3px;box-shadow:0 2px 3px rgba(50,50,50,0.4);cursor:pointer;left:0;list-style-type:none;margin:0;overflow:hidden;padding:0;position:absolute;max-height:0px;-webkit-transition:max-height 100ms ease;transition:max-height 100ms ease;width:100%;z-index:2;}.css-1hjfrd8-ListWrapper{margin:8px 0;}.css-1hjfrd8-ListWrapper:hover{background:#f3f3f3;}.css-1hjfrd8-ListWrapper:active{background:#e1e1e1;}.css-jaagka{font-size:12px;font-weight:bold;padding:0 8px;}.css-1hsp8l3-HiddenLabel{border:0;-webkit-clip:rect(0 0 0 0);clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}.css-1hin8ey{border:none;border-radius:3px;color:#4a4a4a;-webkit-flex:1;-ms-flex:1;flex:1;font-size:18px;padding-left:8px;}.css-1hin8ey:hover,.css-1hin8ey:focus{outline:0;}.css-5aswtn-SearchButtonColored{background:none;font-family:'dictionary-fonticon';speak:none;font-size:24px;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;border-radius:2px;width:38px;height:38px;cursor:pointer;margin:0 8px;border:0;color:#0e5ab6;color:#0e5ab6;}.css-5aswtn-SearchButtonColored:before{content:'\e614';}.css-5aswtn-SearchButtonColored:hover{background:#f3f3f3;}.css-5aswtn-SearchButtonColored:active{background:#e1e1e1;}.css-ade6iy{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}@media only screen and (max-width:768px){.css-ade6iy{min-height:calc(100vh - 81px);}}.css-1cfhhtu{margin:16px;text-align:center;font-size:16px;}.css-1cfhhtu .trending-words-label{font-size:12px;width:114px;line-height:32px;padding:0 16px;background:#ffffff;box-shadow:0 2px 4px 0 rgba(218,218,218,0.5);border-radius:3px 0 0 3px;}.css-1cfhhtu .trending-words-word-block{padding:0 16px;background:#ffffff;line-height:30px;box-shadow:0 2px 4px 0 rgba(218,218,218,0.5);border:1px solid transparent;border-radius:3px;}.css-1cfhhtu .trending-words-word-block > svg{max-height:20px;}.css-1cfhhtu .trending-words-word-block .trending-words-trendline{stroke:#006efc;stroke-width:10px;}.css-1cfhhtu .trending-words-word-block:hover{border:1px solid #006efc;}.css-1cfhhtu .trending-words-value{font-weight:normal;font-size:14px;}.css-1cfhhtu > div{margin:auto;}.css-1cfhhtu > div > div:last-child{padding-bottom:4px;margin-bottom:-4px;}@media (max-width:375px){.css-1cfhhtu{margin:10px 0 18px 18px;font-size:16px;}}.css-18ix5kc-TrendingWordsTickerContainer{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-1bgjdcm-TickerLabel{white-space:nowrap;text-transform:uppercase;font-size:12px;line-height:28px;font-weight:bold;}.css-g5bhv8-TickerControls svg{position:relative;bottom:-1px;}.css-n5g5yy{box-shadow:0 2px 4px 0 rgba(218,218,218,0.5);background:#ffffff;border:none;outline:none;margin:0 2px;padding:9px;height:32px;border-radius:0 3px 3px 0;}.css-n5g5yy:hover{cursor:pointer;}.css-n5g5yy img{height:14px;}.css-6d8se-Ticker{overflow:hidden;white-space:nowrap;width:100%;}.css-6d8se-Ticker:hover div{-webkit-animation-play-state:paused;animation-play-state:paused;}.css-uih7i0-TickerContent{min-width:100%;white-space:nowrap;display:inline-block;-webkit-animation-name:animation-k7do3t;animation-name:animation-k7do3t;-webkit-animation-duration:calc(15s * 0.001);animation-duration:calc(15s * 0.001);-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-play-state:paused;animation-play-state:paused;}@-webkit-keyframes animation-k7do3t{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);}100%{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);}}@keyframes animation-k7do3t{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);}100%{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);}}.css-v2xn42-TrendingWordContainerSpan{-webkit-text-decoration:none;text-decoration:none;margin:0 11px;display:inline-block;}.css-v2xn42-TrendingWordContainerSpan svg{position:relative;bottom:-5px;margin:0 8px;}.css-v2xn42-TrendingWordContainerSpan:hover{cursor:pointer;}.css-18rndc4-Word{display:inline-block;font-weight:bold;color:inherit;line-height:24px;}.css-17k31jr-TrendLineSVG{width:46px;}.css-17k31jr-TrendLineSVG polyline{stroke:black;stroke-width:5px;fill:none;stroke-linejoin:round;stroke-linecap:round;}.css-3t9ykg-CurrentValue{color:inherit;line-height:24px;font-weight:bold;}.css-ogmw67{margin:0 auto;min-height:1000px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.css-uy4kd9{font-size:16px;color:#4a4a4a;}@media (min-width:900px){.css-uy4kd9{font-size:18px;}}.css-6acmpz{margin:0 auto;text-align:center;}.css-6acmpz.wide-ad-quiz{clear:both;margin:8px 0;}.css-6acmpz.wide-ad{clear:both;margin:15px 0;}.css-6acmpz.wide-ad-leaderboard{clear:both;margin-bottom:24px;}.css-6acmpz.wide-ad-leaderboard-quiz{clear:both;margin:16px auto 16px auto;}.css-6acmpz.wide-ad-new-layout{clear:both;margin-top:8px;margin-bottom:32px;}.css-6acmpz.stickyAdMobile{position:-webkit-sticky;position:sticky;top:120px;margin:15px 0;z-index:2000000001;}.css-122r8kf{min-height:90px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}.css-1sxxwz4{position:fixed;z-index:100000001;left:5%;bottom:120px;opacity:0;visibility:hidden;-webkit-animation:animation-wynbga 0.3s ease-in both,animation-1xc32n0 0.7s cubic-bezier(0.5,0.05,1,0.5) 0.7s infinite alternate;animation:animation-wynbga 0.3s ease-in both,animation-1xc32n0 0.7s cubic-bezier(0.5,0.05,1,0.5) 0.7s infinite alternate;font-size:16px;}.css-1sxxwz4::after{top:85px;left:48px;position:absolute;font-family:dictionary-fonticon;content:'\e900';font-size:36px;}@media (min-width:1280px){.css-1sxxwz4{visibility:visible;}}@-webkit-keyframes animation-1xc32n0{from{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}to{-webkit-transform:translate3d(0,10px,0);-ms-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0);}}@keyframes animation-1xc32n0{from{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}to{-webkit-transform:translate3d(0,10px,0);-ms-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0);}}@-webkit-keyframes animation-wynbga{from{opacity:1;}to{opacity:0;}}@keyframes animation-wynbga{from{opacity:1;}to{opacity:0;}}.css-afxi26{-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);text-transform:uppercase;color:#1a1a1a;font-weight:bold;}.css-m5vuwy{background:#ffffff;margin-bottom:24px;background:none;}@media (min-width:900px){.css-m5vuwy{padding:0 48px;max-width:px;}}@media (min-width:900px){.css-m5vuwy{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;background:#ffffff;}}.css-1qdl9w4{background:none;margin-bottom:24px;}@media (min-width:900px){.css-1qdl9w4{padding:0 48pxpx;max-width:px;}}.css-omcgcf{margin:0 auto;padding:24px;}@media (min-width:480px){.css-omcgcf{max-width:480px;padding:24px 48px;}}@media (min-width:900px){.css-omcgcf{max-width:900px;padding:24px 0;padding:24px 0;}}.css-1qjkpax{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin:-32px 0;}.css-1qjkpax .colored-card{-webkit-flex-basis:320px;-ms-flex-preferred-size:320px;flex-basis:320px;min-width:320px;height:226px;}@media (min-width:320px){.css-1qjkpax .colored-card{-webkit-flex-basis:calc( 320px + (448 - 320) * ( (100vw - 320px) / (448 - 320) ) );-ms-flex-preferred-size:calc( 320px + (448 - 320) * ( (100vw - 320px) / (448 - 320) ) );flex-basis:calc( 320px + (448 - 320) * ( (100vw - 320px) / (448 - 320) ) );min-width:calc( 320px + (448 - 320) * ( (100vw - 320px) / (448 - 320) ) );height:calc( 226px + (280 - 226) * ( (100vw - 320px) / (448 - 320) ) );}}@media (min-width:448px){.css-1qjkpax .colored-card{-webkit-flex-basis:448px;-ms-flex-preferred-size:448px;flex-basis:448px;min-width:448px;height:280px;}}@media (min-width:900px){.css-1qjkpax{padding:0 32px;}}.css-8t5iu{-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.css-8t5iu .heading-description{display:none;}@media (min-width:900px){.css-8t5iu{-webkit-flex:1;-ms-flex:1;flex:1;text-align:left;margin-right:16px;margin-bottom:4px;}.css-8t5iu .heading-description{display:block;}}.css-jddwsg{color:#1a1a1a;font-weight:bold;margin:0;padding:0;font-size:24px;line-height:0.8;margin-bottom:4px;}@media (min-width:900px){.css-jddwsg{font-size:calc( 24px + (32 - 24) * ( (100vw - 900px) / (1024 - 900) ) );}}@media (min-width:1024px){.css-jddwsg{font-size:32px;}}.css-epvm6{white-space:nowrap;}.css-vs1wr1{color:#4a4a4a;margin:0 0 0.83em 0;padding:0;margin:0;}.css-vln997{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;color:inherit;}.css-vln997:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-vln997:hover{-webkit-text-decoration:none;text-decoration:none;}.css-1haslm5{font-size:33.74484256243214px;}@media (min-width:320px){.css-1haslm5{font-size:calc( 33.74484256243214px + (52.11726384364821 - 33.74484256243214) * ( (100vw - 320px) / (448 - 320) ) );}}@media (min-width:448px){.css-1haslm5{font-size:52.11726384364821px;}}.css-k70zdk{font-size:16px;}@media (min-width:320px){.css-k70zdk{font-size:calc( 16px + (24 - 16) * ( (100vw - 320px) / (448 - 320) ) );}}@media (min-width:448px){.css-k70zdk{font-size:24px;}}.css-1wxwdz1{background:none;border:none;padding:0;cursor:pointer;background:url(https://www.dictionary.com/hp-assets/audio-icon-9f870e286873fd50e8e479dc1915591f.svg) no-repeat;background-size:100%;height:32px;width:32px;margin-left:10px;margin-top:0;position:relative;top:-3px;vertical-align:middle;padding:0;width:16px;height:16px;}@media (min-width:320px){.css-1wxwdz1{height:calc( 16px + (24 - 16) * ( (100vw - 320px) / (448 - 320) ) );width:calc( 16px + (24 - 16) * ( (100vw - 320px) / (448 - 320) ) );}}@media (min-width:448px){.css-1wxwdz1{width:24px;height:24px;}}.css-lcncg0{-webkit-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-weight:bold;}.css-1sfjkuu{-webkit-flex:1;-ms-flex:1;flex:1;font-size:16px;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.css-1a92h7r{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;}.css-1a92h7r:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-11ba56w{-webkit-text-decoration:inherit;text-decoration:inherit;display:inline-block;}.css-105fkqd{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-size:16px;}.css-s9rek9{background:white;margin-bottom:24px;padding:24px;}@media (min-width:480px){.css-s9rek9{background:none;padding:0;}}@media (min-width:900px){.css-s9rek9{margin-bottom:24px;padding:0;}}@media (min-width:1024px){.css-s9rek9{background:white;padding:0 48px;}}@media (min-width:1024px){.css-1180vw3{margin:0 auto;max-width:900px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.css-1pgifp9{background:white;}@media (min-width:480px){.css-1pgifp9{margin-bottom:24px;padding:0 24px;}}@media (min-width:900px){.css-1pgifp9{background:white;padding:0 48px;}}@media (min-width:1024px){.css-1pgifp9{-webkit-flex:2;-ms-flex:2;flex:2;margin:0 48px 0 0;padding:0;}}@media (min-width:480px){.css-5vqoul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 auto;max-width:480px;padding:24px 0;}}@media (min-width:900px){.css-5vqoul{max-width:none;}}.css-1ld36gr .e1sw3gu90{margin-bottom:24px;}.css-14ovzcg.flex-row-collapsed > div:not(.end6u7i1) > *:nth-last-of-type(1){display:none;}@media (min-width:900px){.css-14ovzcg.flex-row-collapsed > div:not(.end6u7i1) > *:nth-last-of-type(1){display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}.css-i32n7o{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;margin:calc(-1 * 24px / 2);-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-transition:opacity 100ms ease-in;transition:opacity 100ms ease-in;}.css-i32n7o > *{margin:calc(24px / 2);-webkit-flex:1 1 calc(100% - 24px);-ms-flex:1 1 calc(100% - 24px);flex:1 1 calc(100% - 24px);-webkit-flex-basis:calc(100% - 24px);-ms-flex-preferred-size:calc(100% - 24px);flex-basis:calc(100% - 24px);-ms-flex:1 0 auto;max-width:calc(100% - 24px);}@supports (-ms-ime-align:auto){.css-i32n7o > *{-webkit-flex-basis:calc(100% - 24px - 1px);-ms-flex-preferred-size:calc(100% - 24px - 1px);flex-basis:calc(100% - 24px - 1px);}}@media (min-width:900px){.css-i32n7o{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}.css-i32n7o > *{-webkit-flex:1 1 calc(50% - 24px);-ms-flex:1 1 calc(50% - 24px);flex:1 1 calc(50% - 24px);-webkit-flex-basis:calc(50% - 24px);-ms-flex-preferred-size:calc(50% - 24px);flex-basis:calc(50% - 24px);max-width:calc(50% - 24px);}@supports (-ms-ime-align:auto){.css-i32n7o > *{-webkit-flex-basis:calc(50% - 24px - 1px);-ms-flex-preferred-size:calc(50% - 24px - 1px);flex-basis:calc(50% - 24px - 1px);}}}.css-i32n7o > div{-webkit-transition:inherit;transition:inherit;}.css-i32n7o:hover > div{opacity:0.5;}.css-i32n7o:hover > div:hover{opacity:1;}.css-i32n7o .e9okvfu0{opacity:1;}.css-i32n7o .e9okvfu0 img{width:112px;}.css-i32n7o .e9okvfu0:not(:first-of-type){border-top:1px solid #e1e1e1;padding-top:24px;}@media (min-width:480px){.css-i32n7o .e9okvfu0 img{width:160px;}}@media (min-width:900px){.css-i32n7o .e9okvfu0:not(:first-of-type){border-top:none;padding-top:0;}}@media (min-width:1024px){.css-i32n7o .e9okvfu0 img{width:100%;}}.css-ax1vja{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;position:relative;}.css-ax1vja .e9okvfu1{-webkit-flex:1;-ms-flex:1;flex:1;-ms-flex:1 0;-webkit-order:-1;-ms-flex-order:-1;order:-1;margin:0 24px 0 0;}@media (min-width:1024px){.css-ax1vja{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.css-ax1vja img{margin-bottom:16px;}.css-ax1vja .e9okvfu1{-webkit-order:1;-ms-flex-order:1;order:1;-ms-flex:1 0 auto;margin:0;}}.css-1wnrb7y{width:100%;-webkit-transition:opacity 400ms ease-in;transition:opacity 400ms ease-in;}.css-zg1vud{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}.css-1y5y4p1{color:#1a1a1a;font-weight:bold;margin:0;padding:0;font-size:16px;line-height:1.15;margin-bottom:4px;}.css-1xllme7{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;color:inherit;}.css-1xllme7:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-1ug29v1{color:#4a4a4a;margin:0 0 0.83em 0;padding:0;margin:0;margin-bottom:16px;}.css-8pz1s8{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:16px;font-weight:bold;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;}.css-8pz1s8:hover{-webkit-text-decoration:underline;text-decoration:underline;}@media (min-width:900px){.css-8pz1s8{-webkit-flex:1;-ms-flex:1;flex:1;}}.css-1g2knd8{display:block;}@media (min-width:900px){.css-1g2knd8{display:none;}}.css-5tvk6x{position:absolute;left:0;right:0;text-align:center;-webkit-transform:translateY(25%);-ms-transform:translateY(25%);transform:translateY(25%);}.css-qvjtgj{background:none;border:none;padding:0;cursor:pointer;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;font-family:dictionary-fonticon;width:32px;height:32px;border-radius:50%;border:2px solid #f3f3f3;background:#ffffff;font-size:24px;color:#979797;}.css-qvjtgj:focus{outline:none;}.css-qvjtgj::after{content:'\e613';}.css-1gpw9h3{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}@media (min-width:1024px){.css-1gpw9h3{-webkit-flex:1;-ms-flex:1;flex:1;min-width:300px;margin-top:-12px 0;padding:24px 0;}}.css-ubv62g{min-height:250px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;}.css-1099f99{background:#ffffff;margin-bottom:24px;}@media (min-width:900px){.css-1099f99{padding:0 48px;max-width:px;}}.css-1qm1lh{margin-bottom:16px;}.css-1ox5y3u{list-style:none;margin:0;padding:0;counter-reset:numbered-list;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (min-width:900px){.css-1ox5y3u{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}.css-orer6c{counter-increment:numbered-list;-webkit-flex:1;-ms-flex:1;flex:1;-ms-flex:1 0 auto;padding-left:24px;position:relative;}@media (min-width:900px){.css-orer6c{-ms-flex:1 0;padding-right:32px;}}.css-orer6c::before{color:#7d7d7d;content:counter(numbered-list);font-size:16px;left:0;position:absolute;}.css-orer6c::before{color:#1a1a1a;font-size:20px;font-weight:bold;top:4px;}.css-16lnicq{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;}.css-10qbxhc{color:#1a1a1a;font-weight:bold;margin:0;padding:0;font-size:24px;line-height:0.8;margin-bottom:4px;}.css-1f7llvl{color:#0e5ab6;font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;margin-left:8px;}.css-1f7llvl::before{content:'\e901';}.css-1nt755z{color:#4a4a4a;margin:0 0 0.83em 0;}.css-1s1kk0c{background:#ffffff;margin-bottom:24px;background:transparent;margin-bottom:auto;}@media (min-width:900px){.css-1s1kk0c{padding:0 48px;max-width:px;}}.css-1s1kk0c > div{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media only screen and (min-width:1024px){.css-1s1kk0c > div{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}@media only screen and (min-width:480px){.css-1s1kk0c{padding:0 64px;}}.css-q6wxos{color:#1a1a1a;font-weight:bold;margin:0;padding:0;font-size:16px;line-height:1.15;margin-bottom:4px;text-transform:uppercase;text-align:center;padding:8px 8px;}@media only screen and (min-width:1024px){.css-q6wxos{text-align:left;width:260px;padding:8px 16px 0 0;}}.css-19q5ra6{position:relative;width:273px;background-color:#ffffff;-webkit-transition:border 0.5s ease;transition:border 0.5s ease;margin:0 auto;}@media only screen and (min-width:480px){.css-19q5ra6{width:400px;}}.css-j6k8fd{border:solid 1px transparent;padding:16px 80px 16px 16px;width:100%;}.css-j6k8fd:focus{outline:none;border:solid 1px #e1e1e1;}.css-j6k8fd::selection{color:#ffffff;}.css-s3v0sg{background:none;border:none;padding:0;cursor:pointer;text-transform:uppercase;font-weight:bold;position:absolute;z-index:1;right:0;padding:16px;}.css-s3v0sg:focus{outline:none;}.css-1h184u{padding-top:8px;min-height:52px;-webkit-transition:opacity 0 ease;transition:opacity 0 ease;opacity:0;position:relative;padding:8px 0;min-height:52px;width:273px;margin:0 auto;}.css-1h184u::before{font-family:dictionary-fonticon;font-size:20px;margin-right:3px;}@media only screen and (min-width:480px){.css-1h184u{margin:0 0;width:auto;}.css-1h184u > span{left:24px;}}.css-1r9b9nv{background:#ffffff;}@media (min-width:900px){.css-1r9b9nv{padding:0 48px;max-width:px;}}.css-i3pbo{margin-bottom:24px;}.css-1j9f97y{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (min-width:900px){.css-1j9f97y{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}.css-adm824{-webkit-flex:1;-ms-flex:1;flex:1;-ms-flex:1 0 auto;margin-bottom:24px;}@media (min-width:900px){.css-adm824{-ms-flex:1 0;margin-bottom:0;}}.css-e0tqk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.css-e0tqk img{margin-bottom:16px;}.css-e0tqk .e9okvfu1{-webkit-order:1;-ms-flex-order:1;order:1;-ms-flex:1 0 auto;margin:0;}.css-i1vedh{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}@media (min-width:900px){.css-i1vedh{margin-left:24px;}}@media (min-width:900px){.css-1pq35g0{width:352px;}}@media (min-width:1024px){.css-1pq35g0{width:384px;}}.css-1udzc5h{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;font-size:16px;font-weight:bold;text-transform:uppercase;}.css-1udzc5h:hover{-webkit-text-decoration:underline;text-decoration:underline;}.css-15l8ust{background:#ffffff;margin-bottom:24px;overflow:hidden;position:relative;}@media (min-width:900px){.css-15l8ust{padding:0 48px;max-width:px;}}.css-1mxdmiv{list-style:none;padding:0;margin:0;}@media (min-width:900px){.css-1mxdmiv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;max-width:900px;margin:0 auto;}}.css-1ucumia{border-top:1px solid #e1e1e1;}@media (min-width:900px){.css-1ucumia{border:none;-webkit-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:0;height:auto;}}.css-1xdhd08{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;height:53px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (min-width:900px){.css-1xdhd08{font-size:24px;-webkit-flex:4;-ms-flex:4;flex:4;height:auto;-webkit-align-items:start;-webkit-box-align:start;-ms-flex-align:start;align-items:start;}}.css-w37fux{color:#1a1a1a;font-weight:bold;margin:0;padding:0;font-size:24px;line-height:0.8;margin-bottom:4px;text-transform:uppercase;margin-bottom:0;font-size:16px;}@media (min-width:900px){.css-w37fux{font-size:24px;}}.css-c3br6m{background:none;border:none;padding:0;cursor:pointer;width:40px;height:40px;margin-right:-20px;}@media (min-width:900px){.css-c3br6m{display:none;}}.css-fcf2aj{font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:-webkit-transform 0.3s;-webkit-transition:transform 0.3s;transition:transform 0.3s;display:inline-block;}.css-fcf2aj::before{content:'\e604';}.css-h1i8zg{list-style:none;padding:0;margin:0 0 16px 16px;display:none;}@media (min-width:900px){.css-h1i8zg{display:block;-webkit-flex:5;-ms-flex:5;flex:5;}}.css-1lvwiam{font-size:16px;margin-bottom:16px;}.css-7sg6aa{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;margin:calc(-1 * 24px / 2);-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-transition:opacity 100ms ease-in;transition:opacity 100ms ease-in;}.css-7sg6aa > *{margin:calc(24px / 2);-webkit-flex:1 1 calc(100% - 24px);-ms-flex:1 1 calc(100% - 24px);flex:1 1 calc(100% - 24px);-webkit-flex-basis:calc(100% - 24px);-ms-flex-preferred-size:calc(100% - 24px);flex-basis:calc(100% - 24px);-ms-flex:1 0 auto;max-width:calc(100% - 24px);}@supports (-ms-ime-align:auto){.css-7sg6aa > *{-webkit-flex-basis:calc(100% - 24px - 1px);-ms-flex-preferred-size:calc(100% - 24px - 1px);flex-basis:calc(100% - 24px - 1px);}}@media (min-width:900px){.css-7sg6aa{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}.css-7sg6aa > *{-webkit-flex:1 1 calc(50% - 24px);-ms-flex:1 1 calc(50% - 24px);flex:1 1 calc(50% - 24px);-webkit-flex-basis:calc(50% - 24px);-ms-flex-preferred-size:calc(50% - 24px);flex-basis:calc(50% - 24px);max-width:calc(50% - 24px);}@supports (-ms-ime-align:auto){.css-7sg6aa > *{-webkit-flex-basis:calc(50% - 24px - 1px);-ms-flex-preferred-size:calc(50% - 24px - 1px);flex-basis:calc(50% - 24px - 1px);}}}@media (min-width:1024px){.css-7sg6aa{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}.css-7sg6aa > *{-webkit-flex:1 1 calc(33.333333333333336% - 24px);-ms-flex:1 1 calc(33.333333333333336% - 24px);flex:1 1 calc(33.333333333333336% - 24px);-webkit-flex-basis:calc(33.333333333333336% - 24px);-ms-flex-preferred-size:calc(33.333333333333336% - 24px);flex-basis:calc(33.333333333333336% - 24px);max-width:calc(33.333333333333336% - 24px);}@supports (-ms-ime-align:auto){.css-7sg6aa > *{-webkit-flex-basis:calc(33.333333333333336% - 24px - 1px);-ms-flex-preferred-size:calc(33.333333333333336% - 24px - 1px);flex-basis:calc(33.333333333333336% - 24px - 1px);}}}.css-7sg6aa > div{-webkit-transition:inherit;transition:inherit;}.css-7sg6aa:hover > div{opacity:0.5;}.css-7sg6aa:hover > div:hover{opacity:1;}.css-7sg6aa .e9okvfu0{opacity:1;}.css-7sg6aa .e9okvfu0 img{width:112px;}.css-7sg6aa .e9okvfu0:not(:first-of-type){border-top:1px solid #e1e1e1;padding-top:24px;}@media (min-width:480px){.css-7sg6aa .e9okvfu0 img{width:160px;}}@media (min-width:900px){.css-7sg6aa .e9okvfu0:not(:first-of-type){border-top:none;padding-top:0;}}@media (min-width:1024px){.css-7sg6aa .e9okvfu0 img{width:100%;}}.css-gzbnho{margin:0 auto;min-height:90px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.css-23fmh7{list-style:none;margin:0;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;margin-bottom:24px;margin-top:24px;font-size:20px;font-weight:bold;}.css-hbxmee{margin:0 8px 8px 0;color:#0e5ab6;border:4px solid #0e5ab6;}.css-hbxmee:hover{cursor:pointer;color:#ffffff;background:#0e5ab6;}.css-1dq7tia{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;color:inherit;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:46px;width:46px;}.css-1dq7tia:hover{cursor:pointer;}.css-fnxjv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;margin:calc(-1 * 24px / 2);-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}.css-fnxjv > *{margin:calc(24px / 2);-webkit-flex:1 1 calc(100% - 24px);-ms-flex:1 1 calc(100% - 24px);flex:1 1 calc(100% - 24px);-webkit-flex-basis:calc(100% - 24px);-ms-flex-preferred-size:calc(100% - 24px);flex-basis:calc(100% - 24px);-ms-flex:1 0 auto;max-width:calc(100% - 24px);}@supports (-ms-ime-align:auto){.css-fnxjv > *{-webkit-flex-basis:calc(100% - 24px - 1px);-ms-flex-preferred-size:calc(100% - 24px - 1px);flex-basis:calc(100% - 24px - 1px);}}@media (min-width:900px){.css-fnxjv{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}.css-ez4qye{margin-bottom:16px;white-space:normal;word-break:break-word;}@media (min-width:900px){.css-ez4qye{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:0;}}.css-huva6s{list-style:none;margin:0;padding:0;margin-bottom:24px;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}@media (min-width:900px){.css-huva6s{-webkit-columns:3 200px;columns:3 200px;-webkit-column-gap:0;column-gap:0;margin-bottom:0;}}.css-u27f9g{border-bottom:1px solid #e1e1e1;font-size:16px;font-weight:bold;line-height:16px;margin-bottom:16px;-webkit-break-inside:avoid;break-inside:avoid;}.css-u27f9g:last-child{margin-bottom:0;}@media (min-width:900px){.css-u27f9g{margin:0 24px 24px 0;border-top:none;border-bottom:none;}}.css-xaii6a{color:#0e5ab6;margin:0 0 0.83em 0;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-wrap:break-word;}@media (min-width:900px){.css-xaii6a{margin:0;}}@media (min-width:900px){.css-3fyz4l{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1 5 auto;-ms-flex:1 5 auto;flex:1 5 auto;}}.css-5h6ei1{color:#1a1a1a;font-weight:bold;margin:0;padding:0;color:#0e5ab6;font-size:16px;line-height:1.15;margin-bottom:4px;}.css-1aceynh{color:#4a4a4a;margin:0 0 0.83em 0;font-size:14px;}.css-1wodvp9{list-style:none;margin:0;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-3h5xh3:not(:last-child){margin-right:8px;}.css-4mcsk{color:#0e5ab6;-webkit-text-decoration:none;text-decoration:none;color:inherit;}.css-1j44f8t{position:fixed;z-index:100;bottom:24px;right:0;}.css-uq902e{background-color:#4a4a4a;}.css-la2qjs{background:none;}@media (min-width:900px){.css-la2qjs{padding:0 48px;max-width:px;}}.css-oq21cx{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;color:#ffffff;}@media (min-width:900px){.css-oq21cx{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}.css-80iqnf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;}@media (min-width:900px){.css-80iqnf{-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;min-width:600px;text-align:left;}}.css-1p1ueyb{-webkit-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (min-width:900px){.css-1p1ueyb{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}.css-1n6q2pj{width:220px;margin-bottom:16px;}.css-19idom{margin-bottom:8px;}.css-mge0hl{color:#ffffff;margin:0 0 0.83em 0;font-size:14px;text-transform:uppercase;font-weight:bold;margin-bottom:8px;}.css-1r3vmsj{border:solid 1px transparent;padding:16px 80px 16px 16px;width:100%;}.css-1r3vmsj:focus{outline:none;border:solid 1px #1a1a1a;}.css-1r3vmsj::selection{color:#ffffff;}.css-1t9t2tx{list-style:none;margin:0;padding:0;margin-bottom:40px;}@media (min-width:900px){.css-1t9t2tx{margin-bottom:auto;}}.css-1w5ucwd{display:inline;margin-right:24px;}.css-1w5ucwd:last-child{margin-right:0;}.css-13ulnmp{font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;}.css-13ulnmp::before{content:'\e90c';}.css-1urkp2a{font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;}.css-1urkp2a::before{content:'\e90f';}.css-1hmei4i{font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;}.css-1hmei4i::before{content:'\e90d';}.css-16spoi{font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;}.css-16spoi::before{content:'\e910';}.css-1ez3p9h{font-family:dictionary-fonticon;width:24px;height:24px;font-size:24px;vertical-align:text-bottom;}.css-1ez3p9h::before{content:'\e90e';}.css-t7vryb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;text-align:center;}@media (min-width:900px){.css-t7vryb{text-align:right;margin-bottom:0;}}.css-urc5lr{list-style:none;margin:0;padding:0;}html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:0.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:0.35em 0.75em 0.625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}@font-face{font-family:'dictionary-fonticon';src: url(https://www.thesaurus.com/hp-assets/dictionary-font-7804c0d4b571cc3ee0739b0b5490444e.eot) format('embedded-opentype'), url(https://www.thesaurus.com/hp-assets/dictionary-font-5d87afd67fd47a8061b1c553345b342c.woff) format('woff'), url(https://www.thesaurus.com/hp-assets/dictionary-font-aed4ca2866efe7dba28cf306573d2c4a.ttf) format('truetype'), url(https://www.thesaurus.com/hp-assets/dictionary-font-b6a3748ba7d4dfbe2cf03d639b3cd058.svg#dictionary-font) format('svg');}::-moz-selection{background:#3A76C3;text-shadow:none;}@media print{*,*::before,*::after{background:transparent !important;color:#1a1a1a !important box-shadow:none !important;text-shadow:none !important;}a,a:visited{-webkit-text-decoration:underline;text-decoration:underline;}a[href]::after{content:' (' attr(href) ')';}abbr[title]::after{content:' (' attr(title) ')';}a[href^='#']::after,a[href^='javascript:']::after{content:'';}pre,blockquote{border:1px solid #979797;page-break-inside:avoid;}thead{display:table-header-group;}tr,img{page-break-inside:avoid;}img{max-width:100% !important;}p,h2,h3{orphans:3;widows:3;}h2,h3{page-break-after:avoid;}}html{box-sizing:border-box;}html.hamburger-overlay{overflow:hidden;}*,*::before,*::after{box-sizing:border-box;-ms-flex:1 0 0;}*::before,*::after{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}body{background-color:#f5f5f5;}.bold{font-weight:bold;}.italic{font-style:italic;}.css-1wluow2{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;border:12px solid;border-color:#34C5FF;padding:24px 32px;background:#ffffff;}.css-2j2233{color:#1a1a1a;font-weight:bold;margin:0;padding:0;font-size:32px;line-height:1.15;margin-bottom:4px;color:#34C5FF;-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;hyphens:auto;}</style>
+      </head>
+      <body class="init">
+        <!-- Google Analytics GTM iframe starts here -->
+        
+      <noscript>
+        <iframe
+          src="//www.googletagmanager.com/ns.html?id=GTM-TXC5GP"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
+    
+        <!-- Google Analytics GTM iframe ends here -->
+        <div id="root"><div data-reactroot=""><div class="css-12jladn eyeuakq1"><div class="css-yk5h7d eyeuakq0"><header class="css-7lhd3d-Header e1nknobk0"><nav aria-label="Site Navigation"><div class="css-145r0xm-Navigation e1nknobk1"><div class="css-6u1vpe-Container e1mpvuks0"><div class="hamburger-overlay css-p5rnoq-Overlay e1mpvuks1"></div><nav aria-label="Hamburger Menu" class="css-1fay3fr-Nav e1mpvuks3"><ul class="css-17g2mt7-List e1mpvuks5"><li class="css-12jbd0i-Item e1mpvuks4"><a id="hamburgerMenuDictionarycom" href="https://www.dictionary.com/" data-linkid="lxabec" class="css-1j22r93-Link e1mpvuks2">Dictionary.com</a></li><li class="css-12jbd0i-Item e1mpvuks4"><a id="hamburgerMenuThesauruscom" href="https://www.thesaurus.com/" data-linkid="c1drjk" class="css-1j22r93-Link e1mpvuks2">Thesaurus.com</a></li><li class="css-12jbd0i-Item e1mpvuks4"><a id="hamburgerMenuEAZ" href="https://www.dictionary.com/e/" data-linkid="t6ehki" class="css-1j22r93-Link e1mpvuks2">Everything After Z</a><ul class="css-ioerk6-NestedList e1mpvuks6"><li><a id="hamburgerMenuWOTD" href="https://www.dictionary.com/e/word-of-the-day/" data-linkid="1498ik" class="css-1j22r93-Link e1mpvuks2">Word of the Day</a></li><li><a id="hamburgerMenuVideo" href="https://www.dictionary.com/e/video/" data-linkid="t6ehki" class="css-1j22r93-Link e1mpvuks2">Video</a></li><li><a id="hamburgerMenuWordFacts" href="https://www.dictionary.com/e/c/word-facts/" data-linkid="t6ehki" class="css-1j22r93-Link e1mpvuks2">Word Facts</a></li><li><a id="hamburgerMenuGrammar" href="https://www.dictionary.com/e/grammar/" data-linkid="t6ehki" class="css-1j22r93-Link e1mpvuks2">Grammar</a></li><li><a id="hamburgerMenuCrosswordSolver" href="https://www.dictionary.com/e/crosswordsolver/" data-linkid="636f6c" class="css-1j22r93-Link e1mpvuks2">Crossword Solver</a></li><li><a id="hamburgerMenuDailyCrossword" href="https://www.dictionary.com/e/crossword/" data-linkid="636f6c" class="css-1j22r93-Link e1mpvuks2">Daily Crossword</a></li></ul></li><li class="css-12jbd0i-Item e1mpvuks4"><a id="hamburgerMenuATW" href="https://www.dictionary.com/e/all-the-words/" data-linkid="qnez9u" class="css-1j22r93-Link e1mpvuks2">All The Words</a><ul class="css-ioerk6-NestedList e1mpvuks6"><li><a id="hamburgerMenuSlang" href="https://www.dictionary.com/e/slang/" data-linkid="qnez9u" class="css-1j22r93-Link e1mpvuks2">Slang</a></li><li><a id="hamburgerMenuEmoji" href="https://www.dictionary.com/e/emoji/" data-linkid="bhng9k" class="css-1j22r93-Link e1mpvuks2">Emoji</a></li><li><a id="hamburgerMenuGenderSexuality" href="https://www.dictionary.com/e/gender-sexuality/" data-linkid="1l40im" class="css-1j22r93-Link e1mpvuks2">Gender &amp; Sexuality</a></li><li><a id="hamburgerMenuAcronym" href="https://www.dictionary.com/e/acronyms/" data-linkid="8quzrn" class="css-1j22r93-Link e1mpvuks2">Acronyms</a></li></ul></li></ul></nav><button aria-label="Toggle Menu" id="hamburgerButton-click" class="css-1pbd48u-HamburgerButton e1mpvuks7"></button></div><ul class="css-1bfcprh-TabContainer e1nknobk2"><li class="css-mbltsl-TabActive ejn7swr1"><a href="https://www.Dictionary.com" id="dictionary-nav-tab" class="header-tab-active css-101p9x5-Link ejn7swr0" data-linkid="tqks0v" role="link">Dictionary.com</a></li><li class="css-7uual2-TabInactive ejn7swr2"><a href="https://www.Thesaurus.com" id="thesaurus-nav-tab" data-linkid="qxnxzj" class="css-101p9x5-Link ejn7swr0">Thesaurus.com</a></li></ul></div></nav><div class="css-1m8vgu3-SearchContainer e1nfx3j02"><div class="css-1azpvos-SearchRow e1nfx3j03"><a href="https://www.dictionary.com" data-linkid="yg487x" class="css-1w3y4j8-LogoContainer e1nfx3j00"><img src="https://www.dictionary.com/hp-assets/dictionary_logo_white-90c1e2eaf84c6abcb80d08d6eb0b6c60.svg" alt="Dictionary.com" class="css-8en0us-Logo e1nfx3j01"/></a><div class="css-105e91s-SearchWrapper e18h4a050"><form action="#" class="css-va0hcf-StyledForm e18h4a052"><div class="css-pvhgk7-FilterNavContainer ev3lshj0"><div class="css-bw0xv8-FilterNavInner ev3lshj1"><div class="css-1vsksql-FilterItemContainer ev3lshj2"><div id="active-definitions" class="css-1bzwsqu-FilterItem ev3lshj3">DEFINITIONS</div><span id="search-dropdown-icon" class="css-1pc7935 e2cjyp00"></span></div><ul style="max-height:0" class="css-bjumj ep2tsc50"><li id="synonyms-filter" class="css-1hjfrd8-ListWrapper ev3lshj4"><a data-linkid="205vpa" class="css-jaagka ebjrtl60">SYNONYMS</a></li></ul></div></div><label for="q" class="css-1hsp8l3-HiddenLabel e1t7bu8t0">Search</label><input type="search" title="Search" autoComplete="off" autoCapitalize="off" autoCorrect="off" name="override_query" class="search-input css-1hin8ey e1qsy2jz0" id="searchbar_input" value=""/><button aria-label="Search" type="submit" id="search-submit" class="css-5aswtn-SearchButtonColored e18h4a051"></button></form><div class="css-fbv1ih-MarketingSlot enrg2be0"></div></div></div></div></header></div><div class="css-ade6iy eyeuakq2"><div class="css-1cfhhtu eis715q0"><div class="css-18ix5kc-TrendingWordsTickerContainer e1ydg8n00"><div class="trending-words trending-words-label css-1bgjdcm-TickerLabel e1ydg8n02">Trending</div><div class="css-g5bhv8-TickerControls e1ydg8n01"><button class="css-n5g5yy eis715q1"><img src="https://www.dictionary.com/hp-assets/sharp-play_arrow-24px-e0c61c897f90bf0c708b466c63f22491.svg" alt="play ticker"/></button></div><div class="css-6d8se-Ticker e1ydg8n03"><div class="css-uih7i0-TickerContent e1ydg8n04"><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">chuntering</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,106.10112701797136 41.42857142857143,102.77396377609597 62.142857142857146,110 82.85714285714286,94.8028304318283 103.57142857142858,95.82909627685747 124.28571428571429,107.87717612877528 145,100.3231097260948 165.71428571428572,107.36638627896623 186.42857142857144,95.96499449377914 207.14285714285717,75.41624686614026 227.85714285714286,69.55387895686403 248.57142857142858,59.32870966986105 269.2857142857143,43.883174394901474 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->8747<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">fennelflower</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,97.72724200851523 41.42857142857143,102.03892680948842 62.142857142857146,110 82.85714285714286,91.19889166722984 103.57142857142858,102.01189430289924 124.28571428571429,107.58734878691627 145,84.56916942623505 165.71428571428572,69.71480705548421 186.42857142857144,79.53436507400149 207.14285714285717,56.64459011961885 227.85714285714286,69.91079272825573 248.57142857142858,66.92370075015205 269.2857142857143,49.494492126782454 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->3256<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">soupcon</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,94.9945905263653 41.42857142857143,99.2327955218966 62.142857142857146,110 82.85714285714286,100.58751587562915 103.57142857142858,88.82779058281199 124.28571428571429,79.17070417235053 145,83.69114257490945 165.71428571428572,61.36648007902536 186.42857142857144,52.58902112046663 207.14285714285717,66.46079307587375 227.85714285714286,44.93108800978409 248.57142857142858,53.69913918810856 269.2857142857143,48.143844959781724 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->2650<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">deface</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,96.63992219790907 41.42857142857143,81.0957127806143 62.142857142857146,92.12172785476943 82.85714285714286,96.3319555879731 103.57142857142858,109.01531728665208 124.28571428571429,110 145,93.15098468271334 165.71428571428572,76.4154307480347 186.42857142857144,69.83061836453521 207.14285714285717,54.07569495096848 227.85714285714286,44.84074884512522 248.57142857142858,57.17156981927223 269.2857142857143,67.04676229840344 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->3120<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">superb</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,98.46754782314936 41.42857142857143,95.27511507115409 62.142857142857146,91.03965204172121 82.85714285714286,103.24775136185127 103.57142857142858,96.59684979519446 124.28571428571429,110 145,91.12833072927663 165.71428571428572,73.8613234238419 186.42857142857144,63.891305265824926 207.14285714285717,71.11650690426924 227.85714285714286,51.987247160170604 248.57142857142858,58.72260461973734 269.2857142857143,43.740129217516156 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->13300<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">degenderize</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,110 41.42857142857143,102.64178509762253 62.142857142857146,82.14326825164918 82.85714285714286,61.666888032939305 103.57142857142858,45.83919953955815 124.28571428571429,67.12578031611103 145,57.58046664010271 165.71428571428572,55.149864966573695 186.42857142857144,62.344268827201496 207.14285714285717,70.90671625271175 227.85714285714286,88.84623898702793 248.57142857142858,87.87665471288794 269.2857142857143,85.12728560676496 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->12900<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">cognac</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,78.61816616444253 41.42857142857143,110 62.142857142857146,92.03831252690486 82.85714285714286,89.67068445975032 103.57142857142858,95.10546706844598 124.28571428571429,103.65045200172192 145,63.70210934136892 165.71428571428572,47.386999569522175 186.42857142857144,83.91304347826087 207.14285714285717,93.2759362892811 227.85714285714286,108.34266035299183 248.57142857142858,93.34050796383985 269.2857142857143,87.76582006026689 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->9500<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">chorister</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,108.46725225490773 41.42857142857143,49.92807875965336 62.142857142857146,73.53239403407417 82.85714285714286,63.557743323704535 103.57142857142858,93.09261333490538 124.28571428571429,110 145,101.03932087484526 165.71428571428572,97.60832399929258 186.42857142857144,102.67818192536697 207.14285714285717,69.1110063078465 227.85714285714286,88.35288569238932 248.57142857142858,45.17656074986736 269.2857142857143,62.70883688026882 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->3033<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">tv</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,110 41.42857142857143,85.56314384917789 62.142857142857146,84.72524319205716 82.85714285714286,64.8624063818187 103.57142857142858,46.17033487331057 124.28571428571429,53.745875060977355 145,78.18847025739619 165.71428571428572,81.00634164538437 186.42857142857144,87.50294126086831 207.14285714285717,80.93173405262705 227.85714285714286,95.73273264656088 248.57142857142858,72.6388131653706 269.2857142857143,94.91778817182703 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->9000<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">canteloube</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,108.6359702267613 41.42857142857143,91.16669551670417 62.142857142857146,89.84420979747273 82.85714285714286,85.63441232473602 103.57142857142858,110 124.28571428571429,100.63181582136056 145,74.50752985978882 165.71428571428572,95.4388090704518 186.42857142857144,76.61242859615717 207.14285714285717,71.71023022329928 227.85714285714286,44.60273498355548 248.57142857142858,57.53678379781893 269.2857142857143,83.80647394841613 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->8800<!-- -->%</span></a></div><div class="css-uih7i0-TickerContent e1ydg8n04"><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">chuntering</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,106.10112701797136 41.42857142857143,102.77396377609597 62.142857142857146,110 82.85714285714286,94.8028304318283 103.57142857142858,95.82909627685747 124.28571428571429,107.87717612877528 145,100.3231097260948 165.71428571428572,107.36638627896623 186.42857142857144,95.96499449377914 207.14285714285717,75.41624686614026 227.85714285714286,69.55387895686403 248.57142857142858,59.32870966986105 269.2857142857143,43.883174394901474 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->8747<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">fennelflower</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,97.72724200851523 41.42857142857143,102.03892680948842 62.142857142857146,110 82.85714285714286,91.19889166722984 103.57142857142858,102.01189430289924 124.28571428571429,107.58734878691627 145,84.56916942623505 165.71428571428572,69.71480705548421 186.42857142857144,79.53436507400149 207.14285714285717,56.64459011961885 227.85714285714286,69.91079272825573 248.57142857142858,66.92370075015205 269.2857142857143,49.494492126782454 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->3256<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">soupcon</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,94.9945905263653 41.42857142857143,99.2327955218966 62.142857142857146,110 82.85714285714286,100.58751587562915 103.57142857142858,88.82779058281199 124.28571428571429,79.17070417235053 145,83.69114257490945 165.71428571428572,61.36648007902536 186.42857142857144,52.58902112046663 207.14285714285717,66.46079307587375 227.85714285714286,44.93108800978409 248.57142857142858,53.69913918810856 269.2857142857143,48.143844959781724 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->2650<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">deface</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,96.63992219790907 41.42857142857143,81.0957127806143 62.142857142857146,92.12172785476943 82.85714285714286,96.3319555879731 103.57142857142858,109.01531728665208 124.28571428571429,110 145,93.15098468271334 165.71428571428572,76.4154307480347 186.42857142857144,69.83061836453521 207.14285714285717,54.07569495096848 227.85714285714286,44.84074884512522 248.57142857142858,57.17156981927223 269.2857142857143,67.04676229840344 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->3120<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">superb</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,98.46754782314936 41.42857142857143,95.27511507115409 62.142857142857146,91.03965204172121 82.85714285714286,103.24775136185127 103.57142857142858,96.59684979519446 124.28571428571429,110 145,91.12833072927663 165.71428571428572,73.8613234238419 186.42857142857144,63.891305265824926 207.14285714285717,71.11650690426924 227.85714285714286,51.987247160170604 248.57142857142858,58.72260461973734 269.2857142857143,43.740129217516156 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->13300<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">degenderize</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,110 41.42857142857143,102.64178509762253 62.142857142857146,82.14326825164918 82.85714285714286,61.666888032939305 103.57142857142858,45.83919953955815 124.28571428571429,67.12578031611103 145,57.58046664010271 165.71428571428572,55.149864966573695 186.42857142857144,62.344268827201496 207.14285714285717,70.90671625271175 227.85714285714286,88.84623898702793 248.57142857142858,87.87665471288794 269.2857142857143,85.12728560676496 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->12900<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">cognac</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,78.61816616444253 41.42857142857143,110 62.142857142857146,92.03831252690486 82.85714285714286,89.67068445975032 103.57142857142858,95.10546706844598 124.28571428571429,103.65045200172192 145,63.70210934136892 165.71428571428572,47.386999569522175 186.42857142857144,83.91304347826087 207.14285714285717,93.2759362892811 227.85714285714286,108.34266035299183 248.57142857142858,93.34050796383985 269.2857142857143,87.76582006026689 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->9500<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">chorister</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,108.46725225490773 41.42857142857143,49.92807875965336 62.142857142857146,73.53239403407417 82.85714285714286,63.557743323704535 103.57142857142858,93.09261333490538 124.28571428571429,110 145,101.03932087484526 165.71428571428572,97.60832399929258 186.42857142857144,102.67818192536697 207.14285714285717,69.1110063078465 227.85714285714286,88.35288569238932 248.57142857142858,45.17656074986736 269.2857142857143,62.70883688026882 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->3033<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">tv</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,110 41.42857142857143,85.56314384917789 62.142857142857146,84.72524319205716 82.85714285714286,64.8624063818187 103.57142857142858,46.17033487331057 124.28571428571429,53.745875060977355 145,78.18847025739619 165.71428571428572,81.00634164538437 186.42857142857144,87.50294126086831 207.14285714285717,80.93173405262705 227.85714285714286,95.73273264656088 248.57142857142858,72.6388131653706 269.2857142857143,94.91778817182703 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->9000<!-- -->%</span></a><a class="trending-words-word-block css-v2xn42-TrendingWordContainerSpan ewx439u1"><span class="trending-words trending-words-word css-18rndc4-Word ewx439u2" data-linkid="c5p9m2">canteloube</span><svg viewBox="0 0 300 120" class="css-17k31jr-TrendLineSVG e1jui3eh0"><polyline class="trending-words trending-words-trendline" points="20.714285714285715,108.6359702267613 41.42857142857143,91.16669551670417 62.142857142857146,89.84420979747273 82.85714285714286,85.63441232473602 103.57142857142858,110 124.28571428571429,100.63181582136056 145,74.50752985978882 165.71428571428572,95.4388090704518 186.42857142857144,76.61242859615717 207.14285714285717,71.71023022329928 227.85714285714286,44.60273498355548 248.57142857142858,57.53678379781893 269.2857142857143,83.80647394841613 290,10"></polyline></svg><span class="trending-words trending-words-value css-3t9ykg-CurrentValue ewx439u3">+<!-- -->8800<!-- -->%</span></a></div></div></div></div><div class="css-ogmw67 e1f1nxtl0"><div class="css-uy4kd9 ex9zebd0"><aside class="wide-ad-leaderboard css-6acmpz ew5gjhf0"><aside id="dcomHomeTop-728x90" class="css-122r8kf ez5rsy80"><script></script></aside></aside><div class="css-1sxxwz4 e18mcgxw0"><div class="css-afxi26 e18mcgxw1">discover more</div></div><section class="e2yx4d90 css-m5vuwy ea5d0rp0"><section class="css-1qdl9w4 ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><div class="e2yx4d90 css-1qjkpax ejgj4g60"><div class="css-8t5iu e10nos6s3"><div class="heading css-0 e1sw3gu90"><h2 class="heading-title e2yx4d90 css-jddwsg"><span class="css-epvm6 e10nos6s0">WORD OF <wbr/>THE DAY</span></h2><p class="heading-description e2yx4d90 css-vs1wr1 e1gcv8vj0">Build your vocabulary with new words, definitions, and origin stories every day of the week.</p></div></div><div class="colored-card css-1wluow2 ea6r3x80"><div class="e2yx4d90 css-2j2233"><a href="https://www.dictionary.com/e/word-of-the-day/" data-linkid="nx1fkx" class="e2yx4d90 e2yx4d90 css-vln997 e9kog040"><span class="colored-card-heading css-1haslm5 efsdum80">vicissitudes</span></a></div><div class="colored-card-sub-heading css-0 ea6r3x81"><span class="css-k70zdk efsdum81">[ vi-<span class="bold">sis</span>-i-toodz, -tyoodz ]</span><button href="https://static.sfdict.com/audio/V01/V0114100.mp3" data-click-inner-target="audio" d="contentWotdAudio" class="e2yx4d90 e2yx4d90 css-1wxwdz1 elglvwz0"></button></div><div class="css-lcncg0 ea6r3x82"><div class="css-1sfjkuu ea6r3x83"><a href="https://www.dictionary.com/e/word-of-the-day/" data-linkid="3s1dgz" class="css-1a92h7r e9kog040"><span class="css-11ba56w e10nos6s1">SEE DEFINITIONS <wbr/></span><span class="css-epvm6 e10nos6s2">&amp; EXAMPLES</span></a></div><div class="css-105fkqd ea6r3x84">DEC 01, 2019</div></div></div></div></div></section></section><div class="css-s9rek9 e19np1a20"><div class="css-1180vw3 e66ttrn0"><div class="css-1pgifp9 e66ttrn1"><div class="css-5vqoul e66ttrn2"><div class="css-1ld36gr epdubju0"><div class="heading css-0 e1sw3gu90"><h2 class="heading-title e2yx4d90 css-jddwsg">WORD GAMES</h2><p class="heading-description e2yx4d90 css-vs1wr1 e1gcv8vj0">Flex your word muscles and improve your language skills with a bit of fun.</p></div><div class="flex-row-collapsed css-14ovzcg end6u7i2"><div class="e2yx4d90 css-i32n7o end6u7i0"><div class="css-ax1vja e9okvfu0"><a href="https://www.dictionary.com/games/quizzes/" target="" data-linkid="fgbd5d" data-location="module_type=ThumbnailList|module_position=2|module_title=WORD GAMES|content_position=1|content_title=QUIZ YOURSELF" rel="noopener" class="css-1a92h7r e9kog040"><picture><source srcSet="https://www.dictionary.com/e/wp-content/uploads/2019/11/quizzes-wide-280x158.png" media="(min-width: 1024px)"/><img src="https://www.dictionary.com/e/wp-content/uploads/2019/11/quizzes-wide-160x160.png" alt="thumbnail" loading="lazy" class="css-1wnrb7y e151hzz00"/></picture></a><div class="css-zg1vud e9okvfu1"><h3 class="css-1y5y4p1"><a href="https://www.dictionary.com/games/quizzes/" target="" data-linkid="fgbd5d" data-location="module_type=ThumbnailList|module_position=2|module_title=WORD GAMES|content_position=1|content_title=QUIZ YOURSELF" rel="noopener" class="e2yx4d90 css-1xllme7 e9kog040">QUIZ YOURSELF</a></h3><p class="e2yx4d90 e2yx4d90 css-1ug29v1 e1gcv8vj0">Consider yourself a wordie? Put your love of words to the test!</p><a href="https://www.dictionary.com/games/quizzes/" target="" rel="noopener" data-linkid="fgbd5d" data-location="module_type=ThumbnailList|module_position=2|module_title=WORD GAMES|content_position=1|content_title=QUIZ YOURSELF" class="e2yx4d90 css-8pz1s8 e9kog040">START THE QUIZ
+</a></div></div><div class="css-ax1vja e9okvfu0"><a href="https://www.dictionary.com/e/crossword/" target="" data-linkid="fgbd5d" data-location="module_type=ThumbnailList|module_position=2|module_title=WORD GAMES|content_position=2|content_title=CROSSWORD PUZZLE &amp; SOLVER" rel="noopener" class="css-1a92h7r e9kog040"><picture><source srcSet="https://www.dictionary.com/e/wp-content/uploads/2019/11/crossword-wide-280x158.png" media="(min-width: 1024px)"/><img src="https://www.dictionary.com/e/wp-content/uploads/2019/11/crossword-wide-160x160.png" alt="thumbnail" loading="lazy" class="css-1wnrb7y e151hzz00"/></picture></a><div class="css-zg1vud e9okvfu1"><h3 class="css-1y5y4p1"><a href="https://www.dictionary.com/e/crossword/" target="" data-linkid="fgbd5d" data-location="module_type=ThumbnailList|module_position=2|module_title=WORD GAMES|content_position=2|content_title=CROSSWORD PUZZLE &amp; SOLVER" rel="noopener" class="e2yx4d90 css-1xllme7 e9kog040">CROSSWORD PUZZLE & SOLVER</a></h3><p class="e2yx4d90 e2yx4d90 css-1ug29v1 e1gcv8vj0">Daily puzzles that are always free.</p><a href="https://www.dictionary.com/e/crossword/" target="" rel="noopener" data-linkid="fgbd5d" data-location="module_type=ThumbnailList|module_position=2|module_title=WORD GAMES|content_position=2|content_title=CROSSWORD PUZZLE &amp; SOLVER" class="e2yx4d90 css-8pz1s8 e9kog040">PLAY</a></div></div></div><div class="css-1g2knd8 end6u7i1"><div class="css-5tvk6x e1yfmthx0"><button type="button" class="e2yx4d90 e2yx4d90 css-qvjtgj elglvwz0"></button></div></div></div></div></div></div><div class="css-1gpw9h3 e66ttrn3"><aside class="css-6acmpz ew5gjhf0"><aside id="dcomHomeTop-300x250" class="css-ubv62g ez5rsy80"><script></script></aside></aside></div></div></div><section class="css-1099f99 ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><div class="css-1qm1lh eckz5bv0"><div class="heading css-0 e1sw3gu90"><h2 class="heading-title e2yx4d90 css-jddwsg">EXPAND YOUR VOCABULARY</h2><p class="heading-description e2yx4d90 css-vs1wr1 e1gcv8vj0">These terms have been floating around the internet for a while. Do you know what they mean?</p></div></div><ol class="e2yx4d90 e2yx4d90 css-1ox5y3u e1m0dd4w1"><li class="e2yx4d90 css-orer6c e2k4lih0"><a href="https://www.dictionary.com/e/slang/boujee/" data-linkid="5fq237" data-location="module_position=3|module_type=WordList|module_title=EXPAND YOUR VOCABULARY|content_position=1|content_title=boujee" class="css-16lnicq e9kog040"><h3 class="css-10qbxhc">boujee<span color="#0e5ab6" class="css-1f7llvl e1d0tvnr0"></span></h3></a><p class="css-1nt755z e1gcv8vj0">Boujee is hip-hop slang for something &quot;luxurious in …</p></li><li class="e2yx4d90 css-orer6c e2k4lih0"><a href="https://www.dictionary.com/e/slang/no-cap/" data-linkid="5fq237" data-location="module_position=3|module_type=WordList|module_title=EXPAND YOUR VOCABULARY|content_position=2|content_title=no cap" class="css-16lnicq e9kog040"><h3 class="css-10qbxhc">no cap<span color="#0e5ab6" class="css-1f7llvl e1d0tvnr0"></span></h3></a><p class="css-1nt755z e1gcv8vj0">The expression no cap is slang meaning &quot;no lie&quot; or &quot;…</p></li><li class="e2yx4d90 css-orer6c e2k4lih0"><a href="https://www.dictionary.com/e/slang/woke/" data-linkid="5fq237" data-location="module_position=3|module_type=WordList|module_title=EXPAND YOUR VOCABULARY|content_position=3|content_title=woke" class="css-16lnicq e9kog040"><h3 class="css-10qbxhc">woke<span color="#0e5ab6" class="css-1f7llvl e1d0tvnr0"></span></h3></a><p class="css-1nt755z e1gcv8vj0">Woke means being conscious of racial discrimination …</p></li></ol></div></section><section class="e2yx4d90 css-1s1kk0c ea5d0rp0"><div><h4 class="e2yx4d90 css-q6wxos">Sign up for a vocabulary boost in your email</h4><div><form class="css-19q5ra6 e11icgpf0"><input type="hidden" name="list" value="WOTD"/><input type="text" color="" placeholder="yourname@email.com" autoComplete="off" value="" autoCapitalize="off" autoCorrect="off" name="email" class="css-j6k8fd e1aark7a0"/><button id="wotd-subscribe-submit" type="submit" class="e2yx4d90 css-s3v0sg elglvwz0">I&#x27;M IN</button></form><div color="" class="e2yx4d90 css-1h184u e141tr400"><span></span></div></div></div></section><section class="css-1r9b9nv ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><div class="css-i3pbo e2f8r1g0"><div class="heading css-0 e1sw3gu90"><h2 class="heading-title e2yx4d90 css-jddwsg">LEARN ABOUT THE ENGLISH LANGUAGE</h2><p class="heading-description e2yx4d90 css-vs1wr1 e1gcv8vj0">Learn more with the stories we&#x27;ve written about our words, the origins of our language, and the nuances that make English complicated and so unique.</p></div></div><div class="css-1j9f97y e2f8r1g1"><div class="css-adm824 e2f8r1g4"><div class="css-e0tqk e9okvfu0"><a href="https://www.dictionary.com/e/s/love-and-affection-words/" target="" data-linkid="9q3oel" data-location="module_type=HeroImage|module_position=4|module_title=LEARN ABOUT THE ENGLISH LANGUAGE|content_position=1|content_title=Modern Ways To Express Your Love And Affection " rel="noopener" class="css-1a92h7r e9kog040"><picture><source srcSet="https://www.dictionary.com/e/wp-content/uploads/2019/11/Different-words-and-expressions-for-love_1_1000x700.jpg1-504x284.jpg" media="(min-width: 900px)"/><img src="https://www.dictionary.com/e/wp-content/uploads/2019/11/Different-words-and-expressions-for-love_1_1000x700.jpg1-280x158.jpg" alt="thumbnail" loading="lazy" class="css-1wnrb7y e151hzz00"/></picture></a><div class="css-zg1vud e9okvfu1"></div></div></div><div class="css-i1vedh e2f8r1g2"><div class="css-1pq35g0 e2f8r1g3"><a href="https://www.dictionary.com/e/s/love-and-affection-words/" data-linkid="9q3oel" data-location="module_type=HeroImage|module_position=4|module_title=LEARN ABOUT THE ENGLISH LANGUAGE|content_position=1|content_title=Modern Ways To Express Your Love And Affection " class="e2yx4d90 css-1xllme7 e9kog040"><h4 class="css-1y5y4p1">MODERN WAYS TO EXPRESS YOUR LOVE AND AFFECTION </h4></a><p class="css-1nt755z e1gcv8vj0">Read on to learn some creative ways to show the people in your life you care about them.</p><a href="https://www.dictionary.com/e/s/love-and-affection-words/" data-linkid="9q3oel" data-location="module_type=HeroImage|module_position=4|module_title=LEARN ABOUT THE ENGLISH LANGUAGE|content_position=1|content_title=Modern Ways To Express Your Love And Affection " class="e2yx4d90 css-1udzc5h e9kog040">READ MORE</a></div></div></div></div></section><section class="css-15l8ust ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><ul class="css-1mxdmiv eec0y7n0"><li class="css-1ucumia e1k30jph1"><div class="css-1xdhd08 e1k30jph2"><h3 class="e2yx4d90 css-w37fux"><a href="https://www.dictionary.com/e/c/word-facts/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=1|content_title=Word Facts 101" class="e2yx4d90 css-1xllme7 e9kog040">Word Facts 101</a></h3><button class="e2yx4d90 e2yx4d90 css-c3br6m elglvwz0"><span rotate="0" class="css-fcf2aj e1d0tvnr0"></span></button></div><ul class="css-h1i8zg e1k30jph0"><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/grammar/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=1|content_title=Word Facts 101|subcontent_position=1|subcontent_title=Mixed-Up Meanings" class="e2yx4d90 css-1xllme7 e9kog040">Mixed-Up Meanings</a></li><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/word-facts/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=1|content_title=Word Facts 101|subcontent_position=2|subcontent_title=Idioms" class="e2yx4d90 css-1xllme7 e9kog040">Idioms</a></li><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/word-facts/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=1|content_title=Word Facts 101|subcontent_position=3|subcontent_title=Word Origins" class="e2yx4d90 css-1xllme7 e9kog040">Word Origins</a></li></ul></li><li class="css-1ucumia e1k30jph1"><div class="css-1xdhd08 e1k30jph2"><h3 class="e2yx4d90 css-w37fux"><a href="https://www.dictionary.com/e/c/word-trends/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=2|content_title=Words in the News" class="e2yx4d90 css-1xllme7 e9kog040">Words in the News</a></h3><button class="e2yx4d90 e2yx4d90 css-c3br6m elglvwz0"><span rotate="0" class="css-fcf2aj e1d0tvnr0"></span></button></div><ul class="css-h1i8zg e1k30jph0"><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/word-of-the-year/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=2|content_title=Words in the News|subcontent_position=1|subcontent_title=Word Of The Year" class="e2yx4d90 css-1xllme7 e9kog040">Word Of The Year</a></li><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/word-trends/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=2|content_title=Words in the News|subcontent_position=2|subcontent_title=New Words" class="e2yx4d90 css-1xllme7 e9kog040">New Words</a></li><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/word-trends/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=2|content_title=Words in the News|subcontent_position=3|subcontent_title=Trending Words" class="e2yx4d90 css-1xllme7 e9kog040">Trending Words</a></li></ul></li><li class="css-1ucumia e1k30jph1"><div class="css-1xdhd08 e1k30jph2"><h3 class="e2yx4d90 css-w37fux"><a href="https://www.dictionary.com/e/c/word-trends/slang/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=3|content_title=Word of Mouth" class="e2yx4d90 css-1xllme7 e9kog040">Word of Mouth</a></h3><button class="e2yx4d90 e2yx4d90 css-c3br6m elglvwz0"><span rotate="0" class="css-fcf2aj e1d0tvnr0"></span></button></div><ul class="css-h1i8zg e1k30jph0"><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/word-trends/slang/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=3|content_title=Word of Mouth|subcontent_position=1|subcontent_title=Ways To Say" class="e2yx4d90 css-1xllme7 e9kog040">Ways To Say</a></li><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/fun/quotes/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=3|content_title=Word of Mouth|subcontent_position=2|subcontent_title=Quotes" class="e2yx4d90 css-1xllme7 e9kog040">Quotes</a></li><li class="css-1lvwiam eceg57f0"><a href="https://www.dictionary.com/e/c/hobbies/" data-linkid="vyke7i" data-location="module_type=EditorialCategories|module_position=5|content_position=3|content_title=Word of Mouth|subcontent_position=3|subcontent_title=Hobbies &amp; Passions" class="e2yx4d90 css-1xllme7 e9kog040">Hobbies &amp; Passions</a></li></ul></li></ul></div></section><aside class="wide-ad-new-layout css-6acmpz ew5gjhf0"><aside id="dcomHomeBot-728x90" class="css-122r8kf ez5rsy80"><script></script></aside></aside><section class="css-1099f99 ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><div class="css-1ld36gr epdubju0"><div class="heading css-0 e1sw3gu90"><h2 class="heading-title e2yx4d90 css-jddwsg">SLANG, EMOJI, &amp; MORE NEW WORDS</h2><p class="heading-description e2yx4d90 css-vs1wr1 e1gcv8vj0">In Dictionary.com&#x27;s modern language section, we&#x27;re constantly documenting the meanings of slang, emoji, and new words as soon as you all start saying them.</p></div><div class="e2yx4d90 css-7sg6aa end6u7i0"><div class="css-ax1vja e9okvfu0"><a href="https://www.dictionary.com/e/slang/" target="" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=1|content_title=SLANG DICTIONARY" rel="noopener" class="css-1a92h7r e9kog040"><picture><source srcSet="https://www.dictionary.com/e/wp-content/uploads/2019/11/slang-wide-2-280x158.png" media="(min-width: 1024px)"/><img src="https://www.dictionary.com/e/wp-content/uploads/2019/11/slang-wide-2-160x160.png" alt="thumbnail" loading="lazy" class="css-1wnrb7y e151hzz00"/></picture></a><div class="css-zg1vud e9okvfu1"><h3 class="css-1y5y4p1"><a href="https://www.dictionary.com/e/slang/" target="" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=1|content_title=SLANG DICTIONARY" rel="noopener" class="e2yx4d90 css-1xllme7 e9kog040">SLANG DICTIONARY</a></h3><p class="e2yx4d90 e2yx4d90 css-1ug29v1 e1gcv8vj0">The ultimate slang dictionary for words you don’t know, don’t understand, or don’t want to know.</p><a href="https://www.dictionary.com/e/slang/" target="" rel="noopener" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=1|content_title=SLANG DICTIONARY" class="e2yx4d90 css-8pz1s8 e9kog040">READ MORE TERMS</a></div></div><div class="css-ax1vja e9okvfu0"><a href="https://www.dictionary.com/e/emoji/" target="" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=2|content_title=EMOJI DICTIONARY" rel="noopener" class="css-1a92h7r e9kog040"><picture><source srcSet="https://www.dictionary.com/e/wp-content/uploads/2019/11/emoji-wide-280x158.png" media="(min-width: 1024px)"/><img src="https://www.dictionary.com/e/wp-content/uploads/2019/11/emoji-wide-160x160.png" alt="thumbnail" loading="lazy" class="css-1wnrb7y e151hzz00"/></picture></a><div class="css-zg1vud e9okvfu1"><h3 class="css-1y5y4p1"><a href="https://www.dictionary.com/e/emoji/" target="" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=2|content_title=EMOJI DICTIONARY" rel="noopener" class="e2yx4d90 css-1xllme7 e9kog040">EMOJI DICTIONARY</a></h3><p class="e2yx4d90 e2yx4d90 css-1ug29v1 e1gcv8vj0">A guide for how to use popular emoji (beware: the meanings are always changing!).</p><a href="https://www.dictionary.com/e/emoji/" target="" rel="noopener" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=2|content_title=EMOJI DICTIONARY" class="e2yx4d90 css-8pz1s8 e9kog040">EXPLORE MORE EMOJI</a></div></div><div class="css-ax1vja e9okvfu0"><a href="https://www.dictionary.com/e/gender-sexuality/" target="" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=3|content_title=GENDER &amp; SEXUALITY DICTIONARY" rel="noopener" class="css-1a92h7r e9kog040"><picture><source srcSet="https://www.dictionary.com/e/wp-content/uploads/2019/11/gender-wide-1-280x158.png" media="(min-width: 1024px)"/><img src="https://www.dictionary.com/e/wp-content/uploads/2019/11/gender-wide-1-160x160.png" alt="thumbnail" loading="lazy" class="css-1wnrb7y e151hzz00"/></picture></a><div class="css-zg1vud e9okvfu1"><h3 class="css-1y5y4p1"><a href="https://www.dictionary.com/e/gender-sexuality/" target="" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=3|content_title=GENDER &amp; SEXUALITY DICTIONARY" rel="noopener" class="e2yx4d90 css-1xllme7 e9kog040">GENDER & SEXUALITY DICTIONARY</a></h3><p class="e2yx4d90 e2yx4d90 css-1ug29v1 e1gcv8vj0">Identity is fluid, and so is the language around it.</p><a href="https://www.dictionary.com/e/gender-sexuality/" target="" rel="noopener" data-linkid="tctm4h" data-location="module_type=ThumbnailList|module_position=6|module_title=SLANG, EMOJI, &amp; MORE NEW WORDS|content_position=3|content_title=GENDER &amp; SEXUALITY DICTIONARY" class="e2yx4d90 css-8pz1s8 e9kog040">FIND MORE TERMS</a></div></div></div></div></div></section><aside class="wide-ad-new-layout css-6acmpz ew5gjhf0"><aside class="css-gzbnho e1r09ggs0"><div id="DcomHomeDesktop_728x90_pos30"></div></aside></aside><section class="css-1r9b9nv ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><div class="heading css-0 e1sw3gu90"><h2 class="heading-title e2yx4d90 css-jddwsg">BROWSE DICTIONARY.COM</h2><p class="heading-description e2yx4d90 css-vs1wr1 e1gcv8vj0">Dictionary.com is the world&#x27;s leading online source for definitions, word origins, and a whole lot more. From Word of the Day to the stories behind today&#x27;s slang, Dictionary.com unlocks the secrets of the English language for millions of people.</p></div><ul data-linkid="74qg7q" class="e2yx4d90 css-23fmh7 e1m0dd4w0"><li id="browseAZItemHash" class="css-hbxmee e1s9oou40"><a href="/list/0" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">#</a></li><li id="browseAZItema" class="css-hbxmee e1s9oou40"><a href="/list/a" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">A<!-- -->a</a></li><li id="browseAZItemb" class="css-hbxmee e1s9oou40"><a href="/list/b" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">B<!-- -->b</a></li><li id="browseAZItemc" class="css-hbxmee e1s9oou40"><a href="/list/c" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">C<!-- -->c</a></li><li id="browseAZItemd" class="css-hbxmee e1s9oou40"><a href="/list/d" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">D<!-- -->d</a></li><li id="browseAZIteme" class="css-hbxmee e1s9oou40"><a href="/list/e" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">E<!-- -->e</a></li><li id="browseAZItemf" class="css-hbxmee e1s9oou40"><a href="/list/f" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">F<!-- -->f</a></li><li id="browseAZItemg" class="css-hbxmee e1s9oou40"><a href="/list/g" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">G<!-- -->g</a></li><li id="browseAZItemh" class="css-hbxmee e1s9oou40"><a href="/list/h" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">H<!-- -->h</a></li><li id="browseAZItemi" class="css-hbxmee e1s9oou40"><a href="/list/i" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">I<!-- -->i</a></li><li id="browseAZItemj" class="css-hbxmee e1s9oou40"><a href="/list/j" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">J<!-- -->j</a></li><li id="browseAZItemk" class="css-hbxmee e1s9oou40"><a href="/list/k" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">K<!-- -->k</a></li><li id="browseAZIteml" class="css-hbxmee e1s9oou40"><a href="/list/l" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">L<!-- -->l</a></li><li id="browseAZItemm" class="css-hbxmee e1s9oou40"><a href="/list/m" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">M<!-- -->m</a></li><li id="browseAZItemn" class="css-hbxmee e1s9oou40"><a href="/list/n" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">N<!-- -->n</a></li><li id="browseAZItemo" class="css-hbxmee e1s9oou40"><a href="/list/o" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">O<!-- -->o</a></li><li id="browseAZItemp" class="css-hbxmee e1s9oou40"><a href="/list/p" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">P<!-- -->p</a></li><li id="browseAZItemq" class="css-hbxmee e1s9oou40"><a href="/list/q" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">Q<!-- -->q</a></li><li id="browseAZItemr" class="css-hbxmee e1s9oou40"><a href="/list/r" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">R<!-- -->r</a></li><li id="browseAZItems" class="css-hbxmee e1s9oou40"><a href="/list/s" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">S<!-- -->s</a></li><li id="browseAZItemt" class="css-hbxmee e1s9oou40"><a href="/list/t" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">T<!-- -->t</a></li><li id="browseAZItemu" class="css-hbxmee e1s9oou40"><a href="/list/u" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">U<!-- -->u</a></li><li id="browseAZItemv" class="css-hbxmee e1s9oou40"><a href="/list/v" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">V<!-- -->v</a></li><li id="browseAZItemw" class="css-hbxmee e1s9oou40"><a href="/list/w" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">W<!-- -->w</a></li><li id="browseAZItemx" class="css-hbxmee e1s9oou40"><a href="/list/x" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">X<!-- -->x</a></li><li id="browseAZItemy" class="css-hbxmee e1s9oou40"><a href="/list/y" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">Y<!-- -->y</a></li><li id="browseAZItemz" class="css-hbxmee e1s9oou40"><a href="/list/z" class="e2yx4d90 e2yx4d90 css-1dq7tia e9kog040">Z<!-- -->z</a></li></ul><div class="css-fnxjv end6u7i0"><div class="css-ez4qye e1poqtzi0"><ul class="e2yx4d90 css-huva6s e1m0dd4w0"><li alt="Word Of The Day" id="wotd" class="css-u27f9g e1poqtzi1"><a href="https://www.dictionary.com/e/word-of-the-day/" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=1|content_title=Word Of The Day" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">WORD OF THE DAY</p></a></li><li alt="Word Of The Year" id="woty" class="css-u27f9g e1poqtzi1"><a href="https://www.dictionary.com/e/word-of-the-year/" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=2|content_title=Word Of The Year" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">WORD OF THE YEAR</p></a></li><li alt="Crossword &amp; Solver" id="crossword-solver" class="css-u27f9g e1poqtzi1"><a href="https://www.dictionary.com/e/crossword/" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=3|content_title=Crossword &amp; Solver" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">CROSSWORD &amp; SOLVER</p></a></li><li alt="Everything After Z" id="everything-after-z" class="css-u27f9g e1poqtzi1"><a href="https://www.dictionary.com/e/" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=4|content_title=Everything After Z" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">EVERYTHING AFTER Z</p></a></li><li alt="Thesaurus.com" id="tcom" class="css-u27f9g e1poqtzi1"><a href="//www.thesaurus.com" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=5|content_title=Thesaurus.com" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">THESAURUS.COM</p></a></li><li alt="Scrabble® Word Finder" id="scrabble" class="css-u27f9g e1poqtzi1"><a href="https://www.dictionary.com/e/word-finder/" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=6|content_title=Scrabble® Word Finder" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">SCRABBLE® WORD FINDER</p></a></li><li alt="Lexico English" id="lexico-en" class="css-u27f9g e1poqtzi1"><a href="https://www.lexico.com/en" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=7|content_title=Lexico English" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">LEXICO ENGLISH</p></a></li><li alt="Lexico Spanish" id="lexico-es" class="css-u27f9g e1poqtzi1"><a href="https://www.lexico.com/es" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=8|content_title=Lexico Spanish" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">LEXICO SPANISH</p></a></li><li alt="Alexa Skill" id="alexaskill" class="css-u27f9g e1poqtzi1"><a href="https://www.amazon.com/Dictionary-com-Word-of-the-Day/dp/B07WPXF85S/ref=sr_1_1?keywords=dictionary.com&amp;qid=1567636801&amp;s=digital-skills&amp;sr=1-1/" data-linkid="fbckmk" data-location="module_type=BrowseAZ|module_position=7|module_title=BROWSE DICTIONARY.COM|content_position=9|content_title=Alexa Skill" class="css-1a92h7r e9kog040"><p class="e2yx4d90 css-xaii6a e1gcv8vj0">ALEXA SKILL</p></a></li></ul><div class="css-3fyz4l e1poqtzi2"><h4 class="css-5h6ei1">DOWNLOAD OUR APPS</h4><p class="e2yx4d90 css-1aceynh e1gcv8vj0">Our apps also have more than 1.5 million definitions and synonyms plus access to our trusted reference articles. Look up the words anywhere anytime-we work offline too!</p><ul class="e2yx4d90 css-1wodvp9 e1m0dd4w0"><li id="android-appstore" class="css-3h5xh3 e1poqtzi3"><a href="https://play.google.com/store/apps/details?id=com.dictionary&amp;hl=en_US" alt="Dictionary.com Google app store" target="_blank" rel="noopener" class="e2yx4d90 css-4mcsk e9kog040"><img src="https://www.dictionary.com/hp-assets/Google_Play-8c1dfd516b37307478631026701d498c.svg" alt="Dictionary.com Google app store" data-click-inner-target="app"/></a></li><li id="apple-appstore" class="css-3h5xh3 e1poqtzi3"><a href="https://itunes.apple.com/us/app/dictionary-com-english-words/id308750436" alt="Dictionary.com Apple app store" target="_blank" rel="noopener" class="e2yx4d90 css-4mcsk e9kog040"><img src="https://www.dictionary.com/hp-assets/Apple_App_Store-f970b5d5200e28385bd4e19768b1b60f.svg" alt="Dictionary.com Apple app store" data-click-inner-target="app"/></a></li></ul></div></div></div></div></section></div></div></div><div class="css-1j44f8t e15rv17m0"></div><footer class="css-uq902e e5o20ld0"><section class="css-la2qjs ea5d0rp0"><div class="css-omcgcf ea5d0rp1"><div class="css-oq21cx e5o20ld1"><div class="css-80iqnf e5o20ld3"><div class="css-1p1ueyb e5o20ld2"><img src="https://www.dictionary.com/hp-assets/dictionary_logo_white-90c1e2eaf84c6abcb80d08d6eb0b6c60.svg" alt="Dictionary.com" class="css-1n6q2pj e5o20ld4"/></div><span class="css-19idom e5o20ld5"><p class="e2yx4d90 css-mge0hl e1gcv8vj0">Expand your vocabulary daily</p><div><div><form class="css-19q5ra6 e11icgpf0"><input type="hidden" name="list" value="WOTD"/><input type="text" color="#1a1a1a" placeholder="yourname@email.com" autoComplete="off" value="" autoCapitalize="off" autoCorrect="off" name="email" class="css-1r3vmsj e1aark7a0"/><button id="wotd-subscribe-submit" type="submit" class="e2yx4d90 css-s3v0sg elglvwz0">I&#x27;M IN</button></form><div color="" class="e2yx4d90 css-1h184u e141tr400"><span></span></div></div></div></span><ul class="e2yx4d90 css-1t9t2tx e1m0dd4w0"><li class="css-1w5ucwd e5o20ld6"><a target="_blank" rel="noopener" href="https://www.facebook.com/dictionarycom" alt="facebook" id="facebook" class="e2yx4d90 css-4mcsk e9kog040"><span class="css-13ulnmp e1d0tvnr0"></span></a></li><li class="css-1w5ucwd e5o20ld6"><a target="_blank" rel="noopener" href="https://www.twitter.com/dictionarycom" alt="twitter" id="twitter" class="e2yx4d90 css-4mcsk e9kog040"><span class="css-1urkp2a e1d0tvnr0"></span></a></li><li class="css-1w5ucwd e5o20ld6"><a target="_blank" rel="noopener" href="https://www.instagram.com/dictionarycom" alt="instagram" id="instagram" class="e2yx4d90 css-4mcsk e9kog040"><span class="css-1hmei4i e1d0tvnr0"></span></a></li><li class="css-1w5ucwd e5o20ld6"><a target="_blank" rel="noopener" href="https://www.youtube.com/c/DictionarycomVideo" alt="youtube" id="youtube" class="e2yx4d90 css-4mcsk e9kog040"><span class="css-16spoi e1d0tvnr0"></span></a></li><li class="css-1w5ucwd e5o20ld6"><a target="_blank" rel="noopener" href="https://www.pinterest.com/dictionarycom/" alt="pinterest" id="pinterest" class="e2yx4d90 css-4mcsk e9kog040"><span class="css-1ez3p9h e1d0tvnr0"></span></a></li></ul></div><div class="css-t7vryb"><ul class="css-urc5lr e1m0dd4w0"><li id="about-click" class="css-i3pbo e5o20ld7"><a href="https://www.dictionary.com/e/about/" data-linkid="gy27eg" class="e2yx4d90 css-1xllme7 e9kog040">About</a></li><li id="careers-click" class="css-i3pbo e5o20ld7"><a href="https://www.dictionary.com/e/careers/" data-linkid="gy27eg" class="e2yx4d90 css-1xllme7 e9kog040">Careers</a></li><li id="contactUs-click" class="css-i3pbo e5o20ld7"><a href="https://www.dictionary.com/e/contact/" data-linkid="gy27eg" class="e2yx4d90 css-1xllme7 e9kog040">Contact Us</a></li><li id="termAndPrivacy-click" class="css-i3pbo e5o20ld7"><a href="https://www.dictionary.com/e/terms/" data-linkid="gy27eg" class="e2yx4d90 css-1xllme7 e9kog040">Cookies, Terms, &amp; Privacy</a></li></ul><div class="css-0 e5o20ld9">© 2019 Dictionary.com, LLC</div></div></div></div></section></footer> </div></div></div>
+        <script>window.ANALYTICS = {"siteName":"dict","trackURL":"https:\u002F\u002Ftrack.dictionary.com\u002Fmain.gif","dictionarySpanIdUrl":"https:\u002F\u002Fspanids.dictionary.com\u002F","thesaurusSpanIdUrl":"https:\u002F\u002Fspanids.thesaurus.com\u002F","pageName":"dict-home","ab":"0","platform":"Desktop"};</script>
+        <script>window.ENV_VARS = {"dev":false,"test":false,"prod":true,"DCOM_PROTOCOL":"https","TCOM_PROTOCOL":"https","DCOM_URL":"www.dictionary.com","TCOM_URL":"www.thesaurus.com","DCOM_TRACKING_URL":"https:\u002F\u002Ftrack.dictionary.com\u002Fmain.gif","TCOM_TRACKING_URL":"https:\u002F\u002Ftrack.thesaurus.com\u002Fmain.gif","UPGRADE_INSECURE_REQUESTS":true,"TCOM_SPANID_URL":"https:\u002F\u002Fspanids.thesaurus.com\u002F","DCOM_SPANID_URL":"https:\u002F\u002Fspanids.dictionary.com\u002F","LDID":"0","SHOW_WOTY_MARKETING":false,"CORE_PROPERTY_API_ENDPOINT":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-json\u002Fdictionary\u002Fv1\u002Fcore-property","EDITORIAL_API_ENDPOINT":"https:\u002F\u002Feditorial-content-feed.dictionary.com\u002Fdcomhp","WOTD_API_ENDPOINT":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-json\u002Fdictionary\u002Fv1\u002Fwotd","TCOM_PUBLIC_ASSETS_URL":"https:\u002F\u002Fwww.thesaurus.com\u002Fhp-assets","DCOM_PUBLIC_ASSETS_URL":"https:\u002F\u002Fwww.dictionary.com\u002Fhp-assets","TRENDING_WORDS_API_ENDPOINT":"https:\u002F\u002Fdcom-prod-trending-words.s3.amazonaws.com\u002Ftrending.json","SERVER_LOGGING_LEVEL":"error","CLIENT_LOGGING_LEVEL":"error","API_REQUEST_LOGGING_LEVEL":"info","ALLOW_DISABLED_ADS":"false","RTF_FEATURE_ENABLED":"true","MUP_FEATURE_ENABLED":"true","ONETRUST_FEATURE_ENABLED":"true","FIRST_PRICE_BIDDING":"true","DCOM_MUP_FPB_ENDPOINT":"https:\u002F\u002Firene.dictionary.com\u002Fmup-fpb\u002Fv1","TCOM_MUP_FPB_ENDPOINT":"https:\u002F\u002Firene.thesaurus.com\u002Fmup-fpb\u002Fv1"};</script>
+        <script>window.INITIAL_STATE = {"routerReducer":{"location":null},"hamburgerMenu":{"isHamburgerMenuOpen":false},"corePropertyData":{"isFetching":false,"data":[{"type":"thumbnail_list","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fword-games\u002Fword-finder\u002F","title":"WORD GAMES","description":"Flex your word muscles and improve your language skills with a bit of fun.","articles":[{"title":"QUIZ YOURSELF","description":"Consider yourself a wordie? Put your love of words to the test!","image":{"sources":[{"media":"(min-width: 1024px)","srcSet":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fquizzes-wide-280x158.png"}],"imageSrc":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fquizzes-wide-160x160.png"},"callToAction":"START THE QUIZ\r\n","url":"https:\u002F\u002Fwww.dictionary.com\u002Fgames\u002Fquizzes\u002F"},{"title":"CROSSWORD PUZZLE & SOLVER","description":"Daily puzzles that are always free.","image":{"sources":[{"media":"(min-width: 1024px)","srcSet":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fcrossword-wide-280x158.png"}],"imageSrc":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fcrossword-wide-160x160.png"},"callToAction":"PLAY","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fcrossword\u002F"}]},{"type":"word_list","url":"","word_lists":[{"url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fslang\u002Fboujee\u002F","word":"boujee","definition":"Boujee is hip-hop slang for something \"luxurious in lifestyle yet humble in character,\" influenced by and often interchanged with the slang bougie."},{"url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fslang\u002Fno-cap\u002F","word":"no cap","definition":"The expression no cap is slang meaning \"no lie\" or \"for real,\" often used to emphasize someone is not exaggerating about something hard to believe."},{"url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fslang\u002Fwoke\u002F","word":"woke","definition":"Woke means being conscious of racial discrimination in society and other forms of oppression and injustice. In mainstream use, woke can also more generally describe someone or something as being \"with it.\""}],"title":"EXPAND YOUR VOCABULARY","description":"These terms have been floating around the internet for a while. Do you know what they mean?"},{"type":"hero_image","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002F","title":"LEARN ABOUT THE ENGLISH LANGUAGE","description":"Learn more with the stories we've written about our words, the origins of our language, and the nuances that make English complicated and so unique.","heroContent":{"title":"Modern Ways To Express Your Love And Affection ","description":"Read on to learn some creative ways to show the people in your life you care about them.","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fs\u002Flove-and-affection-words\u002F","image":{"sources":[{"media":"(min-width: 900px)","srcSet":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002FDifferent-words-and-expressions-for-love_1_1000x700.jpg1-504x284.jpg"}],"imageSrc":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002FDifferent-words-and-expressions-for-love_1_1000x700.jpg1-280x158.jpg"},"callToAction":"READ MORE"}},{"type":"thumbnail_list","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fall-the-words\u002F","title":"SLANG, EMOJI, & MORE NEW WORDS","description":"In Dictionary.com's modern language section, we're constantly documenting the meanings of slang, emoji, and new words as soon as you all start saying them.","articles":[{"title":"SLANG DICTIONARY","description":"The ultimate slang dictionary for words you don’t know, don’t understand, or don’t want to know.","image":{"sources":[{"media":"(min-width: 1024px)","srcSet":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fslang-wide-2-280x158.png"}],"imageSrc":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fslang-wide-2-160x160.png"},"callToAction":"READ MORE TERMS","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fslang\u002F"},{"title":"EMOJI DICTIONARY","description":"A guide for how to use popular emoji (beware: the meanings are always changing!).","image":{"sources":[{"media":"(min-width: 1024px)","srcSet":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Femoji-wide-280x158.png"}],"imageSrc":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Femoji-wide-160x160.png"},"callToAction":"EXPLORE MORE EMOJI","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Femoji\u002F"},{"title":"GENDER & SEXUALITY DICTIONARY","description":"Identity is fluid, and so is the language around it.","image":{"sources":[{"media":"(min-width: 1024px)","srcSet":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fgender-wide-1-280x158.png"}],"imageSrc":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fwp-content\u002Fuploads\u002F2019\u002F11\u002Fgender-wide-1-160x160.png"},"callToAction":"FIND MORE TERMS","url":"https:\u002F\u002Fwww.dictionary.com\u002Fe\u002Fgender-sexuality\u002F"}]}]},"editorialData":{"isFetching":false},"wotdData":{"isFetching":false,"data":{"term":"vicissitudes","audioSourceLink":"https:\u002F\u002Fstatic.sfdict.com\u002Faudio\u002FV01\u002FV0114100.mp3","wotdPageLink":"https:\u002F\u002Fwww.dictionary.com\u002Fwordoftheday\u002F","date":"2019-12-01","pos":"\u003Cspan class=\"luna-pos\"\u003Eplural noun\u003C\u002Fspan\u003E","pronunciation":"vi-\u003Cspan class=\"bold\"\u003Esis\u003C\u002Fspan\u003E-i-toodz, -tyoodz","accentColor":"#34C5FF"}},"detectedDevice":{"isMobile":false},"routing":{"pageName":"home"},"mup":{"isFetching":false,"data":"1702"},"detectedApplication":{"app":"dcom"},"listAZ":null,"trendingWords":{"isFetching":false,"data":[{"word":"chuntering","slug":"chuntering","trend":[477.4458957222333,763.7521338664778,141.9433744039072,1449.67736074445,1361.3659999647462,324.61481930439,974.6509543586468,368.56887558287264,1349.6718015053334,3117.9152582130973,3622.3787848588017,4502.266406873931,5831.3725490196075,8747.05882352941]},{"word":"fennelflower","slug":"fennelflower","trend":[845.0851775800442,726.6135574314903,507.8681522042234,1024.4638375541867,727.3563262098513,574.1602656729282,1206.6278804471824,1614.7793241564632,1344.9685654168886,1973.9080284939284,1609.394250513347,1691.4702005222198,2170.3703703703704,3255.5555555555557]},{"word":"soupcon","slug":"soupcon","trend":[500.6665768920011,393.49133674477065,121.21150911212857,359.2333243558667,656.6119041206572,900.819193823503,786.5068677619175,1351.0503635873956,1573.013735523835,1222.2259628332883,1766.6666666666667,1544.941197594039,1685.4228386749262,2650]},{"word":"deface","slug":"deface","trend":[533.7892533147243,997.785531518958,668.6578274017213,542.9820888578739,164.3824145150035,134.98953244940682,637.9344033496162,1137.4924401023493,1334.0497790183765,1804.3358920679227,2080,1711.9237031867876,1417.148173993952,3120]},{"word":"superb","slug":"superb","trend":[1675.6779307467668,2095.1522736754273,2651.677096370463,1047.5761368377136,1921.4810179390904,160.354609929078,2640.025031289111,4908.848560700876,6218.873591989987,5269.5077179808095,7783.024614100959,6898.0225281602,8866.666666666666,13300]},{"word":"degenderize","slug":"degenderize","trend":[901.9641754169239,1784.8054354539838,4244.224830142063,6700.988264360716,8600,6046.028412600371,7191.278567016677,7482.903026559605,6619.715873996293,5592.390364422482,3440,3556.33106856084,3886.201358863496,12900]},{"word":"cognac","slug":"cognac","trend":[3124,208,1877,2097,1592,798,4510,6026,2632,1762,362,1756,2274,9500]},{"word":"chorister","slug":"chorister","trend":[203.00169450496244,1885.6451222464293,1207.1653352699102,1493.8755749213262,644.9285887194384,158.94456548051318,416.50931977729357,515.1295085935609,369.4020818203824,1334.2532074558217,781.1667877027353,2022.222222222222,1518.2764463810215,3033.333333333333]},{"word":"tv","slug":"tv","trend":[705.9103530345101,2732.7251090836967,2802.2213407378026,4449.662832209441,6000,5371.677905593019,3344.3871479571603,3110.6703689012297,2571.836572788576,3116.858389527965,1889.2502975009918,3804.680682268941,1956.8425228084095,9000]},{"word":"canteloube","slug":"canteloube","trend":[438.4592296148074,1919.35967983992,2031.469067867267,2388.3408370852094,322.8280807070202,1116.9851592462899,3331.5857928964483,1557.2052693013175,3153.1499082874775,3568.7176921794235,5866.666666666667,4770.225112556279,2543.2983158245793,8800]}]},"queryParams":{"params":{}},"quizList":{"isFetching":false},"wordGamesData":{"isFetching":false},"quizAnswers":{"isFetching":false},"quizQuestions":{"isFetching":false}};</script>       
+        <script>window.emotionIds=["0","13rz7zd","12jladn","yk5h7d","7lhd3d-Header","145r0xm-Navigation","6u1vpe-Container","p5rnoq-Overlay","1fay3fr-Nav","17g2mt7-List","12jbd0i-Item","1j22r93-Link","ioerk6-NestedList","1pbd48u-HamburgerButton","1bfcprh-TabContainer","mbltsl-TabActive","101p9x5-Link","7uual2-TabInactive","1m8vgu3-SearchContainer","1azpvos-SearchRow","1w3y4j8-LogoContainer","8en0us-Logo","105e91s-SearchWrapper","va0hcf-StyledForm","pvhgk7-FilterNavContainer","bw0xv8-FilterNavInner","1vsksql-FilterItemContainer","1bzwsqu-FilterItem","1pc7935","bjumj","1hjfrd8-ListWrapper","jaagka","1hsp8l3-HiddenLabel","1hin8ey","5aswtn-SearchButtonColored","fbv1ih-MarketingSlot","ade6iy","1cfhhtu","18ix5kc-TrendingWordsTickerContainer","1bgjdcm-TickerLabel","g5bhv8-TickerControls","n5g5yy","6d8se-Ticker","uih7i0-TickerContent","animation-k7do3t","v2xn42-TrendingWordContainerSpan","18rndc4-Word","17k31jr-TrendLineSVG","3t9ykg-CurrentValue","ogmw67","uy4kd9","6acmpz","122r8kf","1sxxwz4","animation-1xc32n0","animation-wynbga","afxi26","m5vuwy","1qdl9w4","omcgcf","1qjkpax","8t5iu","jddwsg","epvm6","vs1wr1","vln997","1haslm5","k70zdk","1wxwdz1","lcncg0","1sfjkuu","1a92h7r","11ba56w","105fkqd","s9rek9","1180vw3","1pgifp9","5vqoul","1ld36gr","14ovzcg","i32n7o","ax1vja","1wnrb7y","zg1vud","1y5y4p1","1xllme7","1ug29v1","8pz1s8","1g2knd8","5tvk6x","qvjtgj","1gpw9h3","ubv62g","1099f99","1qm1lh","1ox5y3u","orer6c","16lnicq","10qbxhc","1f7llvl","1nt755z","1s1kk0c","q6wxos","19q5ra6","j6k8fd","s3v0sg","1h184u","1r9b9nv","i3pbo","1j9f97y","adm824","e0tqk","i1vedh","1pq35g0","1udzc5h","15l8ust","1mxdmiv","1ucumia","1xdhd08","w37fux","c3br6m","fcf2aj","h1i8zg","1lvwiam","7sg6aa","gzbnho","23fmh7","hbxmee","1dq7tia","fnxjv","ez4qye","huva6s","u27f9g","xaii6a","3fyz4l","5h6ei1","1aceynh","1wodvp9","3h5xh3","4mcsk","1j44f8t","uq902e","la2qjs","oq21cx","80iqnf","1p1ueyb","1n6q2pj","19idom","mge0hl","1r3vmsj","1t9t2tx","1w5ucwd","13ulnmp","1urkp2a","1hmei4i","16spoi","1ez3p9h","t7vryb","urc5lr","l0e3tr","1wluow2","2j2233"];</script>
+        <!-- START PARSELY --> 
+        
+        <!-- END PARSELY -->        
+      </body>
+    </html>

@@ -1,0 +1,169 @@
+v.1.0.0 (04 Maret 2020)
+- rilis
+
+v.1.1.0 (05 Maret 2020)
+- Perbaikan tampilan menu navigasi error jika menunya ada banyak
+- Perbaikan tampilan postingan di homepage error karena konflik dengan kode di dalam postingan
+
+v.1.2.0 (13 Maret 2020)
+- Perbaikan breadcrumb dobel di halaman produk jika postingan produk menggunakan label lain selain "Produk" atau "Jasa"
+- Perbaikan menu navigasi versi mobile tidak tampil semua jika menunya ada banyak
+- Perbaikan tombol order via whatsapp error jika judul postingan mengandung tanda petik
+- Perbaikan caption tidak menyatu dengan gambar
+- Perbaikan nama author, komentar, dan label tidak bisa dinonaktifkan melalui tata letak
+- Tambah CSS tombol download sama seperti VioMagz (cara penerapan silakan baca panduan)
+- Perbaikan aspek rasio thumbnail "no image" / postingan tanpa gambar
+
+v.1.3.0 (17 Maret 2020)
+- Perbaikan menu edit HTML di dashboard versi klasik sering crash
+- Perbaikan fitur auto fullwidth gambar pertama postingan di versi mobile
+- Tambah opsi ganti judul TOC melalui widget kode pengaturan template
+- Tambah opsi menampilkan full artikel di homepage (cara penerapan silakan baca panduan)
+- Tambah widget menu halaman statis di footer
+
+v.1.4.0 (27 Maret 2020)
+- Perbaikan widget Featured Post terkadang muncul di halaman postingan ketika pertama kali pasang template
+- Perbaikan caption gambar pertama postingan tidak fullwidth
+- Perbaikan teks di dalam tag pre keluar batas
+- Perbaikan angka pada TOC tidak urut di browser firefox
+- Tambah default menu "Beranda" pada menu navigasi
+
+v.1.5.0 (03 April 2020)
+- Perbaikan fitur tombol pencarian, menu sticky, dan scroll to top tidak berfungsi di browser internet explorer
+- Perbaikan jarak iklan di tengah artikel dengan paragraf kurang rapi
+- Perbaikan angka pada TOC yang terkadang tidak muncul
+- Tambah support icon media sosial whatsapp, pinterest, google maps, dan telegram
+- Tambah fitur sidebar sticky (hanya berfungsi di browser modern)
+- Tambah opsi untuk menonaktifkan fitur fullwidth gambar pertama postingan melalui widget kode pengaturan template
+- Tambah opsi show/hide pada TOC
+
+v.1.6.0 (10 April 2020)
+- Tambah fitur related posts di tengah artikel
+- Tambah 3 pilihan warna default template yaitu hitam, merah, hijau
+- Perbaikan warna tombol scroll to top tidak menyesuaikan dengan warna menu navigasi
+- Perbaikan iklan auto-ads AdSense muncul di lokasi-lokasi yang kurang pas
+- Perbaikan ukuran iklan AdSense responsive tidak menyesuaikan dengan ruang yang tersedia
+- Perbaikan nama label postingan tidak muncul di homepage jika postingan tanpa gambar
+- dan beberapa perbaikan-perbaikan kecil lainnya
+
+v.1.7.0 (13 April 2020)
+- Perbaikan paragraf saling dempet jika related post di tengah postingan tidak ada atau dinonaktifkan
+- Perbaikan paragraf saling dempet di halaman produk
+- Perbaikan postingan yang sedang dibaca ikut muncul pada related posts di bawah postingan
+- Perbaikan tampilan daftar produk terkadang acak-acakan jika di dalam deskripsi produk memuat tag <b>
+- Perbaikan iklan di tengah artikel menumpuk di bawah jika paragraf postingan ada sedikit
+- Perubahan secara default postingan produk ditampilkan di homepage, di versi sebelumnya tidak
+
+v.1.8.0 (17 April 2020)
+- Perbaikan paragraf kadang-kadang masih ada yang dempet
+- Perbaikan judul widget HTML tidak muncul
+- Tambah opsi untuk merubah ukuran logo di menu desainer tema
+- Tambah opsi untuk mengatur jumlah related posts lewat widget kode pengaturan template
+- Informasi harga pada postingan produk ditampilkan di halaman depan
+- TOC (table of content) bisa dipasang di halaman statis
+- Optimasi kecepatan loading. Skor GTmetrix menjadi 100/100, skor versi sebelumnya 99/100
+
+v.1.9.0 (01 Mei 2020)
+- Perbaikan caption gambar keluar batas jika teks kepanjangan
+- Perbaikan aspek rasio judul logo tidak sesuai
+- Perbaikan tombol share facebook tidak berfungsi di beberapa perangkat Android
+- dan beberapa perbaikan-perbaikan kecil lainnya
+
+v.2.0.0 (6 Mei 2020)
+- Perbaikan related posts tidak muncul jika setelan tema versi seluler diaktifkan
+- Perbaikan konten widget teks footer kembali ke default ketika pasang ulang template
+- Perbaikan iklan AdSense full width di tengah artikel tidak rata tengah
+- Dan beberapa perbaikan kecil lainnya
+
+v.2.1.0 (14 Mei 2020)
+- Tambah widget custom CSS
+- Tambah 4 pilihan warna default yaitu Cokelat, Kuning, Pink, dan Ungu
+- Tambah fitur dropdown untuk menu navigasi versi mobile
+- Perbaikan fitur auto fullwidth gambar pertama postingan tidak tampil memenuhi layar di browser firefox jika gambar menggunakan caption
+- Perbaikan related posts tidak muncul jika hanya ada 1 postingan terkait
+- Perbaikan lazy load gambar tidak bekerja di browser internet explorer
+- Perbaikan lazy load gambar tidak bekerja jika fitur infinite scroll dinonaktifkan
+- Dan beberapa perbaikan kecil lainnya
+
+v.2.2.0 (22 Mei 2020)
+- Tambah widget kode iklan in-feed
+- Perbaikan thumbnail related posts tidak muncul jika gambar postingan di-upload menggunakan editor postingan blogger versi baru
+- Perbaikan thumbnail related posts tidak muncul jika gambar postingan menggunakan gambar eksternal
+- Dan beberapa perbaikan kecil lainnya
+
+v.2.3.0 (26 Mei 2020)
+- Tambah opsi menghilangkan thumbnail related posts
+- Tambah widget Custom JavaScript footer
+- Hapus notifikasi tentang "Favicon" di menu tata letak dashboard versi baru
+- Perbaikan tombol darkmode terkadang tetap muncul meskipun sudah dinonaktifkan
+- Dan beberapa perbaikan kecil lainnya
+
+v.2.4.0 (05 Juni 2020)
+- Tambah widget kode iklan matched content
+- Tambah support form kontak di halaman statis sama seperti VioMagz dan VioToko
+- Optimasi accessibility:
+   - Tambah "Skip Navigation Links"
+   - Tambah "Screen Reader Text" pada link read more postingan
+- Perbaikan breadcrumb tidak muncul di halaman statis
+- Perbaikan widget arsip tidak support tampilan dropdown
+- Perbaikan tombol berbagi tidak otomatis menutup tab browser setelah berbagi
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.2.5.0 (09 Juni 2020)
+- Penambahan widget html/javascript di atas postingan khusus homepage
+- Penambahan pilihan warna default putih dan abu-abu
+- Optimasi kode meta deskripsi:
+  - Menampilkan meta deskripsi otomatis jika setelan meta deskripsi dinonaktifkan/tidak diisi
+  - Hanya menampilkan meta deskripsi di homepage, postingan, dan halaman statis
+- Perbaikan iklan matched content AdSense tampilannya terpotong sebelah kanan
+- Perbaikan Tampilkan widget form kontak di sidebar kurang rapi di versi mobile
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.2.6.0 (14 Juni 2020)
+- Ganti tulisan navigasi halaman label produk dan jasa:
+ - Tulisan "Postingan Lama" menjadi "Produk Lainnya" / "Jasa Lainnya"
+ - Tulisan "Postingan Lebih Baru" menjadi "Produk Terbaru" / "Jasa Terbaru"
+- Perbaikan meta tag title halaman 404
+- Perbaikan fitur pesan 404 khusus tidak berfungsi
+- Perbaikan tampilan gambar widget profil blur
+- Perbaikan kolom komentar tidak muncul jika postingan tanpa label
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.2.7.0 (27 September 2020)
+- Perbaikan tanggal yang muncul di postingan tidak sesuai dengan yang ada di dashboard blog
+- Perbaikan teks menu navigasi blur di browser chrome versi terbaru
+- Perbaikan tampilan blog error jika widget menu navigasi dinonaktifkan
+- Perbaikan icon pencarian tidak center jika ukuran font diubah menjadi besar
+- Perbaikan link default di footer tidak mengarah ke homepage
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.2.8.0 (23 Januari 2021)
+- Tambah meta tag twitter cards
+- Perbaikan tampilan related posts tanpa thumbnail tidak rapi di browser firefox
+- Perbaikan tampilan caption gambar postingan error ketika memuat gambar ukuran besar
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.2.9.0 (01 Maret 2021)
+- Optimasi JavaScript
+- Logo header tanpa lazyload
+- Tambah efek loading pada gambar lazyload
+- Tambah ketersediaan file template versi unminified (Kode CSS tidak diminifikasi)
+- Perbaikan gambar thumbnail youtube pada related posts tidak rata tengah
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.3.0.0 (22 April 2021)
+- Hapus fitur meta deskripsi otomatis
+- Hapus widget Berlangganan via Email sebagai widget default
+- Tambah widget HTML di atas footer
+- Pembaruan Script LazyLoad (sekarang support LazyLoad AdSense)
+- Pembaruan tampilan menu Tata Letak
+- Penambahan beberapa icon media sosial
+- Dan beberapa perbaikan-perbaikan lainnya
+
+v.3.1.0 (10 Oktober 2021)
+- Perbaikan thumbnail related post blur
+- Perbaikan tombol hapus komentar muncul selain admin
+- Perbaikan tampilan widget sticky
+- Pembaruan gambar thumbnail related post menggunakan format webp
+- Penambahan tombol share telegram
+- dan beberapa perbaikan-perbaikan lainnya

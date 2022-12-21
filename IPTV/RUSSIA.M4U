@@ -1,0 +1,1026 @@
+#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
+
+
+
+#EXTINF:0 group-title="RUSSIA" group-title="RUSSIA",1HD Music Television (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/1hd.m3u8
+#EXTINF:0 group-title="RUSSIA" group-title="RUSSIA",1HD Music Television (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://1hdru-hls-otcnet.cdnvideo.ru/onehdmusic/tracks-v1a1/index.m3u8
+#EXTINF:0 group-title="RUSSIA" group-title="RUSSIA",2x2 (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://176.114.16.54/2x2/index.m3u8
+#EXTINF:0 group-title="RUSSIA" group-title="RUSSIA",5 канал (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/5_OTT.m3u8
+#EXTINF:0 group-title="RUSSIA",8 канал Крым (576p)
+#EXTVLCOPT:network-caching=1000
+http://176.99.110.252/stream8/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",9 Волна (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/acb/acb0.m3u8
+#EXTINF:0 group-title="RUSSIA",43 канал (720p)
+#EXTVLCOPT:network-caching=1000
+http://sochinskayatrk.ru/hdtv/hls/43Channel_hd/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",360° (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://edge2-tv-ll.facecast.io/evacoder_hls_hi/CkxfR1xNUAJwTgtXTBZTAJli/index.m3u8
+#EXTINF:0 group-title="RUSSIA",.black Russia (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Sony_Turbo.m3u8
+#EXTINF:0 group-title="RUSSIA",.red Russia (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Sony_ET.m3u8
+#EXTINF:0 group-title="RUSSIA",.sci-fi Russia (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Sony_SciFi.m3u8
+#EXTINF:0 group-title="RUSSIA",A1 (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/A1_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",A2 (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/A2_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Amedia Hit (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Amedia_Hit_HD.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Amedia Premium (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s64/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Baby TV (480p)
+#EXTVLCOPT:network-caching=1000
+http://okkotv-live.cdnvideo.ru/channel/BabyTV.m3u8
+#EXTINF:0 group-title="RUSSIA",Backus TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://stream.backustv.ru/live/btv/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Backus TV Страшное (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://stream.backustv.ru/live/btv2/index.m3u8
+#EXTINF:0 group-title="RUSSIA",BBC News (540p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
+#EXTINF:0 group-title="RUSSIA",BBC World News (576p)
+#EXTVLCOPT:network-caching=1000
+http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Bloomberg TV EMEA Live Event (720p)
+#EXTVLCOPT:network-caching=1000
+https://www.bloomberg.com/media-manifest/streams/eu-event.m3u8
+#EXTINF:0 group-title="RUSSIA",Bloomberg TV Europe UHD (2160p)
+#EXTVLCOPT:network-caching=1000
+https://bloomberg-bloombergtv-1-it.samsung.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Bollywood HD (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/bollywood_hd.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Bridge TV (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s34/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Cinema (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Cinema.m3u8
+#EXTINF:0 group-title="RUSSIA",CNN International Europe (720p)
+#EXTVLCOPT:network-caching=1000
+https://cnn-cnninternational-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",DW English (1080p)
+#EXTVLCOPT:network-caching=1000
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Eurodance 90 HD (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://eurodance90.catcast.tv/content/36987/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Euronews по-русски (720p)
+#EXTVLCOPT:network-caching=1000
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
+#EXTINF:0 group-title="RUSSIA",FAN (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://194.9.27.164:8103/play/FAN/index.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Fast&Fun Box (Russian) (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s79/index.m3u8
+#EXTINF:0 group-title="RUSSIA",FilmTV Kinder (400p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v2.catcast.tv/content/38144/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Fox Life Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Fox_Life_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Fox Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Fox_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",France 24 English (1080p)
+#EXTVLCOPT:network-caching=1000
+http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8
+#EXTINF:0 group-title="RUSSIA",FreshTV (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/fresh/fresh0.m3u8
+#EXTINF:0 group-title="RUSSIA",Global Star TV (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://stream2.hardlife.tv:8134/hls-live/hlsGS/_definst_/liveevent/gs.m3u8
+#EXTINF:0 group-title="RUSSIA",Gravity Fouls (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v3.catcast.tv/content/38105/index.m3u8
+#EXTINF:0 group-title="RUSSIA",HD life (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://37.193.6.155:34040/udp/239.1.9.2:1234
+#EXTINF:0 group-title="RUSSIA",HD Медиа (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/hdmedia/hdmedia0.m3u8
+#EXTINF:0 group-title="RUSSIA",HDL (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/hdl.m3u8
+#EXTINF:0 group-title="RUSSIA",Leomax 24 (1080p)
+#EXTVLCOPT:network-caching=1000
+https://tvshops.bonus-tv.ru/cdn/shop24/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Leomax Plus (576p)
+#EXTVLCOPT:network-caching=1000
+https://tvshops.bonus-tv.ru/cdn/discount/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Luxury (1080p)
+#EXTVLCOPT:network-caching=1000
+http://nano.teleservice.su:8080/hls/luxury.m3u8
+#EXTINF:0 group-title="RUSSIA",MavTV Select (720p)
+#EXTVLCOPT:network-caching=1000
+https://mavtv-mavtvglobal-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Metal TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v2.catcast.tv/content/33816/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Millenium TV (1080p)
+#EXTVLCOPT:network-caching=1000
+http://tv1.mmg.ooo/live/hd.stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",MOSOBR.TV (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://retc.educom.ru/mosobrtv/tv1/index.m3u8
+#EXTINF:0 group-title="RUSSIA",MTVmix (Уфа) (384p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://81.30.182.82:18092/hls/live.m3u8
+#EXTINF:0 group-title="RUSSIA",National Geographic (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/NGC_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",National Geographic Wild Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/NGC_Wild_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",NTV Europe (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/ntvuk00332211.stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Red Bull TV (1080p)
+#EXTVLCOPT:network-caching=1000
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:0 group-title="RUSSIA",RT Documentary (1080p)
+#EXTVLCOPT:network-caching=1000
+https://rt-rtd.gcdn.co/live/rtdoc/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",RT Documentary Russian (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/rtd_hd/rtd_hd0.m3u8
+#EXTINF:0 group-title="RUSSIA",RT News (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/rt_hd/rt_hd0.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - RTG (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s80/index.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - RTG HD (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s63/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Shopping Live (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv30.vintera.tv:8081/shoppinglive/shoppinglive_stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Shot TV [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cdn.tvmatic.net/shot.m3u8
+#EXTINF:0 group-title="RUSSIA",Sochi Live HD (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv30.vintera.tv:8081/sochi/sochi_stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",TRK 555 (720p)
+#EXTVLCOPT:network-caching=1000
+http://trk555.tv:8888/live
+#EXTINF:0 group-title="RUSSIA",TRT World (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://tv-trtworld.live.trt.com.tr/master.m3u8
+#EXTINF:0 group-title="RUSSIA",TV1000 Action Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/TV1000_Action_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",TV1000 Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/TV1000_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",TV1000 Русское кино (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/TV1000_Rus_Kino_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",TV BRICS Russian (1080p)
+#EXTVLCOPT:network-caching=1000
+https://brics.bonus-tv.ru/cdn/brics/russian/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",TV PRO (600p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://rtmp.tvpro-online.ru/hls/ch1.m3u8
+#EXTINF:0 group-title="RUSSIA",TV Губерния (Воронеж) (720p)
+#EXTVLCOPT:network-caching=1000
+https://tvgubernia-htlive.cdn.ngenix.net/live/mp4:tv-gubernia-live/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",TVMChannel (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/tvm_supres/tvm_supres0.m3u8
+#EXTINF:0 group-title="RUSSIA",Univer TV (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn.universmotri.ru/live/smil:mbr.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Viasat Explore Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Viasat_Explore_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Viasat History Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Viasat_History_ad_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Viasat Nature Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Viasat_Nature_ad_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",ViP Comedy Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/VIP_Comedy_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",VIP Megahit Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/VIP_Megahit_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",VIP Premiere Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/VIP_Premiere_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",VIP Serial Russia (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/VIP_Serial_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",VIVA Russia (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live.prd.dlive.tv/hls/live/viva-russia.m3u8
+#EXTINF:0 group-title="RUSSIA",World Fashion Channel (1080p)
+#EXTVLCOPT:network-caching=1000
+https://wfcint.mediacdn.ru/cdn/wfcintweb/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Авто 24 (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://185.52.77.67:8080/Avto24/tracks-v1a1/mono.m3u8
+#EXTINF:0 group-title="RUSSIA",Арис 24 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv25.vintera.tv:8081/test/aris/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Арсенал (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s68/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Архыз 24 (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/arhyz24/arhyz240.m3u8
+#EXTINF:0 group-title="RUSSIA",Астрахань 24 (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/astrahan24/astrahan240.m3u8
+#EXTINF:0 group-title="RUSSIA",Астрахань.Ru Sport (720p)
+#EXTVLCOPT:network-caching=1000
+https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Астрахань.Ru TV (480p)
+#EXTVLCOPT:network-caching=1000
+https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Афонтово (Красноярск) (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://xstream.afontovo.ru/afontovo_ya.m3u8
+#EXTINF:0 group-title="RUSSIA",Башкортостан 24 (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/bashkortostan24/bashkortostan240.m3u8
+#EXTINF:0 group-title="RUSSIA",Белгород 24 (1080p)
+#EXTVLCOPT:network-caching=1000
+http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8
+#EXTINF:0 group-title="RUSSIA",БелРос (576p)
+#EXTVLCOPT:network-caching=1000
+http://live2.mediacdn.ru/sr1/tro/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Бобер (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/bober.m3u8
+#EXTINF:0 group-title="RUSSIA",Большая Азия (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/bigasia/bigasia0.m3u8
+#EXTINF:0 group-title="RUSSIA",БСТ (Башкирское спутниковое телевидение) (576p)
+#EXTVLCOPT:network-caching=1000
+https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Вера 24 (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://62.32.67.187:1935/WEB_Vera24/Vera24.stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Вестник Надыма +2 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live-trknadym.cdnvideo.ru/trknadym-pub/trknadym.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Ветта 24 (Пермь) (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv24.vintera.tv:8081/vetta/vetta_office/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Вечерняя Москва (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://vmvideo.gcdn.co/streams/1503_161/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Вместе-РФ (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://cdn-01.bonus-tv.ru:8080/vmesterf/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Волгоград 1 (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/volgograd1/volgograd10.m3u8
+#EXTINF:0 group-title="RUSSIA",Время (576p)
+#EXTVLCOPT:network-caching=1000
+http://91.185.3.218:4000/play/607
+#EXTINF:0 group-title="RUSSIA",ВТВ Плюс (Херсон) (576p)
+#EXTVLCOPT:network-caching=1000
+http://193.107.128.8:8552/play/a007
+#EXTINF:0 group-title="RUSSIA",ВТВ Плюс (Херсон) (576p)
+#EXTVLCOPT:network-caching=1000
+http://iptv.rubintele.com:8552/play/a007
+#EXTINF:0 group-title="RUSSIA",Гласс (RU) (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://glas.org.ua/hls/glassru.m3u8
+#EXTINF:0 group-title="RUSSIA",Городской телеканал (Ярославль) (576p)
+#EXTVLCOPT:network-caching=1000
+http://www.gtk.tv/hls/gtyar.m3u8
+#EXTINF:0 group-title="RUSSIA",Губерния 33 (Владимир) (360p)
+#EXTVLCOPT:network-caching=1000
+https://live-trc33.cdnvideo.ru/trc33/trc33.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Губерния (Самара) (576p)
+#EXTVLCOPT:network-caching=1000
+http://live.guberniatv.cdnvideo.ru/guberniatv/guberniatv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Дагестан (1080p)
+#EXTVLCOPT:network-caching=1000
+https://dagestan.mediacdn.ru/cdn/dagestan/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Дайвинг.TV (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/diving/diving0.m3u8
+#EXTINF:0 group-title="RUSSIA",Дикая охота (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Dikaya_Ohota_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Дикая рыбалка (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Dikaya_Rybalka_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Дикий (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Dikiy.m3u8
+#EXTINF:0 group-title="RUSSIA",Дождь (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/tvrain/tvrain0.m3u8
+#EXTINF:0 group-title="RUSSIA",Доктор (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://88b9da48.kazmazpaz.ru/iptv/D7M94NBVB5DLFS/512/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Дом кино (576p)
+#EXTVLCOPT:network-caching=1000
+http://91.185.3.218:4000/play/606
+#EXTINF:0 group-title="RUSSIA",Дом Кино Премиум (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/domkino_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Домашний (576p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://31.128.159.41:8080/domashniy/tracks-v1a1/mono.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Дорама (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s95/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Дорама (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/dorama_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Евразия (Орск) (720p)
+#EXTVLCOPT:network-caching=1000
+http://infochhdcdn.trkeurasia.ru/orsk-infochhd/infochhd/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Евроновости (540p)
+#EXTVLCOPT:network-caching=1000
+http://evronovosti.mediacdn.ru/sr1/evronovosti/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Енисей (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://hls-eniseytv.cdnvideo.ru/eniseytv/stream1/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Жар Птица (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/firebird/firebird0.m3u8
+#EXTINF:0 group-title="RUSSIA",Жара (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://185.161.224.216/dash/JaraTv_SD.ism/playlist.mpd
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Загородный (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s31/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Звезда (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Zvezda_SD.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Зоо ТВ (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s92/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Известия (720p)
+#EXTVLCOPT:network-caching=1000
+https://hls-igi.cdnvideo.ru/igi/igi_sq/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Известия (1080p)
+#EXTVLCOPT:network-caching=1000
+http://hls-igi.cdnvideo.ru/igi/igi_hq/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Известия (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Izvestiya_HD_2.m3u8
+#EXTINF:0 group-title="RUSSIA",Индийское кино (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Indiiskoe_kino.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - История (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s40/index.m3u8
+#EXTINF:0 group-title="RUSSIA",К16 (Саров) (406p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv25.vintera.tv:8081/test/k16/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Каббала ТВ (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://edge2.uk.kab.tv/live/tvrus-rus-medium/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Кавказ 24 (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/kavkaz24_supres/kavkaz24_supres0.m3u8
+#EXTINF:0 group-title="RUSSIA",Калейдскоп (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Kaleidoskop.m3u8
+#EXTINF:0 group-title="RUSSIA",Канал Disney (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Disney.m3u8
+#EXTINF:0 group-title="RUSSIA",Карусель (576p)
+#EXTVLCOPT:network-caching=1000
+http://91.185.3.218:4000/play/604
+#EXTINF:0 group-title="RUSSIA",Кинозал (VHS 90s) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v2.catcast.tv/content/37925/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Кинокомедия (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Kinokomediya_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Киномикс (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Kinomix_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Кинопремьера (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Kinopremiera_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Киносвидание (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Kinosvidanie_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Киносемья (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Kinosemiya_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Кинохит (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Kinohit_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Классика Кино (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/kinoclassic/kinoclassic0.m3u8
+#EXTINF:0 group-title="RUSSIA",Комедийное (540p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://185.97.150.19:8082/2402
+#EXTINF:0 group-title="RUSSIA",Конный Мир (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://cdn-01.bonus-tv.ru/konnyimir/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Красная линия (480p)
+#EXTVLCOPT:network-caching=1000
+https://kprf-htlive.cdn.ngenix.net/live/stream_high/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Красногорск ТВ (480p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live-krtv.cdnvideo.ru/krtv/krtv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Крик-ТВ (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/krik_tv/krik_tv0.m3u8
+#EXTINF:0 group-title="RUSSIA",Крым 24 (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://mr2live.1tvcrimea.ru:8080/24tvcrimea.m3u8
+#EXTINF:0 group-title="RUSSIA",Кубань 24 Орбита (576p)
+#EXTVLCOPT:network-caching=1000
+https://stream.kuban24.tv:1500/hls/stream.m3u8
+#EXTINF:0 group-title="RUSSIA",Кузбасс 1 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://www.10kanal.ru:1443/10kanal/k24/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Культура (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s16/index.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178" - Культура (1920p) [Geo-blocked]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML group-title="RUSSIA", like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
+#EXTVLCOPT:network-caching=1000
+https://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK/variant.m3u8
+#EXTINF:0 group-title="RUSSIA",Курай (576p)
+#EXTVLCOPT:network-caching=1000
+https://bsttv.bonus-tv.ru/cdn/kurai/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",КФУ ТВ (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://cdn.universmotri.ru/live/kfu.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ЛДПР ТВ (1080p)
+#EXTVLCOPT:network-caching=1000
+http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Липецкое время (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv25.vintera.tv:8081/liptime/liptime/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ЛитКлуб ТВ Проза (480p)
+#EXTVLCOPT:network-caching=1000
+http://hls-rossp.cdnvideo.ru/hls/5ace67f0dc96bf0a90d8a2b7/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ЛитКлуб ТВ Слово (720p)
+#EXTVLCOPT:network-caching=1000
+http://hls-rossp.cdnvideo.ru/hls/5ace6814e563f22e4ddc1f44/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ЛитКлуб ТВ Стихи (360p)
+#EXTVLCOPT:network-caching=1000
+http://hls-rossp.cdnvideo.ru/hls/5aac88ffdc96bf05a7f78899/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Луч (Пуровск) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live.trk-luch.ru/hls/live.m3u8
+#EXTINF:0 group-title="RUSSIA",Любимое.ТВ (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/lovedtv/lovedtv0.m3u8
+#EXTINF:0 group-title="RUSSIA",Мir +3 (512p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Mir.m3u8
+#EXTINF:0 group-title="RUSSIA",Матур ТВ (1080p)
+#EXTVLCOPT:network-caching=1000
+https://public.streaming.matur-tv.ru/hls/h264_aac/stream.m3u8
+#EXTINF:0 group-title="RUSSIA",Между.Net (Междуреченск) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://212.77.128.179:8089/www_mezhdunet/mezhdunet/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Миллет (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live.trkmillet.ru/millet/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Министерство идей (720p)
+#EXTVLCOPT:network-caching=1000
+http://live-minidey.cdnvideo.ru/minidey/minidey.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир 24 (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Mir24.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Mir_OTT.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир +2 (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv2_2500/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир +4 (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv3_2500/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир +7 (540p)
+#EXTVLCOPT:network-caching=1000
+http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv7_2500/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир Белагорья (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир Белогорья (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://live-mirbelogorya.cdnvideo.ru/mirbelogorya/mirbelogorya1.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир Белогорья (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://stream.tvbelgorod.ru:8080/mirbelogorya/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Мир Сериала (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://185.161.224.216/dash/Mir_seriala_SD.ism/playlist.mpd
+#EXTINF:0 group-title="RUSSIA",Мисто плюс (480p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://93.78.206.172:8080/stream4/stream.m3u8
+#EXTINF:0 group-title="RUSSIA",Мисто плюс (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://93.78.206.172:8080/stream5/stream.m3u8
+#EXTINF:0 group-title="RUSSIA",Мордовия 24 (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-mordovia24.cdnvideo.ru/mordovia24/streamtr/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Морской (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://88b9da48.kazmazpaz.ru/iptv/D7M94NBVB5DLFS/742/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Москва 24 (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://radio-live-mg.rtr-vesti.ru/hls/moscow_24/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Моя планета (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cdnmg.secure.live.rtr-vesti.ru/live/smil:mplan.smil/master.m3u8
+#EXTINF:0 group-title="RUSSIA",МТВ (Волгоград) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мужское кино (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8
+#EXTINF:0 group-title="RUSSIA",Муз союз (576p)
+#EXTVLCOPT:network-caching=1000
+http://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Муз-ТВ (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s28/index.m3u8
+#EXTINF:0 group-title="RUSSIA",МузСоюз (576p)
+#EXTVLCOPT:network-caching=1000
+http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Музыка Первого (576p)
+#EXTVLCOPT:network-caching=1000
+http://91.185.3.218:4000/play/608
+#EXTINF:0 group-title="RUSSIA",Мультиландия (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://serv30.vintera.tv:8081/detskiy/multimania20/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Мультиландия (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Multilandia_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Надежда (720p)
+#EXTVLCOPT:network-caching=1000
+https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Нано (540p)
+#EXTVLCOPT:network-caching=1000
+http://nano.teleservice.su:8080/hls/nano.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Наука (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s98/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Наше Крутое HD (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://ba5729d5.krasnafhg.ru/iptv/EAEWFFWBXPVVLY/915/index.m3u8
+#EXTINF:0 group-title="RUSSIA",НВК Саха (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live-saha.cdnvideo.ru/saha/saha/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Небеса ТВ7 (720p)
+#EXTVLCOPT:network-caching=1000
+https://vod.tv7.fi/tv7-ru/tv7-ru.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Нижний Новгород 24 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-vestinn.cdnvideo.ru/vestinn/nn24-khl/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Ника ТВ (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Новое радио (1080p)
+#EXTVLCOPT:network-caching=1000
+https://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Новороссия ТВ (720p)
+#EXTVLCOPT:network-caching=1000
+http://ott.inmart.tv:8081/19/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Новый мир (406p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://stream.studio360.tv/nw/nw_576p/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Ноябрьск 24 (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/noyabrsk24/noyabrsk240.m3u8
+#EXTINF:0 group-title="RUSSIA",НТВ (576p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://31.128.159.41:8080/ntv/tracks-v1a1/mono.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - НТВ Стиль (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s77/index.m3u8
+#EXTINF:0 group-title="RUSSIA",НТМ (Народное телевидение Мордовии) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-ntm13.cdnvideo.ru/ntm13/smil:ntm13.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",НТС (Севастополь) (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://peqk71plnjy.a.trbcdn.net/livemaster/w4kz7pki62_nts_tv/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",О2ТВ (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/o2/o20.m3u8
+#EXTINF:0 group-title="RUSSIA",О! (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/o.m3u8
+#EXTINF:0 group-title="RUSSIA",Оплот 2 (1080p)
+#EXTVLCOPT:network-caching=1000
+http://ott.inmart.tv:8081/17/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Оплот ТВ (1080p)
+#EXTVLCOPT:network-caching=1000
+http://ott.inmart.tv:8081/54/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Остросюжетное (540p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://185.97.150.19:8082/2235
+#EXTINF:0 group-title="RUSSIA",ОТВ (Одинцово) (576p)
+#EXTVLCOPT:network-caching=1000
+http://185.18.4.16/live/3m/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ОТС (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/otstv/otstv0.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Охотник и Рыболов (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s62/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Охотник и рыболов International (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/ohotnik/ohotnik0.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый канал (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Pervii_Kanal_OTT_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый канал Евразия (396p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://stream.euroasia.lfstrm.tv/perviy_evrasia/1/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый канал Евразия (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/1KanalEvraziya.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый крымский (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://mrlive.1tvcrimea.ru:8080/1tvcrimea.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый Псковский (540p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://194.190.78.91/pskov/rewind-10800.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый республиканский (720p)
+#EXTVLCOPT:network-caching=1000
+http://ott.inmart.tv:8081/18/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Первый Тульский (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://5.164.24.83/tula/1tv_low/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Победа (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Pobeda.m3u8
+#EXTINF:0 group-title="RUSSIA",Прима (1920p)
+#EXTVLCOPT:network-caching=1000
+https://rt-sib-krsk-htlive.cdn.ngenix.net/hls/CH_R11_OTT_SIB_KRSK_STS/variant.m3u8
+#EXTINF:0 group-title="RUSSIA",ПРНК (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv25.vintera.tv:8081/1pnk/1pnk/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Продвижение (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/prodvizheniye/prodvizheniye0.m3u8
+#EXTINF:0 group-title="RUSSIA",Просвещение (540p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://cdn-01.bonus-tv.ru/prosveschenie_edge/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Пятница! International (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s50/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио 10 (1024p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://langate.tv/acc/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио 101.8 (540p)
+#EXTVLCOPT:network-caching=1000
+https://video.penzainform.ru/e/r1018.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио Говорит Москва (404p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://video.govoritmoskva.ru:8080/live/rufmbk-1/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио Говорит Москва (Веб-камера) (720p)
+#EXTVLCOPT:network-caching=1000
+https://video.govoritmoskva.ru/rufm/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио Пилот (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://pilotfm.ru/cam/hls/pilothd.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио России (Чувашия) (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://chgtrk.ru/pl/stream/hls/RR_720p/index.m3u8
+#EXTINF:0 group-title="RUSSIA",радио Хит ТВ (300p)
+#EXTVLCOPT:network-caching=1000
+http://lova.me/hls/hit.m3u8
+#EXTINF:0 group-title="RUSSIA",Радио Шансон (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
+#EXTINF:0 group-title="RUSSIA",Раменское ТВ (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://rtv.facecast.io/rtv/0.m3u8
+#EXTINF:0 group-title="RUSSIA",Ратник (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://live-ratnik.cdnvideo.ru/ratnik/ratnik.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - РБК (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s36/index.m3u8
+#EXTINF:0 group-title="RUSSIA",РБК (560p)
+#EXTVLCOPT:network-caching=1000
+http://92.50.128.180/utv/1358/index.m3u8
+#EXTINF:0 group-title="RUSSIA",РБК (576p)
+#EXTVLCOPT:network-caching=1000
+http://uiptv.do.am/1ufc/701293058/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",РБК (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/rbc_supres/rbc_supres0.m3u8
+#EXTINF:0 group-title="RUSSIA",Регион 29 (Архангельск) (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://live-atkmedia.cdnvideo.ru/atkmedia/atkmedia/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",РЕН ТВ (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Rentv_HD_OTT.m3u8
+#EXTINF:0 group-title="RUSSIA",РЕН ТВ International (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/RenTV.m3u8
+#EXTINF:0 group-title="RUSSIA",РЖД ТВ (360p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://hls.tva.cdnvideo.ru/tva/tva.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",РЖД ТВ (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://hls.tva.cdnvideo.ru/tva/tvahd.sdp/chunklist.m3u8
+#EXTINF:0 group-title="RUSSIA",Родное кино (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Rodnoe_kino.m3u8
+#EXTINF:0 group-title="RUSSIA",Родной канал (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://n1.slavmir.tv/live/slavmir/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия 1 (Калуга) (202p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cdnmg.secure.live.rtr-vesti.ru/vgtrkrtmp/smil:kaluga_r1.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия 1 +6 (360p)
+#EXTVLCOPT:network-caching=1000
+https://gtrkchita.ru:8081/hls/r1-chita_360p.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия 1 HD (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://a3569458063-s26881.cdn.ngenix.net/hls/russia_hd/playlist_4.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия 24 (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Russia24.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия 24 (Н.Новгород) (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-vestinn.cdnvideo.ru/vestinn/vestinn/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия 24 (Чита) (576p)
+#EXTVLCOPT:network-caching=1000
+https://gtrkchita.ru:8081/hls/r24-chita_576p.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия К (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Russia_K_SD.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия РТР (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://cdnmg.secure.live.rtr-vesti.ru/live/smil:rtrp.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Россия РТР [Timeout]
+#EXTVLCOPT:network-caching=1000
+https://a3569455801-s26881.cdn.ngenix.net/live/smil:rtrp.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Ростов-папа (1080p)
+#EXTVLCOPT:network-caching=1000
+http://live-rostovpapa.cdnvideo.ru/rostovpapa/rostovpapa.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - РТР-Планета (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s15/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Русский Детектив (576p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://78.58.133.179:28000/play/a01t/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Русский Север (Вологда) (1080p)
+#EXTVLCOPT:network-caching=1000
+http://185.186.142.16/streams.rs.m3u8
+#EXTINF:0 group-title="RUSSIA",Русский Экстрим [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://vid.extremtv.ru/hls_get/cameraFeed.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Рыболов (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s55/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Рыжий (576p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://serv30.vintera.tv:8081/detskiy/ryzhiy_08/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",С1 (Сургут) (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sitv.ru/hls/stv.m3u8
+#EXTINF:0 group-title="RUSSIA",Салям (576p)
+#EXTVLCOPT:network-caching=1000
+https://bsttv.bonus-tv.ru/cdn/salyam/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Самара ГИС (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://45.67.57.9:8080/new/new/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Саратов 24 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://saratov24.tv/online/playlist.php
+#EXTINF:0 group-title="RUSSIA",Сарафан (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://195.26.83.96:7024/play/82
+#EXTINF:0 group-title="RUSSIA",Север (Нарьян-Мар) (1080p)
+#EXTVLCOPT:network-caching=1000
+https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Селенга ТВ (576p)
+#EXTVLCOPT:network-caching=1000
+http://90.188.37.86/live/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Смайлик ТВ (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://62.32.67.187:1935/WEB_Smilik/ngrp:Smilik.stream-adaptive/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Солнечногорское ТВ (360p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://hls.solntv.cdnvideo.ru/solntv/solntv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Союз (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/soyuz/soyuz0.m3u8
+#EXTINF:0 group-title="RUSSIA",СПАС (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Spas.m3u8
+#EXTINF:0 group-title="RUSSIA",СССР ТВ (432p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v2.catcast.tv/content/38821/index.m3u8
+#EXTINF:0 group-title="RUSSIA",СТВ Казахстан (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/STV.m3u8
+#EXTINF:0 group-title="RUSSIA",Страна FM (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live.stranafm.cdnvideo.ru/stranafm/stranafm_hd.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",СТРК (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",СТС (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/CTC_HD_OTT.m3u8
+#EXTINF:0 group-title="RUSSIA",СТС Kids (1080p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/CTC_Kids_HD.m3u8
+#EXTINF:0 group-title="RUSSIA",СТС Love (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/CTC_Love_OTT_2.m3u8
+#EXTINF:0 group-title="RUSSIA",Сургут 24 (720p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://video1.in-news.ru/c24/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Тамыр (576p)
+#EXTVLCOPT:network-caching=1000
+https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Татарстан24 (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://stream.efir24.tv:1935/live/efir24tv/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТБН (720p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://62.32.67.187:1935/WEB_TBN/TBN.stream/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВ Кварц (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://video.quartztelecom.ru:18080/hls/2386168/71fe656b993c510f39a5/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - ТВ Центр (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s54/index.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВ Экстра (720p)
+#EXTVLCOPT:network-caching=1000
+http://live-1.otcnet.ru/tvextra720b/index.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВ-3 (1080p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://bar-timeshift-inet.ll-bar.zsttk.ru:8080/tv3/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВК 24 (576p)
+#EXTVLCOPT:network-caching=1000
+http://air.tvk6.ru/tvk24/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВР24 (Сергиев Посад) (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-tvr24.cdnvideo.ru/tvr24/tvr24.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВТУР (720p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://strm.yandex.ru/kal/tvtour/tvtour0.m3u8
+#EXTINF:0 group-title="RUSSIA",ТВЦ (Международный) (576p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://ad-hls-tvc.cdnvideo.ru/tvc-p222/smil:tvc.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТДК (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/TDK-42.m3u8
+#EXTINF:0 group-title="RUSSIA",Телеканал 86 (Сургут) (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sitv.ru/hls/s86.m3u8
+#EXTINF:0 group-title="RUSSIA",Телекафе (576p)
+#EXTVLCOPT:network-caching=1000
+http://91.185.3.218:4000/play/605
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Телепутешествия (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s71/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Телплюс ТВ (Астрахань) (360p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://streaming.astrakhan.ru/telplushd/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Тивиком (Улан-Удэ) (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://tvcom.stream.intelema.ru/tvcom/studio/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТК Алмазный край (576p)
+#EXTVLCOPT:network-caching=1000
+https://stream.almaz-media.tv:8080/hls/576.m3u8
+#EXTINF:0 group-title="RUSSIA",ТКР (Рязань) (1080p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live.tkr.cdnvideo.ru/tkr/tkr.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТНВ-Планета (576p)
+#EXTVLCOPT:network-caching=1000
+http://tnv.bonus-tv.ru/cdn/tnvplanet/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ТНТ4 (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/tnt4.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - ТНТ International (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s19/04.m3u8
+#EXTINF:0 group-title="RUSSIA",Той Думан (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/ToiDuman.m3u8
+#EXTINF:0 group-title="RUSSIA",Тольятти 24 (720p)
+#EXTVLCOPT:network-caching=1000
+http://91.234.108.26/hls-live/livepkgr/_definst_/liveevent1/vazlivestream1.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Тонус (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s90/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Три Ангела (720p)
+#EXTVLCOPT:network-caching=1000
+https://hls.tv.3angels.ru/stream/HQ.m3u8
+#EXTINF:0 group-title="RUSSIA",Туран ТВ (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/TuranTV.m3u8
+#EXTINF:0 group-title="RUSSIA",Ужастик (304p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v2.catcast.tv/content/38896/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Учалы ТВ (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://live-uchalytv.cdnvideo.ru/uchalytv/uchalytv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Фантастика Sci-Fi (400p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://v2.catcast.tv/content/38801/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Феникс Кино (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Phoenix.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Футбол (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s41/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Хабар 24 (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Khabar_24.m3u8
+#EXTINF:0 group-title="RUSSIA",Хабар (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://sc.id-tv.kz/Khabar.m3u8
+#EXTINF:0 group-title="RUSSIA", like Gecko) Mobile/15E148" - Центральное телевидение (ЦТВ) (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML group-title="RUSSIA", like Gecko) Mobile/15E148
+#EXTVLCOPT:network-caching=1000
+http://ott-cdn.ucom.am/s20/index.m3u8
+#EXTINF:0 group-title="RUSSIA",Че (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Che_OTT_2.m3u8
+#EXTINF:0 group-title="RUSSIA",Шансон ТВ (512p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Шокирующее (540p) [Timeout]
+#EXTVLCOPT:network-caching=1000
+http://185.97.150.19:8082/2401
+#EXTINF:0 group-title="RUSSIA",Щёлковское ТВ (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://stream0.tv41.ru/live.m3u8
+#EXTINF:0 group-title="RUSSIA",Эхо TV (Рязань) (576p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+https://live-echotv.cdnvideo.ru/echotv/echotv.sdp/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Ю (480p) [Geo-blocked]
+#EXTVLCOPT:network-caching=1000
+https://okkotv-live.cdnvideo.ru/channel/Yu_OTT.m3u8
+#EXTINF:0 group-title="RUSSIA",Ювелирочка ТВ (576p)
+#EXTVLCOPT:network-caching=1000
+http://live-uvelirochka.cdnvideo.ru/uvelirochka/uvelirochka_720p3/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Югра (576p)
+#EXTVLCOPT:network-caching=1000
+http://live.ugratv.cdnvideo.ru/ugratv/smil:ugrastream1.smil/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",Юрган (1080p)
+#EXTVLCOPT:network-caching=1000
+http://yurgan.bonus-tv.ru/cdn/yurgan/playlist.m3u8
+#EXTINF:0 group-title="RUSSIA",ЮТВ (Чебоксары) (432p) [Not 24/7]
+#EXTVLCOPT:network-caching=1000
+http://serv24.vintera.tv:8081/utv/Stream/playlist.m3u8

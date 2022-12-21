@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-WayBill System</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script type="text/javascript" src="https://docs.ewaybillgst.gov.in/JSEWB/jqueryEwb.min.js"></script>
+    <script type="text/ecmascript" src="https://docs.ewaybillgst.gov.in/JSEWB/bootstrap.min.js"></script>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://docs.ewaybillgst.gov.in/Styles/Loginhtml.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        javascript: window.history.forward(1);
+        javascript: window.history.forward(+1);
+
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.altKey && event.keyCode == 73) {
+                return false;
+            }
+        });
+
+        $(document).on("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+
+    </script>
+    <style type="text/css">
+        .imgtxt {
+            background-color: white;
+            opacity: 0.8 !important;
+            display: block;
+            position: absolute;
+            z-index: 2;
+            margin-top: 10px;
+            font-size: 21px;
+            width: 70% !important;
+            text-align: center;
+            color: #000;
+            list-style-type: none;
+            border: none !important;
+            margin-left: 25%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align:center;
+        }
+
+        .fa {
+            padding: 5px;
+        }
+
+        .panel1 {
+ 
+
+  padding: 1em 1em;
+  margin: .1em auto;
+  color: #fff; font-size:14px;
+  background: #2999f7;
+  overflow: hidden; border:none;
+  box-shadow: inset 0px 0px 2px 0px #FFF;   
+  background:radial-gradient(circle farthest-side at left, #2999f7, #0586e8 );  
+}
+@-webkit-keyframes blink {
+            50% {
+                border-color: #ff0000;
+            }
+        }
+
+        .msg {
+            -webkit-animation: blink .5s step-end infinite alternate;
+        }
+
+       
+
+        @-webkit-keyframes blink {
+            50% {
+                color: #ff0000;
+            }
+        }
+
+
+        .msg {
+            -webkit-animation: blink .5s step-end infinite alternate;
+            color: transparent;
+            font-size: 18px;
+        }
+
+        .blink {
+            font-size:28px;
+            color: red;
+            animation: blink 1s infinite;
+        }
+ 
+    </style>
+
+</head>
+<body>
+    <form autocomplete="off">
+        <div class="container-fluid">
+            <div class="row ">
+                <table style="width:100%" class="header">
+                    <tr>
+                        <td class="text-left" style="width:5%;padding-left:10px"> <img src="https://docs.ewaybillgst.gov.in/Images/logo.png" class="img-responsive" />  </td>
+                        <td class="text-left" style="width:80%">
+                            <span class="headertxt">
+                                Goods and Services Tax
+                                <div class="clearfix"></div>
+                                e - Way Bill System
+                            </span>
+                        </td>
+                        <td class="text-right" style="width:10%;"> <img src="https://docs.ewaybillgst.gov.in/Images/catx_logo.png" class="img-responsive" /></td>
+                    </tr>
+                </table>
+
+                <div class="navbar-default" role="navigation">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Menu</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="text-left">
+
+                                <a href="https://ewaybillgst.gov.in/login.aspx" target="_self" style="font-weight:bold; font-size:20px" rel="noopener noreferrer"> Login  <i class="glyphicon glyphicon-log-in"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="https://ewaybillgst.gov.in/" rel="noopener noreferrer">Home</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Laws <b class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="Others/NotificationsSearch.aspx?id=R" target="_blank" rel="noopener noreferrer">Rules</a></li>
+
+
+
+                                    <li class="dropdown-submenu">
+
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Forms</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/GST_EWB_01.pdf" target="_blank" rel="noopener noreferrer">EWB-01</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/GST_EWB_02.pdf" target="_blank" rel="noopener noreferrer">EWB-02</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/GST_EWB_03.pdf" target="_blank" rel="noopener noreferrer">EWB-03</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/GST_EWB_04.pdf" target="_blank" rel="noopener noreferrer">EWB-04</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/GST_ENR_01.pdf" target="_blank" rel="noopener noreferrer">ENR-01</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/GST_INV_01.pdf" target="_blank" rel="noopener noreferrer">INV-01</a></li>
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="Others/NotificationsSearch.aspx?id=N" target="_blank" rel="noopener noreferrer">Notifications</a></li>
+                                    <li><a href="Others/NotificationsSearch.aspx?id=C" target="_blank" rel="noopener noreferrer">Circulars</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" target="_blank" rel="noopener noreferrer">User Manual</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/usermanual_ewb.pdf" target="_blank" rel="noopener noreferrer">Web System</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/EWB_SMS.pdf" target="_blank" rel="noopener noreferrer">SMS System</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/EWB_BULK_GEN.pdf" target="_blank" rel="noopener noreferrer">Bulk Generation System</a></li>
+                                            <li><a href="https://docs.ewaybillgst.gov.in/Documents/EWB_API.pdf" target="_blank" rel="noopener noreferrer">API System</a></li>
+
+
+                                        </ul>
+
+                                    </li>
+                                    <li><a href="https://docs.ewaybillgst.gov.in/html/CBTForm.html" rel="noopener noreferrer">CBT</a></li>
+                                    <li><a href="https://docs.ewaybillgst.gov.in/html/faq1.html">FAQs</a>   </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Others/NotificationsSearch.aspx?id=A" target="_blank" rel="noopener noreferrer">Advertisement</a>   </li>
+                                    <li class="dropdown-submenu">
+                                        <a href='#' target="_blank" rel="noopener noreferrer">Tools</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://docs.ewaybillgst.gov.in/html/formatdownloadnew.html">Bulk Generation Tools</a>   </li>
+
+                                        </ul>
+
+
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<b class="caret"></b></a>
+
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://ewaybillgst.gov.in/Others/TaxPayerSearch.aspx">Tax Payers</a>   </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Others/TransportersSearch.aspx">Transporters</a>   </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Others/ProductSearch.aspx">Products & Services</a>   </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Others/PincodeSearch.aspx">Pincode</a>   </li>
+									<li><a href="https://ewaybillgst.gov.in/Others/P2PDistance.aspx">Pin to Pin distance</a>   </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Others/NotificationsSearch.aspx?id=N">Notifications</a>   </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Others/EBPrintnew.aspx">E-Way Bill</a>   </li>
+									<li><a href="Others/GstnIsBlock.aspx">Update Block Status</a>   </li>
+                                </ul>
+                            </li>
+                            <li><a href="https://docs.ewaybillgst.gov.in/html/Contactus.html">Contact Us</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration<b class="caret"></b></a>
+
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://ewaybillgst.gov.in/Account/EWBUserRegistration.aspx" target="_blank" rel="noopener noreferrer">
+                                            e-Way Bill Registration
+                                        </a>
+                                    </li>
+                                    <li><a href="https://ewaybillgst.gov.in/Account/Enrolment.aspx" target="_blank" rel="noopener noreferrer">Enrolment   for Transporters</a>   </li>
+                                    <li><a href="http://mis.ewaybillgst.gov.in/ewb_ctz/citizen/citizenmenu.aspx" rel="noopener noreferrer" target="_blank">E-Way Bill for Citizens</a>   </li>
+                                    
+
+                                </ul>
+
+
+                            </li>
+
+                        </ul>
+                    </div><!--/.nav-collapse -->
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row " style="background-color:#eee; min-height:480px; border:0px solid #7acef3;">
+
+                 <marquee behavior="scroll" direction="left" scrollamount="5" style="height:30px" onmouseover="this.stop();" onmouseout="this.start();">
+                    <div style="margin-top:5px; font-size:19px; ">                     
+                     
+                    </div>
+                    
+                </marquee> 
+            
+
+                <div class="col-lg-9 ">
+			 
+                    <img src="Images/r11.jpg" class="img-responsive img-thumbnail" style="position:absolute; z-index:1;" />
+                    <div class="imgtxt  text-center  ">
+                        <span style="color:red;font-weight:bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">
+                            ATTENTION TAX PAYERS
+                        </span>
+                        <div style="height:1px !important; background-color:rebeccapurple; width:320px ;
+                            margin:0 auto; margin-bottom:15px"></div>
+                        <span style="color:blue;">
+                            An alert message will now appear, while generating e-Way bill,either as consignor or consignee,with respect to those taxpayers who have not filed
+                            <br /> GSTR 3B return, for last two consecutive months!
+                            <br />
+                            However users can proceed further to generate e-Way bill.
+                            <br />
+                            If default in return filing continues, the facility to generate e-Way bill, for such GSTIN’s (either as consignor or consignee), will be stopped in due course.
+                        </span>
+                        <br />
+                        <br />
+                        <span style="color:#FF3380;">
+                            In case, you have filed the Return, but system shows you have not filed , then you may update the status by clicking on the following link :
+                        </span>
+                        <br />
+                        <span>
+                            https://ewaybillgst.gov.in -> Search --> ‘Update Block Status’.
+                        </span>
+                        <div style="height:10px;"></div>
+                        <a href="https://docs.ewaybillgst.gov.in/Documents/unblock.pdf" target="_blank" style="color:#000;text-decoration:underline;">
+                            Blocking/Unblocking of e-way bill generation
+                        </a>
+                        <div style="height:10px;"></div>
+                        <a href="https://docs.ewaybillgst.gov.in/Documents/FAQONBLOCKING.pdf" target="_blank" style="color:#000;text-decoration:underline;">
+                            FAQs on Blocking/Unblocking of e-way bill generation
+                        </a>
+                        <div style="height:10px;"></div>
+                    </div>
+                </div>
+					<div class="col-lg-3">
+
+                    <div class="well boxshadow text-left" style="height:480px;border:1px solid #f1ecec; margin-top:0px;">
+                        <span style="text-decoration:underline">Latest Updates 23/04/2019</span>
+
+                        <ul style="font-weight:bold; ">
+                           <li style="margin-bottom:7px">
+                             <!--  <a href="https://docs.ewaybillgst.gov.in/Documents/Forthcomingchangesinewaybill.pdf" target="_blank" style="color:#000">
+                                   Forthcoming changes in e-Waybill system
+                               </a>-->
+                                <a href="https://docs.ewaybillgst.gov.in/Documents/EnhancementsEWBApril2019.pdf" target="_blank" style="color:#000" >
+                         New Release- Enhancements in E-Way Bill System - 23/04/2019
+                        </a>
+                            </li> 
+                            <li style="margin-bottom:7px">
+
+                                <a href="https://docs.ewaybillgst.gov.in/Documents/CommonEnrolmentForm.pdf" target="_blank" style="color:#000">
+                                    Common Enrollment For GSTIN Registered Transporters Available.
+                                </a> 
+                                
+                            </li>
+                            <li style="margin-bottom:7px">
+                                <a href="https://docs.ewaybillgst.gov.in/Documents/ewbClearCache.pdf" target="_blank" style="color:#000">
+                                    If you facing problem while loading Login page or while login please clear your browser cookies.
+                                </a>
+                                </li>
+                            <li style="margin-bottom:7px">
+                                <a href="https://docs.ewaybillgst.gov.in/Documents/CommonEnrolmentForm.pdf" target="_blank" style="color:#000">
+                                    Common Enrollment For GSTIN Registered Transporters.
+                                </a>
+                            </li>
+</ul>
+                        <span style="text-decoration:underline"> Previous Updates </span><br />
+                        <marquee behavior="scroll" direction="up" scrollamount="5" style="height:120px" onmouseover="this.stop();" onmouseout="this.start();">
+
+                            <ul>
+
+                                <li>
+
+                                    <a href="https://docs.ewaybillgst.gov.in/Documents/br_notification_14012019.pdf" target="_blank" style="text-decoration:none">
+                                        Government of Bihar has issued notification (Dtd: 14.01.2019) stating
+                                        that e-way bill is required for intra-state movement of goods, having
+                                        the value more than One Lakh rupees, with effect from 21.01.2019
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="https://docs.ewaybillgst.gov.in/Documents/Enhancementsewb16nov.pdf" target="_blank">
+                                        The "Enhancements in E-Way Bill System on 16th November 2018"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://docs.ewaybillgst.gov.in/Documents/EWBfaq_new.pdf" target="_blank">
+                                        The "Latest FAQs on Enhancements in E-Way Bill System released on 1st October 2018"
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://docs.ewaybillgst.gov.in/Documents/EWBforthcomingchanges_new.pdf" target="_blank">
+                                        The "Enhancements in E-Way Bill System released on 1st October 2018"
+                                    </a>
+                                </li>
+                                <li>Enhancements in Bulk E-Waybill generation released on 1st October 2018, check for new updates in Bulk Generation Tools link</li>
+                                <li><a href="https://docs.ewaybillgst.gov.in/Documents/BULK_EWB_NOTE.pdf" target="_blank">Note on Bulk EWB</a></li>
+                                <li><a href="https://docs.ewaybillgst.gov.in/Documents/EWB_Multi_Vehicle.pdf" target="_blank">Multivehicle updation for EWB is enabled</a></li>
+                                <li>Preview of EWB is enabled</li>
+                                <li>Personalised Dashboard is enabled</li>
+                                <li>
+                                    Now,  E-way bill operations are compulsory for intra-state movement of goods for all states
+
+                                </li>
+                                <li>
+                                    E-way bill operations are compulsory for inter-state movement of goods for all states
+                                </li>
+
+                            </ul>
+
+                        </marquee>
+
+
+                    </div>
+                </div>
+                <!--<div class="col-lg-12 ">
+                    <div class="col-lg-3 well-sm panel1">e-way bills are generated in 2018-19 <br />52.93 Cr. </div>
+                    <div class="col-lg-3 well-sm panel1"> inter-state e-way bills are generated in 2018-19 <br />23.70 Cr. </div>
+                    <div class="col-lg-3 well-sm panel1">intra-state e-way bills are generated in 2018-19 <br />29.23 Cr. </div>
+                    <div class="col-lg-3 well-sm panel1">e-way bills are verified by officers in 2018-19 <br />1.58 Cr. </div>
+                    </div>-->
+            </div>
+
+
+        </div>
+
+
+
+        <footer class="footer  ">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3  paddingtop-bottom">
+                        <h6 class="heading7">Important Links</h6>
+                        <ul class="footer-ul">
+                            <li><a href="https://docs.ewaybillgst.gov.in/html/WebsitePolicy.html" target="_blank" rel="noopener noreferrer"> Website Policy</a></li>
+                            <li><a href="#" target="_blank" rel="noopener noreferrer"> Security Policy</a></li>
+                            <li><a href="https://docs.ewaybillgst.gov.in/html/Disclaimer.html" target="_blank" rel="noopener noreferrer"> Disclaimer</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-3   paddingtop-bottom">
+                        <h6 class="heading7">&nbsp; </h6>
+                        <div class="post">
+                            <ul class="footer-ul">
+                                <li><a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer"> GST Common Portal</a></li>
+                                <li><a href="http://www.cbec.gov.in/" target="_blank" rel="noopener noreferrer"> Central Board of Excise</a></li>
+                                <li><a href="https://docs.ewaybillgst.gov.in/html/OtherTaxSite.html" target="_blank" rel="noopener noreferrer"> State Tax Websites</a></li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3   paddingtop-bottom">
+                        <h6 class="heading7">&nbsp; </h6>
+                        <div class="post">
+                            <ul class="footer-ul">
+
+                                <li><a href="https://www.india.gov.in/" target="_blank" rel="noopener noreferrer"> National Portal</a></li>
+                                <li><a href="http://www.nic.in/" target="_blank" rel="noopener noreferrer"> National Informatics Centre</a></li>
+                                <li><a href="http://www.gstn.org/" target="_blank" rel="noopener noreferrer"> Goods and Service Tax Network</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3   paddingtop-bottom">
+                        <h6 class="heading7">&nbsp; </h6>
+                        <div class="post"> </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container col-lg-12">
+                <hr />
+                <p class="col-lg-2 text-left" style="font-family:Verdana; font-size:11px">
+                    Ver.1.3.0 Rel.1218
+                </p>
+                <p class="col-lg-7" style="font-family:Verdana; font-size:10.5px">
+                    This site can be best viewed in Firefox 43.5 and above ,IE 11 and above,chrome 45 and above. To check your browser version <a href="http://www.whatsmybrowser.org/"
+                                                                                                                                                  target="_blank" rel="noopener noreferrer"><span style="font-size:11px; color:#ffce82">click here </span></a>
+                </p>
+                <p class="col-lg-3 pull-right text-right" style="font-family:Verdana; font-size:11px">© 2019 -  Powered By National Informatics Centre</p>
+
+            </div>
+
+        </footer>
+
+
+
+        <div class="modal fade" id="updates" role="dialog">
+            <div class="modal-dialog modal-sm" style="width:400px">
+                <div class="modal-content">
+                    <div class="modal-header  ">
+                        New Improvements in EWB     <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item"><span class="msg1">Dashboard is updated with 'Pending for Part-B' numbers. </span></a>
+                            <a href="#" class="list-group-item"><span class="msg1"> Approximate distance is shown in the E-waybill Print </span></a>
+                            <a href="#" class="list-group-item"><span class="msg1"> Issue in Sub-user reports has been fixed. </span></a>
+                            <a href="#" class="list-group-item"><span class="msg1"> Enrolled Transporters can view the documents they have uploaded. </span></a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

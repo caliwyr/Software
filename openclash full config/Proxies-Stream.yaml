@@ -1,0 +1,35 @@
+proxies:
+- name: "Shadowsocks"
+  type: ss
+  server: insert host/ip
+  port: insert port
+  cipher: insert cipher
+  password: insert password
+  udp: true
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: domain.com
+- name: "Trojan"
+  type: trojan
+  server: insert host/ip
+  port: insert port
+  password: insert password
+  udp: true
+  sni: domain.com
+  skip-cert-verify: true
+- name: "Vmess"
+  type: vmess
+  server: insert host or ip
+  port: insert port
+  uuid: insert UUID
+  alterId: 32
+  cipher: insert-cipher
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: domain.com
+  network: ws
+  ws-path: Namassh
+  ws-headers:
+    Host: domain.com
