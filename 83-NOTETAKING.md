@@ -34,6 +34,8 @@
 
 - [Laverna](https://laverna.cc/)
 
+- [Online Notepad](https://onlinenotep.ad)
+
 - [Kl1p.com](https://kl1p.com/)
 
 - [KeepNote: Note taking and organization](https://keepnote.org/)
