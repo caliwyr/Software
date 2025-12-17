@@ -2,6 +2,8 @@
 
 - [Discord Servers Portal](https://www.discordportal.com/)
 
+- [Discord Profile Lookup](https://vaultcord.com/tools/discord-id-lookup)
+
 - [DiscordOSINT](https://github.com/atoncehussein/DiscordOSINT)
 
 - [Void Bots — Developing together](https://voidbots.net/)
